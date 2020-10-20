@@ -30,7 +30,7 @@ class TermNameTranslationManager
         fetch_result.each do |term_record|
 
           property_sets = Util::I18nUtil.non_default_locales.map do |locale|
-            "t.#{Util::I18nUtil.term_name_property_for_locale(locale)} = \"#{TraitBank::Record.i18n_name_for_locale(term_record, locale)}\"" 
+            "t.#{Util::I18nUtil.term_name_property_for_locale(locale)} = \"#{TraitBank::Record.i18n_name_for_locale(term_record, locale).gsub('"', '\"')}\"" 
           end.join(", ")
 
           set_query = %Q(
