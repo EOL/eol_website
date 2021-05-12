@@ -49,8 +49,8 @@ fi:
   classifications:
     children:
       header_html:
-        one: '%{name} sisältää <a href="%{names_path}">%{count} lapsen</a>:'
-        other: '%{name} sisältää <a href="%{names_path}">%{count} lasta</a>:'
+        one: '%{name} sisältää <a href="%{names_path}">%{count} alemman taksonin</a>:'
+        other: '%{name} sisältää <a href="%{names_path}">%{count} alempaa taksonia</a>:'
       see_more: lisätietoja
     hierarchies:
       header: Kuratoidut hierarkiat kohteelle %{sci_name}
@@ -70,7 +70,6 @@ fi:
       referents_count: viitteet
       species_count: lajit
       updated_at: viimeksi päivitetty
-  cms_page_date: 'Viimeksi muokattu:'
   collect_already_in_collection: (se on jo täällä)
   collect_already_in_collection_will_add_icon: (lisää mediaa sivulle "%{page}")
   collect_icon_title: Lisää "%{item}" sivulta "%{page}" sivulle…
@@ -250,8 +249,8 @@ fi:
   language: Kieli
   languages:
     ab: abhaasi
-    Q27683: atšeh
-    Q27776: adyge
+    q27683: atšeh
+    q27776: adyge
     aa: Afar
     af: afrikaans
     ak: akan
@@ -262,13 +261,13 @@ fi:
     an: aragonia
     hy: armenia
     as: assami
-    Q29507: asturia
+    q29507: asturia
     av: avaari
     ae: avesta
     ay: aimara
-    Q9292: azeri
+    q9292: azeri
     az: azeri
-    Q33070: bali
+    q33070: bali
     bm: bambara
     ba: baškiiri
     eu: baski
@@ -278,22 +277,23 @@ fi:
     bi: bislama
     nb: norjan bokmål
     bs: bosnia
-    Q750553: brasilianportugali
+    q750553: brasilianportugali
     br: bretoni
     bg: bulgaria
     my: burma
-    Q880301: cajunranska
+    q880301: cajunranska
+    q35156: Carin
     ca: valencia
     km: khmer
     ch: tšamorro
     ce: tšetšeeni
-    Q33388: cherokee
+    q33388: cherokee
     ny: njandža
     zh: kiina
     chi: kiina
     cu: kirkkoslaavi
     cv: tšuvassi
-    Q37041: klassinen kiina
+    q37041: klassinen kiina
     kw: Korni
     co: Korsika
     cr: Cree
@@ -320,7 +320,7 @@ fi:
     ff: Fulah
     gd: gaeli
     gl: galicia
-    Q33475: gan-kiina
+    q33475: gan-kiina
     lg: ganda
     ka: georgia
     de: saksa
@@ -349,7 +349,7 @@ fi:
     ga: Iiri
     it: Italia
     ita: italia
-    Q35939: jamaikankreoli
+    q35939: jamaikankreoli
     ja: Japani
     jp: Japani
     jv: Jaava
@@ -374,12 +374,12 @@ fi:
     ln: Lingala
     lt: Liettua
     lit: Liettua
-    Q36584: livvinkarjala
-    Q13286: alasorbi
+    q36584: livvinkarjala
+    q13286: alasorbi
     lu: Katanganluba
     lb: Luxemburg
     mk: Makedonia
-    Q497345: Mainfränkisch
+    q497345: Mainfränkisch
     mg: Malagassi
     ms: Malaiji
     ml: Malajalam
@@ -388,17 +388,17 @@ fi:
     mi: Maori
     mr: Marathi
     mh: Marshall
-    Q36455: mindong
-    Q13330: mirandeesi
+    q36455: mindong
+    q13330: mirandeesi
     mn: Mongolia
-    Q56426: marokonarabia
+    q56426: marokonarabia
     na: Nauru
     nv: Navajo
     nd: Pohjois-ndebele
     nr: Etelä-ndebele
     ng: Ndonga
     ne: Nepali
-    Q19933293: pohjoisluri
+    q19933293: pohjoisluri
     se: Pohjoissaame
     "no": norja
     nno: norja
@@ -413,7 +413,7 @@ fi:
     pi: paali
     pa: pandžabi
     fa: persia
-    Q34024: picard
+    q34024: picard
     pl: puola
     pol: puola
     pt: portugali
@@ -424,16 +424,16 @@ fi:
     rn: kirundi
     ru: venäjä
     rus: venäjä
-    Q34299: jakuutti
+    q34299: jakuutti
     sm: samoa
     sg: sango
     sa: sanskrit
     sc: sardi
     sr: Serbia
     sn: šona
-    Q34004: šona
+    q34004: šona
     ii: sichuanin-yi
-    Q33973: sisilia
+    q33973: sisilia
     sd: sindhi
     si: sinhali
     sk: slovakia
@@ -452,7 +452,7 @@ fi:
     tl: tagalog
     ty: tahiti
     tg: tadžikki
-    Q34318: tališi
+    q34318: tališi
     ta: tamili
     tt: tataari
     te: telugu
@@ -463,34 +463,34 @@ fi:
     to: tonga
     ts: tsonga
     tn: tswana
-    Q56240: tunisianarabia
+    q56240: tunisianarabia
     tr: turkki
     tur: turkki
-    Q36730: osmaninturkki
+    q36730: osmaninturkki
     tk: turkmeeni
     tw: Twi
     ug: Uiguuri
     uk: ukraina
     ukr: ukraina
     none: Määrittelemätön
-    Q13248: yläsorbi
+    q13248: yläsorbi
     ur: urdu
     uz: uzbekki
     ve: venda
-    Q32747: vepsä
+    q32747: vepsä
     vi: vietnam
     vo: volapük
     wa: valloni
     cy: kymri
     wel: kymri
-    Q100103: länsiflaami
+    q100103: länsiflaami
     fy: länsifriisi
     wo: wolof
-    Q34290: wu-kiina
+    q34290: wu-kiina
     xh: xhosa
     yi: jiddiš
     yo: joruba
-    Q237409: seelanti
+    q237409: seelanti
     za: zhuang
     zu: zulu
   layout_sign_in: Kirjaudu sisään
@@ -592,6 +592,10 @@ fi:
       predator: Saalistaja
       prey: Saalis
       reset: tyhjennä
+      trophic_web_about: EOL:in ravintokartat esittävät yksittäisen lajin ravintosuhteita;
+        valittu laji esitetään niiden lajien kanssa joita se syö (saaliit), jotka
+        syövät sitä (saalistajat) ja muiden samoja lajeja syövien lajien kanssa (kilpailijat).
+        Napsauta kysymysmerkkiä ja saat tietää lisää.
     flash:
       reindexed: Välimuistit tälle sivulle on tyhjennetty. Lataa uudelleen nähdäksesi
         uudet arvot. Huomioi että tällä hetkellä tämä *ei* uudelleenindeksoi sivun
@@ -641,7 +645,6 @@ fi:
       show_warns:
         one: näytä (%{count}) varoitus
         other: näytä (%{count}) varoitusta
-      sync: synkronoi koodivarannon kanssa
     headers:
       index: Resurssit
     index:
@@ -833,11 +836,6 @@ fi:
     scientific_names: nimet
     users: käyttäjät
     references: viitteet
-  support:
-    array:
-      words_connector: ','
-      two_words_connector: ja
-      last_word_connector: ', ja'
   terms:
     attribution_field_html: <strong>Määrite:</strong> <a href='%{attribution}'>%{attribution}</a>
     comment_field_html: <strong>Kommentti:</strong> %{comment}
@@ -850,7 +848,11 @@ fi:
       select_page_above: Aloita valitsemalla yllä oleva sivu.
   traits:
     data_viz:
+      about_this_chart: tietoa tästä kaaviosta
       other: muu
+      page_habitat_explanation: Luettelo elinympäristöistä, joissa tiedetään elävän
+        useita taksoniin %{name} kuuluvia lajeja. Kun valitset jonkin listan elinympäristöistä,
+        saat luettelon siinä elävistä taksoniin %{name} kuuluvista lajeista.
     properties:
       scientific_name: Tieteellinen nimi
       source: Lähde
@@ -936,56 +938,38 @@ fi:
       previous: edellinen sivu
     name:
       by_uri:
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: happi
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_22984: kalsium (Ca)
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: magnesium (Mg)
-        http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: ruumiinpituus
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900033: puu
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000050: elinikä
+        http://eol(dot)org/schema/terms/percentPerMonth: '%/kuukausi'
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: musta
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000318: sininen
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: vihreä
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000322: punainen
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: valkoinen
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000324: keltainen
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: suuri
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000587: pieni
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: hidas
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: nopea
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: purppura
+        http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: ruumiinpituus
+        http://purl(dot)obolibrary(dot)org/obo/VT_0001259: ruumiinpaino
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: ruskea
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: oranssi
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001733: ikivihreä
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001941: keltavihreä
-        http://purl(dot)obolibrary(dot)org/obo/PO_0009001: hedelmä
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002439: saalistaa kohdetta
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002458: saalistaja
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000326: lehden väri
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000537: kukan väri
-        http://eol(dot)org/schema/terms/Present: maantieteellisen levinneisyyden alueet
-        http://rs(dot)tdwg(dot)org/dwc/terms/verbatimDepth: veden syvyys
-        http://eol(dot)org/schema/terms/fossilOccPBDB: fossiiliesiintymien määrä
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000204: trooppinen
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000253: joki
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000177: laidun
-        http://eol(dot)org/schema/terms/paleo_megaannum: miljoona vuotta sitten
-        http://eol(dot)org/schema/terms/millimeterspermonth: millimetriä kuukaudessa
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000012: kelvin
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_22984: kalsium (Ca)
+        http://purl(dot)obolibrary(dot)org/obo/VT_0001933: poikueen koko
         http://purl(dot)obolibrary(dot)org/obo/UO_0000033: päivää
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000035: kuukautta
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000036: vuotta
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000114: Wattia
         http://purl(dot)obolibrary(dot)org/obo/UO_0000185: astetta
-        http://purl(dot)bioontology(dot)org/ontology/SNOMEDCT/259032004: /päivä
-        http://purl(dot)bioontology(dot)org/ontology/SNOMEDCT/259039008: /vuosi
-        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#inch: tuuma
-        http://purl(dot)org/obo/owl/UO#UO_0000034: viikkoa
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: syö seuraav(i)a
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001733: ikivihreä
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: nopea
+        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#foot: jalkaa
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000537: kukan väri
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009001: hedelmä
         http://eol(dot)org/schema/terms/gramsPerCentimeterSquaredPerDay: g/cm^2/päivä
-        http://eol(dot)org/schema/terms/kilogramsPerMeterSquaredPerYear: kg/m^2/vuosi
-        Unit: Yksikkö
-        http://eol(dot)org/schema/terms/percentPerMonth: '%/kuukausi'
         http://eol(dot)org/schema/terms/gramsPercm2PerYear: g/cm^2/vuosi
         http://eol(dot)org/schema/terms/gramsPerMonth: g/kk
+        http://eol(dot)org/schema/terms/Present: maantieteellisen levinneisyyden alueet
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000177: laidun
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: vihreä
+        http://purl(dot)obolibrary(dot)org/obo/EFO_0004387: tuumaa
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000012: kelvin
+        http://eol(dot)org/schema/terms/kilogramsPerMeterSquaredPerYear: kg/m^2/vuosi
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: suuri
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000326: lehden väri
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000050: elinikä
+        http://eol(dot)org/schema/terms/LittersPerYear: poikueita vuodessa
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: magnesium (Mg)
+        http://eol(dot)org/schema/terms/millimeterspermonth: millimetriä kuukaudessa
+        http://eol(dot)org/schema/terms/paleo_megaannum: miljoona(a) vuotta sitten
         http://eol(dot)org/schema/terms/millimetersPerThreeMonths: mm/3kk
         http://eol(dot)org/schema/terms/millimetersPerFourMonths: mm/4kk
         http://eol(dot)org/schema/terms/millimetersPerSixMonths: mm/6kk
@@ -994,7 +978,27 @@ fi:
         http://purl(dot)obolibrary(dot)org/obo/UO_0010005: mm/päivä
         http://purl(dot)obolibrary(dot)org/obo/NCIT_C105508: mm/s
         http://eol(dot)org/schema/terms/millimetersPerYear: mm/vuosi
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000035: kuukautta
+        http://eol(dot)org/schema/terms/fossilOccPBDB: fossiiliesiintymien määrä
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: oranssi
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: happi
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000208: pelaginen vyöhyke
+        http://eol(dot)org/schema/terms/population_trend: populaation kehitys
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002458: saalistaja
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002439: saalistaa kohdetta
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: purppura
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000322: punainen
+        http://purl(dot)obolibrary(dot)org/obo/GO_0000003: lisääntyminen
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000253: joki
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: hidas
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000587: pieni
         http://purl(dot)obolibrary(dot)org/obo/UO_0010038: tonnia
-        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#foot: jalkaa
-        http://purl(dot)obolibrary(dot)org/obo/EFO_0004387: tuumaa
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900033: puu
+        http://eol(dot)org/schema/terms/tropicalOrSubtropical: trooppinen tai subtrooppinen
+        http://rs(dot)tdwg(dot)org/dwc/terms/verbatimDepth: veden syvyys
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000114: Wattia
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: valkoinen
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000036: vuotta
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000324: keltainen
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001941: keltavihreä
 ...

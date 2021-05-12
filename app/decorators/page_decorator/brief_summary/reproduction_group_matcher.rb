@@ -11,7 +11,7 @@ class PageDecorator
           "https://eol.org/schema/terms/unisexual_flowers",
           "http://eol.org/schema/terms/dwarfMales",
           "http://polytraits.lifewatchgreece.eu/terms/SM_YES",
-          Eol::Uris.parental_care
+          EolTerms.alias_uri('parental_care')
         ]
       }, {
         type: :w,
@@ -69,8 +69,8 @@ class PageDecorator
         def match_all(traits)
           matches = MATCHER.match_all(traits)
 
-          if matches.has_type?(:z) && matches.has_uri?(Eol::Uris.parental_care)
-            matches.by_uri(Eol::Uris.parental_care).each do |match|
+          if matches.has_type?(:z) && matches.has_uri?(EolTerms.alias_uri('parental_care'))
+            matches.by_uri(EolTerms.alias_uri('parental_care')).each do |match|
               matches.remove(match)
             end
           end

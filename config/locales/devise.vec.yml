@@ -1,0 +1,66 @@
+# Messages for Venetian (vèneto)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Fierodelveneto
+---
+vec:
+  devise:
+    confirmations:
+      confirmed: El to inderiso mail el ze sta coretamente confirmà.
+      send_instructions: Te rivarà na mail co istrusion so come confirmar el to inderiso
+        mail drento de racuanti minuti.
+    failure:
+      already_authenticated: Te ghè za fazesto l'entrada.
+      inactive: El to conto no el ze oncora ativo.
+      invalid: '%{authentication_keys} o ciave mia justi.'
+      locked: La to utensa ła ze blocada. Reprova intrà na ora.
+      not_found_in_database: '%{authentication_keys} o ciave mia justi.'
+      unauthenticated: Te ghè da logarte o notarte prima de sevitar
+      unconfirmed: Te ghè da confirmar el to conto prima de sevitar.
+    mailer:
+      confirmation_instructions:
+        action: Confirma el me conto
+        greeting: Benvegnesto %{recipient}!
+        instruction: Te połi confirmar el to conto co el ligo-web cuà baso.
+        subject: Istrusion de conferma.
+      reset_password_instructions:
+        action: Cànbia ciave
+        greeting: 'Ciao #{recipient}!'
+        subject: Istrusion so ła reinpostasion de ła ciave
+      unlock_instructions:
+        subject: Desbloca istrusion
+      password_change:
+        greeting: 'Ciao #{recipient}!'
+    passwords:
+      send_instructions: Te rivarà na mail co istrusion so come modifegar ła to ciave
+        drento de racuanti minuti.
+      updated_not_active: Ciave canbiada co bon èzito.
+    registrations:
+      destroyed: Sałudi! El to conto el ze sta descansełà co bon èzito! Speremo de
+        rivederte presto.
+      signed_up: Benvegnesto, logà co bon èzito.
+    sessions:
+      signed_in: Conetesto
+      signed_out: Disconetesto
+      already_signed_out: Disconetesto
+      recaptcha: Eror inte el vałidamento Recaptcha
+      sign_in_remember_me_disabled_for_admins: Par motivasion de seguresa, i aminsitradori
+        no i połe doparar ła funsion "recòrdame".
+    unlocks:
+      send_instructions: Te rivarà na mail co istrusion so come desblocar el to conto
+        drento de racuanti minuti.
+      send_paranoid_instructions: Se el to conto el ghe ze, te rivarà na mail co łe
+        istrusion so come desblocarlo drento de pochi minuti
+      unlocked: Desblocà co bon èzito. Lòghite.
+  errors:
+    messages:
+      already_confirmed: el ze za sta confirmà, lòghite
+      confirmation_period_expired: el nesèsita de èsar confirmà drento de %{period},
+        dimàndaghene uno novo
+      expired: el ze scadesto, dimandàghene uno novo
+      not_found: no catà.
+      not_locked: no el zera blocà
+      not_saved:
+        one: '1 eror el ga proibio sto %{resource} che el vegnese salvà:'
+        other: '%{count} erori i ga proibio sto %{resource} che i vegnese salvai:'
+...

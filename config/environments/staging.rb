@@ -3,7 +3,7 @@ Rails.application.configure do
   config.lograge.ignore_actions = ['PagesController#ping', 'ApiPingController#index', 'HomePageController#index']
   config.cache_classes = true
   cache_addr = Rails.application.secrets.cache_url
-  config.cache_store = :dalli_store, cache_addr, { namespace: "EOL", compress: true }
+  config.cache_store = :mem_cache_store, cache_addr, { namespace: "EOL", compress: true }
   config.eager_load = true
   config.consider_all_requests_local = false
   config.action_dispatch.default_headers = { 'X-Frame-Options' => 'ALLOWALL' }
@@ -16,6 +16,7 @@ Rails.application.configure do
   config.active_record.migration_error = :page_load
   
   config.log_level = :info
+
   config.assets.debug = false
   config.assets.digest = true
   config.assets.raise_runtime_errors = true

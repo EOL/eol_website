@@ -1,15 +1,22 @@
 # Messages for Spanish (español)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Alonso Biólogo
 # Author: Aramos1422
 # Author: Canaan9801
 # Author: Fitoschido
 # Author: Gastonsaenz
 # Author: Geryescalier
 # Author: Ihojose
+# Author: Jakeukalane
+# Author: JamesB
+# Author: Jesusmc
 # Author: Joanmp17
 # Author: Madamebiblio
 # Author: Ncr
+# Author: Nipungorantla
+# Author: Optilete
+# Author: Rossnyev
 # Author: Silverie04
 # Author: Whytheonlyone
 ---
@@ -77,7 +84,11 @@ es:
       see_more: ver más
     hierarchies:
       header: Jerarquías seleccionadas para %{sci_name}
+      see_resource_file: Vea el <a href='%{href}'>archivo de recursos</a> para una
+        lista completa.
       this_page: (esta página)
+      truncated_siblings:
+        other: uno=Un hermano adicional truncado por brevedad.
     richness:
       header: Riqueza de la página
       score: puntuación de riqueza
@@ -94,15 +105,16 @@ es:
       referents_count: referentes
       species_count: especies
       updated_at: última actualización
-  cms_page_date: 'Última modificación:'
   collect_already_in_collection: (ya se encuentra aqui)
   collect_already_in_collection_will_add_icon: (agregar medios de comunicación a "%{page}")
+  collect_icon_title: Añade "%{item}" de la "%{page}" página a...
   collect_new_collection: Nombre de la colección nueva
   collect_new_collection_title: '...una Nueva Colección'
   collect_no_existing_collections: ¡Aún no tienes ninguno! Crea uno usando el formulario
     en el lado izquierdo.
   collect_select_collection: '...Una de Sus Colecciones'
   collect_title: Añadir «%{item}» a…
+  collected_page_added_to_collection: Añadida %{page} a la colección <a href='%{link}'>%{name}</a>
   collected_page_already_in_collection: Eso ya se encontraba en su colección
   collected_pages_title: Páginas
   collected_pages_medium:
@@ -120,10 +132,18 @@ es:
     hacer clic en el botón nombrado "asociar" en otras colecciones para que aparezcan
     aquí.
   collection_associations_title: Colecciones asociadas
+  collection_collected_pages_media_remove: 'Elimina imágenes de la colección (los
+    cambios toman efecto inmediato):'
   collection_created: Se creó la colección «%{name}».
+  collection_created_for_association: Añadida "%{associated}" a la nueva colección
+    <a href='%{link}'>"%{name}"</a>
   collection_user_is_admin: Este usuario es un administrador.
+  collection_pages_empty: Esta colección no tiene ninguna página. Prueba a pinchar
+    en el botón "coleccionar" en las páginas especiales para añadir elementos.
   collection:
     admins:
+      header: Usuarios que pueden editar esta colección (los cambios son de efecto
+        inmediato)
       label: 'Añadir un usuario que puede editar esta colección:'
       placeholder: Nombre completo o nombre de usuario
     actions:
@@ -141,11 +161,30 @@ es:
     pages_count:
       one: 1 página
       other: '%{count} páginas'
+    log:
+      associated_collection:
+        add: '%{user} añadida una asociación a la colección %{associated}'
+        remove: '%{user} removió la asociación a la colección %{associated}'
+      collection:
+        add: '%{user} creó la colección'
+        change: '%{user} cambio el %{field} de "%{from}" a "%{to}"'
+      content:
+        add: '%{user} añadió el medio %{medium} por página %{page}'
+        change: '%{user} cambio el %{field} en medio %{medium} por página %{page}
+          de "%{from}" a "%{to}"'
+        remove: '%{user} removió el medio %{medium} por página %{page}'
+      page:
+        add: '%{user} añadió página %{page}'
+        change: '%{user} cambio el %{field} en página %{page} de "%{from}" a "%{to}"'
+        remove: '%{user} removió página %{page}'
+      user:
+        add: '%{user} añadió el manejador %{manager}'
+        remove: '%{user} removió el manejador %{manager}'
     search:
       placeholder: Buscar en la colección…
       submit: buscar
     sort:
-      hierarchy: jerarquía
+      hierarchy: hierarhia
       position: fecha de adición
       sci_name: nombre científico, A-Z
       sci_name_rev: nombre científico, Z-A
@@ -161,6 +200,7 @@ es:
     altitude: altitud
     author: autor/a
     bibliographic_citation: cita bibliográfica
+    contributor: Colaborador
     compiler: Compilador
     creator: creador/a
     editor: editor
@@ -175,6 +215,9 @@ es:
     publisher: Editorial
     project: proyecto
     provider: proveedor
+    references_header:
+      one: Referencia
+      other: Referencias
     resource_label: sitio asociado
     resource_pk: '(id.: %{key})'
     rights_statement: declaración de derechos
@@ -245,42 +288,83 @@ es:
       worms: Gusanos
     eol_is_hosted_by: 'EOL está presentado por:'
   forgot_your_password: ¿Has olvidado tu contraseña?
+  gbif_download:
+    created: GBIF creó trabajo de descarga. Revisa tu <a href="%{url}">página de perfil
+      de usuario</a>para ver su estado
   landing_page:
     header: Acceso global al conocimiento sobre la vida en la Tierra
     stats_cleared: Se recalcularon las estadísticas.
   language: Idioma
   languages:
     ab: Abjasio
-    Q27776: Adigué
+    q27683: Achenés
+    q27776: Adigué
+    aa: Afar
     af: Afrikáans
+    ak: Akan
     alb: Albanés
     sq: Albanés
+    q131339: Alemánico
     am: Amhárico
     ar: Árabe
     an: Aragonés
     hy: Armenio
-    Q29507: Asturiano
+    as: Asamés
+    q29507: Asturiano
+    q56590: Atikamekw
+    av: Avárico
+    ae: Avéstico
     ay: Aimara
-    Q9292: Azerí
+    q9292: Azerí
+    az: Azerí
+    q33070: Balinés
+    bm: Bambara
+    q33151: Banjar
+    ba: Baskir
     eu: Vasco
+    q29540: Bávaro
     be: Bielorruso
+    q8836490: Bende
+    bn: Bengalí
+    bh: Lenguas bihari
+    bi: Bislama
+    nb: Bokmål (noruego estándar)
+    q4941378: Bondei
     bs: Bosnio
-    Q750553: Portugués de Brasil
+    q33202: Brahui
+    q750553: Portugués brasileño
+    br: Bretón
     bg: Búlgaro
-    Q35156: el carro
-    ca: Catalán; valenciano
+    my: Birmano
+    q33120: Buryat
+    q35037: Businenge Tongo
+    q880301: Francés Cajun
+    q35156: carro
+    q2591230: Cashinahua
+    ca: Catalán; Valenciano
+    q33239: Cebuano
+    ch: Chamorro
+    q33281: Chavacano
     ce: Checheno
+    q33388: Cheroqui
+    q33265: Cheyenne
+    ny: Chichewa; Chewa; Nyanja
     zh: Chino
-    Q37041: Idioma chino clásico
+    chi: Chino
+    q37041: Idioma chino clásico
     kw: Córnico
-    Q33357: Tártaro de Crimea
+    q33357: Tártaro de Crimea
     hr: Croata
+    hrv: Croata
     cs: Checo
     da: Danés
+    q3362072: Digo
+    dut: neerlandés; flamenco
     nl: Holandés; flamenco
     en: Inglés
     eo: Esperanto
     et: Estonio
+    ee: Oveja
     fj: Fiyiano
     fi: Finlandés
     fr: Francés
@@ -299,11 +383,13 @@ es:
     heb: Hebreo
     hu: Húngaro
     is: Islandés
+    ice: Islandés
     id: Indonesio
-    ia: Interlingua
+    ia: Interlingua (Asociación Internacional de Idiomas Auxiliares)
     ga: Irlandés
     it: Italiano
-    Q35939: Criollo de Jamaica
+    ita: Italiano
+    q35939: Criollo de Jamaica
     ja: Japonés
     jp: Japonés
     jv: Javanés
@@ -320,7 +406,7 @@ es:
     mg: Malgache
     mt: Maltés
     mn: Mongol
-    Q56426: Árabe marroquí
+    q56426: Árabe marroquí
     nv: Navajo
     ne: Nepalí
     "no": Noruego
@@ -351,7 +437,7 @@ es:
     th: Tai
     bo: Tibetano
     ti: Tigriña
-    Q34159: Tok pisin
+    q34159: Tok pisin
     to: Tongano
     tr: Turco
     uk: Ucraniano
@@ -360,7 +446,7 @@ es:
     uz: Uzbeko
     vi: Vietnamita
     cy: Galés
-    Q100103: Flamenco occidental
+    q100103: Flamenco occidental
     wo: Wólof
     yi: Yidis
     zu: Zulú
@@ -370,6 +456,11 @@ es:
   literature_and_references_header: Bibliografía y referencias
   maps:
     empty: No hay ningún mapa disponible para esta página.
+    occurrence_caption: Incidencias conocidas, muestras recolectadas y observaciones
+      de %{page_name}. Ver esta especie en GBIF
+    occurrence_caption_w_link_html: Incidencias conocidas, muestras recolectadas y
+      observaciones de %{page_name}. <a href='%{url}'>Ver esta especie en GBIF <i
+      class='fa fa-external-link'></i></a>
     other_maps_title: Mapas no interactivos
   medium:
     untitled:
@@ -410,6 +501,7 @@ es:
   page_icon_created: Se movió la imagen «%{name}» a la parte superior.
   page_title: Enciclopedia de la Vida
   page_title_search: 'Búsqueda: %{query}'
+  page_vernaculars_empty: No hay nombres comunes asociados con este taxón.
   pages:
     actions:
       collect: compilar
@@ -432,6 +524,7 @@ es:
       name_recognized_by: |2-
 
         Reconocido por %{by}
+      name_recognized_by_w_status: '%{status} según %{by}'
       rank:
         r_domain: Dominio
         r_subdomain: Subdominio
@@ -471,13 +564,20 @@ es:
     trophic_web:
       competitor: Competidor
       globi_credit_html: datos de <a href='%{url}'> GloBI </a>
+      predator: Depredador
       prey: La presa
       reset: restablecer
+      trophic_web_about: Los diagramas de la red alimentaria de EOL se centran en
+        las relaciones alimentarias de una especie; muestran la especie focal junto
+        con las especies de las que se alimenta (presa), las especies que se alimentan
+        de ella (depredadores) y otras especies que se alimentan de la misma presa
+        (competidores potenciales). Haz clic para aprender mas.
     flash:
       reindexed: Se vaciaron las antememorias correspondientes a esta página. Para
         ver los valores nuevos, hay que volver a cargarla. Cabe destacar que, por
         el momento, esta acción *no* reindiza las imágenes de la página. Esa funcionalidad
         se implementará más adelante.
+    native_node_missing_warning: Ninguna información de jerarquía disponible
     tabs:
       articles: artículos
       classifications: Clasificaciones
@@ -518,10 +618,12 @@ es:
       republish: volver a publicar
       reindex: volver a indizar
       fix_no_names: arreglar NO NOMBRES
+      index: Volver a todos los recursos
       show_all:
         other: mostrar todo (%{count})
-      sync: sincronizar con repositorio
       clear_publishing: para borrar la cerradura
+      clear_publishing_confirm: Esto 'terminará' toda la publicación y puede causar
+        problemas si se usa mientras se publica activamente. ¿Estás seguro?
     headers:
       index: Recursos
       import_log: Registro de importaciones de %{resource}
@@ -538,6 +640,8 @@ es:
   send_me_reset_password_instructions: Enviarme instrucciones para restablecer la
     contraseña
   search_results:
+    collected_media:
+      title: 'medios recopilados de esta página:'
     medium_article: Artículo
     medium_image: Imagen
     medium_map: Mapa
@@ -546,6 +650,10 @@ es:
     medium_title_image_html: 'Imagen: <span class=''sub''>%{title}</span>'
     medium_title_video_html: 'Vídeo: <span class=''sub''>%{title}</span>'
     empty: No hay ningún resultado.
+    field_matches:
+      description: 'coincide con la descripción:'
+      resource_pk: 'coincide con la ID externa:'
+      bio: 'coincide con la biografía:'
     section_titles:
       collections:
         one: '%{count} colección'
@@ -571,19 +679,25 @@ es:
     associations: Asociaciones
     behavior: Comportamiento
     benefits: Beneficios
+    brief_summary: Breve resumen
     comprehensive_description: Descripción exhaustiva
     conservation: Conservación
     conservation_status: Estado de conservación
+    cyclicity: Ciclicidad
     diagnostic_description: Descripción diagnóstica
     diseases_and_parasites: Enfermedades y parásitos
+    dispersal: Dispersión
     distribution: Distribución
     ecology: Ecología
+    evolution_and_systematics: Evolución y sistemática
     general_ecology: Ecología general
     genetics: Genética
     growth: Crecimiento
     habitat: Hábitat
     identification_resources: Recursos de identificación
     life_expectancy: Esperanza de vida
+    life_history_and_behavior: Historia de vida y comportamiento
+    management: Administración
     migration: Migración
     molecular_biology: Biología molecular
     molecular_biology_and_genetics: Biología molecular y genética
@@ -593,31 +707,44 @@ es:
     overview: Visión general
     physiology_and_cell_biology: Fisiología y biología celular
     physical_description: Descripción física
+    relevance_to_humans_and_ecosystems: Relevancia para los seres humanos y los ecosistemas
     reproduction: Reproducción
     risks: Riesgos
     size: Tamaño
     taxonomy: Taxonomía
     threats: Amenazas
     trends: Tendencias
+    trophic_strategy: Estrategia trófica
     type_information: Información de tipo
     wikipedia: Wikipedia
   settings: configuración
   show_date: Mostrar fecha de publicación
   sign_in: Acceder
+  sign_up: Regístrate
+  signature_with_contact_us_link: |-
+    Si tiene algún problema, comuníquese con nosotros en %{url}.
+
+    El equipo de la Enciclopedia de la Vida
   did_not_receive_confirmation_instructions: No recibí las instrucciones de confirmación
   simple_form:
     "yes": Sí
     "no": "No"
     required:
+      text: obligatorio
       mark: '*'
+    error_notification:
+      default_message: 'Por favor revise los problemas a continuación:'
     labels:
       defaults:
+        email: Dirección de correo electrónico
         password: Contraseña
         password_confirmation: Confirmación de contraseña
         remember_me: Recordarme
         username: Nombre de usuario
         bio: Biografía
       search_suggestion:
+        page_id: ID de la página EOL para redirigir a (o filtrar por)
+        synonym_of_id: ID (!) de la sugerencia de búsqueda para usar en su lugar
         path: ruta (completa o relativa) a la cual redirigir
   stats:
     articles: artículos
@@ -628,53 +755,110 @@ es:
     scientific_names: nombres
     users: usuarios
     references: referencias
-  support:
-    array:
-      two_words_connector: "y"
-      last_word_connector: "y"
+  term_query:
+    invalid_obsolete: NULO/OBSOLETO
+    validations:
+      empty_filters_error_record: debe proporcionar un filtro con un atributo o valor
+        para las búsquedas de registros
+      empty_filters_error_taxa: debe proporcionar un clado o un filtro con un atributo
+        o valor para las búsquedas de taxones
+  term_query_filter:
+    validations:
+      blank_error: debe especificar un atributo o valor
+      multi_obj_error: no puede ser un término objetivo y un clado de destino
+      pred_uri_blank_obj_clade_error: no puede estar en blanco con un clado objetivo
+      units_blank_error: las unidades no se pueden estar en blanco para una  búsqueda
+        numérica
   terms:
     definition_field_html: <strong>Definición:</strong> %{definition}
     record_url: URL del registro
     scientific_name: nombre científico
     show_all_records: mostrar todos los registros
+    source: fuente
     uri_field_html: <strong>URI:</strong> %{uri}
+    index:
+      select_page_above: Elige una página arriba para empezar.
   data_definition: definición de «%{data}»
   traits:
     data_viz:
       about_this_chart: acerca de este gráfico
       hist_value_label: valor (%{units})
       num_records_label: N.º de registros
+      other: otro
       page_habitat_header: Hábitats de %{name}
+    properties:
+      citation: Cita bibliográfica
+      method: Método de medición
+      remarks: Comentarios
+      sample_size: Tamaño de la muestra
+      scientific_name: Nombre científico
+      source: Fuente
     search:
       download_tsv: descargar tsv
       edit_filters: editar filtros
+      gbif_search_hover: encuentre registros de ocurrencia en GBIF para los taxones
+        en sus resultados de búsqueda (límite 50)
       new_search: búsqueda nueva
+      select:
+        child_term: seleccione un término secundario (opcional)
+        top_level:
+          object_term: o seleccione un valor
+          predicate: o seleccione un atributo
       show_query: mostrar consulta
+      switch_to_list: cambiar a la vista de lista
+      switch_to_gallery: cambiar a la vista de galería
     search_form:
       attribute: atributo
+      attribute_eg: 'atributo (p. ej.: nivel trófico)'
+      clade_filter_placeholder: 'Grupo (p. ej.: osos) (opcional)'
+      hide_additional_fields: ocultar campos adicionales
+      lifestage: etapa de la vida
+      records_matching_all: registros de taxones que coinciden con TODOS los filtros
       resource: recurso
       search: Buscar
       sex: sexo
       show_additional_fields: mostrar campos adicionales
       statistical_method: método estadístico
+      target_group: Grupo objetivo (p. ej., salmón)
+      taxa_matching_all: taxones que coinciden con TODOS los filtros
       this_may_take_a_minute: Esto puede tomar un minuto
+      trait_filter: filtro de rasgos
       value: valor
+      value_eg: 'Valor (p. ej.: herbívoro)'
+  trophic_web:
+    group_descriptions:
+      competitor: competidor de %{source_name}
+      prey: comido por %{source_name}
+      source: Especie focal
+  trust:
+    unreviewed: Sin revisar
+    trusted: Confiable
+    untrusted: No confiable
   user:
+    batch_page_lookup: Búsqueda de páginas por lotes
     created_at: creación
     download_queue: Cola de descarga de datos
+    grant_power: Concede acceso a usuarios avanzados
     revoke_power: Revocar acceso de moderador
+    edit_account_details: Edita los detalles de la cuenta
     email: Dirección de correo electrónico
     to_commit_enter_current: Es necesaria la contraseña actual para confirmar los
       cambios
     form_labels:
       age_confirm: Tengo al menos 13 años
+      tou_confirm_html: He leído los <a href='%{tou_path}'>Condiciones de uso</a>
+        and <a href='%{privacy_path}'>Política de privacidad</a>
     headers:
       bio: Semblanza breve
       collections: Colecciones
       downloads: Descargas
       links: Enlaces
+    is_power_user: Este usuario está marcado como usuario avanzado.
     validations:
       age_confirm: debes confirmar que tienes al menos 13 años
+      tou_confirm: tienes que confirmar que has leído los Términos de uso y la Política
+        de privacidad
+    list_of_power_users: Lista de usuarios avanzados
     new_password: Contraseña nueva
     confirm_new_password: Confirmar la contraseña nueva
     username: nombre de usuario
@@ -684,6 +868,17 @@ es:
     have_pending: Ya tiene una descarga pendiente para esta consulta. Compruebe su
       <a href="%{url}"> página de usuario </a> para ver si se ha completado.
   users:
+    account_migration_header: 'Si te registraste con EOL antes del 15 de Noviembre
+      de 2018:'
+    account_migration_notice: La información de su cuenta, incluido el nombre de usuario,
+      el correo electrónico asociado, la descripción del perfil y las colecciones
+      que posee, se han importado a la nueva EOL. Su nombre de usuario sigue siendo
+      su nombre para mostrar en el sitio, pero ahora debe iniciar sesión con su dirección
+      de correo electrónico. No pudimos migrar su contraseña por razones de seguridad;
+      disculpa por la molestia. Podrá restablecerla mediante el proceso de contraseña
+      olvidada. Si inició sesión solo con un proveedor externo (Google, Twitter o
+      FaceBook), tenga paciencia con nosotros; estamos resolviendo algunos problemas
+      con los procesos de inicio de sesión compartido.
     sign_in: Acceder
   vernacular_names_header: Nombres vernáculos
   term:
@@ -700,17 +895,32 @@ es:
       sections: 'secciones:'
       is_hidden_from_glossary: 'ocultar del glosario:'
       is_hidden_from_overview: 'ocultar de la pestaña Visión general:'
+    glossary:
+      full_title: Glosario de TODOS los términos de los datos en EOL
     pagination:
       next: página siguiente
       previous: página anterior
+    inverse_name:
+      by_uri:
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: es comido por
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002632: tiene ectoparásito
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002634: tiene endoparásito
+        http://eol(dot)org/schema/terms/HasDispersalVector: vector de dispersión para
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002454: Anfitrión de
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002553: tiene hiperparásito
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002459: tiene vector
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002626: Es asesinado por
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002444: parasitado por
     name:
       by_uri:
         http://purl(dot)obolibrary(dot)org/obo/GO_0019954: reproducción asexual
-        http://purl(dot)obolibrary(dot)org/obo/GO_0040011: locomoción
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: forma
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002303: hábitat
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002455: poliniza
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000326: color de hoja
         http://purl(dot)obolibrary(dot)org/obo/UBERON_0010362: endoesqueleto
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002303: hábitat
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000326: color de hoja
+        http://purl(dot)obolibrary(dot)org/obo/GO_0040011: locomoción
         http://eol(dot)org/schema/terms/fossilOccPBDB: número de ocurrencias fosílicas
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002455: poliniza
+        http://purl(dot)obolibrary(dot)org/obo/UO_0010006: proporción
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: forma
+        http://dicom(dot)nema(dot)org/resources/ontology/DCM/112132: muy pequeño
 ...

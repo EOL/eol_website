@@ -24,12 +24,7 @@ class UserDownload < ApplicationRecord
   end
 
   EXPIRATION_TIME = 30.days
-
-  # NOTE: should be created by populating clade, object_terms, predicates, and
-  # count. Also NOTE that using after_commit avoids racing conditions where
-  # after_create may be called prematurely.
-  #after_commit :background_build, on: :create
-
+  VERSION = 1 # IMPORTANT: Increment this when making changes where you don't want older downloads to be reused
 
   class << self
     # TODO: this should be set up in a regular task.
@@ -46,13 +41,14 @@ class UserDownload < ApplicationRecord
     alias_method :all_clear!, :all_clear
 
     def create_and_run_if_needed!(ud_attributes, new_query, options)
-      download = UserDownload.new(ud_attributes)
+      download = UserDownload.new(ud_attributes.merge(version: VERSION))
       query = TermQuery.find_or_save!(new_query)
       download.term_query = query
 
       existing_download = !options[:force_new] && query.user_downloads
         .where(status: :completed, expired_at: nil, duplication: :original)
         .where("created_at >= ?", EXPIRATION_TIME.ago)
+        .where(version: VERSION)
         .order("created_at DESC")&.first
 
       if existing_download

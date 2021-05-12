@@ -63,7 +63,6 @@ ast:
       referents_count: referentes
       species_count: especies
       updated_at: caberu anovamientu
-  cms_page_date: 'Últimu cambéu:'
   collect_already_in_collection: (yá s'atopa equí)
   collect_already_in_collection_will_add_icon: (amestar multimedia a "%{page}")
   collect_icon_title: Amestar «%{item}» dende la páxina «%{page}» a…
@@ -174,102 +173,102 @@ ast:
     stats_cleared: Recalculáronse les estadístiques.
   language: Llingua
   languages:
-    none: Ensin especificar
     aa: Afar
-    ae: Avestanu
     af: Afrikáans
     ak: Akan
+    sq: Albanés
     am: Amháricu
-    an: Aragonés
     ar: Árabe
+    an: Aragonés
+    hy: Armeniu
     as: Asamés
+    ae: Avestanu
     ay: Aimara
     az: Azerbaixanu
+    eu: Vascu
     be: Bielorrusu
-    bg: Búlgaru
-    bo: Tibetanu
-    br: Bretón
     bs: Bosniu
+    br: Bretón
+    bg: Búlgaru
+    my: Birmanu
     ca: Catalán; valencianu
     ce: Chechenu
+    zh: Chinu
+    kw: Córnicu
     co: Corsu
+    hr: Croata
     cs: Checu
-    cy: Galés
     da: Danés
-    de: Alemán
-    el: Griegu, modernu (1453-)
+    nl: Holandés; flamencu
     en: Inglés
     eo: Esperantu
-    es: Español; castellanu
     et: Estoniu
-    eu: Vascu
-    fa: Persa
-    fi: Finés
-    fj: Fixanu
     fo: Feroés
+    fj: Fixanu
+    fi: Finés
     fr: Francés
-    fy: Frisón occidental
-    ga: Irlandés
     gl: Gallegu
+    ka: Xeorxanu
+    de: Alemán
+    el: Griegu, modernu (1453-)
     gn: Guaraní
-    gv: Manés
-    he: Hebréu
-    hr: Croata
     ht: Haitianu; criollu haitianu
+    he: Hebréu
     hu: Húngaru
-    hy: Armeniu
-    ia: Interllingua (International Auxiliary Language Association)
-    id: Indonesiu
     is: Islandés
+    id: Indonesiu
+    ia: Interllingua (International Auxiliary Language Association)
+    ga: Irlandés
     it: Italianu
     ja: Xaponés
     jp: Xaponés
-    ka: Xeorxanu
     kk: Kazaquistanín
-    ko: Coreanu
-    kw: Córnicu
     ky: Kirguistanín
-    la: Llatín
-    lb: Luxemburgués
+    ko: Coreanu
     lo: Laosianu
-    lt: Lituanu
+    la: Llatín
     lv: Letón
-    mg: Malgaxe
+    lt: Lituanu
+    lb: Luxemburgués
     mk: Macedoniu
-    mn: Mongol
+    mg: Malgaxe
     ms: Malayu
     mt: Maltés
-    my: Birmanu
+    gv: Manés
+    mn: Mongol
     ne: Nepalín
-    nl: Holandés; flamencu
     "no": Noruegu
     oc: Occitanu (post 1500)
+    fa: Persa
     pl: Polacu
     pt: Portugués
     qu: Quechua
     rm: Romanche
     ru: Rusu
+    sm: Samoanu
     sa: Sánscritu
     sc: Sardu
+    sr: Serbiu
     sk: Eslovacu
     sl: Eslovenu
-    sm: Samoanu
     so: Somalín
-    sq: Albanés
-    sr: Serbiu
+    es: Español; castellanu
     sv: Suecu
+    tl: Tagalu
+    ty: Tahitianu
+    tg: Taxiquistanín
     ta: Tamil
     te: Telugu
-    tg: Taxiquistanín
     th: Tailandés
-    tl: Tagalu
+    bo: Tibetanu
     tr: Turcu
-    ty: Tahitianu
     uk: Ucraín
+    none: Ensin especificar
     uz: Uzbequistanín
     vi: Vietnamín
     vo: Volapük
-    zh: Chinu
+    cy: Galés
+    fy: Frisón occidental
     zu: Zulú
   layout_sign_in: Entrar
   layout_sign_up: Rexistrase

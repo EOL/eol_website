@@ -1,9 +1,20 @@
 //= require traits/data_viz/sankey
+//= require traits/data_viz/assoc
+//= require traits/data_viz/taxon_summary
 window.TraitDataViz = (function(exports) {
-  var BAR_COLORS = ['#b3d7ff', '#e6f2ff'];
+  const BAR_COLORS = ['#b3d7ff', '#e6f2ff'];
 
-  function buildBarChart(elmt) {
-    var width = 570
+  const typesToFns = {
+    bar: buildBarChart,
+    hist: buildHistogram,
+    sankey: Sankey.build,
+    assoc: AssocViz.build,
+    taxon_summary: TaxonSummaryViz.build
+  }
+
+  function buildBarChart($contain) {
+    var $elmt = $contain.find('.js-taxon-bar-chart')
+      , width = 750
       , hPad = 5
       , innerWidth = width - (hPad * 2)
       , barHeight = 20
@@ -11,15 +22,7 @@ window.TraitDataViz = (function(exports) {
       , labelY = 15 
       , labelX = 10
       , keyHeight = 40
-      /*
-      , data = [
-          { label: 'foo', count: 400 },
-          { label: 'bar', count: 250 },
-          { label: 'bax', count: 175 },
-          { label: 'other', count: 472 }
-        ].sort((a, b) => b.count - a.count)
-        */
-      , data = $('.js-taxon-bar-chart').data('results')
+      , data = $elmt.data('results')
       , maxCount = data.reduce((curMax, d) => {
           return Math.max(d.count, curMax) 
         }, 0)
@@ -33,10 +36,17 @@ window.TraitDataViz = (function(exports) {
     }
 
     data.forEach((d) => {
-      d.width = (d.count / maxCount) * innerWidth;
+      pctWidth = (d.count / maxCount);
+      d.width =  pctWidth * innerWidth;
+      d.label = pctWidth <= .25 || pctWidth >= .75 ?
+        d.label_long :
+        d.label_short;
+      d.prompt_text = pctWidth <= .25 || pctWidth >= .75 ?
+        d.prompt_long :
+        d.prompt_short;
     });
 
-    var svg = d3.select(elmt)
+    var svg = d3.select($elmt[0])
           .append('svg')
             .attr('width', width)
             .attr('height', height)
@@ -63,7 +73,7 @@ window.TraitDataViz = (function(exports) {
       .attr('transform', (d, i) => `translate(0, ${i * (barHeight + barSpace)})`)
       .style('cursor', (d) => d.search_path ? 'pointer' : 'default')
       .on('mouseenter', (e, d) => {
-        d3.select(e.target).select('text').text(d.prompt_text);
+        d3.select(e.target).select('text').text(d.prompt_text); 
       })
       .on('mouseleave', (e, d) => {
         d3.select(e.target).select('text').text(d.label);
@@ -133,8 +143,8 @@ window.TraitDataViz = (function(exports) {
     }
   }
 
-  function buildHistogram() {
-    var $elmt = $('.js-value-hist')
+  function buildHistogram($contain) {
+    var $elmt = $contain.find('.js-value-hist')
       , data = $elmt.data('json')
       , width = 850 
       , height = 530
@@ -292,60 +302,116 @@ window.TraitDataViz = (function(exports) {
     }
   }
 
-  function loadBarChart() {
-    var $contain = $('.js-bar-contain');
+  function loadViz($contain, loadFallbackIfPresent) {
+    function replaceWithFallback(jqXHR, textStatus) {
+      if (textStatus == 'nocontent') {
+        const $fallbackContain = $('.js-fallback-viz-contain');
 
-    if ($contain.length) {
-      loadViz($contain, () => {
-        $contain.find('.js-taxon-bar-chart').each(function() {
-          buildBarChart(this);
-        });
-      });
-    }
-  }
-
-  function loadHistogram() {
-    var $contain = $('.js-hist-contain');
-
-    if ($contain.length) {
-      loadViz($contain, buildHistogram);
-    }
-  }
-
-  function loadSankey() {
-    var $contain = $('.js-sankey-contain')
-
-    if ($contain.length) {
-      loadViz($contain, Sankey.build);
-    }
-  }
-
-  function loadViz($contain, ready) {
-    $.get($contain.data('loadPath'), (result) => {
-      $contain.find('.js-viz-spinner').remove();
-
-      if (result) {
-        $contain.append(result);
-        $contain.find('.js-viz-text').removeClass('uk-hidden');
-        ready();
+        if ($fallbackContain.length) {
+          $contain.replaceWith($fallbackContain); 
+          $fallbackContain.removeClass('uk-hidden');
+          loadViz($fallbackContain, false);
+        }
       }
-    })
-    .fail(() => {
+    }
+
+    const success = loadFallbackIfPresent ? loadFallbackViz : null
+        , complete = loadFallbackIfPresent ? replaceWithFallback : null
+        ;
+
+    function error(jqXHR, textStatus, errorThrown) {
       $contain.empty();
+    }
+
+    loadVizHelper($contain, success, error, complete);
+  }
+
+  function loadFallbackViz($contain) {
+    const $parent = $contain.closest('.js-viz-with-fallback')
+        ;
+
+    if ($parent.length) {
+      const $fallbackContain = $parent.find('.js-fallback-viz-contain')
+          , $toggle = $parent.find('.js-viz-toggle')
+          , $toggleSpinner = $toggle.find('.js-viz-toggle-spin')
+          ;
+
+      function success() {
+        $toggleSpinner.remove();
+        $toggleLink = $toggle.find('.js-viz-toggle-link');
+        $toggleLink.html($fallbackContain.data('toggleText')); 
+        $toggleLink.click(toggleViz);
+      }
+
+      function error() {
+        $toggle.remove();
+        $fallbackContain.remove();
+      }
+
+      if ($fallbackContain.length) {
+        $toggleSpinner.show();
+        $contain.addClass('js-viz-cur');
+        $fallbackContain.addClass('js-viz-alt');
+        loadVizHelper($fallbackContain, success, error, null);
+      }
+    }
+  }
+
+  function toggleViz() {
+    const $this = $(this)
+        , $parent = $this.closest('.js-viz-with-fallback')
+        , $cur = $parent.find('.js-viz-cur')
+        , $alt = $parent.find('.js-viz-alt')
+        ;
+
+    $this.html($cur.data('toggleText'));
+    $cur.addClass('uk-hidden');
+    $cur.removeClass('js-viz-cur');
+    $cur.addClass('js-viz-alt');
+    $alt.removeClass('uk-hidden');
+    $alt.removeClass('js-viz-alt');
+    $alt.addClass('js-viz-cur');
+  }
+
+
+  function loadVizHelper($contain, success, error, complete) {
+    const ready = typesToFns[$contain.data('type')];
+
+    $.ajax($contain.data('loadPath'), {
+      success: (result) => {
+        $contain.find('.js-viz-spinner').remove();
+
+        if (result) {
+          $contain.append(result);
+          $contain.find('.js-viz-text').removeClass('uk-hidden');
+          ready($contain);
+          
+          if (success) {
+            success($contain);
+          }
+        }
+      },
+      error: error,
+      complete: complete
     });
   }
 
-  exports.loadBarChart = loadBarChart;
-  exports.loadHistogram = loadHistogram;
-  exports.loadSankey = loadSankey;
+  function loadAll() {
+    const $contain = $('.js-viz-contain');
+
+    $contain.each(function() {
+      const $this = $(this);
+
+      if (!$this.hasClass('js-fallback-viz-contain')) {
+        loadViz($this, true);
+      }
+    });
+  }
+
+  exports.loadAll = loadAll;
 
   return exports;
 })({});
 
-$(function() {
-  TraitDataViz.loadBarChart();
-  TraitDataViz.loadHistogram();
-  TraitDataViz.loadSankey();
-})
-
+$(TraitDataViz.loadAll);
 

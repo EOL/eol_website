@@ -4,15 +4,16 @@ class Publishing::PubLog
 
   def initialize(resource = nil, options = {})
     @resource = resource
-    @logger = if @resource
-      if options[:use_existing_log] || @resource.import_logs.count.zero?
-        @resource.create_log # This is an ImportLog.
-      else
-        @resource.import_logs.last
-      end
-    else
-      nil
-    end
+    @logger = @resource ? choose_logger(options[:use_existing_log]) : nil
+  end
+
+  def choose_logger(option)
+    return @resource.create_log if @resource.import_logs.count.zero?
+
+    last_log = @resource.import_logs.last
+    return last_log if option
+    return last_log if last_log.created_at > 15.minutes.ago
+    return @resource.create_log
   end
 
   def start(what)
@@ -31,6 +32,10 @@ class Publishing::PubLog
     log(what.to_s, cat: :infos)
   end
 
+  def error(what)
+    log(what.to_s, cat: :errors)
+  end
+
   def log(what, type = nil)
     cat = type && type.key?(:cat) ? type[:cat] : :starts
     add_text_logs("(#{cat}) #{what}")
@@ -41,15 +46,17 @@ class Publishing::PubLog
     add_text_logs("(errors) !! #{e.message}")
     count = 1
     root = Rails.root.to_s
-    e.backtrace.each do |trace|
-      trace = trace.sub(root, '[root]').sub(%r{\A.*/gems/}, '[gems]/')
-      add_text_logs("(errors) (trace) #{trace}")
-      if count >= 10
-        more = e.backtrace.size - 10
-        add_text_logs("(errors) (trace) SKIPPING #{more} MORE")
-        break
+    if e.backtrace
+      e.backtrace.each do |trace|
+        trace = trace.sub(root, '[root]').sub(%r{\A.*/gems/}, '[gems]/')
+        add_text_logs("(errors) (trace) #{trace}")
+        if count >= 10
+          more = e.backtrace.size - 10
+          add_text_logs("(errors) (trace) SKIPPING #{more} MORE")
+          break
+        end
+        count += 1
       end
-      count += 1
     end
     @logger&.fail_on_error(e)
   end

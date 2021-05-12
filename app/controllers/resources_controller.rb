@@ -1,5 +1,5 @@
 class ResourcesController < ApplicationController
-  before_action :require_admin, except: [:index, :show, :autocomplete]
+  before_action :require_admin, except: [:index, :show, :by_abbr, :autocomplete]
 
   def index
     @resources = Resource.order('updated_at DESC')
@@ -13,23 +13,37 @@ class ResourcesController < ApplicationController
     end
   end
 
+  def by_abbr
+    @resource = Resource.find_by_abbr(params[:abbr])
+
+    respond_to do |fmt|
+      fmt.json do
+        render json: {
+          id: @resource.id,
+          repository_id: @resource.repository_id,
+          abbr: @resource.abbr,
+          name: @resource.name,
+          description: @resource.description,
+          notes: @resource.notes,
+          is_browsable: @resource.is_browsable,
+          has_duplicate_nodes: @resource.has_duplicate_nodes,
+          node_source_url_template: @resource.node_source_url_template,
+          dataset_license_id: @resource.dataset_license_id,
+          dataset_rights_holder: @resource.dataset_rights_holder,
+          dataset_rights_statement: @resource.dataset_rights_statement,
+          classification: @resource.classification
+        }
+      end
+    end
+  end
+
   def show
     @resource = Resource.find(params[:id])
   end
 
-  def sync
-    if (info = ImportLog.already_running?)
-      flash[:alert] = info
-    else
-      Publishing.delay(queue: 'harvest').sync
-      flash[:notice] = "Resources will be checked against the repository."
-    end
-    redirect_to resources_path
-  end
-
   def clear_publishing
     ImportLog.all_clear!
-    flash[:notice] = "All clear. You can sync, now."
+    flash[:notice] = 'All clear. You can publish, now.'
     redirect_to resources_path
   end
 

@@ -11,6 +11,10 @@ class PageDecorator
 
     FLOWER_VISITOR_LIMIT = 4
     SUBJ_RESET = 3
+    LEAF_PREDICATES = [
+      TermNode.find_by_alias('leaf_complexity'),
+      TermNode.find_by_alias('leaf_morphology')
+    ]
 
     def initialize(page, view)
       @page = page
@@ -18,69 +22,66 @@ class PageDecorator
       @sentences = []
       @terms = []
 
-      @subj_count = 0
       @full_name_used = false
     end
 
     # NOTE: this will only work for these specific ranks (in the DWH). This is by design (for the time-being). # NOTE: I'm
     # putting species last because it is the most likely to trigger a false-positive. :|
     def english
-      I18n.with_locale(:en) do
-        if is_above_family?
-          above_family
-        else
-          if !a1.nil?
-            if is_family?
-              family
-            elsif is_genus?
-              genus
-            elsif is_species?
-              species
-            end
+      if is_above_family?
+        above_family
+      else
+        if !a1.nil?
+          if is_family?
+            family
+          elsif is_genus?
+            genus
+          elsif is_species?
+            species
           end
         end
-
-        landmark_children
-        plant_description_sentence
-        flower_visitor_sentence
-        fixes_nitrogen_sentence
-        forms_sentence
-        ecosystem_engineering_sentence
-        behavioral_sentence
-
-        if is_species?
-          lifespan_size_sentence
-        end
-
-        reproduction_sentences
-        motility_sentence
-
-        Result.new(@sentences.join(' '), @terms)
       end
+
+      landmark_children
+      plant_description_sentence
+      flower_visitor_sentence
+      fixes_nitrogen_sentence
+      forms_sentence
+      ecosystem_engineering_sentence
+      behavioral_sentence
+
+      if is_species?
+        lifespan_size_sentence
+      end
+
+      reproduction_sentences
+      motility_sentence
+
+      Result.new(@sentences.join(' '), @terms)
     end
 
     private
       LandmarkChildLimit = 3
       Result = Struct.new(:sentence, :terms)
-      ResultTerm = Struct.new(:pred_uri, :term, :source, :toggle_selector)
+      ResultTerm = Struct.new(:predicate, :term, :source, :toggle_selector)
 
       IUCN_URIS = Set[
-        Eol::Uris::Iucn.en,
-        Eol::Uris::Iucn.cr,
-        Eol::Uris::Iucn.ew,
-        Eol::Uris::Iucn.nt,
-        Eol::Uris::Iucn.vu
+        TermNode.find_by_alias('iucn_en'),
+        TermNode.find_by_alias('iucn_cr'),
+        TermNode.find_by_alias('iucn_ew'),
+        TermNode.find_by_alias('iucn_nt'),
+        TermNode.find_by_alias('iucn_vu')
       ]
 
       def add_sentence(options = {})
-        use_name = @subj_count == 0
+        use_name = !@full_name_used
         subj = use_name ? name_clause : pronoun_for_rank.capitalize
-        is = is_species? ? "is" : "are"
-        has = is_species? ? "has" : "have"
+        are = extinct? ? 'were' : 'are' 
+        have = extinct? ? 'had' : 'have'
         sentence = nil
 
         begin
-          sentence = yield(subj, is, has)
+          sentence = yield(subj, are, have)
         rescue BadTraitError => e
           Rails.logger.warn(e.message)
         end
@@ -88,21 +89,14 @@ class PageDecorator
         if sentence.present?
           if sentence.start_with?("#{subj} ")
             @full_name_used ||= use_name
-            @subj_count = (@subj_count + 1) % SUBJ_RESET
-          else
-            @subj_count = 0
           end
 
           @sentences << sentence
         end
       end
 
-      def report_name_used
-        @subj_count = 1
-      end
-
       def pronoun_for_rank
-        is_species? ? "it" : "they"
+        "they"
       end
 
       def is_above_family?
@@ -127,7 +121,7 @@ class PageDecorator
           end
         end
 
-        first_appearance_trait = first_trait_for_pred_uri_w_obj(Eol::Uris.fossil_first)
+        first_appearance_trait = @page.first_trait_for_predicate(TermNode.find_by_alias('fossil_first'), with_object_term: true)
 
         if first_appearance_trait
           add_sentence do |_, __, ___|
@@ -150,7 +144,7 @@ class PageDecorator
               match.trait
             )
           elsif match = growth_habit_matches.first_of_type(:species_of_lifecycle_x)
-            lifecycle_trait = first_trait_for_pred_uri(Eol::Uris.lifecycle_habit)
+            lifecycle_trait = @page.first_trait_for_predicate(TermNode.find_by_alias('lifecycle_habit'))
             if lifecycle_trait
               lifecycle_part = trait_sentence_part("%s", lifecycle_trait)
               species_parts << trait_sentence_part(
@@ -178,18 +172,18 @@ class PageDecorator
         end
 
         if match = growth_habit_matches.first_of_type(:is_an_x)
-          add_sentence do |subj, _, __|
+          add_sentence do |subj, are, __|
             trait_sentence_part(
-              "#{subj} is #{a_or_an(match.trait)} %s.",
+              "#{subj} #{are} %ss.",
               match.trait
             )
           end
         end
 
         if match = growth_habit_matches.first_of_type(:has_an_x_growth_form)
-          add_sentence do |subj, _, __|
+          add_sentence do |subj, are, have|
             trait_sentence_part(
-              "#{subj} has #{a_or_an(match.trait)} %s growth form.",
+              "#{subj} #{have} #{a_or_an(match.trait)} %s growth form.",
               match.trait
             )
           end
@@ -206,25 +200,28 @@ class PageDecorator
         # sentence. environment sentence: "It is marine." If the species is both marine and extinct, insert both the
         # extinction status sentence and the environment sentence, with the extinction status sentence first.
         if is_it_marine?
-          marine_term = TraitBank::Term.term_as_hash(Eol::Uris.marine)
-          add_sentence do |subj, _, __|
-            term_sentence_part("#{subj} is found in %s.", "marine habitat", Eol::Uris.habitat_includes, marine_term)
+          add_sentence do |subj, are, _|
+            term_sentence_part(
+              "#{subj} #{are} found in %s.", "marine habitat", 
+              TermNode.find_by_alias('habitat'), 
+              TermNode.find_by_alias('marine')
+            )
           end
         elsif freshwater_trait.present?
-          add_sentence do |subj, _, __|
-            term_sentence_part("#{subj} is associated with %s.", "freshwater habitat", freshwater_trait[:predicate][:uri], freshwater_trait[:object_term])
+          add_sentence do |subj, are, _|
+            term_sentence_part("#{subj} #{are} associated with %s.", "freshwater habitat", freshwater_trait.predicate, freshwater_trait.object_term)
           end
         end
 
 
-        native_range_part = values_to_sentence([Eol::Uris.native_range])
+        native_range_part = values_to_sentence([TermNode.find_by_alias('native_range')])
         if native_range_part.present?
-          add_sentence do |subj, is, _|
-            "#{subj} #{is} native to #{native_range_part}."
+          add_sentence do |subj, are, _|
+            "#{subj} #{are} native to #{native_range_part}."
           end
         elsif g1
-          add_sentence do |subj, is, _|
-            "#{subj} #{is} found in #{g1}."
+          add_sentence do |subj, are, _|
+            "#{subj} #{are} found in #{g1}."
           end
         end
       end
@@ -233,11 +230,11 @@ class PageDecorator
       # GrowthHabitGroup.match returns a result, or nil if none do. The result
       # of this operation is cached.
       def growth_habit_matches
-        @growth_habit_matches ||= GrowthHabitGroup.match_all(traits_for_pred_uris(Eol::Uris.growth_habit))
+        @growth_habit_matches ||= GrowthHabitGroup.match_all(@page.traits_for_predicate(TermNode.find_by_alias('growth_habit')))
       end
 
       def reproduction_matches
-        @reproduction_matches ||= ReproductionGroupMatcher.match_all(traits_for_pred_uris(Eol::Uris.reproduction))
+        @reproduction_matches ||= ReproductionGroupMatcher.match_all(@page.traits_for_predicate(TermNode.find_by_alias('reproduction')))
       end
 
       # [name clause] is a genus in the [A1] family [A2].
@@ -271,24 +268,27 @@ class PageDecorator
         children = @page.native_node&.landmark_children(LandmarkChildLimit) || []
 
         if children.any?
-          taxa_links = children.map { |c| view.link_to(c.page.vernacular_or_canonical, c.page) }
+          taxa_links = children.map { |c| view.link_to(c.page.vernacular_or_canonical(Locale.english), c.page) }
           add_sentence do |subj, _, __|
-            "#{subj} includes groups like #{taxa_links.to_sentence}."
+            "#{subj} includes groups like #{to_sentence(taxa_links)}."
           end
         end
       end
 
       def behavioral_sentence
-        circadian = first_trait_for_obj_uris(
-          Eol::Uris.nocturnal,
-          Eol::Uris.diurnal,
-          Eol::Uris.crepuscular
-        )
-        solitary = first_trait_for_obj_uris(Eol::Uris.solitary)
+        circadian = @page.first_trait_for_object_terms([
+          TermNode.find_by_alias('nocturnal'),
+          TermNode.find_by_alias('diurnal'),
+          TermNode.find_by_alias('crepuscular')
+        ])
+        solitary = @page.first_trait_for_object_terms([TermNode.find_by_alias('solitary')])
         begin_traits = [solitary, circadian].compact
-        trophic = first_trait_for_pred_uri(Eol::Uris.trophic_level)
+        trophic = @page.first_trait_for_predicate(
+          TermNode.find_by_alias('trophic_level'), 
+          exclude_values: [TermNode.find_by_alias('variable')]
+        )
 
-        add_sentence do |subj, is, _|
+        add_sentence do |subj, are, _|
           sentence = nil
           trophic_part = trait_sentence_part("%s", trophic, pluralize: true) if trophic
 
@@ -298,23 +298,15 @@ class PageDecorator
             end
 
             if trophic_part
-              sentence = "#{subj} #{is_a(is, begin_traits.first)} #{begin_parts.join(", ")} #{trophic_part}."
+              sentence = "#{subj} #{are} #{begin_parts.join(", ")} #{trophic_part}."
             else
-              sentence = "#{subj} #{is} #{begin_parts.join(" and ")}."
+              sentence = "#{subj} #{are} #{begin_parts.join(" and ")}."
             end
           elsif trophic_part
-            sentence = "#{subj} #{is_a(is, trophic)} #{trophic_part}."
+            sentence = "#{subj} #{are} #{trophic_part}."
           end
 
           sentence
-        end
-      end
-
-      def is_a(is, word)
-        if is_species?
-          "#{is} #{a_or_an(word)}"
-        else
-          is # 'are'
         end
       end
 
@@ -322,41 +314,44 @@ class PageDecorator
         lifespan_part = nil
         size_part = nil
 
-        lifespan_trait = first_trait_for_pred_uri(Eol::Uris.lifespan)
-        if lifespan_trait
-          value = lifespan_trait[:measurement]
-          units_name = lifespan_trait.dig(:units, :name)
+        add_sentence do |subj, are, _|
+          lifespan_trait = @page.first_trait_for_predicate(TermNode.find_by_alias('lifespan'))
+          if lifespan_trait
+            value = lifespan_trait.measurement
+            units_name = lifespan_trait.units_term&.name
 
-          if value && units_name
-            lifespan_part = "are known to live for #{value} #{units_name}"
-          end
-        end
-
-        size_traits = traits_for_pred_uris(Eol::Uris.body_mass)
-        size_traits = traits_for_pred_uris(Eol::Uris.body_length) if size_traits.empty?
-
-        if size_traits.any?
-          largest_value_trait = nil
-
-          size_traits.each do |trait|
-            if trait[:normal_measurement] &&
-               trait[:measurement] &&
-               trait[:units] && (
-               !largest_value_trait ||
-               largest_value_trait[:normal_measurement].to_f < trait[:normal_measurement].to_f
-            )
-              largest_value_trait = trait
+            if value && units_name
+              lifespan_part = "#{are} known to live for #{value} #{units_name}"
             end
           end
 
-          if largest_value_trait
-            size_part = "can grow to #{largest_value_trait[:measurement]} #{largest_value_trait[:units][:name]}"
-          end
-        end
+          size_traits = @page.traits_for_predicate(TermNode.find_by_alias('body_mass'))
+          size_traits = @page.traits_for_predicate(TermNode.find_by_alias('body_length')) if size_traits.empty?
 
-        if lifespan_part || size_part
-          add_sentence do |_, __, ___|
-            "Individuals #{[lifespan_part, size_part].compact.to_sentence}."
+          if size_traits.any?
+            largest_value_trait = nil
+
+            size_traits.each do |trait|
+              if trait.normal_measurement &&
+                 trait.measurement &&
+                 trait.units_term && (
+                 !largest_value_trait ||
+                 largest_value_trait.normal_measurement.to_f < trait.normal_measurement.to_f
+              )
+                largest_value_trait = trait
+              end
+            end
+
+            if largest_value_trait
+              can = extinct? ? 'could' : 'can' 
+              size_part = "#{can} grow to #{largest_value_trait.measurement} #{largest_value_trait.units_term.name}"
+            end
+          end
+
+          if lifespan_part || size_part
+            "Individuals #{to_sentence([lifespan_part, size_part].compact)}."
+          else
+            nil
           end
         end
       end
@@ -364,33 +359,33 @@ class PageDecorator
       def reproduction_sentences
         matches = reproduction_matches
 
-        add_sentence do |subj, is, has|
+        add_sentence do |subj, are, have|
           vpart = if matches.has_type?(:v)
-                    v_vals = matches.by_type(:v).collect do |match|
+                    v_vals = to_sentence(matches.by_type(:v).collect do |match|
                       trait_sentence_part("%s", match.trait)
-                    end.to_sentence
+                    end)
 
-                    "#{subj} #{has} #{v_vals}"
+                    "#{subj} #{have} #{v_vals}"
                   else
                     nil
                   end
 
           wpart = if matches.has_type?(:w)
-                    w_vals = matches.by_type(:w).collect do |match|
+                    w_vals = to_sentence(matches.by_type(:w).collect do |match|
                       trait_sentence_part(
-                        "#{is_species? ? "#{a_or_an(match.trait)} " : ""}%s",
+                        "%s",
                         match.trait,
                         pluralize: true
                       )
-                    end.to_sentence
+                    end)
 
-                    "#{is} #{w_vals}"
+                    "#{are} #{w_vals}"
                   else
                     nil
                   end
 
           if vpart && wpart
-            wpart = "#{pronoun_for_rank} #{wpart}"
+            wpart = "they #{wpart}"
             "#{vpart}; #{wpart}."
           elsif vpart
             "#{vpart}."
@@ -400,61 +395,59 @@ class PageDecorator
         end
 
         if matches.has_type?(:y)
-          add_sentence do |subj, is, has|
-            y_parts = matches.by_type(:y).collect do |match|
+          add_sentence do |subj, are, have|
+            y_parts = to_sentence(matches.by_type(:y).collect do |match|
               trait_sentence_part("%s #{match.trait[:predicate][:name]}", match.trait)
-            end.to_sentence
+            end)
 
-            "#{subj} #{has} #{y_parts}."
+            "#{subj} #{have} #{y_parts}."
           end
         end
 
         if matches.has_type?(:x)
           add_sentence do |_, __, ___|
-            x_parts = matches.by_type(:x).collect do |match|
+            x_parts = to_sentence(matches.by_type(:x).collect do |match|
               trait_sentence_part("%s", match.trait)
-            end.to_sentence
+            end)
 
-            "Reproduction is #{x_parts}."
+            is = extinct? ? 'was' : 'is'
+
+            "Reproduction #{is} #{x_parts}."
           end
         end
 
         if matches.has_type?(:z)
-          add_sentence do |subj, is, has|
-            z_parts = matches.by_type(:z).collect do |match|
+          add_sentence do |subj, are, have|
+            z_parts = to_sentence(matches.by_type(:z).collect do |match|
               trait_sentence_part("%s", match.trait)
-            end.to_sentence
+            end)
 
-            "#{subj} #{has} parental care (#{z_parts})."
+            "#{subj} #{have} parental care (#{z_parts})."
           end
         end
       end
 
-      def species_or_other(species, other)
-        is_species? ? species : other
-      end
-
       def motility_sentence
-        matches = MotilityGroupMatcher.match_all(traits_for_pred_uris(
-          Eol::Uris.motility,
-          Eol::Uris.locomotion
-        ))
+        matches = MotilityGroupMatcher.match_all(@page.traits_for_predicates([
+          TermNode.find_by_alias('motility'),
+          TermNode.find_by_alias('locomotion')
+        ]))
 
         if matches.has_type?(:c)
           add_sentence do |subj, _, __|
             match = matches.first_of_type(:c)
             trait_sentence_part(
-              "#{subj} #{species_or_other("relies", "rely")} on %s to move around.",
+              "#{subj} rely on %s to move around.",
               match.trait
             )
           end
         elsif matches.has_type?(:a) && matches.has_type?(:b)
-          add_sentence do |subj, is, _|
+          add_sentence do |subj, are, _|
             a_match = matches.first_of_type(:a)
             b_match = matches.first_of_type(:b)
 
             a_part = trait_sentence_part(
-              "#{subj} #{is_a(is, a_match.trait)} %s",
+              "#{subj} #{are} %s",
               a_match.trait
             )
 
@@ -465,7 +458,7 @@ class PageDecorator
             )
           end
         elsif matches.has_type?(:a)
-          add_sentence do |subj, is, _|
+          add_sentence do |subj, are, _|
             match = matches.first_of_type(:a)
 
             if @page.animal?
@@ -474,18 +467,18 @@ class PageDecorator
               organism_animal = "organism"
             end
 
-            organism_animal = organism_animal.pluralize unless is_species?
+            organism_animal = organism_animal.pluralize
 
             trait_sentence_part(
-              "#{subj} #{is_a(is, match.trait)} %s #{organism_animal}.",
+              "#{subj} #{are} %s #{organism_animal}.",
               match.trait
             )
           end
         elsif matches.has_type?(:b)
-          add_sentence do |subj, is, _|
+          add_sentence do |subj, are, _|
             match = matches.first_of_type(:b)
             trait_sentence_part(
-              "#{subj} #{is_a(is, match.trait)} %s.",
+              "#{subj} #{are} %s.",
               match.trait,
               pluralize: true
             )
@@ -494,14 +487,14 @@ class PageDecorator
       end
 
       def plant_description_sentence
-        leaf_traits = Eol::Uris.flopos.collect { |uri| first_trait_for_pred_uri(uri) }.compact
-        flower_trait = first_trait_for_pred_uri(Eol::Uris.flower_color)
-        fruit_trait = first_trait_for_pred_uri(Eol::Uris.fruit_type)
+        leaf_traits = LEAF_PREDICATES.collect { |term| @page.first_trait_for_predicate(term) }.compact
+        flower_trait = @page.first_trait_for_predicate(TermNode.find_by_alias('flower_color'))
+        fruit_trait = @page.first_trait_for_predicate(TermNode.find_by_alias('fruit_type'))
         leaf_part = nil
         flower_part = nil
         fruit_part = nil
 
-        add_sentence do |subj, is, has|
+        add_sentence do |subj, are, have|
           if leaf_traits.any?
             leaf_parts = leaf_traits.collect { |trait| trait_sentence_part("%s", trait) }
             leaf_part = "#{leaf_parts.join(", ")} leaves"
@@ -518,7 +511,7 @@ class PageDecorator
           parts = [leaf_part, flower_part, fruit_part].compact
 
           if parts.any?
-            "#{subj} #{has} #{parts.to_sentence}."
+            "#{subj} #{have} #{to_sentence(parts)}."
           else
             nil
           end
@@ -526,82 +519,85 @@ class PageDecorator
       end
 
       def flower_visitor_sentence
-        traits = traits_for_pred_uris(Eol::Uris.flowers_visited_by).uniq do |t|
-          t.dig(:object_term, :uri)
-        end.slice(0, FLOWER_VISITOR_LIMIT)
+        pages = @page.traits_for_predicate(TermNode.find_by_alias('visits_flowers_of')).map do |t|
+          t.page
+        end.uniq.slice(0, FLOWER_VISITOR_LIMIT)
 
-        if traits && traits.any?
-          parts = traits.collect { |trait| trait_sentence_part("%s", trait) }
+        if pages.any?
+          parts = pages.collect { |page| association_sentence_part("%s", page) }
+
           add_sentence do |_, __, ___|
-            "Flowers are visited by #{parts.to_sentence}."
+            "Flowers are visited by #{to_sentence(parts)}."
           end
         end
       end
 
       def fixes_nitrogen_sentence
-        trait = first_trait_for_pred_and_obj(Eol::Uris.fixes, Eol::Uris.nitrogen)
+        trait = @page.first_trait_for_predicate(TermNode.find_by_alias('fixes'), for_object_term: TermNode.find_by_alias('nitrogen'))
 
         if trait
-          fixes_label = is_species? ? "fixes" : "fix"
-          fixes_part = term_sentence_part("%s", fixes_label, nil, trait[:predicate])
+          fixes_part = term_sentence_part("%s", 'fix', nil, trait.predicate)
 
           add_sentence do |subj, _, __|
             term_sentence_part(
               "#{subj} #{fixes_part} %s.",
               "nitrogen",
-              trait[:predicate][:uri],
-              trait[:object_term]
+              trait.predicate,
+              trait.object_term
             )
           end
         end
       end
 
-      def forms_sentence
-        forms_traits = @page.grouped_data[Eol::Uris.forms] || [] #intentionally skip descendants of this term
+      def forms_sentence 
+        # intentionally skip descendants of this term
+        forms_traits = (@page.grouped_data[TermNode.find_by_alias('forms')] || []).uniq { |t| t.dig(:object_term, :uri) }
 
         if forms_traits.any?
-          lifestage_trait = forms_traits.find do |t|
+          lifestage_traits = forms_traits.find_all do |t|
             t.[](:lifestage_term)&.[](:name)&.present?
           end
 
-          if lifestage_trait
-            trait = lifestage_trait
-            lifestage = trait.dig(:lifestage_term, :name)&.capitalize
-          else
-            trait = forms_traits.first
-            lifestage = nil
+          other_traits = forms_traits.reject do |t|
+            t.[](:lifestage_term)&.[](:name)&.present?
           end
 
-          begin_part = [lifestage, name_clause].compact.join(" ")
-          form_part = term_sentence_part("%s", "form", nil, trait[:predicate])
-
-          if trait
-            add_sentence do |_, __, ___|
-              trait_sentence_part(
-                "#{begin_part} #{form_part} %ss.", #extra s for plural, not a typo
-                trait
-              )
-            end
-            report_name_used
+          if other_traits.any? && lifestage_traits.any?
+            sentence_traits = [other_traits.first, lifestage_traits.first]
+          elsif other_traits.any?
+            sentence_traits = other_traits[0..1]
+          elsif lifestage_traits.any?
+            sentence_traits = lifestage_traits[0..1]
           end
+
+          sentence_traits.each { |t| add_forms_sentence(t) }
+        end
+      end
+
+      def add_forms_sentence(trait)
+        lifestage = trait.dig(:lifestage_term, :name)&.capitalize
+        begin_part = [lifestage, name_clause].compact.join(" ")
+        form_part = term_sentence_part("%s", "form", nil, trait[:predicate])
+
+        add_sentence do |_, __, ___|
+          trait_sentence_part(
+            "#{begin_part} #{form_part} %ss.", #extra s for plural, not a typo
+            trait
+          )
         end
       end
 
       def ecosystem_engineering_sentence
-        trait = first_trait_for_pred_uri(Eol::Uris.ecosystem_engineering)
+        trait = @page.first_trait_for_predicate(TermNode.find_by_alias('ecosystem_engineering'))
 
         if trait
-          add_sentence do |subj, is, _|
-            if is_species?
-              trait_sentence_part("#{subj} #{is} #{a_or_an(trait)} %s.", trait)
-            else
-              obj_name = trait.dig(:object_term, :name)
+          add_sentence do |subj, are, _|
+            obj_name = trait.object_term&.name
 
-              if obj_name
-                term_sentence_part("#{subj} #{is} %s.", obj_name.pluralize, trait[:predicate][:uri], trait[:object_term])
-              else
-                nil
-              end
+            if obj_name
+              term_sentence_part("#{subj} #{are} %s.", obj_name.pluralize, trait.predicate, trait.object_term)
+            else
+              nil
             end
           end
         end
@@ -617,7 +613,7 @@ class PageDecorator
         return @a1_link if @a1_link
         @a1 ||= @page.ancestors.reverse.find { |a| a && a.minimal? }
         return nil if @a1.nil?
-        a1_name = @a1.page&.vernacular&.string || @a1.vernacular
+        a1_name = @a1.page&.vernacular(locale: Locale.english)&.string || @a1.vernacular(locale: Locale.english)
         # Vernacular sometimes lists things (e.g.: "wasps, bees, and ants"), and that doesn't work. Fix:
         a1_name = nil if a1_name&.match(' and ')
         a1_name ||= @a1.canonical
@@ -635,7 +631,7 @@ class PageDecorator
       def a2
         return @a2_link if @a2_link
         return nil if a2_node.nil?
-        a2_name = a2_node.page&.vernacular&.string || a2_node.vernacular
+        a2_name = a2_node.page&.vernacular(locale: Locale.english)&.string || a2_node.vernacular(locale: Locale.english)
         a2_name = nil if a2_name && a2_name =~ /family/i
         a2_name = nil if a2_name && a2_name =~ / and /i
         a2_name ||= a2_node.canonical_form
@@ -649,128 +645,39 @@ class PageDecorator
       # If the species has a value for measurement type http://purl.obolibrary.org/obo/GAZ_00000071, insert a Distribution
       # Sentence:  "It is found in [G1]."
       def g1
-        @g1 ||= values_to_sentence(['http://purl.obolibrary.org/obo/GAZ_00000071'])
+        @g1 ||= values_to_sentence([TermNode.find_by(uri: 'http://purl.obolibrary.org/obo/GAZ_00000071')])
       end
 
       def name_clause
-        if !@full_name_used && @page.vernacular
-          "#{@page.canonical} (#{@page.vernacular.string.titlecase})"
+        if !@full_name_used && @page.vernacular(locale: Locale.english)
+          "#{@page.canonical} (#{@page.vernacular(locale: Locale.english).string.titlecase})"
         else
-          @name_clause ||= @page.vernacular_or_canonical(Language.english)
+          @name_clause ||= @page.vernacular_or_canonical(Locale.english)
         end
       end
 
       # ...has a value with parent http://purl.obolibrary.org/obo/ENVO_00000447 for measurement type
       # http://eol.org/schema/terms/Habitat
       def is_it_marine?
-        env_terms = gather_terms([Eol::Uris.habitat_includes])
-        has_data_for_pred_terms(
-          env_terms,
-          values: [Eol::Uris.marine]
+        habitat_term = TermNode.find_by_alias('habitat')
+        @page.has_data_for_predicate(
+          habitat_term,
+          with_object_term: TermNode.find_by_alias('marine')
         ) &&
-        !has_data_for_pred_terms(
-          env_terms,
-          values: [Eol::Uris.terrestrial]
+        !@page.has_data_for_predicate(
+          habitat_term,
+          with_object_term: TermNode.find_by_alias('terrestrial')
         )
       end
 
       def freshwater_trait
-        @freshwater_trait ||= first_trait_for_obj_uris(Eol::Uris.freshwater)
-      end
-
-      def has_data(options)
-        has_data_for_pred_terms(gather_terms(options[:predicates]), options)
-      end
-
-      # This checks for descendants of options[:values] as well, and is
-      # preserved as a distinct method for that reason.
-      def has_data_for_pred_terms(pred_terms, options)
-        recs = []
-        pred_terms.each do |term|
-          next if @page.grouped_data[term].nil?
-          next if @page.grouped_data[term].empty?
-          recs += @page.grouped_data[term]
-        end
-        recs.compact!
-        return nil if recs.empty?
-        values = gather_terms(options[:values])
-        return nil if values.empty?
-        return true if recs.any? { |r| r[:object_term] && values.include?(r[:object_term][:uri]) }
-        return false
-      end
-
-      def traits_for_pred_uris(*pred_uris)
-        traits = []
-        terms = gather_terms(pred_uris.flatten)
-
-        terms.each do |term|
-          traits_for_term = @page.grouped_data[term]
-          traits.concat(traits_for_term) if traits_for_term
-        end
-
-        traits
-      end
-
-      def first_trait_for_pred_uri(pred_uri)
-        terms = gather_terms(pred_uri)
-
-        terms.each do |term|
-          recs = @page.grouped_data[term]
-
-          if recs && recs.any?
-            return recs.first
-          end
-        end
-
-        nil
-      end
-
-      def first_trait_for_pred_and_obj(pred_uri, obj_uri)
-        traits = traits_for_pred_uris(pred_uri)
-        traits.find { |t| t[:object_term].present? && t[:object_term][:uri] == obj_uri }
-      end
-
-      def first_trait_for_pred_uri_w_obj(pred_uri)
-        traits = traits_for_pred_uri(pred_uri)
-        traits.find { |t| t[:object_term].present? }
-      end
-
-      def traits_for_pred_uri(pred_uri)
-        terms = gather_terms(pred_uri)
-        traits = []
-
-        terms.each do |term|
-          recs = @page.grouped_data[term]
-
-          if recs
-            traits += recs
-          end
-        end
-
-        traits
-      end
-
-      def first_trait_for_obj_uris(*obj_uris)
-        obj_uris.each do |uri|
-          recs = @page.grouped_data_by_obj_uri[uri]
-          return recs.first if recs
-        end
-
-        return nil
-      end
-
-      def gather_terms(uris)
-        terms = []
-        Array(uris).each { |uri| terms << uri ; terms += TraitBank::Term.descendants_of_term(uri).map { |t| t['uri'] } }
-        terms.compact
+        @freshwater_trait ||= @page.first_trait_for_object_terms([TermNode.find_by_alias('freshwater')])
       end
 
       def add_extinction_sentence
-        extinct_trait = first_trait_for_obj_uris(Eol::Uris.extinct)
-        extant_trait = first_trait_for_obj_uris(*gather_terms(Eol::Uris.extant))
-        if !extant_trait && extinct_trait
+        if extinct?
           add_sentence do |_, __, ___|
-            term_sentence_part("This species is %s.", "extinct", Eol::Uris.extinction, extinct_trait[:object_term])
+            term_sentence_part("This species is %s.", "extinct", TermNode.find_by_alias('extinction_status'), extinct_trait.object_term)
           end
 
           true
@@ -779,21 +686,41 @@ class PageDecorator
         end
       end
 
+      def extinct?
+        extinct_trait.present? && !extant_trait.present?
+      end
+
+      def extinct_trait
+        unless @extinct_checked
+          @extinct_trait = @page.first_trait_for_object_terms([TermNode.find_by_alias('iucn_ex')])
+          @extinct_checked = true
+        end
+
+        @extinct_trait
+      end
+
+      def extant_trait
+        unless @extant_checked
+          @extant_trait = @page.first_trait_for_object_terms([TermNode.find_by_alias('extant')], match_object_descendants: true)
+          @extant_checked = true
+        end
+
+        @extant_trait
+      end
+
       # Print all values, separated by commas, with “and” instead of comma before the last item in the list.
-      def values_to_sentence(uris)
-        values = []
-        uris.flat_map { |uri| gather_terms(uri) }.each do |pred_uri|
-          next if @page.grouped_data[pred_uri].nil?
-          @page.grouped_data[pred_uri].each do |trait|
-            if trait.key?(:object_term)
-              obj_term = trait[:object_term]
-              values << term_tag(obj_term[:name], pred_uri, obj_term)
-            else
-              values << trait[:literal]
-            end
+      def values_to_sentence(predicates)
+        values = @page.traits_for_predicates(predicates, return_predicate: true).map do |row|
+          trait = row[:trait]
+
+          if trait.object_term
+            term_tag(trait.object_term.name, row[:predicate], trait.object_term)
+          else
+            trait.literal
           end
         end
-        values.any? ? values.uniq.to_sentence : nil
+        
+        values.any? ? to_sentence(values.uniq) : nil
       end
 
       # TODO: it would be nice to make these into a module included by the Page class.
@@ -843,21 +770,21 @@ class PageDecorator
         result << conservation_sentence_part("as %s by COSEWIC", status_recs[:cosewic]) if status_recs.include?(:cosewic)
         result << conservation_sentence_part("as %s by the US Fish and Wildlife Service", status_recs[:usfw]) if status_recs.include?(:usfw)
         result << conservation_sentence_part("in %s", status_recs[:cites]) if status_recs.include?(:cites)
+        
         if result.any?
-          add_sentence do |subj, _, __|
-            "#{subj} is listed #{result.to_sentence}."
+          add_sentence do |subj, are, _|
+            "#{subj} #{are} listed #{to_sentence(result)}."
           end
         end
-
       end
 
-      def conservation_sentence_part(fstr, rec)
+      def conservation_sentence_part(fstr, trait)
         term_sentence_part(
           fstr,
-          rec[:name],
-          Eol::Uris::Conservation.status,
-          rec[:object_term],
-          rec[:source]
+          trait.object_term.name,
+          TermNode.find_by_alias('conservation_status'),
+          trait.object_term,
+          trait.source
         )
       end
 
@@ -867,11 +794,11 @@ class PageDecorator
         "brief-summary-toggle-#{@term_toggle_count}"
       end
 
-      def term_tag(label, pred_uri, term, trait_source = nil)
+      def term_tag(label, predicate, term, trait_source = nil)
         toggle_id = term_toggle_id
 
         @terms << ResultTerm.new(
-          pred_uri,
+          predicate,
           term,
           trait_source,
           "##{toggle_id}"
@@ -879,48 +806,52 @@ class PageDecorator
         view.content_tag(:span, label, class: ["a", "term-info-a"], id: toggle_id)
       end
 
-      # Term can be a predicate or an object term. If pred_uri is nil, term is treated in the view
+      # Term can be a predicate or an object term. If predicate is nil, term is treated in the view
       # as a predicate; otherwise, it's treated as an object term.
-      def term_sentence_part(format_str, label, pred_uri, term, source = nil)
+      def term_sentence_part(format_str, label, predicate, term, source = nil)
         sprintf(
           format_str,
-          term_tag(label, pred_uri, term, source)
+          term_tag(label, predicate, term, source)
         )
       end
 
       def trait_sentence_part(format_str, trait, options = {})
         return '' if trait.nil?
 
-        if trait[:object_page_id]
-          association_sentence_part(format_str, trait[:object_page_id])
-        elsif trait[:predicate] && trait[:object_term]
-          name = trait[:object_term][:name]
-          name = name.pluralize if options[:pluralize] && !is_species?
-          pred_uri = trait[:predicate][:uri]
-          obj = trait[:object_term]
+        if trait.object_page
+          association_sentence_part(format_str, trait.object_page)
+        elsif trait.predicate && trait.object_term
+          name = trait.object_term.name
+          name = name.pluralize if options[:pluralize]
+          predicate = trait.predicate
+          obj = trait.object_term
+
           term_sentence_part(
             format_str,
             name,
-            pred_uri,
+            predicate,
             obj
           )
-        elsif trait[:literal]
-          sprintf(format_str, trait[:literal])
+        elsif trait.literal
+          sprintf(format_str, trait.literal)
         else
-          raise BadTraitError.new("Undisplayable trait: #{trait[:id]}")
+          raise BadTraitError.new("Undisplayable trait: #{trait.id}")
         end
       end
 
-      def association_sentence_part(format_str, object_page_id)
-        target_page = @page.associated_page(object_page_id)
-        target_page_part = if target_page.nil?
-                             Rails.logger.warn("Missing associated page for auto-generated text: #{object_page_id}!")
+      def association_sentence_part(format_str, object_page)
+        object_page_part = if object_page.nil?
+                             Rails.logger.warn("Missing associated page for auto-generated text")
                              "(page not found)"
-
                            else
-                             view.link_to(target_page.name.html_safe, target_page)
+                             view.link_to(object_page.name(Locale.english).html_safe, object_page)
                            end
-        sprintf(format_str, target_page_part)
+        sprintf(format_str, object_page_part)
+      end
+
+      # use instead of Array#to_sentence to use correct locale for text, rather than global I18n.locale
+      def to_sentence(a)
+        a.to_sentence(locale: :en)
       end
     # end private
   end

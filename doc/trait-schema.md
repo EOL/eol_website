@@ -257,4 +257,5 @@ They are *not* used in EOL's relational publishing database.
 
 * `parent_term` link: the Terms form a hierarchy, this gives the term's parent term
 * `synonym_of` link: a parent Term that this one is equivalent or approximately equivalent to. 
+* `inverse_of` link: Reserved for type 'association' Terms, that is, predicates for association Traits. If a given Term `t` has relationship `(t)-[:inverse_of]->(other:Term)`, `t` should not be used directly in Trait queries as it isn't attached to any Traits. Instead, use its inverse in the opposite direction. For example, `MATCH (p:Page)-[:trait|inferred_trait]->(trait:Trait)-[:predicate]->(t)` becomes `MATCH (trait:Trait)-[:object_page]->(p), (trait)-[:predicate]->(other:Term)<-[:inverse_of]-(t)`. 
 * `object_for_predicate` link: a periodically-refreshed convenience relationship linking obj and pred terms where there exists (pred:Term)<-[:parent\_term|:synonym\_of\*0..]-(:Term)<-[:predicate]-(:Trait)-[:object\_term]->(:Term)-[:parent\_term|:synonym\_of\*0..]->(obj:Term).

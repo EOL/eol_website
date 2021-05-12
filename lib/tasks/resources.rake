@@ -30,7 +30,7 @@ task resources: :environment do
     else
       print "NO IMPORT LOGS. "
     end
-    traits = TraitBank.count_by_resource(resource.id)
+    traits = TraitBank::Queries.count_by_resource(resource.id)
     print "#{traits} traits " unless traits.zero?
     show_count(resource, :media)
     show_count(resource, :articles)
@@ -38,5 +38,15 @@ task resources: :environment do
     show_count(resource, :vernaculars)
     show_count(resource, :referents, last: true)
     print "\n"
+  end
+end
+
+namespace :resources do
+  task sync: :environment do
+    usage = '$ rake resources:sync ABBR=<abbr>'
+    abbr = ENV['ABBR']
+
+    raise usage if abbr.nil?
+    Resource::RemoteImporter.new(abbr).import
   end
 end

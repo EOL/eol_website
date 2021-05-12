@@ -18,7 +18,7 @@ class GbifDownload < ApplicationRecord
   }
 
   PAGE_LIMIT = 100_000
-  GBIF_CREATE_URI = URI("https://api.gbif.org/v1/occurrence/download/request")
+  GBIF_CREATE_URI = URI("https://api.gbif.org/v1/occurrence/download/request?occurrence_status=present")
   GBIF_USERNAME = Rails.application.config.x.gbif_credentials[:username]
   GBIF_PASSWORD = Rails.application.config.x.gbif_credentials[:password]
 
@@ -71,7 +71,7 @@ class GbifDownload < ApplicationRecord
   def run
     check_gbif_creds
 
-    page_ids = TraitBank.term_search(term_query, {
+    page_ids = TraitBank::Search.term_search(term_query, {
       page: 1,
       per: PAGE_LIMIT,
       id_only: true

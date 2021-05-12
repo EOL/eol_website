@@ -1,6 +1,7 @@
 class Page < ApplicationRecord
   include Autocomplete
   include HasVernaculars
+  include Page::Traits
 
   set_vernacular_fk_field(:page_id)
 
@@ -459,19 +460,16 @@ class Page < ApplicationRecord
 
   # NAMES METHODS
 
-  def name(languages = nil)
-    languages ||= Language.current
-    vernacular(languages)&.string || scientific_name
+  def name(locale = nil)
+    vernacular(locale: locale)&.string || scientific_name
   end
 
-  def short_name_notags(languages = nil)
-    languages ||= Language.current
-    vernacular(languages)&.string || canonical_notags
+  def short_name_notags(locale = nil)
+    vernacular(locale: locale)&.string || canonical_notags
   end
 
-  def short_name(languages = nil)
-    languages ||= Language.current
-    vernacular(languages)&.string || canonical
+  def short_name(locale = nil)
+    vernacular(locale: locale)&.string || canonical
   end
 
   def canonical_notags
@@ -499,15 +497,26 @@ class Page < ApplicationRecord
     native_node.try(:rank)
   end
 
-  def vernacular_or_canonical(languages = nil)
-    languages ||= Language.current
-    vernacular(languages)&.string&.titlecase || canonical
+  def vernacular_or_canonical(locale = nil)
+    vernacular(locale: locale)&.string&.titlecase || canonical
   end
 
   # TRAITS METHODS
 
   def key_data
-    TraitBank.key_data(id, KEY_DATA_LIMIT)
+    tb_result = TraitBank::Page.key_data_pks(self, KEY_DATA_LIMIT)
+    traits_by_id = Trait.for_eol_pks(tb_result.map { |row| row[:trait_pk] })
+      .map { |t| [t.id, t] }
+      .to_h
+
+    tb_result.map do |row| 
+      trait = traits_by_id[row[:trait_pk]]
+
+      [
+        row[:predicate],
+        trait
+      ]
+    end.to_h
   end
 
   def has_data?
@@ -515,11 +524,11 @@ class Page < ApplicationRecord
   end
 
   def data_count
-    TraitBank.count_by_page(id)
+    TraitBank::Queries.count_by_page(id)
   end
 
   def predicate_count
-    TraitBank.predicate_count_by_page(id)
+    TraitBank::Queries.predicate_count_by_page(id)
   end
 
   # NOTE: This page size is "huge" because we don't want pagination for data.
@@ -531,7 +540,7 @@ class Page < ApplicationRecord
   # full TOC.)
   def data(page = 1, per = 2000)
     return @data[0..per] if @data
-    data = TraitBank.by_page(id, page, per)
+    data = TraitBank::Queries.by_page(id, page, per)
     @data_toc_needs_other = false
     @data_toc = data.flat_map do |t|
       next if t[:predicate][:section_ids].nil? # Usu. test data...
@@ -544,32 +553,17 @@ class Page < ApplicationRecord
     @data = data
   end
 
-  def redlist_status
-    # TODO
+  def object_data
+    @object_data = TraitBank::Page.object_traits_by_page(id) unless @object_data
+    @object_data
+  end
+  
+  def association_page_ids
+    TraitBank::Page.association_page_ids(id)
   end
 
-  def habitats
-    if geographic_context.nil? && @data_loaded
-      keys = grouped_data.keys & Eol::Uris.geographics
-      habitat = if keys.empty?
-        ""
-      else
-        habitats = []
-        keys.each do |uri|
-          recs = grouped_data[uri]
-          habitats += recs.map do |rec|
-            rec[:object_term] ? rec[:object_term][:name] : rec[:literal]
-          end
-        end
-        habitats.join(", ")
-      end
-      if geographic_context != habitat
-        update_attribute(:geographic_context, habitat)
-      end
-      habitat
-    else
-      geographic_context
-    end
+  def redlist_status
+    # TODO
   end
 
   def should_show_icon?
@@ -589,8 +583,6 @@ class Page < ApplicationRecord
     clear_caches
     recount
     iucn_status = nil
-    geographic_context = nil
-    habitats
     has_checked_marine = nil
     has_checked_extinct = nil
     # TODO: (for now) score_richness
@@ -619,7 +611,8 @@ class Page < ApplicationRecord
   def clear_caches
     [
       "/pages/#{id}/glossary",
-      "trait_bank/by_page/#{id}"
+      "trait_bank/by_page/#{id}",
+      "trait_bank/key_data/#{id}/v3/limit_#{KEY_DATA_LIMIT}"
     ].each do |cache|
       Rails.cache.delete(cache)
     end
@@ -650,6 +643,10 @@ class Page < ApplicationRecord
     @grouped_data ||= data.group_by { |t| t[:predicate][:uri] }
   end
 
+  def grouped_object_data
+    @grouped_object_data ||= object_data.group_by { |t| t[:predicate][:uri] }
+  end
+
   def grouped_data_by_obj_uri
     @grouped_data_by_obj ||= data.select do |t|
       t.dig(:object_term, :uri).present?
@@ -664,16 +661,6 @@ class Page < ApplicationRecord
     end.collect do |uri|
       glossary[uri]
     end.compact
-  end
-
-  def sorted_predicates_for_records(records)
-    records.collect do |r|
-      r[:predicate]
-    end.uniq.sort do |a, b|
-      a_name = TraitBank::Record.i18n_name(a)
-      b_name = TraitBank::Record.i18n_name(b)
-      a_name <=> b_name
-    end
   end
 
   def object_terms
@@ -730,7 +717,7 @@ class Page < ApplicationRecord
       if !rank&.r_species? # all nodes must be species, so bail
         { nodes: [], links: [] }
       else
-        relationships = TraitBank.pred_prey_comp_for_page(self)
+        relationships = TraitBank::Stats.pred_prey_comp_for_page(self)
         handle_pred_prey_comp_relationships(relationships)
       end
     end
@@ -760,6 +747,10 @@ class Page < ApplicationRecord
     Resource.gbif.present? ?
       nodes.where(resource: Resource.gbif)&.first :
       nil
+  end
+
+  def page_node
+    PageNode.find(id)
   end
 
   private

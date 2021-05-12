@@ -1,8 +1,8 @@
 ---
 fi:
   :term:
-    :name:
-      :by_uri:
+    name:
+      by_uri:
         https://www(dot)wikidata(dot)org/wiki/Q59099: kasvinsyöjä
         https://www(dot)wikidata(dot)org/wiki/Q568916: Korallien vaaleneminen
         http://www(dot)wikidata(dot)org/entity/Q176381: Adak Island
@@ -215,7 +215,7 @@ fi:
         https://www(dot)wikidata(dot)org/entity/Q212410: Proteaasi
         https://www(dot)wikidata(dot)org/entity/Q308695: Peristaltiikka
         https://www(dot)wikidata(dot)org/entity/Q335183: fototrofi
-        https://www(dot)wikidata(dot)org/entity/Q184755: Kasviplankton
+        https://www(dot)wikidata(dot)org/entity/Q184755: kasviplankton
         https://www(dot)wikidata(dot)org/entity/Q60670: Napa-alue
         https://www(dot)wikidata(dot)org/entity/Q18952: Monisukasmadot
         http://www(dot)wikidata(dot)org/entity/Q1075070: Ponoi
@@ -309,3 +309,215 @@ fi:
         https://www(dot)wikidata(dot)org/entity/Q591800: Kuulokivielin
         https://www(dot)wikidata(dot)org/entity/Q779457: Hiukkaspoikkeama
         https://www(dot)wikidata(dot)org/entity/Q7886: keuhkot
+    definition:
+      by_uri:
+        http://www(dot)wikidata(dot)org/entity/Q797: Osavaltio Yhdysvalloissa
+        https://www(dot)wikidata(dot)org/entity/Q797: Osavaltio Yhdysvalloissa
+        https://www(dot)wikidata(dot)org/entity/Q7486201: täsmennyssivu
+        https://www(dot)wikidata(dot)org/entity/Q1555938: alue maapallon eteläosassa
+        http://www(dot)wikidata(dot)org/entity/Q25322: Maapallon pohjoisnapaa ympäröivä
+          alue
+        https://www(dot)wikidata(dot)org/entity/Q25322: Maapallon pohjoisnapaa ympäröivä
+          alue
+        https://www(dot)wikidata(dot)org/wiki/Q25322: Maapallon pohjoisnapaa ympäröivä
+          alue
+        https://www(dot)wikidata(dot)org/entity/Q788: Arktisella alueella Pohjoisnavan
+          ympärillä oleva suuri merialue
+        http://www(dot)wikidata(dot)org/entity/Q1349878: järvi Kanadassa
+        https://www(dot)wikidata(dot)org/entity/Q1314: vuodenaika
+        http://www(dot)wikidata(dot)org/entity/Q793085: järvi Kanadassa
+        https://www(dot)wikidata(dot)org/entity/Q10876: yksisoluisia mikroskooppisen
+          pieniä eliöitä
+        http://www(dot)wikidata(dot)org/entity/Q37040: Grönlannin ja Kanadan välinen
+          salmi
+        https://www(dot)wikidata(dot)org/entity/Q37040: Grönlannin ja Kanadan välinen
+          salmi
+        http://www(dot)wikidata(dot)org/entity/Q23522: maantieteellinen alue Euroopassa
+        http://www(dot)wikidata(dot)org/entity/Q45823: Pohjoiseen jäämereen kuuluva
+          reunameri Euroopassa
+        https://www(dot)wikidata(dot)org/entity/Q45823: Pohjoiseen jäämereen kuuluva
+          reunameri Euroopassa
+        http://www(dot)wikidata(dot)org/entity/Q131274: Pohjoisen jäämeren reunameri
+          Pohjois-Amerikassa
+        https://www(dot)wikidata(dot)org/entity/Q131274: Pohjoisen jäämeren reunameri
+          Pohjois-Amerikassa
+        http://www(dot)wikidata(dot)org/entity/Q2295580: järvi Kanadassa
+        http://www(dot)wikidata(dot)org/entity/Q44725: Tyynenmeren pohjoisin merialue
+        https://www(dot)wikidata(dot)org/entity/Q44725: Tyynenmeren pohjoisin merialue
+        https://www(dot)wikidata(dot)org/entity/Q10874: väliaikainen tai pysyvä näköaistin
+          puuttuminen
+        http://www(dot)wikidata(dot)org/entity/Q645180: saari Kanadassa
+        http://www(dot)wikidata(dot)org/entity/Q1011: saarivaltio Atlantin valtamerellä
+          Länsi-Afrikan rannikolla
+        http://www(dot)wikidata(dot)org/entity/Q16: valtio Pohjois-Amerikassa
+        https://www(dot)wikidata(dot)org/entity/Q16: valtio Pohjois-Amerikassa
+        http://www(dot)wikidata(dot)org/entity/Q85377: suuri saariryhmä Kanadan pohjoisosassa
+        https://www(dot)wikidata(dot)org/entity/Q85377: suuri saariryhmä Kanadan pohjoisosassa
+        https://www(dot)wikidata(dot)org/entity/Q1011: saarivaltio Atlantin valtamerellä
+          Länsi-Afrikan rannikolla
+        http://www(dot)wikidata(dot)org/entity/Q27509: Euroopan osa-alue
+        https://www(dot)wikidata(dot)org/entity/Q192188: Iso-Britannialle kuuluva
+          saariryhmä Intian valtameressä
+        http://www(dot)wikidata(dot)org/entity/Q159252: Pohjoisen jäämeren reunameri
+          Aasian ja Pohjois-Amerikan välissä
+        https://www(dot)wikidata(dot)org/entity/Q159252: Pohjoisen jäämeren reunameri
+          Aasian ja Pohjois-Amerikan välissä
+        https://www(dot)wikidata(dot)org/entity/Q25441: eläinkunnan pääjakso
+        http://www(dot)wikidata(dot)org/entity/Q208268: Venäjälle kuuluva saariryhmä
+          Beringinmeressä
+        http://www(dot)wikidata(dot)org/entity/Q320011: ulosteensyönti
+        https://www(dot)wikidata(dot)org/entity/Q25279: Saarivaltio Karibianmerellä
+        http://www(dot)wikidata(dot)org/entity/Q974: valtio Keski-Afrikassa
+        https://www(dot)wikidata(dot)org/entity/Q974: valtio Keski-Afrikassa
+        http://www(dot)wikidata(dot)org/entity/Q163434: Pohjoisen jäämeren reunameri
+          Siperiassa
+        https://www(dot)wikidata(dot)org/entity/Q163434: Pohjoisen jäämeren reunameri
+          Siperiassa
+        https://www(dot)wikidata(dot)org/entity/Q574: valtio Kaakkois-Aasiassa
+        http://www(dot)wikidata(dot)org/entity/Q736: valtio Etelä-Amerikan länsiosassa
+        https://www(dot)wikidata(dot)org/entity/Q194257: rustokalojen alaluokka
+        http://www(dot)wikidata(dot)org/entity/Q324541: saari Islannissa
+        https://www(dot)wikidata(dot)org/entity/Q1050: valtio eteläisessä Afrikassa
+        http://www(dot)wikidata(dot)org/entity/Q34589: Lähi-idässä Mesopotamian läpi
+          virtaava pitkä joki
+        http://www(dot)wikidata(dot)org/entity/Q702: saarivaltio Tyynellämerellä
+        http://www(dot)wikidata(dot)org/entity/Q604496: Skandinavian niemimaasta,
+          Suomesta, Karjalasta ja Kuolan niemimaasta koostuva alue
+        https://www(dot)wikidata(dot)org/entity/Q604496: Skandinavian niemimaasta,
+          Suomesta, Karjalasta ja Kuolan niemimaasta koostuva alue
+        https://www(dot)wikidata(dot)org/entity/Q161: pitkästä säikeestä koostuva
+          materiaali
+        https://www(dot)wikidata(dot)org/entity/Q1940784: täsmennyssivu
+        https://www(dot)wikidata(dot)org/entity/Q2095: syötäväksi valmistettu ravinto
+        http://www(dot)wikidata(dot)org/entity/Q195182: saariryhmä Alaskan Aleuteilla
+        http://www(dot)wikidata(dot)org/entity/Q185018: Venäjälle kuuluva saaristo
+          Barentsinmerellä
+        https://www(dot)wikidata(dot)org/entity/Q185018: Venäjälle kuuluva saaristo
+          Barentsinmerellä
+        https://www(dot)wikidata(dot)org/entity/Q271894: Ranskan siirtomaa Afrikassa
+          vuosina 1910–1958
+        https://www(dot)wikidata(dot)org/entity/Q764: sienikuntaan kuuluvat organismit
+        http://www(dot)wikidata(dot)org/entity/Q223: Tanskalle kuuluva itsehallintoalue
+          ja maailman suurin saari
+        https://www(dot)wikidata(dot)org/entity/Q223: Tanskalle kuuluva itsehallintoalue
+          ja maailman suurin saari
+        http://www(dot)wikidata(dot)org/entity/Q132868: merialue Pohjoisella jäämerellä
+        https://www(dot)wikidata(dot)org/entity/Q132868: merialue Pohjoisella jäämerellä
+        http://www(dot)wikidata(dot)org/entity/Q208807: geologinen kilpi Amazon- ja
+          Orinocojokien välissä Etelä-Amerikassa
+        http://www(dot)wikidata(dot)org/entity/Q180531: Tyynenmeren merialue Pohjois-Amerikan
+          rannikolla
+        https://www(dot)wikidata(dot)org/entity/Q181497: lajin ominaisuus, jossa sukupuolten
+          välillä on muitakin eroja kuin sukupuolielimet
+        http://www(dot)wikidata(dot)org/entity/Q3040: merialue Kanadan rannikolla
+        https://www(dot)wikidata(dot)org/entity/Q3040: merialue Kanadan rannikolla
+        http://www(dot)wikidata(dot)org/entity/Q189: saarivaltio Pohjois-Euroopassa
+        https://www(dot)wikidata(dot)org/entity/Q189: saarivaltio Pohjois-Euroopassa
+        https://www(dot)wikidata(dot)org/entity/Q1390: niveljalkaisten pääjaksoon
+          kuuluva eläinten luokka
+        http://www(dot)wikidata(dot)org/entity/Q1008: valtio Länsi-Afrikassa
+        https://www(dot)wikidata(dot)org/entity/Q14056: Norjalle kuuluva saari Pohjoisella
+          jäämerellä
+        https://www(dot)wikidata(dot)org/entity/Q237034: Ranskalle kuuluva saari Intian
+          valtamerellä
+        http://www(dot)wikidata(dot)org/entity/Q33629: Pohjoisen jäämeren reunameri
+          Aasiassa
+        https://www(dot)wikidata(dot)org/entity/Q33629: Pohjoisen jäämeren reunameri
+          Aasiassa
+        http://www(dot)wikidata(dot)org/entity/Q22536468: järvi Kanadassa
+        http://www(dot)wikidata(dot)org/entity/Q46772: Ranskalle kuuluva saariryhmä
+          Intian valtamerellä
+        https://www(dot)wikidata(dot)org/entity/Q46772: Ranskalle kuuluva saariryhmä
+          Intian valtamerellä
+        https://www(dot)wikidata(dot)org/entity/Q828224: tuhat metriä
+        https://www(dot)wikidata(dot)org/entity/Q165608: Niemimaa Luoteis-Venäjällä
+        http://www(dot)wikidata(dot)org/entity/Q943234: merenlahti Alaskassa
+        http://www(dot)wikidata(dot)org/entity/Q380307: maantieteellinen alue Kanadassa
+        https://www(dot)wikidata(dot)org/entity/Q380307: maantieteellinen alue Kanadassa
+        https://www(dot)wikidata(dot)org/entity/Q5700: maakunta Suomessa
+        http://www(dot)wikidata(dot)org/entity/Q7988: Pohjoisen jäämeren reunameri
+          Siperiassa
+        https://www(dot)wikidata(dot)org/entity/Q133105: kävelemiseen tarkoitettu
+          raaja
+        https://www(dot)wikidata(dot)org/entity/Q702: saarivaltio Tyynellämerellä
+        https://www(dot)wikidata(dot)org/entity/Q39833: pieneliö
+        http://www(dot)wikidata(dot)org/entity/Q836: valtio Kaakkois-Aasiassa
+        https://www(dot)wikidata(dot)org/entity/Q836: valtio Kaakkois-Aasiassa
+        https://www(dot)wikidata(dot)org/entity/Q2164: autonominen piirikunta Venäjällä
+        http://www(dot)wikidata(dot)org/entity/Q25227: entinen Alankomaiden alusmaa
+        https://www(dot)wikidata(dot)org/entity/Q25227: entinen Alankomaiden alusmaa
+        https://www(dot)wikidata(dot)org/entity/Q201012: Venäjälle kuuluva saaristo
+          Pohjoisella jäämerellä
+        http://www(dot)wikidata(dot)org/entity/Q48335: saari Kanadan itärannikolla
+        http://www(dot)wikidata(dot)org/entity/Q309179: eläimen käyttäytyminen, jota
+          kuvaa aktiivisuus vuorokauden pimeään aikaan
+        http://www(dot)wikidata(dot)org/entity/Q2007: Kanadan territorio
+        https://www(dot)wikidata(dot)org/entity/Q2007: Kanadan territorio
+        http://www(dot)wikidata(dot)org/entity/Q20: valtio Pohjois-Euroopassa
+        https://www(dot)wikidata(dot)org/entity/Q20: valtio Pohjois-Euroopassa
+        http://www(dot)wikidata(dot)org/entity/Q47545: Atlantin valtameren sivumeri
+          Norjan länsipuolella ja Grönlanninmeren itäpuolella
+        https://www(dot)wikidata(dot)org/entity/Q80413: Venäjälle kuuluva kaksoissaari
+          Pohjoisella jäämerellä
+        http://www(dot)wikidata(dot)org/entity/Q2023: Kanadan territorio
+        https://www(dot)wikidata(dot)org/entity/Q2023: Kanadan territorio
+        https://www(dot)wikidata(dot)org/entity/Q123076: Yhdysvalloille kuuluva atolli
+        https://www(dot)wikidata(dot)org/entity/Q179387: Kaupunki Petšoran piirissä
+          Komin tasavallassa Venäjällä
+        https://www(dot)wikidata(dot)org/entity/Q60670: maapallon napoja ympäröivät
+          alueet
+        http://www(dot)wikidata(dot)org/entity/Q284603: joki Kanadassa
+        https://www(dot)wikidata(dot)org/entity/Q1008: valtio Länsi-Afrikassa
+        http://www(dot)wikidata(dot)org/entity/Q1053008XXX: eliön asema ravintoketjussa
+        https://www(dot)wikidata(dot)org/entity/Q736: valtio Etelä-Amerikan länsiosassa
+        http://www(dot)wikidata(dot)org/entity/Q176: provinssi Kanadassa
+        http://www(dot)wikidata(dot)org/entity/Q159: valtio Euraasiassa
+        https://www(dot)wikidata(dot)org/entity/Q159: valtio Euraasiassa
+        https://www(dot)wikidata(dot)org/entity/Q192184: Britannian merentakainen
+          alue Atlantilla
+        http://www(dot)wikidata(dot)org/entity/Q760: saarivaltio Karibianmerellä
+        https://www(dot)wikidata(dot)org/entity/Q760: saarivaltio Karibianmerellä
+        http://www(dot)wikidata(dot)org/entity/Q21195: alue Pohjois-Euroopassa
+        https://www(dot)wikidata(dot)org/entity/Q21195: alue Pohjois-Euroopassa
+        https://www(dot)wikidata(dot)org/entity/Q127470: Meressä eläviä selkärangattomia
+          eläimiä
+        http://www(dot)wikidata(dot)org/entity/Q41602: Tyynenmeren reunameri Kaukoidässä
+        http://www(dot)wikidata(dot)org/entity/Q192281: Venäjälle kuuluva saariryhmä
+          Pohjoisella jäämerellä
+        https://www(dot)wikidata(dot)org/entity/Q192281: Venäjälle kuuluva saariryhmä
+          Pohjoisella jäämerellä
+        http://www(dot)wikidata(dot)org/entity/Q5428: suuri maantieteellinen alue
+          Venäjällä
+        https://www(dot)wikidata(dot)org/entity/Q5428: suuri maantieteellinen alue
+          Venäjällä
+        https://www(dot)wikidata(dot)org/entity/Q3711325: nopeuden suuruus (ilman
+          suuntaa)
+        https://www(dot)wikidata(dot)org/entity/Q21162: saari Huippuvuorilla, Norjassa
+        http://www(dot)wikidata(dot)org/entity/Q1312: vuodenaika
+        https://www(dot)wikidata(dot)org/entity/Q5824490: täsmennyssivu
+        http://www(dot)wikidata(dot)org/entity/Q1313: vuodenaika
+        http://www(dot)wikidata(dot)org/entity/Q25231: Norjalle kuuluva saaristo Pohjoisella
+          jäämerellä
+        https://www(dot)wikidata(dot)org/entity/Q25231: Norjalle kuuluva saaristo
+          Pohjoisella jäämerellä
+        http://www(dot)wikidata(dot)org/entity/Q869: valtio Kaakkois-Aasiassa
+        https://www(dot)wikidata(dot)org/entity/Q869: valtio Kaakkois-Aasiassa
+        https://www(dot)wikidata(dot)org/entity/Q1370714: rakennusmateriaali
+        http://www(dot)wikidata(dot)org/entity/Q574: valtio Kaakkois-Aasiassa
+        http://www(dot)wikidata(dot)org/entity/Q1053008: eliön asema ravintoketjussa
+        http://www(dot)wikidata(dot)org/entity/Q42530: ilmastovyöhyke
+        https://www(dot)wikidata(dot)org/entity/Q30: valtio Pohjois-Amerikassa
+        http://www(dot)wikidata(dot)org/entity/Q30: valtio Pohjois-Amerikassa
+        https://www(dot)wikidata(dot)org/entity/Q44133: Pohjoisen jäämeren lahti Venäjän
+          luoteisosassa
+        http://www(dot)wikidata(dot)org/entity/Q1311: vuodenaika
+        https://www(dot)wikidata(dot)org/entity/Q42329: lampaiden, vuohien ym. kotieläinten
+          karvasta saatava lämmin ja kosteutta iholta siirtävä tekstiilikuitu
+        https://www(dot)wikidata(dot)org/entity/Q106594: saari Siperiassa
+        http://www(dot)wikidata(dot)org/entity/Q2009: Kanadan territorio
+        https://www(dot)wikidata(dot)org/entity/Q2009: Kanadan territorio
+        https://www(dot)wikidata(dot)org/entity/Q954: valtio eteläisessä Afrikassa
+        https://www(dot)wikidata(dot)org/entity/Q1504201: alhaisin äänenpainetaso,
+          joka riittää aiheuttamaan kuulohavainnon
+        https://www(dot)wikidata(dot)org/entity/Q1068172: akustiikan suure
+        https://www(dot)wikidata(dot)org/entity/Q7886: hengityselin

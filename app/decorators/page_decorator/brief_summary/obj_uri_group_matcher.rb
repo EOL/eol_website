@@ -89,8 +89,8 @@ class PageDecorator
       end
 
       def match(trait)
-        return nil if !trait[:object_term]
-        uri = trait[:object_term][:uri]
+        return nil if !trait.object_term
+        uri = trait.object_term.uri
 
         found_group = nil
         @groups.each do |group|

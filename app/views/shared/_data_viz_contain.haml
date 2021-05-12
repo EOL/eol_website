@@ -1,17 +1,24 @@
--if type == :pie
-  - classes = "js-pie-contain"
-  - load_path = traits_data_viz_pie_path(term_query: query.to_params)
-- elsif type == :bar
+- if type == :bar
   - classes = "viz-contain-bar js-bar-contain"
-  - load_path = traits_data_viz_bar_path(term_query: query.to_params)
+  - load_path = traits_data_viz_bar_path(tq: query.to_short_params)
 - elsif type == :hist
   - classes = "viz-contain-hist js-hist-contain"
-  - load_path = traits_data_viz_hist_path(term_query: query.to_params)
+  - load_path = traits_data_viz_hist_path(tq: query.to_short_params)
 - elsif type == :sankey
   - classes = "viz-contain-sankey js-sankey-contain"
-  - load_path = traits_data_viz_sankey_path(term_query: query.to_params)
+  - load_path = traits_data_viz_sankey_path(tq: query.to_short_params)
+- elsif type == :assoc
+  - classes = "viz-contain-assoc js-assoc-contain"
+  - load_path = traits_data_viz_assoc_path(tq: query.to_short_params)
+- elsif type == :taxon_summary
+  - classes = "viz-contain-taxon-summary js-taxon-summary-contain"
+  - load_path = traits_data_viz_taxon_summary_path(tq: query.to_short_params)
 
-.viz-contain{ class: classes, data: { :'load-path' => load_path }}
+- toggle_text_key = type == :taxon_summary ? 'taxon_summary' : 'trait_summary'
+- if local_assigns.fetch(:fallback, false)
+  - classes.concat(' js-fallback-viz-contain uk-hidden')
+
+.viz-contain.js-viz-contain{ class: classes, data: { 'type' => type, :'load-path' => load_path, :'toggle-text' => t("traits.data_viz.toggle_text.#{toggle_text_key}") }}
   - if local_assigns.include?(:header) || local_assigns.include?(:description)
     .viz-text
       - if local_assigns.include?(:header)

@@ -2,29 +2,52 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Elroy
+# Author: Marcelhospers
+# Author: Optilete
 ---
 nl:
   devise:
+    confirmations:
+      confirmed: Uw e-mailadres is succesvol bevestigd.
+      send_instructions: U ontvangt binnen enkele ogenblikken een e-mail met instructies
+        hoe u uw e-mailadres kunt bevestigen.
+      send_paranoid_instructions: Als uw e-mailadres in onze database staat ontvangt
+        u een email met instructies om je emailadres te bevestigen.
     failure:
+      already_authenticated: U bent al aangemeld.
+      inactive: Uw account is nog niet geactiveerd.
+      invalid: Ongeldige %{authentication_keys} of wachtwoord.
+      locked: Uw account is vergrendeld. Probeer het na een uur opnieuw
+      last_attempt: U hebt nog één poging voordat uw account wordt vergrendeld.
       not_found_in_database: Ongeldige %{authentication_keys} of wachtwoord.
       recaptcha_error: Er is een fout opgetreden met onderstaande recaptchacode. Voer
         de code opnieuw in en klik op Indienen.
+      timeout: Uw sessie is verlopen. Meld u opnieuw aan om verder te gaan.
       unauthenticated: U moet zich aanmelden of inschrijven om door te gaan.
+      unconfirmed: U moet uw e-mailadres bevestigen voordat u doorgaat.
     mailer:
       confirmation_instructions:
         action: Profiel bevestigen
         greeting: Welkom %{recipient}!
         instruction: 'U kunt het e-mailadres van uw profiel met onderstaande koppeling
           bevestigen:'
+        subject: Bevestigingsinstructies
       reset_password_instructions:
         action: Wachtwoord wijzigen
+        greeting: 'Hallo #{recipient}!'
         instruction: Iemand heeft een koppeling aangevraagd waarmee uw wachtwoord
           kan worden gewijzigd. U kunt uw wachtwoord wijzigen door onderstaande koppeling
           te gebruiken.
+        instruction_2: Als u dit niet hebt aangevraagd negeer dan deze e-mail
+        instruction_3: Uw wachtwoord verandert pas als u de bovenstaande link opent
+          en een nieuwe maakt.
+        subject: Reset wachtwoord instructies
       unlock_instructions:
         subject: Ontgrendelhandleiding
       password_change:
         greeting: 'Hallo #{recipient}!'
+        message: We nemen contact met u op om u te laten weten dat uw wachtwoord is
+          gewijzigd.
         subject: Wachtwoord gewijzigd
     passwords:
       no_token: Zonder een wachtwoordherstelbericht heeft u geen toegang tot deze
@@ -35,9 +58,16 @@ nl:
       send_paranoid_instructions: Als uw e-mailadres in onze gegevensbank staat, dan
         ontvangt u binnen enkele ogenblikken een wachtwoordherstelkoppeling in uw
         e-mail.
+      updated: Je wachtwoord is met succes veranderd. U bent nu aangemeld.
+      updated_not_active: Je wachtwoord is met succes veranderd.
     registrations:
+      destroyed: Doei! Uw account is succesvol geannuleerd. We hopen je snel weer
+        te zien.
+      signed_up: Welkom! Je bent succesvol aangemeld.
       signed_up_but_inactive: U bent ingeschreven. U kunt zich niet aanmelden omdat
         uw profiel nog niet in werking is gesteld.
+      signed_up_but_locked: U bent succesvol aangemeld. U kunt zich niet aanmelden
+        omdat uw account is vergrendeld.
       signed_up_but_unconfirmed: Er is een bericht met een bevestigingskoppeling naar
         uw e-mailadres verzonden. Volg de koppeling om uw profiel in werking te stellen.
       update_needs_confirmation: Uw profiel is bijgewerkt. Uw nieuw e-mailadres moet
@@ -46,13 +76,26 @@ nl:
       updated: Uw profiel is bijgewerkt.
     sessions:
       signed_in: Aangemeld.
+      signed_out: Succesvol afgemeld.
       already_signed_out: Afgemeld.
       recaptcha: Recaptchabevestigingsfouten
       sign_in_remember_me_disabled_for_admins: Uit beveiligingsoverwegingen mogen
         beheerders niet aangemeld blijven.
+    unlocks:
+      send_instructions: U ontvangt binnen enkele ogenblikken een e-mail met een handleiding
+        waarmee u uw account kunt ontgrendelen.
+      send_paranoid_instructions: Als uw account bestaat, ontvangt u binnen enkele
+        minuten een e-mail met instructies om deze te ontgrendelen.
+      unlocked: Uw acccount is succesvol unlocked. Meld u aan om verder te gaan.
   errors:
     messages:
       already_confirmed: reeds bevestigd, probeer u aan te melden
+      confirmation_period_expired: moet worden bevestigd binnen %{period}, vraag een
+        nieuwe aan
+      expired: is verlopen, vraag een nieuwe aan
       not_found: niet gevonden
       not_locked: niet vergrendeld
+      not_saved:
+        one: '1 fout voorkwam dat %{resource} werd opgeslagen:'
+        other: '%{count} fouten voorkwamen dat deze %{resource} werden opgeslagen:'
 ...

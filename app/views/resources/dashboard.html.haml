@@ -3,6 +3,10 @@
 %p= "#{TraitBank.query(%{MATCH (n:MetaData) RETURN count(n) as count})["data"][0][0]} MetaData nodes."
 %p= "#{TraitBank.query(%{MATCH ()-[r]->() RETURN count(r) as count})["data"][0][0]} edges."
 
+%a{ name: 'errors' }
+%h2 Recent Errors (Main Log)
+%pre= `tail -n 100 log/#{Rails.env}.log | grep -A 18 " error="`
+
 %h2 Delayed Job Log
 %p Only the last 20 lines are shown.
 .ui.section

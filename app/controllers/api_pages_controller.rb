@@ -123,7 +123,7 @@ class ApiPagesController < LegacyApiController
       page.vernaculars.each do |name|
         @return_hash[:vernacularNames] << {
           vernacularName: name.string,
-          language: name&.language&.group || 'en', # Yes, the API defaulted to EN.
+          language: name&.language&.locale&.code || 'en', # Yes, the API defaulted to EN.
           eol_preferred: name.is_preferred?
         }
       end

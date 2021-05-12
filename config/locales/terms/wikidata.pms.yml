@@ -1,8 +1,8 @@
 ---
 pms:
   :term:
-    :name:
-      :by_uri:
+    name:
+      by_uri:
         http://www(dot)wikidata(dot)org/entity/Q797: Alasca
         https://www(dot)wikidata(dot)org/entity/Q797: Alasca
         https://www(dot)wikidata(dot)org/entity/Q788: Océan Àrtich
@@ -40,6 +40,7 @@ pms:
         http://www(dot)wikidata(dot)org/entity/Q47545: Mar ëd Norvegia
         http://www(dot)wikidata(dot)org/entity/Q2023: Nunavut
         https://www(dot)wikidata(dot)org/entity/Q2023: Nunavut
+        https://www(dot)wikidata(dot)org/entity/Q60670: Poalstreek
         https://www(dot)wikidata(dot)org/entity/Q1008: Còsta d'Avòri
         https://www(dot)wikidata(dot)org/entity/Q736: Ecuador
         http://www(dot)wikidata(dot)org/entity/Q176: Québec
@@ -57,3 +58,8 @@ pms:
         http://www(dot)wikidata(dot)org/entity/Q2009: Yukon
         https://www(dot)wikidata(dot)org/entity/Q2009: Yukon
         https://www(dot)wikidata(dot)org/entity/Q954: Zimbabwe
+    definition:
+      by_uri:
+        http://www(dot)wikidata(dot)org/entity/Q736: pais dl'América meridional
+        https://www(dot)wikidata(dot)org/entity/Q736: pais dl'América meridional
+        https://www(dot)wikidata(dot)org/entity/Q5824490: Wikipedia:Ròbe parej

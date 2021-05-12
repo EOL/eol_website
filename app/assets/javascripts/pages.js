@@ -43,7 +43,7 @@
       if ($row.length) {
         setTimeout(function() {
           $(document).scrollTop($row.offset().top - $nav.height() - $tabs.height() - $filters.height());
-          $row.find('.js-load-arw').click();
+          $row.find('.js-meta-arw').click();
         }, 1000);
       }
     }

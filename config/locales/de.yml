@@ -1,20 +1,27 @@
 # Messages for German (Deutsch)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Anna7321
 # Author: Bergrübe
 # Author: DraconicDark
 # Author: Elliot
+# Author: FF-11
+# Author: FF11
 # Author: Katja
 # Author: Kghbln
 # Author: Killarnee
+# Author: Lorisobi
 # Author: Schmackes
 # Author: Symposiarch
+# Author: Tiin
 # Author: Umherirrender
+# Author: Wolfdietmann
 ---
 de:
   language_name: Deutsch
   about:
     trait_bank:
+      title: TraitBank
       body_html: "<p>Das technische und Datenverwaltungsteam von EOL bezeichnet die
         strukturierten Datenressourcen von EOL - Merkmale und andere Attributdaten,
         ökologische Wechselwirkungen, und unsere eigene Taxonomy, die Dynamic Working
@@ -48,6 +55,8 @@ de:
       untitled: Ohne Titel
     name:
       missing: Ohne Titel
+  article_from_partner: bereitgestellt von %{partner}
+  article_duplicate: dieser Artikel wird auch in "%{section}" angezeigt
   breadcrumbs:
     notices:
       canonical: Wissenschaftliche Bezeichnungen werden ab jetzt in den Seiten breadcrumbs
@@ -83,7 +92,6 @@ de:
       scientific_names_count: wissenschaftliche Bezeichnungen
       species_count: Spezies
       updated_at: Zuletzt aktualisiert
-  cms_page_date: 'Letzte Änderung um:'
   collect_already_in_collection: (Es ist schon hier)
   collect_already_in_collection_will_add_icon: (füge Medien zu "%{page}" hinzu)
   collect_icon_title: Füge "%{item}" von der Seite "%{page}" zu
@@ -94,7 +102,10 @@ de:
   collect_select_collection: '...eine Ihrer Sammlungen'
   collect_title: Ergänze "%{item}" zu
   collected_page_added_to_collection: Ergänze %{page} zur Sammlung <a href='%{link}'>%{name}</a>
+  collected_page_already_in_collection: Das war bereits in deiner Sammlung.
   collected_pages_title: Seiten
+  collected_pages_medium:
+    destroyed_flash: Bild von gesammelter Seite entfernt.
   collection_associations:
     destroyed_flash: '%{name} ist nicht länger mit dieser Sammlung verbunden'
   collected_pages:
@@ -129,6 +140,7 @@ de:
       submit: suche
     sort:
       hierarchy: Hierarchie
+      position: Datum hinzugefügt
       sci_name: Wissenschaftliche Bezeichnung, A-Z
       sci_name_rev: Wissenschaftliche Bezeichnung, A-Z
   content_collected_in: 'In den folgenden Sammlungen vorgestellt:'
@@ -137,6 +149,7 @@ de:
     altitude: Höhe
     author: Autor
     bibliographic_citation: bibliographisches Zitat
+    contributor: Beteiligte
     compiler: Kompiler
     creator: Ersteller
     editor: Editor
@@ -151,6 +164,7 @@ de:
     publisher: Herausgeber
     project: Projekt
     provider: Anbieter
+    resource_label: Partnerseite
     source: Quelle
     spatial_location: räumlich
     view_source_label: original
@@ -218,31 +232,67 @@ de:
     stats_cleared: Die Statistiken wurden neu berechnet.
   language: Sprache
   languages:
+    ab: Abchasisch
+    q27683: Achinesisch
+    q27776: Adygeisch
+    aa: Afar
+    af: Afrikaans
+    ak: Akan
     alb: Albanisch
     sq: Albanisch
+    q131339: Alemannisch
+    am: Amharisch
     ar: Arabisch
     an: Aragonisch
-    Q29507: Asturisch
-    Q9292: Aserbaidschanisch
+    hy: Armenisch
+    as: Assamesisch
+    q29507: Asturisch
+    q56590: Atikamekw
+    av: Awarisch
+    ae: Avestisch
+    ay: Aymara
+    q9292: Aserbaidschanisch
     az: Aserbaidschanisch
+    q33070: Balinesisch
+    bm: Bambara
+    q33151: Banjaresisch
+    ba: Baschkirisch
     eu: Baskisch
+    q29540: Bayrisch
+    be: Belarussisch
+    q8836490: Bende
     bn: Bengalisch
+    bh: Bihari-Sprachen
+    bi: Bislama
+    nb: Bokmål, Norwegisch; Norwegisches Bokmål
+    q4941378: Bondei
     bs: Bosnisch
-    Q750553: Brasilianisches Portugiesisch
+    q33202: Brahui
+    q750553: Brasilianisches Portugiesisch
     br: Bretonisch
     bg: Bulgarisch
+    my: Birmanisch
+    q33120: Burjatisch
+    q35156: Car
     ca: Katalanisch; Valencianisch
-    Q33388: Cherokee
+    q33388: Cherokee
+    zh: Chinesisch
+    chi: Chinesisch
     co: Korsisch
     hr: Kroatisch
+    hrv: Kroatisch
     cs: Tschechisch
     da: Dänisch
+    dut: Niederländisch; Flämisch
+    nl: Niederländisch; Flämisch
     en: Englisch
     eo: Esperanto
     et: Estnisch
+    est: Estnisch
     fi: Finnisch
     fin: Finnisch
     fr: Französisch
+    fra: Französisch
     gd: Schottisch-Gälisch
     gl: Galizisch
     ka: Georgisch
@@ -254,31 +304,64 @@ de:
     heb: Hebräisch
     hi: Hindi
     hu: Ungarisch
+    is: Isländisch
+    ice: Isländisch
+    id: Indonesisch
     ga: Irisch
+    jp: Japanisch
+    jv: Japanisch
+    kk: Kasachisch
     ko: Koreanisch
     kor: Koreanisch
+    ku: Kurdisch
     lao: Laotisch
     la: Lateinisch
-    Q146803: Lingua Franca Nova
-    Q497345: Mainfränkisch
+    q146803: Lingua Franca Nova
+    lt: Litauisch
+    lit: Litauisch
+    q168446: Niedersächsisch
+    q13286: Niedersorbisch
+    mk: Mazedonisch
+    q497345: Mainfränkisch
+    mlt: Maltesisch
+    mn: Mongolisch
+    q56426: Marokkanisches Arabisch
+    q28224: Nordfriesisch
     "no": Norwegisch
-    Q36738: Novial
+    nno: Norwgisch
+    nob: Norwegisch
+    nor: Norwegisch
+    q36738: Novial
     fa: Persisch
-    Q23014: Pfälzisch
+    q23014: Pfälzisch
     pl: Polnisch
     pol: Polnisch
     pt: Portugiesisch
+    sa: Sanskrit
+    sc: Sardinisch
+    sr: Serbisch
+    sk: Slowakisch
+    slk: Slowakisch
+    sl: Slowenisch
     es: Spanisch; Kastilisch
     slv: Spanisch
     sw: Swahili
+    sv: Schwedisch
+    swe: Schwedisch
     bo: Tibetisch
+    none: Nicht angegeben
+    q13248: Obersorbisch
     ur: Urdu
+    uz: Usbekisch
+    vi: Vietnamesisch
     cy: Walisisch
-    Q100103: West-Flämisch
+    q100103: West-Flämisch
   layout_sign_in: Anmelden
   layout_sign_up: Registrieren
   layout_sign_out: Abmelden
   literature_and_references_header: Literatur und Verweise
+  maps:
+    empty: Es sind keine Karten für diese Seite verfügbar.
   medium:
     untitled:
       image: Unbenanntes Bild
@@ -310,16 +393,20 @@ de:
     education: Bildung
     search:
       placeholder: Durchsuche EOL...
+    trait_bank: TraitBank
+  name_preferred_label: bevorzugt
   page_title: Enzyklopädie des Lebens
   page_title_search: 'Durchsuche: %{query}'
   page_vernaculars_empty: Mit diesem Taxon sind keine verbreiteten Namen verbunden.
   pages:
     actions:
       collect: sammeln
+      reindex: neuindizieren
     batch_lookup:
       download_tsv: TSV herunterladen
       new_search: neue Suche
       page_url: Seiten-URL
+      query: Abfrage
       search: Suche
     filter_menu:
       show_all: Alle anzeigen
@@ -329,16 +416,21 @@ de:
       name_recognized_by: Erkannt von %{by}
       name_recognized_by_w_rank: '%{rank} erkannt von %{by}'
       rank:
+        r_kingdom: Königreich
+        r_class: Klasse
         r_family: Familie
         r_tribe: Stamm
         r_species: Spezies
         r_form: Form
+    trophic_web:
+      reset: Zurücksetzen
     tabs:
       articles: Artikel
       classifications: Klassifikationen
       data: Daten
       literature_and_references: Literatur und Verweise
       overview: Übersicht
+      maps: Karte
       media: Medien
       names: Namen
     iucn_status:
@@ -362,6 +454,7 @@ de:
       clear_publishing_confirm: Dies will alle Veröffentlichung fertigstellen und
         kann Probleme verursachen, wenn es verwendet wird während aktiv veröffentlicht
         wird. Sind sie sicher?
+  resource_missing: Ressource nicht gefunden
   scientific_name:
     status_title:
       accepted: Akzeptierte Namen
@@ -377,6 +470,9 @@ de:
   search_results:
     medium_article: Artikel
     medium_image: Bild
+    medium_map: Karte
+    medium_sound: Ton
+    medium_video: Video
     empty: Keine Ergebnisse.
     field_matches:
       description: 'Stimmt mit der Beschreibung überein:'
@@ -424,14 +520,12 @@ de:
     scientific_names: Namen
     users: Benutzer
     references: Referenzen
-  support:
-    array:
-      words_connector: ','
-      two_words_connector: und
-      last_word_connector: ', und'
+  term_query:
+    invalid_obsolete: UNGÜLTIG/OBSOLET
   term_query_filter:
     validations:
       invalid_uri: Ungültige URL
+      units_blank_error: Einheiten können bei einer numerischen Suche nicht leer sein
   terms:
     scientific_name: wissenschaftliche Bezeichnung
     source: Quelle
@@ -445,7 +539,12 @@ de:
     search:
       download_tsv: tsv herunterladen
       filter_display:
+        obj_only: 'mit Wert: %{obj}'
         statistical_method: 'Statistische Methode: %{value}'
+      result_header_records: Zeige %{range_begin} - %{range_end} von %{total} Einträgen
+        für %{page_count} Taxa
+      result_header_taxa: Zeige %{range_begin} - %{range_end} von %{total} Taxa
+      result_header_taxa_notaxa: Zeige %{range_begin} - %{range_end} von %{total}
     search_form:
       value: Wert
   user:
@@ -471,98 +570,101 @@ de:
       previous: vorherige Seite
     name:
       by_uri:
-        http://purl(dot)obolibrary(dot)org/obo/CEPH_0000036: brüten
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_133326: Bariumsulfat
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: Sauerstoff
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15756: Palmitinsäure
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_22984: Kalzium
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: Magnesium (Mg)
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_26401: Purine
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_27226: Harnsäure
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28941: Behensäure
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_30813: Caprinsäure
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32584: Kalziumsulfat Halbhydrat
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46713: Fluorit
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46719: Calcit
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52241: Vaterit
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52254: Apatit
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52255: Hydroxylapatit
-        http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: Körperlänge
-        http://purl(dot)obolibrary(dot)org/obo/CMO_0000445: Zitzenzahl
-        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000078: dämmerungsaktiv
         http://purl(dot)obolibrary(dot)org/obo/EO_0007059: saurer Boden
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0005532: Rhizompflanze
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900024: Kryptophyt
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900025: Sumpfpflanze
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900026: Wasserpflanze
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900033: Baum
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900034: Strauch
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900035: Kletterpflanze
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900044: Wasserpflanze
-        http://purl(dot)obolibrary(dot)org/obo/NBO_0000055: läuft
+        http://www(dot)ebi(dot)ac(dot)uk/efo/EFO_0001272: Erwachsener
         http://purl(dot)obolibrary(dot)org/obo/NBO_0000366: Luft
-        http://purl(dot)obolibrary(dot)org/obo/NBO_0000369: gleitend
-        http://purl(dot)obolibrary(dot)org/obo/NBO_0000370: Hüpfen
-        http://purl(dot)obolibrary(dot)org/obo/OBA_VT0100005: Körpergröße
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000050: Lebenserwartung
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: Form
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52254: Apatit
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900044: Wasserpflanze
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001709: Fläche
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_133326: Bariumsulfat
+        http://purl(dot)obolibrary(dot)org/obo/PO_0004518: Rinde
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: schwarz
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000318: blau
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: grün
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000322: rot
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: weiß
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000324: gelb
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000461: medium (normal)
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: groß
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000587: klein
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000625: invertiert
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: langsam
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: schnell
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: herzförmig
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: lila
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: braun
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: orange
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001154: verlängert
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001199: linear
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001709: Fläche
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: Volumen
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001733: immergrün
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001941: gelb-grün
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002044: trapezförmig
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002122: gemischt
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002300: erhöhte Qualität
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002301: niedrige Qualität
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002359: breit
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002389: niederliegend
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002425: sichtbar
-        http://purl(dot)obolibrary(dot)org/obo/PORO_0000436: gefingert
-        http://purl(dot)obolibrary(dot)org/obo/PO_0004518: Rinde
-        http://purl(dot)obolibrary(dot)org/obo/PO_0004542: Rhizom
-        http://purl(dot)obolibrary(dot)org/obo/PO_0005848: sekundäres Xylem
-        http://purl(dot)obolibrary(dot)org/obo/PO_0009001: Frucht
-        http://purl(dot)obolibrary(dot)org/obo/PO_0009005: Wurzeln
-        http://purl(dot)obolibrary(dot)org/obo/PO_0009010: Samen
-        http://purl(dot)obolibrary(dot)org/obo/PO_0020042: einfach
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002303: Lebensraum
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002439: jagt
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: ernährt sich von
-        http://purl(dot)obolibrary(dot)org/obo/UO_0010006: Verhältnis
+        http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: Körperlänge
         http://purl(dot)obolibrary(dot)org/obo/VT_0001259: Körpermasse
-        http://eol(dot)org/schema/terms/Present: Geographische Verteilung enthält
-        http://eol(dot)org/schema/terms/FossilFirst: erstes Auftreten
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002359: breit
+        http://purl(dot)obolibrary(dot)org/obo/CEPH_0000036: brüten
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: braun
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46719: Calcit
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_22984: Kalzium
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32584: Kalziumsulfat Halbhydrat
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900035: Kletterpflanze
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000015: cm
         http://purl(dot)obolibrary(dot)org/obo/ENVO_01000687: küstennah
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000253: Fluss
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000114: Watt
-        http://semanticscience(dot)org/resource/SIO_001114: max.
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000187: Prozent
+        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000078: dämmerungsaktiv
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_30813: Caprinsäure
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002301: niedrige Qualität
         http://purl(dot)obolibrary(dot)org/obo/UO_0000185: Grad
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000195: Grad Fahrenheit
-        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#inch: Zoll
-        http://purl(dot)org/obo/owl/UO#UO_0000034: Wochen
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28941: Behensäure
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: ernährt sich von
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001154: verlängert
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001733: immergrün
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002425: sichtbar
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: schnell
+        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#foot: Fuß
+        http://eol(dot)org/schema/terms/FossilFirst: erstes Auftreten
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46713: Fluorit
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009001: Frucht
+        http://eol(dot)org/schema/terms/Present: Geographische Verteilung enthält
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900024: Kryptophyt
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000369: gleitend
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: grün
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002303: Lebensraum
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: herzförmig
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900025: Sumpfpflanze
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15756: Palmitinsäure
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002453: Gastgeber von
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900026: Wasserpflanze
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52255: Hydroxylapatit
+        http://purl(dot)obolibrary(dot)org/obo/EFO_0004387: Zoll
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002300: erhöhte Qualität
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000625: invertiert
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: groß
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000050: Lebenserwartung
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001199: linear
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: Magnesium (Mg)
+        http://semanticscience(dot)org/resource/SIO_001114: max.
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000461: medium (normal)
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002122: gemischt
         http://purl(dot)obolibrary(dot)org/obo/UO_0010005: mm/Tag
         http://purl(dot)obolibrary(dot)org/obo/NCIT_C105508: mm/sek
         http://eol(dot)org/schema/terms/millimetersPerYear: mm/Jahr
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: orange
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: Sauerstoff
+        http://purl(dot)obolibrary(dot)org/obo/PORO_0000436: gefingert
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000187: Prozent
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002439: jagt
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002389: niederliegend
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_26401: Purine
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: lila
+        http://purl(dot)obolibrary(dot)org/obo/UO_0010006: Verhältnis
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000322: rot
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0005532: Rhizompflanze
+        http://purl(dot)obolibrary(dot)org/obo/PO_0004542: Rhizom
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000253: Fluss
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009005: Wurzeln
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000055: läuft
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000370: Hüpfen
+        http://purl(dot)obolibrary(dot)org/obo/PO_0005848: sekundäres Xylem
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009010: Samen
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: Form
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900034: Strauch
+        http://purl(dot)obolibrary(dot)org/obo/PO_0020042: einfach
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0004288: Skelett
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: langsam
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000587: klein
+        http://purl(dot)obolibrary(dot)org/obo/CMO_0000445: Zitzenzahl
         http://purl(dot)obolibrary(dot)org/obo/UO_0010038: Tonnen
-        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#foot: Fuß
-        http://purl(dot)obolibrary(dot)org/obo/EFO_0004387: Zoll
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002044: trapezförmig
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900033: Baum
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_27226: Harnsäure
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52241: Vaterit
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: Volumen
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000114: Watt
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: weiß
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000324: gelb
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001941: gelb-grün
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000064: µmol/l
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000106: Hz
+        http://rs(dot)tdwg(dot)org/ontology/voc/TaxonName#Isotype: Isotyp
 ...

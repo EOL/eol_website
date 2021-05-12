@@ -27,9 +27,9 @@ class Node < ApplicationRecord
   counter_culture :page
 
   # TODO: this is duplicated with page; fix.
-  def name(languages = nil)
-    languages ||= Language.current
-    vernacular(languages).try(:string) || scientific_name
+  def name(locale = nil)
+    locale ||= Locale.current
+    vernacular(locale: locale, fallbacks: true).try(:string) || scientific_name
   end
 
   def use_breadcrumb?

@@ -1,10 +1,13 @@
 # Messages for Czech (čeština)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Georg101
 # Author: Jachym
 # Author: Juandev
+# Author: Matěj Suchánek
 # Author: Setnicka
 # Author: Spotter
+# Author: Watt
 ---
 cs:
   language_name: Anglicky
@@ -79,7 +82,6 @@ cs:
       referents_count: reference
       species_count: druhy
       updated_at: naposledy aktualizováno
-  cms_page_date: 'Poslední změna:'
   collect_already_in_collection: (již je zde)
   collect_already_in_collection_will_add_icon: (přidat média na "%{page}")
   collect_new_collection: Nový Název Sbírky
@@ -151,6 +153,7 @@ cs:
     altitude: nadmořská výška
     author: autor
     bibliographic_citation: bibliografická citace
+    contributor: Přispěvatel
     compiler: překladatel
     creator: autor
     editor: editor
@@ -196,7 +199,21 @@ cs:
   filters:
     filter_by_attribute: filtrovat podle atributu
     filter_by_language: filtrovat podle jazyka
+    filter_by_provider: filtrovat podle poskytovatele
   footer:
+    eol_info:
+      citing_eol: citace EOL
+      contact_us: Kontaktujte nás
+      data_services: Datové služby
+      donate: Darovat
+      education: Vzdělávání
+      glossary: Slovník
+      help: Nápověda
+      language_support: Jazyková podpora
+      terms_of_use: Podmínky užití
+      the_eol_forum: fórum EOL
+      what_is_eol: Co je EOL
+      whats_new: Co je nového
     discover:
       algae: Řasy
       amphibians: Obojživelníci
@@ -220,130 +237,154 @@ cs:
       spiders: Pavouci
       trees: Stromy
       viruses: Viry
+      worms: Žížaly
+    eol_is_hosted_by: 'EOL je hostováno:'
+  forgot_your_password: Zapomněli jste heslo
+  landing_page:
+    header: Globální přístup k znalostem o životě na zemi
+    stats_cleared: Statistiky byly přepočítány
   language: Jazyk
   languages:
-    Q29507: Asturianština
-    Q33357: Krymská tatarština
-    Q33634: Kalmyčtina
-    Q35939: Kreolská jamajština
-    Q36730: Turečtina, Ottomanština
-    Q56426: Marocká arabština
-    Q750553: Brazilská portugalština
-    Q9292: Ázerbájdžánština
     ab: Abcházština
+    aa: Afar
     af: Afrikánština
-    an: Aragonština
+    ak: Akan
+    alb: Albánština
+    sq: Albánština
+    am: Amharština
     ar: Arabština
+    an: Aragonština
+    hy: Arménština
     as: Assámština
+    q29507: Asturianština
+    q56590: Atikamekwština
+    av: Avarština
+    q9292: Ázerbájdžánština
     az: Ázerbájdžánština
+    q33070: Balinésština
+    eu: Baskičtina
+    q29540: Bavorština
     be: Běloruština
-    bg: Bulharština
-    bh: Bihárské jazyky
     bn: Bengálština
-    bo: Tibetština
-    br: Bretonština
+    bh: Bihárské jazyky
+    nb: Norština
     bs: Bosenština
+    q750553: Brazilská portugalština
+    br: Bretonština
+    bg: Bulharština
+    my: Barmština
     ca: Katalánština
+    km: Khmérština
     ce: Čečenština
-    co: Korsičtina
-    cs: Čeština
+    ny: Čičevština
+    zh: Čínština
+    chi: Čínština
     cu: Staroslověnština
     cv: Čuvačština
-    cy: Welšština
+    co: Korsičtina
+    q33357: Krymská tatarština
+    hr: Chorvatština
+    cs: Čeština
     da: Dánština
-    de: Němčina
-    el: Řečtina
+    nl: Vlámština
     en: Angličtina
     eo: Esperanto
-    es: Španělština; Kastilština
     et: Estonština
-    eu: Baskičtina
-    fa: Perština
-    fi: Finština
+    est: Estonština
     fo: Faroeština
+    fi: Finština
     fr: Francouzština
-    fy: Západní frísština
-    ga: Irština
-    gd: Galština; Skotská galština
+    fra: Francouzština
+    gd: Skotská galština
     gl: Galícijština
+    ka: Gruzínština
+    de: Němčina
+    el: Řečtina
+    gre: Řečtina
+    ht: Haitiština, Haitská kreolština
     he: Hebrejština
     hi: Hindština
-    hr: Chorvatština
-    ht: Haitiština, Haitská kreolština
     hu: Maďarština
-    hy: Arménština
-    ia: Interlingua (Mezinárodní asociace pomocných jazyků)
-    id: Indonésština
     is: Islandština
+    id: Indonésština
+    ia: Interlingua (Mezinárodní asociace pomocných jazyků)
+    ga: Irština
     it: Italština
+    q35939: Kreolská jamajština
     ja: Japonština
+    jp: Japonština
     jv: Javánština
-    ka: Gruzínština
-    kg: Kongžština
+    q33634: Kalmyčtina
     kk: Kazašština
-    km: Khmérština
+    rw: Kinyarwanda
+    kg: Kongžština
     ko: Korejština
     ku: Kurdština
-    la: Latina
-    lb: Lucemburština
-    li: Limburština
     lo: Laoština
-    lt: Litevština
+    la: Latina
     lv: Lotyšština
-    mi: Maorština
+    li: Limburština
+    lt: Litevština
+    lit: Litevština
+    lb: Lucemburština
     mk: Makedonština
-    mn: Mongolština
     mt: Maltézština
-    my: Barmština
-    nb: Norština
-    ne: Nepálština
-    nl: Vlámština
-    nn: Nynorsk Norština
-    none: Neurčeno
+    mi: Maorština
+    mn: Mongolština
+    q56426: Marocká arabština
     nv: Navajština
-    ny: Čičevština
+    ne: Nepálština
+    nn: Nynorsk Norština
     os: Ossetijština
     pa: Pandžábština
+    fa: Perština
     pl: Polština
-    ps: Paštúnština
+    pol: Polština
+    q36748: Pontština
     pt: Portugalština
+    ps: Paštúnština
     qu: Kečuánština
     ro: Rumunština; Moldavština; Moldovan
     ru: Ruština
-    rw: Kinyarwanda
+    sm: Samoaština
+    sg: Sango
     sa: Sanskrit
     sc: Sardinijština
+    sr: Srbština
+    sn: Shona
     sd: Sindhi
-    sg: Sango
     si: Sinhálština
     sk: Slovenština
+    slk: Slovenština
     sl: Slovinština
-    sm: Samoaština
-    sn: Shona
     so: Somálština
-    sq: Albánština
-    sr: Srbština
+    es: Španělština; Kastilština
+    slv: Španělština
+    sw: Swahilština
     ss: Swati
     sv: Švédština
-    sw: Swahilština
+    ty: Tahitština
     ta: Tamilština
+    tt: Tatarština
     te: Teluguština
     th: Thajština
-    tk: Turkmenština
+    bo: Tibetština
     to: Tongština
     tr: Turečtina
-    tt: Tatarština
-    ty: Tahitština
+    q36730: Turečtina, Ottomanština
+    tk: Turkmenština
     ug: Ujgurština
     uk: Ukrajinština
+    none: Neurčeno
     ur: Urdština
     uz: Uzbečtina
     vi: Vietnamština
     wa: Waloonština
+    cy: Welšština
+    fy: Západní frísština
     yi: Jiddiš
     yo: Yorubština
     za: Čínština
-    zh: Čínština
     zu: Zulujština
   layout_sign_in: Přihlásit se
   layout_sign_up: Zaregistrovat se
@@ -351,8 +392,441 @@ cs:
   literature_and_references_header: Literatura a reference
   maps:
     empty: Pro tuto stránku nejsou k dispozici žádné mapy.
+  medium:
+    untitled:
+      image: Nepojmenovaný obrázek
+      video: Nepojmenované video
+      sound: Nepojmenovaný zvuk
+      map: Nepojmenovaná mapa
+      map_of: Mapa stránky %{page_name}
+      js_map: Nepojmenovaná interaktivní mapa
+      js_map_of: Interaktivní mapa stránky %{page_name}
+    subclasses:
+      image: Obrázek
+      video: video
+      sound: Zvuk
+      map_image: mapa
+      js_map: interaktivní mapa
+  medium_description_blank: Pro tento objekt nebyl dodán popis.
+  medium_header_title: 'Název:'
+  medium_header_description: 'Popis:'
+  names:
+    prefer: preferovat
+  nav:
+    about: O projektu
+    discuss: Diskuse
+    education: Vzdělávání
+    search:
+      placeholder: Hledat na EOL...
+  name_preferred_label: oblíbená
+  page_title: Encyklopedie života
+  page_title_search: 'Hledat: %{query}'
+  pages:
+    actions:
+      collect: sbírat
+    batch_lookup:
+      download_tsv: Stáhnout TSV
+      new_search: Nové hledání
+      page_id: ID stránky
+      page_url: URL stránky
+      query: dotaz
+      query_cant_be_blank: žádost nemůže být prázdná
+      search: hledat
+    filter_menu:
+      show_all: Zobrazit vše
+    page_data:
+      n_hidden_show_all_noname:
+        one: 1 skrytý záznam — ukázat vše
+        other: '%{count} skrytý záznam — ukázat vše'
+      show_all: ukázat vše
+    resource_names:
+      name_recognized_by: Poznáno %{by}
+      name_recognized_by_w_rank: '%{rank} poznáno %{by}'
+      name_recognized_by_w_status: '%{status} podle %{by}'
+      rank:
+        r_domain: Doména
+        r_subdomain: Poddoména
+        r_infradomain: Infradoména
+        r_superkingdom: Superkrálovství
+        r_kingdom: Království
+        r_subkingdom: Podkrálovství
+        r_infrakingdom: Infrakrálovství
+        r_class: Třída
+        r_subclass: Podtřída
+        r_order: Pořadí
+        r_family: Rodina
+        r_tribe: Kmen
+        r_genus: Rod
+        r_species: Druhy
+        r_subspecies: Poddruhy
+        r_form: Tvar
+      username_missing: uživatel %{user_id}
+    trophic_web:
+      competitor: Soupeř
+      globi_credit_html: data z <a href='%{url}'>GloBI</a>
+      predator: Predátor
+      prey: Kořist
+      reset: Obnovit
+    native_node_missing_warning: není k dispozici žádná informace o hierarchii
+    tabs:
+      articles: články
+      classifications: klasifikace
+      data: data
+      literature_and_references: literatura & zdroje
+      overview: přehled
+      maps: mapy
+      media: média
+      names: názvy
+    iucn_status:
+      label: 'Stav IUCN:'
+      ex: vyhynulý (EX)
+      ew: vyhynulý v přírodě (EW)
+      cr: kriticky ohrožený (CR)
+      en: ohrožený (EN)
+      vu: ohrožitelný (VU)
+      nt: blízký k vyhynutí (NT)
+      ne: neměřeno (NE)
+      unknown: neznámo (není záznam)
+    unresolved_name: Nerozluštěný název
+    unresolved_name_prefix: 'Nerozluštěný název:'
+  page_titles:
+    pages:
+      data: '%{page_name} data'
+      media: media %{page_name}
+      articles: '%{page_name} články'
+  recaptcha: Recaptcha
+  recaptcha_error: Prosím potvrďte, že nejste robot.
+  register_new_account: Registrovat nový účet
+  resources:
+    actions:
+      republish: zveřejnit
+      index: zpět ke všem zdrojům
+      clear_publishing: vymazat zámek
+    headers:
+      index: Zdroje
+    no_events: Nic
+  resource_missing: Zdroj nenalezen
+  scientific_name:
+    status_title:
+      accepted: Přijaté názvy
+      alternative: Alternativní názvy
+      preferred: Preferované názvy
+      unusable: Nepoužitelné názvy
+      synonym: Synonyma
+  scientific_names_header: Vědecké názvy
+  send_me_reset_password_instructions: Pošlete mi návod k obnovení hesla
+  search_results:
+    medium_article: článek
+    medium_image: Obrázek
+    medium_map: Mapa
+    medium_sound: Zvuk
+    medium_video: Video
+    medium_title_article_html: 'Článek: <span class=''sub''>%{title}</span>'
+    medium_title_image_html: 'Obrázek: <span class=''sub''>%{title}</span>'
+    medium_title_map_html: 'Mapa: <span class=''sub''>%{title}</span>'
+    medium_title_sound_html: 'Zvuk: <span class=''sub''>%{title}</span>'
+    medium_title_video_html: 'Video: <span class=''sub''>%{title}</span>'
+    empty: Žádné výsledky.
+    field_matches:
+      description: shoduje se s popisem
+      resource_pk: 'shoduje se vnějším ID:'
+  sections:
+    behavior: Chování
+    brief_summary: Rychlé shrnutí
+    conservation_status: Stav ochrany
+    ecology: Ekoloogie
+    general_ecology: Obecná ekologie
+    genetics: Genetika
+    growth: Růst
+    habitat: Prostředí
+    management: správa
+    migration: Migrace
+    molecular_biology: Molekulární biologie
+    molecular_biology_and_genetics: Molekulární biologie a genetika
+    morphology: Morfologie
+    notes: Poznámky
+    overview: Přehled
+    physiology_and_cell_biology: Fyziologie a buněčná biologie
+    reproduction: Rozmnožování
+    risks: Rizika
+    size: Velikost
+    threats: Nebezpečí
+    trends: Trendy
+    wikipedia: Wikipedie
+  settings: nastavení
   sign_in: Přihlásit se
+  sign_up: Zaregistrovat se
+  signature_with_contact_us_link: |-
+    Pokud narazíte na problémy, prosím kontaktujte nás na %{url}.
+
+    Tým Encyklopedie života
+  simple_form:
+    "yes": Ano
+    "no": Ne
+    required:
+      text: povinné
+      mark: '*'
+    error_notification:
+      default_message: 'Prosím prohlédněte si problémy níže:'
+    labels:
+      defaults:
+        email: e-mail
+        password: heslo
+        password_confirmation: potvrzení hesla
+        remember_me: Pamatovat si mě
+        username: Uživatelské jméno
+        bio: Bio
+  stats:
+    articles: články
+    collections: Sbírky
+    data: datové záznamy
+    media: média
+    pages: stránky
+    nodes: uzly
+    scientific_names: název
+    users: Uživatelé
+    references: Zdroje
+  term_query_filter:
+    validations:
+      invalid_uri: Nesprávná URL
+      range_invalid_error: musí být >= k první hodnotě
+  terms:
+    scientific_name: vědecký název
+    show_all_records: Zobrazit všechny záznamy
+    source: zdroj
+  traits:
+    data_viz:
+      about_this_chart: o této tabulce
+      num_records_label: '# záznamů'
+      other: ostatní
+    properties:
+      scientific_name: Vědecký název
+    search:
+      filter_display:
+        sex: 'pohlaví: %{value}'
+      new_search: nové hledání
+    search_form:
+      sex: pohlaví
+  trophic_web:
+    group_descriptions:
+      predator: živí se na %{source_name}
+      prey: snězen %{source_name}
+  trust:
+    unreviewed: nezkontrolované
+    trusted: důvěryhodný
+    untrusted: nedůvěryhodný
   user:
+    created_at: vytvořeno
+    edit_account_details: Upravit podrobnosti účtu
+    email: E-mail
+    to_commit_enter_current: Pro uložení změn vložte prosím své současné heslo
     form_labels:
       age_confirm: Je mi alespoň 13 let
+    headers:
+      collections: Sbírky
+      downloads: Stažené
+      links: Odkazy
+    is_power_user: Tento uživatel je označen jako superuživatel
+    validations:
+      age_confirm: musíte potvrdit, že jste starší 13 let
+      tou_confirm: musíte potvrdit, že jste si přečetli Podmínky užívání a Ochranu
+        soukromí
+    list_of_power_users: Seznam superuživatelů
+    new_password: Nové heslo
+    confirm_new_password: Potvrďte nové heslo
+    username: Uživatelské jméno
+    update: Aktualizovat
+    update_email: Aktualizovat email
+  users:
+    account_migration_header: 'Pokud jste se registroval/a s EOL před 15. listopadu
+      2018:'
+    sign_in: Přihlásit se
+  term:
+    actions:
+      sort: Řadit podle
+    edit:
+      submit: Uložit
+    fields:
+      name: 'Název:'
+      definition: Definice
+      comment: 'komentář:'
+      sections: sekce
+    pagination:
+      previous: Předchozí stránka
+    inverse_name:
+      by_uri:
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: je snězen
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002634: má endoparazita
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002626: je zabit
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002556: má patogen
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002618: navštíven
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002622: rostliny navštíveny
+    name:
+      by_uri:
+        http://eol(dot)org/schema/terms/percentPerMonth: '%/měsíc'
+        http://purl(dot)obolibrary(dot)org/obo/EO_0007059: kyselá půda
+        http://www(dot)ebi(dot)ac(dot)uk/efo/EFO_0001272: dospělý
+        http://eol(dot)org/schema/terms/aerial: letecký
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000366: letecký
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00010505: aerosol
+        http://eol(dot)org/schema/terms/AgeAtMaturity: věk dospělosti
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000077: zemědělský
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_0010003: zemědělský materiál
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002259: zemědělská půda
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002265: zemědělský odpad
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000371: zemědělský odpad
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000316: zásadité prostředí
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002119: zásaditý horký pramen
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000085: alpský ledovec
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005741: alpská půda
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002133: anaerobní bahno
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002045: anaerobní usazenina
+        http://eol(dot)org/schema/terms/AnaerobicSoilTolerance: tolerance anaerobní
+          zeminy
+        https://eol(dot)org/schema/terms/anal_fin: plavání za pomocí řitní ploutve
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980071: jednoleté
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_0010001: antropogenní přírodní
+          materiál
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52254: apatit
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000072: akvadukt
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002030: vodní
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000371: vodní (pohyb)
+        http://eol(dot)org/schema/terms/aquatic: přizpůsobený vodě
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900044: vodní rostlina
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00012408: zvodnatět
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005742: orná půda
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52239: aragonit
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001709: oblast
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000230: suchý
+        https://eol(dot)org/schema/terms/arm: ruka
+        http://purl(dot)obolibrary(dot)org/obo/GO_0019954: nepohlavní rozmnožování
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000166: atol
+        http://eol(dot)org/schema/terms/average: průměr
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000472: klidné vody
+        https://eol(dot)org/schema/terms/bamboo_forest: bambusový les
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000161: banánová plantáž
+        http://purl(dot)obolibrary(dot)org/obo/PO_0004518: kůra
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000236: čedič
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000032: záliv
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000091: pláž
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002138: plážový písek
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000500: hráz bobra
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000270: rybník bobrů
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03302072: včelí vosk
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_64389: opál
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000373: biologický odpad
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: černá
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C12434: krev
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000318: modrá
+        http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: délka těla
+        http://purl(dot)obolibrary(dot)org/obo/VT_0001259: hmotnost těla
+        http://eol(dot)org/schema/terms/BodyShape: tvar těla
+        http://purl(dot)bioontology(dot)org/ontology/MESH/D001831: teplota těla
+        http://eol(dot)org/schema/terms/BodyVolume: objem těla
+        http://purl(dot)obolibrary(dot)org/obo/VT_0015039: šířka těla
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000540: brakické jezero
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000541: brakický rybník
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002019: brakická voda
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: hnědá
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000073: budova
+        http://purl(dot)obolibrary(dot)org/obo/EUPATH_0000001: stavební materiál
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005760: spálená půda
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_27732: kofein
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46719: vápenec
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_22984: vápník (Ca)
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_3311: uhličitan vápenatý
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000096: kaldera
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000169: kaňon
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000067: jeskyně
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000102: vstup do jeskyně
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000019: jeskynní podlaha
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000013: jeskynní systém
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002144: jeskynní stěna
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002054: křída
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00003914: křídová půda
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002237: černozem
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000271: šot
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002982: jíl
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000120: jílová usazenina
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002262: jílová půda
+        http://eol(dot)org/schema/terms/clearWater: čirá voda
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000087: útes
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000015: cm
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000081: cm²
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000097: cm³
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000687: pobřežní
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000416: pobřežní duna
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000137: pobřežní zátoka
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000303: pobřežní země
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002150: pobřežní voda
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000118: kokosová plantáž
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000163: plantáž kávovníku
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000014: barva
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C16452: komunikace
+        http://eol(dot)org/schema/terms/competitive: soutěživý
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002170: kompost
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000018: složené oči
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002114: kontaminovaná usazenina
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002116: kontaminovaní půda
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000221: pevninský ostrov
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000049: korálový útes
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000145: zadní korálový útes
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000147: přední korálový útes
+        https://eol(dot)org/schema/terms/coral_sand: korálový ostrov
+        http://rs(dot)tdwg(dot)org/dwc/terms/countryCode: kód země
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00003041: stáj
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000052: kráterové jezero
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000363: plazení
+        http://eol(dot)org/schema/terms/criticallyEndangered: kriticky ohrožený
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000033: dny
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001422: mrtvý
+        http://sweet(dot)jpl(dot)nasa(dot)gov/2(dot)3/matrSediment(dot)owl#Debris: odpad
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002113: hlubokomořská usazenina
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000185: stupně
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000027: stupně celsia
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000101: delta
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000179: poušť
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000156: pouštní oáza
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005800: pouštní písek
+        http://ncicb(dot)nci(dot)nih(dot)gov/xml/owl/EVS/Thesaurus(dot)owl#C25285: průměr
+        http://eol(dot)org/schema/terms/dry_forest: suchý les
+        http://eol(dot)org/schema/terms/dryFruit: suché ovoce
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000277: vyschlé jezero
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000296: dno vyschlého jezera
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000018: vyschlá řeka
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_0010163: údolí vyschlé řeky
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005748: suchá země
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000128: vyschlé údolí
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000170: duna
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002008: prach
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_37958: barvivo
+        http://ncicb(dot)nci(dot)nih(dot)gov/xml/owl/EVS/Thesaurus(dot)owl#C61589: brzy
+        http://eol(dot)org/schema/terms/earlySpring: rané jaro
+        http://eol(dot)org/schema/terms/earlySummer: rané léto
+        http://eol(dot)org/schema/terms/eggDensity: hustota vejce
+        http://eol(dot)org/schema/terms/EggDiameter: průměr vejce
+        http://eol(dot)org/schema/terms/EggMass: hmotnost vejce
+        http://eol(dot)org/schema/terms/endangered: ohrožený
+        http://eol(dot)org/schema/terms/extinct: vyhynulý
+        http://eol(dot)org/schema/terms/extinctInTheWild: vyhynulý v přírodě
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000970: oči
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000078: farma
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005749: farmářská půda
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000022: péro
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000383: samice
+        http://purl(dot)obolibrary(dot)org/obo/GO_0009566: hnojení
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005754: hnojená půda
+        http://eol(dot)org/schema/terms/FireResistance: odolnost proti ohni
+        http://eol(dot)org/schema/terms/FireTolerance: tolerance ohně
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000039: fjord
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000367: let
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03303179: potravinářské barvivo
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000174: les
+        http://eol(dot)org/schema/terms/forestEdge: kraj lesa
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002261: lesní půda
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009001: ovoce
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000021: g
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000084: g/cm³
+        http://eol(dot)org/schema/terms/gramsPerMeterSquared: g/m²
+        http://eol(dot)org/schema/terms/gramsPerMonth: g/měsíc
 ...

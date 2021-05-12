@@ -1,0 +1,53 @@
+- open_row = defined?(open_row) ? open_row : false
+- hide_pred_when_closed = local_assigns.fetch(:hide_pred_when_closed, false)
+- page = local_assigns.include?(:page) ? page : trait.page
+- key = "trait_bank/data_row/#{I18n.locale}#{'/open' if open_row}#{'/show_taxon' if show_taxon}/trait_#{trait.id}/page_#{page.id}/hide_pred_when_closed/#{hide_pred_when_closed}"
+- cache(key) do
+  - Rails.logger.info("&& TB Cached #{key}")
+  - page_is_assoc_obj = local_assigns.fetch(:page_is_assoc_obj, false)
+  - page_id_for_expand = page_is_assoc_obj && trait.object_page ? trait.object_page.id : page.id
+  - show_taxon_on_expand = show_taxon || page_is_assoc_obj
+
+  .trait.js-data-row{ class: "js-data-row-#{open_row ? 'open' : 'closed' }",  data: { :'show-path' => datum_path(:id => trait.id, :page_id => page_id_for_expand, :show_taxon => show_taxon_on_expand, hide_pred_when_closed: hide_pred_when_closed), :id => trait.id } }
+    - if show_taxon
+      .trait-thumb
+        - show_data_page_icon page
+    - predicate = trait.predicate
+
+    .trait-source= show_source_segment(trait.resource)
+    .trait-data{ class: show_taxon ? "" : "trait-data-no-icon" }
+      - if show_taxon
+        = link_to(trait.page.scientific_name.html_safe, trait.page)
+      %div
+        - if open_row || !hide_pred_when_closed
+          .trait-pred.term-info-a.a.js-predicate= trait.predicate.i18n_name
+          = render :partial => "terms/desc_meta", :locals => { :term => trait.predicate, :search_link => true }
+      .trait-val
+        - show_trait_value(trait, page_is_assoc_obj: page_is_assoc_obj)
+        - if trait.object_term
+          = render :partial => "terms/desc_meta", :locals => { :term => trait.object_term, :search_link => true, :predicate => trait.predicate }
+      - modifier_content = modifier_txt(trait)
+      - if modifier_content
+        .trait-mod= modifier_content
+    - extra_metadata = trait_property_metadata(trait)
+    - if open_row && (page || trait.metadata.any? || extra_metadata.any?)
+      %ul.meta-items.js-meta-items
+        - trait.grouped_metadata.each do |datum|
+          %li.meta-item
+            %div
+              .meta-pred.a= datum.predicate.i18n_name
+              = render :partial => "terms/desc_meta", :locals => { :term => datum.predicate, :search_link => false }
+            .meta-val
+              - show_trait_value(datum)
+              - if datum.object_term
+                = render :partial => "terms/desc_meta", :locals => { :term => datum.object_term, :search_link => false }
+        - extra_metadata.each do |m|
+          %li.meta-item
+            .meta-pred= m[:label]
+            - is_uri = URI.parse(m[:value]).kind_of?(URI::HTTP) rescue nil
+            .meta-val= is_uri ? link_to(m[:value], m[:value]) : m[:value].html_safe
+        %li.meta-item
+          .meta-pred= t("terms.record_url")
+          - url = datum_url(id: trait.id)
+          .meta-val= link_to url, url
+    %i.fa.fa-2x.meta-items-arw.js-meta-arw{ :class => open_row ? 'fa-angle-up' : 'fa-angle-down', :'data-hide-pred-when-closed' => hide_pred_when_closed }

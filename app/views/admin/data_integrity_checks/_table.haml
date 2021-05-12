@@ -1,0 +1,38 @@
+%table.uk-table
+  %thead
+    %tr
+      %th type
+      %th status
+      %th message
+      %th created
+      %th started
+      %th completed
+      - if links
+        %th
+  %tbody
+    - @checks.each do |check|
+      - type = check[:type]
+      - record = check[:record]
+
+      - if record.nil?
+        - status = "not yet run"
+      - else
+        - status = record.status
+
+      %tr
+        - if links
+          %td= link_to type, admin_data_integrity_check_path(id: type)
+        - else 
+          %td= type
+        %td= status
+        %td 
+          %span= record&.message&.html_safe
+          - if links && record && record.show_detailed_report?
+            %br
+            = link_to 'Click for detailed report', admin_data_integrity_checks_detailed_report_path(type: type)
+        %td= record&.created_at
+        %td= record&.started_at
+        %td= record&.completed_at
+        - if links
+          %td= link_to 're-run', admin_data_integrity_checks_run_path(type: type)
+

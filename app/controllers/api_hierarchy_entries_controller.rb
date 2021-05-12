@@ -45,7 +45,7 @@ class ApiHierarchyEntriesController < LegacyApiController
       entry.vernaculars.each do |name|
         name_hash = {}
         name_hash['vernacularName'] = name.string
-        name_hash['language'] = name.language&.group
+        name_hash['language'] = name.language&.locale&.code
         name_hash['id'] = name.id
         @entry[:vernacularNames] << name_hash unless params[:language] && params[:language] != name_hash['language']
       end

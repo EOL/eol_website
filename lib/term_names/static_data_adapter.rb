@@ -1,5 +1,5 @@
 class TermNames::StaticDataAdapter
-  FILE_NAMES = %w(obo_terms common_predicates common_envo units)
+  FILE_NAMES = %w(all_terms)
   FILE_DIR = Rails.application.root.join("lib", "term_names", "static_data")
   FILE_PATHS = FILE_NAMES.collect do |name|
     FILE_DIR.join("#{name}.json")
@@ -18,7 +18,7 @@ class TermNames::StaticDataAdapter
       @file_paths = FILE_PATHS
     end
 
-    puts "WARNING: Using StaticDataAdapter. Remember to copy the resulting files to config/locales/en.yml and config/locales/qqq.yml, then delete them before committing"
+    puts "WARNING: Using StaticDataAdapter. Remember to paste the contents of the resulting files to config/locales/en.yml and config/locales/qqq.yml, then delete them before committing"
   end
 
   def skip_uri_query?
@@ -30,13 +30,17 @@ class TermNames::StaticDataAdapter
   end
 
   def preload(uris, locales)
-    @terms = []
+    @names = []
+    @defns = []
+
 
     @file_paths.each do |path|
       File.open(path) do |file|
         term_json = JSON.parse(file.read)
-        @terms += term_json["data"].collect do |record|
-          TermNames::Result.new(record[0], record[1], { definition: record[2].tr("\n", " ") })
+
+        term_json["data"].each do |record|
+          @names << TermNames::Result.new(record[0], record[1])
+          @defns << TermNames::Result.new(record[0], record[2].tr("\n", " "))
         end
       end
     end
@@ -44,7 +48,15 @@ class TermNames::StaticDataAdapter
 
   def names_for_locale(locale)
     if locale.to_sym == :en
-      @terms
+      @names
+    else
+      []
+    end
+  end
+
+  def defns_for_locale(locale)
+    if locale.to_sym == :en
+      @defns
     else
       []
     end

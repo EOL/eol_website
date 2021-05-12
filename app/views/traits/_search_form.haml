@@ -1,5 +1,5 @@
 #term_form_container
-  = form_for @query, :url => term_search_results_path, :method => :get, :html => { :id => "new_term_query", :class => ["uk-form", "uk-form-horizontal", "js-filter-form", ("is-multiple-filters" if (@query.filters.length > 1))], :data => { :submit_notification => t(".this_may_take_a_minute") }, :autocomplete => "off" } do |f|
+  = form_for @query, :url => term_search_results_path, :html => { :id => "new_term_query", :class => ["uk-form", "uk-form-horizontal", "js-filter-form", ("is-multiple-filters" if (@query.filters.length > 1))], :data => { :submit_notification => t(".this_may_take_a_minute") }, :autocomplete => "off" } do |f|
     - if @query.errors[:base].any?
       %ul.base-errors
         - @query.errors.full_messages_for(:base).each do |e|
@@ -15,8 +15,9 @@
         - if f.object.filters.length > 1
           .l-filter-first.filter-icon
             .js-remove-filter{:'uk-icon' => "icon: close; ratio: 1.4", :data => { :index => ff.index }}
-        = render "filter_field", field_name: "pred", typeahead_class: "pred", placeholder: t(".attribute_eg"), ff: ff, label_uri: ff.object.top_pred_uri.present? ? ff.object.top_pred_uri : ff.object.pred_uri, nested_selects: true
-        - if ff.object.units_for_pred?
+          
+        = render 'filter_field', field_name: 'predicate', placeholder: t(".attribute_eg"), ff: ff, term_for_name_field: ff.object.root_predicate.present? ? ff.object.root_predicate : ff.object.predicate, nested_selects: true
+        - if ff.object.predicate_has_numeric_value?
           .filter-row{:class => (ff.object.errors[:num_val1].any? || ff.object.errors[:num_val2].any?) ? "is-filter-row-with-errors" : ""}
             %span.filter-field
               = ff.text_field :num_val1, :class => "filter-input uk-input uk-form-width-small", :placeholder => "-∞"
@@ -25,20 +26,21 @@
             %span.filter-field
               = ff.text_field :num_val2, :class => "filter-input uk-input uk-form-width-small", :placeholder => "∞"
               - show_error(ff.object, :num_val2)
-          .filter-row{:class => ff.object.errors[:obj_uri].any? ? "is-filter-row-with-errors" : ""}
-            = ff.select :units_uri, units_select_options(ff.object), {}, :class => "filter-input uk-select l-filter-full"
+          - if ff.object.units_for_predicate?
+            .filter-row
+              = ff.select :units_term_id, units_select_options(ff.object), {}, :class => "filter-input uk-select l-filter-full"
         - elsif ff.object.association_pred?
           %span.js-typeahead-wrap.filter-field
             = text_field_tag "obj_clade_name", ff.object.obj_clade&.native_node&.canonical_form, :class => "js-clade-typeahead uk-input", :placeholder => t(".target_group")
             = ff.hidden_field :obj_clade_id, :class => "js-typeahead-field"
         - else
-          - typeahead_class = ff.object.predicate? ? "pred-obj" : "obj"
-          = render "filter_field", field_name: "obj", typeahead_class: typeahead_class, placeholder: t(".value_eg"), typeahead_data: { :'pred-uri' => ff.object.pred_uri }, ff: ff
+          - typeahead_class = ff.object.predicate? ? "object-term-for-predicate" : "object-term"
+          = render "filter_field", field_name: "object_term", typeahead_class: typeahead_class, placeholder: t(".value_eg"), typeahead_data: { :'predicate-id' => ff.object.predicate_id }, ff: ff, term_for_name_field: ff.object.object_term
 
         - if ff.object.show_extra_fields?
-          = render "filter_field", field_name: "sex", typeahead_class: "meta-obj", typeahead_data: { pred: "sex" }, placeholder: t(".sex"), ff: ff
-          = render "filter_field", field_name: "lifestage", typeahead_class: "meta-obj", typeahead_data: { pred: "lifestage" }, placeholder: t(".lifestage"), ff: ff
-          = render "filter_field", field_name: "statistical_method", typeahead_class: "meta-obj", typeahead_data: { pred: "stat_meth" }, placeholder: t(".statistical_method"), ff: ff
+          = render "filter_field", field_name: "sex_term", term_for_name_field: ff.object.sex_term, typeahead_class: "meta-object", typeahead_data: { :'meta-predicate' =>  "sex" }, placeholder: t(".sex"), ff: ff
+          = render "filter_field", field_name: "lifestage_term", term_for_name_field: ff.object.lifestage_term, typeahead_class: "meta-object", typeahead_data: { :'meta-predicate' =>  "lifestage" }, placeholder: t(".lifestage"), ff: ff
+          = render "filter_field", field_name: "statistical_method_term", term_for_name_field: ff.object.statistical_method_term, typeahead_class: "meta-obj", typeahead_data: { :'meta-predicate' => "stat_meth" }, placeholder: t(".statistical_method"), ff: ff
           .filter-row{:class => ff.object.errors[:resource].any? ? "is-filter-row-with-errors" : ""}
             %span.js-typeahead-wrap.filter-field.l-filter-full
               = text_field_tag "resource_name", ff.object.resource&.name, :class => "js-resource-typeahead uk-input", :placeholder => t(".resource")

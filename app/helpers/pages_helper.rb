@@ -200,12 +200,16 @@ module PagesHelper
   end
 
   def sorted_grouped_vernaculars(page)
-    grouped_vernaculars = page.vernaculars.group_by { |n| n.language.group }
-    cur_lang_group = Language.cur_group
+    grouped_vernaculars = page.vernaculars.group_by do |n|
+      n.language.locale&.code 
+    end
+
+    cur_locale = Locale.current.code
+
     sorted_keys = grouped_vernaculars.keys.sort do |a, b|
-      if a == cur_lang_group && b != cur_lang_group
+      if a == cur_locale && b != cur_locale
         -1
-      elsif a != cur_lang_group && b == cur_lang_group
+      elsif a != cur_locale && b == cur_locale
         1
       else
         a_exists = I18n.exists?(language_header_key(a))
@@ -224,7 +228,7 @@ module PagesHelper
 
     sorted_keys.collect do |key|
       {
-        lang: key,
+        locale_code: key,
         vernaculars: grouped_vernaculars[key]
       }
     end
@@ -236,7 +240,7 @@ module PagesHelper
       status = n.taxonomic_status&.name
       dwh_str = n.resource&.dwh? ? "a" : "b"
       key = "#{dwh_str}.#{n.italicized}"
-      key += ".#{node.rank_treat_as}" if include_rank && node.has_rank_treat_as?
+      key += ".#{node.rank_treat_as}" if include_rank && node&.has_rank_treat_as?
       key += ".#{status}" if include_status && status
       key
     end.values.sort_by do |v|

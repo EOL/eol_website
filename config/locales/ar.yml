@@ -1,10 +1,14 @@
 # Messages for Arabic (العربية)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: 3bbo
 # Author: Amira.88
+# Author: Asma
 # Author: HitomiAkane
 # Author: Meno25
 # Author: NEHAOUA
+# Author: Nora
+# Author: Optilete
 # Author: Passant
 # Author: Tala Ali
 # Author: Yousif ihsan
@@ -35,7 +39,7 @@ ar:
   account_already_linked: حسابك مرتبط بالفعل بEOL
   account_not_linked: حسابك غير مرتبط بEOL
   advanced: المتقدمة
-  are_you_sure_delete_account: هل انت متأكد من أن تريد حذف حسابك في EOL ؟
+  are_you_sure_delete_account: هل انت متأكد من حذف حسابك في EOL؟
   article:
     actions:
       collect: تجميع
@@ -95,7 +99,6 @@ ar:
       referents_count: المصادر
       species_count: نوع
       updated_at: آخر تحديث
-  cms_page_date: 'اخر تحديث في:'
   collect_already_in_collection: (انها بالفعل هنا)
   collect_already_in_collection_will_add_icon: اضف وسائل الأعلام الى %{page}
   collect_icon_title: اضف "%{item} من %{page}" الى...
@@ -189,6 +192,7 @@ ar:
     altitude: الارتفاع
     author: مؤلف
     bibliographic_citation: الاقتباس الببليوغرافي
+    contributor: مساهم
     compiler: المحول البرمجي
     creator: المنشئ
     editor: محرر
@@ -242,8 +246,10 @@ ar:
       data_services: خدمات البيانات
       donate: تبرّع
       education: التعليم
+      food_webs: الشبكات الغذائية
       glossary: المعجم
       help: مساعدة
+      language_support: Taal Support
       terms_of_use: شروط الاستخدام
       the_eol_forum: منتدى موسوعة الحياة
       what_is_eol: ما هي موسوعة الحياة؟
@@ -280,274 +286,336 @@ ar:
   language: 'اللغة:'
   languages:
     ab: الأبخازية
-    Q27776: الأديغية
+    q27683: Acehnese
+    q27776: الأديغية
     aa: العفارية
     af: الأفريكانية
     ak: الأكانية
+    alb: الألبانية
     sq: الألبانية
+    q131339: أليمانيك
     am: الأمهرية
     ar: العربية
     an: الأراغونية
     hy: الأرمنية
     as: الأسامية
-    Q29507: الأستورية
-    Q56590: أتيكاميكو
+    q29507: الأستورية
+    q56590: أتيكاميكو
     av: الأفاريكية
     ae: الأفستية
     ay: الأيمرية
-    Q9292: الأذربيجانية
+    q9292: الأذربيجانية
     az: الأذربيجانية
+    q33070: شعب البالي
     bm: البمبرية
+    q33151: شعب بنجار
     ba: الباشكيرية
     eu: الباسكية
+    q29540: باڤارية
     be: البيلاروسية
-    Q8836490: بيندي
+    q8836490: بيندي
     bn: البنغالية
     bh: لغات بيهاري
     bi: البيسلامية
     nb: بوكمول
-    Q4941378: بوندي
+    q4941378: بوندي
     bs: البوسنية
-    Q33202: البراهوية
-    Q750553: البرتغالية البرازيلية
+    q33202: البراهوية
+    q750553: البرتغالية البرازيلية
     br: البريتانية
     bg: البلغارية
     my: البورمية
-    Q35037: بوزينيج تونجو
-    Q880301: يجون الفرنسية
-    Q35156: كار
-    Q2591230: كاشيناهيوا
+    q33120: بوريات
+    q35037: بوزينيج تونجو
+    q880301: يجون الفرنسية
+    q35156: كار
+    q2591230: كاشيناهيوا
     ca: الكتالونية
+    q33239: اللغة السيبوانية
+    khm: اللغة الخميرية
     km: الخميرية الوسطى
     ch: التشاموروية
-    Q33281: تشاباكانو
+    q33281: تشاباكانو
     ce: الشيشانية
+    q33388: شعب الشيروكي
+    q33265: شايان
     ny: الشيشيوا
     zh: الصينية
-    Q32979: شوكتو
+    chi: صينى
+    q32979: شوكتو
     cu: الكنيسة القديمة السلافية
     cv: تشوفاش
+    q37041: اللغة الصينية الكلاسيكية
     kw: الكورنية
     co: الكورسيكية
     cr: لغة كري
-    Q33357: لغة تتار القرم
+    q33357: لغة تتار القرم
     hr: الكرواتية
+    hrv: كرواتية
     cs: التشيكية
     da: الدانماركية
-    Q3362072: ديجو
-    Q56466: دينكاوية
+    q3362072: ديجو
+    q56466: دينكاوية
     dv: الديفيهية
-    Q18415595: دوتيالي
+    q18415595: دوتيالي
+    dut: اللغة الهولندية؛ الفلمنكية
     nl: البلجيكية الهولندية
     dz: الزونخاية
     dzo: الزونخاية
-    Q4126517: الإنكتيتوتية الشرق كندية
+    q4126517: الإنكتيتوتية الشرق كندية
     en: الإنجليزية
+    q29952: لغة ارزيا
     eo: إسبرانتو
     et: الإستونية
+    est: الإستونية
     ee: إوي
     fo: الفاروية
     fj: الفيجية
     fi: الفنلندية
-    Q667747: فيبا
+    fin: اللغة الفنلندية
+    q667747: فيبا
     fr: الفرنسية
+    fra: الفرنسية
     ff: الفولانية
-    gd: الغيلية، الغيلية الاسكتلندية
+    gd: الغيلية الاسكتلندية
     gl: الجاليكية
-    Q33475: غان الصينية
+    q33475: غان الصينية
     lg: غاندا
     ka: جورجيا
     de: الألمانية
     deu: الألمانية
-    Q5575236: جوان كونكاني
-    Q3272630: جوجو
-    Q2501174: غورونتالو
+    q5575236: جوان كونكاني
+    q3272630: جوجو
+    q2501174: غورونتالو
     el: اليونانية الحديثة (1453-)
+    gre: اليونانية
     gn: الغوارانية
     gu: الغوجاراتية
-    Q33303: هايدا
+    q33303: هايدا
     ht: الهايتية، الكريولية الهايتية
     ha: الهوسا
-    Q35756: هايا
+    q35756: هايا
     he: العبرية
-    Q3129390: هيهي
+    heb: العبرية
+    q3129390: هيهي
     hz: هيريرو
-    Q35978: هيليجينون
+    q35978: هيليجينون
     hi: الهندية
     ho: هيري موتو
     hu: الهنغارية
     is: الآيسلندية
+    ice: الآيسلندية
     io: إيدو
     ig: الإيجبو
-    Q35936: إيلوكانو
+    q35936: إيلوكانو
     id: الإندونيسية
-    Q33509: الإنغوشية
+    q33509: الإنغوشية
     ia: اللغة الوسيطة (الرابطة الدولية للغات المساعدة)
     ie: إنترلنج، الأوكسيتانية
     iu: الإنكتيتوتية
     ik: إنوبيات
-    Q33595: إراكو
+    q33595: إراكو
     ga: الأيرلندية
     it: الإيطالية
     ita: الإيطالية
-    Q35939: الكريولية الجامايكية الإنجليزية
+    q35939: الكريولية الجامايكية الإنجليزية
     ja: اليابانية
     jp: اليابانية
     jv: الجاوية
-    Q35475: كابيي
+    q33522: القبرديان الشركسية
+    q35475: كابيي
     kl: الغرينلاندية
-    Q33634: كالميك
+    q33634: كالميك
     kn: الكانادا
     kr: الكانورية
-    Q33541: القرقلباغية
+    q36121: كابامبانغان
+    q33541: القرقلباغية
     ks: الكشميرية
+    q33690: كاشوبيان
     kk: الكازاخية
     ki: الكيكويو
-    Q11005332: كينجا
-    Q11732519: كينجندو
+    q11005332: كينجا
+    q11732519: كينجندو
     rw: الكينيارواندية
     ky: القيرغستانية
     kv: الكومية
     kg: كونغو
     ko: الكورية
+    kor: الكورية
     kj: الكوانياما
     ku: الكردية
+    q36206: لغة لاك
     lo: اللاوية
+    lao: لاوية
     la: لاتينية
     lv: اللاتفية
-    Q1160372: لازية
+    q1160372: لازية
+    q31746: الليزغينية
+    q36106: ليغوريا
     li: الليمبرجيشية
     ln: لينغالا
-    Q146803: لينجو فرنسا نوفا
+    q146803: لينجو فرنسا نوفا
     lt: اللتوانية
-    Q33698: الليفونية
-    Q36584: ليففي
+    lit: ليتوانيا
+    q33698: الليفونية
+    q36584: ليففي
+    q13286: اللغة الصوربية السفلى
     lu: تشيلوبا
-    Q3437661: لوجورو
+    q3437661: لوجورو
     lb: اللوكسمبورغية
-    Q35787: ماساي
+    q35787: ماساي
     mk: المقدونية
-    Q497345: الفرانكونية الرئيسية
-    Q36109: المايثيلية
+    q497345: الفرانكونية الرئيسية
+    q36109: المايثيلية
     mg: الملغاشية
     ms: الملايو
     ml: المالايالامية
     mt: المالطية
+    mlt: مالطية
     gv: المنكية
     mi: الماورية
     mr: المهاراتية
     mh: المارشالية
-    Q6786446: ماتينجو
-    Q13358: رومانية ميجلينو
-    Q13313: ميرو
-    Q13324: مينانغكاباو
-    Q13330: الميراندية
+    q6786446: ماتينجو
+    q13358: رومانية ميجلينو
+    q13313: ميرو
+    q113321: ميكماق
+    q13324: مينانغكاباو
+    q13359: لغة مينغريلان
+    q13330: الميراندية
+    q13343: موكشا
     mn: المنغولية
-    Q56426: لهجة مغربية
-    Q6944725: مويرا
-    Q3508074: ناي
+    q56426: لهجة مغربية
+    q6944725: مويرا
+    q13300: ناهواتل
+    q3508074: ناي
     na: الناورونية
     nv: نافاهو
     nd: نديبيل الشمالية
     nr: نديبلي الجنوبية
     ng: إندونجا
+    q33845: اللغة النابولية
     ne: النيبالية
-    Q7022366: نجيندو
-    Q19933293: لوري الشمالية
+    q7022366: نجيندو
+    q28224: اللغة الفريزية الشمالية
+    q19933293: لوري الشمالية
     se: سامي الشمالية
     "no": النرويجية
     nno: النرويجية
+    nob: نرويجية
+    nor: نرويجية
     nn: ني نوشك
-    Q36738: نوفيال
-    Q3272620: نياكوسا
-    Q4121131: نياموازي
-    Q7193418: نياتورو
-    Q11128374: نييها
-    Q16115145: نييكا
+    q36738: نوفيال
+    q3272620: نياكوسا
+    q4121131: نياموازي
+    q7193418: نياتورو
+    q11128374: نييها
+    q16115145: نييكا
     oc: الأوكيتانية (بعد 1500)
-    Q28602: الآرامية الرسمية
+    q28602: الآرامية الرسمية
     oj: لغة أوجيبوي
     or: الأوريا
     om: الأوروموية
     os: الأوسيتية
     pi: لغة بالي
     pa: البنجابية
-    Q36403: بير
+    q36403: بير
     fa: الفارسية
-    Q23014: فيتسش
-    Q2429648: بوجورو
+    q23014: فيتسش
+    q15085: البيدمونتية
+    q2429648: بوجورو
     pl: البولندية
-    Q36748: بونتيك
+    pol: بولندية
+    q36748: بونتيك
     pt: البرتغالية
     ps: البشتوية
     qu: كتشوا
-    Q584983: رانجي
+    q584983: رانجي
     ro: الرومانية، المولدوفية
     rm: الرومانشية
     rn: الكيروندية
     ru: الروسية
+    rus: روسية
+    q718269: ساكيزايا
     sm: الساموية
-    Q34016: ساندو
+    q34016: ساندو
     sg: السانغوية
     sa: السنسكريتية
-    Q33965: سنتالية
+    q33965: سنتالية
     sc: السردينية
-    Q845441: سردينية ساساريسية
+    q845441: سردينية ساساريسية
+    q14549: الإسكتلنديون
     sr: الصربية
-    Q3788739: شامبالا
-    Q56482: شان
+    q3788739: شامبالا
+    q56482: شان
     sn: الشونا
+    q34004: شعب شونا
     ii: نوسو
+    q33973: صقلية
     sd: السندية
-    si: السنهالية
+    si: السنهاليون
     sk: السلوفاكية
+    slk: السلوفاكية
     sl: السلوفينية
     so: الصومالية
+    som: صومالي
     st: السوتية، الجنوبية
     es: الإسبانية، القشتالية
-    Q2638144: سوكوما
+    slv: الأسبانية
+    q2638144: سوكوما
     su: السوندية
     sw: السواحلية
     ss: السوازية
     sv: السويدية
+    swe: السويدية
     tl: التاغالوغية
     ty: التاهيتية
     tg: الطاجيكية
-    Q34318: طالش
+    q34318: طالش
     ta: التاميلية
     tt: التترية
     te: التيلوجية
     th: التايلندية
+    tha: التايلندية
     bo: التبتية
     ti: التيغرينية
-    Q34159: توك بيسين
-    to: لغة تونغا
-    Q180937: ألبانية توسكية
+    q34159: توك بيسين
+    to: لغة التونجية
+    q180937: ألبانية توسكية
     ts: تسونجا
     tn: التسوانية
-    Q34138: تومبوكا
-    Q56240: لهجة تونسية
+    q34138: تومبوكا
+    q56240: لهجة تونسية
     tr: التركية
-    Q36730: التركية والعثمانية
+    tur: التركية
+    q36730: التركية والعثمانية
     tk: التركمانية
     tw: توي
+    q13238: الأدمرت
     ug: الأويغورية
     uk: الأوكرانية
     ukr: الأوكرانية
     none: غير محدد
+    q13248: اللغة الصربية العليا
     ur: الأردية
     uz: الأوزبكية
     ve: الفيندية
+    q32747: فيبسيان
     vi: الفيتنامية
     vo: فولابوك
-    Q32858: الفوتية
+    q32858: الفوتية
     wa: والون
+    q34279: لغة واراي واراي
     cy: الويلزية
+    wel: الويلزية
+    q100103: لغة غرب الفلمنكية
     fy: الفريزية الغربية
     wo: الولوفية
     xh: الكوسية
     yi: اليديشية
     yo: يوربا
+    q10199: اللغة الزازاكية
+    q237409: الزيلندية
     za: تشوانغ
     zu: الزولوية
   layout_sign_in: تسجيل الدخول
@@ -744,7 +812,6 @@ ar:
       show_warns:
         one: إظهار التحذير (%{count})
         other: إظهار التحذيرات (%{count})
-      sync: تزامن مع مستودع
       clear_publishing: مسح القفل
       clear_publishing_confirm: هذا سوف "ينهي" كل النشر، ويمكن أن يسبب مشاكل إذا تم
         استخدامه أثناء النشر النشط، هل أنت واثق؟
@@ -776,6 +843,8 @@ ar:
   scientific_names_header: الأسماء العلمية
   send_me_reset_password_instructions: أرسل لي تعليمات تغيير كلمة المرور
   search:
+    full_name: '%{vernacular}%{scientific}'
+    matched_text: متطابقة %{text}
     flash:
       cannot_combine_paths: غير قادر على دمج النتائج باستخدام %{path}
       more_than_one_species: غير قادر على الجمع بين النتائج لـ%{species}
@@ -968,11 +1037,6 @@ ar:
     scientific_names: أسماء
     users: المستخدمون
     references: المراجع
-  support:
-    array:
-      words_connector: ،
-      two_words_connector: و
-      last_word_connector: و
   term_query:
     validations:
       empty_filters_error_record: يجب عليك توفير مرشحا بسمة أو قيمة لعمليات البحث
@@ -998,16 +1062,55 @@ ar:
   traits:
     data_viz:
       about_this_chart: حول هذا المخطط
+      about_this_chart_tooltip_1d: هذا ملخص بناء على البيانات المتوفرة في EOL. قد
+        يكون غير مكتمل! يمكنك تحديد فئة من المخطط البياني لتضييق نتائج البحث. تتداخل
+        العديد من الفئات ويمكن ان تتضمين الانواع في أكثر من فئة واحدة.
+      about_this_chart_tooltip_sankey_2d: هذا ملخص بناء على البيانات المتوفرة في EOL.
+        قد يكون غير مكتمل! يمكنك تحديد فئة من المخطط البياني لتضييق نتائج البحث. تتداخل
+        العديد من الفئات ويمكن ان تتضمين الانواع في أكثر من فئة واحدة.
+      other_term_name: آخر %{term_name}
+      hist_value_label: القيمة %{units}
+      num_records_label: '#السجلات'
+      other: أخرى
+      page_habitat_header: '%{name}مساكن'
+      pie_prompt: مرر فأرة الحاسوب فوق جزء أو مفتاح لتمييزه
+      sankey_node_hover: انقر لتضييق البحث إلى %{term_name}
+      taxon_summary:
+        click_to_filter: انقر للتصفية
+        click_to_filter_by: انقر للتصفية بواسطة '%{name}'
     properties:
+      citation: الاقتباس الببليوغرافي
       method: طريقة القياس
+      remarks: ملاحظات
+      sample_size: حجم العينة
       scientific_name: الاسم العلمي
       source: المصدر
     search:
       download_tsv: تنزيل tsv
       edit_filters: مرشحات التعديل
+      filter_display:
+        eq: '%{pred}=%{num_val}%{units}'
+        gte: '%{pred}>=%{num_val}%{units}'
+        lte: '%{pred}<=%{num_val}%{units}'
+        obj_only: 'ذات قيمة: %{obj}'
+        pred_obj: '%{pred}%{obj}'
+        pred_only: '%{pred}'
+        range: '%{pred} في [٪ {num_val1} ،٪ {num_val2}]٪ %{units}'
+        resource: المورد:%{value}
+        sex: الجنس:%{value}
+        statistical_method: الطريقة الإحصائية:%{value}
       gbif_search: بحث GBIF
-      result_header_records: عرض %{range_begin} - %{range_end} of %{total} سجلات ب
+      result_header_records: عرض %{range_begin} - %{range_end} من %{total} السجلات
+        من اجل %{page_count} الأصناف
+      result_header_taxa: عرض %{range_begin}- %{range_end} من %{total}الأصناف
+      result_header_taxa_notaxa: عرض %{range_begin} - %{range_end} من %{total}
+      result_header_records_notaxa: عرض %{range_begin} - %{range_end} من %{total}
+        سجلات من اجل %{page_count}
       new_search: بحث جديد
+      select:
+        child_term: اختار مصطلح الطفل (اختياري)
+        top_level:
+          object_term: أو حدد قيمة
       show_query: عرض الاستعلام
       switch_to_list: بدل إلى عرض القائمة
     search_form:
@@ -1022,7 +1125,9 @@ ar:
       show_additional_fields: عرض الحقول الإضافية
       statistical_method: طريقة إحصائية
       this_may_take_a_minute: هذا ربما يستغرق دقيقة
+      trait_filter: تنقيح الصفة
       value: القيمة
+      value_eg: قيمة، مثلًا؛ عاشب
   trophic_web:
     group_descriptions:
       competitor: منافس %{source_name}
@@ -1080,6 +1185,11 @@ ar:
   vernacular_names_header: أسماء شائعة
   vernacular_preferred_by_resource: '%{resource} (يفضل هذا الاسم)'
   wordcloud_credit_html: وُلِّد بـ<a href='%{url}'>jQCloud</a>
+  i18n_js:
+    traits:
+      data_viz:
+        sankey:
+          m_of_n: '%{m} من %{n}'
   term:
     actions:
       reindex: إعادة الفهرسة
@@ -1103,55 +1213,475 @@ ar:
     pagination:
       next: الصفحة التالية
       previous: الصفحة السابقة
+    inverse_name:
+      by_uri:
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: يُؤكل بواسطة
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002632: لديه طفيل خارجي
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002634: لديه طفيل داخلي
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002454: عائل ل
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002553: لديه فرط طفيلي
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002459: لديه ناقل
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002626: قتل من قبل
+        http://purl(dot)obolibrary(dot)org/obo/RO_0008507: بيض عليها بواسطة
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002208: لديه طفيلي
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002556: لديه عامل مُمرض
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002439: يُفترس بواسطة
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002618: زار من قِبل
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002622: الزهور زار من قِبل
     name:
       by_uri:
-        http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: طول الجسم
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0000875: قطر الساق
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0003958: رتبة حجم الورقة
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0007484: تعقيد الورقة
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0015519: كتلة البذرة
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900022: نوع حياة النبات
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900032: نوع نمو النبات
-        http://purl(dot)obolibrary(dot)org/obo/GO_0000003: التكاثر
-        http://purl(dot)obolibrary(dot)org/obo/GO_0009399: تثبيت النيتروجين
-        http://purl(dot)obolibrary(dot)org/obo/GO_0019954: تكاثر غير جنسي
-        http://purl(dot)obolibrary(dot)org/obo/GO_0060746: الرعاية الأبوية
+        http://eol(dot)org/schema/terms/percentPerMonth: '%/شهر'
+        http://eol(dot)org/schema/terms/percm2: / سم ^ 2
+        https://eol(dot)org/schema/terms/abnormal_habitat_choice: اختيار غير طبيعي
+          للموطن
+        http://purl(dot)obolibrary(dot)org/obo/XPO_0131409: سلوك حركي خارج عن المألوف
         http://purl(dot)obolibrary(dot)org/obo/NCIT_C70589: الانتشار
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000027: المنطقة السحيقة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000212: المنطقة السحيقة المفتوحة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002120: ينبوع ساخن حمضي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00001997: تصريف منجم حمضي
+        http://purl(dot)obolibrary(dot)org/obo/EO_0007059: تربة حمضية
+        http://eol(dot)org/schema/terms/ActiveGrowthPeriod: فترة النمو النشط
+        http://eol(dot)org/schema/terms/adaptiveStrategy: استراتيجية التكيّف
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002331: لاصق
+        http://www(dot)ebi(dot)ac(dot)uk/efo/EFO_0001272: بالغ
+        https://eol(dot)org/schema/terms/adventive: عرَضي
+        http://eol(dot)org/schema/terms/aerial: هوائي
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000366: حركة هوائية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000568: موطن هوائي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00010505: أيروسول
+        http://eol(dot)org/schema/terms/AfterHarvestRegrowthRate: بعد الحصاد معدل
+          إعادة النمو
+        http://eol(dot)org/schema/terms/age At Dispersal: العمر عند التشتت
+        http://eol(dot)org/schema/terms/AgeAtEyeOpening: العمر عند فتح العين
+        http://eol(dot)org/schema/terms/AgeAtMaturity: العمر عند النضج
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000077: زراعي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_0010003: المواد الزراعي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002259: التربة الزراعية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002265: المخلفات الزراعية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000371: المخلفات الزراعية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000316: البيئة القلوية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000314: مروحة طميية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000258: سهل رسوبي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002871: تربة طميية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005741: تربة جبال الألب
+        http://eol(dot)org/schema/terms/alternatingReproduction: تعاقب الأجيال
+        http://eol(dot)org/schema/terms/ambush: كمين مفترس
+        http://eol(dot)org/schema/terms/amphibious: برمائي
+        https://eol(dot)org/schema/terms/anal_dorsal_fins: سباحة الزعنفة الشرجية والظهرية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005803: استيطان الحيوانات
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002191: صغار الحيوانات
+        http://purl(dot)bioontology(dot)org/ontology/CSP/2383-1863: كثافة عدد سكان
+          الحيوانات
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002276: فضلات الحيوانات
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980071: سنوي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000173: ماء ناقص الأكسجين
+        http://purl(dot)obolibrary(dot)org/obo/BSPO_0000055: الأمامي
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009066: مئبر
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52254: الأباتيت
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000072: قناة مائية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002030: مائي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00012408: طبقة المياه الجوفية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005742: التربة الصالحة للزراعة
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52239: أراجونيت
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000571: موطن شجري
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001709: مساحة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000429: نتوء صخري في جبل
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000230: قاحلة
+        https://eol(dot)org/schema/terms/arm: ذراع
+        http://eol(dot)org/schema/terms/ArmPlusDiscLength: ذراع زائد طول القرص
+        http://purl(dot)obolibrary(dot)org/obo/GO_0019954: تكاثر غير جنسي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000166: الجزيرة المرجانية
+        http://eol(dot)org/schema/terms/average: متوسط
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002872: تفل قصب السكر
+        https://eol(dot)org/schema/terms/bamboo_forest: غابة البامبو
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000161: مزرعة الموز
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_133326: كبريتات الباريوم
+        http://purl(dot)obolibrary(dot)org/obo/PO_0004518: لحاء الشجر
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000236: بازلت
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000032: خليج
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000091: شاطئ بحر
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002138: رمل الشاطئ
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000500: سد القندس
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000270: بركة القندس
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03302072: شمع العسل
+        http://eol(dot)org/schema/terms/benthic: القاعية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002034: غشاء حيوي رقيق
+        http://eol(dot)org/schema/terms/Bioluminescent: تلألؤ بيولوجي
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: أسود
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000511: مستنقع البطانية
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C12434: الدم
+        http://eol(dot)org/schema/terms/BloomPeriod: فترة الازدهار
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000313: انفجار
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000318: أزرق
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_02000019: سوائل جسدية
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0002323: تجاويف الجسم
+        http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: طول الجسم
+        http://purl(dot)obolibrary(dot)org/obo/VT_0001259: كتلة الجسم
+        http://eol(dot)org/schema/terms/BodyShape: شكل الجسم
+        http://purl(dot)bioontology(dot)org/ontology/MESH/D001831: درجة حرارة الجسم
+        http://purl(dot)obolibrary(dot)org/obo/VT_0015039: عرض الجسم
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000540: بحيرة قليلة الملوحة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000541: بركة قليلة الملوحة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002019: المياه المالحة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000197: غابة عريضة الأوراق
+        http://eol(dot)org/schema/terms/bromelicolous: بروميليادس
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: بنى
+        http://eol(dot)org/schema/terms/browsing: المتصفح
+        http://purl(dot)obolibrary(dot)org/obo/PO_0000055: برعم
+        http://eol(dot)org/schema/terms/BudSource: مصدر برعم
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000073: مبنى
+        http://purl(dot)obolibrary(dot)org/obo/EUPATH_0000001: مواد بناء
+        http://purl(dot)obolibrary(dot)org/obo/PO_0025356: مصباح
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005760: التربة المحروقة
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_27732: كافيين
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46719: كالسيت
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000096: فوهة بركانية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000014: قناة
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0002418: غضروف
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000067: كهف
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000102: مدخل كهف
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000019: أرضية الكهف
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002144: جدار الكهف
         http://purl(dot)obolibrary(dot)org/obo/OBA_0000048: قطر الخلية
-        http://purl(dot)obolibrary(dot)org/obo/OBA_0000056: حجم الخلية
-        http://purl(dot)obolibrary(dot)org/obo/OBA_0002342: تركيب الهيكل العظمي
         http://purl(dot)obolibrary(dot)org/obo/OBA_1000036: كتلة الخلية
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000039: طول القشرة
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000040: كثافة الخشب
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0000055: حجم الخلية
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0000056: حجم الخلية
+        http://eol(dot)org/schema/terms/CellWidth: عرض الخلية
+        http://www(dot)marinespecies(dot)org/traits/NonSolidCement: أسمنت
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Cenozoic: حقبة
+          الحياة الحديثة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002054: الطباشير
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00003914: تربة الطباشير
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002237: التشيرنوزم
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000400: مخروط رماد
+        http://purl(dot)org/dc/terms/bibliographicCitation: الاقتباس
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000856: مدينة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002982: طين
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000120: رواسب الطين
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002262: تربة طينية
+        http://eol(dot)org/schema/terms/clearWater: ماء نقي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000087: جرف
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900035: متسلق
+        http://eol(dot)org/schema/terms/cloud_forest: غابة ضبابية
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000015: سم
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000081: سم ^ 2
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000097: سم ^ 3
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000687: ساحلي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000416: الكثبان الساحلية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000137: مدخل ساحلي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000303: الأراضي الساحلية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000090: سهل ساحلي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000237: الأحراش الساحلية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002150: المياه الساحلية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000230: الأراضي الرطبة الساحلية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000118: زراعة جوز الهند
+        http://purl(dot)obolibrary(dot)org/obo/STATO_0000236: معامل الاختلاف
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000163: زراعة البن
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000014: اللون
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C16452: الاتصالات
+        http://eol(dot)org/schema/terms/competitive: منافس
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002170: سماد
+        http://purl(dot)obolibrary(dot)org/obo/PO_0020043: مركب
+        http://eol(dot)org/schema/terms/cone: مخروط
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000240: الغابة الصنوبرية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000196: غابة صنوبرية
+        http://eol(dot)org/schema/terms/contaminatedHabitat: الموائل الملوثة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002116: تربة ملوثة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000221: جزيرة قارية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000049: شعاب مرجانية
+        https://eol(dot)org/schema/terms/coral_sand: الرمال المرجانية
+        http://purl(dot)obolibrary(dot)org/obo/PORO_0000232: كوراليت
+        https://eol(dot)org/schema/terms/corneal_eyes: عيون القرنية
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_64857: مستحضرات التجميل
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000288: زراعة القطن
+        http://rs(dot)tdwg(dot)org/dwc/terms/countryCode: رمز البلد
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00003041: سقيفة البقر
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000052: بحيرة فوهة البركان
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Cretaceous: العصر
+          الطباشيري
+        http://eol(dot)org/schema/terms/criticallyEndangered: المهددة بالانقراض
+        http://eol(dot)org/schema/terms/cuneiform: كتابة مسمارية
+        http://purl(dot)obolibrary(dot)org/obo/ID_0000058: أسطوانة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000331: مستنقع السرو
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_00001256: ألبان
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000033: أيام
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001422: الميت
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000816: الغابات المتساقطة
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002301: انخفاض الجودة
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000185: درجات
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000027: درجة مئوية
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C41136: طب الأسنان
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000309: كآبة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000179: صحراء
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000883: الصحراء والشجيرات الجافة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000156: واحة الصحراء
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005800: رمال الصحراء
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000242: شجيرات الصحراء
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Devonian: الفترة
+          الديفونية
+        http://ncicb(dot)nci(dot)nih(dot)gov/xml/owl/EVS/Thesaurus(dot)owl#C25285: قطر
+          الدائرة
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C45874: ظهري
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000276: تحمل الجفاف
+        http://eol(dot)org/schema/terms/dry_forest: الغابات الجافة
+        http://eol(dot)org/schema/terms/dryFruit: الفاكهة المجففة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000277: بحيرة جافة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000296: قاع البحيرة الجافة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000018: نهر جاف
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_0010163: وادي النهر الجاف
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005748: تربة جافة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000278: تيار جاف
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000128: وادي جاف
+        http://eol(dot)org/schema/terms/DurationOfIllness: مدة المرض
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002008: غبار
+        http://ncicb(dot)nci(dot)nih(dot)gov/xml/owl/EVS/Thesaurus(dot)owl#C61589: مبكرا
+        http://eol(dot)org/schema/terms/earlySpring: بداية الربيع
+        http://eol(dot)org/schema/terms/earlySummer: أوائل الصيف
+        http://eol(dot)org/schema/terms/Eastern_Arc_mountains: جبال القوس الشرقي
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: يأكل
+        http://eol(dot)org/schema/terms/eggDensity: كثافة البيض
+        http://eol(dot)org/schema/terms/endangered: المهددة بالخطر
+        http://rs(dot)tdwg(dot)org/dwc/terms/establishmentMeans: التأسيس يعني
+        http://rs(dot)tdwg(dot)org/dwc/terms/eventDate: تاريخ الحدث
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000843: غابة دائمة الخضرة
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002425: مكشوف
+        http://eol(dot)org/schema/terms/extinct: ينقرض
+        http://eol(dot)org/schema/terms/extinctInTheWild: انقرضت في البرية
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000970: عيون
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000078: مزرعة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005749: تربة المزرعة
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: سريع
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000022: ريشة
+        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#foot: أقدام
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000383: أنثى
+        http://purl(dot)obolibrary(dot)org/obo/VT_0004348: طول عظم الفخذ
+        http://purl(dot)obolibrary(dot)org/obo/VT_1000666: عرض عظم الفخذ
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000232: مستنقع
+        http://purl(dot)obolibrary(dot)org/obo/GO_0009566: التخصيب
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005754: تربة مخصبة
+        http://rs(dot)tdwg(dot)org/dwc/terms/fieldNotes: ملاحظات ميدانية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005755: تربة الحقل
+        http://eol(dot)org/schema/terms/FossilFirst: أول ظهور
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000263: كهف الشق
+        https://eol(dot)org/schema/terms/fixes: الإصلاحات
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000039: مضيق بحري
+        http://eol(dot)org/schema/terms/fleshyFruit: فاكهة سمين
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000367: طيران
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000154: مرج الفيضانات
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000255: سهل الفيضان
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000195: غمرتها المياه العشبية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000190: السافانا التي غمرتها
+          المياه
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000537: لون الزهرة
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002623: الزهور زار من قِبل
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46713: الفلوريت
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03301293: العلف
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03412972: المضافات الغذائية
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03303179: تلوين الطعام
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000174: غابة
+        http://eol(dot)org/schema/terms/forestEdge: حافة الغابة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002261: تربة الغابات
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000873: مياه عذبة
+        https://eol(dot)org/schema/terms/freshwater_animals: حيوانات المياه العذبة
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009001: فاكهة
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0000147: لون الفاكهة
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0000032: شكل الفاكهة
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000850: نوع الفاكهة
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0015921: عرض الفاكهة
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_33292: وقود
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000216: داخنة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000587: أثاث المنزل
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002263: حديقة التربة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000488: بحيرة جليدية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000248: الوادي الجليدي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000133: الجليدية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00003076: صمغ
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900036: عشب
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000177: أرض عشبية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000018: حصى
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000548: حقل الحصى
+        http://eol(dot)org/schema/terms/grayGreen: الأخضر الرمادي
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: أخضر
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000635: أرض
+        http://purl(dot)bioontology(dot)org/ontology/SNOMEDCT/260865002: معدل النمو
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002303: موطن
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000516: أرجوحة شبكية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000463: مرفأ
+        https://eol(dot)org/schema/terms/harvested_in: تحصد في
+        http://purl(dot)obolibrary(dot)org/obo/RO_0008508: بيض عليها بواسطة
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002454: لديه العائل
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000033: رأس
+        http://eol(dot)org/schema/HeadWidth: عرض الرأس
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: شكل قلب
+        http://semanticscience(dot)org/resource/SIO_000040: ارتفاع
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_02000053: إخفاء
+        http://ncicb(dot)nci(dot)nih(dot)gov/xml/owl/EVS/Thesaurus(dot)owl#C25227: عالي
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002393: تحمل عالي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000083: تلة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000082: نطاق التلة
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0036016: عسل
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002173: مستشفى
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000000: دبال
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000277: جليد
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000145: غطاء جليدي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000132: طبقة جليدية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000380: الجرف الجليدي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000298: جبل جليد
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002013: الصخور البركانية
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001501: غير ناضج
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C12735: جهاز المناعة
+        http://purl(dot)obolibrary(dot)org/obo/EFO_0004387: بوصات
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002300: زيادة الجودة
+        http://rs(dot)tdwg(dot)org/dwc/terms/individualCount: العد الفردي
+        https://eol(dot)org/schema/terms/infection_effect: تأثير العدوى
+        http://eol(dot)org/schema/terms/InitialMortalityRate: معدل الوفيات الأولي
+        http://www(dot)ebi(dot)ac(dot)uk/efo/EFO_0000548: أداة
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002471: يتم أكله بواسطة
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002627: قتل من قِبل
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002459: هو ناقل ل
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000098: جزيرة
+        http://purl(dot)obolibrary(dot)org/obo/OMIT_0026310: مجوهرات
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000016: القفز
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002626: يقتل
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000252: بحيرة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000546: رواسب البحيرة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000382: شاطئ البحيرة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000105: سطح البحيرة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000520: انهيار أرضي
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: كبير
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000891: بحيرة كبيرة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000887: نهر كبير
+        http://eol(dot)org/schema/terms/lateSpring: ربيع متأخر
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000540: مساحة الورقة
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000326: لون الورقة
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0007484: تعقيد الورقة
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000492: شكل الورقة
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0003958: رتبة حجم الورقة
+        http://semanticscience(dot)org/resource/SIO_000041: الطول
+        http://purl(dot)obolibrary(dot)org/obo/TO_0002725: عادة دورة الحياة
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000050: عمر
+        http://ncicb(dot)nci(dot)nih(dot)gov/xml/owl/EVS/Thesaurus(dot)owl#C54722: منخفض
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000384: ذكر
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000125: كتلة
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001701: ناضجة
+        http://semanticscience(dot)org/resource/SIO_001114: الأقصى
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_00001006: لحم
+        http://eol(dot)org/schema/terms/midSpring: منتصف الربيع
+        http://eol(dot)org/schema/terms/midSummer: منتصف الصيف
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002122: مختلط
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000035: الشهور
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000081: جبل
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000084: ممر جبلي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000080: سلسلة الجبال
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_02000040: مخاط
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000001: طين
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000402: البركان الطيني
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005771: التربة الموحلة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005793: المياه الموحلة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000553: سد متعدد الأغراض
+        http://rs(dot)tdwg(dot)org/dwc/terms/municipality: البلدية
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0005090: عضلة
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C12754: الجهاز العضلي الهيكلي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00003033: سماد الفطر
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000465: ميناء طبيعي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000363: محمية طبيعية
+        http://eol(dot)org/schema/terms/nearThreatened: ' القريبة من خطر الانقراض'
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Neogene: العصر
+          النيوجيني
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0007221: حديثي الولادة
+        http://purl(dot)obolibrary(dot)org/obo/GO_0009399: تثبيت النيتروجين
+        http://eol(dot)org/schema/terms/no: لا
+        http://polytraits(dot)lifewatchgreece(dot)eu/terms/BP_NO: لا رعاية الوالدين
+        http://eol(dot)org/schema/terms/noPaternalCare: لا رعاية الأب
+        http://purl(dot)bioontology(dot)org/ontology/SNOMEDCT/260413007: لا شيء
         http://purl(dot)obolibrary(dot)org/obo/OBA_1000083: طول النواة
         http://purl(dot)obolibrary(dot)org/obo/OBA_1000085: عرض النواة
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000106: الهيكل العظمي يحتوي على
-        http://purl(dot)obolibrary(dot)org/obo/OBA_VT0100005: حجم الجسم
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000050: عمر
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: شكل
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001709: مساحة
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: الحجم
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002303: موطن
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002439: يتغذى على
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002444: طفيل ل
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002454: لديه العائل
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002458: يتم افتراسه بواسطة
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002459: هو ناقل ل
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: يأكل
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002471: يتم أكله بواسطة
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000207: ارتفاع النبات
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000276: تحمل الجفاف
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000326: لون الورقة
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000492: شكل الورقة
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000519: عمق الجذور
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000537: لون الزهرة
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000540: مساحة الورقة
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000850: نوع الفاكهة
-        http://purl(dot)obolibrary(dot)org/obo/TO_0001026: معدل التنفس
-        http://purl(dot)obolibrary(dot)org/obo/TO_0002725: عادة دورة الحياة
-        http://purl(dot)obolibrary(dot)org/obo/TO_0006001: تحمل الملح
-        http://purl(dot)obolibrary(dot)org/obo/VT_0001259: كتلة الجسم
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000181: نتوء صخري جليدي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000193: بستان الزيتون
         http://purl(dot)obolibrary(dot)org/obo/VT_0002683: بداية الخصوبة
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: برتقال
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000115: بستان
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000133: التوجيه
+        http://eol(dot)org/schema/terms/OuterEarLength: طول الأذن الخارجية
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: أكسجين
+        http://eol(dot)org/schema/terms/stingPain: ألم اللدغة
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002444: طفيل ل
+        http://polytraits(dot)lifewatchgreece(dot)eu/terms/BP_YES: رعاية الوالدين
+        http://purl(dot)obolibrary(dot)org/obo/GO_0060746: الرعاية الأبوية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000266: المراعي
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000187: نسبه مئويه
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900032: نوع نمو النبات
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000207: ارتفاع النبات
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900022: نوع حياة النبات
+        http://purl(dot)obolibrary(dot)org/obo/OBI_0000181: تعداد السكان
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002458: يتم افتراسه بواسطة
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002439: يتغذى على
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_36080: البروتينات
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: نفسجي
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000322: أحمر
+        http://purl(dot)obolibrary(dot)org/obo/GO_0000003: التكاثر
+        http://purl(dot)obolibrary(dot)org/obo/TO_0001026: معدل التنفس
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000253: نهر
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00001995: صخرة
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000519: عمق الجذور
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009005: الجذور
+        http://purl(dot)obolibrary(dot)org/obo/TO_0006001: تحمل الملح
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0015519: كتلة البذرة
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: شكل
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000039: طول القشرة
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000106: الهيكل العظمي يحتوي على
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0002342: تركيب الهيكل العظمي
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0000875: قطر الساق
         http://purl(dot)obolibrary(dot)org/obo/VT_0002758: طول الذيل
-        http://purl(dot)obolibrary(dot)org/obo/VT_0015039: عرض الجسم
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: الحجم
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000040: كثافة الخشب
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000345: الجبل العلوي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01001456: جبل استوائي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000346: الجبل السفلي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01001455: جبل معتدل
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000432: غابة المستنقعات
+        http://purl(dot)obolibrary(dot)org/obo/TAO_0009000: خلية
+        http://eol(dot)org/schema/terms/Colonial: استعماري
+        http://eol(dot)org/schema/terms/Territorial: الإقليمية
+        http://eol(dot)org/schema/terms/monogamous: الزواج الأحادي
+        http://eol(dot)org/schema/terms/cubicMillimeter: مم ^ 3
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002200: جليد البحر
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000197: بحيرة داخلية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000198: بحيرة مغطاة بالجليد
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000218: مدخن أسود
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000240: الأراضي الرطبة المالحة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000273: المنحدر القاري
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000274: الارتفاع القاري
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000318: منطقة المد والجزر
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000404: بركان طبقي
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005743: التربة على جانب الطريق
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005769: تربة الغابات الجبلية
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005770: تربة غابات الزان
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005772: تربة البستان
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005784: تربة غابات التنوب
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005797: طين قاع البحيرة
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000127: تسرب بارد
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000106: هرتز
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000259: ديسيبل
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000103: جزيرة المانجروف
+        http://ncicb(dot)nci(dot)nih(dot)gov/xml/owl/EVS/Thesaurus(dot)owl#C64998: متأخر
+        http://eol(dot)org/schema/terms/physiologicalState: الحالة الفسيولوجية
+        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000063: زواج أحادي
+        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000064: متعددة الأزواج
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000368: التسلق
+        http://eol(dot)org/schema/terms/originalMaterial: المواد الأصلية
+        http://eol(dot)org/schema/terms/exparatype: نظير سابق
+        http://eol(dot)org/schema/terms/extype: نوع سابق
+        http://eol(dot)org/schema/terms/Mus_Rothschild: متحف روتشيلد
+        http://eol(dot)org/schema/terms/Zoological_Museum_Helsinki: متحف علم الحيوان
+          هلسنكي
+        http://eol(dot)org/schema/terms/chick: صوص
+        http://eol(dot)org/schema/terms/floweringAndFruiting: المزهرة والإثمار
+        http://eol(dot)org/schema/terms/larvaAndPupa: اليرقة والخادرة
+        http://eol(dot)org/schema/terms/maleFlowers: الزهور الذكور
+        http://purl(dot)obolibrary(dot)org/obo/BTO_0000954: حورية
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000955: خصبة
+        http://purl(dot)obolibrary(dot)org/obo/PO_0007616: مرحلة الإزهار
+        http://purl(dot)obolibrary(dot)org/obo/PO_0025500: مرحلة نمو الثمار
 ...

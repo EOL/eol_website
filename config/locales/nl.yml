@@ -1,0 +1,1503 @@
+# Messages for Dutch (Nederlands)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Dutchy45
+# Author: Elroy
+# Author: Mainframe98
+# Author: Marcelhospers
+# Author: Optilete
+# Author: PonkoSasuke
+# Author: Robin van der Linde
+# Author: Siebrand
+---
+nl:
+  language_name: Nederlands
+  about:
+    trait_bank:
+      title: TraitBank
+      body_html: "<p>Het technische en gegevensbeheerteam van EOL verwijst naar de
+        gestructureerde gegevensbronnen van de EOL-trait en andere kenmerkgegevens,
+        ecologische interacties en onze eigen classificatie, de Dynamic Working Hierarchy-
+        gezamenlijk TraitBank. Deze inhoud wordt anders beheerd dan onze \"klassieke\"
+        inhoud - afbeeldingen, video, audio en beschrijvende tekst - en is nuttig
+        voor verschillende dingen.</p> \n\n<p>TraitBank is jonger dan de rest van
+        EOL; het werd oorspronkelijk bedacht door Species Pages Group-directeur Cynthia
+        Parr en ging live in EOL v2 in januari 2014. Sindsdien hebben gestructureerde
+        gegevens onze hoogste prioriteit voor de ontwikkeling van inhoud.</p>\n\n<p>Nu
+        kun je <a href = '%{example_search_path}'>zoeken</a> of bladeren door de gestructureerde
+        data van EOL of downloaden of je kunt het tegenkomen op ons nieuwe overzichtstabblad
+        in de vorm van <a href='%{autogen_page_path}'> automatisch gegenereerde tekst</a>.
+        Net als de rest van de EOL-inhoud is het beschikbaar voor hergebruik en wordt
+        het geleverd met gedetailleerde kenmerken zodat u deze de credits kunt geven
+        als u deze in uw eigen werk gebruikt.</p>\n\n<p>Deze gegevens zijn gemodelleerd
+        als een <a href='%{property_graph_url}'>eigenschappengrafiek</a> in <a href='%{neo4j_url}'>neo4j</a>.
+        <a href='%{data_services_path}'>Datadiensten</a> zijn beschikbaar.</p>"
+  account_already_linked: Jouw account is reeds aan EOL gekoppeld
+  account_not_linked: Jouw account is niet aan EOL gekoppeld
+  advanced: Uitgebreid
+  are_you_sure_delete_account: Weet u zeker dat u uw EOL-account wilt verwijderen?
+  article:
+    actions:
+      collect: verzamelen
+    header:
+      blank: (Er staat niemand op deze pagina.)
+      body: Tekst
+      language: 'taal: %{language}'
+      title: Titel
+      untitled: Zonder titel
+    name:
+      missing: Zonder titel
+  article_from_partner: voorzien door %{partner}
+  article_duplicate: dit artikel wordt ook getoond in %{section}
+  autocomplete:
+    see_all:
+      one: toon andere resultaten
+      other: toon alles %{count} resultaten
+  breadcrumbs:
+    notices:
+      canonical: Wetenschappelijke namen worden nu getoond in page breadcrumbs
+      vernacular: Lokale namen worden nu weergegeven in pagina breadcrumbs, indien
+        beschikbaar
+    setting_header: Namen in broodkruimels
+    types:
+      scientific: wetenschappelijk
+      vernacular: volksmond
+  button_create: maken
+  button_add: toevoegen
+  cancel: annuleren
+  change_my_password: Verander mijn wachtwoord
+  change_your_password: Wachtwoord wijzigen
+  classifications:
+    children:
+      header_html:
+        one: '%{name} bevat<a href="%{names_path}">%{count}een kind</a>:'
+        other: '%{name} bevat <a href="%{names_path}">%{count} kinderen</a>:'
+      see_more: zie meer
+    hierarchies:
+      header: Samengestelde hiërarchieën voor %{sci_name}
+      see_resource_file: Bekijk de <a href='%{href}'>resource file</a> voor een volledige
+        lijst.
+      this_page: (deze pagina)
+      truncated_siblings:
+        one: Een extra broeder is ingekort voor beknoptheid.
+        other: '%{count}Extra broeders zijn ingekort voor beknoptheid.'
+    richness:
+      header: Pagina-rijkdom
+      score: rijkdom score
+      page_contents_count: gekoppelde inhoud
+      missing: De rijkdom is nog niet berekend voor deze pagina.
+      media_count: media
+      articles_count: artikelen
+      links_count: koppelingen
+      maps_count: kaarten
+      data_count: gegevens
+      nodes_count: knooppunten
+      vernaculars_count: volksmond
+      scientific_names_count: wetenschappelijke namen
+      referents_count: verwijzingen
+      species_count: soorten
+      updated_at: laatst bijgewerkt
+  collect_already_in_collection: (het is reeds hier)
+  collect_already_in_collection_will_add_icon: (voeg media bij "%{page}")
+  collect_icon_title: Voeg "%{item}" van de "%{page}" pagina toe aan...
+  collect_new_collection: Nieuwe verzamelnaam
+  collect_new_collection_title: een Nieuwe Verzameling
+  collect_no_existing_collections: Jij hebt er nog geen één! Maak er één door het
+    formulier aan de linkerkant te gebruiken.
+  collect_select_collection: '...Één van Jouw Verzamelingen'
+  collect_title: Voegen "%{item}" bij...
+  collected_page_added_to_collection: '%{page} toegevoegd aan de verzameling <a href=''%{link}''>%{name}</a>.'
+  collected_page_already_in_collection: Het was reeds in jouw verzameling.
+  collected_pages_title: Pagina's
+  collected_pages_medium:
+    destroyed_flash: Afbeeldig verwijderd van de verzamelingspagina.
+  collection_associations:
+    destroyed_flash: '%{name} is niet langer gekoppeld aan deze collectie'
+  collected_pages:
+    delete_button: verwijder
+    edit_button: bewerken
+    delete_confirm: weet u het zeker?
+    destroyed_flash: '%{name} verwijderd uit de verzameling.'
+  collection_association_added_to_collection: Toegevoegd aan "%{associated}" de collectie
+    <a href='%{link}'>"%{name}"</a>.
+  collection_associations_empty: Er zijn geen andere collecties aan deze gekoppeld.
+    U kunt op de knop "associëren" klikken bij andere verzamelingen om ze hier te
+    laten verschijnen.
+  collection_associations_title: Gekoppelde verzamelingen
+  collection_collected_pages_media_remove: 'Verwijder afbeeldingen uit de verzameling
+    (wijzigingen zijn onmiddellijk van kracht):'
+  collection_created: Maak een nieuwe verzameling "%{name}".
+  collection_created_for_association: Toegevoegd aan "%{associated}" aan de nieuwe
+    verzameling <a href='%{link}'>"%{name}"</a>.
+  collection_user_is_admin: Deze gebruiker is een administrator
+  collection_pages_empty: Deze collectie bevat geen pagina's. Klik op de "verzamelen"-knop
+    op de soortpagina's om wat items toe te voegen!
+  collection:
+    admins:
+      header: Gebruikers die deze verzameling kunnen bewerken (wijzigingen worden
+        onmiddellijk van kracht)
+      label: Voeg een gebruiker toe die deze verzameling kan bewerken.
+      placeholder: Volledige naam of gebruikersnaam
+    actions:
+      associate: koppelen
+      download_taxa_csv: download CSV of taxa
+      delete: verwijderen
+      edit: bewerken
+      sort: Sorteren
+    collection_type:
+      normal: normaal
+      gallery: Galerij
+    delete_confirm: Hiermee wordt de volledige verzameling verwijderd en dit KAN NIET
+      ongedaan worden gemaakt. Weet je dit heel zeker?
+    destroyed: '%{name} is definitief verwijderd.'
+    pages_count:
+      one: 1 pagina
+      other: '%{count} pagina''s'
+    log:
+      associated_collection:
+        add: '%{user} voegde een koppeling toe met de verzameling %{associated}'
+        remove: '%{user} verwijderde de koppeling met de verzameling %{associated}'
+      collection:
+        add: '%{user} maakte de verzameling'
+        change: '%{user} veranderde het %{field} van "%{from}" naar "%{to}"'
+      content:
+        add: '%{user} voegde het medium %{medium} voor pagina %{page}'
+        change: '%{user} vanderde het %{field} op medium %{medium} voor pagina %{page}
+          van "%{from}" naar "%{to}"'
+        remove: '%{user} verwijderde het medium %{medium} voor pagina %{page}'
+      page:
+        add: '%{user} voegde pagina %{page} toe'
+        change: '%{user} veranderde het %{field} op pagina %{page} van "%{from}" naar
+          "%{to}"'
+        remove: '%{user} verwijderde pagina %{page}'
+      user:
+        add: '%{user} voegde de manager %{manager} toe'
+        remove: '%{user} verwijderde de manager %{manager}'
+    search:
+      placeholder: Zoek in de verzameling...
+      submit: Zoeken
+    sort:
+      hierarchy: hierarchie
+      position: datum toegevoegd
+      sci_name: wetenschappelijke naam, A-Z
+      sci_name_rev: wetenschappelijke naam, Z-A
+      sort_field: aantekening, A-Z
+      sort_field_rev: aantekening, Z-A
+    updated: Verzameling bijgewerkt.
+  collection_unauthorized_edit: Alleen de eigenaar kan deze verzameling bewerken.
+  complete_registration: Ga door met uw registratie
+  content_appears_on: 'Inclusief de volgende pagina''s:'
+  content_collected_in: 'Benadruktin de volgende verzamelingen:'
+  content_attributions_header: Bron informatie
+  content_attributions_labels:
+    altitude: Hoogte
+    author: auteur
+    bibliographic_citation: bibliografisch citaat
+    contributor: bijdrager
+    compiler: samensteller
+    creator: Maker
+    editor: Bewerker
+    latitude: Breedtegraad
+    license: vergunning
+    location: plek
+    location_verbatim: verbatim
+    longitude: Lengtegraad
+    original_media_file: Origineel mediabestand
+    owner: auteursrecht
+    photographer: Fotograaf
+    publisher: uitgever
+    project: project
+    provider: provider
+    references_header:
+      one: Verwijzing
+      other: Verwijzingen
+    resource_label: sponsorpagina
+    resource_pk: '(id: %{key})'
+    rights_statement: rechten statement
+    source: bron
+    spatial_location: ruimtelijk
+    view_source_label: origineel
+    view_source_link: Toon originele afbeelding
+    view_source_page_link: bezoek bron
+  content_not_in_any_collection_image: Deze afbeelding komt in geen enkele verzameling
+    voor.
+  content_not_in_any_collection_sound: Deze geluid komt in geen enkele collectie voor.
+  content_not_in_any_collection_video: Deze video komt in geen enkele collectie voor.
+  data:
+    modifier:
+      sex_term: Geslacht van het organisme is gemeten
+      lifestage_term: Levensstadium van het organisme is gemeten
+      statistical_method_term: Statistische methode gebruikt voor meting
+  data_missing: '(data afwezig, sleutels: %{keys})'
+  dear_username_with_comma: Geachte %{username},
+  delete_account_button: Verwijder uw account
+  filter_by_license: vergunning
+  filter_by_license_any_item: elke vergunning
+  filter_by_medium_subtype: type
+  filter_by_medium_any_item: elk type
+  filter_by_resource: provider
+  filter_by_resource_any_item: welke aanbieder dan ook
+  filters:
+    filter_by_attribute: filter op eigenschap
+    filter_by_language: Filter op taal
+    filter_by_provider: filter op provider
+  footer:
+    eol_info:
+      citing_eol: Citeer EOL
+      contact_us: Contact opnemen
+      data_services: Gegevensdiensten
+      donate: Doneren
+      education: Onderwijs
+      food_webs: Voedselwebben
+      glossary: Woordenlijst
+      help: Hulp
+      language_support: Taalondersteuning
+      terms_of_use: Gebruiksvoorwaarden
+      the_eol_forum: Het EOL Forum
+      what_is_eol: Wat is EOL?
+      whats_new: Nieuw
+    discover:
+      algae: Algen
+      amphibians: Amfibieën
+      animals: Dieren
+      archaea: Spinachtigen
+      bacteria: Bacteriën
+      birds: Vogels
+      crustaceans: Kreeftachtigen
+      fishes: Vissen
+      flowering_plants: Bedektzadigen
+      fungi: Fungi
+      insects: Insecten
+      invertebrates: Ongewervelden
+      mammals: Zoogdieren
+      molds: Schimmels
+      mushrooms: Paddenstoelen
+      mollusks: Weekdieren
+      plants: Planten
+      protists: Protists
+      reptiles: Reptielen
+      spiders: Spinnen
+      trees: Bomen
+      viruses: Virussen
+      worms: Wormen
+    eol_is_hosted_by: 'EOL wordt gehost door:'
+  forgot_your_password: Wachtwoord vergeten?
+  gbif_download:
+    created: GBIF download job aangemaakt. Controleer je <a href="%{url}">user profile
+      page</a> om haar status te zien
+  landing_page:
+    header: Wereldwijde toegang tot kennis over het leven op Aarde
+    stats_cleared: De statistieken zijn opnieuw berekend.
+  language: Taal
+  languages:
+    ab: Abkhazian
+    q27683: Acehnese
+    q27776: Adyghe
+    aa: Afar
+    af: Afrikaans
+    ak: Akan
+    alb: Albanees
+    sq: Albanees
+    q131339: Alemannisch
+    am: Amharic
+    ar: Arabisch
+    an: Aragonees
+    hy: Armeens
+    as: Assamees
+    q29507: Asturian
+    q56590: Atikamekw
+    av: Avaric
+    ae: Avestan
+    ay: Aymara
+    q9292: Azerbeidzjaans
+    az: Azerbeidzjaans
+    q33070: Balinees
+    bm: Bambara
+    q33151: Banjar
+    ba: Bashkir
+    eu: Baskisch
+    q29540: Beiers
+    be: Witrussisch
+    q8836490: Bende
+    bn: Bengali
+    bh: Bihari talen
+    bi: Bislama
+    nb: Bokmål, Noors; Noors Bokmål
+    q4941378: Bondei
+    bs: Bosnisch
+    q33202: Brahui
+    q750553: Braziliaans Portuguees
+    br: Bretons
+    bg: Bulgaars
+    my: Burmees
+    q33120: Buryat
+    q35037: Businenge Tongo
+    q880301: Cajun Frans
+    q35156: Car
+    q2591230: Cashinahua
+    ca: Catalaans; Valenciaans
+    q33239: Cebuano
+    khm: Centraal Khmer
+    km: Centraal Khmer
+    ch: Chamorro
+    q33281: Chavacano
+    ce: Chechen
+    q33388: Cherokee
+    q33265: Cheyenne
+    ny: Chichewa; Chewa; Nyanja
+    zh: Chinees
+    chi: Chinees
+    q32979: Choctaw
+    cu: Oud kerks Slavonic
+    cv: Chuvash
+    q37041: Classical Chinees
+    kw: Cornis
+    co: Corsicaans
+    cr: Cree
+    q33357: Krim Tataars
+    hr: Kroatisch
+    hrv: Kroatisch
+    cs: Tsjechisch
+    da: Deens
+    q3362072: Digo
+    q56466: Dinka
+    dv: Divehi; Dhivehi; Maldivian
+    q18415595: Dotyali
+    dut: Nederlands;Vlaams
+    nl: Nederlands;Vlaams
+    dz: Dzongkha
+    dzo: Dzongkha
+    q4126517: Eastern Canadian Inuktitut
+    en: Engels
+    q29952: Erzya
+    eo: Esperanto
+    et: Ests
+    est: Ests
+    ee: Ewe
+    fo: Faroese
+    fj: Fijian
+    fi: Fins
+    fin: Fins
+    q667747: Fipa
+    fr: Frans
+    fra: Frans
+    ff: Fulah
+    gd: Schots Gaelic
+    gl: Galicisch
+    q33475: Gan Chinees
+    lg: Ganda
+    ka: Georgisch
+    de: Duits
+    deu: Duits
+    q5575236: Goan Konkani
+    q3272630: Gogo
+    q2501174: Gorontalo
+    el: Grieks, Modern (1453-)
+    gre: Grieks
+    gn: Guarani
+    gu: Gujarati
+    q33303: Haida
+    ht: Haitian; Haitian Creools
+    ha: Hausa
+    q35756: Haya
+    he: Hebreeuws
+    heb: Hebreeuws
+    q3129390: Hehe
+    hz: Herero
+    q35978: Hiligaynon
+    hi: Hindi
+    ho: Hiri Motu
+    hu: Hongaars
+    is: IJslands
+    ice: IJslands
+    io: Ido
+    ig: Igbo
+    q35936: Ilocano
+    id: Indonesisch
+    q33509: Ingush
+    ia: Interlingua (International Auxiliary Language Association)
+    ie: Interlingue; Westers
+    iu: Inuktitut
+    ik: Inupiaq
+    q33595: Iraqw
+    ga: Iers
+    it: Italiaans
+    ita: Italiaans
+    q35939: Jamaicaans Creools Engels
+    ja: Japans
+    jp: Japans
+    jv: Javaans
+    q33522: Kabardian Circassian
+    q35475: Kabiyè
+    q35853: Kabyle
+    kl: Kalaallisut; Groenlands
+    q33634: Kalmyk
+    kn: Kannada
+    kr: Kanuri
+    q36121: Kapampangan
+    q33541: Kara-Kalpak
+    ks: Kashmiri
+    q33690: Kashubian
+    kk: Kazakh
+    ki: Kikuyu; Gikuyu
+    q11005332: Kinga
+    q11732519: Kingindo
+    rw: Kinyarwanda
+    ky: Kirgizisch; Kirgizisch
+    kv: Komi
+    kg: Kongo
+    ko: Koreaans
+    kor: Koreaans
+    kj: Kuanyama; Kwanyama
+    ku: Kurdish
+    q36206: Lak
+    lo: Lao
+    lao: Lao
+    la: Latijn
+    lv: Lets
+    q1160372: Laz
+    q31746: Lezgian
+    q36106: Ligurian
+    li: Limburger; Limburger; Limburgs
+    ln: Lingala
+    q146803: Lingua Franca Nova
+    lt: Lets
+    lit: Litouws
+    q33698: Liv
+    q36584: Livvi
+    q33754: Lombard
+    q168446: Nedersaksisch
+    q13286: Neder-Sorbisch
+    lu: Luba-Katanga
+    q3437661: Luguru
+    lb: Luxembourgish; Letzeburgesch
+    q35787: Masai
+    mk: Macedonian
+    q497345: Mainfränkisch
+    q36109: Maithili
+    mg: Malagasy
+    ms: Malay
+    ml: Malayalam
+    mt: Maltees
+    mlt: Maltees
+    gv: Manx
+    mi: Maori
+    mr: Marathi
+    mh: Marshallees
+    q6786446: Matengo
+    q3906614: Meadow Mari
+    q13358: Megleno Romeens
+    q13313: Meru
+    q36455: Min Dong
+    q13324: Minangkabau
+    q13359: Mingrelian
+    q13330: Mirandese
+    q13343: Moksha
+    mn: Mongools
+    q56426: Marrokaans Arabisch
+    q6944725: Mwera
+    q13300: Nahuatl
+    q3508074: Nai
+    na: Nauru
+    nv: Navajo; Navaho
+    nd: Ndebele, North; North Ndebele
+    nr: Ndebele, South; South Ndebele
+    ng: Ndonga
+    q33845: Napolitaans
+    ne: Nepali
+    q7022366: Ngindo
+    q28224: Noordfries
+    q19933293: Noords Luri
+    se: Northern Sami
+    "no": Noors
+    nno: Noors
+    nob: Noors
+    nor: Noors
+    nn: Noors Nynorsk; Nynorsk; Noors
+    q36738: Novial
+    q3272620: Nyakusa
+    q4121131: Nyamwezi
+    q7193418: Nyaturu
+    q11128374: Nyiha
+    q16115145: Nyika
+    oc: Occitaans (na 1500)
+    q28602: Officieel Aramees
+    oj: Ojibwa
+    or: Oriya
+    om: Oromo
+    os: Ossetisch; Ossetisch
+    pi: Pali
+    pa: Punjabi
+    q36403: Pare
+    fa: Perzisch
+    q23014: Pfaelzisch
+    q34024: Picard
+    q15085: Piedmontese
+    q2429648: Pogoro
+    pl: Pools
+    pol: Pools
+    q36748: Pontisch
+    pt: Portugees
+    ps: Pushto; Pashto
+    qu: Quechua
+    q584983: Rangi
+    ro: Romeens; Moldavian; Moldovan
+    rm: Romansh
+    rn: Rundi
+    ru: Russisch
+    rus: Russisch
+    q26245: Rusyn
+    q34299: Sakha
+    q718269: Sakizaya
+    sm: Samoan
+    q213434: Samogitian
+    q34016: Sandawe
+    sg: Sango
+    sa: Sanskriet
+    q33965: Santali
+    sc: sardijns
+    q845441: Sassarese Sardijns
+    q14549: Schots
+    sr: Servisch
+    q3788739: Shambala
+    q56482: Shan
+    sn: Shona
+    q34004: Shona
+    ii: Sichuan Yi; Nuosu
+    q33973: Siciliaans
+    sd: Sindhi
+    si: Sinhalees
+    sk: Slovaaks
+    slk: Slovaaks
+    sl: Sloveens
+    so: Somalisch
+    som: Somalisch
+    st: Sotho, Zuid
+    es: Spaans; Castiliaans
+    slv: Spaans
+    q2638144: Sukuma
+    su: Sundanees
+    sw: Swahili
+    ss: Swati
+    sv: Zweeds
+    swe: Zweeds
+    tl: Tagalog
+    ty: Tahitiaans
+    tg: Tajik
+    q34318: Talysh
+    ta: Tamil
+    tt: Tataars
+    te: Telugu
+    th: Thai
+    tha: Thai
+    bo: Tibetaans
+    ti: Tigrinya
+    q34159: Tok Pisin
+    to: Tongan
+    q180937: Tosk Albaneens
+    ts: Tsonga
+    tn: Tswana
+    q34251: Tulu
+    q34138: Tumbuka
+    q56240: Tunesisch Arabisch
+    tr: Turks
+    tur: Turks
+    q36730: Turks, Ottomans
+    tk: Turkmeens
+    tw: Twi
+    q13238: Udmurt
+    ug: Uighur; Uyghur
+    uk: Oekraïens
+    ukr: Oekraïens
+    none: Niet opgegeven
+    q13248: Opper-Sorbisch
+    ur: Urdu
+    uz: Uzbeeks
+    ve: Venda
+    q32747: Vepsian
+    vi: Vietnamees
+    vo: Volapük
+    q32858: Votic
+    wa: Waals
+    q34279: Waray
+    cy: Wels
+    wel: Welsh
+    q100103: West Vlaams
+    fy: West-Fries
+    wo: Wolof
+    q34290: Wu
+    xh: Xhosa
+    yi: Jiddish
+    yo: Yoruba
+    q10199: Zazaki
+    q237409: Zeeuws
+    za: Zhuang; Chuang
+    zu: Zulu
+  layout_sign_in: Aanmelden
+  layout_sign_up: Inschrijven
+  layout_sign_out: Afmelden
+  literature_and_references_header: literatuur en referenties
+  maps:
+    empty: Er zijn geen kaarten beschikbaar voor deze pagina
+    occurrence_caption: Bekende voorkomens, verzamelde exemplaren en waarnemingen
+      van %{page_name}. Bekijk deze soort op GBIF
+    occurrence_caption_w_link_html: Bekende voorkomens, verzamelde exemplaren en waarnemingen
+      van %{page_name}. <a href='%{url}'>Bekijk deze soort op GBIF<i class='fa fa-external-link'></i></a>
+    other_maps_title: Niet-interactieve kaarten
+  medium:
+    untitled:
+      image: Titelloze afbeelding
+      image_of: Afbeelding van %{page_name}
+      video: Video zonder titel
+      video_of: Video van %{page_name}
+      sound: Geluid zonder titel
+      sound_of: Sound van %{page_name}
+      map: Titelloze kaart
+      map_of: Kaart van %{page_name}
+      js_map: Ongetitelde interactieve kaart
+      js_map_of: Interactieve kaart van %{page_name}
+    subclasses:
+      image: Afbeelding
+      video: video
+      sound: geluid
+      map_image: kaart
+      js_map: interactieve kaart
+  medium_collect_button: verzamel media
+  medium_description_blank: Er is geen beschrijving voor dit object.
+  medium_header_title: 'Titel:'
+  medium_header_description: 'Beschrijving:'
+  names:
+    hide_langs:
+      one: verberg een taal
+      other: hide %{count} talen
+    prefer: voorkeur
+    preferred_in_language_for_page: '%{name} is nu de voorkeurs%{language} volksnaam
+      voor %{page}'
+    show_more_langs:
+      one: toon één extra taal
+      other: toon %{count} extra talen
+  nav:
+    about: Over
+    discuss: Overleggen
+    education: Onderwijs
+    search:
+      no_results_html: <strong>Geen bevestigde resultaten</strong><br/>Gebruik de
+        Entertoets om ongecontroleerde gegevens te zien.
+      placeholder: Doorzoek EOL...
+    trait_bank: TraitBank
+  name_preferred_label: voorkeur
+  page_icon_counts:
+    header:
+      one: Beste afbeelding voor pagina
+      other: Beste afbeelding voor pagina's
+  page_icon_created: Plaats afbeelding "%{name}" bovenaan.
+  page_title: Encyclopedia of Life
+  page_title_search: 'Zoek: %{query}'
+  page_vernaculars_empty: Er zijn geen algemene namen verbonden met dit taxon.
+  pages:
+    actions:
+      collect: verzamelen
+      comment:
+        zero: reactie
+        one: '%{count} reactie'
+        other: '%{count} reacties'
+      reindex: reindex
+    batch_lookup:
+      header: batch pagina lookup
+      canonical_name: canonieke naam
+      download_tsv: download TSV
+      match: Passend
+      new_search: nieuwe zoekopdracht
+      page_id: Pagina-ID
+      page_url: pagina URL
+      query: Zoekopdracht
+      query_cant_be_blank: Kan niet leeg zijn
+      search: Zoeken
+    overview:
+      eol_has_data_for_n_attributes_including_html:
+        one: 'EOL heeft gegevens voor <a href="%{data_path}">een eigenschap</a>:'
+        other: 'EOL heeft gegevens voor <a href="%{data_path}">%{count} eigenschappen
+          </a>, inclusief:'
+      eol_has_data_for_n_attributes_html:
+        one: EOL heeft gegevens voor <a href="%{data_path}">een eigenschap</a>.
+        other: EOL heeft gegvens voor <a href="%{data_path}">%{count} eigenschappen</a>.
+    filter_menu:
+      show_all: Toon alles
+    page_data:
+      habitat_wordcloud_tooltip: Onze habitatrecords zijn grotendeels uitgesmeerd,
+        dus veel termen worden meerdere keren gevonden; Vaker gevonden termen voor
+        habitats - groter weergegeven in de woordwolk - zijn waarschijnlijk belangrijker.
+        Alle records worden hieronder vermeld.
+      n_hidden_show_all:
+        one: 1 “%{pred_name}” record verborgen— toon alles
+        other: '%{count} “%{pred_name}” records verborgen — toon alles'
+      n_hidden_show_all_noname:
+        one: 1 record verborgen— toon alles
+        other: '%{count} records verborgen — toon alles'
+      show_all: Toon alles
+    resource_names:
+      name_recognized_by: Herkend door %{by}
+      name_recognized_by_w_rank: '%{rank} herkend door %{by}'
+      name_recognized_by_w_status: '%{status} volgens %{by}'
+      rank:
+        r_domain: Domein
+        r_subdomain: Subdomein
+        r_infradomain: Infradomein
+        r_superkingdom: Superrijk
+        r_kingdom: Rijk
+        r_subkingdom: Subrijk
+        r_infrakingdom: Infrarijk
+        r_superphylum: Superstam
+        r_phylum: Stam
+        r_subphylum: Substam
+        r_infraphylum: Infrastam
+        r_superclass: Superklasse
+        r_class: Klasse
+        r_subclass: Subklasse
+        r_infraclass: Infraklasse
+        r_superorder: Superorde
+        r_order: Orde
+        r_suborder: Suborde
+        r_infraorder: Infraorde
+        r_superfamily: Superfamilie
+        r_family: Familie
+        r_subfamily: Subfamilie
+        r_infrafamily: Infrafamilie
+        r_tribe: Tribe
+        r_supergenus: Supergenus
+        r_genus: Genus
+        r_subgenus: Subgenus
+        r_infragenus: Infragenus
+        r_superspecies: Superspecies
+        r_species: soort
+        r_subspecies: Ondersoort
+        r_infraspecies: Infrasoort
+        r_form: Vorm
+      reference_taxon_attrib: Referentietaxon van %{dataset_name}
+      resource_link_html: <a href='%{resource_path}'>%{resource_name}</a>
+      resource_link_w_remarks_html: <a href='%{resource_path}'>%{resource_name}</a>
+        (%{remarks})
+      username_missing: gebruiker %{user_id}
+    trophic_web:
+      competitor: Concurrent
+      globi_credit_html: data van <a href='%{url}'>GloBI</a>
+      predator: Roofdier
+      prey: Prooi
+      reset: opnieuw instellen
+      trophic_web_about: EOL-voedselwebdiagrammen richten zich op de voedingsrelaties
+        van één soort; ze tonen de focale soort samen met soorten die hij eet (prooi),
+        soorten die zich ermee voeden (roofdieren) en andere soorten die zich voeden
+        met dezelfde prooi (potentiële concurrenten). Klik om meer te leren.
+      trophic_web_title_html: Tropisch Web <a href='%{about_path}'><sup><span class='a'
+        uk-tooltip='%{tooltip}'>?</span></sup></a>
+    flash:
+      reindexed: "Caches voor deze pagina zijn gewist. Laad de pagina opnieuw om de
+        nieuwe waarden te zien. MERK OP dat dit momenteel \n*niet* de afbeeldingen
+        op de pagina opnieuw indexeert. Die functie zal in de toekomst worden geïmplementeerd."
+    native_node_missing_warning: geen hierarchishe informatie beschikbaar
+    tabs:
+      articles: artikelen
+      classifications: classificaties
+      data: gegevens
+      literature_and_references: literatuur en referenties
+      overview: Overzicht
+      maps: kaarten
+      media: media
+      names: namen
+    iucn_status:
+      label: 'IUCN status:'
+      ex: uitgestorven (EX)
+      ew: uitgestorven in het wild (EW)
+      cr: Ernstig bedreigd (CR)
+      en: bedreigd (EN)
+      vu: kwetsbaar
+      nt: Gevoelig (NT)
+      lc: Minste zorg (LC)
+      dd: Onzeker (DD)
+      ne: Niet geëvalueerd (NE)
+      unknown: onbekend (geen gegevens)
+    unresolved_name: naam in onderzoek
+    unresolved_name_prefix: onopgeloste naam
+  page_titles:
+    pages:
+      data: '%{page_name} data'
+      media: '%{page_name} media'
+      maps: '%{page_name} kaarten'
+      names: '%{page_name} namen'
+      articles: '%{page_name} artikelen'
+    traits:
+      search: Trait zoeken
+  recaptcha: Recaptcha
+  recaptcha_error: Vertel alsjeblieft dat je geen robot bent.
+  reference_compiled_from: Verwezen door %{links}
+  reference_compiled_from_article: '%{source} artikel getiteld "%{name}"'
+  register_new_account: Registreren voor een nieuw account
+  resources:
+    actions:
+      import_traits: kenmerken importeren (uit repository)
+      republish: publiceren
+      reindex: reindex
+      fix_no_names: fix NO NAMEs
+      index: terug naar alle bronnen
+      show_all:
+        other: toon alles (%{count})
+      show_warns:
+        one: toon waarschuwing (%{count})
+        other: toon waarschuwingen (%{count})
+      clear_publishing: verwijder vergrendeling
+      clear_publishing_confirm: Hiermee wordt al het publiceren 'voltooid' en kan
+        het problemen veroorzaken als het wordt gebruikt tijdens het actief publiceren.
+        Weet je dit zeker?
+    headers:
+      index: Middelen
+      import_log: Import Log voor %{resource}
+    index:
+      locked_jobs:
+        zero: geen lopende taken
+        one: 1 lopende taak
+        other: '%{count} lopende taken'
+      jobs:
+        zero: geen wachtende taken
+        one: 1 wachtende taak
+        other: '%{count} wachtende taken'
+      harvest_jobs:
+        zero: niets om te publiseren
+        one: 1 lopende publicatie
+        other: '%{count} te publiceren publicaties'
+    no_events: Geen!
+  resource_missing: Geen middelen gevonden
+  scientific_name:
+    status_title:
+      accepted: Geaccepteerde namen
+      alternative: Alternatieve naam
+      preferred: Voorkeursnamen
+      unusable: Onbruikbare namen
+      synonym: Synoniemen
+  scientific_names_header: wetenschappelijke namen
+  send_me_reset_password_instructions: Stuur me wachtwoordherstelinstructies
+  search:
+    full_name: '%{vernacular} (%{scientific})'
+    matched_text: Overeenkomende %{text}
+    flash:
+      cannot_combine_paths: Niet in staat om de resultaten te combineren met %{path}
+      more_than_one_species: Niet in staat om de resultaten te combineren voor %{species}
+      more_than_two_terms: Niet in staat om de resultaten te combineren voor meer
+        dan twee %{terms}
+    n_articles:
+      one: '%{count} artikel'
+      other: '%{count} artikelen'
+    n_collections:
+      one: '%{count} verzameling'
+      other: '%{count} verzamelingen'
+    n_images:
+      one: '%{count} afbeelding'
+      other: '%{count} afbeeldingen'
+    n_results:
+      zero: Geen resultaten
+      one: '%{count} resultaat'
+      other: '%{count} resultaten'
+    n_sounds:
+      one: '%{count} geluid'
+      other: '%{count} geluiden'
+    n_taxon_pages:
+      one: '%{count} taxon pagina'
+      other: '%{count} taxon pagina''s'
+    n_users:
+      one: '%{count} gebuiker'
+      other: '%{count} gebruikers'
+    n_videos:
+      one: '%{count} video'
+      other: '%{count} video''s'
+    n_terms:
+      one: '%{count} term'
+      other: '%{count} termen'
+  search_results:
+    collection_page_count:
+      one: '%{count} pagina'
+      other: '%{count} pagina''s'
+    collection_page_count_and_users:
+      one: '%{count} pagina; onderhouden door %{users_sentence}'
+      other: '%{count} pagina''s; onderhouden door %{users_sentence}'
+    collected_media:
+      title: 'verzamelde media voor deze pagina:'
+    medium_article: Artikel
+    medium_image: Afbeelding
+    medium_map: Kaart
+    medium_sound: Geluid
+    medium_video: Video
+    medium_title_article_html: 'Artikel: <span class=''sub''>%{title}</span>'
+    medium_title_image_html: 'Afbeelding: <span class=''sub''>%{title}</span>'
+    medium_title_map_html: 'Kaart: <span class=''sub''>%{title}</span>'
+    medium_title_sound_html: 'Audio: <span class=''sub''>%{title}</span>'
+    medium_title_video_html: 'Video: <span class=''sub''>%{title}</span>'
+    empty: Geen resultaten.
+    field_matches:
+      description: 'Komt overeen met de beschrijving:'
+      resource_pk: 'Komt overeen met de external ID:'
+      bio: 'Komt overeen met de biografie:'
+      tag_line: 'Komt overeen met de tag line:'
+      resources:
+        one: 'komt overeen met de resource:'
+        other: 'matches the resources:'
+      synonyms:
+        one: 'Komt overeen met het synonym:'
+        other: 'matches the synonyms:'
+      vernaculars:
+        one: 'Komt overeen met de soortnaam:'
+        other: 'komt overeen met de soortnamen:'
+    section_titles:
+      collections:
+        one: '%{count} verzameling'
+        other: '%{count} verzamelingen'
+      media:
+        one: '%{count} medium'
+        other: '%{count} media'
+      pages:
+        one: '%{count} eol pagina (soort)'
+        other: '%{count} eol pagina''s (soorten)'
+      object_terms:
+        one: '%{count} data record waarde (TraitBank)'
+        other: '%{count} data record waarde (TraitBank)'
+      predicates:
+        one: '%{count} data record type (TraitBank)'
+        other: '%{count} data record types (TraitBank)'
+      users:
+        one: '%{count} gebruiker'
+        other: '%{count} gebruikers'
+    collection_title_html: 'Verzameling: <span class=''sub''>%{name}</span>'
+    resource_counts:
+      n_articles:
+        one: 1 ARTIKEL
+        other: '%{count} ARTIKEL'
+      n_data:
+        one: 1 DATUM
+        other: '%{count} DATA'
+      n_media:
+        one: 1 MEDIUM
+        other: '%{count} MEDIA'
+    user_title_html: 'Gebruiker: <span class=''sub''>%{name}</span>'
+  search_suggestion:
+    actions:
+      create: Maak een nieuwe zoeksuggestie
+    created: Maak een nieuwe zoeksuggestie voor %{match}
+    destroyed: Verwijderde zoeksuggestie voor %{match}
+    new:
+      header: Maak een zoeksuggestie
+    update:
+      header: Bewerk zoeksuggestie
+    index:
+      header: Zoeksuggesties
+  sections:
+    associations: Verenigingen
+    behavior: Gedrag
+    benefits: Voordelen
+    brief_summary: Korte samenvatting
+    comprehensive_description: Uitgebreide beschrijving
+    conservation: Natuurbehoud
+    conservation_status: natuurbeschermingsstatus
+    cyclicity: cycliciteit
+    diagnostic_description: Diagnostische beschrijving
+    diseases_and_parasites: Ziektes en parasieten
+    dispersal: Verspreiding
+    distribution: Verspreiding
+    ecology: Ecologie
+    evolution_and_systematics: Evolutie and Systematics
+    general_ecology: Algemene ecologie
+    genetics: Genetica
+    growth: Groei
+    habitat: Habitat
+    identification_resources: Determinatiebronnen
+    life_expectancy: Levensverwachting
+    life_history_and_behavior: Levensgeschiedenis en gedrag
+    management: Beheer
+    migration: Migratie
+    molecular_biology: Moleculair Biologie
+    molecular_biology_and_genetics: Moleculair Biologie en Genetica
+    morphology: Morfologie
+    names_and_taxonomy: Namen and Taxonomie
+    notes: Opmerkingen
+    overview: Overzicht
+    physiology_and_cell_biology: Fysiologie and Celbiologie
+    physical_description: Fysieke beschrijving
+    relevance_to_humans_and_ecosystems: Relevantie voor mensen en ecosystemen
+    reproduction: Reproductie
+    risks: Risico's
+    size: Grootte
+    taxonomy: Taxonomie
+    threats: Bedreigingen
+    trends: Trend
+    trophic_strategy: Trofische strategie
+    type_information: Type Informatie
+    wikipedia: Wikipedia
+  settings: Instellingen
+  show_date: Toon publicatiedatum
+  sign_in: Aanmelden
+  sign_up: Inschrijven
+  signature_with_contact_us_link: |-
+    Als u problemen tegenkomt neem dan contact met ons op via %{url}.
+
+    The Encyclopedia of Life Team
+  did_not_receive_confirmation_instructions: Heb geen bevestigingsinstrukties ontvangen
+  simple_form:
+    "yes": Ja
+    "no": Nee
+    required:
+      text: vereist
+      mark: '*'
+    error_notification:
+      default_message: 'Bekijk de problemen hieronder:'
+    labels:
+      defaults:
+        email: E-mail
+        password: Wachtwoord
+        password_confirmation: Bevestiging wachtwoord
+        remember_me: Aanmeldgegevens onthouden
+        username: Gebruikersnaam
+        bio: Bio
+      search_suggestion:
+        match: zoek een overeenkomende string
+        page_id: ID van de  EOL-pagina om naar door te verwijzen (of filter erop)
+        synonym_of_id: ID (!) van de zoeksuggestie gebruiken
+        object_term: omleiden naar URI (of filteren op)
+        path: omleiden naar pad (volledig of relatief)
+        wkt_string: WKT string om door te geven aan Effechecka
+  stats:
+    articles: artikelen
+    collections: Verzamelingen
+    data: data records
+    media: media
+    pages: pagina's
+    nodes: Nodes
+    scientific_names: namen
+    users: gebruikers
+    references: verwijzingen
+  term_query:
+    validations:
+      empty_filters_error_record: u moet een filter voorzien van een eigenschap of
+        waarde voor het zoeken naar records
+      empty_filters_error_taxa: u moet een clade of filter voorzien van een eigenschap
+        of waarde voor het zoeken naar taxa
+  term_query_filter:
+    validations:
+      blank_error: moet een attribuut of waarde specificeren
+      invalid_uri: Ongeldige URI
+      multi_obj_error: kan niet zowel een objectterm als een doelclade hebben
+      pred_uri_blank_obj_clade_error: Kan niet leeg gelaten worden bij een doelclade
+      pred_uri_blank_numeric_error: Kan niet leeg gelaten worden bij een nummerieke
+        waarde
+      range_invalid_error: moet >= zijn dan de eerste waarde
+      units_blank_error: eenheden kunnen niet leeg gelaten worden voor een numerieke
+        zoekopdracht
+  terms:
+    attribution_field_html: <strong>Attributie:</strong> <a href='%{attribution}'>%{attribution}</a>
+    comment_field_html: <strong>Reactie:</strong> %{comment}
+    definition_field_html: <strong>Definitie:</strong> %{definition}
+    source_field_html: <strong>Bron:</strong> <a href='%{source}'>%{source}</a>
+    record_url: record URL
+    scientific_name: wetenschappelijke naam
+    show_all_records: Alle records tonen
+    source: bron
+    uri_field_html: <strong>URI:</strong> %{uri}
+    index:
+      select_page_above: Selecteer een pagina hierboven om te beginnen
+  data_definition: definitie van "%{data}"
+  traits:
+    data_viz:
+      about_this_chart: over deze grafiek
+      about_this_chart_tooltip_1d: Dit is een samenvatting op basis van gegevens die
+        beschikbaar zijn in EOL. Dit kan onvolledig zijn! U kunt een balk uit de grafiek
+        selecteren om uw zoekresultaten te verfijnen. Veel balken kunnen overlappen
+        en een bepaalde soort kan in meer dan één balk voorkomen.
+      about_this_chart_tooltip_assoc: Dit is een samenvatting op basis van gegevens
+        die beschikbaar zijn in EOL. Dit kan onvolledig zijn! U kunt de muiscursor
+        op de naam van een taxon plaatsen om de relaties ervan te laten tonen. Een
+        groene link geeft aan dat het geselecteerde taxon het subject is van de associatie;
+        een paarse geeft aan dat het het object is. Grotere zoekopdrachten worden
+        samengevat op geslacht of familie. U kunt deze beperken door op de naam van
+        een taxon te klikken.
+      about_this_chart_tooltip_sankey_2d: Dit is een samenvatting op basis van gegevens
+        die beschikbaar zijn in EOL. Dit kan onvolledig zijn! U kunt een categorie
+        uit elke as selecteren om uw zoekresultaten te verfijnen. Merk op dat een
+        bepaalde soort in meer dan één categorie op dezelfde as kan worden opgenomen.
+      about_this_chart_tooltip_sankey_3+: Dit is een samenvatting op basis van gegevens
+        die beschikbaar zijn in EOL. Dit kan onvolledig zijn! U kunt een categorie
+        op elke as selecteren om uw zoekresultaten te verfijnen. Merk op dat een bepaalde
+        soort in meer dan één categorie op dezelfde as kan worden opgenomen. In een
+        gemarkeerde subsetweergave worden deze soorten met meerdere waarden meerdere
+        keren geteld in andere assen.
+      other_term_name: andere %{term_name}
+      hist_value_label: waarde (%{units})
+      n_other_records:
+        one: een ander record
+        other: '%{count} andere records'
+      n_other_taxa:
+        one: een ander taxon
+        other: '%{count} andere taxa'
+      num_records_label: '# van records'
+      other: overige
+      page_habitat_header: '%{name} Habitats'
+      page_habitat_explanation: De omgevingen waarin vele %{name} soorten leven. Selecteer
+        een omgeving om de %{name} soortenchecklist te bekijken.
+      pie_prompt: beweeg muis over segment of sleutel om te markeren
+      n_obj_records:
+        one: een record met "%{obj_name}"
+        other: '%{count} records met "%{obj_name}"'
+      n_taxa_with:
+        one: één taxon met "%{obj_name}"
+        other: '%{count} taxa met "%{obj_name}"'
+      sankey_node_hover: klik om de zoekresulaten te verfijnen tot %{term_name}
+      see_n_obj_records:
+        one: klik om een record te zien met "%{obj_name}"
+        other: klik om %{count} records te zien met "%{obj_name}"
+      see_n_taxa_with:
+        one: klik om een taxon te zien met "%{obj_name}"
+        other: klik om %{count} taxa te zien met "%{obj_name}"
+      show_n_records_between:
+        one: 'Klik om %{count} record met meetwaarden in [%{min}, %{limit}] %{units}
+          te zien '
+        other: Klik om %{count} records met meetwaarden in [%{min}, %{limit}] %{units}
+          te zien
+      show_n_taxa_between:
+        one: Klik om %{count} taxon met meetwaarden in [%{min}, %{limit}] %{units}
+        other: Klik om %{count} taxa met meetwaarden in [%{min}, %{limit}] %{units}
+          te zien
+    properties:
+      citation: bibliografisch citaat
+      method: Meetmethode
+      remarks: Opmerkingen
+      sample_size: Steekproefomvang
+      scientific_name: wetenschappelijke naam
+      source: Bron
+    search:
+      clade: 'clade: %{clade}'
+      download_tsv: download tsv
+      edit_filters: Filter bewerken
+      filter_display:
+        eq: '%{pred} = %{num_val} %{units}'
+        gte: '%{pred} >= %{num_val} %{units}'
+        lifestage: 'levensfase: %{value}'
+        lte: '%{pred} <= %{num_val} %{units}'
+        obj_only: 'waarde: %{obj}'
+        pred_obj: '%{pred}: %{obj}'
+        pred_only: '%{pred}'
+        range: '%{pred} in [%{num_val1}, %{num_val2}] %{units}'
+        resource: 'bron: %{value}'
+        sex: 'geslacht: %{value}'
+        statistical_method: 'statistische methode: %{value}'
+      gbif_search: GBIF doorzoeken
+      gbif_search_hover: vind verspreidingsgegevens in GBIF voor de taxa in uw zoekresultaten
+        (maximaal 50)
+      result_header_records: Toon %{range_begin} - %{range_end} of %{total} records
+        voor %{page_count} taxa met
+      result_header_taxa: Toon %{range_begin} - %{range_end} van %{total} taxa met
+      result_header_taxa_notaxa: Toon %{range_begin} - %{range_end} van %{total}
+      new_search: nieuwe zoekopdracht
+      select:
+        child_term: selecteer een kinderterm (optioneel)
+        top_level:
+          object_term: of selecteer een waarde
+          predicate: of selecteer een kenmerk
+      show_query: zoekopdracht weergeven
+      switch_to_list: overschakelen naar lijstweergave
+      switch_to_gallery: overschakelen naar gallerijweergave
+    search_form:
+      attribute: kenmerk
+      attribute_eg: 'attribuut (bijv.: trofisch niveau)'
+      clade_filter_placeholder: 'groep (bijv.: beren) (optioneel)'
+      hide_additional_fields: verberg extra velden
+      lifestage: levensstadium
+      records_matching_all: archief voor taxa dat aan ALLE filters voldoet
+      resource: bron
+      search: Zoeken
+      sex: geslacht
+      show_additional_fields: toon extra velden
+      statistical_method: statistische methode
+      target_group: doelgroep (bijvoorbeeld zalm)
+      taxa_matching_all: taxa komt overeen met ALLE filters
+      this_may_take_a_minute: Dit kan een minuut duren
+      trait_filter: eigenschap filter
+      value: waarde
+      value_eg: 'waarde (bijvoorbeeld: herbivoor)'
+  trophic_web:
+    group_descriptions:
+      competitor: concurrent voor %{source_name}
+      predator: voed zich met %{source_name}
+      prey: gegeten door %{source_name}
+      source: focal soort
+  trust:
+    unreviewed: niet-beoordeeld
+    trusted: Vertrouwd
+    untrusted: niet vertrouwd
+  user:
+    batch_page_lookup: batch pagina lookup
+    created_at: aangemaakt
+    download_queue: Data download rij
+    grant_power: Verleen power-user toegang
+    revoke_power: power-user toegang intrekken
+    edit_account_details: Bewerk account details
+    email: E-mail
+    to_commit_enter_current: Voer uw huidige wachtwoord in om uw wijzigingen te bevestigen
+    form_labels:
+      age_confirm: Ik ben minstens 15 jaar oud
+      tou_confirm_html: Ik heb de <a href='%{tou_path}'>Gebruikersvoorwaarden</a>
+        en de<a href='%{privacy_path}'>Privacy Policy</a>
+    headers:
+      bio: Korte Biografie
+      collections: Verzamelingen
+      downloads: Downloads
+      links: Koppelingen
+    is_power_user: Deze gebruiker wordt als een power user aangemerkt
+    validations:
+      age_confirm: U moet bevestigen dat u tenminste 13 jaar oud bent
+      tou_confirm: u moet bevestigen dat u de gebruiksvoorwaarden en het privacybeleid
+        hebt gelezen
+    list_of_power_users: Lijst van power users
+    new_password: Nieuw wachtwoord
+    confirm_new_password: Bevestig nieuw wachtwoord
+    showing_n_power_users:
+      one: Listing een power user
+      other: Listing %{count} power users
+    trait_bank_cypher_form: Trait bank cypher formulier
+    username: gebruikersnaam
+    update: Bijwerken
+    update_email: Bewerk email
+  user_download:
+    created: Uw bestand wordt op de achtergrond verwerkt. Controleer uw <a href="%{url}">gebruikerspagina</a>
+      om te zien of deze klaar is.
+    have_pending: U heeft al een download in behandeling voor deze zoekopdracht. Controleer
+      uw <a href="%{url}">gebruikerspagina</a> om te zien of deze is voltooid.
+  users:
+    account_migration_header: Als u zich voor 15 november 2018 geregistreerd hebt
+      bij EOL.
+    account_migration_notice: Uw accountgegevens, inclusief gebruikersnaam, bijbehorend
+      e-mailadres, profielbeschrijving en eigen verzamelingen  zijn geïmporteerd in
+      het nieuwe EOL. Uw gebruikersnaam is nog steeds uw weergavenaam op de site,
+      maar u moet nu inloggen met uw e-mailadres. We konden uw wachtwoord om veiligheidsredenen
+      niet migreren; Sorry voor het ongemak. U kunt het opnieuw instellen via 'Wachtwoord
+      vergeten'. Als u zich alleen hebt aangemeld via een externe provider - Google,
+      Twitter of FaceBook -, dan nog even geduld; we zijn enkele problemen aan het
+      oplossen met de gedeelde inlogprocessen.
+    sign_in: Aanmelden
+  vernacular_names_header: Soortnaam
+  vernacular_preferred_by_resource: '%{resource} (prefers this name)'
+  wordcloud_credit_html: aangemaakt met <a href='%{url}'>jQCloud</a>
+  i18n_js:
+    traits:
+      data_viz:
+        sankey:
+          m_of_n: '%{m} van %{n}'
+  term:
+    actions:
+      reindex: reindex
+      sort: Sorteren op
+    edit:
+      header: '%{uri} bewerken'
+      submit: Opslaan
+    fields:
+      name: 'Naam:'
+      definition: 'definitie:'
+      attribution: 'Naamsvermelding:'
+      comment: 'opmerking:'
+      sections: 'secties:'
+      is_hidden_from_glossary: 'verbergen van woordenlijst:'
+      is_hidden_from_overview: verberg van overzichtstab
+    glossary:
+      full_title: Woordenlijst voor ALL Terms for Data on EOL
+      predicate_title: Woordenlijst voor Type Terms for Data on EOL
+      object_term_title: Woordenlijst voor Value Terms for Data on EOL
+      units_title: Woordenlijst voor Unit Terms for Data on EOL
+    pagination:
+      next: volgende pagina
+      previous: vorige pagina
+    inverse_name:
+      fallback: tegenovergestelde van '%{term_name}'
+      by_uri:
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: wordt gegeten door
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002632: heeft ectoparasiet
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002634: heeft endoparasiet
+        http://eol(dot)org/schema/terms/HasDispersalVector: dispersal vector voor
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002454: host van
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002553: heeft hyperparasiet
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002459: heeft vector
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002626: wordt gedood door
+        http://purl(dot)obolibrary(dot)org/obo/RO_0008503: kleptoparasiteerd door
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002444: wordt geparasiteerd door
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002618: bezocht door
+    name:
+      by_uri:
+        http://eol(dot)org/schema/terms/percentPerMonth: '%/maand'
+        http://eol(dot)org/schema/terms/ActiveGrowthPeriod: actieve groeiperiode
+        http://www(dot)ebi(dot)ac(dot)uk/efo/EFO_0001272: adult
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00010505: aerosol
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000085: alpiene gletjser
+        http://eol(dot)org/schema/terms/ambush: hinderlaagpredator
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03413450: amphidroom
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03413448: anadroom
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980071: eenjarig
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900044: waterplant
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001709: gebied
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_133326: bariumsulfaat
+        http://purl(dot)obolibrary(dot)org/obo/PO_0004518: bast
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000236: basalt
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000500: beverdam
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000270: bevermeer
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03302072: bijenwas
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980072: tweejarig
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: zwart
+        http://eol(dot)org/schema/terms/BloomPeriod: bloeiperiode
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000318: blauw
+        http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: lichaamslengte
+        http://purl(dot)obolibrary(dot)org/obo/CEPH_0000036: broeden
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: bruin
+        http://eol(dot)org/schema/terms/browsing: browser
+        http://purl(dot)obolibrary(dot)org/obo/PO_0000055: knop
+        http://eol(dot)org/schema/terms/burl: warrelknoest
+        http://eol(dot)org/schema/terms/CalcareousSoilTolerance: kalkrijke bodem tolerantie
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_22984: calcium (Ca)
+        http://eol(dot)org/schema/terms/CapitulumLength: Capitulum lengte
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03413449: catadroom
+        http://eol(dot)org/schema/terms/CellDepth: celdiepte
+        http://eol(dot)org/schema/terms/CellLength: cellengte
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000036: celmassa
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0000056: celvolume
+        http://eol(dot)org/schema/terms/CITES_I: CITES Appendix I
+        http://eol(dot)org/schema/terms/CITES_II: CITES Appendix II
+        http://eol(dot)org/schema/terms/CITES_III: CITES Appendix III
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900035: klimplant
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000687: Kustgebied
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002441: commensaal van
+        http://eol(dot)org/schema/terms/Cosmopolitan: Kosmopolitisch
+        https://eol(dot)org/schema/terms/crustacean_feeder: Kreeftachtigeneter
+        http://eol(dot)org/schema/terms/crustose: korstvormig
+        http://purl(dot)obolibrary(dot)org/obo/ID_0000058: cilinder
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000033: dagen
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001731: bladverliezend
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000185: graden
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000027: graden Celsius
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: eet
+        http://eol(dot)org/schema/terms/EggDiameter: ei diameter
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001733: groenblijvend
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: Snel
+        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#foot: voet
+        http://eol(dot)org/schema/terms/FireResistance: vuurweerstand
+        http://eol(dot)org/schema/terms/FireTolerance: vuurtolerantie
+        http://eol(dot)org/schema/terms/FossilFirst: eerste verschijning
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000367: vlucht
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000537: bloemkleur
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46713: fluoriet
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000174: Bos
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000873: zoetwater
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009001: fruit
+        http://eol(dot)org/schema/terms/FruitSeedColor: fruit of zaadkleur
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000850: vruchtsoort
+        http://eol(dot)org/schema/terms/gramsPerCentimeterSquaredPerDay: g/cm^2/dag
+        http://eol(dot)org/schema/terms/Present: geografische verspreiding bevat
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900024: geofiet
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000177: Grasland
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: green
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002303: habitat
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002454: heeft waard(plant)
+        http://eol(dot)org/schema/terms/HeadtoCoccyxLength: hoofd tot coccyx lengte
+        http://eol(dot)org/schema/HeadWidth: kopbreedte
+        http://eol(dot)org/schema/terms/HeadBodyLength: kopromplengte
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: hartvormig
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900025: helofiet
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15756: hexadecanoic zuur
+        http://eol(dot)org/schema/terms/HomeRange: home range
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900026: hydrofiet
+        http://purl(dot)obolibrary(dot)org/obo/EFO_0004387: inches
+        http://eol(dot)org/schema/terms/InitialMortalityRate: initial mortality rate
+        http://eol(dot)org/schema/terms/InterBirthInterval: inter-birth interval
+        http://eol(dot)org/schema/terms/InvasiveRange: invasive in
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002471: wordt gegeten door
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_84890: isohexadecanoic zuur
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000012: kelvin
+        http://eol(dot)org/schema/terms/kilogramsPerMeterSquaredPerYear: kg/m^2/jaar
+        http://eol(dot)org/schema/terms/DescribedAcceptedSpecies: bekende marine soorten
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: groot
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000326: bladkleur
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000492: bladvorm
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002457: bladachtig
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001199: lineair
+        http://eol(dot)org/schema/terms/LittersPerYear: aantal worpen per jaar
+        http://purl(dot)obolibrary(dot)org/obo/GO_0040011: locomotion
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: magnesium (Mg)
+        http://eol(dot)org/schema/terms/MaleFemaleBodyMassRatio: man vrouw lichaamsgewichtverhouding
+        http://eol(dot)org/schema/terms/MaleTenure: Male Tenure
+        http://eol(dot)org/schema/terms/MantleLength: Mantle lengte
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000447: mariene
+        http://eol(dot)org/schema/terms/MatingSystem: mating system
+        http://semanticscience(dot)org/resource/SIO_001114: max
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000461: medium (normaal)
+        http://eol(dot)org/schema/terms/MiddleToeLength: middelste teenlengte
+        http://eol(dot)org/schema/terms/millimeterspermonth: milimeters per maand
+        http://eol(dot)org/schema/terms/paleo_megaannum: miljoen jaar geleden
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000035: maanden
+        http://eol(dot)org/schema/terms/MortalityRateDoublingTime: sterftecijferverdubbelingstijd
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000083: nucleuslengte
+        http://eol(dot)org/schema/terms/NumberOfHosts: aantal hosts
+        http://eol(dot)org/schema/terms/NumberPublicRecordsInBOLD: aantal openbare
+          records in BOLD
+        http://eol(dot)org/schema/terms/NutrientCompositionOfMilk: nutrient samenstelling
+          van melk
+        http://eol(dot)org/schema/terms/OptimalGrowthTemperature: optimale groeitemperatuur
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: oranje
+        http://eol(dot)org/schema/terms/OuterEarLength: buitenoorlengte
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: zuurstof
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002444: parasiteerd op
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002445: wordt geparasiteerd door
+        http://purl(dot)obolibrary(dot)org/obo/GO_0060746: ouderzorg
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000187: procent
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980073: overblijvende
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900032: plantgroeivorm
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000207: planthoogte
+        http://eol(dot)org/schema/terms/PlantingDensity: aantplantingsdichtheid
+        http://eol(dot)org/schema/terms/PopulationGroupSize: populatie groepsgrootte
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002439: predeert op
+        http://purl(dot)obolibrary(dot)org/obo/RO_0003000: produceert
+        http://eol(dot)org/schema/terms/ProsomeHeight: prosome hoogte
+        http://eol(dot)org/schema/terms/ProsomeLength: prosome lengte
+        http://eol(dot)org/schema/terms/practicalSalinityUnits: PSU
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: purper
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000322: rood
+        http://purl(dot)obolibrary(dot)org/obo/GO_0000003: reproductie
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000253: river
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009005: wortels
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009010: zaden
+        http://eol(dot)org/schema/terms/SeedBank: zaadbank
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002451: sexueel dimorf
+        http://eol(dot)org/schema/terms/ShellHeightBivalve: schelphoogte, tweekleppigen
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000039: schelplengte
+        http://eol(dot)org/schema/terms/ShellLengthBivalve: schelplengte, tweekleppigen
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900034: struik
+        http://purl(dot)obolibrary(dot)org/obo/PO_0020042: eenvoudig
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000106: skelet bevat
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0002342: skelet structuur
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: Langzaam
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000587: klein
+        http://eol(dot)org/schema/terms/SocialGroupSize: sociale groepgrootte
+        http://eol(dot)org/schema/terms/SocialSystem: social systeem
+        http://eol(dot)org/schema/terms/StandardLength: standaard lengte
+        http://purl(dot)obolibrary(dot)org/obo/VT_0002758: staartlengte
+        http://eol(dot)org/schema/terms/TestesMass: Testes Mass
+        http://eol(dot)org/schema/terms/OceaniaRealm: Oceanisch gebied (eilanden)
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000915: dikte
+        http://purl(dot)obolibrary(dot)org/obo/UO_0010038: tonnen
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900033: Boom
+        http://eol(dot)org/schema/terms/TropicalOcean: Tropische Oceaan
+        http://eol(dot)org/schema/terms/Uses: gebruikt voor
+        http://dicom(dot)nema(dot)org/resources/ontology/DCM/112132: Erg klein
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: volume
+        http://rs(dot)tdwg(dot)org/dwc/terms/verbatimDepth: waterdiepte
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000114: Watt
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: wit
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000040: houtdichtheid
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000036: jaren
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000324: geel
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001941: geelgroen
+        http://eol(dot)org/schema/terms/µmol_cell-1_day-1: µmol /cel /dag
+        http://eol(dot)org/schema/terms/µmol_cell-1: µmol/cel
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000064: µmol/L
+        http://eol(dot)org/schema/terms/Colonial: Koloniaal
+        http://eol(dot)org/schema/terms/NonInvasiveRange: not invasief in
+...

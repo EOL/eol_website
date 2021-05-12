@@ -1,28 +1,33 @@
 .l-terms
   .ui.dimmer.js-term-form-dimmer
     .ui.loader
-  .js-filter-form-contain{:class => @pages ? "is-hidden" : ""}
+  .js-filter-form-contain{:class => @search ? "is-hidden" : ""}
     = render "search_form"
 
-  - if @pages
+  - if @search
     .js-filter-list
-      - hdr_opts = { range_begin: @grouped_data.offset_value + 1, range_end: @grouped_data.offset_value + @grouped_data.length, total: @grouped_data.total_count }
+      - hdr_opts = { range_begin: @search.grouped_data.offset_value + 1, range_end: @search.grouped_data.offset_value + @search.grouped_data.length, total: @search.grouped_data.total_count }
       -if @query.record?
-        - hdr_opts[:page_count] = @counts.pages
+        - hdr_opts[:page_count] = @search.page_count
       - filter_hdr_val_key = ".result_header_#{@query.record? ? 'records' : 'taxa'}"
+      - if @query.clade && I18n.locale == I18n.default_locale
+        - filter_hdr_val_key += "_notaxa"
       %h2.filter-hdr= t(filter_hdr_val_key, hdr_opts)
       %ul.show-filters
         - if @query.clade
-          %li.show-filter.show-filter-clade= t(".clade", clade: @query.clade.native_node&.canonical_form)
-        - @query.filters.each do |f|
+          %li.show-filter.show-filter-clade= I18n.locale == :en ? "#{@query.clade.native_node&.canonical_form}" : t(".clade", clade: @query.clade.native_node&.canonical_form)
+        - @query.filters.each_with_index do |f, i|
           %li.show-filter= filter_display_string(f)
+          - if I18n.locale == I18n.default_locale && i < @query.filters.length - 1
+            %li.show-filter-join AND
+
       %ul.edit-filters-row
         %li.js-edit-filters
           %i{:'uk-icon' => "icon: pencil"}
           %span= t(".edit_filters")
-        %li.js-download-tsv{:'data-url' => term_search_results_path(:format => :csv)}
+        %li
           %i{:'uk-icon' => "icon: download"}
-          %span= t(".download_tsv")
+          = link_to(t(".download_tsv"), term_search_results_path(params: { tq: @query.to_short_params }, format: :csv))
         - if @gbif_url
           %li{:'uk-tooltip' => t(".gbif_search_hover")}
             %i{:'uk-icon' => "icon: link"}
@@ -39,23 +44,24 @@
           %li
             - if @view_type == "gallery"
               %i{:'uk-icon' => "icon: list"}
-              = link_to t(".switch_to_list"), term_search_results_path(term_query: @query.to_params, view: "list")
+              = link_to t(".switch_to_list"), term_search_results_path(tq: @query.to_short_params, view: "list")
             - else
               %i{:'uk-icon' => "icon: grid"}
-              = link_to t(".switch_to_gallery"), term_search_results_path(term_query: @query.to_params, view: "gallery")
+              = link_to t(".switch_to_gallery"), term_search_results_path(tq: @query.to_short_params, view: "gallery")
+
     - if @data_viz_type.present? 
-      = render "shared/data_viz_contain", type: @data_viz_type, query: @query
-      
+      = render "shared/data_viz_contain_w_fallback", type: @data_viz_type, query: @query, fallback_type: @fallback_data_viz_type
+
     - if @query.record?
-      = render 'data_table', { data: @grouped_data, pages: @pages, data_viz: @data_viz }
-    - elsif @result_pages.any?
+      = render 'data_table', { data: @search.grouped_data, pages: @pages, data_viz: @data_viz }
+    - elsif @search.grouped_data.any?
       - if @view_type == "gallery"
         = render 'page_gallery', { pages: @result_pages }
       - else
         = render 'page_table', { pages: @result_pages }
 
-- if @raw_query
-  .raw-query
-    .show-raw-query.js-show-raw-query= t(".show_query")
-    %textarea.is-hidden.raw-query-txt.js-raw-query= @raw_query
+  - if @search
+    .raw-query
+      .show-raw-query.js-show-raw-query= t(".show_query")
+      %textarea.is-hidden.raw-query-txt.js-raw-query= @search.pretty_cypher
 

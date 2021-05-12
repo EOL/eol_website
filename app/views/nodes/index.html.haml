@@ -17,5 +17,5 @@
             = number_with_delimiter(node.page.page_contents.where(resource_id: @resource.id).count)
           - else
             No associated page!
-        %td= number_with_delimiter(TraitBank.count_by_resource_and_page(@resource.id, node.page_id))
+        %td= number_with_delimiter(TraitBank::Queries.count_by_resource_and_page(@resource.id, node.page_id))
 = paginate @nodes

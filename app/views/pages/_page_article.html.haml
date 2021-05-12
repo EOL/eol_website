@@ -4,10 +4,10 @@
 .article
   %h2.title-article
     = name
-    - if article.language && article.language.group.to_sym != I18n.locale
+    - if article.language&.locale && article.language.locale != Locale.current
       %span.uk-text-small
         (
-        = t("languages.#{article.language.group}")
+        = t("languages.#{article.language.locale.code}")
         )
   .provided_by.uk-text-muted
     - if article.resource

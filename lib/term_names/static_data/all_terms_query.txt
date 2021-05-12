@@ -1,0 +1,11 @@
+MATCH (t:Term)
+WHERE ((:Trait)-[:predicate]->(t) OR (:Trait)-[:object_term]->(t))
+AND t.is_hidden_from_glossary = false
+AND t.is_hidden_from_overview = false
+AND t.is_hidden_from_select = false
+AND NOT (t)-[:synonym_of]->(:Term)
+AND NOT t.uri CONTAINS 'wikidata'
+AND NOT t.uri CONTAINS 'geonames'
+RETURN t.uri, t.name, t.definition
+ORDER BY t.uri ASC
+LIMIT 2000

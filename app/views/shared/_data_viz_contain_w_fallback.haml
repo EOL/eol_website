@@ -1,0 +1,8 @@
+.js-viz-with-fallback
+  = render "shared/data_viz_contain", type: type, query: query
+
+  - if local_assigns.include?(:fallback_type) && fallback_type.present?
+    = render "shared/data_viz_contain", type: fallback_type, query: query, fallback: true
+    .viz-toggle.js-viz-toggle.uk-text-center
+      .js-viz-toggle-spin.viz-toggle-spin{ 'uk-spinner': 'ratio: 0.5' }
+      .a.js-viz-toggle-link

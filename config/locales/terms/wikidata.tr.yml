@@ -1,8 +1,8 @@
 ---
 tr:
   :term:
-    :name:
-      :by_uri:
+    name:
+      by_uri:
         https://www(dot)wikidata(dot)org/wiki/Q59099: otoburlar
         http://www(dot)wikidata(dot)org/entity/Q176381: Adak Adası
         http://www(dot)wikidata(dot)org/entity/Q797: Alaska
@@ -195,7 +195,7 @@ tr:
         https://www(dot)wikidata(dot)org/entity/Q212410: Proteaz
         https://www(dot)wikidata(dot)org/entity/Q308695: Peristaltizm
         https://www(dot)wikidata(dot)org/entity/Q335183: Fototrof
-        https://www(dot)wikidata(dot)org/entity/Q184755: Fitoplankton
+        https://www(dot)wikidata(dot)org/entity/Q184755: fitoplankton
         http://www(dot)wikidata(dot)org/entity/Q1343019: Point Barrow
         https://www(dot)wikidata(dot)org/entity/Q60670: Dünyanın kutup bölgeleri
         https://www(dot)wikidata(dot)org/entity/Q18952: Deniz halkalı solucanları
@@ -277,3 +277,122 @@ tr:
         https://www(dot)wikidata(dot)org/entity/Q954: Zimbabve
         https://www(dot)wikidata(dot)org/entity/Q181011: "‰"
         https://www(dot)wikidata(dot)org/entity/Q7886: akciğer
+    definition:
+      by_uri:
+        http://www(dot)wikidata(dot)org/entity/Q797: ABD'nin eyaleti
+        https://www(dot)wikidata(dot)org/entity/Q797: ABD'nin eyaleti
+        https://www(dot)wikidata(dot)org/entity/Q7486201: Vikimedya anlam ayrımı sayfası
+        http://www(dot)wikidata(dot)org/entity/Q12824780: Anadolu'nun eş anlamlısı
+        http://www(dot)wikidata(dot)org/entity/Q23522: Avrupa'nın güney doğusunda
+          yer alan kültürel bölge
+        http://www(dot)wikidata(dot)org/entity/Q45823: Arktik Okyanusunun kenarında,
+          Norveç ve Rusya'nın kuzey kıyılarında bulunan bir deniz
+        https://www(dot)wikidata(dot)org/entity/Q45823: Arktik Okyanusunun kenarında,
+          Norveç ve Rusya'nın kuzey kıyılarında bulunan bir deniz
+        http://www(dot)wikidata(dot)org/entity/Q194364: Ada
+        https://www(dot)wikidata(dot)org/entity/Q59256: Ophiuroidea sınıfından olan
+          deniz omurgasızlarına verilen ortak ad
+        http://www(dot)wikidata(dot)org/entity/Q1011: Batı Afrika'da bulunan bir ada
+          devleti
+        http://www(dot)wikidata(dot)org/entity/Q16: Kuzey Amerika'da bir ülke
+        https://www(dot)wikidata(dot)org/entity/Q16: Kuzey Amerika'da bir ülke
+        https://www(dot)wikidata(dot)org/entity/Q1011: Batı Afrika'da bulunan bir
+          ada devleti
+        http://www(dot)wikidata(dot)org/entity/Q27509: Avrupa'da bir bölge
+        http://www(dot)wikidata(dot)org/entity/Q1251080: Pasifik Okyanusu'nun doğusunda,
+          Şili'nin batısında yer alan marjinal deniz
+        https://www(dot)wikidata(dot)org/entity/Q25364: Eklembacaklılar şubesine ait
+          bir alt şube
+        https://www(dot)wikidata(dot)org/entity/Q25279: Güney Karayip'te bulunan bir
+          ada devleti
+        https://www(dot)wikidata(dot)org/entity/Q4610: kabuklular takımı
+        http://www(dot)wikidata(dot)org/entity/Q974: Orta Afrika'da bulunan bir ülke
+        https://www(dot)wikidata(dot)org/entity/Q974: Orta Afrika'da bulunan bir ülke
+        http://www(dot)wikidata(dot)org/entity/Q152058: kuzeybatısında Grönland ve
+          güneydoğusunda İzlanda bulunan bir boğaz
+        https://www(dot)wikidata(dot)org/entity/Q574: Güneydoğu Asya'da bir devlet
+        http://www(dot)wikidata(dot)org/entity/Q736: Güney Amerika'da temsili demokrasi
+          ile yönetilen bir cumhuriyettir
+        http://www(dot)wikidata(dot)org/entity/Q324541: İzlanda, Reykjanes Yarımadası'ndan
+          10 deniz mili açıklığında küçük bir kayalık ada
+        https://www(dot)wikidata(dot)org/entity/Q1050: Güney Afrika'da bulunan bir
+          ülke
+        http://www(dot)wikidata(dot)org/entity/Q34589: Nehir
+        http://www(dot)wikidata(dot)org/entity/Q5401: Ara Kıta
+        http://www(dot)wikidata(dot)org/entity/Q702: Büyük Okyanus'ta bir ada devleti
+        http://www(dot)wikidata(dot)org/entity/Q223: Danimarka Krallığı'na bağlı özerk
+          bölge.
+        https://www(dot)wikidata(dot)org/entity/Q223: Danimarka Krallığı'na bağlı
+          özerk bölge.
+        https://www(dot)wikidata(dot)org/entity/Q3386847: bir hayvanın bir diğerine
+          zarar vermek için ürettiği bir veya daha fazla toksin içeren bir salgı
+        http://www(dot)wikidata(dot)org/entity/Q847051: Dünya'nın kuzeyinde baştan
+          başa bulunan bütün karaları bir bütün olarak kapsayan habitatlar
+        http://www(dot)wikidata(dot)org/entity/Q189: Avrupa ülkesi
+        https://www(dot)wikidata(dot)org/entity/Q189: Avrupa ülkesi
+        https://www(dot)wikidata(dot)org/entity/Q1390: eklembacaklılar sınıfı
+        https://www(dot)wikidata(dot)org/entity/Q1358981: beyaza yakın bir renk
+        http://www(dot)wikidata(dot)org/entity/Q1008: Batı Afrika'da bulunan bir ülke
+        https://www(dot)wikidata(dot)org/entity/Q1479109: Bir tür hayvan besleme stratejisi
+        https://www(dot)wikidata(dot)org/entity/Q1774112: Bölge
+        https://www(dot)wikidata(dot)org/entity/Q5700: Finlandiya'nın en büyük ve
+          en seyrek nüfuslu bölgesi
+        https://www(dot)wikidata(dot)org/entity/Q133105: genellikle bir sütun şekilene
+          sahip olan ve yürüme işlevini gören ayaklar ile gövde arasında yer alan
+          ağırlık kaldırıcı anatomik yapı
+        https://www(dot)wikidata(dot)org/entity/Q477047: Brezilya'da biyom
+        https://www(dot)wikidata(dot)org/entity/Q702: Büyük Okyanus'ta bir ada devleti
+        https://www(dot)wikidata(dot)org/entity/Q39833: beyin hucresi
+        http://www(dot)wikidata(dot)org/entity/Q836: Güneydoğu Asya'da ülke
+        https://www(dot)wikidata(dot)org/entity/Q836: Güneydoğu Asya'da ülke
+        http://www(dot)wikidata(dot)org/entity/Q20: Kuzey Avrupa'da bir ülke
+        https://www(dot)wikidata(dot)org/entity/Q20: Kuzey Avrupa'da bir ülke
+        http://www(dot)wikidata(dot)org/entity/Q164509: hem et hem de otla beslenen
+          canlılar
+        https://www(dot)wikidata(dot)org/entity/Q164509: hem et hem de otla beslenen
+          canlılar
+        https://www(dot)wikidata(dot)org/entity/Q179387: Rusya da bulunan bir şehir
+        https://www(dot)wikidata(dot)org/entity/Q335183: Metabolik süreçlerde ışık
+          enerjisi kullanan organizma
+        https://www(dot)wikidata(dot)org/entity/Q60670: Wikimedia anlam ayrımı sayfası
+        https://www(dot)wikidata(dot)org/entity/Q170430: bir yırtıcı hayvanın bir
+          av organizmasından beslendiği biyolojik etkileşim
+        https://www(dot)wikidata(dot)org/entity/Q207925: Kanada'nın bir adası
+        https://www(dot)wikidata(dot)org/entity/Q1008: Batı Afrika'da bulunan bir
+          ülke
+        https://www(dot)wikidata(dot)org/entity/Q736: Güney Amerika'da temsili demokrasi
+          ile yönetilen bir cumhuriyettir
+        http://www(dot)wikidata(dot)org/entity/Q590743: 1922-1962 arasında Belçika
+          yönetimindeki koloni bölgesi
+        http://www(dot)wikidata(dot)org/entity/Q159: Avrasya ülkesi
+        https://www(dot)wikidata(dot)org/entity/Q159: Avrasya ülkesi
+        https://www(dot)wikidata(dot)org/entity/Q114750: Saprofit Beslenme
+        http://www(dot)wikidata(dot)org/entity/Q21195: Avrupa'nın kuzeyinde bir bölge
+        https://www(dot)wikidata(dot)org/entity/Q21195: Avrupa'nın kuzeyinde bir bölge
+        http://www(dot)wikidata(dot)org/entity/Q41602: Büyük Okyanus'un uzantısı,
+          Rusya'nın iç denizi
+        http://www(dot)wikidata(dot)org/entity/Q5428: Rusya'nın, Ural Dağları'ndan
+          Büyük Okyanus'a kadar uzanan toprakları
+        https://www(dot)wikidata(dot)org/entity/Q5428: Rusya'nın, Ural Dağları'ndan
+          Büyük Okyanus'a kadar uzanan toprakları
+        https://www(dot)wikidata(dot)org/entity/Q3711325: skaler bir fiziksel nicelik
+        https://www(dot)wikidata(dot)org/entity/Q18960: omurgasız hayvanlar şubesi
+        https://www(dot)wikidata(dot)org/entity/Q5824490: Vikimedya anlam ayrımı sayfası
+        http://www(dot)wikidata(dot)org/entity/Q25231: Norveç'e bağlı takımada
+        https://www(dot)wikidata(dot)org/entity/Q25231: Norveç'e bağlı takımada
+        http://www(dot)wikidata(dot)org/entity/Q158725: 1916-1961 yılları arasında
+          Birleşik Krallık sömürgesi olan Doğu Afrika bölgesi
+        http://www(dot)wikidata(dot)org/entity/Q869: Güneydoğu Asya'da bir ülke
+        https://www(dot)wikidata(dot)org/entity/Q869: Güneydoğu Asya'da bir ülke
+        http://www(dot)wikidata(dot)org/entity/Q574: Güneydoğu Asya'da bir devlet
+        https://www(dot)wikidata(dot)org/entity/Q30: Kuzey Amerika'da bulunan bir
+          ülke
+        http://www(dot)wikidata(dot)org/entity/Q30: Kuzey Amerika'da bulunan bir ülke
+        https://www(dot)wikidata(dot)org/entity/Q757163: bitki
+        https://www(dot)wikidata(dot)org/entity/Q106594: Arktik Okyanusunda bulunan
+          ada
+        https://www(dot)wikidata(dot)org/entity/Q954: Güney Afrika'da bulunan bir
+          ülke
+        https://www(dot)wikidata(dot)org/entity/Q181011: bin sayısının kesri olan
+          sayı ya da oran ya da binde parça için birim
+        https://www(dot)wikidata(dot)org/entity/Q7886: Solunum Organı

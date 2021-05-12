@@ -1,0 +1,372 @@
+---
+el:
+  :term:
+    name:
+      by_uri:
+        https://www(dot)wikidata(dot)org/wiki/Q59099: Φυτοφάγο
+        http://www(dot)wikidata(dot)org/entity/Q797: Αλάσκα
+        https://www(dot)wikidata(dot)org/entity/Q797: Αλάσκα
+        http://www(dot)wikidata(dot)org/entity/Q60064: Χερσόνησος της Αλάσκας
+        https://www(dot)wikidata(dot)org/entity/Q37868: Φύκη
+        https://www(dot)wikidata(dot)org/entity/Q1555938: Ανταρκτική
+        http://www(dot)wikidata(dot)org/entity/Q25322: Αρκτική
+        https://www(dot)wikidata(dot)org/entity/Q25322: Αρκτική
+        https://www(dot)wikidata(dot)org/wiki/Q25322: Αρκτική
+        https://www(dot)wikidata(dot)org/entity/Q788: Αρκτικός Ωκεανός
+        http://www(dot)wikidata(dot)org/entity/Q1875: Όμπλαστ του Αρχάνγκελσκ
+        https://www(dot)wikidata(dot)org/entity/Q1875: Όμπλαστ του Αρχάνγκελσκ
+        http://www(dot)wikidata(dot)org/entity/Q12824780: Μικρά Ασία
+        https://www(dot)wikidata(dot)org/entity/Q1314: φθινόπωρο
+        http://www(dot)wikidata(dot)org/entity/Q207666: Άξελ Χάιμπεργκ
+        https://www(dot)wikidata(dot)org/entity/Q10876: Βακτήριο
+        http://www(dot)wikidata(dot)org/entity/Q37040: Κόλπος Μπάφιν
+        https://www(dot)wikidata(dot)org/entity/Q37040: Κόλπος Μπάφιν
+        http://www(dot)wikidata(dot)org/entity/Q81178: Γη του Μπάφιν
+        https://www(dot)wikidata(dot)org/entity/Q81178: Γη του Μπάφιν
+        http://www(dot)wikidata(dot)org/entity/Q23522: Βαλκάνια
+        http://www(dot)wikidata(dot)org/entity/Q45823: Θάλασσα Μπάρεντς
+        https://www(dot)wikidata(dot)org/entity/Q45823: Θάλασσα Μπάρεντς
+        http://www(dot)wikidata(dot)org/entity/Q217369: Νήσος Μπάθερστ
+        http://www(dot)wikidata(dot)org/entity/Q194364: Μπγιέρνεγια
+        http://www(dot)wikidata(dot)org/entity/Q131274: Θάλασσα Μποφόρ
+        https://www(dot)wikidata(dot)org/entity/Q131274: Θάλασσα Μποφόρ
+        http://www(dot)wikidata(dot)org/entity/Q80338: Βεγγάλη
+        http://www(dot)wikidata(dot)org/entity/Q44725: Βερίγγειος θάλασσα
+        https://www(dot)wikidata(dot)org/entity/Q44725: Βερίγγειος θάλασσα
+        http://www(dot)wikidata(dot)org/entity/Q190927: Βερίγγεια γέφυρα
+        https://www(dot)wikidata(dot)org/entity/Q190927: Βερίγγεια γέφυρα
+        https://www(dot)wikidata(dot)org/entity/Q25368: Δίθυρα
+        https://www(dot)wikidata(dot)org/entity/Q10874: τύφλωση
+        http://www(dot)wikidata(dot)org/entity/Q918126: Βρετανική Γουιάνα
+        http://www(dot)wikidata(dot)org/entity/Q645180: Μπάιλοτ
+        https://www(dot)wikidata(dot)org/entity/Q286954: Φωτοσύνθεση C3
+        https://www(dot)wikidata(dot)org/entity/Q283604: Φωτοσύνθεση C4
+        http://www(dot)wikidata(dot)org/entity/Q1011: Πράσινο Ακρωτήριο
+        http://www(dot)wikidata(dot)org/entity/Q16: Καναδάς
+        https://www(dot)wikidata(dot)org/entity/Q16: Καναδάς
+        http://www(dot)wikidata(dot)org/entity/Q85377: Καναδικό Αρκτικό Αρχιπέλαγος
+        https://www(dot)wikidata(dot)org/entity/Q85377: Καναδικό Αρκτικό Αρχιπέλαγος
+        https://www(dot)wikidata(dot)org/entity/Q1011: Πράσινο Ακρωτήριο
+        http://www(dot)wikidata(dot)org/entity/Q81875: Σαρκοφάγα
+        https://www(dot)wikidata(dot)org/entity/Q81875: Σαρκοφάγα
+        http://www(dot)wikidata(dot)org/entity/Q18240: Σαρκοφάγα φυτά
+        http://www(dot)wikidata(dot)org/entity/Q27509: Κεντρική Ευρώπη
+        https://www(dot)wikidata(dot)org/entity/Q128257: Κεφαλόποδα
+        https://www(dot)wikidata(dot)org/entity/Q192188: Τσάγκος Αρχιπέλαγος
+        http://www(dot)wikidata(dot)org/entity/Q747472: Χημειοτροφικός
+        http://www(dot)wikidata(dot)org/entity/Q182902: Όμπλαστ της Τσιτά
+        http://www(dot)wikidata(dot)org/entity/Q159252: Θάλασσα Τσούκτσι
+        https://www(dot)wikidata(dot)org/entity/Q159252: Θάλασσα Τσούκτσι
+        http://www(dot)wikidata(dot)org/entity/Q7984: Αυτόνομος θύλακας Τσουκότκα
+        https://www(dot)wikidata(dot)org/entity/Q7984: Αυτόνομος θύλακας Τσουκότκα
+        https://www(dot)wikidata(dot)org/entity/Q161258: Νήσος Κλίπερτον
+        https://www(dot)wikidata(dot)org/entity/Q25441: Κνιδόζωα
+        http://www(dot)wikidata(dot)org/entity/Q208268: Νήσοι του Κυβερνήτη
+        http://www(dot)wikidata(dot)org/entity/Q72638: Καταναλωτής
+        https://www(dot)wikidata(dot)org/entity/Q33666: Κρινοειδή
+        https://www(dot)wikidata(dot)org/entity/Q25364: Καρκινοειδή
+        https://www(dot)wikidata(dot)org/entity/Q25279: Κουρασάο
+        http://www(dot)wikidata(dot)org/entity/Q189262: Πορθμός του Ντέιβις
+        https://www(dot)wikidata(dot)org/entity/Q189262: Πορθμός του Ντέιβις
+        https://www(dot)wikidata(dot)org/entity/Q4610: Δεκάποδα
+        http://www(dot)wikidata(dot)org/entity/Q842391: Αποικοδομητής
+        http://www(dot)wikidata(dot)org/entity/Q974: Λαϊκή Δημοκρατία του Κονγκό
+        https://www(dot)wikidata(dot)org/entity/Q974: Λαϊκή Δημοκρατία του Κονγκό
+        http://www(dot)wikidata(dot)org/entity/Q152058: Πορθμός της Δανίας
+        https://www(dot)wikidata(dot)org/entity/Q162678: Διάτομα
+        https://www(dot)wikidata(dot)org/entity/Q184503: δακτυλοβάμων
+        https://www(dot)wikidata(dot)org/entity/Q148681: Δίοικο
+        http://www(dot)wikidata(dot)org/entity/Q163434: Ανατολική Σιβηριανή θάλασσα
+        https://www(dot)wikidata(dot)org/entity/Q163434: Ανατολική Σιβηριανή θάλασσα
+        https://www(dot)wikidata(dot)org/entity/Q574: Ανατολικό Τιμόρ
+        http://www(dot)wikidata(dot)org/entity/Q186198: Ανατολικό ημισφαίριο
+        https://www(dot)wikidata(dot)org/entity/Q186198: Ανατολικό ημισφαίριο
+        http://www(dot)wikidata(dot)org/entity/Q1191996: Ανατολική Σιβηρία
+        https://www(dot)wikidata(dot)org/entity/Q1191996: Ανατολική Σιβηρία
+        https://www(dot)wikidata(dot)org/entity/Q44631: Εχινόδερμα
+        https://www(dot)wikidata(dot)org/entity/Q295469: οικοπεριοχή
+        http://www(dot)wikidata(dot)org/entity/Q736: Εκουαδόρ
+        https://www(dot)wikidata(dot)org/entity/Q128685: Χέλι
+        https://www(dot)wikidata(dot)org/entity/Q17147: αυγό
+        https://www(dot)wikidata(dot)org/entity/Q194257: Ελασμοβράγχιοι
+        http://www(dot)wikidata(dot)org/entity/Q146841: Έλσμιρ
+        https://www(dot)wikidata(dot)org/entity/Q146841: Έλσμιρ
+        https://www(dot)wikidata(dot)org/entity/Q146326: Μηχανική Περιβάλλοντος
+        https://www(dot)wikidata(dot)org/entity/Q170885: Αιθέριο έλαιο
+        https://www(dot)wikidata(dot)org/entity/Q1050: Εσουατίνι
+        http://www(dot)wikidata(dot)org/entity/Q34589: Ευφράτης
+        http://www(dot)wikidata(dot)org/entity/Q5401: Ευρασία
+        http://www(dot)wikidata(dot)org/entity/Q875134: Ευρωπαϊκή Ρωσία
+        https://www(dot)wikidata(dot)org/entity/Q875134: Ευρωπαϊκή Ρωσία
+        https://www(dot)wikidata(dot)org/entity/Q1139400: εξίδρωμα
+        http://www(dot)wikidata(dot)org/entity/Q702: Ομόσπονδες Πολιτείες της Μικρονησίας
+        https://www(dot)wikidata(dot)org/entity/Q161: ίνα
+        https://www(dot)wikidata(dot)org/entity/Q2095: τροφή
+        http://www(dot)wikidata(dot)org/entity/Q185018: Γη του Φραγκίσκου Ιωσήφ
+        https://www(dot)wikidata(dot)org/entity/Q185018: Γη του Φραγκίσκου Ιωσήφ
+        https://www(dot)wikidata(dot)org/entity/Q271894: Γαλλική Ισημερινή Αφρική
+        https://www(dot)wikidata(dot)org/entity/Q764: Μύκητας
+        http://www(dot)wikidata(dot)org/entity/Q223: Γροιλανδία
+        https://www(dot)wikidata(dot)org/entity/Q223: Γροιλανδία
+        http://www(dot)wikidata(dot)org/entity/Q132868: Γροιλανδική Θάλασσα
+        https://www(dot)wikidata(dot)org/entity/Q132868: Γροιλανδική Θάλασσα
+        http://www(dot)wikidata(dot)org/entity/Q180531: Κόλπος της Αλάσκας
+        https://www(dot)wikidata(dot)org/entity/Q181497: Φυλετικός διμορφισμός
+        https://www(dot)wikidata(dot)org/entity/Q3386847: Δηλητήριο ζώων
+        http://www(dot)wikidata(dot)org/entity/Q939099: Αιματοφαγία
+        https://www(dot)wikidata(dot)org/entity/Q190903: ποώδες φυτό
+        http://www(dot)wikidata(dot)org/entity/Q59099: Φυτοφάγο
+        https://www(dot)wikidata(dot)org/entity/Q59099: Φυτοφάγο
+        http://www(dot)wikidata(dot)org/entity/Q1238610: Χούκερ
+        http://www(dot)wikidata(dot)org/entity/Q3040: κόλπος Χάντσον
+        https://www(dot)wikidata(dot)org/entity/Q3040: κόλπος Χάντσον
+        http://www(dot)wikidata(dot)org/entity/Q189: Ισλανδία
+        https://www(dot)wikidata(dot)org/entity/Q189: Ισλανδία
+        https://www(dot)wikidata(dot)org/entity/Q1390: Έντομα
+        http://www(dot)wikidata(dot)org/entity/Q1008: Ακτή Ελεφαντοστού
+        https://www(dot)wikidata(dot)org/entity/Q14056: Γιαν Μάγεν
+        https://www(dot)wikidata(dot)org/entity/Q237034: Νήσος Χουάν ντε Νόβα
+        http://www(dot)wikidata(dot)org/entity/Q33629: Θάλασσα του Κάρα
+        https://www(dot)wikidata(dot)org/entity/Q33629: Θάλασσα του Κάρα
+        http://www(dot)wikidata(dot)org/entity/Q46772: Αρχιπέλαγος Κεργκελέν
+        https://www(dot)wikidata(dot)org/entity/Q46772: Αρχιπέλαγος Κεργκελέν
+        https://www(dot)wikidata(dot)org/entity/Q828224: χιλιόμετρο
+        https://www(dot)wikidata(dot)org/entity/Q165608: Χερσόνησος Κόλα
+        http://www(dot)wikidata(dot)org/entity/Q18097: Κορέα
+        http://www(dot)wikidata(dot)org/entity/Q380307: Λαμπραντόρ
+        https://www(dot)wikidata(dot)org/entity/Q380307: Λαμπραντόρ
+        https://www(dot)wikidata(dot)org/entity/Q47844: αρχιτεκτονική τοπίου
+        http://www(dot)wikidata(dot)org/entity/Q7988: Θάλασσα Λάπτεφ
+        https://www(dot)wikidata(dot)org/entity/Q14079: λιάνα
+        http://www(dot)wikidata(dot)org/entity/Q105472: Μακαρονησία
+        https://www(dot)wikidata(dot)org/entity/Q153732: Νήσοι Μαριάνα
+        https://www(dot)wikidata(dot)org/entity/Q702: Ομόσπονδες Πολιτείες της Μικρονησίας
+        https://www(dot)wikidata(dot)org/entity/Q39833: Μικροοργανισμός
+        https://www(dot)wikidata(dot)org/entity/Q25326: Μαλάκια
+        http://www(dot)wikidata(dot)org/entity/Q33596: κινητικότητα
+        http://www(dot)wikidata(dot)org/entity/Q836: Μιανμάρ
+        https://www(dot)wikidata(dot)org/entity/Q836: Μιανμάρ
+        https://www(dot)wikidata(dot)org/entity/Q2420488: Σαπρόφυτα
+        https://www(dot)wikidata(dot)org/entity/Q2164: Αυτόνομος θύλακας της Νενετσίας
+        http://www(dot)wikidata(dot)org/entity/Q25227: Ολλανδικές Αντίλλες
+        https://www(dot)wikidata(dot)org/entity/Q25227: Ολλανδικές Αντίλλες
+        https://www(dot)wikidata(dot)org/entity/Q201012: Νήσοι Νέας Σιβηρίας
+        http://www(dot)wikidata(dot)org/entity/Q48335: Νέα Γη
+        http://www(dot)wikidata(dot)org/entity/Q309179: Νυκτόβια
+        http://www(dot)wikidata(dot)org/entity/Q350134: Βόρειος Ατλαντικός
+        https://www(dot)wikidata(dot)org/entity/Q350134: Βόρειος Ατλαντικός
+        https://www(dot)wikidata(dot)org/entity/Q39061: Βόρειο Ημισφαίριο
+        http://www(dot)wikidata(dot)org/entity/Q2007: Βορειοδυτικά Εδάφη
+        https://www(dot)wikidata(dot)org/entity/Q2007: Βορειοδυτικά Εδάφη
+        http://www(dot)wikidata(dot)org/entity/Q20: Νορβηγία
+        https://www(dot)wikidata(dot)org/entity/Q20: Νορβηγία
+        http://www(dot)wikidata(dot)org/entity/Q47545: Νορβηγική Θάλασσα
+        https://www(dot)wikidata(dot)org/entity/Q80413: Νόβαγια Ζέμλια
+        http://www(dot)wikidata(dot)org/entity/Q2023: Νούναβουτ
+        https://www(dot)wikidata(dot)org/entity/Q2023: Νούναβουτ
+        https://www(dot)wikidata(dot)org/entity/Q199182: Καλλωπιστικά φυτά
+        https://www(dot)wikidata(dot)org/entity/Q106447: Παλαιαρκτική
+        https://www(dot)wikidata(dot)org/entity/Q123076: Ατόλλη Παλμύρα
+        https://www(dot)wikidata(dot)org/entity/Q184382: πάμπα
+        https://www(dot)wikidata(dot)org/entity/Q217501: Θάλασσα Πιτσόρα
+        https://www(dot)wikidata(dot)org/entity/Q212410: Πεπτιδάση
+        https://www(dot)wikidata(dot)org/entity/Q308695: Περίσταλση
+        https://www(dot)wikidata(dot)org/entity/Q335183: Φωτότροφος
+        https://www(dot)wikidata(dot)org/entity/Q184755: φυτοπλαγκτόν
+        https://www(dot)wikidata(dot)org/entity/Q1146374: πελματοβάμων
+        https://www(dot)wikidata(dot)org/entity/Q60670: πολική περιοχή
+        https://www(dot)wikidata(dot)org/entity/Q25257: Υετός
+        https://www(dot)wikidata(dot)org/entity/Q207925: Πρίγκηπας Ουαλίας
+        http://www(dot)wikidata(dot)org/entity/Q213146: Νήσος Πρίγκηπα Πάτρικ
+        https://www(dot)wikidata(dot)org/entity/Q1008: Ακτή Ελεφαντοστού
+        https://www(dot)wikidata(dot)org/entity/Q105472: Μακαρονησία
+        https://www(dot)wikidata(dot)org/entity/Q736: Εκουαδόρ
+        http://www(dot)wikidata(dot)org/entity/Q176: Κεμπέκ
+        http://www(dot)wikidata(dot)org/entity/Q590743: Ρουάντα-Ουρούντι
+        http://www(dot)wikidata(dot)org/entity/Q159: Ρωσία
+        https://www(dot)wikidata(dot)org/entity/Q159: Ρωσία
+        https://www(dot)wikidata(dot)org/entity/Q192184: Αγία Ελένη, Ασενσιόν και
+          Τριστάν ντα Κούνια
+        http://www(dot)wikidata(dot)org/entity/Q760: Αγία Λουκία
+        https://www(dot)wikidata(dot)org/entity/Q760: Αγία Λουκία
+        http://www(dot)wikidata(dot)org/entity/Q21195: Σκανδιναβία
+        https://www(dot)wikidata(dot)org/entity/Q21195: Σκανδιναβία
+        https://www(dot)wikidata(dot)org/entity/Q127470: Ολοθουροειδή
+        http://www(dot)wikidata(dot)org/entity/Q41602: Οχοτσκική θάλασσα
+        https://www(dot)wikidata(dot)org/entity/Q83483: Αχινός
+        http://www(dot)wikidata(dot)org/entity/Q5428: Σιβηρία
+        https://www(dot)wikidata(dot)org/entity/Q5428: Σιβηρία
+        http://www(dot)wikidata(dot)org/entity/Q118920: Εταιρείας Νήσοι
+        http://www(dot)wikidata(dot)org/entity/Q212219: Νήσος Σόμερσετ
+        https://www(dot)wikidata(dot)org/entity/Q41228: Νότιο Ημισφαίριο
+        https://www(dot)wikidata(dot)org/entity/Q3711325: ταχύτητα
+        https://www(dot)wikidata(dot)org/entity/Q21162: Σπιτσβέργη
+        https://www(dot)wikidata(dot)org/entity/Q18960: Σπόγγος
+        http://www(dot)wikidata(dot)org/entity/Q1312: άνοιξη
+        http://www(dot)wikidata(dot)org/entity/Q638407: Σεντ Λόρενς
+        https://www(dot)wikidata(dot)org/entity/Q25349: Αστερίας
+        http://www(dot)wikidata(dot)org/entity/Q189939: παχύφυτο
+        http://www(dot)wikidata(dot)org/entity/Q1313: καλοκαίρι
+        https://www(dot)wikidata(dot)org/entity/Q193788: ηλιακό φως
+        http://www(dot)wikidata(dot)org/entity/Q25231: Αρχιπέλαγος Σβάλμπαρντ
+        https://www(dot)wikidata(dot)org/entity/Q25231: Αρχιπέλαγος Σβάλμπαρντ
+        http://www(dot)wikidata(dot)org/entity/Q158725: Τανγκανίκα
+        https://www(dot)wikidata(dot)org/entity/Q19159: Τετράποδα
+        http://www(dot)wikidata(dot)org/entity/Q869: Ταϊλάνδη
+        https://www(dot)wikidata(dot)org/entity/Q869: Ταϊλάνδη
+        http://www(dot)wikidata(dot)org/entity/Q578170: συνεχόμενες Ηνωμένες Πολιτείες
+        http://www(dot)wikidata(dot)org/entity/Q106447: Παλαιαρκτική
+        http://www(dot)wikidata(dot)org/entity/Q574: Ανατολικό Τιμόρ
+        http://www(dot)wikidata(dot)org/entity/Q42530: Τροπική ζώνη
+        https://www(dot)wikidata(dot)org/entity/Q43262: Τούνδρα
+        http://www(dot)wikidata(dot)org/entity/Q1315785: Τουρκεστάν
+        https://www(dot)wikidata(dot)org/entity/Q30: Ηνωμένες Πολιτείες Αμερικής
+        http://www(dot)wikidata(dot)org/entity/Q30: Ηνωμένες Πολιτείες Αμερικής
+        https://www(dot)wikidata(dot)org/entity/Q15332375: άνω
+        http://www(dot)wikidata(dot)org/entity/Q1322976: Ουράλια
+        https://www(dot)wikidata(dot)org/entity/Q1322976: Ουράλια
+        https://www(dot)wikidata(dot)org/entity/Q11703: Αμερικανικές Παρθένοι Νήσοι
+        http://www(dot)wikidata(dot)org/entity/Q187251: Βέστμαναεγιαρ
+        http://www(dot)wikidata(dot)org/entity/Q1191358: Δυτική Σιβηρία
+        http://www(dot)wikidata(dot)org/entity/Q181982: Δυτικό Ημισφαίριο
+        https://www(dot)wikidata(dot)org/entity/Q181982: Δυτικό Ημισφαίριο
+        https://www(dot)wikidata(dot)org/entity/Q1191358: Δυτική Σιβηρία
+        https://www(dot)wikidata(dot)org/entity/Q44133: Λευκή Θάλασσα
+        http://www(dot)wikidata(dot)org/entity/Q1311: χειμώνας
+        https://www(dot)wikidata(dot)org/entity/Q757163: Ξυλώδες φυτό
+        https://www(dot)wikidata(dot)org/entity/Q42329: Μαλλί
+        https://www(dot)wikidata(dot)org/entity/Q106594: Νήσος Βράνγκελ
+        http://www(dot)wikidata(dot)org/entity/Q212337: Ξηρόφυτο
+        http://www(dot)wikidata(dot)org/entity/Q2009: Γιούκον
+        https://www(dot)wikidata(dot)org/entity/Q2009: Γιούκον
+        https://www(dot)wikidata(dot)org/entity/Q954: Ζιμπάμπουε
+        https://www(dot)wikidata(dot)org/entity/Q842627: Ζωοπλαγκτόν
+        https://www(dot)wikidata(dot)org/entity/Q181011: "‰"
+        https://www(dot)wikidata(dot)org/entity/Q1504201: Απόλυτο κατώφλι της ακοής
+        https://www(dot)wikidata(dot)org/entity/Q7886: Πνεύμονας
+    definition:
+      by_uri:
+        http://www(dot)wikidata(dot)org/entity/Q797: πολιτεία των ΗΠΑ
+        https://www(dot)wikidata(dot)org/entity/Q797: πολιτεία των ΗΠΑ
+        https://www(dot)wikidata(dot)org/entity/Q7486201: σελίδα αποσαφήνισης εγχειρημάτων
+          Wikimedia
+        http://www(dot)wikidata(dot)org/entity/Q1875: όμπλαστ της Ρωσίας
+        https://www(dot)wikidata(dot)org/entity/Q1875: όμπλαστ της Ρωσίας
+        http://www(dot)wikidata(dot)org/entity/Q12824780: Χερσόνησος της Ασίας
+        http://www(dot)wikidata(dot)org/entity/Q207666: Νησί στο Καναδικό Αρκτικό
+          Αρχιπέλαγος
+        http://www(dot)wikidata(dot)org/entity/Q37040: κόλπος μεταξύ Γροιλανδίας και
+          Καναδά
+        https://www(dot)wikidata(dot)org/entity/Q37040: κόλπος μεταξύ Γροιλανδίας
+          και Καναδά
+        http://www(dot)wikidata(dot)org/entity/Q131274: θάλασσα του Αρκτικού ωκεανού
+        https://www(dot)wikidata(dot)org/entity/Q131274: θάλασσα του Αρκτικού ωκεανού
+        https://www(dot)wikidata(dot)org/entity/Q25368: ομοταξία μαλακίων
+        http://www(dot)wikidata(dot)org/entity/Q645180: Νησί στο Καναδικό Αρκτικό
+          Αρχιπέλαγος
+        http://www(dot)wikidata(dot)org/entity/Q16: χώρα της Βόρειας Αμερικής
+        https://www(dot)wikidata(dot)org/entity/Q16: χώρα της Βόρειας Αμερικής
+        http://www(dot)wikidata(dot)org/entity/Q27509: περιφέρεια της Ευρώπης
+        http://www(dot)wikidata(dot)org/entity/Q182902: όμπλαστ της Ρωσίας
+        http://www(dot)wikidata(dot)org/entity/Q7984: ομοσπονδιακό υποκείμενο της
+          Ρωσίας
+        https://www(dot)wikidata(dot)org/entity/Q7984: ομοσπονδιακό υποκείμενο της
+          Ρωσίας
+        http://www(dot)wikidata(dot)org/entity/Q208268: νησιά του βόρειου Ειρηνικού
+          Ωκεανού, οι μόνες Αλεούτιες Νήσοι που ανήκουν στη Ρωσία
+        https://www(dot)wikidata(dot)org/entity/Q25364: υποφύλο των αρθρόποδων
+        https://www(dot)wikidata(dot)org/entity/Q4610: τάξη καρκινοειδών
+        http://www(dot)wikidata(dot)org/entity/Q974: χώρα της κεντρικής Αφρικής
+        https://www(dot)wikidata(dot)org/entity/Q974: χώρα της κεντρικής Αφρικής
+        http://www(dot)wikidata(dot)org/entity/Q152058: πορθμός
+        http://www(dot)wikidata(dot)org/entity/Q736: χώρα της Νότιας Αμερικής
+        https://www(dot)wikidata(dot)org/entity/Q17147: οργανικό δοχείο στο οποίο
+          ξεκινά η ανάπτυξη εμβρύου
+        http://www(dot)wikidata(dot)org/entity/Q146841: Νησί στο Καναδικό Αρκτικό
+          Αρχιπέλαγος
+        https://www(dot)wikidata(dot)org/entity/Q146841: Νησί στο Καναδικό Αρκτικό
+          Αρχιπέλαγος
+        http://www(dot)wikidata(dot)org/entity/Q5401: όρος της γεωγραφίας
+        https://www(dot)wikidata(dot)org/entity/Q1139400: Παθολογικό οιδηματικό υγρό
+          υψηλής συγκέντρωσης σε πρωτεΐνες.
+        http://www(dot)wikidata(dot)org/entity/Q702: χώρα της Ωκεανίας
+        https://www(dot)wikidata(dot)org/entity/Q2095: κάθε ουσία που καταναλώνεται,
+          παρέχει θρεπτική υποστήριξη στο σώμα. μορφή ενέργειας που αποθηκεύεται σε
+          χημικά
+        http://www(dot)wikidata(dot)org/entity/Q185018: αρχιπέλαγος στον Αρκτικό Ωκεανό.
+          Διοικητικά ανοίκει στην ρωσική περιφέρεια του Αρχάγγελσκ
+        https://www(dot)wikidata(dot)org/entity/Q185018: αρχιπέλαγος στον Αρκτικό
+          Ωκεανό. Διοικητικά ανοίκει στην ρωσική περιφέρεια του Αρχάγγελσκ
+        https://www(dot)wikidata(dot)org/entity/Q271894: ομοσπονδία γαλλικών αποικιακών
+          κτήσεων στην Κεντρική Αφρική
+        http://www(dot)wikidata(dot)org/entity/Q223: Χώρα
+        https://www(dot)wikidata(dot)org/entity/Q223: Χώρα
+        http://www(dot)wikidata(dot)org/entity/Q132868: θάλασσα
+        https://www(dot)wikidata(dot)org/entity/Q132868: θάλασσα
+        https://www(dot)wikidata(dot)org/entity/Q190903: φυτό το οποίο δεν έχει ξυλώδη
+          βλαστό πάνω από το έδαφος
+        http://www(dot)wikidata(dot)org/entity/Q1238610: ρωσικό νησί στον Αρκτικό
+          ωκεανό
+        http://www(dot)wikidata(dot)org/entity/Q3040: κόλπος στον Καναδά
+        https://www(dot)wikidata(dot)org/entity/Q3040: κόλπος στον Καναδά
+        http://www(dot)wikidata(dot)org/entity/Q189: χώρα στην Ευρώπη
+        https://www(dot)wikidata(dot)org/entity/Q189: χώρα στην Ευρώπη
+        http://www(dot)wikidata(dot)org/entity/Q1008: χώρα της δυτικής Αφρικής
+        https://www(dot)wikidata(dot)org/entity/Q828224: μονάδα μήκους
+        http://www(dot)wikidata(dot)org/entity/Q18097: περιοχή της Ανατολικής Ασίας
+        https://www(dot)wikidata(dot)org/entity/Q14079: ξυλώδης αναρριχητική κληματίδα
+        https://www(dot)wikidata(dot)org/entity/Q702: χώρα της Ωκεανίας
+        https://www(dot)wikidata(dot)org/entity/Q29876: σελίδα αποσαφήνισης εγχειρημάτων
+          Wikimedia
+        https://www(dot)wikidata(dot)org/entity/Q25326: συνομοταξία ζώων
+        http://www(dot)wikidata(dot)org/entity/Q33596: όρος που αναφέρεται στο προσδιορισμό
+          του τρόπου κίνησης των σπερματοζωαρίων
+        http://www(dot)wikidata(dot)org/entity/Q836: χώρα της νοτιοανατολικής Ασίας
+        https://www(dot)wikidata(dot)org/entity/Q836: χώρα της νοτιοανατολικής Ασίας
+        http://www(dot)wikidata(dot)org/entity/Q2007: ομοσπονδιακό έδαφος του Καναδά
+        https://www(dot)wikidata(dot)org/entity/Q2007: ομοσπονδιακό έδαφος του Καναδά
+        http://www(dot)wikidata(dot)org/entity/Q20: χώρα της βόρειας Ευρώπης
+        https://www(dot)wikidata(dot)org/entity/Q20: χώρα της βόρειας Ευρώπης
+        http://www(dot)wikidata(dot)org/entity/Q2023: ομοσπονδιακό έδαφος του Καναδά
+        https://www(dot)wikidata(dot)org/entity/Q2023: ομοσπονδιακό έδαφος του Καναδά
+        https://www(dot)wikidata(dot)org/entity/Q1025881: οικισμός της Ρωσίας
+        https://www(dot)wikidata(dot)org/entity/Q60670: σελίδα αποσαφήνισης εγχειρημάτων
+          Wikimedia
+        https://www(dot)wikidata(dot)org/entity/Q207925: Νησί στο Καναδικό Αρκτικό
+          Αρχιπέλαγος
+        https://www(dot)wikidata(dot)org/entity/Q1008: χώρα της δυτικής Αφρικής
+        https://www(dot)wikidata(dot)org/entity/Q736: χώρα της Νότιας Αμερικής
+        http://www(dot)wikidata(dot)org/entity/Q176: επαρχία του Καναδά
+        http://www(dot)wikidata(dot)org/entity/Q159: χώρα που εκτείνεται στην βόρεια
+          Ευρασία
+        https://www(dot)wikidata(dot)org/entity/Q159: χώρα που εκτείνεται στην βόρεια
+          Ευρασία
+        https://www(dot)wikidata(dot)org/entity/Q192184: Βρετανικό υπερπόντιο έδαφος
+        http://www(dot)wikidata(dot)org/entity/Q21195: Περιοχή
+        https://www(dot)wikidata(dot)org/entity/Q21195: Περιοχή
+        https://www(dot)wikidata(dot)org/entity/Q83483: Κοινά θαλάσσια εχινόδερμα
+        http://www(dot)wikidata(dot)org/entity/Q5428: γεωγραφική και ιστορική περιοχή
+          της Ρωσίας
+        https://www(dot)wikidata(dot)org/entity/Q5428: γεωγραφική και ιστορική περιοχή
+          της Ρωσίας
+        http://www(dot)wikidata(dot)org/entity/Q212219: νησί στο Καναδικό Αρκτικό
+          Αρχιπέλαγος
+        https://www(dot)wikidata(dot)org/entity/Q21162: μεγαλύτερο νησί στο αρχιπέλαγος
+          Σβάλμπαρντ
+        http://www(dot)wikidata(dot)org/entity/Q1312: εποχή του έτους μεταξύ του χειμώνα
+          και του καλοκαιριού
+        https://www(dot)wikidata(dot)org/entity/Q5824490: σελίδα αποσαφήνισης εγχειρημάτων
+          Wikimedia
+        http://www(dot)wikidata(dot)org/entity/Q189939: φυτά που κάποια μέρη τους
+          είναι πιο παχιά και σαρκώδη από το κανονικό
+        http://www(dot)wikidata(dot)org/entity/Q869: χώρα της νοτιοανατολικής Ασιας
+        https://www(dot)wikidata(dot)org/entity/Q869: χώρα της νοτιοανατολικής Ασιας
+        http://www(dot)wikidata(dot)org/entity/Q578170: οι πολιτείες των ΗΠΑ που συνορεύουν
+          με άλλη πολιτεία (όλες πλην Αλάσκας και Χαβάης)
+        https://www(dot)wikidata(dot)org/entity/Q30: Χώρα της Βόρειας Αμερικής
+        http://www(dot)wikidata(dot)org/entity/Q30: Χώρα της Βόρειας Αμερικής
+        https://www(dot)wikidata(dot)org/entity/Q757163: είδη φυτών
+        https://www(dot)wikidata(dot)org/entity/Q106594: νησί
+        http://www(dot)wikidata(dot)org/entity/Q2009: ομοσπονδιακό έδαφος του Καναδά
+        https://www(dot)wikidata(dot)org/entity/Q2009: ομοσπονδιακό έδαφος του Καναδά
+        https://www(dot)wikidata(dot)org/entity/Q954: χώρα της νότιας Αφρικής

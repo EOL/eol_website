@@ -1,8 +1,8 @@
 ---
 mk:
   :term:
-    :name:
-      :by_uri:
+    name:
+      by_uri:
         https://www(dot)wikidata(dot)org/wiki/Q59099: растителнојадно животно
         http://www(dot)wikidata(dot)org/entity/Q797: Алјаска
         https://www(dot)wikidata(dot)org/entity/Q797: Алјаска
@@ -163,7 +163,7 @@ mk:
         https://www(dot)wikidata(dot)org/entity/Q157603: Пантанал
         http://www(dot)wikidata(dot)org/entity/Q127498: Паразитско растение
         https://www(dot)wikidata(dot)org/entity/Q217501: Печорско Море
-        https://www(dot)wikidata(dot)org/entity/Q184755: Фитопланктон
+        https://www(dot)wikidata(dot)org/entity/Q184755: фитопланктон
         https://www(dot)wikidata(dot)org/entity/Q60670: Поларни региони
         https://www(dot)wikidata(dot)org/entity/Q18952: Многучетинести црви
         https://www(dot)wikidata(dot)org/entity/Q25257: врнеж
@@ -238,4 +238,93 @@ mk:
         https://www(dot)wikidata(dot)org/entity/Q954: Зимбабве
         https://www(dot)wikidata(dot)org/entity/Q842627: Зоопланктон
         https://www(dot)wikidata(dot)org/entity/Q181011: промил
-        https://www(dot)wikidata(dot)org/entity/Q7886: Бел дроб
+        https://www(dot)wikidata(dot)org/entity/Q7886: бел дроб
+    definition:
+      by_uri:
+        https://www(dot)wikidata(dot)org/entity/Q7486201: појаснителна страница
+        https://www(dot)wikidata(dot)org/entity/Q1314: годишно време
+        http://www(dot)wikidata(dot)org/entity/Q81178: остров во Канада
+        https://www(dot)wikidata(dot)org/entity/Q81178: остров во Канада
+        http://www(dot)wikidata(dot)org/entity/Q893152: полуостров во Канада
+        http://www(dot)wikidata(dot)org/entity/Q645180: остров во Канада
+        http://www(dot)wikidata(dot)org/entity/Q85377: архипелаг во Канада
+        https://www(dot)wikidata(dot)org/entity/Q85377: архипелаг во Канада
+        http://www(dot)wikidata(dot)org/entity/Q27509: регион во Европа
+        https://www(dot)wikidata(dot)org/entity/Q161258: прекуокеански остров на Франција
+        https://www(dot)wikidata(dot)org/entity/Q4610: ред ракови
+        http://www(dot)wikidata(dot)org/entity/Q974: земја во Африка
+        https://www(dot)wikidata(dot)org/entity/Q974: земја во Африка
+        http://www(dot)wikidata(dot)org/entity/Q736: демократска република во Јужна
+          Америка
+        https://www(dot)wikidata(dot)org/entity/Q128685: ред риби
+        https://www(dot)wikidata(dot)org/entity/Q17147: органски сад во кој се развива
+          зародишот
+        https://www(dot)wikidata(dot)org/entity/Q194257: поткласа риби
+        http://www(dot)wikidata(dot)org/entity/Q146841: остров во Нунавут, Канада
+        https://www(dot)wikidata(dot)org/entity/Q146841: остров во Нунавут, Канада
+        http://www(dot)wikidata(dot)org/entity/Q702: земја во Океанија
+        https://www(dot)wikidata(dot)org/entity/Q1940784: појаснителна страница
+        http://www(dot)wikidata(dot)org/entity/Q185018: архипелаг на арктикот
+        https://www(dot)wikidata(dot)org/entity/Q185018: архипелаг на арктикот
+        https://www(dot)wikidata(dot)org/entity/Q271894: поранешна сојузна колонија
+          на Франција
+        https://www(dot)wikidata(dot)org/entity/Q75713: семејство риби
+        https://www(dot)wikidata(dot)org/entity/Q14056: остров на Норвешка во Атлантскиот
+          Океан
+        https://www(dot)wikidata(dot)org/entity/Q237034: остров на Франција во Индискиот
+          Океан
+        http://www(dot)wikidata(dot)org/entity/Q46772: француски архипелаг во Индискиот
+          Океан
+        https://www(dot)wikidata(dot)org/entity/Q46772: француски архипелаг во Индискиот
+          Океан
+        https://www(dot)wikidata(dot)org/entity/Q828224: единица за должина
+        https://www(dot)wikidata(dot)org/entity/Q165608: полуостров на крајниот северозапад
+          на Русија
+        http://www(dot)wikidata(dot)org/entity/Q212051: езеро во Исланд
+        https://www(dot)wikidata(dot)org/entity/Q153732: архипелаг во северозападниот
+          дел на Тихиот Океан
+        https://www(dot)wikidata(dot)org/entity/Q477047: биом во Бразил
+        https://www(dot)wikidata(dot)org/entity/Q702: земја во Океанија
+        http://www(dot)wikidata(dot)org/entity/Q836: град во југоистична Азија
+        https://www(dot)wikidata(dot)org/entity/Q836: град во југоистична Азија
+        https://www(dot)wikidata(dot)org/entity/Q80413: архипелаг во Северниот Леден
+          Океан
+        https://www(dot)wikidata(dot)org/entity/Q1025881: село во Русија
+        https://www(dot)wikidata(dot)org/entity/Q199182: растение кое се одгледува
+          за украс
+        https://www(dot)wikidata(dot)org/entity/Q106447: една од екозоните на светот
+        https://www(dot)wikidata(dot)org/entity/Q184382: област во Аргентина
+        https://www(dot)wikidata(dot)org/entity/Q157603: мочурливо подрачје во Бразил
+        https://www(dot)wikidata(dot)org/entity/Q60670: појаснителна страница
+        https://www(dot)wikidata(dot)org/entity/Q207925: остров во Канада
+        http://www(dot)wikidata(dot)org/entity/Q213146: остров во Канада
+        https://www(dot)wikidata(dot)org/entity/Q736: демократска република во Јужна
+          Америка
+        http://www(dot)wikidata(dot)org/entity/Q1623916: островска група
+        https://www(dot)wikidata(dot)org/entity/Q192184: британска прекуморска територија
+          во јужниот Атлантски Океан
+        https://www(dot)wikidata(dot)org/entity/Q127470: класа иглокожи животни
+        http://www(dot)wikidata(dot)org/entity/Q192281: архиеплаг во северна Русија
+        https://www(dot)wikidata(dot)org/entity/Q192281: архиеплаг во северна Русија
+        https://www(dot)wikidata(dot)org/entity/Q3711325: скаларна величина
+        https://www(dot)wikidata(dot)org/entity/Q5824490: појаснителна страница
+        http://www(dot)wikidata(dot)org/entity/Q25231: архипелаг во Северниот Леден
+          Океан
+        https://www(dot)wikidata(dot)org/entity/Q25231: архипелаг во Северниот Леден
+          Океан
+        http://www(dot)wikidata(dot)org/entity/Q37056: полуостров во Русија
+        https://www(dot)wikidata(dot)org/entity/Q37056: полуостров во Русија
+        http://www(dot)wikidata(dot)org/entity/Q869: уставна монархија во Југоисточна
+          Азија
+        https://www(dot)wikidata(dot)org/entity/Q869: уставна монархија во Југоисточна
+          Азија
+        http://www(dot)wikidata(dot)org/entity/Q106447: една од екозоните на светот
+        https://www(dot)wikidata(dot)org/entity/Q30: земја во Северна Америка
+        http://www(dot)wikidata(dot)org/entity/Q30: земја во Северна Америка
+        http://www(dot)wikidata(dot)org/entity/Q187251: островска група и општина
+          во Исланд
+        https://www(dot)wikidata(dot)org/entity/Q44133: море во состав на Северниот
+          Леден Океан
+        https://www(dot)wikidata(dot)org/entity/Q106594: остров во Чукотското Море,
+          Русија
+        https://www(dot)wikidata(dot)org/entity/Q78861: река во Јакутија, Русија

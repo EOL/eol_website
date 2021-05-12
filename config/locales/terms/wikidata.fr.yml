@@ -1,8 +1,8 @@
 ---
 fr:
   :term:
-    :name:
-      :by_uri:
+    name:
+      by_uri:
         https://www(dot)wikidata(dot)org/wiki/Q59099: herbivore
         https://www(dot)wikidata(dot)org/wiki/Q7075151: Holoparasite
         https://www(dot)wikidata(dot)org/wiki/Q568916: blanchissement des coraux
@@ -305,7 +305,7 @@ fr:
         https://www(dot)wikidata(dot)org/entity/Q212410: peptidase
         https://www(dot)wikidata(dot)org/entity/Q308695: péristaltisme
         https://www(dot)wikidata(dot)org/entity/Q335183: phototrophe
-        https://www(dot)wikidata(dot)org/entity/Q184755: Phytoplancton
+        https://www(dot)wikidata(dot)org/entity/Q184755: phytoplancton
         http://www(dot)wikidata(dot)org/entity/Q1420208: piscivore
         https://www(dot)wikidata(dot)org/entity/Q1146374: Plantigrade
         https://www(dot)wikidata(dot)org/entity/Q943388: Planula
@@ -314,7 +314,7 @@ fr:
         https://www(dot)wikidata(dot)org/entity/Q18952: Polychaeta
         http://www(dot)wikidata(dot)org/entity/Q1075070: Ponoï
         http://www(dot)wikidata(dot)org/entity/Q284603: Porcupine
-        https://www(dot)wikidata(dot)org/entity/Q25257: Précipitation
+        https://www(dot)wikidata(dot)org/entity/Q25257: précipitation
         https://www(dot)wikidata(dot)org/entity/Q170430: prédation
         http://www(dot)wikidata(dot)org/entity/Q1758713: producteur primaire
         https://www(dot)wikidata(dot)org/entity/Q207925: île du Prince-de-Galles
@@ -435,3 +435,418 @@ fr:
         https://www(dot)wikidata(dot)org/entity/Q591800: otolithe
         https://www(dot)wikidata(dot)org/entity/Q779457: élongation d'une particule
         https://www(dot)wikidata(dot)org/entity/Q7886: poumon
+    definition:
+      by_uri:
+        https://www(dot)wikidata(dot)org/wiki/Q59099: animal qui se nourrit exclusivement
+          ou principalement de plantes
+        https://www(dot)wikidata(dot)org/wiki/Q568916: phénomène de dépérissement
+          des coraux, qui se traduit par une décoloration
+        http://www(dot)wikidata(dot)org/entity/Q176381: île américaine
+        http://www(dot)wikidata(dot)org/entity/Q353908: péninsule du Canada
+        http://www(dot)wikidata(dot)org/entity/Q797: État des États-Unis
+        https://www(dot)wikidata(dot)org/entity/Q797: État des États-Unis
+        http://www(dot)wikidata(dot)org/entity/Q60064: péninsule américaine
+        https://www(dot)wikidata(dot)org/entity/Q37868: êtres vivant généralement
+          en milieu aquatique
+        https://www(dot)wikidata(dot)org/entity/Q7486201: page d'homonymie d'un projet
+          Wikimédia
+        https://www(dot)wikidata(dot)org/entity/Q2841453: région naturelle en Amérique
+          du Sud
+        http://www(dot)wikidata(dot)org/entity/Q481597: île canadienne
+        http://www(dot)wikidata(dot)org/entity/Q1974744: baie canadienne
+        http://www(dot)wikidata(dot)org/entity/Q698261: raïon municipal russe de Saskylakh
+        https://www(dot)wikidata(dot)org/entity/Q698261: raïon municipal russe de
+          Saskylakh
+        http://www(dot)wikidata(dot)org/entity/Q305100: cours d'eau d'Alaska, États-Unis
+        https://www(dot)wikidata(dot)org/entity/Q1555938: région comprenant les terres
+          et les mers autour du pôle sud
+        http://www(dot)wikidata(dot)org/entity/Q612981: cours d'eau d'Alaska, États-Unis
+        http://www(dot)wikidata(dot)org/entity/Q19067: type de prédateur qui n'est
+          à l'âge adulte la proie d'aucun autre animal
+        http://www(dot)wikidata(dot)org/entity/Q25322: région entourant le pôle Nord
+          de la Terre, à l’intérieur et aux abords du cercle polaire arctique
+        https://www(dot)wikidata(dot)org/entity/Q25322: région entourant le pôle Nord
+          de la Terre, à l’intérieur et aux abords du cercle polaire arctique
+        https://www(dot)wikidata(dot)org/wiki/Q25322: région entourant le pôle Nord
+          de la Terre, à l’intérieur et aux abords du cercle polaire arctique
+        https://www(dot)wikidata(dot)org/entity/Q788: ensemble des mers situées entre
+          le pôle Nord et le Nord de l'Europe, de l'Asie et de l'Amérique
+        http://www(dot)wikidata(dot)org/entity/Q1875: oblast, sujet fédéral de Russie,
+          dans le Nord-Ouest du pays
+        https://www(dot)wikidata(dot)org/entity/Q1875: oblast, sujet fédéral de Russie,
+          dans le Nord-Ouest du pays
+        http://www(dot)wikidata(dot)org/entity/Q1349878: lac de Territoires du Nord-Ouest,
+          Canada
+        http://www(dot)wikidata(dot)org/entity/Q12824780: péninsule asiatique située
+          en Turquie
+        https://www(dot)wikidata(dot)org/entity/Q1314: saison
+        http://www(dot)wikidata(dot)org/entity/Q207666: île canadienne
+        http://www(dot)wikidata(dot)org/entity/Q793085: lac des Territoires du Nord-Ouest
+          (Canada)
+        https://www(dot)wikidata(dot)org/entity/Q10876: organisme vivant unicellulaire
+          et procaryote
+        http://www(dot)wikidata(dot)org/entity/Q81178: île de l'archipel arctique
+          canadien
+        https://www(dot)wikidata(dot)org/entity/Q81178: île de l'archipel arctique
+          canadien
+        http://www(dot)wikidata(dot)org/entity/Q23522: région géopolitique et culturelle
+          du Sud Est de l'Europe
+        http://www(dot)wikidata(dot)org/entity/Q217369: île canadienne
+        http://www(dot)wikidata(dot)org/entity/Q194364: île de Norvège
+        http://www(dot)wikidata(dot)org/entity/Q131274: partie de l'océan Arctique
+        https://www(dot)wikidata(dot)org/entity/Q131274: partie de l'océan Arctique
+        http://www(dot)wikidata(dot)org/entity/Q2295580: lac de comté de Lamont, Alberta,
+          Canada
+        http://www(dot)wikidata(dot)org/entity/Q813578: espace naturel protégé en
+          Alaska
+        http://www(dot)wikidata(dot)org/entity/Q80338: ancien État
+        https://www(dot)wikidata(dot)org/entity/Q25368: classe de mollusques
+        https://www(dot)wikidata(dot)org/entity/Q1479472: ordre de cnidaires
+        https://www(dot)wikidata(dot)org/entity/Q10874: état d'une personne ne pouvant
+          voir
+        http://www(dot)wikidata(dot)org/entity/Q19460587: établissement humain aux
+          États-Unis
+        http://www(dot)wikidata(dot)org/entity/Q890658: montagne de l'Alaska, aux
+          États-Unis
+        http://www(dot)wikidata(dot)org/entity/Q893152: péninsule du Canada
+        http://www(dot)wikidata(dot)org/entity/Q918126: colonie britannique (1814-1966)
+        http://www(dot)wikidata(dot)org/entity/Q29993: groupe de plantes dépourvues
+          de fleurs et de tissus conducteurs
+        http://www(dot)wikidata(dot)org/entity/Q1003571: île américaine
+        http://www(dot)wikidata(dot)org/entity/Q645180: île canadienne
+        http://www(dot)wikidata(dot)org/entity/Q1020241: parc national de Norvège
+        https://www(dot)wikidata(dot)org/entity/Q283604: processus photosynthétique
+          utilisé par certaines plantes
+        http://www(dot)wikidata(dot)org/entity/Q1011: pays insulaire d'Afrique occidentale
+        http://www(dot)wikidata(dot)org/entity/Q16: pays d'Amérique du Nord
+        https://www(dot)wikidata(dot)org/entity/Q16: pays d'Amérique du Nord
+        http://www(dot)wikidata(dot)org/entity/Q85377: archipel Canadien
+        https://www(dot)wikidata(dot)org/entity/Q85377: archipel Canadien
+        https://www(dot)wikidata(dot)org/entity/Q20660322: nom de plante
+        https://www(dot)wikidata(dot)org/entity/Q1011: pays insulaire d'Afrique occidentale
+        http://www(dot)wikidata(dot)org/entity/Q81875: organisme se nourrissant principalement
+          de chair
+        https://www(dot)wikidata(dot)org/entity/Q81875: organisme se nourrissant principalement
+          de chair
+        http://www(dot)wikidata(dot)org/entity/Q18240: végétal capable d'attirer et
+          de capturer des proies pour subvenir à ses propres besoins
+        http://www(dot)wikidata(dot)org/entity/Q27509: Région d'Europe
+        https://www(dot)wikidata(dot)org/entity/Q128257: classe de mollusques
+        http://www(dot)wikidata(dot)org/entity/Q955645: cours d'eau d'Alaska, États-Unis
+        http://www(dot)wikidata(dot)org/entity/Q182902: oblast (région) de Russie
+        https://www(dot)wikidata(dot)org/entity/Q424099: protéine
+        http://www(dot)wikidata(dot)org/entity/Q7984: okroug (district) autonome de
+          Russie
+        https://www(dot)wikidata(dot)org/entity/Q7984: okroug (district) autonome
+          de Russie
+        https://www(dot)wikidata(dot)org/entity/Q161258: possession française d'outre-mer,
+          dans l'océan Pacifique Nord
+        https://www(dot)wikidata(dot)org/entity/Q25441: embranchement d'animaux
+        http://www(dot)wikidata(dot)org/entity/Q1113020: fleuve d'Alaska
+        http://www(dot)wikidata(dot)org/entity/Q208268: archipel russe en mer de Béring
+        http://www(dot)wikidata(dot)org/entity/Q320011: fait de manger des selles
+        https://www(dot)wikidata(dot)org/entity/Q33666: classe d'échinodermes
+        https://www(dot)wikidata(dot)org/entity/Q25364: sous-embranchement d'arthropodes
+        http://www(dot)wikidata(dot)org/entity/Q938327: baie canadienne
+        https://www(dot)wikidata(dot)org/entity/Q25279: État insulaire des Caraïbes
+          appartenant au royaume des Pays-Bas
+        https://www(dot)wikidata(dot)org/entity/Q1508694: Port de plante particulier
+        https://www(dot)wikidata(dot)org/entity/Q4610: ordre de crustacés
+        http://www(dot)wikidata(dot)org/entity/Q195124: groupe d'îles
+        http://www(dot)wikidata(dot)org/entity/Q974: pays d'Afrique centrale
+        https://www(dot)wikidata(dot)org/entity/Q974: pays d'Afrique centrale
+        http://www(dot)wikidata(dot)org/entity/Q152058: détroit séparant le Groenland
+          de l'Islande
+        https://www(dot)wikidata(dot)org/entity/Q162678: algues microscopiques
+        https://www(dot)wikidata(dot)org/entity/Q15332388: direction relative
+        https://www(dot)wikidata(dot)org/entity/Q574: pays d'Asie du Sud-Est
+        https://www(dot)wikidata(dot)org/entity/Q795077: région du Canada
+        http://www(dot)wikidata(dot)org/entity/Q186198: moitié de la Terre comprise
+          à l'est du méridien de Greenwich jusqu'au 180e méridien
+        https://www(dot)wikidata(dot)org/entity/Q186198: moitié de la Terre comprise
+          à l'est du méridien de Greenwich jusqu'au 180e méridien
+        https://www(dot)wikidata(dot)org/entity/Q44631: embranchement d'animaux
+        https://www(dot)wikidata(dot)org/entity/Q295469: type de région naturelle
+        http://www(dot)wikidata(dot)org/entity/Q7880449: parasite externe
+        http://www(dot)wikidata(dot)org/entity/Q736: pays d'Amérique du Sud
+        https://www(dot)wikidata(dot)org/entity/Q128685: ordre de poissons
+        http://www(dot)wikidata(dot)org/entity/Q3049132: cours d'eau d'Alaska, États-Unis
+        https://www(dot)wikidata(dot)org/entity/Q17147: stade premier du développement
+          d'un individu
+        https://www(dot)wikidata(dot)org/entity/Q194257: sous-classe de poissons cartilagineux
+          qui regroupe les requins et les raies
+        http://www(dot)wikidata(dot)org/entity/Q324541: îlot islandais.
+        http://www(dot)wikidata(dot)org/entity/Q146841: île canadienne
+        https://www(dot)wikidata(dot)org/entity/Q146841: île canadienne
+        https://www(dot)wikidata(dot)org/entity/Q4531856: organisme qui vit à l'intérieur
+          d'une autre cellule ou d'un autre organisme
+        https://www(dot)wikidata(dot)org/entity/Q146326: ensemble des sciences et
+          des fondamentaux d'ingénierie utilisés dans le but d'améliorer la gestion
+          des ressources de l'environnement naturel
+        https://www(dot)wikidata(dot)org/entity/Q170885: liquide concentré et hydrophobe
+          des composés aromatiques volatils d'une plante
+        https://www(dot)wikidata(dot)org/entity/Q1050: pays d'Afrique australe
+        http://www(dot)wikidata(dot)org/entity/Q34589: rivière d'Asie
+        http://www(dot)wikidata(dot)org/entity/Q5401: continent formé par l'Europe
+          et l'Asie
+        http://www(dot)wikidata(dot)org/entity/Q875134: régions de Russie situées
+          en Europe
+        https://www(dot)wikidata(dot)org/entity/Q875134: régions de Russie situées
+          en Europe
+        http://www(dot)wikidata(dot)org/entity/Q702: État d'Océanie
+        https://www(dot)wikidata(dot)org/entity/Q161: élément anatomique long et frêle
+        https://www(dot)wikidata(dot)org/entity/Q1940784: forêt croissant sur une
+          zone alluviale
+        http://www(dot)wikidata(dot)org/entity/Q617573: organisme phytophage qui se
+          nourrit aux dépens des feuilles
+        https://www(dot)wikidata(dot)org/entity/Q2095: élément d'origine animale,
+          végétale, fongique, consommé par des êtres vivants à des fins énergétiques
+          ou nutritionnelles, dans le processus d'alimentation
+        https://www(dot)wikidata(dot)org/entity/Q271894: ancienne colonie française
+          en Afrique
+        https://www(dot)wikidata(dot)org/entity/Q1999990: type de récif coralien
+        https://www(dot)wikidata(dot)org/entity/Q764: règne des champignons
+        https://www(dot)wikidata(dot)org/entity/Q738999: espèce qui peut prospérer
+          dans un grand nombre de conditions environnementales
+        http://www(dot)wikidata(dot)org/entity/Q1974986: animal se nourrisant de grains
+        http://www(dot)wikidata(dot)org/entity/Q223: province autonome du Danemark
+        https://www(dot)wikidata(dot)org/entity/Q223: province autonome du Danemark
+        http://www(dot)wikidata(dot)org/entity/Q601056: péninsule de Russie
+        https://www(dot)wikidata(dot)org/entity/Q601056: péninsule de Russie
+        http://www(dot)wikidata(dot)org/entity/Q1571312: île américaine
+        https://www(dot)wikidata(dot)org/entity/Q181497: différences morphologiques
+          entre les mâles et femelles d'une même espèce
+        https://www(dot)wikidata(dot)org/entity/Q190903: plante dépourvue de partie
+          aérienne ligneuse pérenne
+        http://www(dot)wikidata(dot)org/entity/Q59099: animal qui se nourrit exclusivement
+          ou principalement de plantes
+        https://www(dot)wikidata(dot)org/entity/Q59099: animal qui se nourrit exclusivement
+          ou principalement de plantes
+        https://www(dot)wikidata(dot)org/entity/Q1547493: île au Yukon
+        https://www(dot)wikidata(dot)org/entity/Q3785497: minéral
+        http://www(dot)wikidata(dot)org/entity/Q847051: groupe de régions biogéographiques
+          au nord du tropique du Cancer
+        http://www(dot)wikidata(dot)org/entity/Q1238610: île russe
+        http://www(dot)wikidata(dot)org/entity/Q11338369: municipalité à Terre-Neuve-et-Labrador
+        https://www(dot)wikidata(dot)org/entity/Q1329239: Arthropode marin
+        http://www(dot)wikidata(dot)org/entity/Q3040: baie canadienne
+        https://www(dot)wikidata(dot)org/entity/Q3040: baie canadienne
+        http://www(dot)wikidata(dot)org/entity/Q189: pays insulaire d'Europe du Nord
+        https://www(dot)wikidata(dot)org/entity/Q189: pays insulaire d'Europe du Nord
+        http://www(dot)wikidata(dot)org/entity/Q3148353: cours d'eau d'Alaska, États-Unis
+        http://www(dot)wikidata(dot)org/entity/Q677088: animal se nourrissant d'insectes
+          ou d'autres arthropodes
+        https://www(dot)wikidata(dot)org/entity/Q1390: classe d'arthropodes
+        https://www(dot)wikidata(dot)org/entity/Q58339313: parasite qui occupe le
+          tube digestif
+        https://www(dot)wikidata(dot)org/entity/Q1358981: couleur
+        http://www(dot)wikidata(dot)org/entity/Q1008: pays d'Afrique de l'Ouest
+        https://www(dot)wikidata(dot)org/entity/Q14056: île de Norvège
+        https://www(dot)wikidata(dot)org/entity/Q237034: île française
+        http://www(dot)wikidata(dot)org/entity/Q3192622: cours d'eau d'Alaska, États-Unis
+        http://www(dot)wikidata(dot)org/entity/Q33629: zone de de l'océan Arctique
+        https://www(dot)wikidata(dot)org/entity/Q33629: zone de de l'océan Arctique
+        http://www(dot)wikidata(dot)org/entity/Q22536468: lac au Canada
+        http://www(dot)wikidata(dot)org/entity/Q46772: archipel de l'océan Indien
+          austral, un des districts des Terres australes et antarctiques françaises
+        https://www(dot)wikidata(dot)org/entity/Q46772: archipel de l'océan Indien
+          austral, un des districts des Terres australes et antarctiques françaises
+        https://www(dot)wikidata(dot)org/entity/Q828224: unité de longueur
+        https://www(dot)wikidata(dot)org/entity/Q165608: péninsule de Russie
+        https://www(dot)wikidata(dot)org/entity/Q1774112: Région russe extrême-orientale
+        http://www(dot)wikidata(dot)org/entity/Q18097: région d'Asie du Nord-Est
+        http://www(dot)wikidata(dot)org/entity/Q380307: région au Canada
+        https://www(dot)wikidata(dot)org/entity/Q380307: région au Canada
+        https://www(dot)wikidata(dot)org/entity/Q47844: art, planification, design,
+          gestion, préservation et réhabilitation du paysage
+        https://www(dot)wikidata(dot)org/entity/Q5700: région de Finlande
+        http://www(dot)wikidata(dot)org/entity/Q7988: mer bordière de l'océan Arctique
+        https://www(dot)wikidata(dot)org/entity/Q133105: membre du corps d'un animal
+        https://www(dot)wikidata(dot)org/entity/Q14079: plante grimpante herbacée
+          ou ligneuse à la tige particulièrement souple
+        http://www(dot)wikidata(dot)org/entity/Q105472: un ensemble d'îles, à l'ouest
+          de l'Afrique et de l'Europe, dans l'océan Atlantique, composé des archipels
+          des Açores, de Madère1, des îles Canaries et des îles du Cap-Vert
+        https://www(dot)wikidata(dot)org/entity/Q477047: biome du Brésil
+        http://www(dot)wikidata(dot)org/entity/Q3110238: île principale de Mayotte,
+          où se trouve la préfecture (Mamoudzou)
+        https://www(dot)wikidata(dot)org/entity/Q702: État d'Océanie
+        https://www(dot)wikidata(dot)org/entity/Q39833: être vivant microscopique
+        https://www(dot)wikidata(dot)org/entity/Q3312246: Mode d'alimentation
+        https://www(dot)wikidata(dot)org/entity/Q29876: région autour du centre des
+          Amériques, comprenant le Mexique, l'Amérique centrale, les îles de la Caraïbe,
+          la Colombie, le Venezuela, et les Guyanes ; identique à la Caraïbe étendue
+          à la côte pacifique
+        https://www(dot)wikidata(dot)org/entity/Q3319613: animal carnivore qui se
+          nourrit surtout de mollusques
+        https://www(dot)wikidata(dot)org/entity/Q25326: embranchement d'animaux
+        http://www(dot)wikidata(dot)org/entity/Q836: pays d'Asie du Sud-Est
+        https://www(dot)wikidata(dot)org/entity/Q836: pays d'Asie du Sud-Est
+        http://www(dot)wikidata(dot)org/entity/Q751433: ville des États-Unis
+        https://www(dot)wikidata(dot)org/entity/Q148554: musée américain
+        https://www(dot)wikidata(dot)org/entity/Q2164: okroug (district) autonome
+          de Russie
+        http://www(dot)wikidata(dot)org/entity/Q25227: ancien État Fédéral du Royaume
+          des Pays-Bas (1954-2010)
+        https://www(dot)wikidata(dot)org/entity/Q25227: ancien État Fédéral du Royaume
+          des Pays-Bas (1954-2010)
+        http://www(dot)wikidata(dot)org/entity/Q48335: grande île de l’océan Atlantique
+        http://www(dot)wikidata(dot)org/entity/Q309179: animal actif principalement
+          la nuit
+        https://www(dot)wikidata(dot)org/entity/Q39061: moitié de la Terre au nord
+          de l'équateur
+        http://www(dot)wikidata(dot)org/entity/Q2007: territoire du Canada
+        https://www(dot)wikidata(dot)org/entity/Q2007: territoire du Canada
+        http://www(dot)wikidata(dot)org/entity/Q20: pays d'Europe du Nord et de la
+          Scandinavie
+        https://www(dot)wikidata(dot)org/entity/Q20: pays d'Europe du Nord et de la
+          Scandinavie
+        https://www(dot)wikidata(dot)org/entity/Q80413: archipel arctique russe
+        http://www(dot)wikidata(dot)org/entity/Q2004598: cours d'eau d'Alaska, États-Unis
+        http://www(dot)wikidata(dot)org/entity/Q2023: territoire du Canada
+        https://www(dot)wikidata(dot)org/entity/Q2023: territoire du Canada
+        https://www(dot)wikidata(dot)org/entity/Q648799: ville de Russie
+        https://www(dot)wikidata(dot)org/entity/Q1025881: village russe
+        https://www(dot)wikidata(dot)org/entity/Q1073180: raïon municipal russe d'Olenyok
+        http://www(dot)wikidata(dot)org/entity/Q164509: organisme consommant indifféremment
+          des aliments de toute origine (animale, végétale, fongique ou bactérienne)
+        https://www(dot)wikidata(dot)org/entity/Q164509: organisme consommant indifféremment
+          des aliments de toute origine (animale, végétale, fongique ou bactérienne)
+        http://www(dot)wikidata(dot)org/entity/Q2746753: fait de capturer et consommer
+          des serpents pour se nourrir
+        https://www(dot)wikidata(dot)org/entity/Q199182: qualité d'une plante
+        http://www(dot)wikidata(dot)org/entity/Q519236: île américaine
+        https://www(dot)wikidata(dot)org/entity/Q106447: écozone terrestre
+        https://www(dot)wikidata(dot)org/entity/Q184382: plaine d'Argentine
+        https://www(dot)wikidata(dot)org/entity/Q157603: région d'Amérique du Sud
+        https://www(dot)wikidata(dot)org/entity/Q179387: ville de Russie
+        https://www(dot)wikidata(dot)org/entity/Q212410: protéine
+        https://www(dot)wikidata(dot)org/entity/Q184755: partie végétale du plancton
+        http://www(dot)wikidata(dot)org/entity/Q14874742: établissement humain de
+          Colombie-Britannique, Canada
+        http://www(dot)wikidata(dot)org/entity/Q1420208: animal se nourrissant de
+          poissons
+        https://www(dot)wikidata(dot)org/entity/Q60670: la zone polaire
+        https://www(dot)wikidata(dot)org/entity/Q18952: principale classe des vers
+          annélides
+        http://www(dot)wikidata(dot)org/entity/Q284603: rivière américaine
+        http://www(dot)wikidata(dot)org/entity/Q1758713: dans un écosystème, organisme
+          qui produit de la biomasse à partir d'éléments inorganiques
+        https://www(dot)wikidata(dot)org/entity/Q207925: île canadienne
+        http://www(dot)wikidata(dot)org/entity/Q213146: île canadienne
+        http://www(dot)wikidata(dot)org/entity/Q1013046: census-designated place
+        https://www(dot)wikidata(dot)org/entity/Q1008: pays d'Afrique de l'Ouest
+        http://www(dot)wikidata(dot)org/entity/Q1053008XXX: position d'un organisme
+          dans la chaîne alimentaire
+        https://www(dot)wikidata(dot)org/entity/Q105472: un ensemble d'îles, à l'ouest
+          de l'Afrique et de l'Europe, dans l'océan Atlantique, composé des archipels
+          des Açores, de Madère1, des îles Canaries et des îles du Cap-Vert
+        https://www(dot)wikidata(dot)org/entity/Q736: pays d'Amérique du Sud
+        http://www(dot)wikidata(dot)org/entity/Q176: province du Canada
+        https://www(dot)wikidata(dot)org/entity/Q16868813: motif, arrangement ou structure
+          composée d'un agencement en réseau
+        http://www(dot)wikidata(dot)org/entity/Q751891: île américaine
+        http://www(dot)wikidata(dot)org/entity/Q159: pays eurasiatique
+        https://www(dot)wikidata(dot)org/entity/Q159: pays eurasiatique
+        https://www(dot)wikidata(dot)org/entity/Q192184: territoire britannique d'outre-mer
+        http://www(dot)wikidata(dot)org/entity/Q760: État insulaire des Antilles
+        https://www(dot)wikidata(dot)org/entity/Q760: État insulaire des Antilles
+        https://www(dot)wikidata(dot)org/entity/Q114750: capable de se nourrir de
+          matière organique non vivante
+        http://www(dot)wikidata(dot)org/entity/Q21195: Région historique et culturelle
+          d'Europe du nord
+        https://www(dot)wikidata(dot)org/entity/Q21195: Région historique et culturelle
+          d'Europe du nord
+        http://www(dot)wikidata(dot)org/entity/Q172867: organisme qui se nourrit d'animaux
+          morts sans avoir participé à sa mise à mort
+        http://www(dot)wikidata(dot)org/entity/Q1818052: échelle de la pénibilité
+          des piqûres d'Hyménoptères
+        https://www(dot)wikidata(dot)org/entity/Q127470: classe d'échinodermes
+        https://www(dot)wikidata(dot)org/entity/Q83483: animaux marins sphériques
+          recouverts de piquants, de l'embranchement des échinodermes
+        http://www(dot)wikidata(dot)org/entity/Q192281: archipel russe des mers de
+          Kara et des Laptev
+        https://www(dot)wikidata(dot)org/entity/Q192281: archipel russe des mers de
+          Kara et des Laptev
+        http://www(dot)wikidata(dot)org/entity/Q971586: péninsule américaine
+        http://www(dot)wikidata(dot)org/entity/Q2277693: cours d'eau d'Alaska, États-Unis
+        http://www(dot)wikidata(dot)org/entity/Q5428: partie située en Asie de la
+          Fédération de Russie
+        https://www(dot)wikidata(dot)org/entity/Q5428: partie située en Asie de la
+          Fédération de Russie
+        http://www(dot)wikidata(dot)org/entity/Q795332: parc national du Canada situé
+          au Nunavut
+        http://www(dot)wikidata(dot)org/entity/Q118920: archipel en Polynésie française
+        http://www(dot)wikidata(dot)org/entity/Q212219: île à la région de Qikiqtaaluk,
+          Nunavut, Canada
+        https://www(dot)wikidata(dot)org/entity/Q41228: moitié de la Terre au sud
+          de l'équateur
+        https://www(dot)wikidata(dot)org/entity/Q3711325: propriété physique
+        https://www(dot)wikidata(dot)org/entity/Q21162: île du Svalbard
+        https://www(dot)wikidata(dot)org/entity/Q18960: embranchement basal des métazoaires
+        http://www(dot)wikidata(dot)org/entity/Q1312: saison
+        http://www(dot)wikidata(dot)org/entity/Q1672851: île américaine
+        http://www(dot)wikidata(dot)org/entity/Q638407: île américaine
+        https://www(dot)wikidata(dot)org/entity/Q25349: classe d'échinodermes
+        http://www(dot)wikidata(dot)org/entity/Q1342399: région située dans l'hémisphère
+          nord tout juste au sud de l'Arctique
+        https://www(dot)wikidata(dot)org/entity/Q1342399: région située dans l'hémisphère
+          nord tout juste au sud de l'Arctique
+        https://www(dot)wikidata(dot)org/wiki/Q1342399: région située dans l'hémisphère
+          nord tout juste au sud de l'Arctique
+        https://www(dot)wikidata(dot)org/entity/Q5824490: page d'homonymie d'un projet
+          Wikimédia
+        http://www(dot)wikidata(dot)org/entity/Q189939: plante charnue adaptée pour
+          survivre dans des milieux arides
+        http://www(dot)wikidata(dot)org/entity/Q1313: saison
+        http://www(dot)wikidata(dot)org/entity/Q25231: archipel de Norvège
+        https://www(dot)wikidata(dot)org/entity/Q25231: archipel de Norvège
+        http://www(dot)wikidata(dot)org/entity/Q1772570: île américaine
+        http://www(dot)wikidata(dot)org/entity/Q158725: ancien territoire de l'Est
+          africain sous mandat britannique
+        https://www(dot)wikidata(dot)org/entity/Q19159: super-classe de vertébrés
+          gnathostomes
+        http://www(dot)wikidata(dot)org/entity/Q869: pays d’Asie du Sud-Est
+        https://www(dot)wikidata(dot)org/entity/Q869: pays d’Asie du Sud-Est
+        https://www(dot)wikidata(dot)org/entity/Q217151: écozone
+        http://www(dot)wikidata(dot)org/entity/Q106447: écozone terrestre
+        https://www(dot)wikidata(dot)org/entity/Q1370714: matériau de construction
+        http://www(dot)wikidata(dot)org/entity/Q574: pays d'Asie du Sud-Est
+        http://www(dot)wikidata(dot)org/entity/Q1053008: position d'un organisme dans
+          la chaîne alimentaire
+        http://www(dot)wikidata(dot)org/entity/Q4000269: île américaine
+        http://www(dot)wikidata(dot)org/entity/Q1315785: région d'Asie centrale située
+          entre la mer Caspienne à l'ouest et le désert de Gobi à l'est
+        http://www(dot)wikidata(dot)org/entity/Q84127: péninsule du Canada
+        https://www(dot)wikidata(dot)org/entity/Q84127: péninsule du Canada
+        https://www(dot)wikidata(dot)org/entity/Q30: pays d'Amérique du Nord
+        http://www(dot)wikidata(dot)org/entity/Q30: pays d'Amérique du Nord
+        https://www(dot)wikidata(dot)org/entity/Q15332375: direction relative
+        https://www(dot)wikidata(dot)org/entity/Q11703: partie d'un archipel des Antilles
+          organisé des États-Unis, constituant l'une des entités formant l'archipel
+          des îles Vierges
+        https://www(dot)wikidata(dot)org/entity/Q1145847: région géographique du Canada
+        http://www(dot)wikidata(dot)org/entity/Q181982: moitié de la Terre qui est
+          comprise à l'ouest du méridien de Greenwich jusqu'au 180e méridien
+        https://www(dot)wikidata(dot)org/entity/Q181982: moitié de la Terre qui est
+          comprise à l'ouest du méridien de Greenwich jusqu'au 180e méridien
+        http://www(dot)wikidata(dot)org/entity/Q8022830: île canadienne
+        http://www(dot)wikidata(dot)org/entity/Q245097: distance entre les extrémités
+          des ailes
+        http://www(dot)wikidata(dot)org/entity/Q1311: saison
+        https://www(dot)wikidata(dot)org/entity/Q757163: plante qui fabrique en grande
+          quantité des lignines
+        https://www(dot)wikidata(dot)org/entity/Q42329: matériau d'origine animale
+          utilisé dans la production textile
+        https://www(dot)wikidata(dot)org/entity/Q106594: île de Russie
+        http://www(dot)wikidata(dot)org/entity/Q212337: adj. qualifiant des plantes
+          de milieu aride
+        https://www(dot)wikidata(dot)org/entity/Q488266: péninsule de Russie
+        https://www(dot)wikidata(dot)org/entity/Q2363133: baie russe
+        https://www(dot)wikidata(dot)org/entity/Q78861: fleuve de Russie
+        http://www(dot)wikidata(dot)org/entity/Q2009: territoire du Canada
+        https://www(dot)wikidata(dot)org/entity/Q2009: territoire du Canada
+        https://www(dot)wikidata(dot)org/entity/Q954: pays d'Afrique australe
+        https://www(dot)wikidata(dot)org/entity/Q591800: concrétion minérale trouvée
+          dans l'oreille interne des vertébrés
+        https://www(dot)wikidata(dot)org/entity/Q7886: organe de l'appareil respiratoire

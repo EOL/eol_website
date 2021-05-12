@@ -1,14 +1,21 @@
-- uri_name = "#{field_name}_uri".to_sym
-- label_name = "#{field_name}_name".to_sym
-- label_uri = local_assigns.include?(:label_uri) ? label_uri : ff.object.send(uri_name)
-- classes = [ff.object.errors[uri_name].any? ? "is-filter-row-with-errors" : nil, local_assigns.has_key?(:extra_class) ? extra_class : nil].compact
+-# Options
+-# field_name: 'pred', 'obj_term', etc.
+-# term_id_for_name_field: the eol_id (TermNode id) of the Term whose name should be
+-#  shown in the typeahead box
+-# placeholder: the placeholder text for the typeahead field
+-# nested_selects: if true, show select fields for child/descendant terms
+-# ff: form helper for the filter containing this term (`f.fields_for :filters do |ff|`, e.g.)
+
+- term_id_name = "#{field_name}_id".to_sym
+- term_name_input_name = "#{field_name}_name".to_sym
+- classes = [ff.object.errors[term_id_name].any? ? "is-filter-row-with-errors" : nil, local_assigns.fetch(:extra_class, nil)].compact
 .filter-row{:class => classes}
   .filter-row-group.js-filter-row-group
     %span.js-typeahead-wrap.filter-field
-      = text_field_tag label_name, local_assigns.has_key?(:val_name) ? val_name : i18n_term_name_for_uri(label_uri), :class => "uk-input js-#{typeahead_class}-typeahead js-term-name", :placeholder => placeholder, :data => local_assigns.has_key?(:typeahead_data) ? typeahead_data : nil
-      = ff.hidden_field uri_name, :class => "js-typeahead-field js-term-uri"
-      - show_error(ff.object, uri_name)
-      - if local_assigns.include?(:nested_selects) && nested_selects
-        = ff.hidden_field "top_#{uri_name}", :class => "js-typeahead-field js-top-term-uri"
+      = text_field_tag term_name_input_name, term_for_name_field&.i18n_name, :class => "uk-input js-#{local_assigns.fetch(:typeahead_class, field_name.gsub('_', '-'))}-typeahead js-term-name", :placeholder => placeholder, :data => local_assigns.fetch(:typeahead_data, nil)
+      = ff.hidden_field term_id_name, :class => "js-typeahead-field js-term-id"
+      - show_error(ff.object, term_id_name)
+      - if local_assigns.fetch(:nested_selects, false)
+        = ff.hidden_field "root_#{term_id_name}", :class => "js-typeahead-field js-top-term-id"
         .js-term-select-contain.term-select-contain
           = nested_term_selects(ff, field_name)

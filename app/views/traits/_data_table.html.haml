@@ -1,12 +1,9 @@
-- data = [] unless local_assigns.has_key?(:data)
-- pages = [] unless local_assigns.has_key?(:pages)
-- if data.nil? || data.empty?
+- if @search.grouped_data.empty?
   %p.uk-text-center= t("search_results.empty")
 - else
-  = paginate data
+  = paginate @search.grouped_data
   %ul.traits.traits-term-search
     -# TODO: helper
-    - prev_page_id = nil
-    - data.each_with_index do |trait,index|
-      = render :partial => "data_row", :locals => { :pages => pages, :trait => trait, :show_taxon => true }
-  = paginate data
+    - @search.grouped_data.each do |trait|
+      = render :partial => "data_row", :locals => { :trait => trait, :show_taxon => true }
+  = paginate @search.grouped_data

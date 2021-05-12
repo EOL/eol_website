@@ -3,12 +3,13 @@ require "set"
 module Traits
   class DataVizController < ApplicationController
     before_action :set_1d_about_text, only: [:bar, :hist]
+    before_action :set_query
 
     layout "traits/data_viz"
 
     BAR_CHART_LIMIT = 15
 
-    ObjVizResult = Struct.new(:obj, :query, :count, :noclick) do
+    CountVizResult = Struct.new(:label, :prompt, :query, :count, :noclick) do
       def noclick?
         noclick
       end
@@ -42,6 +43,7 @@ module Traits
         end
       end
 
+      # TODO: update to use TermNode rather than TraitBank query methods
       def initialize(tb_result, query)
         cols = tb_result["columns"]
         data = tb_result["data"]
@@ -49,12 +51,16 @@ module Traits
         i_bw = cols.index("bw")
         i_count = cols.index("c")
         i_min = cols.index("min")
-        i_units = cols.index("u")
+        units_uri = query.filters.first.units_term&.uri || TraitBank::Term.units_for_term(query.filters.first.predicate.uri)
+
+        raise TypeError, 'failed to get a units term for query' if units_uri.nil?
+
+        @units_term = TraitBank::Term.term_record(units_uri)
 
         @max_bi = data.last[i_bi].to_i
         @bw = self.class.to_d_or_i(data.first[i_bw])
         @min = self.class.to_d_or_i(data.first[i_min])
-        @units_term = data.first[i_units]&.[]("data")&.symbolize_keys
+
         @max_count = 0
 
         result_stack = data.collect do |d|
@@ -87,108 +93,78 @@ module Traits
       end
     end
 
-    # unsupported
-    def pie
-      @query = TermQuery.new(term_query_params)
-      result = TraitBank::Stats.obj_counts(@query)
-      counts = TraitBank.term_search(@query, count: true)
-      total = counts.primary_for_query(@query)
-      min_threshold = 0.05 * total
-      other_count = 0
-      @data = []
-
-      result.each do |row|
-        if result.length > 20 && row[:count] < min_threshold
-          other_count += row[:count]
-        else
-          @data << viz_result_from_row(@query, row)
-        end
-      end
-
-      @data << ObjVizResult.other(other_count)
+    def bar
+      result = TraitBank::Stats.obj_counts(@query, BAR_CHART_LIMIT)
+      @data = result.collect { |r| obj_count_result_from_row(@query, r) }
       render_common
     end
 
-    def bar
-      @query = TermQuery.new(term_query_params)
-      result = TraitBank::Stats.obj_counts(@query, BAR_CHART_LIMIT)
-      @data = result.collect { |r| viz_result_from_row(@query, r) }
-      render_common
+    def taxon_summary 
+      @data = Traits::DataViz::TaxonSummary.new(@query)
+      @about_text_key = 'about_this_chart_tooltip_taxon_summary'
+      render_with_status(@data.child_node_count > 1)
     end
 
     def hist
-      @query = TermQuery.new(term_query_params)
-      counts = TraitBank.term_search(@query, { count: true })
+      counts = TraitBank::Search.term_search(@query, { count: true })
       result = TraitBank::Stats.histogram(@query, counts.primary_for_query(@query))
       @data = HistData.new(result, @query)
       render_common
     end
 
     def sankey
-      @query = TermQuery.new(term_query_params)
-      counts = TraitBank.term_search(@query, { count: true })
+      counts = TraitBank::Search.term_search(@query, { count: true })
       @sankey = Traits::DataViz::Sankey.create_from_query(@query, counts.primary_for_query(@query))
       set_sankey_about_text
       render_with_status(@sankey.multiple_paths?)
     end
 
-    private
-    def render_common
-      render_with_status(@data.length > 1)
+    def assoc
+      @data = AssocViz.new(@query, helpers, breadcrumb_type)
+      @about_text_key = 'about_this_chart_tooltip_assoc'
+      render_with_status(@data.should_display?)
     end
 
-    def render_with_status(any_data)
+    private
+    def render_common(options = {})
+      render_with_status(@data.length > 1, options)
+    end
+
+    def render_with_status(any_data, options = {})
       status = any_data ? :ok : :no_content
-      options = { status: status }
+      options[:status] = status
       render options
     end
       
-    def viz_result_from_row(query, row)
-      ObjVizResult.new(
-        row[:obj],
+    def obj_count_result_from_row(query, row)
+      name = TraitBank::Record.i18n_name(row[:obj])
+      noclick = query.filters.first.object_term&.id == row[:obj][:eol_id]
+      prompt_prefix = noclick ? "" : "see_"
+
+      prompt = if query.record?
+                 I18n.t("traits.data_viz.#{prompt_prefix}n_obj_records", count: row[:count], obj_name: name)
+               else
+                 I18n.t("traits.data_viz.#{prompt_prefix}n_taxa_with", count: row[:count], obj_name: name)
+               end
+
+      CountVizResult.new(
+        name,
+        prompt,
         TermQuery.new({
           clade_id: query.clade_id,
           result_type: query.result_type,
           filters_attributes: [{
-            pred_uri: query.filters.first.pred_uri,
-            obj_uri: row[:obj][:uri] 
+            predicate_id: query.filters.first.predicate&.id,
+            object_term_id: row[:obj][:eol_id] 
           }]
         }),
         row[:count],
-        query.filters.first.obj_uri == row[:obj][:uri]
+        noclick
       )
     end
 
     def term_query_params
-      # TODO: copied from TraitsController -- dry up
-      params.require(:term_query).permit([
-        :clade_id,
-        :result_type,
-        :filters_attributes => [
-          :pred_uri,
-          :top_pred_uri,
-          :obj_uri,
-          :op,
-          :num_val1,
-          :num_val2,
-          :units_uri,
-          :sex_uri,
-          :lifestage_uri,
-          :statistical_method_uri,
-          :resource_id,
-          :show_extra_fields,
-          :pred_term_selects_attributes => [
-            :type,
-            :parent_uri,
-            :selected_uri
-          ],
-          :obj_term_selects_attributes => [
-            :type,
-            :parent_uri,
-            :selected_uri
-          ]
-        ]
-      ])
+      params.require(:tq).permit(TermQuery.expected_short_params)
     end
 
     def set_1d_about_text
@@ -202,5 +178,10 @@ module Traits
         "about_this_chart_tooltip_sankey_2d"
       end
     end
+
+    def set_query
+      @query = TermQuery.from_short_params(term_query_params)
+    end
   end
 end
+

@@ -10,6 +10,11 @@ class Publishing
       publr.by_resource
     end
 
+    def self.traits_by_resource(resource)
+      publr = new(resource)
+      publr.traits_by_resource
+    end
+
     # e.g.: nohup rails r "Publishing::Fast.update_attributes_by_resource(Resource.find(724), ScientificName, [:dataset_name])" > dwh_datasets.log 2>&1 &
     def self.update_attributes_by_resource(resource, klass, fields)
       publr = new(resource)
@@ -23,6 +28,8 @@ class Publishing
     end
 
     def load_local_file(klass, file)
+      new_log
+      set_relationships
       @klass = klass
       @data_file = file
       @log.start("One-shot manual import of #{@klass} starting...")
@@ -40,6 +47,7 @@ class Publishing
       @log = log # Okay if it's nil.
       @repo = create_server_connection
       @files = []
+      @can_clean_up = true
     end
 
     def create_server_connection
@@ -136,7 +144,7 @@ class Publishing
           @log = Publishing::PubLog.new(@resource, use_existing_log: true)
         rescue => e
           @log = Publishing::PubLog.new(@resource, use_existing_log: true)
-          @log.fail(e)
+          @log.fail_on_error(e)
           raise e
         end
         @log.warn('All existing content has been destroyed for the resource.')
@@ -156,21 +164,13 @@ class Publishing
           @log.start('MediaContentCreator')
           MediaContentCreator.by_resource(@resource, log: @log)
         end
-        @log.start('Remove traits')
-        TraitBank::Admin.remove_for_resource(@resource)
-        @log.start('#publish_traits = TraitBank::Slurp.load_resource_from_repo')
-        can_clean_up = true
-        begin
-          publish_traits
-        rescue => e
-          backtrace = [e.backtrace[0]] + e.backtrace.grep(/\bapp\b/)[1..5]
-          @log.warn("Trait Publishing failed: #{e.message} FROM #{backtrace.join(' << ')}")
-          can_clean_up = false
-        end
+        publish_traits_with_cleanup
         @log.start('Resource#fix_native_nodes')
         @resource.fix_native_nodes
+        @log.start('TraitBank::Denormalizer.update_resource_vernaculars')
+        TraitBank::Denormalizer.update_resource_vernaculars(@resource)
         propagate_reference_ids
-        clean_up if can_clean_up
+        clean_up
         if page_contents_required?
           @log.start('#fix_missing_icons (just to be safe)')
           Page.fix_missing_icons
@@ -184,6 +184,37 @@ class Publishing
         @log.close
         ImportLog.all_clear!
       end
+    end
+
+    def traits_by_resource
+      abort_if_already_running
+      @log = @resource.import_logs.last
+      @repo = create_server_connection
+      @can_clean_up = true
+      begin
+        publish_traits_with_cleanup
+      rescue => e
+        clean_up
+        @log.fail_on_error(e)
+      ensure
+        @log.end("TOTAL TIME: #{Time.delta_str(@start_at)}")
+        @log.close
+        ImportLog.all_clear!
+      end
+    end
+
+    def publish_traits_with_cleanup
+      @log.start('Remove traits')
+      TraitBank::Admin.remove_for_resource(@resource)
+      @log.start('#publish_traits = TraitBank::Slurp.load_resource_from_repo')
+      begin
+        publish_traits
+      rescue => e
+        backtrace = [e.backtrace[0]] + e.backtrace.grep(/\bapp\b/)[1..5]
+        @log.warn("Trait Publishing failed: #{e.message} FROM #{backtrace.join(' << ')}")
+        @can_clean_up = false
+      end
+      clean_up
     end
 
     def abort_if_already_running
@@ -210,10 +241,16 @@ class Publishing
     end
 
     def clean_up
+      return(nil) unless @can_clean_up
       @files.each do |file|
-        @log.info("Removing #{file}")
-        File.unlink(file)
+        if File.exist?(file)
+          @log.info("Removing #{file}")
+          File.unlink(file)
+        else
+          @log.info("Skipping removal of #{file} ... file does not exist")
+        end
       end
+      @can_clean_up = false
     end
 
     def grab_file(name)
@@ -228,7 +265,8 @@ class Publishing
       # NOTE: "LOCAL" is a strange directive; you only use it when you are REMOTE. ...The intention being, you're
       # telling the remote server "the file I'm talking about is local to me." Confusing at best. I don't like it.
       q << 'LOCAL' unless @repo.is_on_this_host?
-      q << %{INFILE '#{@data_file}' INTO TABLE `#{@klass.table_name}` FIELDS OPTIONALLY ENCLOSED BY '"'}
+      q << %{INFILE '#{@data_file}' INTO TABLE `#{@klass.table_name}` }
+      q << %{CHARACTER SET utf8mb4 FIELDS OPTIONALLY ENCLOSED BY '"' }
       q << "(#{cols.join(',')})"
       begin
         before_db_count = @klass.where(resource_id: @resource.id).count
@@ -300,7 +338,7 @@ class Publishing
     end
 
     def publish_traits
-      TraitBank::Slurp.load_resource_from_repo(@resource)
+      TraitBank::Slurp.new(@resource, @log).load_resource_from_repo
     end
 
     def page_contents_required?

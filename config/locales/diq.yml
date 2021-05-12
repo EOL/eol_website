@@ -59,7 +59,6 @@ diq:
       referents_count: tercihi
       species_count: babeti
       updated_at: rocaneyo peyên
-  cms_page_date: 'Demê vurnayişê peyêni:'
   collect_already_in_collection: (xora tiya de)
   collect_already_in_collection_will_add_icon: (tedey "%{page}" re medya cı kerê )
   collect_icon_title: Pela "%{page}" ra obcey "%{item}" defiyê miyan…
@@ -85,6 +84,9 @@ diq:
     collection_type:
       normal: normal
       gallery: galeriye
+    log:
+      page:
+        remove: '%{user} pela %{page} darde we'
     search:
       placeholder: Koleksiyoni bıvinê...
       submit: cı geyre
@@ -140,7 +142,7 @@ diq:
   footer:
     eol_info:
       data_services: Servisê data
-      donate: Bêc
+      donate: Bac
       education: Terbiyet
       food_webs: Torrê Werdişi
       glossary: Qısebendek
@@ -178,7 +180,7 @@ diq:
   language: Zıwan
   languages:
     ab: Abhazki
-    Q27776: Adıgeki
+    q27776: Adıgeki
     aa: Afarki
     af: Afrikaanki
     ak: Akanki
@@ -188,58 +190,58 @@ diq:
     an: Aragonki
     hy: Ermenki
     as: Assameski
-    Q29507: Asturyaski
-    Q56590: Atikamekw
+    q29507: Asturyaski
+    q56590: Atikamekw
     av: Avarki
     ae: Avestki
     ay: Aymaraki
-    Q9292: Azerki
+    q9292: Azerki
     az: Azerki
     bm: Bambaraki
     ba: Başkurtki
     eu: Baski
     be: Belaruski
-    Q8836490: Bendeki
+    q8836490: Bendeki
     bn: Bengalki
     bh: Zıwanê Bihari
     bi: Bislamaki
     nb: 'Norvecki: Bokmål'
-    Q4941378: Bondei
+    q4941378: Bondei
     bs: Bosnaki
-    Q33202: Brahuki
-    Q750553: Portekizkiya Brezilya
+    q33202: Brahuki
+    q750553: Portekizkiya Brezilya
     br: Bretonki
     bg: Bulğarki
     my: Burmaki
-    Q35037: Tongoki
-    Q880301: Cajun French
-    Q35156: Carki
-    Q2591230: Kashinawaki
+    q35037: Tongoki
+    q880301: Cajun French
+    q35156: Carki
+    q2591230: Kashinawaki
     ca: Katalanki; Valensiyaki
     km: Kmerki
     ch: Çamorroki
-    Q33281: Çavakanoki
+    q33281: Çavakanoki
     ce: Çeçenki
     ny: Çiçewaki, Nyanja
     zh: Çinki
-    Q32979: Çoktawki
+    q32979: Çoktawki
     cu: Slawkiya kıliseyi
     cv: Çuwaşki
     kw: Kornişki
     co: Korsikaki
     cr: Kreeki
-    Q33357: Tatarkiya Kırımı
+    q33357: Tatarkiya Kırımı
     hr: Xırwatki
     cs: Çekki
     da: Danki
-    Q3362072: Digoki
-    Q56466: Dinka
+    q3362072: Digoki
+    q56466: Dinka
     dv: Maldivki
-    Q18415595: Dotyalki
+    q18415595: Dotyalki
     nl: Hollandki, Flamanki
     dz: Dzongkha
     dzo: Dzongkha
-    Q4126517: Inuktitutiya Kanada
+    q4126517: Inuktitutiya Kanada
     en: İngılızki
     eo: Esperanto
     et: Estonki
@@ -247,60 +249,60 @@ diq:
     fo: Faroeki
     fj: Ficiki
     fi: Finki
-    Q667747: Fipaki
+    q667747: Fipaki
     fr: Fransızki
     ff: Fulahki
-    gd: Galki; Galkiya İskoçya
+    gd: Galkiya İskoçya
     gl: Galiçyaki
-    Q33475: Çinkiya Gani
+    q33475: Çinkiya Gani
     lg: Ganda
     ka: Gurciki
     de: Almanki
-    Q5575236: Goan Konkani
-    Q3272630: Gogoki
-    Q2501174: Gorontalo
+    q5575236: Goan Konkani
+    q3272630: Gogoki
+    q2501174: Gorontalo
     el: Yunani, Modern (1453-)
     gn: Guaranki
     gu: Gujaratki
-    Q33303: Haida
+    q33303: Haida
     ht: Haitiki; Kreolekiya Haiti
     ha: Hausaki
-    Q35756: Hayaki
+    q35756: Hayaki
     he: İbraniki
-    Q3129390: Heheki
+    q3129390: Heheki
     hz: Herero
-    Q35978: Hiligaynon
+    q35978: Hiligaynon
     hi: Hindki
     ho: Hiri Motu
     hu: Macarki
     is: İslandki
     io: İdoki
     ig: İgboki
-    Q35936: İlokano
+    q35936: İlokano
     id: İndonezki
-    Q33509: İnguşki
+    q33509: İnguşki
     ia: Interlingua (İnternasyonel Gomey Zıwanê Pheştigeri)
     ie: Interlingue; Rocawani
     iu: Inuktitut
     ik: İnupiaqki
-    Q33595: Iraqwiki
+    q33595: Iraqwiki
     ga: İrlandki
     it: İtalyanki
-    Q35939: Kreolekiya Jamaika
+    q35939: Kreolekiya Jamaika
     ja: Japonki
     jp: Japonki
     jv: Javaki
-    Q35475: Kabiyè
+    q35475: Kabiyè
     kl: Kalaallisut; Greenlandki
-    Q33634: Kalmuki
+    q33634: Kalmuki
     kn: Kannada
     kr: Kanuriki
-    Q33541: Kara-Kalpak
+    q33541: Kara-Kalpak
     ks: Keşmirki
     kk: Qazax
     ki: Kikuyu; Gikuyu
-    Q11005332: Kinga
-    Q11732519: Kingindo
+    q11005332: Kinga
+    q11732519: Kingindo
     rw: Kinyarwanda
     ky: Qırxızki
     kv: Komiki
@@ -311,20 +313,20 @@ diq:
     lo: Laoki
     la: Latinki
     lv: Letonki
-    Q1160372: Lazki
+    q1160372: Lazki
     li: Limburgki
     ln: Lingala
-    Q146803: Lingua Franca Nova
+    q146803: Lingua Franca Nova
     lt: Litwanki
-    Q33698: Livonki
-    Q36584: Livviki
+    q33698: Livonki
+    q36584: Livviki
     lu: Luba-Katanga
-    Q3437661: Luguru
+    q3437661: Luguru
     lb: Luksemburgki
-    Q35787: Masaiki
+    q35787: Masaiki
     mk: Makedonki
-    Q497345: Frankiya werti
-    Q36109: Maithili
+    q497345: Frankiya werti
+    q36109: Maithili
     mg: Malgaşki
     ms: Malayki
     ml: Malayalamki
@@ -333,64 +335,64 @@ diq:
     mi: Maoriki
     mr: Marathiki
     mh: Marşalki
-    Q6786446: Matengo
-    Q13358: Rumenki
-    Q13313: Meruki
-    Q13324: Minangkabauki
-    Q13330: Mirandaki
+    q6786446: Matengo
+    q13358: Rumenki
+    q13313: Meruki
+    q13324: Minangkabauki
+    q13330: Mirandaki
     mn: Moğolki
-    Q56426: Erebkiya Maroki
-    Q6944725: Mweraki
-    Q3508074: Naiki
+    q56426: Erebkiya Maroki
+    q6944725: Mweraki
+    q3508074: Naiki
     na: Nauruki
     nv: Navajo
     nd: Ndebele, Ndebele Zımey
     nr: Ndebele, Ndebele Veroci
     ng: Ndonga
     ne: Nepalki
-    Q7022366: Ngindo
-    Q19933293: Lurkiya Zımey
+    q7022366: Ngindo
+    q19933293: Lurkiya Zımey
     se: Samikiya Zımey
     "no": Norwecki
     nn: Norwecki, Nynorsk
-    Q36738: Novial
-    Q3272620: Nyakusa
-    Q4121131: Nyamwezi
-    Q7193418: Nyaturu
-    Q11128374: Nyiha
-    Q16115145: Nyika
-    oc: Oksitanki (1500 nata)
-    Q28602: Aramkiya kehan
+    q36738: Novial
+    q3272620: Nyakusa
+    q4121131: Nyamwezi
+    q7193418: Nyaturu
+    q11128374: Nyiha
+    q16115145: Nyika
+    oc: Oksitanki (1500 ra nata)
+    q28602: Aramkiya kehan
     oj: Ojibwa
     or: Oriyaki
     om: Oromo
     os: Osetki
     pi: Paliki
     pa: Pencabki
-    Q36403: Pareki
+    q36403: Pareki
     fa: Farıski
-    Q23014: Almankiya Palatini
-    Q2429648: Pogoro
+    q23014: Almankiya Palatini
+    q2429648: Pogoro
     pl: Polonki
-    Q36748: Pontuski
+    q36748: Pontuski
     pt: Portekizki
     ps: Peştunki
     qu: Quçewaki
-    Q584983: Langki
+    q584983: Langki
     ro: Moldowki
     rm: Romanşki
     rn: Rundiki
     ru: Ruski
     sm: Samoaki
-    Q34016: Sandaveki
+    q34016: Sandaveki
     sg: Sangoki
     sa: Sanskritki
-    Q33965: Santaliki
+    q33965: Santaliki
     sc: Sardinki
-    Q845441: Sardinkiya Sasarri
+    q845441: Sardinkiya Sasarri
     sr: Sırbki
-    Q3788739: Şambalaki
-    Q56482: Shanki
+    q3788739: Şambalaki
+    q56482: Shanki
     sn: Shonaki
     ii: Sichuan Yi; Nuosu
     sd: Sindhi
@@ -400,7 +402,7 @@ diq:
     so: Somalki
     st: Sothoki
     es: İspanyolki; Kastilyaki
-    Q2638144: Sukuma
+    q2638144: Sukuma
     su: Sundaki
     sw: Svahiliki
     ss: Swatiki
@@ -408,22 +410,22 @@ diq:
     tl: Tagalogki
     ty: Tahitiki
     tg: Tacıgki
-    Q34318: Talışki
+    q34318: Talışki
     ta: Tamilki
     tt: Tatarki
     te: Teluguki
     th: Tayki
     bo: Tibetki
     ti: Tigrinki
-    Q34159: Tok Pisin
-    to: Tonga (Adey Tonga)
-    Q180937: Arnawudkiya Toski
+    q34159: Tok Pisin
+    to: Tongaki
+    q180937: Arnawudkiya Toski
     ts: Tsonga
     tn: Tswana
-    Q34138: Tumbuka
-    Q56240: Erebkiya Tunısi
+    q34138: Tumbuka
+    q56240: Erebkiya Tunısi
     tr: Tırki
-    Q36730: Usmanıcki
+    q36730: Usmanıcki
     tk: Turkmenki
     tw: Twiki
     ug: Uyğurki
@@ -433,7 +435,7 @@ diq:
     ve: Verdaki
     vi: Vietnamki
     vo: Volapük
-    Q32858: Votiki
+    q32858: Votiki
     wa: Walonki
     cy: Galki
     fy: Frizkiya Rocawani
@@ -577,7 +579,6 @@ diq:
       show_warns:
         one: (%{count}) iqazi bımocne
         other: (%{count}) iqaza bımocnê
-      sync: Depoya senkronize bıkerê
     headers:
       index: Çımeyi
     no_events: Qet yew!
@@ -660,7 +661,7 @@ diq:
         password_confirmation: Tesdiqê parola
         remember_me: Biya ho viri
         username: Nameyê karberi
-        bio: Bio
+        bio: Biyo
   stats:
     articles: meqaleyi
     collections: koleksiyoni
@@ -669,11 +670,6 @@ diq:
     scientific_names: nameyi
     users: karberi
     references: tercihi
-  support:
-    array:
-      words_connector: ','
-      two_words_connector: û
-      last_word_connector: ', û'
   trust:
     trusted: itımadıno
   user:
@@ -684,52 +680,52 @@ diq:
   term:
     name:
       by_uri:
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: oksicen
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_22984: kalsiyum (Ca)
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: magnezyum (Mg)
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28822: eikosanoik asid
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32368: undekanoik asit
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32583: kalsiyum sulfat dihidrat
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32584: kalsiyum sulfat hemihidrate
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_3311: kalsiyum karbonatı
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46713: florit
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52239: aragonite
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52254: apatite
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_77635: Kalsiyum fosfat
-        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000078: suriyeya şıfaqi
-        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000131: fotoheterotrof
         http://purl(dot)obolibrary(dot)org/obo/EO_0007059: Hera asidik
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0022142: vaşın
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900024: geophyte
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900025: helophyte
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900026: hydrophyte
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900044: Vaşo aquatik
         http://purl(dot)obolibrary(dot)org/obo/FOODON_03413450: amphidromous
-        http://purl(dot)obolibrary(dot)org/obo/ID_0000058: silindir
-        http://purl(dot)obolibrary(dot)org/obo/NBO_0000055: gureyneno
-        http://purl(dot)obolibrary(dot)org/obo/OMIT_0013523: macroalga
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52254: apatite
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900044: Vaşo aquatik
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52239: aragonite
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: siya
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000318: mawi
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: kıho
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: sıpe
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: gırse
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000625: tadeyaye
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: hêdêna
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: pêt
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: Şekılê zerri
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: mor
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: Kahwe
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: turuncuu
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001733: pel nêrıznen
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001980: gıştın
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002044: trapezoid
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002124: laminar
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_22984: kalsiyum (Ca)
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_3311: kalsiyum karbonatı
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_77635: Kalsiyum fosfat
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32583: kalsiyum sulfat dihidrat
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32584: kalsiyum sulfat hemihidrate
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000687: sahil
+        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000078: suriyeya şıfaqi
+        http://purl(dot)obolibrary(dot)org/obo/ID_0000058: silindir
         http://purl(dot)obolibrary(dot)org/obo/PATO_0002343: nımız biyayen
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002389: procumbent
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001980: gıştın
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28822: eikosanoik asid
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001733: pel nêrıznen
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: pêt
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46713: florit
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000873: Awa şirın
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900024: geophyte
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000177: çere
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: kıho
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: Şekılê zerri
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900025: helophyte
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0022142: vaş
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900026: hydrophyte
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000625: tadeyaye
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002124: laminar
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: gırse
         http://purl(dot)obolibrary(dot)org/obo/PATO_0002467: lathlike
+        http://purl(dot)obolibrary(dot)org/obo/OMIT_0013523: macroalga
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: magnezyum (Mg)
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: turuncuu
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: oksicen
+        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000131: fotoheterotrof
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002389: procumbent
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: mor
         http://purl(dot)obolibrary(dot)org/obo/PO_0004542: rhizome
         http://purl(dot)obolibrary(dot)org/obo/PO_0009005: rêçey
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000687: sahil
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000873: Awa şirın
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000177: çere
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000055: gureyneno
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: hêdêna
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002044: trapezoid
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32368: undekanoik asit
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: sıpe
 ...

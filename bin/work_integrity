@@ -1,0 +1,2 @@
+#!/bin/sh
+nohup rails r "worker = Delayed::Worker.new(queues: ['data_integrity']).start ; worker.name_prefix = 'data_integrity ' ; worker.start " > log/integrity_worker.log 2>&1 &

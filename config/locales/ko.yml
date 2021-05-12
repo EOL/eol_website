@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Codenstory
+# Author: Gomdoli
 # Author: Nuevo Paso
 # Author: SeoJeongHo
 # Author: Ykhwong
@@ -16,7 +17,10 @@ ko:
   are_you_sure_delete_account: EOL 계정을 정말로 지우시겠습니까?
   article:
     header:
+      blank: (이 문서에는 본문이 없습니다.)
+      body: 본문
       language: '언어: %{language}'
+      title: 제목
       untitled: 제목 없음
     name:
       missing: 제목 없음
@@ -86,6 +90,7 @@ ko:
   content_attributions_labels:
     altitude: 고도
     author: 만든이
+    contributor: 기여자
     compiler: 컴파일러
     creator: 만든이
     editor: 편집자
@@ -141,13 +146,23 @@ ko:
     created: GBIF 다운로드 작업이 생성되었습니다. <a href="%{url}">사용자 프로필 페이지</a>에서 상태를 확인하세요
   language: 언어
   languages:
+    ab: 압하스어
+    q27683: 아체어
+    q27776: 아디게어
+    aa: 아파르어
+    af: 아프리칸스어
+    ak: 아칸어
     alb: 알바니아어
     sq: 알바니아어
+    q131339: 알레만어
+    am: 암하라어
     ar: 아랍어
+    an: 아라곤어
     hy: 아르메니아어
+    as: 아삼어
     az: 아제르바이잔어
     bs: 보스니아어
-    Q750553: 브라질 포르투갈어
+    q750553: 브라질 포르투갈어
     bg: 불가리아어
     zh: 중국어
     chi: 중국어
@@ -215,7 +230,7 @@ ko:
     ukr: 우크라이나어
     none: 지정되지 않음
     vi: 베트남어
-    Q100103: 서플라망어
+    q100103: 서플라망어
   layout_sign_in: 로그인
   layout_sign_up: 가입하기
   layout_sign_out: 로그아웃
@@ -314,7 +329,6 @@ ko:
       republish: 다시 게시
       show_all:
         other: 모두 보기 (%{count})
-      sync: 동기화
     headers:
       index: 자료
     no_events: 없음!
@@ -427,14 +441,12 @@ ko:
     scientific_names: 이름
     users: 사용자
     references: 참고문헌
-  support:
-    array:
-      words_connector: ','
-      two_words_connector: 그리고
-      last_word_connector: ', 그리고'
+  term_query:
+    invalid_obsolete: 유효하지 않음/구식
   term_query_filter:
     validations:
       invalid_uri: 유효하지 않은 URI
+      units_blank_error: 수치 검색에서 단위는 빈칸으로 둘 수 없습니다
   terms:
     definition_field_html: <strong>정의:</strong> %{definition}
     source_field_html: <strong>출처:</strong> <a href='%{source}'>%{source}</a>
@@ -499,12 +511,70 @@ ko:
       previous: 이전 페이지
     name:
       by_uri:
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: 산소
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: 마그네슘 (Mg)
+        http://eol(dot)org/schema/terms/percm2: /cm^2
         http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900044: 수생 식물
+        http://eol(dot)org/schema/terms/average: 평균
+        http://purl(dot)obolibrary(dot)org/obo/PO_0004518: 나무껍질
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: 검정
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000015: cm
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000081: cm^2
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000097: cm^3
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001733: 상록수
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000021: g
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000084: g/cm^3
+        http://eol(dot)org/schema/terms/gramsPerMeterSquared: g/m^2
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: 초록
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: 하트 모양
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001733: 상록수
-        http://purl(dot)obolibrary(dot)org/obo/PO_0004518: 나무껍질
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_02000053: 숨기기
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000298: 빙산
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000009: kg
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000086: kg/m^2
+        http://eol(dot)org/schema/terms/squarekilometer: km^2
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000252: 호수
+        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#US_pound: lb
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000008: m
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000080: m^2
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: 마그네슘 (mg)
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000022: mg
+        http://eol(dot)org/schema/terms/milligramsPercm2: mg/cm^2
+        http://eol(dot)org/schema/terms/milligramsPercm2PerDay: mg/cm^2/일
+        http://eol(dot)org/schema/terms/milligramspergram: mg/g
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000273: mg/l
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000309: mg/m^2
+        http://purl(dot)obolibrary(dot)org/obo/UO_0010049: g/m^2
+        http://eol(dot)org/schema/terms/mlO2perhour: ml/시간 o2
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000016: mm
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000272: mm hg
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000082: mm^2
+        http://eol(dot)org/schema/terms/millimetersSquaredPerMilligram: mm^2/mg
+        http://eol(dot)org/schema/terms/mol_per_meter_squared_per_day: mol/m^2/일
+        https://eol(dot)org/schema/terms/nanogrampergramperhour: ng/g/시간
+        https://eol(dot)org/schema/terms/nanograpperkilgramperminute: ng/kg/분
+        https://eol(dot)org/schema/terms/nanomolpergram: nmol/g
+        https://eol(dot)org/schema/terms/nmolpergramperhour: nmol/g/시간
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: 산소
+        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#US_ounce: oz
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000025: pg
+        https://eol(dot)org/schema/terms/picomolpermetersquaredpersecond: pmol/m^2/초
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000170: ppb
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000146: 온도
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000183: 열대 사막
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_02000052: 우산
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000247: 화산
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000114: 와트
+        http://eol(dot)org/schema/terms/yes: 예
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000023: µg
+        http://eol(dot)org/schema/terms/µg_cm-2: µg/cm^2
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000017: µm
+        http://eol(dot)org/schema/terms/perMicrometer: µm^(-1)
+        http://eol(dot)org/schema/terms/squareMicrometer: µm^2
+        http://eol(dot)org/schema/terms/cubicMicrometer: µm^3
+        https://eol(dot)org/schema/terms/micromolpergram: µmol/g
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C48508: µmol/l
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000064: µmol/l
+        http://eol(dot)org/schema/terms/cubicMillimeter: mm^3
+        http://eol(dot)org/schema/terms/perPound: /lb
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000106: Hz
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000259: dB
+        http://eol(dot)org/schema/terms/mol_m-2_s-1: mol/m^2/초
 ...

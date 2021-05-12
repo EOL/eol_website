@@ -8,7 +8,7 @@
             = t("article.header.untitled")
           - else
             = @article.name.html_safe
-        %label= t("article.header.language", language: t("languages.#{@article.language.group}"))
+        %label= t("article.header.language", language: t("languages.#{@article.language.locale&.code}"))
       .uk-width-1-4.actions
         - basic_button("plus", t("article.actions.collect"), new_collected_page_path(page_id: @article.associations.first, article_ids: [@article.id]))
     .articles-body.uk-margin-large-top

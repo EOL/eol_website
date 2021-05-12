@@ -1,7 +1,7 @@
 require_relative 'boot'
 
 require 'rails/all'
-require 'neo4j/railtie'
+require 'active_graph/railtie'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -28,7 +28,7 @@ module EolWebsite
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :en
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
-    config.i18n.available_locales = %i(en mk fi pt-BR fr zh-TW zh-CN pms tr ar)
+    config.i18n.available_locales = %i(en mk fi pt-BR fr zh-TW zh-CN pms tr ar el nl)
 
     # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
     # the I18n.default_locale when a translation cannot be found).
@@ -37,10 +37,11 @@ module EolWebsite
     config.exceptions_app = self.routes
     config.data_glossary_page_size = 250
 
-    # For neo4j gem, not neography
-    config.neo4j.session.type = :http
-    config.neo4j.session.url = Rails.application.secrets.traitbank_url
-    config.neo4j.session.options = { ssl: false }
+    # For activenode/ruby-neo4j-driver gems, not neography
+    config.neo4j.driver.url = Rails.application.secrets.neo4j_driver_url
+    config.neo4j.driver.username = Rails.application.secrets.neo4j_user
+    config.neo4j.driver.password = Rails.application.secrets.neo4j_password
+    config.neo4j.driver.encryption = false
 
     # Search for classes in the lib directory
     config.autoload_paths += %W(#{config.root}/lib)
@@ -73,7 +74,14 @@ module EolWebsite
 
     # point autocomplete to localized fields
     config.x.autocomplete_i18n_enabled = true
-
     config.active_job.queue_adapter = :sidekiq
+
+    # neo4j log
+    config.neo4j.logger = ActiveSupport::TaggedLogging.new(Logger.new(Rails.root.join('log', 'traitbank.log')))
+    config.neo4j.logger.level = Logger::DEBUG
+    config.neo4j.logger.formatter = proc do |severity, datetime, progname, msg|
+      "#{datetime} [#{severity}]: #{msg}\n"
+    end
+    config.neo4j.pretty_logged_cypher_queries = true
   end
 end

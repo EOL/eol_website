@@ -1,0 +1,3 @@
+logs:
+  - name: test_log
+    file: /var/log/test.log 

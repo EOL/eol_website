@@ -1,5 +1,5 @@
-= paginate @grouped_data
+= paginate @search.grouped_data
 %ul.traits.traits-term-search
-  - pages.each do |page|
+  - @search.grouped_data.each do |page|
     = render :partial => "search/partial_search_result", :locals => { :result => page }
-= paginate @grouped_data
+= paginate @search.grouped_data

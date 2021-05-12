@@ -7,7 +7,7 @@
     - names.each do |name|
       - next if name.resource.nil?
       - formatted_names << page_resource_names_link(name, include_remarks)
-    - if include_rank && first.node.has_rank_treat_as?
+    - if include_rank && first.node&.has_rank_treat_as?
       = t(".name_recognized_by_w_rank", rank: t(".rank.#{first.node.rank_treat_as}"), by: formatted_names.to_sentence).html_safe
     - elsif include_status
       -# TODO: Update once taxonomic statuses are i18n-able

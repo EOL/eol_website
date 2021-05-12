@@ -49,6 +49,7 @@ config/deploy
 config/deploy.rb
 config/secrets.yml
 docker/resources/secrets.yml
+docker/resources/newrelic-infra.yml
 config/resque.yml
 config/systems/
 config/production.env

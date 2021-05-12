@@ -1,16 +1,16 @@
 .js-content
-  - if @lang_groups.length > 1 || @resources.length > 1
+  - if @locale_codes.length > 1 || @resources.length > 1
     .ui.menu.uk-text-small.js-menus
-      - if @lang_groups.length > 1
-        = render "filter_menu", selection: @lang_group == @all_lang_group ? nil : @lang_group, items: @lang_groups,
+      - if @locale_codes.length > 1
+        = render "filter_menu", selection: @locale_code == @all_locale_code ? nil : @locale_code, items: @locale_codes,
           to_name: lambda { |group| t("languages.#{group}") },
-          to_path: lambda { |group| page_articles_path(@page, lang_group: group, resource_id: @resource&.id) },
+          to_path: lambda { |group| page_articles_path(@page, locale_code: group, resource_id: @resource&.id) },
           no_selection_label: t("filters.filter_by_language"),
-          show_all_item: @all_lang_group
+          show_all_item: @all_locale_code
       - if @resources.length > 1
         = render "filter_menu", selection: @resource, items: @resources,
           to_name: lambda { |res| res.name},
-          to_path: lambda { |res| page_articles_path(@page, lang_group: @lang_group, resource_id: res&.id) },
+          to_path: lambda { |res| page_articles_path(@page, locale_code: @locale_code, resource_id: res&.id) },
           no_selection_label: t("filters.filter_by_provider"),
           show_all_item: nil
   .page-articles

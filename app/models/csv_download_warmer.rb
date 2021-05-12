@@ -28,7 +28,8 @@ class CsvDownloadWarmer
     end
 
     def warm_query(type, uri)
-      tq_params = { result_type: type, filters_attributes: [{ pred_uri: uri }] }
+      term = TermNode.find_by(uri: uri)
+      tq_params = { result_type: type, filters_attributes: [{ predicate_id: term.id }] }
       url = Rails.application.routes.url_helpers.term_search_results_url(:term_query => tq_params)
       begin
         Rails.logger.warn("[#{Time.now.strftime('%F %T')} WARM] Warming #{type} for #{uri}...")

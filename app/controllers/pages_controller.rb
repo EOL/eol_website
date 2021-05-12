@@ -12,7 +12,7 @@ class PagesController < ApplicationController
 
   helper :data
 
-  ALL_LANG_GROUP = "show_all"
+  ALL_LOCALE_CODE = "show_all"
   BATCH_LOOKUP_COLS = {
     "query" => -> (qs, page, url) { qs },
     "match" => -> (qs, page, url) { !page.nil? },
@@ -21,13 +21,20 @@ class PagesController < ApplicationController
     "page_url" => -> (qs, page, url) { url }
   }
   MIN_CLOUD_WORDS = 6
+  WORDCLOUD_PREDICATES = [TermNode.find_by_alias('habitat')]
+  TROPHIC_WEB_PREDICATES = [
+    TermNode.find_by_alias('eats'),
+    TermNode.find_by_alias('is_eaten_by'),
+    TermNode.find_by_alias('preys_on'),
+    TermNode.find_by_alias('preyed_upon_by')
+  ]
 
   HABITAT_CHART_BLACKLIST_IDS = Set.new([
     1,
     2913056,
     2908256
   ])
-
+  
   # See your environment config; this action should be ignored by logs.
   def ping
     if ActiveRecord::Base.connection.active?
@@ -125,9 +132,11 @@ class PagesController < ApplicationController
     set_noindex_if_needed(@page)
     @page.fix_non_image_hero # TEMP: remove me when this is no longer an issue.
     @page_title = @page.name
-    # get_media # NOTE: we're not *currently* showing them, but we will.
-    # TODO: we should really only load Associations if we need to:
-    @associations = build_associations(@page.data)
+    @key_data = @page.key_data    # get_media # NOTE: we're not *currently* showing them, but we will.
+    
+    # For autogen summary text
+    @associations = build_page_associations(@page)
+
     @page.associated_pages = @associations # needed for autogen text
     # Required mostly for paginating the first tab on the page (kaminari
     # doesn't know how to build the nested view...)
@@ -166,34 +175,28 @@ class PagesController < ApplicationController
 
   def data
     @page = PageDecorator.decorate(Page.with_hierarchy.find(params[:page_id]))
-    set_noindex_if_needed(@page)
-    @predicate = params[:predicate] ? @page.glossary[params[:predicate]] : nil
-    @resource = params[:resource_id] ? Resource.find(params[:resource_id]) : nil
-    @filter_predicates = []
+    @selected_resource = params[:resource_id] ? Resource.find(params[:resource_id]) : nil
+    @selected_predicate = params[:predicate_id] ?
+      TermNode.find(params[:predicate_id].to_i) :
+      nil
+    @traits_per_group = 5
+    grouped_trait_result = TraitBank::Page.grouped_traits_for_page(
+      @page, 
+      resource: @selected_resource, 
+      limit: @selected_predicate ? nil : @traits_per_group, 
+      selected_predicate: @selected_predicate
+    )
+    @grouped_data = grouped_trait_result[:grouped_traits]
+    @predicates = @grouped_data.keys.sort { |a, b| a.name <=> b.name }
+    @selected_predicates = @selected_predicate ? [@selected_predicate] : @predicates
     @page_title = t("page_titles.pages.data", page_name: @page.name)
-    @traits_per_pred = 5
+    @resources = @selected_predicate ? 
+      grouped_trait_result[:all_traits].map { |t| t.resource }.compact.sort { |a, b| a.name <=> b.name }.uniq :
+      Resource.where(id: @page.page_node.trait_resource_ids).order(:name)
 
-    if @predicate.nil?
-      @filtered_by_predicate = false
-      filtered_data = TraitBank.page_traits_by_pred(@page.id, limit: @traits_per_pred, resource_id: @resource&.id)
-    else
-      @filtered_by_predicate = true
-      filtered_data = TraitBank.all_page_traits_for_pred(@page.id, @predicate[:uri], resource_id: @resource&.id)
-    end
-
-    filter_resource_ids = TraitBank.page_trait_resource_ids(@page.id, pred_uri: @predicate ? @predicate[:uri] : nil)
-    @filter_resources = filter_resource_ids.any? ? Resource.where(id: filter_resource_ids).order(:name) : []
-    @filter_predicates= TraitBank.page_trait_predicates(@page.id, resource_id: @resource&.id).sort do |a, b|
-      TraitBank::Record.i18n_name(a) <=> TraitBank::Record.i18n_name(b)
-    end.uniq
-    @grouped_data = filtered_data.group_by { |t| t[:predicate][:uri] }
-    @predicates = @predicate ? [@predicate] : @page.sorted_predicates_for_records(filtered_data)
-    @resources = TraitBank.resources(filtered_data)
-
-    @associations = build_associations(@page.data)
     setup_viz
+    set_noindex_if_needed(@page)
 
-    return render(status: :not_found) unless @page # 404
     respond_to do |format|
       format.html do
         if request.xhr?
@@ -435,7 +438,6 @@ private
     @page = PageDecorator.decorate(Page.find(params[:page_id]))
     resource_id = params[:resource_id]
     @resource = resource_id.nil? ? nil : Resource.find(resource_id)
-    @lang_group = params[:lang_group]
     brief_summary_article_ids = @page.articles
       .joins("INNER JOIN content_sections ON content_sections.content_id = articles.id AND content_sections.content_type = 'Article'")
       .where("content_sections.section_id = ?", Section.brief_summary.id).pluck("articles.id")
@@ -446,67 +448,66 @@ private
     articles_with_resource = resource_id.nil? ?
       @articles :
       @articles.where({ resource_id: resource_id })
-    @lang_groups = Language
-      .where(id: articles_with_resource.pluck(:language_id).uniq)
-      .distinct
-      .order(:group)
-      .pluck(:group)
 
-    if @lang_group.nil?
+    @locale_codes = Locale.joins(:languages)
+      .where("languages.id IN (?)", articles_with_resource.pluck(:language_id).uniq)
+      .distinct
+      .order(:code)
+      .pluck(:code)
+
+    @locale_code = params[:locale_code]
+    if @locale_code.nil?
       # Only default the language for the initial page view, where no filters are set.
       # Expect XHR requests to have the language set explicitly.
-      if @resource.nil? && @lang_groups.include?(Language.cur_group)
-        @lang_group = Language.cur_group
+      if @resource.nil? && @locale_codes.include?(Locale.current.code)
+        @locale_code = Locale.current.code
       else
-        @lang_group = ALL_LANG_GROUP
+        @locale_code = ALL_LOCALE_CODE
       end
     end
 
-    lang_group_where =
-      if @lang_group == ALL_LANG_GROUP
+    locale_where =
+      if @locale_code == ALL_LOCALE_CODE
         nil
-      elsif @lang_group == Language.cur_group
-        "articles.language_id IS NULL OR languages.group = ?"
+      elsif @locale_code == Locale.current.code
+        "articles.language_id IS NULL OR locales.code = ?"
       else
-        "languages.group = ?"
+        "locales.code = ?"
       end
+
     # references is needed to force a LEFT OUTER JOIN here because of the string where condition (not a hash)
-    articles_with_lang_group = lang_group_where ?
-      @articles.references(:language).where(lang_group_where, @lang_group) :
+    @articles = locale_where ?
+      @articles.includes(language: :locale).where(locale_where, @locale_code).references(:locales) :
       @articles
+
     @resources = Resource
-      .where(id: articles_with_lang_group.pluck(:resource_id).uniq)
+      .where(id: @articles.pluck(:resource_id).uniq)
       .order(:name)
 
-    @articles = articles_with_lang_group if @lang_group != ALL_LANG_GROUP
     @articles = @articles.where({ resource_id: resource_id }) if !resource_id.nil?
-    orders = brief_summary_article_ids.any? ? ["articles.id IN (#{brief_summary_article_ids.join(",")})"] : []
+    orders = brief_summary_article_ids.any? ? ["articles.id IN (#{brief_summary_article_ids.join(",")}) DESC"] : []
     orders += [
       "resources.name",
       "articles.name IS NULL",
       "articles.name"
     ]
     @articles = @articles.unscope(:order).order(orders.join(", "))
-    @all_lang_group = ALL_LANG_GROUP
+    @all_locale_code = ALL_LOCALE_CODE
   end
 
   def setup_viz
     @show_wordcloud = false
     @show_trophic_web = false
-    pred_uri = @predicate&.[](:uri)
+    return if @selected_predicate.nil?
 
     if (
-      pred_uri &&
-      Eol::Uris.habitats_for_wordcloud.include?(pred_uri) &&
+      WORDCLOUD_PREDICATES.include?(@selected_predicate) &&
       @page.native_node.rank &&
       Rank.treat_as[@page.native_node.rank.treat_as] >= Rank.treat_as[:r_species]
     )
       setup_wordcloud
     elsif (
-      pred_uri == Eol::Uris.eats ||
-      pred_uri == Eol::Uris.is_eaten_by ||
-      pred_uri == Eol::Uris.preys_on ||
-      pred_uri == Eol::Uris.preyed_upon_by
+      TROPHIC_WEB_PREDICATES.include?(@selected_predicate)
     )
       setup_trophic_web
     end
@@ -514,7 +515,7 @@ private
 
   def setup_trophic_web
     @trophic_web_data = @page.pred_prey_comp_data(breadcrumb_type)
-    @show_trophic_web = true || @trophic_web_data[:nodes].length > 1
+    @show_trophic_web = @trophic_web_data[:nodes].length > 1
     @trophic_web_translations = {
       predator: I18n.t("pages.trophic_web.predator"),
       prey: I18n.t("pages.trophic_web.prey"),
@@ -528,33 +529,10 @@ private
   end
 
   def setup_wordcloud
-    word_counts = {}
+    wordcloud = Wordcloud.new(@page, TermNode.find_by_alias('habitat'))
 
-    # recs = is_higher_order ?
-    #   TraitBank.descendant_environments(@page) :
-    #   Eol::Uris.habitats_for_wordcloud.collect do |uri|
-    #     @page.grouped_data[uri]
-    #   end.flatten
-
-    recs = Eol::Uris.habitats_for_wordcloud.collect do |uri|
-      @page.grouped_data[uri] || []
-    end.flatten
-
-    recs.select do |rec|
-      rec[:object_term]
-    end.each do |rec|
-      name = TraitBank::Record.i18n_name(rec[:object_term])
-      cur_count = word_counts[name] || 0
-      word_counts[name] = cur_count + 1
-    end
-
-    if word_counts.length >= MIN_CLOUD_WORDS
-      @wordcloud_words = word_counts.entries.collect do |entry|
-        {
-          text: entry[0],
-          weight: entry[1]
-        }
-      end.to_json
+    if wordcloud.length > MIN_CLOUD_WORDS
+      @wordcloud_words = wordcloud.to_json
       @show_wordcloud = true
     end
   end
@@ -572,7 +550,7 @@ private
       clade: @page,
       result_type: :taxa,
       filters_attributes: [{
-        pred_uri: Eol::Uris.has_habitat
+        predicate_id: EolTerms.alias_hash('habitat')['eol_id']
       }]
     })
 

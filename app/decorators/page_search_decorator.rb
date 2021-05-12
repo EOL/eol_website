@@ -41,7 +41,7 @@ class PageSearchDecorator < SearchResultDecorator
   def top_resources
     [
       ["media", object.media_count],
-      ["data", TraitBank.count_by_page(object.id)],
+      ["data", TraitBank::Queries.count_by_page(object.id)],
       ["articles", object.articles_count],
     ].select { |x| x[1] > 0 }
   end

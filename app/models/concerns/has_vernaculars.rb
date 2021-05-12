@@ -11,13 +11,15 @@ module HasVernaculars
     end
   end
 
-  def vernacular(languages = nil)
+  def vernacular(options = {})
     vernacular_fk_field = self.class.vernacular_fk_field
     raise TypeError.new("must call set_vernacular_fk_field (e.g., :page_id from Page) first") if !vernacular_fk_field
 
-    languages ||= Language.english
+    locale = options[:locale] || Locale.current
+    fallbacks = options.fetch(:fallbacks, true)
+    languages = locale.languages
 
-    if preferred_vernaculars.loaded?
+    name = if preferred_vernaculars.loaded?
       Language.first_matching_record(languages, preferred_vernaculars)
     else
       if vernaculars.loaded?
@@ -27,5 +29,14 @@ module HasVernaculars
         Vernacular.where(vernacular_fk_field => id, :language => languages).preferred.first
       end
     end
+
+    if name.nil? && fallbacks
+      locale.fallbacks.each do |l|
+        fallback_name = vernacular(locale: l, fallbacks: false)
+        return fallback_name if fallback_name
+      end
+    end
+    
+    name
   end
 end

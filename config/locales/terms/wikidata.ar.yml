@@ -1,8 +1,8 @@
 ---
 ar:
   :term:
-    :name:
-      :by_uri:
+    name:
+      by_uri:
         https://www(dot)wikidata(dot)org/wiki/Q59099: عاشب
         https://www(dot)wikidata(dot)org/wiki/Q568916: تبييض الشعب المرجانية
         http://www(dot)wikidata(dot)org/entity/Q176381: جزيرة أداك
@@ -339,3 +339,265 @@ ar:
         https://www(dot)wikidata(dot)org/entity/Q1068172: ضغط الصوت
         https://www(dot)wikidata(dot)org/entity/Q591800: غبار التوازن
         https://www(dot)wikidata(dot)org/entity/Q7886: رئة
+    definition:
+      by_uri:
+        https://www(dot)wikidata(dot)org/wiki/Q59099: حيوالسلساة الغذائية لل
+        http://www(dot)wikidata(dot)org/entity/Q353908: تقع في كندا
+        http://www(dot)wikidata(dot)org/entity/Q379820: واد في سفالبارد، النرويج
+        http://www(dot)wikidata(dot)org/entity/Q797: أكبر ولاية امريكية مساحة ، تحولت
+          إلى ولاية عام 1959
+        https://www(dot)wikidata(dot)org/entity/Q797: أكبر ولاية امريكية مساحة ، تحولت
+          إلى ولاية عام 1959
+        http://www(dot)wikidata(dot)org/entity/Q60064: شبه جزيرة في ألاسكا، الولايات
+          المتحدة
+        https://www(dot)wikidata(dot)org/entity/Q37868: نباتات مائية
+        https://www(dot)wikidata(dot)org/entity/Q7486201: صفحة توضيح لويكيميديا
+        https://www(dot)wikidata(dot)org/entity/Q2841453: منطقة في البرازيل
+        http://www(dot)wikidata(dot)org/entity/Q460282: جزيرة بركانية
+        http://www(dot)wikidata(dot)org/entity/Q1974744: خليج في الأقاليم الشمالية
+          الغربية، كندا
+        http://www(dot)wikidata(dot)org/entity/Q305100: نهر
+        http://www(dot)wikidata(dot)org/entity/Q612981: نهر
+        http://www(dot)wikidata(dot)org/entity/Q1349878: بحيرة في كندا
+        http://www(dot)wikidata(dot)org/entity/Q12824780: شبه جزيرة في تركيا
+        https://www(dot)wikidata(dot)org/entity/Q1314: فصل من فصول السنة الأربعة في
+          المناطق المعتدلة، يقع بين فصلي الصيف والشتاء.
+        http://www(dot)wikidata(dot)org/entity/Q793085: بحيرة في كندا
+        https://www(dot)wikidata(dot)org/entity/Q10876: كائنات وحيدة الخلية
+        http://www(dot)wikidata(dot)org/entity/Q37040: خليج في كندا
+        https://www(dot)wikidata(dot)org/entity/Q37040: خليج في كندا
+        http://www(dot)wikidata(dot)org/entity/Q23522: مجموعة دول في جنوب شرق أوروبا
+        http://www(dot)wikidata(dot)org/entity/Q45823: بحر في النرويج
+        https://www(dot)wikidata(dot)org/entity/Q45823: بحر في النرويج
+        https://www(dot)wikidata(dot)org/entity/Q21951808: خليج في تاسمانيا، أستراليا
+        http://www(dot)wikidata(dot)org/entity/Q131274: بحر في كندا
+        https://www(dot)wikidata(dot)org/entity/Q131274: بحر في كندا
+        http://www(dot)wikidata(dot)org/entity/Q2295580: بحيرة في كندا
+        http://www(dot)wikidata(dot)org/entity/Q80338: منطقة تاريخية في الراج البريطاني
+        http://www(dot)wikidata(dot)org/entity/Q44725: بحر في الولايات المتحدة
+        https://www(dot)wikidata(dot)org/entity/Q44725: بحر في الولايات المتحدة
+        http://www(dot)wikidata(dot)org/entity/Q190927: بزرنجي
+        https://www(dot)wikidata(dot)org/entity/Q190927: بزرنجي
+        https://www(dot)wikidata(dot)org/entity/Q25368: طائفة من الرخويات
+        https://www(dot)wikidata(dot)org/entity/Q1479472: رتبة من القراصات
+        https://www(dot)wikidata(dot)org/entity/Q10874: مَرَضٌ بَشَرِيٌّ
+        http://www(dot)wikidata(dot)org/entity/Q890658: جبل في ألاسكا، الولايات المتحدة
+        http://www(dot)wikidata(dot)org/entity/Q893152: شبه جزيرة في نونافوت، كندا
+        http://www(dot)wikidata(dot)org/entity/Q917872: خليج في ألاسكا، الولايات المتحدة
+        https://www(dot)wikidata(dot)org/entity/Q59256: طائفة من الشوكيات
+        http://www(dot)wikidata(dot)org/entity/Q29993: شعبة عليا من النباتات
+        http://www(dot)wikidata(dot)org/entity/Q83533: شبه جزيرة في سفالبارد، النرويج
+        http://www(dot)wikidata(dot)org/entity/Q1011: دولة جزرية في غرب أفريقيا بالمحيط
+          الأطلسي
+        http://www(dot)wikidata(dot)org/entity/Q16: دولة في أمريكا الشمالية
+        https://www(dot)wikidata(dot)org/entity/Q16: دولة في أمريكا الشمالية
+        https://www(dot)wikidata(dot)org/entity/Q1011: دولة جزرية في غرب أفريقيا بالمحيط
+          الأطلسي
+        https://www(dot)wikidata(dot)org/entity/Q128257: طائفة من الرخويات
+        https://www(dot)wikidata(dot)org/entity/Q278512: منطقة سافانا استوائية في
+          البرازيل
+        http://www(dot)wikidata(dot)org/entity/Q955645: نهر في الولايات المتحدة الأمريكية
+        http://www(dot)wikidata(dot)org/entity/Q1251080: بحر في تشيلي
+        http://www(dot)wikidata(dot)org/entity/Q159252: بحر في روسيا
+        https://www(dot)wikidata(dot)org/entity/Q159252: بحر في روسيا
+        https://www(dot)wikidata(dot)org/entity/Q161258: جزيرة في فرنسا
+        https://www(dot)wikidata(dot)org/entity/Q25441: شعبة من الحيوانات
+        http://www(dot)wikidata(dot)org/entity/Q1113020: نهر في الولايات المتحدة الأمريكية
+        https://www(dot)wikidata(dot)org/entity/Q33666: طائفة من الشوكيات
+        https://www(dot)wikidata(dot)org/entity/Q25364: شعيبة من المفصليات
+        http://www(dot)wikidata(dot)org/entity/Q938327: خليج في قيكيقتالوك، كندا
+        https://www(dot)wikidata(dot)org/entity/Q25279: إحدى جزر البحر الكاريبي تابعة
+          لهولندا
+        http://www(dot)wikidata(dot)org/entity/Q189262: مجرى مائي في كندا
+        https://www(dot)wikidata(dot)org/entity/Q189262: مجرى مائي في كندا
+        https://www(dot)wikidata(dot)org/entity/Q4610: رتبة من القشريات
+        http://www(dot)wikidata(dot)org/entity/Q974: دولة في وسط افريقيا
+        https://www(dot)wikidata(dot)org/entity/Q974: دولة في وسط افريقيا
+        http://www(dot)wikidata(dot)org/entity/Q152058: مضيق المحيط بين جرينلاند إلى
+          الشمال الغربي وأيسلندا إلى الجنوب الشرقي
+        https://www(dot)wikidata(dot)org/entity/Q162678: طائفة من الدياتوم
+        https://www(dot)wikidata(dot)org/entity/Q184503: الحيوان الذي يسير على أصابعه
+          أو أصابع قدمه
+        http://www(dot)wikidata(dot)org/entity/Q1135227: خليج في جرينلاند
+        https://www(dot)wikidata(dot)org/entity/Q1135227: خليج في جرينلاند
+        http://www(dot)wikidata(dot)org/entity/Q163434: بحر في روسيا
+        https://www(dot)wikidata(dot)org/entity/Q163434: بحر في روسيا
+        https://www(dot)wikidata(dot)org/entity/Q574: دولة في جنوب شرق آسيا
+        https://www(dot)wikidata(dot)org/entity/Q795077: منطقة في نيو برونزويك، كندا
+        http://www(dot)wikidata(dot)org/entity/Q186198: النصف الشرقي من الكرة الأرضية
+        https://www(dot)wikidata(dot)org/entity/Q186198: النصف الشرقي من الكرة الأرضية
+        http://www(dot)wikidata(dot)org/entity/Q1191996: منطقة في روسيا
+        https://www(dot)wikidata(dot)org/entity/Q1191996: منطقة في روسيا
+        http://www(dot)wikidata(dot)org/entity/Q736: دولة في أمريكا الجنوبية
+        https://www(dot)wikidata(dot)org/entity/Q128685: رتبة من الأسماك
+        http://www(dot)wikidata(dot)org/entity/Q3049132: نهر في الولايات المتحدة الأمريكية
+        https://www(dot)wikidata(dot)org/entity/Q194257: طويئفة من الأسماك
+        http://www(dot)wikidata(dot)org/entity/Q324541: جزيرة في آيسلندا
+        https://www(dot)wikidata(dot)org/entity/Q1050: دولة في أفريقيا الجنوبية محاطة
+          بدولة جنوب أفريقيا
+        http://www(dot)wikidata(dot)org/entity/Q34589: نهر في آسيا
+        http://www(dot)wikidata(dot)org/entity/Q5401: كتلة أرضية مكونة من قارتي أوروبا
+          و آسيا
+        http://www(dot)wikidata(dot)org/entity/Q875134: منطقة جيوسياسية
+        https://www(dot)wikidata(dot)org/entity/Q875134: منطقة جيوسياسية
+        http://www(dot)wikidata(dot)org/entity/Q702: دولة جزرية في غرب المحيط الهادئ
+        http://www(dot)wikidata(dot)org/entity/Q604496: منطقة في النرويج
+        https://www(dot)wikidata(dot)org/entity/Q604496: منطقة في النرويج
+        http://www(dot)wikidata(dot)org/entity/Q1427332: جزيرة في آيسلندا
+        http://www(dot)wikidata(dot)org/entity/Q617573: الحيوانات التي تأكل اوراق
+          النباتات
+        https://www(dot)wikidata(dot)org/entity/Q2095: مايستخدمه الكائن الحي لأجل
+          استمرار حياته
+        http://www(dot)wikidata(dot)org/entity/Q845217: خليج في نونافوت، كندا
+        https://www(dot)wikidata(dot)org/entity/Q845217: خليج في نونافوت، كندا
+        http://www(dot)wikidata(dot)org/entity/Q185018: أرخبيل في المحيط المتجمد الشمالي
+          تابعة لروسيا
+        https://www(dot)wikidata(dot)org/entity/Q185018: أرخبيل في المحيط المتجمد
+          الشمالي تابعة لروسيا
+        https://www(dot)wikidata(dot)org/entity/Q1999990: شكل من الشعاب المرجانية
+        http://www(dot)wikidata(dot)org/entity/Q1470764: كائن حي يأكل الفاكهة
+        https://www(dot)wikidata(dot)org/entity/Q764: كائن حقيقي النوى
+        http://www(dot)wikidata(dot)org/entity/Q223: إقليم تابع لمملكة الدنمارك.
+        https://www(dot)wikidata(dot)org/entity/Q223: إقليم تابع لمملكة الدنمارك.
+        http://www(dot)wikidata(dot)org/entity/Q132868: بحر في جرينلاند، مملكة الدنمارك
+        https://www(dot)wikidata(dot)org/entity/Q132868: بحر في جرينلاند، مملكة الدنمارك
+        http://www(dot)wikidata(dot)org/entity/Q208807: الارتفاعات الأعلى على درع
+          جويانا
+        http://www(dot)wikidata(dot)org/entity/Q601056: شبه جزيرة في روسيا
+        https://www(dot)wikidata(dot)org/entity/Q601056: شبه جزيرة في روسيا
+        https://www(dot)wikidata(dot)org/entity/Q75713: كائن حي
+        https://www(dot)wikidata(dot)org/entity/Q190903: نبات ليس له جذع خشبي ثابت
+          فوق سطح الأرض
+        http://www(dot)wikidata(dot)org/entity/Q59099: حيوالسلساة الغذائية لل
+        https://www(dot)wikidata(dot)org/entity/Q59099: حيوالسلساة الغذائية لل
+        https://www(dot)wikidata(dot)org/entity/Q1329239: فصيلة من المفصليات
+        http://www(dot)wikidata(dot)org/entity/Q3040: أكبر خليج في كندا
+        https://www(dot)wikidata(dot)org/entity/Q3040: أكبر خليج في كندا
+        http://www(dot)wikidata(dot)org/entity/Q189: إحدى الدول الإسكندنافية الجزرية
+          الواقعة في شمال أوروبا
+        https://www(dot)wikidata(dot)org/entity/Q189: إحدى الدول الإسكندنافية الجزرية
+          الواقعة في شمال أوروبا
+        http://www(dot)wikidata(dot)org/entity/Q3148353: نهر في الولايات المتحدة الأمريكية
+        http://www(dot)wikidata(dot)org/entity/Q677088: فصيلة حيوانية
+        https://www(dot)wikidata(dot)org/entity/Q1390: صور الحشرات
+        http://www(dot)wikidata(dot)org/entity/Q1008: دولة في غرب أفريقيا
+        https://www(dot)wikidata(dot)org/entity/Q237034: جزيرة في فرنسا
+        http://www(dot)wikidata(dot)org/entity/Q3192622: نهر في الولايات المتحدة الأمريكية
+        https://www(dot)wikidata(dot)org/entity/Q819967: شبه جزيرة في روسيا
+        http://www(dot)wikidata(dot)org/entity/Q33629: بحر في روسيا
+        https://www(dot)wikidata(dot)org/entity/Q33629: بحر في روسيا
+        http://www(dot)wikidata(dot)org/entity/Q22536468: بحيرة في كندا
+        https://www(dot)wikidata(dot)org/entity/Q165608: شبه جزيرة في أوبلاست مورمانسك،
+          روسيا
+        https://www(dot)wikidata(dot)org/entity/Q1774112: منطقة في روسيا
+        http://www(dot)wikidata(dot)org/entity/Q18097: منطقة في مملكة جوسون
+        http://www(dot)wikidata(dot)org/entity/Q943234: خليج في الولايات المتحدة
+        http://www(dot)wikidata(dot)org/entity/Q380307: منطقة في نيوفندلاند ولابرادور،
+          كندا
+        https://www(dot)wikidata(dot)org/entity/Q380307: منطقة في نيوفندلاند ولابرادور،
+          كندا
+        http://www(dot)wikidata(dot)org/entity/Q212051: بحيرة في آيسلندا
+        http://www(dot)wikidata(dot)org/entity/Q7988: بحر في روسيا
+        http://www(dot)wikidata(dot)org/entity/Q105472: منطقة في إسبانيا
+        http://www(dot)wikidata(dot)org/entity/Q3110238: جزيرة في فرنسا
+        https://www(dot)wikidata(dot)org/entity/Q702: دولة جزرية في غرب المحيط الهادئ
+        https://www(dot)wikidata(dot)org/entity/Q39833: مجموعة واسعة من الأحياء التي
+          لا تُرى بالعين المجردة
+        https://www(dot)wikidata(dot)org/entity/Q25326: شعبة من الحيونات
+        http://www(dot)wikidata(dot)org/entity/Q836: دولة في جنوب شرق آسيا
+        https://www(dot)wikidata(dot)org/entity/Q836: دولة في جنوب شرق آسيا
+        https://www(dot)wikidata(dot)org/entity/Q148554: متحف وطني أمريكي للتاريخ
+          الطبيعي
+        http://www(dot)wikidata(dot)org/entity/Q48335: جزيرة تقع أقصى شرق كندا
+        http://www(dot)wikidata(dot)org/entity/Q309179: السلوك المعنى بنشاط الكائن
+          الحي فترة الليل
+        https://www(dot)wikidata(dot)org/entity/Q39061: نصف الكرة الأرضية الشمالي
+        http://www(dot)wikidata(dot)org/entity/Q20: إحدى الدول الإسكندنافية الواقعة
+          في شمال أوروبا
+        https://www(dot)wikidata(dot)org/entity/Q20: إحدى الدول الإسكندنافية الواقعة
+          في شمال أوروبا
+        http://www(dot)wikidata(dot)org/entity/Q47545: بحر في النرويج
+        https://www(dot)wikidata(dot)org/entity/Q80413: أرخبيل في المحيط المتجمد الشمالي
+          في شمال روسيا
+        http://www(dot)wikidata(dot)org/entity/Q2004598: نهر في الولايات المتحدة الأمريكية
+        http://www(dot)wikidata(dot)org/entity/Q2023: إقليم كندي
+        https://www(dot)wikidata(dot)org/entity/Q2023: إقليم كندي
+        https://www(dot)wikidata(dot)org/entity/Q1025881: قرية في روسيا
+        https://www(dot)wikidata(dot)org/entity/Q184382: سهل في الأرجنتين
+        https://www(dot)wikidata(dot)org/entity/Q157603: سهل في البرازيل
+        https://www(dot)wikidata(dot)org/entity/Q217501: بحر في روسيا
+        http://www(dot)wikidata(dot)org/entity/Q1343019: رأس في الولايات المتحدة الأمريكية
+        https://www(dot)wikidata(dot)org/entity/Q60670: صفحة توضيح لويكيميديا
+        https://www(dot)wikidata(dot)org/entity/Q18952: طائفة من شعبة الحلقيات
+        http://www(dot)wikidata(dot)org/entity/Q1075070: نهر في روسيا
+        http://www(dot)wikidata(dot)org/entity/Q284603: نهر في أمريكا الشمالية
+        https://www(dot)wikidata(dot)org/entity/Q25257: ناتج لتكثف بخار الماء الجوي
+          والذي يسقط بتأثير الجاذبية
+        https://www(dot)wikidata(dot)org/entity/Q170430: العلم
+        https://www(dot)wikidata(dot)org/entity/Q207925: جزيرة في كندا
+        https://www(dot)wikidata(dot)org/entity/Q1008: دولة في غرب أفريقيا
+        https://www(dot)wikidata(dot)org/entity/Q105472: منطقة في إسبانيا
+        https://www(dot)wikidata(dot)org/entity/Q736: دولة في أمريكا الجنوبية
+        http://www(dot)wikidata(dot)org/entity/Q176: مقاطعة كندية لغتها الرسمية( الفرنسية
+          )
+        http://www(dot)wikidata(dot)org/entity/Q2122604: خليج في نونافوت، كندا
+        http://www(dot)wikidata(dot)org/entity/Q22369615: مجرى مائي في كندا
+        http://www(dot)wikidata(dot)org/entity/Q159: دولة تقع في شمال أوراسيا
+        https://www(dot)wikidata(dot)org/entity/Q159: دولة تقع في شمال أوراسيا
+        http://www(dot)wikidata(dot)org/entity/Q760: دولة جزرية في منطقة البحر الكاريبي
+        https://www(dot)wikidata(dot)org/entity/Q760: دولة جزرية في منطقة البحر الكاريبي
+        http://www(dot)wikidata(dot)org/entity/Q21195: إحدى الدول الإسكندنافية الواقعة
+          في شمال أوروبا
+        https://www(dot)wikidata(dot)org/entity/Q21195: إحدى الدول الإسكندنافية الواقعة
+          في شمال أوروبا
+        http://www(dot)wikidata(dot)org/entity/Q172867: حيوان يتغذى على الكائنات الميتة.
+        https://www(dot)wikidata(dot)org/entity/Q127470: طائفة من الشوكيات
+        https://www(dot)wikidata(dot)org/entity/Q83483: طائفة من الشوكيات
+        http://www(dot)wikidata(dot)org/entity/Q971586: شبه جزيرة في ألاسكا، الولايات
+          المتحدة
+        http://www(dot)wikidata(dot)org/entity/Q2277693: نهر في الولايات المتحدة الأمريكية
+        http://www(dot)wikidata(dot)org/entity/Q1668640: مضيق في الولايات المتحدة
+        http://www(dot)wikidata(dot)org/entity/Q5428: منطقة جغرافية تقع شمال آسيا
+          وشرق روسيا
+        https://www(dot)wikidata(dot)org/entity/Q5428: منطقة جغرافية تقع شمال آسيا
+          وشرق روسيا
+        http://www(dot)wikidata(dot)org/entity/Q1773645: قناة بحرية في النرويج
+        https://www(dot)wikidata(dot)org/entity/Q3711325: توضيح مفهوم السرعة
+        https://www(dot)wikidata(dot)org/entity/Q18960: شعبة من الحيوانات
+        http://www(dot)wikidata(dot)org/entity/Q1312: فصل من الفصول الأربعة للمناطق
+          المعتدلة، يقع بين الشتاء والصيف
+        https://www(dot)wikidata(dot)org/entity/Q25349: طائفة من نجوم البحر
+        https://www(dot)wikidata(dot)org/entity/Q5824490: صفحة توضيح لويكيميديا
+        http://www(dot)wikidata(dot)org/entity/Q1313: فصل من فصول السنة الأربعة في
+          المناطق المعتدلة، يقع بين فصلي الربيع والخريف
+        http://www(dot)wikidata(dot)org/entity/Q37056: شبه جزيرة في كراسنويارسك كراي،
+          روسيا
+        https://www(dot)wikidata(dot)org/entity/Q37056: شبه جزيرة في كراسنويارسك كراي،
+          روسيا
+        http://www(dot)wikidata(dot)org/entity/Q3646270: نهر في تشيلي
+        https://www(dot)wikidata(dot)org/entity/Q19159: طائفة فائقة من الفقاريات الأربعة
+          الأولى وذريتها
+        http://www(dot)wikidata(dot)org/entity/Q869: دولة في جنوب شرق آسيا
+        https://www(dot)wikidata(dot)org/entity/Q869: دولة في جنوب شرق آسيا
+        http://www(dot)wikidata(dot)org/entity/Q574: دولة في جنوب شرق آسيا
+        http://www(dot)wikidata(dot)org/entity/Q22540861: شبه جزيرة في الأقاليم الشمالية
+          الغربية، كندا
+        https://www(dot)wikidata(dot)org/entity/Q43262: مجال حيوي تقل فيه الأشجار
+          بسبب الحرارة المنخفضة ويقع عند الدوائر القطبية
+        http://www(dot)wikidata(dot)org/entity/Q1315785: منطقة جغرافية في آسيا الوسطى
+        http://www(dot)wikidata(dot)org/entity/Q84127: شبه جزيرة كندية
+        https://www(dot)wikidata(dot)org/entity/Q84127: شبه جزيرة كندية
+        https://www(dot)wikidata(dot)org/entity/Q30: دولة في أمريكا الشمالية
+        http://www(dot)wikidata(dot)org/entity/Q30: دولة في أمريكا الشمالية
+        http://www(dot)wikidata(dot)org/entity/Q1322976: منطقة جغرافية في روسيا تمتد
+          بين سهول أوروبا الشرقية وغرب سيبيريا .
+        https://www(dot)wikidata(dot)org/entity/Q1322976: منطقة جغرافية في روسيا تمتد
+          بين سهول أوروبا الشرقية وغرب سيبيريا .
+        https://www(dot)wikidata(dot)org/entity/Q1145847: منطقة في كندا
+        https://www(dot)wikidata(dot)org/entity/Q44133: بحر في روسيا
+        http://www(dot)wikidata(dot)org/entity/Q1311: واحد من الفصول الأربعة في المنطقة
+          المعتدلة، يقع بين الخريف والربيع، ويتميز ببرودة الجو والهطول.
+        https://www(dot)wikidata(dot)org/entity/Q488266: شبه جزيرة في روسيا
+        https://www(dot)wikidata(dot)org/entity/Q78861: نهر في روسيا
+        https://www(dot)wikidata(dot)org/entity/Q954: دولة في جنوب شرق أفريقيا
+        https://www(dot)wikidata(dot)org/entity/Q7886: عضو في الجسم

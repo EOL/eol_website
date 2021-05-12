@@ -6,7 +6,7 @@
 # Author: Saederup92
 ---
 da:
-  language_name: Engelsk
+  language_name: Dansk
   account_already_linked: din konto er allerede forbundet til EOL
   account_not_linked: din konto er ikke forbundet til EOL
   advanced: avanceret
@@ -32,6 +32,8 @@ da:
   classifications:
     children:
       see_more: se mere
+    hierarchies:
+      this_page: (denne side)
     richness:
       articles_count: artikler
       maps_count: kort
@@ -54,12 +56,18 @@ da:
       edit: rediger
     collection_type:
       gallery: galleri
+    search:
+      submit: søg
+    sort:
+      position: dato tilføjet
   content_attributions_labels:
     altitude: højde
     latitude: breddegrad
+    license: licens
     longitude: længdegrad
     owner: ophavsret
     photographer: fotograf
+    publisher: udgiver
     project: projekt
     source: kilde
     view_source_page_link: gå til kilde
@@ -75,6 +83,7 @@ da:
     eol_info:
       contact_us: Kontakt os
       donate: Donér
+      education: Uddannelse
       help: Hjælp
       what_is_eol: Hvad er EOL?
     discover:
@@ -104,45 +113,67 @@ da:
   forgot_your_password: Glemt din adgangskode?
   language: Sprog
   languages:
-    none: Ikke angivet
+    sq: Albansk
     ar: Arabisk
-    bg: Bulgarsk
     bs: Bosnisk
+    bg: Bulgarsk
+    zh: Kinesisk
+    chi: Kinesisk
+    hr: Kroatisk
     da: Dansk
-    de: Tysk
     en: Engelsk
     fi: Finsk
+    fin: Finsk
     fr: Fransk
+    fra: Fransk
+    de: Tysk
+    deu: Tysk
+    gre: Græsk
+    heb: Hebraisk
     hi: Hindi
-    hr: Kroatisk
     hu: Ungarsk
     id: Indonesisk
     ja: Japansk
     ko: Koreansk
+    kor: Koreansk
     ku: Kurdisk
     la: Latin
     "no": Norsk
+    nno: Norsk
+    nob: Norsk
+    nor: Norsk
     pl: Polsk
+    pol: Polsk
     ru: Russisk
+    rus: Russisk
     sa: Sanskrit
     sk: Slovakisk
     sl: Slovensk
-    sq: Albansk
-    sv: Svensk
+    slv: Spansk
     sw: Swahili
+    sv: Svensk
+    swe: Svensk
+    tur: Tyrkisk
     uk: Ukrainsk
+    none: Ikke angivet
     vi: Vietnamesisk
-    zh: Kinesisk
   maps:
     empty: Der er ingen kort at vise for denne side.
   medium:
     untitled:
+      image: Unavngivet billede
+      image_of: Billede af %{page_name}
+      video: Unavngivet video
       video_of: Video af %{page_name}
+      sound: Unavngivet lyd
+      sound_of: Lyd af %{page_name}
+      map: Unavngivet kort
+      map_of: Kort over %{page_name}
     subclasses:
       image: billede
       video: video
       sound: lyd
-      map: kort
+      map_image: kort
   medium_header_title: 'Titel:'
   medium_header_description: 'Beskrivelse:'
   nav:
@@ -191,6 +222,7 @@ da:
   scientific_name:
     status_title:
       synonym: Synonymer
+  scientific_names_header: Videnskabelige navne
   send_me_reset_password_instructions: Send mig info om nulstilling af adgangskode
   search_results:
     medium_article: Artikel
@@ -236,6 +268,7 @@ da:
       text: påkrævet
     labels:
       defaults:
+        email: E-mail
         password: Adgangskode
         remember_me: Husk mig
         username: Brugernavn
@@ -246,23 +279,22 @@ da:
     scientific_names: navne
     users: brugere
     references: referencer
-  support:
-    array:
-      words_connector: ','
-      two_words_connector: og
-  term:
-    actions:
-      sort: sorter efter
-    edit:
-      submit: Gem
-    fields:
-      name: 'navn:'
-    pagination:
-      next: næste side
-      previous: forrige side
   terms:
     scientific_name: videnskabeligt navn
     source: kilde
+  traits:
+    properties:
+      source: Kilde
+    search:
+      filter_display:
+        obj_only: 'med værdien: %{obj}'
+      new_search: ny søgning
+      select:
+        top_level:
+          object_term: eller vælg en værdi
+    search_form:
+      target_group: målgruppe (f.eks. laks)
+      value: værdi
   user:
     form_labels:
       age_confirm: Jeg er mindst 13 år gammel
@@ -273,4 +305,69 @@ da:
     username: brugernavn
     update: Opdater
   vernacular_names_header: Almindelige navne
+  term:
+    actions:
+      sort: sorter efter
+    edit:
+      submit: Gem
+    fields:
+      name: 'navn:'
+    pagination:
+      next: næste side
+      previous: forrige side
+    name:
+      by_uri:
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001709: område
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000091: strand
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: sort
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000318: blå
+        http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: kropslængde
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: brun
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000395: kanal
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002982: ler
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000015: cm
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000014: farve
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000033: dage
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000185: grader
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: spiser
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000970: øjne
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: hurtig
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000022: fjer
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000174: skov
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000873: ferskvand
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009001: frugt
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000850: frugttype
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00003076: lim
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000018: grus
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: grøn
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000463: havn
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: hjerteformet
+        http://semanticscience(dot)org/resource/SIO_000040: højde
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000277: is
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: stor
+        http://semanticscience(dot)org/resource/SIO_000041: længde
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000035: måneder
+        http://purl(dot)bioontology(dot)org/ontology/SNOMEDCT/260413007: ingen
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: orange
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000187: procent
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: lilla
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000322: rød
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_02000045: rødt ler
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000253: flod
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009005: rødder
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009010: frø
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: form
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000117: størrelse
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0004288: skelet
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: langsom
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000587: lille
+        http://purl(dot)obolibrary(dot)org/obo/VT_0002758: længde på hale
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0001091: tænder
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900033: træ
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_02000052: paraply
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002619: besøgt af
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: hvid
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000036: år
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000324: gul
+        http://eol(dot)org/schema/terms/yes: ja
 ...

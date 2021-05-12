@@ -10,8 +10,8 @@ class PageDecorator
         MATCHER = PageDecorator::BriefSummary::ObjUriGroupMatcher.new({
           type: :species_of_x, 
           uris: [
-            Eol::Uris.tree,
-            Eol::Uris.shrub
+            EolTerms.alias_uri('tree'),
+            EolTerms.alias_uri('shrub')
           ]
         }, {
           type: :species_of_lifecycle_x,

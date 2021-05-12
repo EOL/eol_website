@@ -21,7 +21,7 @@
     }
 
     $.ajax({
-      method: 'GET',
+      method: 'POST',
       data: $.param(data),
       url: Routes.term_search_form_path(),
       success: function(res) {
@@ -81,8 +81,8 @@
       });
     });
 
-    $('.js-meta-obj-typeahead').each(function() {
-      buildTypeahead(this, {}, {
+    $('.js-meta-object-typeahead').each(function() {
+      buildTypeahead(this, { minLength: 0 }, {
         name: 'meta-obj-names',
         display: 'name',
         limit: Infinity,
@@ -92,13 +92,13 @@
           remote: {
             url: Routes.terms_meta_object_terms_path({ 
               query: 'QUERY',
-              pred: $(this).data('pred'),
+              meta_predicate: $(this).data('metaPredicate'),
               format: 'json'
             }),
             wildcard: 'QUERY'
           }
         })
-      }, 'uri', fetchForm)
+      }, 'id', fetchForm)
     });
 
   }
@@ -133,21 +133,21 @@
       }
     });
 
-    buildTypeahead('.js-pred-typeahead', { minLength: 0 }, {
+    buildTypeahead('.js-predicate-typeahead', { minLength: 0 }, {
       name: 'pred-names',
       display: 'name',
       limit: Infinity,
       source: predSource
-    }, 'uri', fetchForm);
+    }, 'id', fetchForm);
 
-    $('.js-pred-obj-typeahead').each(function() {
+    $('.js-object-term-for-predicate-typeahead').each(function() {
       var source = new Bloodhound({
         datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
         queryTokenizer: Bloodhound.tokenizers.whitespace,
         remote: {
           url: Routes.terms_object_terms_for_predicate_path({ 
             query: 'QUERY',
-            pred_uri: $(this).data('predUri'),
+            predicate_id: $(this).data('predicateId'),
             format: 'json'
           }),
           wildcard: 'QUERY'
@@ -160,23 +160,23 @@
         source: source,
         minLength: 0,
         limit: Infinity
-      }, 'uri', null)
+      }, 'id', null)
     });
 
 
-    buildTypeahead('.js-obj-typeahead', {}, {
+    buildTypeahead('.js-object-term-typeahead', {}, {
       name: 'obj-names',
       display: 'name',
       limit: Infinity,
       source: EOL.searchObjectTerms
-    }, 'uri', fetchForm);
+    }, 'id', fetchForm);
 
-    buildTypeahead('.js-resource-typeahead', {}, {
+    buildTypeahead('.js-resource-typeahead', { minLength: 0 }, {
       name: 'resource',
       display: 'name',
       limit: Infinity,
       source: EOL.searchResources
-    }, 'id', null);
+    }, 'id', fetchForm);
 
     $('.js-add-filter').click(function(e) {
       e.preventDefault();
@@ -220,7 +220,7 @@
         if ($prev.val()) {
           setValFromTermSelect($filterGroup, $prev);
         } else {
-          setTermVal($filterGroup, $filterGroup.find('.js-top-term-uri').val()); 
+          setTermVal($filterGroup, $filterGroup.find('.js-top-term-id').val()); 
         }
       } 
 
@@ -232,8 +232,8 @@
     setTermVal($filterGroup, $select.val());
   }
 
-  function setTermVal($filterGroup, uri) {
-    $filterGroup.find('.js-term-uri').val(uri);
+  function setTermVal($filterGroup, id) {
+    $filterGroup.find('.js-term-id').val(id);
   }
 
   function loadPieChart() {
@@ -268,12 +268,6 @@
     $('.js-edit-filters').click(function() {
       $('.js-filter-form-contain').removeClass('is-hidden');
       $('.js-filter-list').addClass('is-hidden');
-    });
-    $('.js-download-tsv').click(function() {
-      var $form = $('.js-filter-form');
-      // XXX: this is scary but shouldn't matter in practice since the submit is synchronous and the form will be gone after that
-      $form.attr('action', $(this).data('url'));
-      $form.submit();
     });
     $('.show-raw-query').click(function() {
       $('.js-raw-query').removeClass('is-hidden');

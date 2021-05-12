@@ -1,15 +1,15 @@
 .js-content
   .ui.menu.uk-text-small.js-menus.page-filters
-    - if @predicate || @filter_predicates.length > 1
-      = render "filter_menu", selection: @predicate, items: @filter_predicates,
-        to_name: lambda { |predicate| i18n_term_name(predicate) },
-        to_path: lambda { |predicate| page_data_path(page_id: @page.id, predicate: predicate&.[](:uri), resource_id: @resource&.id) },
+    - if @selected_predicate || @predicates.length > 1
+      = render "filter_menu", selection: @selected_predicate, items: @predicates,
+        to_name: lambda { |g| g.name },
+        to_path: lambda { |g| page_data_path(page_id: @page.id, predicate_id: g&.id, resource_id: @selected_resource&.id) },
         no_selection_label: t("filters.filter_by_attribute"),
         show_all_item: nil
-    - if @resource || @filter_resources.length > 1
-      = render "filter_menu", selection: @resource, items: @filter_resources,
+    - if @selected_resource || @resources.length > 1
+      = render "filter_menu", selection: @selected_resource, items: @resources,
         to_name: lambda { |resource| resource.name },
-        to_path: lambda { |resource| page_data_path(page_id: @page.id, resource_id: resource&.id, predicate: @predicate&.[](:uri)) },
+        to_path: lambda { |resource| page_data_path(page_id: @page.id, resource_id: resource&.id, predicate_id: @selected_predicate&.id) },
         no_selection_label: t("filters.filter_by_provider"),
         show_all_item: nil
 
@@ -19,17 +19,18 @@
     - if @show_trophic_web
       = render "trophic_web", data: @trophic_web_data, translations: @trophic_web_translations
     %ul.traits
-      - @predicates.each do |predicate|
-        - name = TraitBank::Record.i18n_name(predicate)
-        - pred_data = @grouped_data[predicate[:uri]]
-        - trait_count_for_pred = pred_data.first[:trait_count]
+      - @selected_predicates.each do |p|
+        - name = p.name
+        - group_data = @grouped_data[p]
+        - traits = group_data.traits
+        - trait_count_for_group = group_data.count
         - if !@filtered_by_predicate
           .data-section-head
             %div
             %h3= name
             .data-section-head-more
-              - if trait_count_for_pred.present? && @traits_per_pred < trait_count_for_pred
-                = link_to(t(".n_hidden_show_all_noname", count: trait_count_for_pred - @traits_per_pred), page_data_path(page_id: @page.id, predicate: predicate[:uri]))
-        - pred_data.each do |trait|
-          = render :partial => "traits/data_row", :locals => { :page => @page, :trait => trait, :show_taxon => false, :hide_pred_when_closed => !@filtered_by_predicate }
+              - if @selected_predicate.nil? && trait_count_for_group.present? && @traits_per_group < trait_count_for_group
+                = link_to(t(".n_hidden_show_all_noname", count: trait_count_for_group - @traits_per_group), page_data_path(page_id: @page.id, predicate_id: p.id))
+        - traits.each do |trait|
+          = render :partial => "traits/data_row", :locals => { :page => @page, :trait => trait, :show_taxon => false, :hide_pred_when_closed => true, :page_is_assoc_obj => p.inverse_only? }
 

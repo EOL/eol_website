@@ -67,7 +67,10 @@
       data: data,
       processData: false,
       contentType: false,
-      success: onSuccess
+      success: onSuccess,
+      error: (jqXHR, textStatus, errorThrown) => {
+        alert(`Failed to upload image.\nError:${errorThrown}`);
+      }
     })
   }
 

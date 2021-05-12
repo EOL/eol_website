@@ -1,7 +1,7 @@
-= paginate @grouped_data
+= paginate @search.grouped_data
 
 .ts-gallery.uk-grid-small{ uk: { grid: true } }
-  - pages.each do |page|
+  - @search.grouped_data.each do |page|
     %div
       .uk-card.uk-card-default.ts-gallery-card
         = link_to page, class: "uk-link-reset ts-gallery-card-link" do
@@ -12,4 +12,4 @@
               %span{ uk: { icon: "image" }}
           .uk-overlay.uk-overlay-primary.uk-position-bottom.uk-padding-small= CGI.unescapeHTML(page.title).html_safe
 
-= paginate @grouped_data
+= paginate @search.grouped_data

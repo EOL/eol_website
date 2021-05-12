@@ -85,9 +85,9 @@ Rails.application.routes.draw do
     end
     resources :open_authentications, only: [:new, :create]
     resources :page_icons, only: [:create]
+    get 'resources/by_abbr/:abbr' => "resources#by_abbr"
     resources :resources, only: [:index, :show] do
       get 'clear_publishing', on: :collection
-      get 'sync', on: :collection
       get 'republish'
       get 'reindex'
       get 'fix_no_names'
@@ -106,7 +106,7 @@ Rails.application.routes.draw do
       resources :home_page_feed_items, :as => "items", :only => [:index, :new, :edit, :create, :update, :destroy]
     end
 
-    resources :term_nodes, only: :show, constraints: { id: /http.*/ }
+    resources :term_nodes, only: :show
 
     get "/gbif_downloads/create" => "gbif_downloads#create"
 
@@ -189,16 +189,19 @@ Rails.application.routes.draw do
 
     post "/collected_pages_media" => "collected_pages_media#destroy", :as => "destroy_collected_pages_medium"
 
-    get "/terms/:uri" => "traits#show", :as => "term_records", :constraints => { :uri => /http.*/ }
+    get "/terms/:uri" => "traits#show", :constraints => { :uri => /http.*/ }
     get "/terms/search" => "traits#search", :as => "term_search"
+    post "/terms/search_results" => "traits#create_search"
     get "/terms/search_results" => "traits#search_results", :as => "term_search_results"
-    get "/terms/search_form" => "traits#search_form", :as => "term_search_form"
+    post "/terms/search_form" => "traits#search_form", :as => "term_search_form"
 
     namespace :traits do
       get "/data_viz/pie" => "data_viz#pie"
       get "/data_viz/bar" => "data_viz#bar"
       get "/data_viz/hist" => "data_viz#hist"
       get "/data_viz/sankey" => "data_viz#sankey"
+      get "/data_viz/assoc" => "data_viz#assoc"
+      get "/data_viz/taxon_summary" => "data_viz#taxon_summary"
     end
 
     namespace :admin do
@@ -217,6 +220,11 @@ Rails.application.routes.draw do
           end
         end
       end
+
+      get "/data_integrity_checks/run_all" => "data_integrity_checks#run_all", as: :data_integrity_checks_run_all
+      resources :data_integrity_checks, only: %i(index show)
+      get "/data_integrity_checks/:type/run" => "data_integrity_checks#run", as: :data_integrity_checks_run
+      get "/data_integrity_checks/:type/detailed_report" => "data_integrity_checks#detailed_report", as: :data_integrity_checks_detailed_report
     end
 
     get "/docs/what-is-eol/terms-of-use/citing-eol-and-eol-content", to: redirect("/docs/what-is-eol/citing-eol-and-eol-content")

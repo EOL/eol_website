@@ -107,7 +107,7 @@ class Serializer
   def gather_traits(page_ids)
     # Wellllll... surprisingly, grabbing these one page at a time was WAAAAAAY faster than using { IN [ids] }, so:
     page_ids.each do |page_id|
-      response = TraitBank.data_dump_page(page_id)
+      response = TraitBank::Queries.data_dump_page(page_id)
       next if response.nil?
       next if response['data'].nil? || response['data'].empty?
       @traits += response['data']
@@ -118,7 +118,7 @@ class Serializer
 
   def gather_metadata(keys)
     keys.each do |id|
-      meta_response = TraitBank.data_dump_trait(id)
+      meta_response = TraitBank::Queries.data_dump_trait(id)
       next if meta_response.nil?
       next if meta_response['data'].nil? || meta_response['data'].empty?
       @metadata += meta_response['data']

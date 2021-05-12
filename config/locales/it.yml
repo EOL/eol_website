@@ -4,12 +4,15 @@
 # Author: Beta16
 # Author: G313
 # Author: JackLantern
+# Author: R.caredda1
+# Author: Toa
 # Author: Ubibi
 ---
 it:
   language_name: Inglese
   about:
     trait_bank:
+      title: TraitBank
       body_html: <p>Il team di gestione tecnica e dei dati di EOL si riferisce alle
         risorse strutturate di dati in EOL - i tratti distintivi e altri dati attributivi,
         le interazioni ecologiche e la nostra classificazione originaria, la Gerarchia
@@ -27,8 +30,8 @@ it:
         se li usi per il tuo lavoro.</p><p>Questi dati sono modellati come <a href='%{property_graph_url}'>grafici
         di proprietà</a> in <a href='%{neo4j_url}'>neo4j</a>. <a href='%{data_services_path}'>I
         servizi di dati</a> sono disponibili.</p>
-  account_already_linked: Il tuo account è già connesso a EOL
-  account_not_linked: Il tuo account non è collegato a EOL
+  account_already_linked: il tuo account è già collegato a EOL
+  account_not_linked: il tuo account non è collegato a EOL
   advanced: avanzato
   are_you_sure_delete_account: Sei sicuro di voler eliminare il tuo account EOL?
   article:
@@ -37,13 +40,13 @@ it:
     header:
       blank: (Non c'è testo in questo articolo)
       body: Corpo
-      language: 'Lingua: %{language}'
+      language: 'lingua: %{language}'
       title: Titolo
       untitled: Senza titolo
     name:
       missing: Senza titolo
-  article_from_partner: Fornito da %{partner}
-  article_duplicate: Questo articolo è mostrato anche in %{section}
+  article_from_partner: fornito da %{partner}
+  article_duplicate: questa voce è mostrata anche in "%{section}"
   autocomplete:
     see_all:
       other: uno=vedi altri risultati
@@ -66,21 +69,25 @@ it:
       see_more: vedi altro
     hierarchies:
       header: Gerarchie curate per %{sci_name}
+      see_resource_file: Visualizza il <a href='%{href}'>file sorgente</a> per una
+        lista completa.
       this_page: (questa pagina)
     richness:
       header: Ricchezza della pagina
       score: Punteggio di ricchezza
-      page_contents_count: Contenuto associato
+      page_contents_count: contenuto associato
       missing: La ricchezza non è stata ancora calcolata per questa pagina.
       media_count: media
-      articles_count: articoli
+      articles_count: voci
       links_count: collegamenti
       maps_count: mappe
       data_count: dati
       nodes_count: nodi
       vernaculars_count: vernacolari
       scientific_names_count: nomi scientifici
-  cms_page_date: 'Ultima modificazione:'
+      referents_count: referenti
+      species_count: specie
+      updated_at: ultimo aggiornamento
   collect_already_in_collection: (è già qui)
   collect_already_in_collection_will_add_icon: (aggiungi media a "%{page}")
   collect_icon_title: Aggiungi "%{item}" da "%{page}" pagina a…
@@ -122,6 +129,7 @@ it:
       placeholder: Nome intero o username
     actions:
       associate: associato
+      download_taxa_csv: scarica CSV dei taxa
       delete: cancella
       edit: modifica
       sort: ordina
@@ -136,31 +144,67 @@ it:
     log:
       associated_collection:
         add: '%{user} ha aggiunto un''associazione alla collezione %{associated}'
+        remove: '%{user} ha rimosso un''associazione alla collezione %{associated}'
+      collection:
+        add: '%{user} ha creato la collezione'
+        change: '%{user} ha cambiato il campo %{field} da "%{from}" in "%{to}"'
+      page:
+        add: '%{user} ha aggiunto la pagina %{page}'
+        remove: '%{user} ha rimosso la pagina %{page}'
+    search:
+      placeholder: Cerca nella collezione…
+      submit: ricerca
     sort:
       hierarchy: gerarchia
+      sci_name: nome scientifico, A-Z
       sci_name_rev: nome scientifico, Z-A
+      sort_field: annotazione, A-Z
+      sort_field_rev: annotazione, Z-A
+    updated: Collezione aggiornata.
+  collection_unauthorized_edit: Solo l'utente proprietario può modificare questa raccolta.
+  complete_registration: Per favore prosegui con la registrazione
+  content_appears_on: 'Incluso nelle seguenti pagine:'
+  content_attributions_header: Informazioni sulla fonte
   content_attributions_labels:
+    altitude: altitudine
     author: autore
     bibliographic_citation: citazione bibliografica
+    contributor: collaboratore
+    compiler: compilatore automatico
     creator: creatore
     editor: editore
     latitude: latitudine
+    license: licenza
     location: posizione
+    location_verbatim: alla lettera
     longitude: longitudine
+    original_media_file: file multimediale originale
+    owner: diritto d'autore
     photographer: fotografo
+    publisher: editore
     project: progetto
     provider: fornitore
+    resource_label: sito associato
+    resource_pk: '(id: %{key})'
+    rights_statement: dichiarazione dei diritti
     source: fonte
     view_source_label: originale
     view_source_link: vedi l'immagine originale
+    view_source_page_link: consulta la fonte
   content_not_in_any_collection_image: Questa immagine non figura in nessuna collezione.
   content_not_in_any_collection_sound: Questo audio non figura in nessuna collezione.
   content_not_in_any_collection_video: Questo video non figura in nessuna collezione.
   data:
     modifier:
+      sex_term: Sesso dell'organismo misurato
+      lifestage_term: Stadio di sviluppo dell'organismo misurato
       statistical_method_term: Metodo statistico utilizzato per la misurazione
   dear_username_with_comma: Caro %{username},
+  delete_account_button: Cancella la tua utenza
+  filter_by_license: licenza
+  filter_by_license_any_item: qualsiasi licenza
   filter_by_medium_subtype: tipo
+  filter_by_medium_any_item: qualsiasi tipo
   filter_by_resource: fornitore
   filter_by_resource_any_item: qualsiasi fornitore
   filters:
@@ -169,13 +213,21 @@ it:
     filter_by_provider: filtra per fornitore
   footer:
     eol_info:
+      citing_eol: Citare EOL
       contact_us: Contattaci
+      data_services: Servizi informatici
       donate: Dona
       education: Istruzione
+      food_webs: Rete alimentare
       glossary: Glossario
+      help: Aiuto
+      language_support: Supporto linguistico
       terms_of_use: Condizioni d'uso
+      the_eol_forum: Il forum di EOL
       what_is_eol: Cos'è EOL?
+      whats_new: Cosa c'è di nuovo?
     discover:
+      algae: Alghe
       amphibians: Anfibi
       animals: Animali
       archaea: Archeobatteri
@@ -183,6 +235,7 @@ it:
       birds: Uccelli
       crustaceans: Crostacei
       fishes: Pesci
+      flowering_plants: Piante da fiore
       fungi: Funghi
       insects: Insetti
       invertebrates: Invertebrati
@@ -197,80 +250,305 @@ it:
       trees: Alberi
       viruses: Virus
       worms: Vermi
+    eol_is_hosted_by: 'EOL è ospitata da:'
   forgot_your_password: Hai dimenticato la password?
   landing_page:
+    header: Accesso globale alle conoscenze sulle forme di vita presenti sulla Terra
     stats_cleared: Le statistiche sono state ricalcolate.
   language: Lingua
   languages:
+    ab: Abkhazo
+    q27683: Acehnese
+    q27776: Adighè
+    aa: Afar
+    af: Afrikaans
+    ak: Akan
     alb: Albanese
     sq: Albanese
+    q131339: Alemanno
+    am: Amarico
+    ar: Arabo
+    an: Aragonese
+    hy: Armeno
+    as: Assamese
+    q29507: Asturiano
+    q56590: Atikamekw
+    av: Avaro
+    ae: Avestico
+    ay: Aimara
+    q9292: Azerbaigiano
+    az: Azerbaigiano
+    q33070: Balinese
+    bm: Bambara
+    q33151: Banjar
+    ba: Bashkir
+    eu: Basco
+    q29540: Bavarese
+    be: Bielorusso
+    q8836490: Bende
+    bn: Bengalese
+    bh: Lingue bihari
+    bi: Bislama
+    nb: Bokmål, Norvegese; Norvegese Bokmål
+    q4941378: Bondi
+    bs: Bosniaco
+    q33202: Brahui
+    q750553: Portoghese brasiliano
+    br: Bretone
+    bg: Bulgaro
+    my: Burmese
+    q33120: Buriato
+    q35037: Businenge Tongo
+    q880301: Francese cajun
+    q35156: Car
+    q2591230: Cashinahua
+    ca: Catalano; Valenciano
+    q33239: Cebuano
+    khm: Khmer centrale
+    km: Khmer centrale
+    ch: Chamorro
+    q33281: Chavacano
+    ce: Ceceno
+    q33388: Cherokee
+    q33265: Cheyenne
+    ny: Chichewa; Chewa; Nyanja
+    zh: Cinese
     chi: Cinese
+    q32979: Choctaw
+    cu: Slavo ecclesiastico antico
+    cv: Ciuvascio
+    q37041: Cinese classico
+    kw: Cornico
+    co: Còrso
+    cr: Cree
+    q33357: Tartaro di Crimea
+    hr: Croato
+    hrv: Croato
+    cs: Ceco
+    da: Danese
+    q3362072: Digo
+    q56466: Dinka
+    dv: Divehi; Dhivehi; Maldiviano
+    q18415595: Doteli
+    dut: Olandese; Fiammingo
+    nl: Olandese; Fiammingo
+    dz: Dzongkha
+    dzo: Dzongkha
+    q4126517: Inuktitut canadese orientale
     en: Inglese
     eo: Esperanto
+    et: Estone
+    est: Estone
+    fj: Figiano
     fi: Finlandese
+    fin: Finlandese
     fr: Francese
+    fra: Francese
     gd: Gaelico scozzese
+    q33475: Gan Chinese
     ka: Georgiano
     de: Tedesco
+    deu: Tedesco
+    el: Greco moderno (1453-)
     gre: Greco
+    gu: Gujarati
     he: Ebraico
+    heb: Ebraico
+    hi: Hindi
+    hu: Ungherese
+    is: Islandese
+    ice: Islandese
+    id: Indonesiano
     ia: Interlingua (International Auxiliary Language Association)
+    iu: Inuktitut
+    q33595: Iraqw
     ga: Irlandese
     it: Italiano
     ita: Italiano
     ja: Giapponese
     jp: Giapponese
+    ko: Coreano
+    kor: Coreano
+    lo: Lao
+    lao: Lao
+    la: Latino
+    q36106: Ligure
     li: Limburghese
-    Q33754: Lombardo
+    lt: Lituano
+    lit: Lituano
+    q33754: Lombardo
     mk: Macedone
     ms: Malese
+    mt: Maltese
     mlt: Maltese
+    q13330: Mirandese
     mn: Mongolo
-    Q33845: Napoletano
+    q33845: Napoletano
+    ne: Nepalese
+    q28224: Frisone settentrionale
     "no": Norvegese
     nno: Norvegese
     nob: Norvegese
     nor: Norvegese
     oc: Occitano (post 1500)
+    q28602: Aramaico ufficiale
     pa: Punjabi
+    fa: Persiano
+    q15085: Piemontese
+    pl: Polacco
     pol: Polacco
     pt: Portoghese
+    rm: Romancio
     ru: Russo
     rus: Russo
     sa: Sanscrito
     sc: Sardo
-    Q33973: Siciliano
+    q845441: Sardo sassarese
+    q14549: Scozzese
+    sr: Serbo
+    q33973: Siciliano
     si: Singalese
+    sk: Slovacco
+    slk: Slovacco
+    sl: Sloveno
+    so: Somalo
+    som: Somalo
+    st: Sotho del sud
+    es: Spagnolo; Castigliano
     slv: Spagnolo
+    sv: Svedese
     swe: Svedese
+    ty: Tahitiano
+    th: Thailandese
+    tha: Thailandese
+    bo: Tibetano
     to: Tongano
+    q56240: Arabo tunisino
     tr: Turco
     tur: Turco
+    q36730: Turco, ottomano
+    uk: Ucraino
     ukr: Ucraino
-    Q100103: Fiammingo occidentale
+    none: Non specificato
+    vi: Vietnamita
+    q100103: Fiammingo occidentale
+    fy: Isole Frisone occidentali
+    q237409: Zelandese
+  layout_sign_in: Accedi
+  layout_sign_up: Registrati
+  layout_sign_out: Esci
+  literature_and_references_header: Letteratura e consultazioni
+  maps:
+    empty: Non ci sono mappe disponibili per questa pagina.
+    other_maps_title: Mappe non interattive
   medium:
     untitled:
+      image: Immagine senza titolo
+      image_of: Immagine di %{page_name}
+      video: Video senza titolo
       video_of: Video di %{page_name}
+      sound: Suono senza titolo
+      sound_of: Suono di %{page_name}
+      map: Mappa senza titolo
+      map_of: Mappa di %{page_name}
+      js_map: Mappa interattiva senza titolo
+      js_map_of: Mappa interattiva di %{page_name}
+    subclasses:
+      image: immagine
+      video: video
+      sound: suono
+      map_image: mappa
+      js_map: mappa interattiva
+  medium_collect_button: archivia media
+  medium_description_blank: Nessuna descrizione per questo oggetto.
   medium_header_title: 'Titolo:'
+  medium_header_description: 'Descrizione:'
+  names:
+    prefer: preferire
+  nav:
+    about: Informazioni
+    discuss: Discuti
+    education: Istruzione
+    search:
+      no_results_html: <strong>Nessun risultato confermato</strong><br />Premi Invio
+        per visualizzare i risultati senza revisione
+      placeholder: Cerca in EOL...
+  page_title: Enciclopedia della Vita
+  page_title_search: 'Cerca: %{query}'
+  page_vernaculars_empty: Non ci sono nomi comuni associati a questo taxon.
   pages:
+    actions:
+      reindex: reindicizzare
     batch_lookup:
+      canonical_name: nome canonico
+      download_tsv: scarica TSV
+      new_search: nuova ricerca
+      page_id: ID pagina
+      page_url: URL pagina
       query: interrogazione
+      query_cant_be_blank: la ricerca non può essere vuota
+      search: cerca
+    filter_menu:
+      show_all: mostra tutto
+    page_data:
+      show_all: mostra tutto
     resource_names:
+      name_recognized_by: Riconosciuto da %{by}
+      name_recognized_by_w_rank: '%{rank} riconosciuto da %{by}'
       rank:
         r_domain: Dominio
+        r_subdomain: Sottodominio
+        r_infradomain: Infradominio
+        r_superkingdom: Superregno
         r_kingdom: Regno
+        r_subkingdom: Sottoregno
         r_infrakingdom: Infraregno
         r_superphylum: Superphylum
         r_phylum: Phylum
+        r_subphylum: Sottotipo
         r_infraphylum: Infraphylum
+        r_superclass: Superclasse
         r_class: Classe
         r_subclass: Sottoclasse
+        r_infraclass: Infraclasse
         r_superorder: Superordine
         r_order: Ordine
         r_suborder: Sottordine
+        r_infraorder: Infraordine
+        r_superfamily: Superfamiglia
+        r_family: Famiglia
         r_subfamily: Sottofamiglia
+        r_infrafamily: Sottofamiglia
+        r_tribe: Tribù
+        r_supergenus: Supergenere
+        r_genus: Genere
         r_subgenus: Sottogenere
+        r_infragenus: Infragenus
+        r_superspecies: Superspecie
+        r_species: Specie
+        r_subspecies: Sottospecie
         r_infraspecies: Infraspecie
+        r_form: Modulo
+      resource_link_html: <a href='%{resource_path}'>%{resource_name}</a>
+      resource_link_w_remarks_html: <a href='%{resource_path}'>%{resource_name}</a>
+        (%{remarks})
+      username_missing: utente %{user_id}
+    trophic_web:
+      globi_credit_html: dati da <a href='%{url}'>GloBI</a>
+      predator: Predatore
+      reset: reimposta
+      trophic_web_about: I diagrammi della rete alimentare EOL si concentrano sui
+        rapporti di alimentazione di una specie; mostrano le specie focali insieme
+        alle specie di cui si nutre (preda), alle specie che si nutrono di essa (predatori)
+        e ad altre specie che si nutrono della stessa preda (potenziali concorrenti).
+        Clicca per saperne di più.
+      trophic_web_title_html: Rete alimentare <a href='%{about_path}'><sup><span class='a'
+        uk-tooltip='%{tooltip}'>?</span></sup></a>
+    flash:
+      reindexed: Le cache per questa pagina sono state cancellate. Ricarica per vedere
+        i nuovi valori. NOTA che, al momento, questo *non* reindicizza le immagini
+        sulla pagina. Questa funzionalità verrà implementata in una data futura.
+    native_node_missing_warning: nessuna informazione sulla gerarchia disponibile
     tabs:
       articles: voci
       classifications: classificazioni
@@ -280,169 +558,458 @@ it:
       maps: mappe
       media: media
       names: nomi
+    iucn_status:
+      label: 'Stato IUCN:'
+      ex: estinto (EX)
+      ew: estinto in natura (EW)
+      vu: vulnerabile (VU)
+  page_titles:
+    pages:
+      data: '%{page_name} dati'
+      media: '%{page_name} media'
+      maps: '%{page_name} mappe'
+      names: '%{page_name} nomi'
+      articles: '%{page_name} voci'
   recaptcha: Recaptcha
+  recaptcha_error: Per favore dimostraci di non essere un robot.
+  reference_compiled_from: Referenziato da %{links}
+  reference_compiled_from_article: '%{source} voce intitolata "%{name}"'
+  register_new_account: Registra una nuova utenza
   resources:
+    actions:
+      republish: ripubblica
+      reindex: reindicizza
+      index: torna a tutte le risorse
+      show_all:
+        other: mostra tutti (%{count})
     headers:
       index: Risorse
+  resource_missing: risorsa non trovata
+  scientific_name:
+    status_title:
+      alternative: Nomi Alternativi
+      synonym: Sinonimi
   scientific_names_header: Nomi scientifici
+  send_me_reset_password_instructions: Inviami le istruzioni per reimpostare la password
   search:
     full_name: '%{vernacular} (%{scientific})'
+    flash:
+      cannot_combine_paths: Impossibile combinare i risultati con %{path}
+      more_than_one_species: Impossibile combinare i risultati per %{species}
+      more_than_two_terms: 'Impossibile combinare i risultati per più di due termini:
+        %{terms}'
+    n_articles:
+      one: '%{count} voce'
+      other: '%{count} voci'
+    n_collections:
+      one: '%{count} collezione'
+      other: '%{count} collezioni'
+    n_images:
+      one: '%{count} immagine'
+      other: '%{count} immagini'
+    n_sounds:
+      one: '%{count} suono'
+      other: '%{count} suoni'
+    n_users:
+      one: '%{count} utente'
+      other: '%{count} utenti'
+    n_videos:
+      one: '%{count} video'
+      other: '%{count} video'
+    n_terms:
+      one: '%{count} termine'
+      other: '%{count} termini'
   search_results:
+    collection_page_count:
+      one: '%{count} pagina'
+      other: '%{count} pagine'
+    collected_media:
+      title: 'media raccolti da questa pagina:'
     medium_article: Voce
+    medium_image: Immagine
+    medium_map: Mappa
+    medium_sound: Suono
+    medium_video: Video
+    medium_title_article_html: 'Voce: <span class=''sub''>%{title}</span>'
+    medium_title_image_html: 'Immagine: <span class=''sub''>%{title}</span>'
+    medium_title_map_html: 'Mappa: <span class=''sub''>%{title}</span>'
+    medium_title_sound_html: 'Audio: <span class=''sub''>%{title}</span>'
+    medium_title_video_html: 'Video: <span class=''sub''>%{title}</span>'
     empty: Nessun risultato.
+    field_matches:
+      description: 'corrisponde alla descrizione:'
+      resource_pk: 'corrisponde all''ID esterno:'
+      bio: 'corrisponde alla biografia:'
+    section_titles:
+      collections:
+        one: '%{count} collezione'
+        other: '%{count} collezioni'
+    collection_title_html: 'Collezione: <span class=''sub''>%{name}</span>'
+    user_title_html: 'Utente: <span class=''sub''>%{name}</span>'
+  search_suggestion:
+    actions:
+      create: creare un nuovo suggerimento di ricerca
+    created: Suggerimento di ricerca creato per "%{match}"
+    new:
+      header: Crea un suggerimento per la ricerca
+    update:
+      header: Aggiorna suggerimento di ricerca
+    index:
+      header: Suggerimenti di ricerca
   sections:
     associations: Associazioni
     behavior: Comportamento
     benefits: Benefici
+    brief_summary: Breve riassunto
     comprehensive_description: Descrizione completa
     conservation: Conservazione
+    conservation_status: Stato di conservazione
+    cyclicity: Ciclicità
+    diagnostic_description: Descrizione diagnostica
+    diseases_and_parasites: Malattie e parassiti
     distribution: Distribuzione
     ecology: Ecologia
+    general_ecology: Ecologia generale
+    genetics: Genetica
     growth: Crescita
     habitat: Habitat
+    management: Amministrazione
     migration: Migrazione
     molecular_biology: Biologia molecolare
     molecular_biology_and_genetics: Biologia molecolare e genetica
     morphology: Morfología
     names_and_taxonomy: Nomi e tassonomia
+    notes: Note
+    overview: Panoramica
+    physiology_and_cell_biology: Fisiologia e biologia cellulare
+    physical_description: Descrizione fisica
+    reproduction: Riproduzione
     risks: Rischi
+    size: Dimensione
     taxonomy: Tassonomia
+    threats: Minacce
     type_information: Tipo di informazione
     wikipedia: Wikipedia
+  settings: impostazioni
+  show_date: Mostra la data di pubblicazione
   sign_in: Entra
+  sign_up: Registrati
+  did_not_receive_confirmation_instructions: Non ho ricevuto le istruzioni di conferma
   simple_form:
     "yes": Sì
     "no": "No"
+    required:
+      text: obbligatorio
+      mark: '*'
     labels:
       defaults:
+        email: Indirizzo email
         password: Password
         password_confirmation: Conferma della password
         remember_me: Ricordarmi
         username: Nome utente
         bio: Biografia
   stats:
+    collections: collezioni
+    media: media
     pages: pagine
+    nodes: nodi
+    scientific_names: nomi
     users: utenti
-  support:
-    array:
-      two_words_connector: ' e'
+    references: riferimenti
+  term_query:
+    invalid_obsolete: INVALIDO/OBSOLETO
+    validations:
+      empty_filters_error_record: devi fornire un filtro con un attributo o un valore
+        per le ricerche di record
   term_query_filter:
     validations:
+      blank_error: devi specificare un attributo o un valore
       invalid_uri: URI non corretto
+      range_invalid_error: deve essere >= al primo valore
   terms:
+    comment_field_html: <strong>Commento:</strong> %{comment}
+    definition_field_html: <strong>Definizione:</strong> %{definition}
+    scientific_name: nome scientifico
+    show_all_records: mostra tutti i record
     source: fonte
+    uri_field_html: <strong>URI:</strong> %{uri}
+  data_definition: definizione di "%{data}"
   traits:
     data_viz:
+      about_this_chart_tooltip_1d: Questo è un riepilogo basato sui dati disponibili
+        in EOL. Potrebbe essere incompleto! Puoi selezionare una categoria dal grafico
+        per restringere i risultati della ricerca. Molte categorie si sovrappongono
+        e una specie può essere inclusa in più di una categoria.
       hist_value_label: valore (%{units})
+      num_records_label: '# di record'
       other: altro
+      pie_prompt: passa il mouse su un segmento o un tasto per evidenziarlo
+      sankey_node_hover: fai clic per restringere la ricerca a %{term_name}
+      taxon_summary:
+        click_to_filter: clicca per filtrare
+        click_to_filter_by: clicca per filtrare per '%{name}'
     properties:
       citation: Citazione bibliografica
       method: Metodo di misurazione
       scientific_name: Nome scientifico
       source: Fonte
     search:
+      download_tsv: scarica tsv
+      edit_filters: modifica filtri
       filter_display:
+        eq: '%{pred} = %{num_val} %{units}'
+        gte: '%{pred} >= %{num_val} %{units}'
         lte: '%{pred} <= %{num_val} %{units}'
-        obj_only: 'valore: %{obj}'
+        obj_only: 'con valore: %{obj}'
         pred_obj: '%{pred}: %{obj}'
+        pred_only: '%{pred}'
         range: '%{pred} in [%{num_val1}, %{num_val2}] %{units}'
+        sex: 'sesso: %{value}'
+      new_search: nuova ricerca
       select:
         top_level:
           object_term: o seleziona un valore
           predicate: o seleziona un attributo
+      switch_to_list: passa alla vista elenco
+    search_form:
+      attribute: attributo
+      search: Cerca
+      sex: sesso
+      show_additional_fields: mostra campi aggiuntivi
+      statistical_method: metodo statistico
+      value: valore
   trust:
     trusted: attendibile
   user:
+    created_at: creato
     download_queue: Coda di download dei dati
+    edit_account_details: Modifica i dettagli dell'account
     email: Email
+    form_labels:
+      age_confirm: Ho almeno 13 anni
     headers:
+      bio: Breve biografia
       collections: Collezioni
+      downloads: Downloads
       links: Collegamenti
+    validations:
+      age_confirm: devi confermare di avere almeno 13 anni
+    new_password: Nuova password
+    confirm_new_password: Conferma la nuova password
     username: nome utente
     update: Aggiorna
+    update_email: Aggiorna email
+  users:
+    sign_in: Accedi
   vernacular_names_header: Nomi comuni
   term:
     actions:
       sort: ordina per
+    edit:
+      submit: Salva
     fields:
+      name: 'nome:'
+      definition: 'definizione:'
       attribution: 'attribuzione:'
+      comment: 'commento:'
+      sections: 'sezioni:'
+      is_hidden_from_glossary: 'nascondi dal glossario:'
+    glossary:
+      full_title: Glossario di TUTTI i termini per i dati in EOL
     pagination:
+      next: pagina successiva
       previous: pagina precedente
+    inverse_name:
+      by_uri:
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: è mangiato da
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002632: ha ectoparassita
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002626: viene ucciso da
     name:
       by_uri:
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900033: albero
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900044: pianta acquatica
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980071: annuale
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980072: biennale
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980073: perenne
-        http://purl(dot)obolibrary(dot)org/obo/GO_0009399: fissazione dell'azoto
-        http://purl(dot)obolibrary(dot)org/obo/GO_0019954: riproduzione asessuata
-        http://purl(dot)obolibrary(dot)org/obo/ID_0000058: cilindro
-        http://purl(dot)obolibrary(dot)org/obo/NCIT_C70589: abbondanza
-        http://purl(dot)obolibrary(dot)org/obo/OBA_0002342: struttura scheletrica
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: forma
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: nero
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000318: blu
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: verde
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000322: rosso
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: bianco
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000324: giallo
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: lento
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: veloce
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000915: spessore
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: cuoriforme
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: viola
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: marrone
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: arancione
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001199: lineare
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001709: area
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: volume
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001733: sempreverde
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002122: misto
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002124: laminare
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002359: vasto
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002393: alta tolleranza
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002394: bassa tolleranza
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002425: esposto
-        http://purl(dot)obolibrary(dot)org/obo/PO_0004518: corteccia
-        http://purl(dot)obolibrary(dot)org/obo/PO_0009001: frutto
-        http://purl(dot)obolibrary(dot)org/obo/PO_0009005: radici
-        http://purl(dot)obolibrary(dot)org/obo/PO_0009010: seme
-        http://purl(dot)obolibrary(dot)org/obo/PO_0020042: semplice
-        http://purl(dot)obolibrary(dot)org/obo/PO_0020043: composto
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002303: habitat
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002455: impollina
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002456: impollinato da
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: mangia
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002471: mangiato da
-        http://purl(dot)obolibrary(dot)org/obo/RO_0003000: produce
-        http://eol(dot)org/schema/terms/paleo_megaannum: milioni di anni fa
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000027: gradi Celsius
-        http://eol(dot)org/schema/terms/millimeterspermonth: millimetri per mese
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000012: kelvin
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000033: giorni
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000035: mesi
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000036: anni
-        http://semanticscience(dot)org/resource/SIO_001114: max
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000185: gradi
-        http://purl(dot)bioontology(dot)org/ontology/SNOMEDCT/259032004: /giorno
-        http://purl(dot)bioontology(dot)org/ontology/SNOMEDCT/259039008: /anno
-        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#inch: pollice
-        http://purl(dot)org/obo/owl/UO#UO_0000034: settimane
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000064: µmol/L
-        http://eol(dot)org/schema/terms/gramsPerCentimeterSquaredPerDay: g/cm^2/giorno
-        http://eol(dot)org/schema/terms/kilogramsPerMeterSquaredPerYear: kg/m^2/anno
-        Unit: Unità
         http://eol(dot)org/schema/terms/percentPerMonth: '%/mese'
+        http://eol(dot)org/schema/terms/percm2: /cm^2
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C70589: abbondanza
+        http://purl(dot)obolibrary(dot)org/obo/EO_0007059: suolo acido
+        http://www(dot)ebi(dot)ac(dot)uk/efo/EFO_0001272: adulto
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980071: annuale
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900044: pianta acquatica
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001709: area
+        https://eol(dot)org/schema/terms/arm: braccio
+        http://purl(dot)obolibrary(dot)org/obo/GO_0019954: riproduzione asessuata
+        https://eol(dot)org/schema/terms/bamboo_forest: foresta di bamboo
+        http://purl(dot)obolibrary(dot)org/obo/PO_0004518: corteccia
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980072: biennale
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: nero
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C12434: sangue
+        http://eol(dot)org/schema/terms/BloomPeriod: periodo di fioritura
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000318: blu
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002359: vasto
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: marrone
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_27732: caffeina
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_22984: calcio (ca)
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_3311: carbonato di calcio
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_77635: fosfato di calcio
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_31346: solfato di calcio
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32583: solfato di calcio diidrato
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32584: solfato di calcio emiidrato
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000096: caldera
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000014: canale
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002033: carcassa
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000067: grotta
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000102: ingresso della grotta
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000019: pavimento della caverna
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002144: muro della caverna
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000856: città
+        http://eol(dot)org/schema/terms/cloud_forest: foresta nebulosa
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000015: cm
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000081: cm^2
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000097: cm^3
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002140: ciottolo
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000014: colore
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C16452: comunicazione
+        http://purl(dot)obolibrary(dot)org/obo/PO_0020043: composto
+        http://purl(dot)obolibrary(dot)org/obo/ID_0000058: cilindro
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000033: giorni
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001422: morto
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000185: gradi
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000027: gradi Celsius
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000101: delta
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C41136: dentale
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000179: deserto
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005800: sabbia del deserto
+        http://ncicb(dot)nci(dot)nih(dot)gov/xml/owl/EVS/Thesaurus(dot)owl#C25285: diametro
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C45874: dorsale
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: mangia
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001733: sempreverde
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002425: esposto
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000970: occhi
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: veloce
+        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#foot: piedi
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000383: femmina
+        http://eol(dot)org/schema/terms/FireResistance: resistenza al fuoco
+        http://eol(dot)org/schema/terms/FireTolerance: tolleranza al fuoco
+        http://eol(dot)org/schema/terms/FossilFirst: prima apparizione
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000367: volo
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000255: golena
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000174: foresta
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009001: frutto
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000021: g
+        http://eol(dot)org/schema/terms/gramsPerCentimeterSquaredPerDay: g/cm^2/giorno
         http://eol(dot)org/schema/terms/gramsPercm2PerYear: g/cm^2/anno
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000084: g/cm^3
+        http://eol(dot)org/schema/terms/gramsPerMeterSquared: g/m^2
         http://eol(dot)org/schema/terms/gramsPerMonth: g/mese
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: verde
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002303: habitat
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000033: testa
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: cuoriforme
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002393: alta tolleranza
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0036016: miele
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001855: orizzontale
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002173: ospedale
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000277: ghiaccio
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000298: iceberg
+        http://purl(dot)obolibrary(dot)org/obo/EFO_0004387: pollici
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000036: canale di irrigazione
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002471: mangiato da
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000098: isola
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000012: kelvin
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000009: kg
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000086: kg/m^2
+        http://eol(dot)org/schema/terms/kilogramsPerMeterSquaredPerYear: kg/m^2/anno
+        http://eol(dot)org/schema/terms/squarekilometer: km^2
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000268: letto del lago
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002124: laminare
+        http://eol(dot)org/schema/terms/lateSpring: primavera inoltrata
+        http://eol(dot)org/schema/terms/lateSummer: estate inoltrata
+        http://eol(dot)org/schema/terms/lateWinter: inverno inoltrato
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001199: lineare
+        http://eol(dot)org/schema/terms/log10gram: log10 grammi
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002394: bassa tolleranza
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000008: m
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000080: m^2
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: magnesio (mg)
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000384: maschio
+        http://semanticscience(dot)org/resource/SIO_001114: max
+        http://semanticscience(dot)org/resource/SIO_001109: media
+        http://eol(dot)org/schema/terms/meanAnnualTemperature: temperatura media annuale
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_00001006: carne
+        http://semanticscience(dot)org/resource/SIO_001110: mediana
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C142605: medicinale
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000022: mg
+        http://eol(dot)org/schema/terms/milligramsPercm2: mg/cm^2
+        http://eol(dot)org/schema/terms/milligramsPercm2PerDay: mg/cm^2/giorno
+        http://eol(dot)org/schema/terms/milligramspergram: mg/g
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000273: mg/l
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000309: mg/m^2
+        http://purl(dot)obolibrary(dot)org/obo/UO_0010049: g/m^2
+        http://eol(dot)org/schema/terms/millimeterspermonth: millimetri al mese
+        http://eol(dot)org/schema/terms/paleo_megaannum: milioni di anni fa
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002122: misto
+        http://eol(dot)org/schema/terms/millilitersPerMinute: ml/min
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000016: mm
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000272: mm hg
         http://eol(dot)org/schema/terms/millimetersPerThreeMonths: mm/3 mesi
         http://eol(dot)org/schema/terms/millimetersPerFourMonths: mm/4 mesi
         http://eol(dot)org/schema/terms/millimetersPerSixMonths: mm/6 mesi
         http://eol(dot)org/schema/terms/millimetersPerSevenMonths: mm/7 mesi
         http://eol(dot)org/schema/terms/millimetersPerEightMonths: mm/8 mesi
         http://purl(dot)obolibrary(dot)org/obo/UO_0010005: mm/giorno
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C105508: mm/sec
         http://eol(dot)org/schema/terms/millimetersPerYear: mm/anno
-        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#foot: piedi
-        http://purl(dot)obolibrary(dot)org/obo/EFO_0004387: pollici
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000082: mm^2
+        http://eol(dot)org/schema/terms/millimetersSquaredPerMilligram: mm^2/mg
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000063: mmol/l
+        http://eol(dot)org/schema/terms/mol_per_meter_squared_per_day: mol/m^2/giorno
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000035: mesi
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000081: montagna
+        https://eol(dot)org/schema/terms/nanogrampergramperhour: ng/g/ora
+        https://eol(dot)org/schema/terms/nanograpperkilgramperminute: ng/kg/min
+        http://purl(dot)obolibrary(dot)org/obo/GO_0009399: fissazione dell'azoto
+        https://eol(dot)org/schema/terms/nanomolpergram: nmol/g
+        http://eol(dot)org/schema/terms/no: "no"
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: arancione
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980073: perenne
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000025: pg
+        https://eol(dot)org/schema/terms/picomolpermetersquaredpersecond: pmol/m^2/s
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002257: podsòl
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002456: impollinato da
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002455: impollina
+        http://purl(dot)obolibrary(dot)org/obo/RO_0003000: produce
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: viola
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000322: rosso
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009005: radici
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000016: mare
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C25669: sicurezza
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009010: semi
+        http://rs(dot)tdwg(dot)org/dwc/terms/sex: sesso
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: forma
+        http://purl(dot)obolibrary(dot)org/obo/PO_0020042: semplice
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000117: dimensione
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0002342: struttura scheletrica
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: lento
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0001091: denti
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000915: spessore
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900033: albero
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000247: vulcano
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: volume
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: bianco
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000036: anni
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000324: giallo
+        http://eol(dot)org/schema/terms/microatmosphere: µatm
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000023: µg
+        http://eol(dot)org/schema/terms/µg_cm-2: µg/cm^2
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000017: µm
+        http://eol(dot)org/schema/terms/perMicrometer: µm^(-1)
+        http://eol(dot)org/schema/terms/squareMicrometer: µm^2
+        http://eol(dot)org/schema/terms/cubicMicrometer: µm^3
+        https://eol(dot)org/schema/terms/micromolpergram: µmol/g
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C48508: µmol/l
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000064: µmol/l
+        http://purl(dot)obolibrary(dot)org/obo/TAO_0009000: cellula
+        http://eol(dot)org/schema/terms/cubicMillimeter: mm^3
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000106: Hz
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000259: dB
+        http://eol(dot)org/schema/terms/mol_m-2_s-1: mol/m^2/s
 ...

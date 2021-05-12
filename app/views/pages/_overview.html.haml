@@ -10,7 +10,7 @@
           %p= summary.sentence.html_safe
           - summary.terms.each do |term|
             - if term.term
-              = render "terms/desc_meta", term: term.term, pred_uri: term.pred_uri, toggle: term.toggle_selector, source: term.source, search_link: true
+              = render "terms/desc_meta", term: term.term, predicate: term.predicate, toggle: term.toggle_selector, source: term.source, search_link: true
         - if @page.has_data?
           - if @page.key_data.any?
             - attributes_key = "eol_has_data_for_n_attributes_including_html"
@@ -18,21 +18,22 @@
             - attributes_key = "eol_has_data_for_n_attributes_html"
 
           %p= t(".#{attributes_key}", :count => @page.predicate_count, data_path: page_data_path(@page))
-    -if @page.key_data.any?
+    -if @key_data.any?
       %ul.sample-traits
-        - @page.key_data.sort_by { |k, v| i18n_term_name(k) || 'zzz' }.each do |predicate, trait|
+        - @key_data.sort_by { |k, v| k.name || 'zzz' }.each do |predicate, trait|
           %li
             %div
-              .sample-trait-key.a= i18n_term_name(predicate)
+              .sample-trait-key.a= predicate.name
               = render partial: "terms/desc_meta", locals: { term: predicate, search_link: true }
             %div
-              - val = data_value(trait).html_safe
-              - if trait[:object_page_id]
-                - url = page_path(trait[:object_page_id])
+              - val = trait_display_value(trait, page_is_assoc_obj: predicate.inverse_only?).html_safe
+              - if trait.object_page
+                - page_id_for_url = predicate.inverse_only? ? trait.page.id : trait.object_page.id
+                - url = page_path(page_id_for_url)
                 = link_to val, url, :class => "sample-trait-val"
-              - elsif trait[:object_term]
+              - elsif trait.object_term
                 .sample-trait-val.a= val
-                = render partial: "terms/desc_meta", locals: { term: trait[:object_term], search_link: true, pred_uri: trait[:predicate][:uri] }
+                = render partial: "terms/desc_meta", locals: { term: trait.object_term, search_link: true, predicate: predicate }
               - else
                 .sample-trait-val= val
 

@@ -1,6 +1,7 @@
-# Messages for Traditional Chinese (中文（繁體）‎)
+# Messages for Traditional Chinese (中文（繁體）)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Carrot Li
 # Author: Kly
 # Author: Taieol
 # Author: Winston Sung
@@ -81,7 +82,6 @@ zh-TW:
       referents_count: 引用
       species_count: 物種
       updated_at: 上一次更新
-  cms_page_date: 上一次變動：
   collect_already_in_collection: （已在此）
   collect_already_in_collection_will_add_icon: （添加媒體到「%{page}」）
   collect_icon_title: 從「%{page}」頁面添加「%{item}」到…
@@ -167,6 +167,7 @@ zh-TW:
     altitude: 海拔
     author: 作者
     bibliographic_citation: 書目引用
+    contributor: 貢獻者
     compiler: 編纂者
     creator: 建立者
     editor: 編輯者
@@ -262,85 +263,85 @@ zh-TW:
   language: 語言
   languages:
     ab: 阿布哈茲語
-    Q27683: 亞齊語
-    Q27776: 阿迪格語
+    q27683: 亞齊語
+    q27776: 阿迪格語
     aa: 阿法爾語
     af: 南非語
     ak: 阿寒語
     alb: 阿爾巴尼亞語
     sq: 阿爾巴尼亞語
-    Q131339: 阿勒曼尼語
+    q131339: 阿勒曼尼語
     am: 阿姆哈拉語
     ar: 阿拉伯語
     an: 亞拉岡語
     hy: 亞美尼亞語
     as: 阿薩姆語
-    Q29507: 阿斯圖里亞斯語
-    Q56590: 阿提卡米克語
+    q29507: 阿斯圖里亞斯語
+    q56590: 阿提卡米克語
     av: 阿瓦爾語
     ae: 阿維斯陀語
     ay: 艾馬拉語
-    Q9292: 亞塞拜然語
+    q9292: 亞塞拜然語
     az: 亞塞拜然語
-    Q33070: 峇里語
+    q33070: 峇里語
     bm: 班巴拉語
-    Q33151: 班查語
+    q33151: 班查語
     ba: 巴什基爾語
     eu: 巴斯克語
-    Q29540: 巴伐利亞語
+    q29540: 巴伐利亞語
     be: 白俄羅斯語
-    Q8836490: 本德語
+    q8836490: 本德語
     bn: 孟加拉語
     bh: 比哈爾語
     bi: 比斯拉馬語
     nb: 書面挪威、挪威博克莫爾語
-    Q4941378: 邦迪語
+    q4941378: 邦迪語
     bs: 波士尼亞語
-    Q33202: 布拉灰語
-    Q750553: 巴西葡萄牙語
+    q33202: 布拉灰語
+    q750553: 巴西葡萄牙語
     br: 布列塔尼語
     bg: 保加利亞語
     my: 緬甸語
-    Q33120: 布里亞特語
-    Q35037: Businenge Tongo 語
-    Q880301: 路易斯安那法語
-    Q35156: Car 語
-    Q2591230: 卡西納瓦語
+    q33120: 布里亞特語
+    q35037: Businenge Tongo 語
+    q880301: 路易斯安那法語
+    q35156: Car 語
+    q2591230: 卡西納瓦語
     ca: 加泰隆語
-    Q33239: 宿霧語
+    q33239: 宿霧語
     khm: 高棉語
     km: 高棉語
     ch: 查莫羅語
-    Q33281: 查瓦卡諾語
+    q33281: 查瓦卡諾語
     ce: 車臣語
-    Q33388: 切羅基語
-    Q33265: 夏安語
+    q33388: 切羅基語
+    q33265: 夏安語
     ny: 齊切瓦、尼揚賈語
-    zh: 中文
-    chi: 中文
-    Q32979: 喬克托語
+    zh: 漢語
+    chi: 漢語
+    q32979: 喬克托語
     cu: 舊教會斯拉夫語
     cv: 楚瓦什語
-    Q37041: 文言文
+    q37041: 文言文
     kw: 康瓦爾語
     co: 科西嘉語
     cr: 克里語
-    Q33357: 克里米亞韃靼語
+    q33357: 克里米亞韃靼語
     hr: 克羅埃西亞語
     hrv: 克羅埃西亞語
     cs: 捷克語
     da: 丹麥語
-    Q3362072: 迪戈語
-    Q56466: 丁卡語
+    q3362072: 迪戈語
+    q56466: 丁卡語
     dv: 迪維西、馬爾地夫語
-    Q18415595: Dotyali 語
+    q18415595: Dotyali 語
     dut: 荷蘭、佛萊明語
     nl: 荷蘭、佛萊明語
     dz: 宗喀語
     dzo: 宗喀語
-    Q4126517: 東加拿大伊努克提圖特語
+    q4126517: 東加拿大伊努克提圖特語
     en: 英語
-    Q29952: 厄爾茲亞語
+    q29952: 厄爾茲亞語
     eo: 世界語
     et: 愛沙尼亞語
     est: 愛沙尼亞語
@@ -349,33 +350,33 @@ zh-TW:
     fj: 斐濟語
     fi: 芬蘭語
     fin: 芬蘭語
-    Q667747: 菲帕語
+    q667747: 菲帕語
     fr: 法語
     fra: 法語
     ff: 富拉語
     gd: 蘇格蘭蓋爾語
     gl: 加利西亞語
-    Q33475: 贛語
+    q33475: 贛語
     lg: 盧干達語
     ka: 喬治亞語
     de: 德語
     deu: 德語
-    Q5575236: 果阿邦孔卡尼語
-    Q3272630: 戈戈語
-    Q2501174: 哥倫打洛語
+    q5575236: 果阿邦孔卡尼語
+    q3272630: 戈戈語
+    q2501174: 哥倫打洛語
     el: 現代希臘語（1453 年以後）
     gre: 希臘語
     gn: 瓜拉尼語
     gu: 古吉拉特語
-    Q33303: 海達語
+    q33303: 海達語
     ht: 海地、海地克里奧爾語
     ha: 豪薩語
-    Q35756: 哈亞語
+    q35756: 哈亞語
     he: 希伯來語
     heb: 希伯來語
-    Q3129390: 赫赫語
+    q3129390: 赫赫語
     hz: 赫雷羅語
-    Q35978: 希利蓋農語
+    q35978: 希利蓋農語
     hi: 印地語
     ho: 希里木托語
     hu: 匈牙利語
@@ -383,36 +384,36 @@ zh-TW:
     ice: 冰島語
     io: 伊多語
     ig: 伊博語
-    Q35936: 伊洛卡諾語
+    q35936: 伊洛卡諾語
     id: 印尼語
-    Q33509: 印古什語
+    q33509: 印古什語
     ia: 因特語（國際輔助語言協會）
     ie: 西方國際語
     iu: 伊努克提圖特語
     ik: 因紐皮雅特語
-    Q33595: 伊拉庫語
+    q33595: 伊拉庫語
     ga: 愛爾蘭語
     it: 義大利語
     ita: 義大利語
-    Q35939: 牙買加克里奧爾英語
+    q35939: 牙買加克里奧爾英語
     ja: 日語
     jp: 日語
     jv: 爪哇語
-    Q33522: 卡巴爾達語
-    Q35475: 卡比耶語
-    Q35853: 卡拜爾語
+    q33522: 卡巴爾達語
+    q35475: 卡比耶語
+    q35853: 卡拜爾語
     kl: 格陵蘭語
-    Q33634: 卡爾梅克語
+    q33634: 卡爾梅克語
     kn: 康納達語
     kr: 卡努里語
-    Q36121: 邦板牙語
-    Q33541: 卡拉卡爾帕克語
+    q36121: 邦板牙語
+    q33541: 卡拉卡爾帕克語
     ks: 喀什米爾語
-    Q33690: 卡舒比語
+    q33690: 卡舒比語
     kk: 哈薩克語
     ki: 基庫尤語
-    Q11005332: 金加語
-    Q11732519: Kingindo 語
+    q11005332: 金加語
+    q11732519: Kingindo 語
     rw: 盧安達語
     ky: 吉爾吉斯語
     kv: 科米語
@@ -421,31 +422,31 @@ zh-TW:
     kor: 韓語
     kj: 誇摩馬語
     ku: 庫德語
-    Q36206: 拉克語
+    q36206: 拉克語
     lo: 寮語
     lao: 寮語
     la: 拉丁語
     lv: 拉脫維亞語
-    Q1160372: 拉茲語
-    Q31746: 列茲金語
-    Q36106: 利古里亞語
+    q1160372: 拉茲語
+    q31746: 列茲金語
+    q36106: 利古里亞語
     li: 林堡語
     ln: 林格拉語
-    Q146803: 新共同語言
+    q146803: 新共同語言
     lt: 立陶宛語
     lit: 立陶宛語
-    Q33698: 立窩語
-    Q36584: 李維語
-    Q33754: 倫巴底語
-    Q168446: 低地德語
-    Q13286: 下索布語
+    q33698: 立窩語
+    q36584: 李維語
+    q33754: 倫巴底語
+    q168446: 低地德語
+    q13286: 下索布語
     lu: 盧巴卡丹加語
-    Q3437661: 盧古魯語
+    q3437661: 盧古魯語
     lb: 盧森堡語
-    Q35787: 馬賽語
+    q35787: 馬賽語
     mk: 馬其頓語
-    Q497345: 美茵法蘭克尼亞語
-    Q36109: 邁蒂利語
+    q497345: 美茵法蘭克尼亞語
+    q36109: 邁蒂利語
     mg: 馬拉加斯語
     ms: 馬來語
     ml: 馬拉雅拉姆語
@@ -455,87 +456,87 @@ zh-TW:
     mi: 毛利語
     mr: 馬拉提語
     mh: 馬紹爾語
-    Q6786446: 馬滕戈語
-    Q3906614: 草原馬里語
-    Q13358: 梅戈來諾羅馬尼亞語
-    Q13313: 梅魯語
-    Q36455: 閩東語
-    Q13324: 米南佳保語
-    Q13359: 明格列爾語
-    Q13330: 米蘭德斯語
-    Q13343: 莫克沙語
+    q6786446: 馬滕戈語
+    q3906614: 草原馬里語
+    q13358: 梅戈來諾羅馬尼亞語
+    q13313: 梅魯語
+    q36455: 閩東語
+    q13324: 米南佳保語
+    q13359: 明格列爾語
+    q13330: 米蘭德斯語
+    q13343: 莫克沙語
     mn: 蒙古語
-    Q56426: 摩洛哥阿拉伯語
-    Q6944725: Mwera 語
-    Q13300: 納瓦特爾語
-    Q3508074: Nai 語
+    q56426: 摩洛哥阿拉伯語
+    q6944725: Mwera 語
+    q13300: 納瓦特爾語
+    q3508074: Nai 語
     na: 諾魯語
     nv: 納瓦荷語
     nd: 北恩德貝勒語
     nr: 南恩德貝勒語
     ng: 恩敦加語
-    Q33845: 那不勒斯語
+    q33845: 那不勒斯語
     ne: 尼泊爾語
-    Q7022366: 恩金多語
-    Q28224: 北菲士蘭語
-    Q19933293: 北盧爾語
+    q7022366: 恩金多語
+    q28224: 北菲士蘭語
+    q19933293: 北盧爾語
     se: 北方薩米語
     "no": 挪威語
     nno: 挪威語
     nob: 挪威語
     nor: 挪威語
     nn: 新挪威語
-    Q36738: 諾維亞語
-    Q3272620: 尼亞庫薩語
-    Q4121131: 尼揚韋齊語
-    Q7193418: 尼雅圖魯語
-    Q11128374: 恩依哈語
-    Q16115145: 尼卡語
+    q36738: 諾維亞語
+    q3272620: 尼亞庫薩語
+    q4121131: 尼揚韋齊語
+    q7193418: 尼雅圖魯語
+    q11128374: 恩依哈語
+    q16115145: 尼卡語
     oc: 奧克語（1500年後）
-    Q28602: 官方亞拉姆語
+    q28602: 官方亞拉姆語
     oj: 奧傑布瓦語
     or: 歐利亞語
     om: 奧羅莫語
     os: 奧塞提亞語
     pi: 馬利語
     pa: 旁遮普語
-    Q36403: 帕爾語
+    q36403: 帕爾語
     fa: 波斯文
-    Q23014: 普法爾茨德語
-    Q34024: 皮卡第語
-    Q15085: 皮埃蒙特語
-    Q2429648: Pogoro 語
+    q23014: 普法爾茨德語
+    q34024: 皮卡第語
+    q15085: 皮埃蒙特語
+    q2429648: Pogoro 語
     pl: 波蘭語
     pol: 波蘭語
-    Q36748: 旁狄語
+    q36748: 旁狄語
     pt: 葡萄牙語
     ps: 普什圖語
     qu: 奇楚瓦語
-    Q584983: 朗吉語
+    q584983: 朗吉語
     ro: 摩爾多瓦語
     rm: 羅曼什語
     rn: 克倫地語
     ru: 俄語
     rus: 俄語
-    Q26245: 盧森尼亞語
-    Q34299: 薩哈語
-    Q718269: 撒奇萊雅語
+    q26245: 盧森尼亞語
+    q34299: 薩哈語
+    q718269: 撒奇萊雅語
     sm: 薩摩亞語
-    Q213434: 薩莫吉提亞語
-    Q34016: 桑達韋語
+    q213434: 薩莫吉提亞語
+    q34016: 桑達韋語
     sg: 桑戈語
     sa: 梵語
-    Q33965: 桑塔利語
+    q33965: 桑塔利語
     sc: 薩丁尼亞語
-    Q845441: 薩沙里語
-    Q14549: 低地蘇格蘭語
+    q845441: 薩沙里語
+    q14549: 低地蘇格蘭語
     sr: 塞爾維亞語
-    Q3788739: 尚巴拉語
-    Q56482: 撣語
+    q3788739: 尚巴拉語
+    q56482: 撣語
     sn: 修納語
-    Q34004: 修納語
+    q34004: 修納語
     ii: 彝語北部方言
-    Q33973: 西西里語
+    q33973: 西西里語
     sd: 信德語
     si: 僧伽羅語
     sk: 斯洛伐克語
@@ -545,8 +546,8 @@ zh-TW:
     som: 索馬利亞語
     st: 塞索托語
     es: 西班牙、卡斯蒂利亞西班牙語
-    slv: 西語
-    Q2638144: 蘇庫馬語
+    slv: 西班牙語
+    q2638144: 蘇庫馬語
     su: 巽他語
     sw: 斯瓦希里語
     ss: 史瓦帝語
@@ -555,7 +556,7 @@ zh-TW:
     tl: 他加祿語
     ty: 大溪地語
     tg: 塔吉克語
-    Q34318: 塔雷什語
+    q34318: 塔雷什語
     ta: 坦米爾語
     tt: 韃靼語
     te: 泰盧固語
@@ -563,45 +564,45 @@ zh-TW:
     tha: 泰語
     bo: 藏語
     ti: 提格利尼亞語
-    Q34159: 巴布亞皮欽語
+    q34159: 巴布亞皮欽語
     to: 東加語
-    Q180937: 托斯克阿爾巴尼亞語
+    q180937: 托斯克阿爾巴尼亞語
     ts: 宋加語
     tn: 札那語
-    Q34251: 圖陸語
-    Q34138: 圖姆布卡語
-    Q56240: 突尼西亞阿拉伯語
+    q34251: 圖陸語
+    q34138: 圖姆布卡語
+    q56240: 突尼西亞阿拉伯語
     tr: 土耳其語
     tur: 土耳其語
-    Q36730: 鄂圖曼土耳其語
+    q36730: 鄂圖曼土耳其語
     tk: 土庫曼語
     tw: 契維語
-    Q13238: 烏德穆爾特語
+    q13238: 烏德穆爾特語
     ug: 維吾爾語
     uk: 烏克蘭語
     ukr: 烏克蘭語
     none: 未指定
-    Q13248: 上索布語
+    q13248: 上索布語
     ur: 烏爾都語
     uz: 烏茲別克語
     ve: 溫達語
-    Q32747: 維普斯語
+    q32747: 維普斯語
     vi: 越南語
     vo: 沃拉普克語
-    Q32858: 沃特語
+    q32858: 沃特語
     wa: 瓦隆語
-    Q34279: 瓦瑞語
+    q34279: 瓦瑞語
     cy: 威爾斯語
     wel: 威爾斯語
-    Q100103: 西佛蘭德語
+    q100103: 西佛蘭德語
     fy: 西菲士蘭語
     wo: 沃洛夫語
-    Q34290: 吳語
+    q34290: 吳語
     xh: 科薩語
     yi: 意第緒語
     yo: 約魯巴語
-    Q10199: 扎扎其語
-    Q237409: 澤蘭語
+    q10199: 扎扎其語
+    q237409: 澤蘭語
     za: 壯語
     zu: 祖魯語
   layout_sign_in: 登入
@@ -803,7 +804,6 @@ zh-TW:
       show_warns:
         one: 顯示警告（%{count} 個）
         other: 顯示警告（%{count} 個）
-      sync: 同步
       clear_publishing: 清除鎖定
       clear_publishing_confirm: 這將會'結束'所有發布，若在主動發佈時使用會引起問題。您確定嗎？
     headers:
@@ -1028,11 +1028,6 @@ zh-TW:
     scientific_names: 名稱
     users: 使用者
     references: 參考資料
-  support:
-    array:
-      words_connector: ','
-      two_words_connector: 和
-      last_word_connector: ',和'
   term_query:
     validations:
       empty_filters_error_record: 您必須提供一個帶有屬性或值、用於紀錄搜尋的篩選
@@ -1233,251 +1228,181 @@ zh-TW:
       previous: 上一頁
     name:
       by_uri:
-        http://purl(dot)obolibrary(dot)org/obo/CEPH_0000036: 孵卵
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_133326: 硫酸鋇
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: 氧
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15756: 棕櫚酸
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_22984: 鈣
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: 鎂
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_26401: 嘌呤
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_27226: 尿酸
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28822: 花生酸
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28842: 硬脂酸
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28866: 二十四酸
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28875: 十四酸
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28941: 二十二酸
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_30805: 十二酸
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_30813: 癸酸
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_31009: 二十六酸
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32365: 十七酸
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32368: 十一酸
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32583: 二水合硫酸鈣
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32584: 半水合硫酸鈣
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_3311: 碳酸鈣
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_39246: 十九酸
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_42504: 十五酸
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_43722: 12-甲基十三烷酸
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_45919: 十三酸
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46713: 螢石
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46719: 方解石
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52239: 霰石
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52241: 六方方解石
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52254: 磷灰石
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52255: 羥磷灰石
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_64389: 生物矽
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_77635: 磷酸鈣
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_84890: 14-甲基十五烷酸
-        http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: 體長
-        http://purl(dot)obolibrary(dot)org/obo/CMO_0000445: 乳頭數量
-        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000078: 晨昏性
-        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000130: 光自營生物
-        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000131: 光異營生物
-        http://purl(dot)obolibrary(dot)org/obo/EO_0007059: 酸性土壤
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0000875: 莖直徑
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0003958: 葉尺寸類別
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0005532: 根莖植物
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0007484: 葉複雜度
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0008548: 葉脫落性
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0015519: 種子質量
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0019932: 葉形態
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0022142: 草本植物
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0023069: 葉狀體直徑
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900022: 植物生活型
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900024: 地下芽植物
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900025: 沼生植物
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900026: 水性植物
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900032: 植物生長形式
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900033: 樹木
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900034: 灌木
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900035: 攀緣植物
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900036: 類禾本植物
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900037: 闊葉草類
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900044: 水生植物
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980071: 一年生植物
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980072: 二年生植物
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980073: 多年生植物
-        http://purl(dot)obolibrary(dot)org/obo/FOODON_03413448: 溯河洄游
-        http://purl(dot)obolibrary(dot)org/obo/FOODON_03413449: 降河洄游
-        http://purl(dot)obolibrary(dot)org/obo/FOODON_03413450: 兩向洄游
-        http://purl(dot)obolibrary(dot)org/obo/GO_0000003: 生殖
-        http://purl(dot)obolibrary(dot)org/obo/GO_0009399: 固氮作用
-        http://purl(dot)obolibrary(dot)org/obo/GO_0019954: 無性生殖
-        http://purl(dot)obolibrary(dot)org/obo/GO_0040011: 移行
-        http://purl(dot)obolibrary(dot)org/obo/GO_0060746: 親代撫育
-        http://purl(dot)obolibrary(dot)org/obo/ID_0000058: 圓柱
-        http://purl(dot)obolibrary(dot)org/obo/MAT_0000366: 貯藏器官
-        http://purl(dot)obolibrary(dot)org/obo/NBO_0000055: 奔跑
-        http://purl(dot)obolibrary(dot)org/obo/NBO_0000364: 樹棲
-        http://purl(dot)obolibrary(dot)org/obo/NBO_0000366: 空中
-        http://purl(dot)obolibrary(dot)org/obo/NBO_0000367: 飛行
-        http://purl(dot)obolibrary(dot)org/obo/NBO_0000369: 滑翔
-        http://purl(dot)obolibrary(dot)org/obo/NBO_0000370: 驟變
-        http://purl(dot)obolibrary(dot)org/obo/NCIT_C25513: 構成
+        http://eol(dot)org/schema/terms/percentPerMonth: '%/月'
         http://purl(dot)obolibrary(dot)org/obo/NCIT_C70589: 多量
-        http://purl(dot)obolibrary(dot)org/obo/OBA_0000048: 細胞直徑
-        http://purl(dot)obolibrary(dot)org/obo/OBA_0000056: 細胞容積
-        http://purl(dot)obolibrary(dot)org/obo/OBA_0002342: 骨骼結構
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000036: 細胞塊
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000039: 外殼長度
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000040: 木頭密實度
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000083: 核長
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000085: 核寬
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000098: 溝寬
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000106: 骨骼包含
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000126: 上錐長度
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000127: 下錐長度
-        http://purl(dot)obolibrary(dot)org/obo/OBA_VT0100005: 體型大小
-        http://purl(dot)obolibrary(dot)org/obo/OMIT_0013523: 海藻
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000050: 壽命
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: 形狀
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002120: 酸性溫泉
+        http://purl(dot)obolibrary(dot)org/obo/EO_0007059: 酸性土壤
+        http://www(dot)ebi(dot)ac(dot)uk/efo/EFO_0001272: 成體
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000366: 空中
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00010505: 氣懸膠體
+        http://eol(dot)org/schema/terms/AgeAtMaturity: 成熟的年齡
+        http://eol(dot)org/schema/terms/amphibious: 兩棲
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03413450: 兩向洄游
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03413448: 溯河洄游
+        https://eol(dot)org/schema/terms/andromonoecious: 雄花兩性花
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980071: 一年生植物
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52254: 磷灰石
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900044: 水生植物
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52239: 霰石
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000364: 樹棲
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001709: 區域
+        http://purl(dot)obolibrary(dot)org/obo/GO_0019954: 無性生殖
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_133326: 硫酸鋇
+        http://purl(dot)obolibrary(dot)org/obo/PO_0004518: 樹皮
+        http://purl(dot)obolibrary(dot)org/obo/VT_0001502: 行為晝夜節律
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980072: 二年生植物
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_64389: 生物矽
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: 黑
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000318: 藍
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: 綠
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000322: 紅
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: 白
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000324: 黃
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000461: 中（正常）
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: 大
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000587: 小
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000625: 倒轉
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: 慢
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: 快
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000915: 厚度
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: 心形
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: 紫
+        http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: 體長
+        http://purl(dot)obolibrary(dot)org/obo/VT_0001259: 身體質量
+        http://purl(dot)obolibrary(dot)org/obo/VT_0015039: 體寬
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002019: 鹹水
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002359: 寬
+        http://purl(dot)obolibrary(dot)org/obo/CEPH_0000036: 孵卵
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: 棕
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: 橘
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001154: 延長
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001199: 線狀
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001603: 長壽
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001604: 短壽
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001709: 區域
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: 容積
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001729: 脫落性
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001731: 落葉
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001733: 常綠
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001734: 半落葉
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46719: 方解石
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_22984: 鈣（ca）
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_3311: 碳酸鈣
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_77635: 磷酸鈣
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_31346: 硫酸鈣
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32583: 二水合硫酸鈣
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32584: 半水合硫酸鈣
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Callovian: 卡洛夫期
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Cambrian: 寒武紀期間
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000014: 運河
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03413449: 降河洄游
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000067: 洞穴
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000102: 洞穴入口
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000019: 洞穴地面
+        http://eol(dot)org/schema/terms/CellDepth: 細胞深度
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0000048: 細胞直徑
+        http://eol(dot)org/schema/terms/CellLength: 細胞長度
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000036: 細胞塊
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0000056: 細胞容積
+        http://eol(dot)org/schema/terms/CellWidth: 細胞寬度
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000856: 城市
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900035: 攀緣植物
+        http://purl(dot)obolibrary(dot)org/obo/VT_0001933: 窩大小
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000687: 沿海
         http://purl(dot)obolibrary(dot)org/obo/PATO_0001794: 螺旋
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001941: 黃綠
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001980: 掌狀
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002044: 梯形
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002122: 混合
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002124: 層狀
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002300: 增質
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000014: 顏色
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002441: 片利共生與
+        http://purl(dot)obolibrary(dot)org/obo/PO_0020043: 複葉
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_64857: 化妝品
+        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000078: 晨昏性
+        http://purl(dot)obolibrary(dot)org/obo/ID_0000058: 圓柱
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000033: 日
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_30813: 癸酸
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001731: 落葉
         http://purl(dot)obolibrary(dot)org/obo/PATO_0002301: 減質
         http://purl(dot)obolibrary(dot)org/obo/PATO_0002343: 傾伏
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002359: 寬
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002389: 匍匐
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002393: 高耐力
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002394: 低耐力
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002425: 無遮蔽
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002440: 花紋
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002451: 性別差異
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002457: 擬葉
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002467: 條板狀
-        http://purl(dot)obolibrary(dot)org/obo/PORO_0000389: 大量生長習性
-        http://purl(dot)obolibrary(dot)org/obo/PORO_0000436: 掌狀
-        http://purl(dot)obolibrary(dot)org/obo/PO_0000037: 莖端
-        http://purl(dot)obolibrary(dot)org/obo/PO_0004518: 樹皮
-        http://purl(dot)obolibrary(dot)org/obo/PO_0004542: 地下莖
-        http://purl(dot)obolibrary(dot)org/obo/PO_0005848: 次生木質部
-        http://purl(dot)obolibrary(dot)org/obo/PO_0009001: 果實
-        http://purl(dot)obolibrary(dot)org/obo/PO_0009005: 根
-        http://purl(dot)obolibrary(dot)org/obo/PO_0009010: 種子
-        http://purl(dot)obolibrary(dot)org/obo/PO_0020042: 單葉
-        http://purl(dot)obolibrary(dot)org/obo/PO_0020043: 複葉
-        http://purl(dot)obolibrary(dot)org/obo/PO_0025173: 葉刺
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002303: 棲息地
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002439: 捕食對象
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002440: 共生生物屬於
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002441: 片利共生與
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002442: 互利共生與
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002444: 寄生物屬於
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002445: 寄生生物
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002454: 有宿主
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002455: 授粉
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002456: 授粉由
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002458: 捕食者
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002459: 屬於媒介為
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: 食物
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002471: 覓食者
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002556: 病原體屬於
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002557: 帶病原體
-        http://purl(dot)obolibrary(dot)org/obo/RO_0003000: 生產
-        http://purl(dot)obolibrary(dot)org/obo/RO_0008503: 偷竊寄生物屬於
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000207: 株高
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000276: 耐旱性
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000326: 葉色
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000492: 葉形狀
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000519: 根深度
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000537: 花色
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000540: 葉面積
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000850: 果實類型
-        http://purl(dot)obolibrary(dot)org/obo/TO_0001015: 光合作用率
-        http://purl(dot)obolibrary(dot)org/obo/TO_0001026: 呼吸速率
-        http://purl(dot)obolibrary(dot)org/obo/TO_0002725: 生命週期習性
-        http://purl(dot)obolibrary(dot)org/obo/TO_0006001: 耐鹽性
-        http://purl(dot)obolibrary(dot)org/obo/UBERON_0010362: 內骨骼
-        http://purl(dot)obolibrary(dot)org/obo/UBERON_4000013: 包含礦化組織
-        http://purl(dot)obolibrary(dot)org/obo/UO_0010006: 比例
-        http://purl(dot)obolibrary(dot)org/obo/VT_0001259: 身體質量
-        http://purl(dot)obolibrary(dot)org/obo/VT_0001502: 行為晝夜節律
-        http://purl(dot)obolibrary(dot)org/obo/VT_0001933: 窩大小
-        http://purl(dot)obolibrary(dot)org/obo/VT_0002292: 懷孕期持續時間
-        http://purl(dot)obolibrary(dot)org/obo/VT_0002683: 生殖開始
-        http://purl(dot)obolibrary(dot)org/obo/VT_0002758: 尾巴長度
-        http://purl(dot)obolibrary(dot)org/obo/VT_0004348: 股骨長度
-        http://purl(dot)obolibrary(dot)org/obo/VT_0010023: 前肢長度
-        http://purl(dot)obolibrary(dot)org/obo/VT_0015039: 體寬
-        http://purl(dot)obolibrary(dot)org/obo/VT_1000666: 股骨寬度
-        http://eol(dot)org/schema/terms/Present: 包含的地理分佈
-        http://eol(dot)org/schema/terms/FossilFirst: 首次出現
-        https://www(dot)wikidata(dot)org/entity/Q295469: 生態區
-        http://eol(dot)org/schema/terms/EcomorphologicalGuild: 形態同功群
-        http://eol(dot)org/schema/terms/TrophicGuild: 取食同功群
-        http://www(dot)wikidata(dot)org/entity/Q33596: 移動性
-        http://rs(dot)tdwg(dot)org/dwc/terms/verbatimDepth: 水深
-        http://eol(dot)org/schema/terms/NativeRange: 包含的本地範圍
-        http://eol(dot)org/schema/terms/fossilOccPBDB: 化石出現次數
-        http://www(dot)wikidata(dot)org/entity/Q1053008: 食物階層
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000024: 海洋底棲
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000446: 陸上
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000174: 森林
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000447: 海洋
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000687: 沿海
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000873: 淡水
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000300: 灌木叢
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000204: 熱帶
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000253: 河流
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000177: 草原
-        http://eol(dot)org/schema/terms/paleo_megaannum: 百萬年前
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000027: 攝氏溫度
-        http://eol(dot)org/schema/terms/individualspersquarekilometer: 每平方公里個體數
-        http://eol(dot)org/schema/terms/millimeterspermonth: 每月毫米數
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000012: 克耳文
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000033: 日
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000035: 月
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000036: 年
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000114: 瓦特
-        http://semanticscience(dot)org/resource/SIO_001114: 最大
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000187: 百分比
         http://purl(dot)obolibrary(dot)org/obo/UO_0000185: 度
-        http://purl(dot)bioontology(dot)org/ontology/SNOMEDCT/259032004: /日
-        http://purl(dot)bioontology(dot)org/ontology/SNOMEDCT/259039008: /年
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000195: 華氏溫度
-        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#inch: 英寸
-        http://eol(dot)org/schema/terms/perAcre: 每英畝
-        http://eol(dot)org/schema/terms/practicalSalinityUnits: 實用鹽度單位
-        http://purl(dot)org/obo/owl/UO#UO_0000034: 週
-        http://eol(dot)org/schema/terms/µmol_cell-1_day-1: µmol/cell/日
-        http://eol(dot)org/schema/terms/µmol_cell-1: µmol/cell
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000064: µmol/L
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000027: 攝氏溫度
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000439: 樹林小谷地
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000179: 沙漠
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000883: 沙漠與乾燥灌木叢
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000156: 沙漠綠洲
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005800: 沙漠沙洲
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000242: 沙漠灌木叢
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001980: 掌狀
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28941: 二十二酸
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_30805: 十二酸
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000276: 耐旱性
+        http://eol(dot)org/schema/terms/dry_forest: 乾燥林
+        http://eol(dot)org/schema/terms/dryFruit: 乾果
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000277: 旱湖
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000296: 旱湖湖床
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: 食物
+        http://eol(dot)org/schema/terms/EcomorphologicalGuild: 形態同功群
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28822: 花生酸
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001154: 延長
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0010362: 內骨骼
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000126: 上錐長度
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001733: 常綠
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002425: 無遮蔽
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: 快
+        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#foot: 英呎
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000383: 雌性
+        http://purl(dot)obolibrary(dot)org/obo/VT_0004348: 股骨長度
+        http://purl(dot)obolibrary(dot)org/obo/VT_1000666: 股骨寬度
+        http://eol(dot)org/schema/terms/FossilFirst: 首次出現
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000039: 峽灣
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000367: 飛行
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000537: 花色
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46713: 螢石
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900037: 闊葉草類
+        http://purl(dot)obolibrary(dot)org/obo/VT_0010023: 前肢長度
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000174: 森林
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000873: 淡水
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009001: 果實
+        http://eol(dot)org/schema/terms/FruitSeedColor: 果子或種子的主要顏色
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000850: 果實類型
         http://eol(dot)org/schema/terms/gramsPerCentimeterSquaredPerDay: g/cm^2/日
-        http://eol(dot)org/schema/terms/kilogramsPerMeterSquaredPerYear: kg/m^2/年
-        Unit: 單位
-        http://eol(dot)org/schema/terms/percentPerMonth: '%/月'
         http://eol(dot)org/schema/terms/gramsPercm2PerYear: g/cm^2/年
         http://eol(dot)org/schema/terms/gramsPerMonth: g/月
+        http://eol(dot)org/schema/terms/Present: 包含的地理分佈
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900024: 地下芽植物
+        http://purl(dot)obolibrary(dot)org/obo/VT_0002292: 懷孕期持續時間
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000369: 滑翔
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900036: 類禾本植物
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000177: 草原
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: 綠
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002303: 棲息地
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002454: 有宿主
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002557: 帶病原體
+        http://eol(dot)org/schema/HeadWidth: 頭寬度
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: 心形
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900025: 沼生植物
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32365: 十七酸
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0022142: 草本植物
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_31009: 二十六酸
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15756: 棕櫚酸
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001603: 長壽
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002393: 高耐力
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900026: 水性植物
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52255: 羥磷灰石
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000127: 下錐長度
+        http://purl(dot)obolibrary(dot)org/obo/EFO_0004387: 英寸
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002300: 增質
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000625: 倒轉
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002471: 覓食者
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002459: 屬於媒介為
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_84890: 14-甲基十五烷酸
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_43722: 12-甲基十三烷酸
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000012: 克耳文
+        http://eol(dot)org/schema/terms/kilogramsPerMeterSquaredPerYear: kg/m^2/年
+        http://purl(dot)obolibrary(dot)org/obo/RO_0008503: 偷竊寄生物屬於
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000252: 湖泊
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002124: 層狀
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: 大
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002467: 條板狀
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000540: 葉面積
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000326: 葉色
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0007484: 葉複雜度
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0019932: 葉形態
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000492: 葉形狀
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0008548: 葉脫落性
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0003958: 葉尺寸類別
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002457: 擬葉
+        http://purl(dot)obolibrary(dot)org/obo/TO_0002725: 生命週期習性
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000050: 壽命
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001199: 線狀
+        http://purl(dot)obolibrary(dot)org/obo/GO_0040011: 移行
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001604: 短壽
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002394: 低耐力
+        http://purl(dot)obolibrary(dot)org/obo/OMIT_0013523: 海藻
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: 鎂（mg）
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000181: 紅樹林沼澤
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000447: 海洋
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000024: 海洋底棲
+        http://purl(dot)obolibrary(dot)org/obo/PORO_0000389: 大量生長習性
+        http://semanticscience(dot)org/resource/SIO_001114: 最大
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000461: 中（正常）
+        http://eol(dot)org/schema/terms/millimeterspermonth: 每月毫米數
+        http://eol(dot)org/schema/terms/paleo_megaannum: 百萬年前
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_4000013: 包含礦化組織
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002122: 混合
         http://eol(dot)org/schema/terms/millimetersPerThreeMonths: mm/三個月
         http://eol(dot)org/schema/terms/millimetersPerFourMonths: mm/四個月
         http://eol(dot)org/schema/terms/millimetersPerSixMonths: mm/六個月
@@ -1486,8 +1411,106 @@ zh-TW:
         http://purl(dot)obolibrary(dot)org/obo/UO_0010005: mm/日
         http://purl(dot)obolibrary(dot)org/obo/NCIT_C105508: mm/秒
         http://eol(dot)org/schema/terms/millimetersPerYear: mm/年
-        http://eol(dot)org/schema/terms/µmol_cm-2_hr-1: µmol/cm2/時
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000035: 月
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002442: 互利共生與
+        http://eol(dot)org/schema/terms/NativeRange: 包含的本地範圍
+        http://purl(dot)obolibrary(dot)org/obo/GO_0009399: 固氮作用
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_39246: 十九酸
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000083: 核長
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000085: 核寬
+        http://eol(dot)org/schema/terms/fossilOccPBDB: 化石出現次數
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28842: 硬脂酸
+        http://purl(dot)obolibrary(dot)org/obo/VT_0002683: 生殖開始
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: 橘
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002440: 花紋
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: 氧
+        http://purl(dot)obolibrary(dot)org/obo/PORO_0000436: 掌狀
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002444: 寄生物屬於
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002445: 寄生生物
+        http://purl(dot)obolibrary(dot)org/obo/GO_0060746: 親代撫育
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002556: 病原體屬於
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_42504: 十五酸
+        http://eol(dot)org/schema/terms/perAcre: 每英畝
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000187: 百分比
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980073: 多年生植物
+        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000130: 光自營生物
+        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000131: 光異營生物
+        http://purl(dot)obolibrary(dot)org/obo/TO_0001015: 光合作用率
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900032: 植物生長形式
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000207: 株高
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900022: 植物生活型
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002456: 授粉由
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002455: 授粉
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002458: 捕食者
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002439: 捕食對象
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002389: 匍匐
+        http://purl(dot)obolibrary(dot)org/obo/RO_0003000: 生產
+        http://eol(dot)org/schema/terms/practicalSalinityUnits: 實用鹽度單位
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_26401: 嘌呤
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: 紫
+        http://purl(dot)obolibrary(dot)org/obo/UO_0010006: 比例
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000322: 紅
+        http://purl(dot)obolibrary(dot)org/obo/GO_0000003: 生殖
+        http://purl(dot)obolibrary(dot)org/obo/TO_0001026: 呼吸速率
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0005532: 根莖植物
+        http://purl(dot)obolibrary(dot)org/obo/PO_0004542: 地下莖
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000253: 河流
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000519: 根深度
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009005: 根
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000055: 奔跑
+        http://purl(dot)obolibrary(dot)org/obo/TO_0006001: 耐鹽性
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000370: 驟變
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000300: 灌木叢
+        http://purl(dot)obolibrary(dot)org/obo/PO_0005848: 次生木質部
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009010: 種子
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0015519: 種子質量
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001734: 半落葉
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002451: 性別差異
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: 形狀
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001729: 脫落性
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000039: 外殼長度
+        http://purl(dot)obolibrary(dot)org/obo/PO_0000037: 莖端
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900034: 灌木
+        http://purl(dot)obolibrary(dot)org/obo/PO_0020042: 單葉
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000106: 骨骼包含
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0002342: 骨骼結構
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: 慢
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000587: 小
+        http://purl(dot)obolibrary(dot)org/obo/PO_0025173: 葉刺
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0000875: 莖直徑
+        http://purl(dot)obolibrary(dot)org/obo/MAT_0000366: 貯藏器官
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000098: 溝寬
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002440: 共生生物屬於
+        http://purl(dot)obolibrary(dot)org/obo/VT_0002758: 尾巴長度
+        http://purl(dot)obolibrary(dot)org/obo/CMO_0000445: 乳頭數量
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000182: 溫帶沙漠
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000446: 陸上
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28866: 二十四酸
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28875: 十四酸
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0023069: 葉狀體直徑
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000915: 厚度
         http://purl(dot)obolibrary(dot)org/obo/UO_0010038: 噸
-        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#foot: 英呎
-        http://purl(dot)obolibrary(dot)org/obo/EFO_0004387: 英寸
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002044: 梯形
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900033: 樹木
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_45919: 十三酸
+        http://eol(dot)org/schema/terms/TrophicGuild: 取食同功群
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000183: 熱帶沙漠
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32368: 十一酸
+        http://eol(dot)org/schema/terms/unknown: 不明
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_27226: 尿酸
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52241: 六方方解石
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: 容積
+        http://rs(dot)tdwg(dot)org/dwc/terms/verbatimDepth: 水深
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000114: 瓦特
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: 白
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000040: 木頭密實度
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000036: 年
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000324: 黃
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001941: 黃綠
+        http://eol(dot)org/schema/terms/yes: 是
+        http://eol(dot)org/schema/terms/µmol_cell-1_day-1: µmol/cell/日
+        http://eol(dot)org/schema/terms/µmol_cell-1: µmol/cell
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000064: µmol/L
+        http://purl(dot)obolibrary(dot)org/obo/BTO_0000954: 蛹
+        http://purl(dot)obolibrary(dot)org/obo/BTO_0001171: 生殖細胞
 ...

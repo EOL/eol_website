@@ -2,7 +2,7 @@ version: '3.0' # NOTE: this is NOT a version of the *file*, it's a version of th
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:6.8.9
-    container_name: eol-backend-elasticsearch
+    container_name: publishing_elasticsearch
     restart: always
     environment:
       - RAILS_ENV
@@ -15,74 +15,87 @@ services:
         hard: -1
     volumes:
       - ./templates/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
-      - /data/eol-backend-elasticsearch/data:/var/data/elasticsearch
-      - /data/eol-backend-elasticsearch/log:/var/log/elasticsearch
+      - /data/publishing_elasticsearch/data:/var/data/elasticsearch
+      - /data/publishing_elasticsearch/log:/var/log/elasticsearch
     ports:
       - 9200:9200
     networks:
-      - eolnet
+      - publishing_network
   elasticsearch2:
     image: docker.elastic.co/elasticsearch/elasticsearch:6.8.9
-    container_name: eol-backend-elasticsearch2
+    container_name: publishing_elasticsearch2
     environment:
       - RAILS_ENV
       - cluster.name=eol-search-${RAILS_ENV}
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms4g -Xmx4g"
-      - "discovery.zen.ping.unicast.hosts=[eol-backend-elasticsearch,eol-backend-elasticsearch3]"
+      - "discovery.zen.ping.unicast.hosts=[publishing_elasticsearch,publishing_elasticsearch3]"
     ulimits:
       memlock:
         soft: -1
         hard: -1
     volumes:
       - ./templates/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
-      - /data/eol-backend-elasticsearch2/data:/var/data/elasticsearch
-      - /data/eol-backend-elasticsearch2/log:/var/log/elasticsearch
+      - /data/publishing_elasticsearch2/data:/var/data/elasticsearch
+      - /data/publishing_elasticsearch2/log:/var/log/elasticsearch
     networks:
-      - eolnet
+      - publishing_network
   elasticsearch3:
     image: docker.elastic.co/elasticsearch/elasticsearch:6.8.9
-    container_name: eol-backend-elasticsearch3
+    container_name: publishing_elasticsearch3
     environment:
       - cluster.name=eol-search-${RAILS_ENV}
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms4g -Xmx4g"
-      - "discovery.zen.ping.unicast.hosts=[eol-backend-elasticsearch,eol-backend-elasticsearch2]"
+      - "discovery.zen.ping.unicast.hosts=[publishing_elasticsearch,publishing_elasticsearch2]"
     ulimits:
       memlock:
         soft: -1
         hard: -1
     volumes:
       - ./templates/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
-      - /data/eol-backend-elasticsearch3/data:/var/data/elasticsearch
-      - /data/eol-backend-elasticsearch3/log:/var/log/elasticsearch
+      - /data/publishing_elasticsearch3/data:/var/data/elasticsearch
+      - /data/publishing_elasticsearch3/log:/var/log/elasticsearch
     networks:
-      - eolnet
+      - publishing_network
   memcached:
     image: memcached
-    container_name: eol-backend-memcached
+    container_name: publishing_memcached
     restart: always
     environment:
       - TZ=America/New_York
     command: memcached -m 4096m
     networks:
-      - eolnet
+      - publishing_network
   neo4j:
     image: neo4j
-    container_name: eol-backend-neo4j
+    container_name: neo4j
     restart: always
     environment:
       - RAILS_ENV
       - TZ=America/New_York
       - NEO4J_AUTH=neo4j/SomePasswordHere
-      - NEO4J_dbms_memory_pagecache_size=4G
-      - NEO4J_dbms_memory_heap_maxSize=16G
+      - NEO4J_dbms_memory_pagecache_size=34G
+      - NEO4J_dbms_memory_heap_max__size=31500m
+      - NEO4J_dbms_memory_heap_initial__size=31500m
+      - NEO4J_cypher_query__max__allocations_size=4G
+      - NEO4J_dbms_transaction_timeout=85s
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+      - NEO4J_dbms_directories_import=/exports
+      - NEO4J_apoc_export_file_enabled=true
     volumes:
-      - /data/eol-backend-neo4j/data:/data
-      - /data/eol-backend-neo4j/logs:/logs
+      - /data/neo4j/data:/data
+      - /data/neo4j/logs:/logs
+      - /data/neo4j/plugins:/plugins
+      - /data/neo4j/exports:/exports
       - ./resources/templates/neo4j.conf:/conf/neo4j.conf
+      - ./resources/templates/apoc.conf:/conf/apoc.conf
     networks:
-      - eolnet
+      - publishing_network
+    ports:
+      - 7473:7473
+      - 7474:7474
+      - 7687:7687
   mysql:
     image: mysql:5.7.31
     container_name: eol_publishing_mysql_ENV
@@ -98,46 +111,40 @@ services:
        - /u/data/eol_publishing_mysql_ENV_temp:/tmp
        - /u/data/eol_publishing_mysql_ENV_conf:/etc/mysql/conf.d/
     networks:
-      - eolnet
+      - publishing_network
   redis: # WARNING: It's simpler to just skip persistence, but that means we lose the entire queue on restart.
     image: redis:6.0
-    container_name: eol-redis
+    container_name: redis
     restart: always
     ports:
       - 6379:6379
-  eol-publishing:
+    networks:
+      - publishing_network
+  pub_web:
     build: ..
     image: eol_website
-    container_name: pub_app
+    container_name: pub_web
     restart: always
     environment: # NOTE: see https://docs.docker.com/compose/environment-variables/ for details.
       - RAILS_ENV
       - ELASTICSEARCH_URL=elasticsearch:9200
-      - EOL_REDIS="redis://redis:6379"
-      - REDIS_PROVIDER=EOL_REDIS
     volumes:
       - ./resources/secrets.yml:/app/config/secrets.yml
       - ../config/supervisord_publishing.conf:/etc/supervisord.conf
-      - /data/eol-backend-tramea:/app/public/data
-      - /data/eol-backend-tramea-private-data:/app/data
+      - /data/publishing_web:/app/public/data
+      - /data/publishing_web_log:/app/log
+      - /data/publishing_web_private:/app/data
       - /eol/tmp/eol_website:/tmp
     depends_on:
       - mysql
       - neo4j
       - memcached
       - elasticsearch
-      - eol-redis
-    links:
-      - elasticsearch
-      - memcached:memcached
-      - mysql
-      - neo4j
-      - redis
     ports:
        - 3000:3000
     networks:
-      - eolnet
-  eol-publishing-jobs:
+      - publishing_network
+  pub_jobs:
     build: ..
     image: eol_website
     container_name: pub_jobs
@@ -145,28 +152,37 @@ services:
     environment: # NOTE: see https://docs.docker.com/compose/environment-variables/ for details.
       - RAILS_ENV
       - ELASTICSEARCH_URL=elasticsearch:9200
-      - EOL_REDIS="redis://redis:6379"
+      - EOL_REDIS=redis://redis:6379
       - REDIS_PROVIDER=EOL_REDIS
     volumes: # NOTE: YES, it shares the data volumes with production, so you can download the files that were processed here.
       - ./resources/secrets.yml:/app/config/secrets.yml
       - ../config/supervisord_jobs.conf:/etc/supervisord.conf
-      - /data/eol-backend-tramea:/app/public/data
-      - /data/eol-backend-tramea-private-data:/app/data
+      - /data/publishing_web:/app/public/data
+      - /data/publishing_jobs_log:/app/log
+      - /data/publishing_web_private:/app/data
       - /eol/tmp/eol_website_jobs:/tmp
     depends_on:
       - mysql
       - neo4j
       - memcached
       - elasticsearch
-      - eol-redis
-    links:
-      - elasticsearch
-      - memcached
-      - mysql
-      - neo4j
       - redis
     networks:
-      - eolnet
+      - publishing_network
+  newrelic:
+    image: newrelic/infrastructure:latest
+    container_name: newrelic
+    cap_add:
+      - SYS_PTRACE
+    network_mode: host
+    pid: host
+    privileged: true
+    volumes:
+      - "/:/host:ro"
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./resources/newrelic-infra.conf:/etc/newrelic-infra.yml
+      - ../config/newrelic_logging:/etc/newrelic-infra/logging.d
+    restart: unless-stopped
 networks:
-  eolnet:
+  publishing_network:
     driver: bridge

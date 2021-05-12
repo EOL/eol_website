@@ -1,12 +1,9 @@
 %h1= t("resources.headers.index")
 
-- if is_admin?
-  .ui.basic.button
-    = link_to(t("resources.actions.sync"), sync_resources_path)
-  - if ImportLog.already_running?
-    .ui.red.inverted.button
-      = link_to(t("resources.actions.clear_publishing"), clear_publishing_resources_path(@resource),
-        data: { confirm: t("resources.actions.clear_publishing_confirm") })
+- if is_admin? && ImportLog.already_running?
+  .ui.red.inverted.button
+    = link_to(t("resources.actions.clear_publishing"), clear_publishing_resources_path(@resource),
+      data: { confirm: t("resources.actions.clear_publishing_confirm") })
 
 %p
   .ui.label
@@ -40,5 +37,5 @@
               .ui.label= "new"
           %td= link_to(number_with_delimiter(resource.nodes.count), resource_nodes_path(resource))
           %td= number_with_delimiter(resource.media.count)
-          %td= number_with_delimiter(TraitBank.count_by_resource(resource.id))
+          %td= number_with_delimiter(TraitBank::Queries.count_by_resource(resource.id))
 = paginate @resources

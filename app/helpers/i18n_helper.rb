@@ -1,7 +1,6 @@
 module I18nHelper
   # separated_list([a, b, c]) == "(a, b, c)" for en
-  def separated_list(sources)
-    items = sources.map { |s| s.is_a?(Hash) && s[:name] ? s[:name] : s }
+  def separated_list(items)
     # Override in locale file, e.g., config/locales/custom_support/en.yml
     default_strs = {
       :join => ', ',

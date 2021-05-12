@@ -10,12 +10,12 @@ namespace :term_names do
     
     data_file = ENV['DATA_FILE'] ? ENV['DATA_FILE'] : nil
 
-    TermNames.refresh(adapter_name, data_file: data_file)
+    TermTranslations.refresh(adapter_name, data_file: data_file)
   end
 
   task list_providers: :environment do
     puts "Available providers:"
-    TermNames::ADAPTERS.each do |a|
+    TermTranslations::ADAPTERS.each do |a|
       puts a.name
     end
   end

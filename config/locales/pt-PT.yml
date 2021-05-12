@@ -55,7 +55,6 @@ pt-PT:
       referents_count: referentes
       species_count: espécies
       updated_at: última atualização
-  cms_page_date: 'Última modificação às:'
   collect_already_in_collection: (já está aqui)
   collect_already_in_collection_will_add_icon: (adicionar multimédia a "%{page}")
   collect_new_collection: Nome da Nova Coleção
@@ -194,11 +193,12 @@ pt-PT:
     hy: Arménio
     eu: Basco
     bs: Bósnio
-    Q33281: Chavacano
+    q35156: Car
+    q33281: Chavacano
     zh: Chinês
     hr: Croata
     da: Dinamarquês
-    Q3362072: Digo
+    q3362072: Digo
     en: Português (Portugal)
     eo: Esperanto
     et: Estoniano
@@ -207,7 +207,7 @@ pt-PT:
     gl: Galego
     ka: Georgiano
     de: Alemão
-    Q3272630: Gogo
+    q3272630: Gogo
     el: Grego, Moderno (1453-)
     he: Hebreu
     hi: Hindi
@@ -220,11 +220,11 @@ pt-PT:
     kk: Cazaquistanês
     ko: Coreano
     la: Latim
-    Q1160372: Laz
-    Q146803: Língua Franca Nova
-    Q13358: Megleno-romeno
-    Q6944725: Mwera
-    Q4121131: Nyamwezi
+    q1160372: Laz
+    q146803: Língua Franca Nova
+    q13358: Megleno-romeno
+    q6944725: Mwera
+    q4121131: Nyamwezi
     fa: Persa
     pt: Português (Portugal)
     ru: Russo
@@ -425,11 +425,6 @@ pt-PT:
     nodes: nodos
     users: utilizadores
     references: referências
-  support:
-    array:
-      words_connector: ','
-      two_words_connector: ' e'
-      last_word_connector: ' e'
   terms:
     comment_field_html: <strong>Comentário:</strong> %{comment}
     definition_field_html: <strong>Definição:</strong> %{definition}
@@ -474,15 +469,14 @@ pt-PT:
       next: página seguinte
     name:
       by_uri:
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: oxigénio
-        http://purl(dot)obolibrary(dot)org/obo/GO_0000003: reprodução
-        http://purl(dot)obolibrary(dot)org/obo/GO_0060746: cuidado parental
         http://purl(dot)obolibrary(dot)org/obo/NCIT_C70589: abundância
-        http://purl(dot)obolibrary(dot)org/obo/OBA_VT0100005: tamanho do corpo
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: volume
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002440: ornamentação
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002444: parasita de
         http://purl(dot)obolibrary(dot)org/obo/RO_0002470: come
         http://purl(dot)obolibrary(dot)org/obo/TO_0000537: cor da flor
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002440: ornamentação
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: oxigénio
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002444: parasita de
+        http://purl(dot)obolibrary(dot)org/obo/GO_0060746: cuidado parental
+        http://purl(dot)obolibrary(dot)org/obo/GO_0000003: reprodução
         http://purl(dot)obolibrary(dot)org/obo/TO_0006001: tolerância ao sal
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: volume
 ...

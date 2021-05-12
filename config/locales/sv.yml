@@ -63,7 +63,6 @@ sv:
       referents_count: referenser
       species_count: arter
       updated_at: senast uppdaterad
-  cms_page_date: 'Senast ändrad:'
   collect_already_in_collection: (den är redan här)
   collect_already_in_collection_will_add_icon: (lägg till media i "%{page}")
   collect_icon_title: Lägg till "%{item}" från sidan "%{page}" i…
@@ -238,85 +237,85 @@ sv:
   language: Språk
   languages:
     ab: Abchaziska
-    Q27683: Acehnesiska
-    Q27776: Adygeiska
+    q27683: Acehnesiska
+    q27776: Adygeiska
     aa: Afar
     af: Afrikaans
     ak: Akan
     alb: Albanska
     sq: Albanska
-    Q131339: Alemanniska
+    q131339: Alemanniska
     am: Amhariska
     ar: Arabiska
     an: Aragonska
     hy: Armenien
     as: Assamesiska
-    Q29507: Asturiska
-    Q56590: Atikamekw
+    q29507: Asturiska
+    q56590: Atikamekw
     av: Avariska
     ae: Avestiska
     ay: Aymara
-    Q9292: Azerbajdzjanska
+    q9292: Azerbajdzjanska
     az: Azerbijani
-    Q33070: Baleariska
+    q33070: Baleariska
     bm: Bambara
-    Q33151: Banjaresiska
+    q33151: Banjaresiska
     ba: Basjkiriska
     eu: Baskiska
-    Q29540: Bayerska
+    q29540: Bayerska
     be: Vitryska
-    Q8836490: Bende
+    q8836490: Bende
     bn: Bengaliska
     bh: Biharispråken
     bi: Bislama
     nb: Bokmål, norska; norskt bokmål
-    Q4941378: Bendei
+    q4941378: Bendei
     bs: Bosniska
-    Q33202: Brahui
-    Q750553: Brasiliansk portugisiska
+    q33202: Brahui
+    q750553: Brasiliansk portugisiska
     br: Bretonska
     bg: Bulgariska
     my: Burmesiska
-    Q33120: Burjatiska
-    Q35037: Businenge Tongo
-    Q880301: Cajunfranska
-    Q35156: Car
-    Q2591230: Cashinahua
+    q33120: Burjatiska
+    q35037: Businenge Tongo
+    q880301: Cajunfranska
+    q35156: Car
+    q2591230: Cashinahua
     ca: Katalanska, valencianska
-    Q33239: Cebuano
+    q33239: Cebuano
     khm: Centralkhmer
     km: Centralkhmer
     ch: Chamorro
-    Q33281: Chavacano
+    q33281: Chavacano
     ce: Tjetjenska
-    Q33388: Cherokesiska
-    Q33265: Cheyenne
+    q33388: Cherokesiska
+    q33265: Cheyenne
     ny: Chichewa; chewa; nyanja
     zh: Kinesiska
     chi: Kinesiska
-    Q32979: Choctaw
+    q32979: Choctaw
     cu: Kyrkslaviska
     cv: Tjuvasjiska
-    Q37041: Klassisk kinesiska
+    q37041: Klassisk kinesiska
     kw: Korniska
     co: Korsikanska
     cr: Cree
-    Q33357: Krimtatariska
+    q33357: Krimtatariska
     hr: Kroatien
     hrv: Kroatiska
     cs: Tjeckiska
     da: Danska
-    Q3362072: Digo
-    Q56466: Dinka
+    q3362072: Digo
+    q56466: Dinka
     dv: Divehi; maldiviska
-    Q18415595: Dotyali
+    q18415595: Dotyali
     dut: Nederländska; Flamländska
     nl: Nederländska; flamländska
     dz: Dzongkha
     dzo: Dzongkha
-    Q4126517: Östkanadensiskt inuktitut
+    q4126517: Östkanadensiskt inuktitut
     en: Engelska
-    Q29952: Erzya
+    q29952: Erzya
     eo: Esperanto
     et: Estniska
     est: Estniska
@@ -324,33 +323,33 @@ sv:
     fj: Fijianska
     fi: Finska
     fin: Finska
-    Q667747: Fipa
+    q667747: Fipa
     fr: Franska
     fra: Franska
     ff: Fula
     gd: Skotsk gäliska
     gl: Galiciska
-    Q33475: Gan
+    q33475: Gan
     lg: Luganda
     ka: Georgien
     de: Tyska
     deu: Tyska
-    Q5575236: Konkani
-    Q3272630: Gogo
-    Q2501174: Gorontalo
+    q5575236: Konkani
+    q3272630: Gogo
+    q2501174: Gorontalo
     el: Grekiska, modern (1453-)
     gre: Grekiska
     gn: Guaraní
     gu: Gujarati
-    Q33303: Haida
+    q33303: Haida
     ht: Haitiska; haitisk kreol
     ha: Hausa
-    Q35756: Haya
+    q35756: Haya
     he: Hebreiska
     heb: Hebreiska
-    Q3129390: Hehe
+    q3129390: Hehe
     hz: Herero
-    Q35978: Hiligaynon
+    q35978: Hiligaynon
     hi: Hindi
     ho: Hiri Motu
     hu: Ungerska
@@ -358,36 +357,36 @@ sv:
     ice: Isländska
     io: Ido
     ig: Igbo
-    Q35936: Ilokano
+    q35936: Ilokano
     id: Indonesiska
-    Q33509: Ingusjiska
+    q33509: Ingusjiska
     ia: Interlingua (International Auxiliary Language Association)
     ie: Interlingue; occidental
     iu: Inuktitut
     ik: Inupiaq
-    Q33595: Iraqw
+    q33595: Iraqw
     ga: Iriska
     it: Italienska
     ita: Italienska
-    Q35939: Patwa; jamaicansk patois
+    q35939: Patwa; jamaicansk patois
     ja: Japanska
     jp: Japanska
     jv: Javanesiska
-    Q33522: Kabardinska
-    Q35475: Kabiyè
-    Q35853: Kabyle
+    q33522: Kabardinska
+    q35475: Kabiyè
+    q35853: Kabyle
     kl: Kalaallisut; grönländska
-    Q33634: Kalmuckiska
+    q33634: Kalmuckiska
     kn: Kannada
     kr: Kanuri
-    Q36121: Kapampangan
-    Q33541: Karakalpakiska
+    q36121: Kapampangan
+    q33541: Karakalpakiska
     ks: Kashmiri
-    Q33690: Kasjubiska
+    q33690: Kasjubiska
     kk: Kazakiska
     ki: Kikuyu; gikuyu
-    Q11005332: Kinga
-    Q11732519: Kingindo
+    q11005332: Kinga
+    q11732519: Kingindo
     rw: Kinyarwanda
     ky: Kirgiziska
     kv: Komi
@@ -396,31 +395,31 @@ sv:
     kor: Koreanska
     kj: Kuanyama; kwanyama
     ku: Kurdiska
-    Q36206: Lak
+    q36206: Lak
     lo: Laotiska
     lao: Laotiska
     la: Latin
     lv: Lettiska
-    Q1160372: Laziska
-    Q31746: Lezgiska
-    Q36106: Liguriska
+    q1160372: Laziska
+    q31746: Lezgiska
+    q36106: Liguriska
     li: Limburgiska
     ln: Lingala
-    Q146803: Lingua Franca Nova
+    q146803: Lingua Franca Nova
     lt: Litauen
     lit: Litauiska
-    Q33698: Liv
-    Q36584: Livvi
-    Q33754: Lombardiska
-    Q168446: Lågsaxiska
-    Q13286: Lågsorbiska
+    q33698: Liv
+    q36584: Livvi
+    q33754: Lombardiska
+    q168446: Lågsaxiska
+    q13286: Lågsorbiska
     lu: Luba-Katanga
-    Q3437661: Luguru
+    q3437661: Luguru
     lb: Luxemburgiska
-    Q35787: Masai
+    q35787: Masai
     mk: Makedonska
-    Q497345: Mainfränkiska
-    Q36109: Maithili
+    q497345: Mainfränkiska
+    q36109: Maithili
     mg: Malagassiska
     ms: Malajiska
     ml: Malayalam
@@ -430,87 +429,87 @@ sv:
     mi: Maori
     mr: Marathi
     mh: Marshallesiska
-    Q6786446: Matengo
-    Q3906614: Östmariska
-    Q13358: Meglenrumänska
-    Q13313: Meru
-    Q36455: Mindong
-    Q13324: Minangkabau
-    Q13359: Megreliska
-    Q13330: Mirandesiska
-    Q13343: Moksja
+    q6786446: Matengo
+    q3906614: Östmariska
+    q13358: Meglenrumänska
+    q13313: Meru
+    q36455: Mindong
+    q13324: Minangkabau
+    q13359: Megreliska
+    q13330: Mirandesiska
+    q13343: Moksja
     mn: Mongoliet
-    Q56426: Marockansk arabiska
-    Q6944725: Mwera
-    Q13300: Nahuatl
-    Q3508074: Nai
+    q56426: Marockansk arabiska
+    q6944725: Mwera
+    q13300: Nahuatl
+    q3508074: Nai
     na: Nauru
     nv: Navajo; navaho
     nd: Ndebele; nordndebele
     nr: Ndebele; sydndebele
     ng: Ndonga
-    Q33845: Neapolitanska
+    q33845: Neapolitanska
     ne: Nepali
-    Q7022366: Ngindo
-    Q28224: Nordfrisiska
-    Q19933293: Luriska
+    q7022366: Ngindo
+    q28224: Nordfrisiska
+    q19933293: Luriska
     se: Nordsamiska
     "no": Norska
     nno: Norska
     nob: Norska
     nor: Norska
     nn: Nynorska
-    Q36738: Novial
-    Q3272620: Nyakusa
-    Q4121131: Nyamwezi
-    Q7193418: Nyaturu
-    Q11128374: Nyiha
-    Q16115145: Nyika
+    q36738: Novial
+    q3272620: Nyakusa
+    q4121131: Nyamwezi
+    q7193418: Nyaturu
+    q11128374: Nyiha
+    q16115145: Nyika
     oc: Occitanska (efter 1500)
-    Q28602: Officiell arameiska
+    q28602: Officiell arameiska
     oj: Ojibwa
     or: Oriya
     om: Oromo
     os: Ossetiska
     pi: Pali
     pa: Punjabi
-    Q36403: Pare
+    q36403: Pare
     fa: Persiska
-    Q23014: Pfalziska
-    Q34024: Pikardiska
-    Q15085: Piemontesiska
-    Q2429648: Pogoro
+    q23014: Pfalziska
+    q34024: Pikardiska
+    q15085: Piemontesiska
+    q2429648: Pogoro
     pl: Polska
     pol: Polska
-    Q36748: Pontisk grekiska
+    q36748: Pontisk grekiska
     pt: Portugisiska
     ps: Pashto
     qu: Quechua
-    Q584983: Rangi
+    q584983: Rangi
     ro: Rumänska; moldaviska
     rm: Rätoromanska
     rn: Kirundi
     ru: Ryska
     rus: Ryska
-    Q26245: Rusinska
-    Q34299: Jakutiska
-    Q718269: Sakizaya
+    q26245: Rusinska
+    q34299: Jakutiska
+    q718269: Sakizaya
     sm: Samoanska
-    Q213434: Samogitiska
-    Q34016: Sandawe
+    q213434: Samogitiska
+    q34016: Sandawe
     sg: Sango
     sa: Sanskrit
-    Q33965: Santali
+    q33965: Santali
     sc: Sardiska
-    Q845441: Sassaresiska
-    Q14549: Skottska
+    q845441: Sassaresiska
+    q14549: Skottska
     sr: Serbiska
-    Q3788739: Shambala
-    Q56482: Shan
+    q3788739: Shambala
+    q56482: Shan
     sn: Shona
-    Q34004: Shona
+    q34004: Shona
     ii: Nuosu
-    Q33973: Sicilianska
+    q33973: Sicilianska
     sd: Sindhi
     si: Singalesiska
     sk: Slovakiska
@@ -521,7 +520,7 @@ sv:
     st: Sydsotho
     es: Spanska; kastilianska
     slv: Spanska
-    Q2638144: Sukuma
+    q2638144: Sukuma
     su: Sundanesiska
     sw: Swahili
     ss: Swati
@@ -530,7 +529,7 @@ sv:
     tl: Tagalog
     ty: Tahitiska
     tg: Tadzjikiska
-    Q34318: Talysj
+    q34318: Talysj
     ta: Tamil
     tt: Tatariska
     te: Telugu
@@ -538,45 +537,45 @@ sv:
     tha: Thailändska
     bo: Tibetanska
     ti: Tigrinska
-    Q34159: Tok pisin
+    q34159: Tok pisin
     to: Tonganska
-    Q180937: Toskiska
+    q180937: Toskiska
     ts: Tsonga
     tn: Tswana
-    Q34251: Tulu
-    Q34138: Tumbuka
-    Q56240: Tunisisk arabiska
+    q34251: Tulu
+    q34138: Tumbuka
+    q56240: Tunisisk arabiska
     tr: Turkiska
     tur: Turkiska
-    Q36730: Osmanska
+    q36730: Osmanska
     tk: Turkmeniska
     tw: Twi
-    Q13238: Udmurtiska
+    q13238: Udmurtiska
     ug: Uiguriska
     uk: Ukrainska
     ukr: Ukrainska
     none: Ospecificerad
-    Q13248: Högsorbiska
+    q13248: Högsorbiska
     ur: Urdu
     uz: Uzbekiska
     ve: Venda
-    Q32747: Vepsiska
+    q32747: Vepsiska
     vi: Vietnamesisk
     vo: Volapük
-    Q32858: Votiska
+    q32858: Votiska
     wa: Vallonska
-    Q34279: Waray
+    q34279: Waray
     cy: Kymriska
     wel: Vallonska
-    Q100103: Västflamländska
+    q100103: Västflamländska
     fy: Västfrisiska
     wo: Wolof
-    Q34290: Wu
+    q34290: Wu
     xh: Xhosa
     yi: Jiddisch
     yo: Yoruba
-    Q10199: Zazaki
-    Q237409: Zeeländska
+    q10199: Zazaki
+    q237409: Zeeländska
     za: Zhuang
     zu: Zulu
   layout_sign_in: Logga in
@@ -898,16 +897,14 @@ sv:
     scientific_names: namn
     users: användare
     references: referenser
-  support:
-    array:
-      words_connector: ','
-      two_words_connector: och
-      last_word_connector: ', och'
+  term_query:
+    invalid_obsolete: OGILTIG/FÖRÅLDRAD
   term_query_filter:
     validations:
       blank_error: måste ange ett attribut eller värde
       invalid_uri: ogiltig webbadress
       range_invalid_error: måste vara >= än första värdet
+      units_blank_error: enheter kan vara tomma för en numerisk sökning
   terms:
     scientific_name: vetenskapligt namn
     source: källa
@@ -926,12 +923,15 @@ sv:
         eq: '%{pred} = %{num_val} %{units}'
         gte: '%{pred} >= %{num_val} %{units}'
         lte: '%{pred} <= %{num_val} %{units}'
-        obj_only: 'värde: %{obj}'
+        obj_only: 'med värde: %{obj}'
         pred_obj: '%{pred}: %{obj}'
         pred_only: '%{pred}'
         range: '%{pred} i [%{num_val1}, %{num_val2}] %{units}'
         resource: 'resurs: %{value}'
         sex: 'kön: %{value}'
+      result_header_records: Visar %{range_begin} - %{range_end} av %{total} poster
+        för %{page_count} taxa
+      result_header_taxa: Visar %{range_begin} - %{range_end} av %{total} taxa
       new_search: ny sökning
       select:
         top_level:
@@ -994,59 +994,54 @@ sv:
       previous: föregående sida
     name:
       by_uri:
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: syre
-        http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: kroppslängd
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0000875: stamdiameter
-        http://purl(dot)obolibrary(dot)org/obo/GO_0019954: asexuell reproduktion
-        http://purl(dot)obolibrary(dot)org/obo/ID_0000058: cylinder
-        http://purl(dot)obolibrary(dot)org/obo/OBA_0002342: skelettstruktur
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000036: cellmassa
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000039: Skallängd
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000040: trädensitet
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000106: skelettinnehåll
-        http://purl(dot)obolibrary(dot)org/obo/OBA_VT0100005: kroppstorlek
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: form
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: svart
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: grön
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: stor
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000587: liten
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: långsam
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000915: tjockhet
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: hjärtformad
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: lila
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: brun
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: orange
         http://purl(dot)obolibrary(dot)org/obo/PATO_0001709: område
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: volym
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002122: blandad
-        http://purl(dot)obolibrary(dot)org/obo/PO_0009005: rötter
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002455: pollinerar
+        http://purl(dot)obolibrary(dot)org/obo/GO_0019954: asexuell reproduktion
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: svart
+        http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: kroppslängd
+        http://purl(dot)obolibrary(dot)org/obo/VT_0001259: kroppsmassa
+        http://purl(dot)obolibrary(dot)org/obo/VT_0015039: kroppsbredd
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: brun
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000036: cellmassa
+        http://purl(dot)obolibrary(dot)org/obo/ID_0000058: cylinder
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000185: grader
         http://purl(dot)obolibrary(dot)org/obo/RO_0002470: äter
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002471: äts av
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002557: har patogen
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000326: lövfärg
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000492: lövform
+        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#foot: fot
         http://purl(dot)obolibrary(dot)org/obo/TO_0000537: blomfärg
         http://purl(dot)obolibrary(dot)org/obo/TO_0000850: frukttyp
-        http://purl(dot)obolibrary(dot)org/obo/VT_0001259: kroppsmassa
-        http://purl(dot)obolibrary(dot)org/obo/VT_0002758: svanslängd
-        http://purl(dot)obolibrary(dot)org/obo/VT_0015039: kroppsbredd
-        http://eol(dot)org/schema/terms/paleo_megaannum: miljoner år sedan
-        http://eol(dot)org/schema/terms/individualspersquarekilometer: individer per
-          kvadratkilometer
-        http://eol(dot)org/schema/terms/millimeterspermonth: millimeter per månad
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000035: månader
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000036: år
-        http://semanticscience(dot)org/resource/SIO_001114: max
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000187: procent
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000185: grader
-        http://purl(dot)bioontology(dot)org/ontology/SNOMEDCT/259039008: /år
-        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#inch: tum
-        http://purl(dot)org/obo/owl/UO#UO_0000034: veckor
-        http://eol(dot)org/schema/terms/kilogramsPerMeterSquaredPerYear: kg/m^2/år
-        Unit: Enhet
         http://eol(dot)org/schema/terms/gramsPerMonth: g/månad
-        http://eol(dot)org/schema/terms/millimetersPerYear: mm/år
-        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#foot: fot
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: grön
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002557: har patogen
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: hjärtformad
         http://purl(dot)obolibrary(dot)org/obo/EFO_0004387: tum
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002471: äts av
+        http://eol(dot)org/schema/terms/kilogramsPerMeterSquaredPerYear: kg/m^2/år
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: stor
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000326: lövfärg
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000492: lövform
+        http://semanticscience(dot)org/resource/SIO_001114: max
+        http://eol(dot)org/schema/terms/millimeterspermonth: millimeter per månad
+        http://eol(dot)org/schema/terms/paleo_megaannum: miljoner år sedan
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002122: blandad
+        http://eol(dot)org/schema/terms/millimetersPerYear: mm/år
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000035: månader
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: orange
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: syre
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000187: procent
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002455: pollinerar
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: lila
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009005: rötter
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: form
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000039: Skallängd
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000106: skelettinnehåll
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0002342: skelettstruktur
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: långsam
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000587: liten
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0000875: stamdiameter
+        http://purl(dot)obolibrary(dot)org/obo/VT_0002758: svanslängd
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000915: tjockhet
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: volym
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000114: watt
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000040: trädensitet
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000036: år
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000064: µmol/l
 ...

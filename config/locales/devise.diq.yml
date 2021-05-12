@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: 1917 Ekim Devrimi
+# Author: Mirzali
 # Author: Orbot707
 ---
 diq:
@@ -37,8 +38,8 @@ diq:
         instruction: Yewi seba parolay vurnayışi yew gıre waşt u şıma şenê Ney gırey
           cêrêni ra bıkerê
         instruction_2: Eger ke no şıma nêwaşto se ena epostay peygoş bıkerê
-        instruction_3: Parolay şıma hetana gırey cori restışi u hetana reyna neweyên
-          vıraştışi nêvurino
+        instruction_3: Parolaya şıma heta reştışê gıreyê cori u heta reynavıraştışê
+          neweyi nêvuriyena.
         subject: Talimatê parola reset kerdışi
       unlock_instructions:
         subject: Talimatê kıliti

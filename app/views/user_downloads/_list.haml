@@ -23,7 +23,10 @@
     - if !download.search_url.blank?
       %br
       %span query:&nbsp;
-      = link_to(term_query_display_string(download.term_query), download.search_url)
+      - if download.term_query.valid?
+        = link_to(term_query_display_string(download.term_query), download.search_url)
+      - else 
+        %span= t("term_query.invalid_obsolete")
 
     - if show_user
       %br

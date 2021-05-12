@@ -8,6 +8,7 @@ Delayed::Worker.max_attempts = 2
 Delayed::Worker.queue_attributes = {
   harvest: { priority: 0 }
 }
+Delayed::Worker.raise_signal_exceptions = :term # unlock jobs on SIGTERM so that they can be picked up by the next available worker
 
 # NOTE: If you add another one of these, you should really move them to a jobs folder.
 RepublishJob = Struct.new(:resource_id) do

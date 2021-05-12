@@ -14,7 +14,7 @@
           %dt.term-name{ data: data }= term[:data]['name']
           %dd
             .uk-text-muted.uk-text-small= term[:data]['uri']
-            = term[:definition]
+            = term[:data]['definition']
             .uk-text-muted= term[:data]['attribution']
     = render "glossary_pagination"
   - else

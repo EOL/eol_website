@@ -22,21 +22,21 @@ fr:
       last_attempt: Vous pouvez encore faire une autre tentative avant que votre compte
         soit verrouillé.
       not_found_in_database: '%{authentication_keys} ou mot de passe non valide.'
-      recaptcha_error: Le code « recaptacha » ci-dessous était erroné. Veuillez entrer
-        à nouveau le code correct et cliquer sur « Soumettre ».
+      recaptcha_error: Le code « recaptacha » ci-dessous était erroné. Veuillez entrer
+        à nouveau le code correct et cliquer sur « Soumettre ».
       timeout: Votre session a expiré. Veuillez vous identifier à nouveau pour continuer.
       unauthenticated: Vous devez vous connecter ou vous inscrire avant de continuer.
       unconfirmed: Vous devez confirmer votre adresse courriel avant de continuer.
     mailer:
       confirmation_instructions:
         action: Confirmer mon compte
-        greeting: Bienvenue %{recipient} !
+        greeting: Bienvenue %{recipient} !
         instruction: 'Vous pouvez confirmer votre compte courriel en cliquant le lien
-          ci-dessous :'
+          ci-dessous :'
         subject: Instructions de confirmation
       reset_password_instructions:
         action: Changer mon mot de passe
-        greeting: 'Bonjour #{recipient} !'
+        greeting: 'Bonjour #{recipient} !'
         instruction: Quelqu’un a demandé un lien pour modifier votre mot de passe,
           et vous pouvez le faire avec le lien ci-dessous.
         instruction_2: Si vous n’avez pas fait cette demande, veuillez ignorer ce
@@ -47,7 +47,7 @@ fr:
       unlock_instructions:
         subject: Instructions de déverrouillage
       password_change:
-        greeting: 'Bonjour #{recipient} !'
+        greeting: 'Bonjour #{recipient} !'
         message: Nous vous contactons pour vous signaler que votre mot de passe a
           été changé.
         subject: Mot de passe changé
@@ -65,9 +65,9 @@ fr:
         connecté.
       updated_not_active: Votre mot de passe a été modifié avec succès.
     registrations:
-      destroyed: Au revoir ! Votre compte a bien été supprimé. Nous espérons vous
+      destroyed: Au revoir ! Votre compte a bien été supprimé. Nous espérons vous
         revoir bientôt.
-      signed_up: Bienvenue ! Vous êtes maintenant correctement inscrit.
+      signed_up: Bienvenue ! Vous êtes maintenant correctement inscrit.
       signed_up_but_inactive: Vous êtes maintenant correctement inscrit. Cependant,
         nous n’avons pas pu vous connecter car votre compte n’est pas encore activé.
       signed_up_but_locked: Vous êtes maintenant correctement inscrit. Cependant,
@@ -84,9 +84,9 @@ fr:
       signed_in: Connexion réussie.
       signed_out: Déconnexion réussie.
       already_signed_out: Déconnexion réussie.
-      recaptcha: Erreurs de validation du « recaptcha »
+      recaptcha: Erreurs de validation du « recaptcha »
       sign_in_remember_me_disabled_for_admins: Pour des raisons de sécurité, les administrateurs
-        ne peuvent pas utiliser la fonctionnalité « Se souvenir de moi ».
+        ne peuvent pas utiliser la fonctionnalité « Se souvenir de moi ».
     unlocks:
       send_instructions: Vous recevrez dans quelques minutes un courriel avec les
         instructions pour déverrouiller votre compte.
@@ -103,6 +103,6 @@ fr:
       not_found: non trouvé
       not_locked: n’a pas été verrouillé
       not_saved:
-        one: 'Une erreur a empêché l’enregistrement de cette %{resource} :'
-        other: '%{count} erreurs ont empêché l’enregistrement de cette %{resource} :'
+        one: 'Une erreur a empêché l’enregistrement de cette %{resource} :'
+        other: '%{count} erreurs ont empêché l’enregistrement de cette %{resource} :'
 ...

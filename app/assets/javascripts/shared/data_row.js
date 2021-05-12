@@ -1,50 +1,45 @@
 function bindMetaArrow($row) {
   $row.find('.js-meta-arw').click(function() {
-    var $metaList = $(this).siblings('.js-meta-items')
-      , $pred = $(this).closest('.js-data-row').find('.js-predicate')
-      , hidePredWhenClosed = $(this).data('hidePredWhenClosed')
-      ;
+    const $contain = $row.parent('.js-data-row-contain');
 
-    if ($(this).hasClass('fa-angle-down')) {
-      $(this).removeClass('fa-angle-down');
-      $(this).addClass('fa-angle-up');
-      $metaList.removeClass('is-hidden');
-
-      if (hidePredWhenClosed) {
-        $pred.removeClass('is-hidden');
-      }
+    if ($row.hasClass('js-data-row-closed')) {
+      $row.addClass('is-hidden');
+      $contain.find('.js-data-row-open').removeClass('is-hidden');
     } else {
-      $(this).removeClass('fa-angle-up');
-      $(this).addClass('fa-angle-down');
-      $metaList.addClass('is-hidden');
-
-      if (hidePredWhenClosed) {
-        $pred.addClass('is-hidden');
-      }
+      $row.addClass('is-hidden');
+      $contain.find('.js-data-row-closed').removeClass('is-hidden');
     }
   });
 }
 
-function bindLoadArrows() {
-  $('.js-load-arw').click(function() {
-    var $that = $(this)
-      , $row = $that.parent('.js-data-row')
+function bindMetaArrowsToLoad() {
+  $('.js-meta-arw').click(loadRow);
+}
+
+function loadRow() {
+  const $arrow = $(this) 
+      , $row = $arrow.parent('.js-data-row');
       ;
 
-    $that.removeClass('fa-angle-down');
-    $that.addClass('fa-spin fa-spinner');
+  $arrow.off('click');
+  $arrow.removeClass('fa-angle-down');
+  $arrow.addClass('fa-spin fa-spinner');
+  bindMetaArrow($row);
 
-    $.ajax({
-      url: $row.data('showPath'),
-      success: function(result) {
-        var $result = $(result);
-        bindMetaArrow($result);
-        $row.replaceWith($result);
-      }
-    })
-  });
+  $.ajax({
+    url: $row.data('showPath'),
+    success: function(result) {
+      var $result = $(result);
+      bindMetaArrow($result);
+      $row.addClass('is-hidden');
+      $row.after($result);
+
+      $arrow.addClass('fa-angle-down');
+      $arrow.removeClass('fa-spin fa-spinner');
+    }
+  })
 }
 
 $(function() {
-  bindLoadArrows();
+  bindMetaArrowsToLoad();
 });

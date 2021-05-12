@@ -14,7 +14,8 @@ class TermNames::WikidataAdapter
   end
 
   def initialize(options)
-    @storage = TermNames::NameStorage.new
+    @name_storage = TermNames::NameStorage.new
+    @defn_storage = TermNames::NameStorage.new
   end
 
   def uri_regexp
@@ -29,24 +30,35 @@ class TermNames::WikidataAdapter
       url = BASE_URL + id + ".json"
       response = HTTP.follow.get(url)
       next if !check_response(response)
-      labels_by_locale = response.parse.dig("entities", id, "labels")
-
-      if labels_by_locale
-        locales.each do |locale|
-          value = labels_by_locale.dig(locale.to_s, "value")
-          next if value.nil?
-          @storage.set_value_for_locale(locale, uri, value) 
-        end
-      else
-        puts "WARN: failed to retrieve labels from #{url} -- continuing"
-      end
+      entity = response.parse.dig("entities", id)
+      store_locale_values("labels", @name_storage, entity, uri, locales)
+      store_locale_values("descriptions", @defn_storage, entity, uri, locales)
     end
 
     sleep 1 # throttle api calls
   end
 
   def names_for_locale(locale)
-    @storage.names_for_locale(locale)
+    @name_storage.names_for_locale(locale)
+  end
+
+  def defns_for_locale(locale)
+    @defn_storage.names_for_locale(locale)
+  end
+
+  private
+  def store_locale_values(key, storage, entity, uri, locales)
+    by_locale = entity&.[](key)
+
+    if by_locale
+      locales.each do |locale|
+        val = by_locale.dig(locale.to_s, "value")
+        next if val.nil?
+        storage.set_value_for_locale(locale, uri, val)
+      end
+    else
+      puts "WARN: failed to retrieve #{key} for #{uri} -- continuing"
+    end
   end
 end
 

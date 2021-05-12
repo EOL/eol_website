@@ -41,7 +41,7 @@
         %li
           - index_stat(:media, Medium.where(resource_id: @resource.id).count)
         %li
-          - index_stat(:data, TraitBank.count_by_resource(@resource.id))
+          - index_stat(:data, TraitBank::Queries.count_by_resource(@resource.id))
         %li
           - index_stat(:scientific_names, ScientificName.where(resource_id: @resource.id).count)
         %li

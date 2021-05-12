@@ -1,0 +1,1159 @@
+# Messages for Greek (Ελληνικά)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Babispan
+# Author: Geraki
+# Author: Giorgos456
+# Author: Marios
+# Author: MuratTheTurkish
+# Author: NikosLikomitros
+# Author: Nikosgranturismogt
+# Author: Norhorn
+# Author: SkarletWitch
+---
+el:
+  language_name: Ελληνικά
+  about:
+    trait_bank:
+      title: Τράπεζα Χαρακτηριστικών
+  account_already_linked: ο λογαριασμός είναι ήδη συνδεδεμένος με το EOL
+  account_not_linked: ο λογαριασμός σας δεν είναι συνδεδεμένος με το EOL
+  advanced: Προχωρημένο
+  are_you_sure_delete_account: Είστε σίγουρος πως θέλετε να διαγράψετε το λογαριασμό
+    EOL σας;
+  article:
+    actions:
+      collect: Συλλέξτε
+    header:
+      blank: (Δεν υπάρχει περιεχόμενο σε αυτό το άρθρο)
+      body: Κύριο Μέρος
+      language: Γλώσσα:%{language}
+      title: Τίτλος
+      untitled: Χωρίς Τίτλο
+    name:
+      missing: Χωρίς Τίτλο
+  article_from_partner: Παρέχεται από %{partner}
+  article_duplicate: Αυτό το άρθρο μπορεί επίσης να βρεθεί σε %{section}
+  autocomplete:
+    see_all:
+      one: Δείτε άλλα αποτελέσματα
+      other: Δείτε τα όλα %{count} results
+  breadcrumbs:
+    notices:
+      canonical: Οι επιστημονικές ονομασίες θα εμφανίζονται στις δυναμικές διαδρομές
+        των σελίδων
+    setting_header: Ονόματα σε δυναμικές διαδρομές
+    types:
+      scientific: επιστημονικό
+      vernacular: καθομιλουμένη
+  button_create: δημιουργήστε
+  button_add: Προσθέστε
+  cancel: Ακύρωση
+  change_my_password: Αλλαγή Κωδικού πρόσβασης μου
+  change_your_password: Αλλάξτε τον κωδικό πρόσβασης σας
+  classifications:
+    children:
+      see_more: Δείτε περισσότερα
+    hierarchies:
+      this_page: (αυτή η σελίδα)
+    richness:
+      header: πλούτος σελίδας
+      page_contents_count: Σχετικό περιεχόμενο
+      missing: ο πλούτος δεν έχει ακόμη υπολογιστεί για αυτή την σελίδα
+      media_count: μέσα
+      articles_count: άρθρα
+      links_count: σύνδεσμοι
+      maps_count: Χάρτες
+      data_count: Δεδομένα
+      nodes_count: Κόμβοι
+      vernaculars_count: καθομιλουμένη
+      scientific_names_count: επιστημονικά ονόματα
+      species_count: είδη
+      updated_at: Τελευταία ενημέρωση
+  collect_already_in_collection: (είναι ήδη εδώ)
+  collect_already_in_collection_will_add_icon: (προσθήκη πολυμέσων στο "%{page}")
+  collect_icon_title: Προσθήκη %{item} από τη %{page} σελίδα στο
+  collect_new_collection: Νέο όνομα συλλογής
+  collect_new_collection_title: '...μια νέα συλλογή'
+  collect_no_existing_collections: Δεν έχετε καμία ακόμη! Δημιουργήστε μια χρησιμοποιώντας
+    τη φόρμα στα αριστερά.
+  collect_select_collection: '...Μια από τις συλλογές σας'
+  collect_title: Πρόσθεσε %{item} σε...
+  collected_page_added_to_collection: προστέθηκε η %{page} στην συλλογή <a href='%{link}'>%{name}</a>.
+  collected_page_already_in_collection: Αυτό ήταν ήδη στη συλλογή σας.
+  collected_pages_title: Σελίδες
+  collected_pages_medium:
+    destroyed_flash: Η εικόνα αφαιρέθηκε από την συλλεγμένη σελίδα.
+  collection_associations:
+    destroyed_flash: '%{name} δεν σχετίζεται πια με αυτή τη συλλογή.'
+  collected_pages:
+    delete_button: διαγραφή
+    edit_button: Επεξεργασία
+    delete_confirm: Είστε σίγουρος;
+    destroyed_flash: '%{name} αφαιρέθηκε από τη συλλογή'
+  collection_association_added_to_collection: Προστέθηκε %{associated} στη συλλογή
+    <a href='%{link}'>"%{name}"</a>
+  collection_associations_empty: Καμία άλλη συλλογή δεν σχετίζεται με αυτήν. Μπορείτε
+    να κάνετε κλικ πάνω στο κουμπί Συσχετισμός σε άλλες συλλογές για να εμφανιστούν
+    και εκείνες εδώ.
+  collection_associations_title: Συσχετιζόμενες συλλογές
+  collection_collected_pages_media_remove: 'Αφαιρέστε εικόνες από την συλλογή (οι
+    αλλαγές ισχύουν άμεσα):'
+  collection_created: Δημιουργία νέας συλλογής ¨%{name}¨
+  collection_created_for_association: Προστέθηκε %{associated} στη νέα συλλογή <a
+    href='%{link}'>"%{name}"</a>
+  collection_user_is_admin: Αυτός ο χρήστης είναι διαχειριστής
+  collection_pages_empty: Αυτή η συλλογή δεν έχει σελίδες. Δοκιμάστε να πατήσετε το
+    κουμπί "συλλογή" στα είδη σελιδών για να προσθέσετε κάτι!
+  collection:
+    admins:
+      header: Χρήστες που μπορούν να επεξεργαστούν αυτή τη συλλογή (οι αλλαγές έχουν
+        άμεση ισχύ)
+      label: 'Προσθέστε έναν χρήστη που μπορεί να επεξεργαστεί αυτή τη συλλογή:'
+      placeholder: πλήρες όνομα ή όνομα χρήστη
+    actions:
+      associate: Συσχέτιση
+      download_taxa_csv: Κατεβάστε το αρχείο CSV για τα τάξα
+      delete: διαγραφή
+      edit: επεξεργασία
+      sort: Ταξινόμηση
+    collection_type:
+      normal: κανονικό
+      gallery: Γκαλερί
+    delete_confirm: Αυτό θα αφαιρέσει ολόκληρη τη συλλογή και αυτή η ενέργεια ΔΕΝ
+      μπορεί να γυρίσει πίσω. Είστε σίγουροι;
+    destroyed: '%{name} έχει διαγραφεί μόνιμα'
+    pages_count:
+      one: 1 σελίδα
+      other: '%{count} σελίδες'
+    log:
+      associated_collection:
+        add: '%{user}προσέθεσε ένα συσχετισμό στην συλλογή %{associated}'
+        remove: '%{user} αφαίρεσε την σύνδεση με την συλλογή %{associated}'
+      collection:
+        add: '%{user} δημιούργησε την συλλογή'
+        change: '%{user} άλλαξε το %{field} από "%{from}" σε "%{to}"'
+      content:
+        add: Ο %{user} προσέθεσε το μέσο %{medium} για την σελίδα %{page}
+        change: '%{user} άλλαξε το %{field} στο πολυμέσο %{medium} για την σελίδα
+          %{page} από "%{from}" σε "%{to}"'
+        remove: '%{user} αφαίρεσε το πολυμέσο %{medium} από την σελίδα %{page}'
+      page:
+        add: '%{user} προσέθεσε την σελίδα %{page}'
+        change: '%{user} άλλαξε το %{field} στην σελίδα %{page} από "%{from}" σε "%{to}"'
+        remove: '%{user} αφαίρεσε την σελίδα %{page}'
+      user:
+        add: Ο %{user} προσέθεσε το διαχειριστή %{manager}
+        remove: '%{user} αφαίρεσε το διαχειριστή %{manager}'
+    search:
+      placeholder: Αναζήτηση στη συλλογή...
+      submit: Αναζήτηση
+    sort:
+      hierarchy: Ιεραρχία
+      position: Ημερομηνία που προστέθηκε
+      sci_name: Επιστημονική ονομασία, Α-Ω
+      sci_name_rev: Επιστημονική ονομασία, Ω-Α
+      sort_field: Επεξήγηση, Α-Ω
+      sort_field_rev: Επεξήγηση, Ω-Α
+    updated: Η συλλογή ενημερώθηκε.
+  collection_unauthorized_edit: Μόνο ο ιδιοκτήτης μπορεί να επεξεργαστεί αυτή τη συλλογή
+  complete_registration: Παρακαλώ συνεχίστε την διαδικασία εγγραφής
+  content_appears_on: 'Περιλαμβάνεται στις παρακάτω σελίδες:'
+  content_collected_in: 'Εμφανίζεται στις ακόλουθες συλλογές:'
+  content_attributions_header: Πηγή πληροφοριών
+  content_attributions_labels:
+    altitude: Υψόμετρο
+    author: Συγγραφέας
+    bibliographic_citation: Βιβλιογραφική αναφορά
+    compiler: συντάκτης
+    creator: δημιουργός
+    editor: συντάκτης
+    latitude: Γεωγραφικό πλάτος
+    license: Άδεια
+    location: Τοποθεσία
+    location_verbatim: αυτολεξεί
+    longitude: Γεωγραφικό μήκος
+    original_media_file: Πρωτότυπος φάκελος πολυμέσων
+    owner: Πνευματικά δικαιώματα
+    photographer: Φωτογράφος
+    publisher: Εκδότης
+    project: Εγχείρημα
+    provider: Πάροχος
+    references_header:
+      one: Αναφορά
+      other: Αναφορές
+    resource_label: Ιστότοπος συνεργάτη
+    resource_pk: (ταυτότητα:%{key})
+    rights_statement: Δήλωση δικαιωμάτων
+    source: Πηγή
+    spatial_location: Χωρικός
+    view_source_label: Πρωτότυπο
+    view_source_link: Προβολή της πρωτότυπης εικόνας
+    view_source_page_link: Επίσκεψη πηγής
+  content_not_in_any_collection_image: Αυτή η εικόνα δεν εμφανίζεται σε καμία συλλογή
+  content_not_in_any_collection_sound: Αυτός ο ήχος δεν εμφανίζεται σε καμία συλλογή.
+  content_not_in_any_collection_video: Αυτό το βίντεο δεν εμφανίζεται σε καμία συλλογή.
+  data:
+    modifier:
+      statistical_method_term: Στατιστική μέθοδος που χρησιμοποιήθηκε για τη μέτρηση.
+  data_missing: (λείπουν δεδομένο, κλειδιά:%{keys})
+  dear_username_with_comma: Αγαπητέ/ή %{username}
+  delete_account_button: Διαγράψτε το λογαριασμό σας.
+  filter_by_license: Άδεια
+  filter_by_license_any_item: Οποιαδήποτε άδεια.
+  filter_by_medium_subtype: τύπος
+  filter_by_medium_any_item: Οποιοσδήποτε τύπος
+  filter_by_resource: πάροχος
+  filter_by_resource_any_item: οποιοσδήποτε πάροχος
+  filters:
+    filter_by_attribute: Φιλτράρισμα βάσει χαρακτηριστικών
+    filter_by_language: Φιλτράρισμα με βάση τη γλώσσα
+    filter_by_provider: Φιλτράρισμα με βάση τον πάροχο
+  footer:
+    eol_info:
+      citing_eol: Αναφορά Εγκυκλοπαίδειας της ζωής
+      contact_us: Επικοινωνήστε μαζί μας
+      data_services: Υπηρεσίες δεδομένων
+      donate: Δωρίστε
+      education: Εκπαίδευση
+      food_webs: Τροφικοί ιστοί
+      glossary: Γλωσσάρι
+      help: Βοήθεια
+      language_support: Υποστήριξη γλώσσας
+      terms_of_use: Όροι χρήσης
+      the_eol_forum: Το φόρουμ της εγκυκλοπαίδειας της ζωής
+      what_is_eol: Τι είναι η Εγκυκλοπαίδεια της ζωής;
+      whats_new: Τι νέο
+    discover:
+      algae: Φύκη
+      amphibians: Αμφίβια
+      animals: Ζώα
+      archaea: Αρχαία
+      bacteria: Βακτήρια
+      birds: Πτηνά
+      crustaceans: Καρκινοειδή
+      fishes: Ψάρια
+      flowering_plants: Ανθοφόρα φυτά
+      fungi: Μύκητες
+      insects: Έντομα
+      invertebrates: Ασπόνδυλα
+      mammals: Θηλαστικά
+      molds: Μούχλα
+      mushrooms: Μανιτάρια
+      mollusks: Μαλάκια
+      plants: Φυτά
+      protists: Πρώτιστα
+      reptiles: Ερπετά
+      spiders: Αράχνες
+      trees: Δέντρα
+      viruses: Ιοί
+      worms: Σκουλήκια
+    eol_is_hosted_by: 'Η εγκυκλοπαίδεια της ζωής φιλοξενείται από:'
+  forgot_your_password: Ξεχάσατε τον κωδικό σας;
+  landing_page:
+    header: Παγκόσμια πρόσβαση στη γνώση για τη ζωή πάνω στη γη.
+    stats_cleared: Τα στατιστικά στοιχεία υπολογίστηκαν εκ νέου
+  language: Γλώσσα
+  languages:
+    ab: Αμπχαζιανά
+    q27683: Ασεχνικά
+    q27776: Αντίγκε
+    aa: Μακρυά
+    af: Αφρικανοί
+    ak: Ακάν
+    alb: Αλβανός
+    sq: Αλβανός
+    q131339: Αλεμαννικά
+    am: Αμαρικά
+    ar: Αραβικά
+    an: Αραγονική
+    hy: Αρμένιος
+    as: Ασσαμέζικα
+    q29507: Αστουριανή
+    q56590: ατικαμέκβ
+    av: αβαρικά
+    ae: Αβεστανικά
+    ay: Αϊμάρα
+    q9292: αζερμπαϊτζανικά
+    az: Αζέρος
+    q33070: Μπαλινέζικα
+    bm: Μπαμπάρα
+    q33151: Μπαντζάρ
+    ba: Μπασκίρ
+    eu: Βασκικά
+    q29540: Βαυαρικά
+    be: Λευκορώσικα
+    q8836490: Μπέντε
+    bn: μπενγκάλι
+    bh: Γλώσσες Μπιχάρι
+    bi: Μπισλάμα
+    nb: Μποκμάλ,νορβηγικά; νορβηγικά μποκμάλ
+    q4941378: Μποντέι
+    bs: Βόσνιος
+    q33202: Μπράουι
+    q750553: Βραζιλιάνικα πορτογαλικά
+    br: Βρετονικά
+    bg: Βούλγαρος
+    my: Βιρμανικά
+    q33120: Μπουριάτ
+    q880301: Γαλλικά Καζούν
+    q35156: Αυτοκίνητο
+    q2591230: Κασιναουάα
+    ca: Καταλανικά,Βαλενθιάνικα
+    q33239: Σεμπουάνο
+    khm: Κεντρικός Χμερ
+    km: Κεντρικό Χμερ
+    ch: Χαμόρο
+    q33281: Τσαβακάνο
+    ce: Τσετσένος
+    q33388: Τσερόκι
+    q33265: Τσεγιέν
+    ny: Τσιτσέουα; Τσούα; Νιάνγια
+    zh: Κινέζος
+    chi: Κινέζος
+    q32979: Τσοκτάου
+    cu: Παλαιοημερολογήτικα σλαβονικά
+    cv: Τσουβάς
+    q37041: Κλασικά κινέζικα
+    kw: Κορνουαλικά
+    co: Κορσικά
+    cr: Κρι
+    q33357: Κριμαϊκά ταταρικά
+    hr: Κροάτης
+    hrv: Κροάτης
+    cs: Τσέχος
+    da: Δανός
+    q3362072: Ντίνγκο
+    q56466: Ντίνκα
+    dv: Ντιβέχι
+    q18415595: Ντοτιάλι
+    dut: Ολλανδός, Φλαμανδός
+    nl: Ολλανδικά, Φλαμανδικά
+    dz: Τζόνγκκα
+    dzo: Τζόνγκκα
+    q4126517: Ανατολική καναδική ινούκτιτουτ
+    en: Αγγλικά
+    q29952: Έρτζια
+    eo: εσπεράντο
+    et: εσθονικά
+    est: Εσθονός
+    ee: Ίοου
+    fo: Φεροϊκά
+    fj: Φιτζιανά
+    fi: Φινλανδικά
+    fin: Φινλανδός
+    q667747: Φίπα
+    fr: Γαλλικά
+    fra: Γάλλος
+    ff: Φουλάχ
+    gd: Σκωτσέζικα γαελικά
+    gl: γαλικιακά
+    q33475: Γκαν κινέζικα
+    lg: Γκάντα
+    ka: Γεωργιανά
+    de: Γερμανικά
+    deu: Γερμανός
+    q5575236: Γκόαν Κονκανί
+    q3272630: Γκόγκο
+    q2501174: Γκοροντάλο
+    el: Ελληνικά, σύγχρονα (1453-)
+    gre: Έλληνας
+    gn: Γκουαρανί
+    gu: Γκουτζαράτι
+    q33303: Χάιντα
+    ht: Αϊτιανά; Κρεόλ αϊτιανά
+    ha: Χάουσα
+    q35756: Χάγια
+    he: Εβραϊκά
+    heb: Εβραϊκά
+    q3129390: Χέχε
+    hz: Χερέρο
+    q35978: Χίλιγκιν
+    hi: Ινδικά
+    ho: Χίρι Μότου
+    hu: Ουγγρικά
+    is: Ισλανδικά
+    ice: Ισλανδός
+    io: Ίντο
+    ig: Ίγκμπο
+    q35936: Λοουκάνοου
+    id: Ινδονησιακά
+    q33509: Ινγκούς
+    iu: Ινούκτιτουτ
+    ik: Ινούπιακ
+    q33595: Ιρακινά
+    ga: Ιρλανδικά
+    it: Ιταλικά
+    ita: Ιταλός
+    q35939: Αγγλικά κρεόλ της Τζαμάικα
+    ja: Ιαπωνικά
+    jp: Ιάπωνας
+    jv: Τζαβανεζικά
+    q33522: Καμπαρδιανά Κυρσσιανά
+    q35475: Καμπιγιέ
+    kl: Καλάλισουτ,Γροιλανδικά
+    q33634: Καλμίκ
+    kr: Κανούρι
+    q36121: Καπαμπάγκαν
+    q33541: Κάρα Καλπάκ
+    q33690: Κασουβιανά
+    ki: Κικούγιου, Γκικούγιου
+    q11732519: Κινγκίντο
+    rw: Κινιαρουάντα
+    ky: Κιργιζικά
+    kv: Κόμι
+    kg: Κονγκολέζικα
+    ko: Κορεάτικα
+    kor: Κορεάτης
+    kj: Κουανιάμα
+    ku: Κουρδικά
+    q36206: Λακ
+    lo: Λαοτινά
+    lao: λαοτινά
+    la: Λατινικά
+    lv: Λετονικά
+    q1160372: Λαζ
+    q31746: Λεζγιανά
+    q36106: Λιγουριανά
+    li: Λιμβουργικά
+    ln: Λινγκάλα
+    lt: Λιθουανικά
+    lit: Λιθουανός
+    q33698: Λιβ
+    q33754: Λομβαρδικά
+    q168446: Κάτω σαξονία
+    q35787: Μασάι
+    mk: Μακεδονικά
+    mt: Μαλτέζικα
+    mlt: Μαλτέζος
+    mi: Μαορί
+    mr: Μαράτι
+    mn: Μογγολικά
+    q56426: Αραβικά Μαρόκου
+    nv: Ναβάχο
+    q33845: Ναπολιτάνος
+    ne: Νεπαλί
+    "no": Νορβηγικά
+    nno: Νορβηγός
+    nob: Νορβηγός
+    nor: Νορβηγικά
+    q28602: Επίσημα αραμαϊκά
+    fa: Περσικά
+    pl: Πολωνικά
+    pol: Πολωνικά
+    pt: Πορτογαλικά
+    qu: Κέτσουα
+    ro: Ρουμανικά, Μολδαβικά
+    ru: Ρωσικά
+    rus: Ρώσος
+    sa: Σανσκριτικά
+    sr: Σέρβικα
+    sk: Σλοβάκικα
+    slk: Σλοβάκος
+    sl: Σλοβένικα
+    som: Σομαλικά
+    es: Ισπανικά
+    slv: Ισπανός
+    sw: Σουαχίλι
+    sv: Σουηδικά
+    swe: Σουηδικά
+    ty: Ταϊτιανά
+    ta: Ταμίλ
+    tt: Ταταρικά
+    te: Τελούγκου
+    th: ταϊλανδικά
+    tha: ταϊλανδικά
+    bo: Θιβετιανά
+    q34159: Τοκ πισίν
+    q56240: Αραβικά Τυνησίας
+    tr: Τούρκικα
+    tur: Τούρκικα
+    q36730: Τούρκικα, οθωμανικά
+    tk: Τουρκμενικά
+    uk: Ουκρανικά
+    ukr: Ουκρανός
+    none: Αδιευκρίνιστο
+    uz: Ουζμπεκικά
+    vi: Βιετναμέζικα
+    vo: Βόλαπουκ
+    cy: ουαλικά
+    wel: ουαλός
+    q100103: Δυτικά φλαμανδικά
+    fy: Δυτικά φρυζιανά
+    q34290: Γου
+    zu: Ζουλού
+  layout_sign_in: Συνδεθείτε
+  layout_sign_up: Εγγραφείτε
+  layout_sign_out: Αποσύνδεση
+  literature_and_references_header: Αρθρογραφία και πηγές
+  maps:
+    other_maps_title: Μη-διαδραστικοί χάρτες
+  medium:
+    untitled:
+      image: εικόνα χωρίς τίτλο
+      image_of: εικόνα του %{page_name}
+      video: βίντεο χωρίς τίτλο
+      video_of: βίντεο του %{page_name}
+      sound: ήχος χωρίς τίτλο
+      sound_of: ήχος του %{page_name}
+      map: χάρτης χωρίς τίτλο
+      map_of: χάρτης του %{page_name}
+      js_map: διαδραστικός χάρτης χωρίς τίτλο
+      js_map_of: διαδραστικός χάρτης του %{page_name}
+    subclasses:
+      image: Εικόνα
+      video: Βίντεο
+      sound: ήχος
+      map_image: χάρτης
+      js_map: διαδραστικός χάρτης
+  medium_collect_button: συλλογή μέσων
+  medium_description_blank: Δεν υπάρχει διαθέσιμη περιγραφή για αυτό το αντικείμενο
+  medium_header_title: 'Τίτλος:'
+  medium_header_description: 'Περιγραφή:'
+  names:
+    prefer: Προτιμώ
+  nav:
+    about: Σχετικά
+    discuss: Συζητώ
+    education: Εκπαίδευση
+    search:
+      placeholder: Αναζήτηση στην Εγκυκλοπαίδεια της ζωής
+    trait_bank: Τράπεζα Χαρακτηριστικών
+  name_preferred_label: Προτιμώμενα
+  page_icon_created: Μετακίνηση εικόνας %{name} στην κορυφή
+  page_title: Εγκυκλοπαίδεια της Ζωής
+  page_title_search: Αναζήτηση:%{query}
+  page_vernaculars_empty: Δεν υπάρχουν κοινά ονόματα συσχετιζόμενα με αυτό το τάξο
+  pages:
+    actions:
+      collect: Συλλέξτε
+      reindex: Επανακαταχώρηση
+    batch_lookup:
+      match: Αντιστοίχιση
+      new_search: Νέα αναζήτηση
+      page_id: Αναγνωριστικό σελίδας
+      page_url: Διεύθυνση της σελίδας
+      query: Ερώτημα
+      query_cant_be_blank: Η αναζήτηση δεν μπορεί να μην συμπληρωθεί
+      search: Αναζήτηση
+    filter_menu:
+      show_all: Εμφάνιση όλων
+    page_data:
+      show_all: Εμφάνιση όλων
+    resource_names:
+      name_recognized_by: Αναγνώριση από %{by}
+      name_recognized_by_w_rank: '%{rank}αναγνώριση από %{by}'
+      name_recognized_by_w_status: '%{status} σύμφωνα με τον/την/το %{by}'
+      rank:
+        r_domain: Περιοχή
+        r_subdomain: Υποπεριοχή
+        r_infradomain: Ανθυποεπικράτεια
+        r_superkingdom: Υπερβασίλειο
+        r_kingdom: Βασίλειο
+        r_subkingdom: Υποβασίλειο
+        r_infrakingdom: Ανθυποβασίλειο
+        r_superphylum: Υπερφύλο
+        r_phylum: Φύλο
+        r_subphylum: Υποφύλο
+        r_infraphylum: ανθυποφύλο
+        r_superclass: Υπερομοταξία
+        r_class: Κλάση
+        r_subclass: Υπομοταξία
+        r_infraclass: Ανθυπομοταξία
+        r_superorder: Υπερτάξη
+        r_order: τάξη
+        r_suborder: υποτάξη
+        r_infraorder: ανυποτάξη
+        r_superfamily: Υπεροικογένεια
+        r_family: Οικογένεια
+        r_subfamily: Υποοικογένεια
+        r_infrafamily: ανθυποοικογένεια
+        r_tribe: Φυλή
+        r_supergenus: Υπεργένος
+        r_genus: Γένος
+        r_subgenus: Υπογένος
+        r_infragenus: Ανθυπογένος
+        r_superspecies: Υπερείδος
+        r_species: Είδος
+        r_subspecies: Υποείδος
+        r_infraspecies: Ανθυποείδη
+        r_form: Φόρμα
+      reference_taxon_attrib: Τάξο αναφοράς από %{dataset_name}
+      username_missing: χρήστης %{user_id}
+    trophic_web:
+      competitor: Ανταγωνιστής
+      globi_credit_html: Δεδομένα από %{url}
+      predator: Θηρευτής
+      prey: Θήραμα
+      reset: ρύθμιση ξανά
+      trophic_web_title_html: Τροφικός ιστός %{about_path}%{tooltip}
+    native_node_missing_warning: καμία διαθέσιμη πληροφορία για την ιεραρχία
+    tabs:
+      articles: άρθρα
+      classifications: Κατηγοριοποιήσεις
+      data: Δεδομένα
+      literature_and_references: Αρθρογραφία και πηγές
+      overview: Επισκόπηση
+      maps: Χάρτες
+      media: Μέσα
+      names: Ονόματα
+    iucn_status:
+      label: Κατάσταση σύμφωνα με τη λίστα IUCN
+      ex: Εξαφανισμένο
+      ew: Εξαφανισμένο στη φύση
+      cr: Σε κρίσιμο κίνδυνο
+      en: Σε κίνδυνο
+      vu: Ευάλωτο
+      nt: Σχεδόν απειλούμενο
+      lc: Ελάχιστης ανησυχίας
+      ne: Δεν έχει αξιολογηθεί
+      unknown: Άγνωστο (Δεν υπάρχουν καταχωρήσεις)
+  page_titles:
+    pages:
+      data: '%{page_name} δεδομένα'
+      media: '%{page_name} μέσα'
+      maps: '%{page_name} χάρτες'
+      names: '%{page_name} ονόματα'
+      articles: '%{page_name} άρθρα'
+  recaptcha: Recaptcha
+  recaptcha_error: Παρακαλώ πείτε μας ότι δεν είστε ρομπότ
+  reference_compiled_from: Αναφέρθηκε από %{links}
+  reference_compiled_from_article: '%{source} όνομα άρθρου %{name}'
+  register_new_account: Κάνετε εγγραφή για να δημιουργήσετε νέο λογαριασμό
+  resources:
+    actions:
+      show_all:
+        other: εμφάνιση όλων (%{count})
+      show_warns:
+        other: ένα=εμφάνιση προειδοποίησης (%{count})
+    headers:
+      index: Πόροι
+    index:
+      locked_jobs:
+        zero: καμία εργασία σε εκτέλεση
+        one: 1 εργασία σε εκτέλεση
+        other: '%{count} εργασίες σε εκτέλεση'
+      jobs:
+        zero: καμία εκκρεμής εργασία
+        one: 1 εκκρεμής εργασία
+        other: '%{count} εκκρεμείς εργασίες'
+      harvest_jobs:
+        zero: τίποτα προς δημοσίευση
+        one: 1 εκκρεμής δημοσίευση
+        other: '%{count} προς δημοσίευση'
+    no_events: Τίποτα
+  resource_missing: δεν βρέθηκε η πηγή
+  scientific_name:
+    status_title:
+      accepted: αποδεκτές ονομασίες
+      alternative: Εναλλακτικά ονόματα
+      preferred: Προτιμώμενα ονόματα
+      unusable: Άχρηστες ονομασίες
+      synonym: Συνώνυμα
+  scientific_names_header: Επιστημονική ονομασία
+  send_me_reset_password_instructions: Στείλτε μου οδηγίες για επαναρύθμιση του κωδικού
+    μου
+  search:
+    full_name: '%{vernacular} (%{scientific})'
+    matched_text: Ταίριασμα %{text}
+    flash:
+      cannot_combine_paths: Ανίκανο να συνδυάσει αποτελέσματα με το %{path}
+      more_than_one_species: Ανίκανο να συνδυάσει αποτελέσματα για το %{species}
+      more_than_two_terms: 'Ανίκανο να συνδυάσει αποτελέσματα για περισσότερους από
+        δύο όρους: %{terms}'
+    n_articles:
+      one: '%{count} άρθρο'
+      other: '%{count} άρθρα'
+    n_collections:
+      one: '%{count} συλλογή'
+      other: '%{count} συλλογές'
+    n_images:
+      one: '%{count} εικόνα'
+      other: '%{count} εικόνες'
+    n_results:
+      zero: Κανένα αποτέλεσμα
+      one: '%{count} αποτέλεσμα'
+      other: '%{count} αποτελέσματα'
+    n_sounds:
+      one: '%{count} ήχος'
+      other: '%{count} ήχοι'
+    n_users:
+      one: '%{count} χρήστης'
+      other: '%{count} χρήστες'
+    n_videos:
+      one: '%{count} βίντεο'
+      other: '%{count} βίντεος'
+    n_terms:
+      one: '%{count} όρος'
+      other: '%{count} όροι'
+  search_results:
+    collection_page_count:
+      one: '%{count} σελίδα'
+      other: '%{count} σελίδες'
+    collection_page_count_and_users:
+      one: '%{count} σελίδα, συντηρείται από %{users_sentence}'
+      other: '%{count} σελίδες, συντηρούνται από %{users_sentence}'
+    collected_media:
+      title: 'συλλογή μέσων από αυτή την σελίδα:'
+    medium_article: Άρθρο
+    medium_image: Εικόνα
+    medium_map: Χάρτης
+    medium_sound: Ήχος
+    medium_video: Βίντεο
+    medium_title_article_html: 'Άρθρο: <τάξη έκτασης=''υπό''>%{title}</έκταση>'
+    medium_title_image_html: 'Εικόνα: <τάξη έκτασης=''υπό''>%{title}</έκταση>'
+    medium_title_map_html: 'Χάρτης: <τάξη έκτασης=''υπό''>%{title}</έκταση>'
+    medium_title_sound_html: 'Ήχος: <τάξη έκτασης=''υπό''>%{title}</έκταση>'
+    medium_title_video_html: 'Βίντεο: <τάξη έκτασης=''υπό''>%{title}</έκταση>'
+    empty: Λυπούμαστε, δεν υπάρχουν αποτελέσματα.
+    field_matches:
+      description: 'ταιριάζει στην περιγραφή:'
+      resource_pk: 'ταιριάζει στην εξωτερική ταυτότητα:'
+      bio: 'ταιριάζει στην βιογραφία:'
+      tag_line: 'ταιριάζει στη γραμμή ετικέτας:'
+      synonyms:
+        one: 'ταιριάζει στο συνώνυμο:'
+        other: 'ταιριάζει στα συνώνυμα:'
+      vernaculars:
+        one: 'ταιριάζει στην κοινή ονομασία:'
+        other: 'ταιριάζει στις κοινές ονομασίες:'
+    section_titles:
+      collections:
+        one: '%{count} συλλογή'
+        other: '%{count} συλλογές'
+      pages:
+        one: '%{count} eol σελίδα (είδη)'
+        other: '%{count} eol σελίδες (είδη)'
+      users:
+        one: '%{count} χρήστης'
+        other: '%{count} χρήστες'
+    resource_counts:
+      n_articles:
+        one: 1 άρθρο
+        other: '%{count} άρθρα'
+      n_data:
+        one: 1 δεδομένο
+        other: '%{count} δεδομένα'
+  search_suggestion:
+    actions:
+      create: δημιουργείστε μία νέα πρόταση αναζήτησης
+    created: Δημιουργήθηκε πρόταση αναζήτησης για το "%{match}"
+    destroyed: Η πρόταση αναζήτησης για το "%{match}" καταστράφηκε
+    new:
+      header: Δημιουργείστε μία πρόταση αναζήτησης
+    update:
+      header: Ενημερώστε την πρόταση αναζήτησης
+    index:
+      header: Προτάσεις αναζήτησης
+  sections:
+    behavior: Συμπεριφορά
+    benefits: Οφέλη
+    brief_summary: Σύντομη περίληψη
+    comprehensive_description: Κατανοητή περιγραφή
+    conservation: Διατήρηση
+    conservation_status: Κατάσταση της διατήρησης
+    diagnostic_description: Διαγνωστική περιγραφή
+    diseases_and_parasites: Ασθένειες και παράσιτα
+    distribution: Διανομή
+    ecology: Οικολογία
+    evolution_and_systematics: Εξέλιξη και συστηματική
+    general_ecology: Γενική οικολογία
+    genetics: Γενετική
+    growth: Αύξηση
+    habitat: Ενδιαίτημα
+    life_expectancy: Προσδόκιμο ζωής
+    management: Διαχείριση
+    migration: αποδημία
+    molecular_biology: Μοριακή Βιολογία
+    molecular_biology_and_genetics: Μοριακή Βιολογία και Γενετική
+    morphology: Μορφολογία
+    names_and_taxonomy: Ονόματα και ταξινόμηση
+    notes: Σημειώσεις
+    overview: Επισκόπηση
+    physiology_and_cell_biology: Φυσιολογία και κυτταρική βιολογία
+    physical_description: Φυσική περιγραφή
+    relevance_to_humans_and_ecosystems: Η σχετικότητα με τους ανθρώπους και τα οικοσυστήματα
+    reproduction: Αναπαραγωγή
+    risks: Κίνδυνοι
+    size: Μέγεθος
+    taxonomy: Ταξινόμηση
+    threats: Απειλές
+    trends: Τάσεις
+    type_information: Πληκτρολογείστε πληροφορίες
+    wikipedia: Βικιπαίδεια
+  settings: ρυθμίσεις
+  show_date: Εμφάνιση ημερομηνίας δημοσίευσης
+  sign_in: Συνδεθείτε
+  sign_up: Εγγραφή
+  signature_with_contact_us_link: |-
+    Εάν αντιμετωπίσετε κάποιο πρόβλημα, παρακαλούμε να επικοινωνήσετε μαζί μας στο %{url}.
+
+    Η ομάδα της Εγκυκλοπαίδειας της Ζωής
+  did_not_receive_confirmation_instructions: Δεν έλαβα οδηγίες επιβεβαίωσης
+  simple_form:
+    "yes": Ναι
+    "no": Όχι
+    required:
+      text: υποχρεωτικό
+      mark: '*'
+    error_notification:
+      default_message: 'Παρακαλούμε να κάνετε μία ανασκόπηση των λαθών παρακάτω:'
+    labels:
+      defaults:
+        email: Διεύθυνση ηλ. ταχυδρομείου
+        password: Κωδικός πρόσβασης
+        password_confirmation: Επιβεβαίωση Κωδικού πρόσβασης
+        remember_me: Απομνημόνευση ρυθμίσεων
+        username: Όνομα χρήστη
+        bio: Βιογραφία
+      search_suggestion:
+        page_id: ταυτότητα της σελίδας EOL για ανακατεύθυνση σε (ή φιλτράρισμα με)
+        path: Μονοπάτι (είτε ολόκληρο είτε σχετικό) για ανακατεύθυνση σε
+  stats:
+    articles: άρθρα
+    collections: συλλογές
+    data: αρχεία των δεδομένων
+    media: Μέσα
+    pages: σελίδες
+    nodes: Κόμβοι
+    scientific_names: Ονόματα
+    users: χρήστες
+    references: Παραπομπές
+  term_query_filter:
+    validations:
+      blank_error: πρέπει να προσδιορίσετε ένα χαρακτηριστικό ή μία τιμή
+      invalid_uri: Μη έγκυρη διεύθυνση ιστοσελίδας
+      range_invalid_error: πρέπει να είναι>= της πρώτης τιμής
+  terms:
+    attribution_field_html: <ισχυρό>Χαρακτηριστικό:</ισχυρό> <a href='%{attribution}'>%{attribution}</a>
+    comment_field_html: <Ισχυρό>σχόλιο<>:</ισχυρό>%{comment}
+    definition_field_html: <ισχυρός>ορισμός:</ισχυρός>%{definition}
+    scientific_name: Επιστημονική ονομασία
+    show_all_records: Εμφάνιση όλων των καταγραφών
+    source: Πηγή
+    index:
+      select_page_above: Επιλέξτε μία σελίδα παραπάνω για να ξεκινήσετε
+  data_definition: ορισμός του"%{data}"
+  traits:
+    data_viz:
+      about_this_chart: Σχετικά με αυτό το διάγραμμα
+      about_this_chart_tooltip_1d: Αυτή είναι μία σύνοψη βασισμένη στα διαθέσιμα δεδομένα
+        που υπάρχουν στην Εγκυκλοπαίδεια της ζωής. Μπορεί να είναι ημιτελής! Μπορείτε
+        να επιλέξετε μία στήλη από τον πίνακα για να περιορίσετε τα αποτελέσματα της
+        αναζήτησης. Λάβετε υπόψη ότι κάποια είδη μπορεί να περιλαμβάνονται σε περισσότερες
+        από μία στήλες.
+      about_this_chart_tooltip_sankey_2d: Αυτή είναι μία σύνοψη βασισμένη σε διαθέσιμα
+        δεδομένα της Εγκυκλοπαίδειας της ζωής. Μπορεί να είναι ημιτελής! Μπορείτε
+        να διαλέξετε μία κατηγορία σε οποιονδήποτε άξονα για να περιορίσετε τα αποτελέσματα
+        της αναζήτησης. Λάβετε υπόψη ότι κάποια είδη μπορεί να εμφανίζονται σε περισσότερες
+        από μία κατηγορίες στον ίδιο άξονα.
+      other_term_name: άλλο%{term_name}
+      hist_value_label: τιμή%{units}
+      num_records_label: αριθμός καταχωρήσεων
+      other: άλλο
+      page_habitat_header: '%{name}Περιβάλλοντα'
+      page_habitat_explanation: Τα περιβάλλοντα στα οποία %{name} είδη είναι γνωστό
+        πως διαβιούν. Επιλέξτε ένα περιβάλλον για να δείτε τη %{name} λίστα με τα
+        είδη του.
+      pie_prompt: Χρησιμοποιείστε το ποντίκι για να δείτε ένα τμήμα ή πατήστε κουμπί
+        για να δώσετε έμφαση
+      sankey_node_hover: Κάνετε κλικ για να περιορίσετε την αναζήτησή σας σε %{term_name}
+    properties:
+      citation: Βιβλιογραφική αναφορά
+      method: Μεθοδολογία μέτρησης
+      remarks: Παρατηρήσεις
+      sample_size: Μέγεθος δείγματος
+      scientific_name: Επιστημονική ονομασία
+      source: Πηγή
+    search:
+      edit_filters: Επεξεργασία φίλτρου
+      filter_display:
+        eq: '%{pred} = %{num_val} %{units}'
+        gte: '%{pred} >= %{num_val} %{units}'
+        lifestage: 'στάδιο της ζωής: %{value}'
+        lte: '%{pred} <= %{num_val} %{units}'
+        obj_only: 'τιμή: %{obj}'
+        pred_obj: '%{pred}: %{obj}'
+        pred_only: '%{pred}'
+        sex: 'φύλο: %{value}'
+        statistical_method: 'στατιστική μέθοδος: %{value}'
+      new_search: Νέα αναζήτηση
+      select:
+        top_level:
+          object_term: ή επιλέξτε μία τιμή
+          predicate: ή επιλέξτε μία ιδιότητα
+      show_query: εμφάνιση αναζήτησης
+      switch_to_list: εναλλαγή σε θέαση λίστας
+      switch_to_gallery: Εναλλαγή σε προβολή πλακιδίων
+    search_form:
+      attribute: Χαρακτηριστικό
+      attribute_eg: 'Χαρακτηριστικό (πχ: τροφικό επίπεδο)'
+      clade_filter_placeholder: ομάδα (π.χ.:αρκούδες) (προαιρετικό)
+      hide_additional_fields: απόκρυψη επιπλέον πεδίων
+      lifestage: Στάδιο ζωής
+      records_matching_all: εγγραφές για τάξα που ταιριάζουν σε όλα τα φίλτρα
+      resource: Πηγή
+      search: Αναζήτηση
+      sex: φύλο
+      show_additional_fields: εμφάνιση επιπλέον πεδίων
+      statistical_method: στατιστική μέθοδος
+      target_group: ομάδα στόχευσης (π.χ.:σολομός)
+      taxa_matching_all: τάξα που ταιριάζουν σε όλα τα φίλτρα
+      this_may_take_a_minute: Μπορεί να πάρει μερικά λεπτά
+      trait_filter: Φίλτρο χαρακτηριστικών
+      value: τιμή
+      value_eg: τιμή (π.χ. φυτοφάγα)
+  trophic_web:
+    group_descriptions:
+      competitor: ανταγωνιστής του %{source_name}
+      predator: τρέφεται με %{source_name}
+      prey: τρώγεται από %{source_name}
+  trust:
+    unreviewed: Μη επιθεωρημένα
+    trusted: αξιόπιστη
+    untrusted: αναξιόπιστη
+  user:
+    created_at: δημιουργήθηκε
+    download_queue: ουρά λήψης δεδομένων
+    grant_power: Παραχώρηση πρόσβασης προηγμένου χρήστη
+    revoke_power: Ανάκληση πρόσβασης προηγμένου χρήστη
+    edit_account_details: Επεξεργασία στοιχείων λογαριασμού
+    email: Διεύθυνση ηλ. ταχυδρομείου
+    to_commit_enter_current: Για να εφαρμόσετε τις αλλαγές, παρακαλούμε να εισάγετε
+      τον τωρινό σας κωδικό
+    form_labels:
+      age_confirm: Είμαι τουλάχιστον 13 ετών
+      tou_confirm_html: Έχω διαβάσει τους<a href='%{tou_path}'>Όρους χρήσης και a
+        href='%{privacy_path}'> και την πολιτική προστασίας ιδιωτικών δεδομένων</a>
+    headers:
+      bio: Σύντομη βιογραφία
+      collections: Συλλογές
+      downloads: Λήψεις
+      links: Σύνδεσμοι
+    validations:
+      age_confirm: Πρέπει να επιβεβαιώσετε ότι είστε τουλάχιστον 13 ετών
+      tou_confirm: Πρέπει να επιβεβαιώσετε ότι έχετε διαβάσει τους όρους χρήσης και
+        την πολιτική προστασίας ιδιωτικών δεδομένων.
+    list_of_power_users: Κατάλογος με προηγμένους χρήστες
+    new_password: Νέος κωδικός πρόσβασης
+    confirm_new_password: Επιβεβαίωση νέου κωδικού πρόσβασης
+    username: Όνομα χρήστη
+    update: Ενημέρωση
+    update_email: Ενημέρωση διεύθυνσης ηλεκτρονικού ταχυδρομείου
+  user_download:
+    created: Η επεξεργασία του φακέλου σας θα γίνει στο παρασκήνιο. Ελέγξτε <a href="%{url}">σελίδα
+      χρήστη</a> για να δείτε εάν έχει ολοκληρωθεί
+  users:
+    account_migration_header: Εάν έχετε εγγραφεί στην Εγκυκλοπαίδεια της ζωής πριν
+      από τις 15 Νοεμβρίου του 2018
+    account_migration_notice: Οι πληροφορίες του λογαριασμού σας, συμπεριλαμβανομένων
+      του ονόματος χρήστη, της σχετικής διεύθυνσης ηλεκτρονικού ταχυδρομείου, της
+      περιγραφής του προφίλ σας και των συλλογών σας έχουν εισαχθεί στη νέα Εγκυκλοπαίδεια
+      της ζωής. Το όνομα χρήστη παραμένει το όνομα με το οποίο θα εμφανίζεστε στην
+      ιστοσελίδα, αλλά τώρα θα πρέπει να συνδέεστε με την διεύθυνση του ηλεκτρονικού
+      σας ταχυδρομείου. Δεν μπορούσαμε να μεταφέρουμε τον κωδικό σας για λόγους ασφαλείας;
+      μας συγχωρείτε για την αναστάτωση. Θα μπορείτε να τον ρυθμίσετε εκ νέου ακολουθώντας
+      τη διαδικασία "Ξέχασα των κωδικό μου". Εάν συνδεθήκατε χρησιμοποιώντας έναν
+      τρίτο πάροχο-Google, Twitter or FaceBook- παρακαλούμε να κάνετε υπομονή, δουλεύουμε
+      πάνω σε κάποια θέματα που αφορούν σε κοινές διαδικασίες συνδέσεων.
+    sign_in: Συνδεθείτε
+  vernacular_names_header: Κοινή ονομασία
+  vernacular_preferred_by_resource: '%{resource}(προτιμάται αυτή η ονομασία)'
+  i18n_js:
+    traits:
+      data_viz:
+        sankey:
+          m_of_n: '%{m} του %{n}'
+  term:
+    actions:
+      reindex: Επανακαταχώρηση
+      sort: Ταξινόμηση κατά
+    edit:
+      header: Τροποποίηση του %{uri}
+      submit: Αποθήκευση
+    fields:
+      name: 'ονομασία:'
+      definition: 'ορισμός:'
+      attribution: 'αναφορά προέλευσης:'
+      comment: 'σχόλιο:'
+      sections: 'ενότητες:'
+      is_hidden_from_glossary: 'Απόκρυψη από το γλωσσάρι:'
+    glossary:
+      full_title: Γλωσσάρι για όλους τους όρους των δεδομένων στην EOL
+    pagination:
+      next: επόμενη σελίδα
+      previous: προηγούμενη σελίδα
+    name:
+      by_uri:
+        http://eol(dot)org/schema/terms/percentPerMonth: επί τοις εκατό/μήνα
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C70589: αφθονία
+        http://purl(dot)obolibrary(dot)org/obo/EO_0007059: Όξινο χώμα
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000366: εναέρια
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03413450: αμφίδρομα
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980071: ετήσιο
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52254: απατίτης
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52239: αραγονίτης
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001709: περιοχή
+        http://purl(dot)obolibrary(dot)org/obo/GO_0019954: αφυλετική αναπαραγωγή
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_133326: θειικό βάριο
+        http://purl(dot)obolibrary(dot)org/obo/PO_0004518: κλαδί
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980072: διετές
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_64389: βιογενές διοξείδιο του
+          πυριτίου
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: Μαύρο
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000318: μπλε
+        http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: μήκος σώματος
+        http://purl(dot)obolibrary(dot)org/obo/VT_0001259: μάζα σώματος
+        http://purl(dot)obolibrary(dot)org/obo/VT_0015039: πλάτος σώματος
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002359: πλατύς
+        http://purl(dot)obolibrary(dot)org/obo/CEPH_0000036: επώαση
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: καφέ
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46719: ασβεστίτης
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_22984: ασβέστιο
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_3311: ανθρακικό ασβέστιο
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_77635: φωσφορικό ασβέστιο
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32583: διένυδρο θειικό ασβέστιο
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32584: ημιένυδρο θειικό ασβέστιο
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0000048: διάμετρος κυττάρου
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000036: κυτταρική μάζα
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0000056: όγκος κυττάρου
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900035: αναρριχητικό
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000687: παράκτιος
+        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000078: ζώα του λυκόφωτος
+        http://purl(dot)obolibrary(dot)org/obo/ID_0000058: κύλινδρος
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000033: ημέρες
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_30813: Δεκανοϊκό οξύ
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002301: μειωμένη ποιότητα
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000185: βαθμοί
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000027: Βαθμοί κελσίου
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_30805: Δωδεκανοϊκό οξύ
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000276: Αντοχή στην ξηρασία
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: τρέφεται με
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28822: Εικοσανοϊκό οξύ
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001154: επιμηκυσμένο
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0010362: Ενδοσκελετός
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002425: εκτεθειμένος
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: αυξημένος
+        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#foot: πόδια
+        http://eol(dot)org/schema/terms/FossilFirst: πρώτη εμφάνιση
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000367: πτήση
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000537: Χρώμα του άνθους
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46713: φθορίτης
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000174: Δάσος
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009001: Φρούτο
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000850: Τύπος φρούτου
+        http://eol(dot)org/schema/terms/gramsPerCentimeterSquaredPerDay: γραμμάρια/τετραγωνικά
+          εκατοστά/μέρα
+        http://eol(dot)org/schema/terms/gramsPercm2PerYear: γραμμάρια/τετραγωνικά
+          εκατοστά/χρόνια
+        http://eol(dot)org/schema/terms/gramsPerMonth: γραμμάρια/μήνα
+        http://eol(dot)org/schema/terms/Present: Η γεωγραφική κατανομή περιλαμβάνει
+        http://purl(dot)obolibrary(dot)org/obo/VT_0002292: διάρκεια περιόδου κύησης
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900036: αγροστώδη
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000177: λιβάδι
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: πράσινο
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002303: Ενδιαίτημα
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002454: Έχει ως ξενιστή
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002557: έχει ως παθογόνο
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: σε σχήμα καρδιάς
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32365: Επταδεκανοϊκό οξύ
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0022142: ποώδες
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15756: Εξαδεκανοϊκό οξύ
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001603: μεγάλο προσδόκιμο ζωής
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002393: υψηλή ανοχή σε
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52255: Υδροξυαπατίτης
+        http://purl(dot)obolibrary(dot)org/obo/EFO_0004387: ίντσες
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002300: αυξημένη ποιότητα
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000625: ανεστραμμένος
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002471: τρώγεται από
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002459: Είναι φορέας για
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_84890: ισοεξαδεκανοϊκό οξύ
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_43722: ισοτετραδεκανοϊκό οξύ
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000012: Κέλβιν
+        http://eol(dot)org/schema/terms/kilogramsPerMeterSquaredPerYear: κιλά/τετραγωνικά
+          μέτρα/χρόνο
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: μεγάλο
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000326: Χρώμα του φύλλου
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0019932: Η μορφολογία του φύλλου
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000492: Σχήμα του φύλλου
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000050: προσδόκιμο ζωής
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001199: γραμμικός
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001604: μικρό προσδόκιμο ζωής
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002394: χαμηλή ανοχή σε
+        http://purl(dot)obolibrary(dot)org/obo/OMIT_0013523: μακροφύκη
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: μαγνήσιο
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000447: Υδάτινο
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000024: Θαλάσσιοι βενθικοί
+        http://semanticscience(dot)org/resource/SIO_001114: μέγιστο
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000461: μεσαίο (φυσιολογικό)
+        http://eol(dot)org/schema/terms/millimeterspermonth: χιλιοστά ανά μήνα
+        http://eol(dot)org/schema/terms/paleo_megaannum: Εκατομμύρια χρόνια πριν
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_4000013: ο ανοργανοποιημένος
+          ιστός περιλαμβάνει
+        http://eol(dot)org/schema/terms/millimetersPerThreeMonths: χιλιοστά/3 μήνες
+        http://eol(dot)org/schema/terms/millimetersPerFourMonths: χιλιοστά/4 μήνες
+        http://eol(dot)org/schema/terms/millimetersPerSixMonths: χιλιοστά/6 μήνες
+        http://eol(dot)org/schema/terms/millimetersPerSevenMonths: χιλιοστά/7 μήνες
+        http://eol(dot)org/schema/terms/millimetersPerEightMonths: χιλιοστά/8 μήνες
+        http://purl(dot)obolibrary(dot)org/obo/UO_0010005: χιλιοστά/ημέρα
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C105508: χιλιοστά/δευτερόλεπτο
+        http://eol(dot)org/schema/terms/millimetersPerYear: χιλιοστά/έτος
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000035: μήνες
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000083: μήκος πυρήνα
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000085: πλάτος πυρήνα
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28842: Οκταδεκανοϊκό οξύ
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: Πορτοκαλί
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: οξυγόνο
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002444: Παράσιτο του
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002445: Παρασιτείται από
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002556: Παθογόνο του
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_42504: Πενταδεκανοϊκό οξύ
+        http://eol(dot)org/schema/terms/perAcre: ανά εκτάριο
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000187: τις εκατό
+        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000130: φωτοαυτότροφος
+        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000131: φωτοετερότροφος
+        http://purl(dot)obolibrary(dot)org/obo/TO_0001015: Ρυθμός φωτοσύνθεσης
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000207: ύψος του φυτού
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002458: θηρεύεται από
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002439: Θηρεύει
+        http://purl(dot)obolibrary(dot)org/obo/RO_0003000: παράγει
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_26401: Πουρίνες
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: μωβ
+        http://purl(dot)obolibrary(dot)org/obo/UO_0010006: αναλογία
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000322: κόκκινο
+        http://purl(dot)obolibrary(dot)org/obo/GO_0000003: αναπαραγωγή
+        http://purl(dot)obolibrary(dot)org/obo/TO_0001026: Ρυθμός αναπνοής
+        http://purl(dot)obolibrary(dot)org/obo/PO_0004542: ρίζωμα
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000253: Ποταμός
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009005: Ρίζες
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000055: τρέξιμο
+        http://purl(dot)obolibrary(dot)org/obo/TO_0006001: Ανθεκτικότητα στην αλατότητα
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000370: αναπήδηση
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009010: Καρπός
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0015519: μάζα καρπού
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: σχήμα
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000039: μήκος κελύφους
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900034: θάμνος
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0002342: η δομή του σκελετού
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: μειωμένος
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000587: μικρό
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0000875: Διάμετρος του μίσχου
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002440: Συμβιώτης
+        http://purl(dot)obolibrary(dot)org/obo/VT_0002758: Μήκος ουράς
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28875: Τετραδεκανοϊκό οξύ
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000915: πάχος
+        http://purl(dot)obolibrary(dot)org/obo/UO_0010038: τόνοι
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900033: δέντρο
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_27226: ουρικό οξύ
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52241: βατερίτης
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: όγκος
+        http://rs(dot)tdwg(dot)org/dwc/terms/verbatimDepth: βάθος νερού
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000114: Watts
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: λευκό
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000036: χρόνια
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000324: κίτρινο
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001941: κιτρινοπράσινο
+        http://eol(dot)org/schema/terms/µmol_cell-1_day-1: μικρομόλ/κύτταρο/μέρα
+        http://eol(dot)org/schema/terms/µmol_cell-1: μικρομόλ/κύτταρο
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000064: μικρομόλ/λίτρο
+...

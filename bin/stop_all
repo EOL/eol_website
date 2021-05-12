@@ -1,0 +1,6 @@
+#!/bin/bash
+ps auxww | grep worker.start | grep 'Delayed::Worker' | awk '{print $2}' | while read -r pid ; do
+  echo "Killing $pid"
+  kill $pid
+  echo "Killed $pid at `date`" >> log/harvest.log
+done

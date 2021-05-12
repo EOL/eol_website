@@ -2,31 +2,12 @@ class Publishing
   attr_accessor :log, :run, :last_run_at
   attr_reader :pub_log
 
-  def self.sync(options = {})
-    instance = self.new(options)
-    instance.sync
-  end
-
   def initialize(options)
     @pub_log = Publishing::PubLog.new(nil)
     @log = nil
     @repo = nil
     @page_ids = Set.new
     @last_run_at = options[:last_run_at].to_i if options.key?(:last_run_at)
-  end
-
-  def sync
-    abort_if_already_running
-    begin
-      @pub_log.log("Syncing with repository...")
-      get_import_run
-      get_resources
-      @pub_log.log('Sync with repository complete.', cat: :ends)
-      @run.update_attribute(:completed_at, Time.now)
-    ensure
-      ImportLog.all_clear!
-    end
-    @pub_log
   end
 
   def abort_if_already_running
@@ -65,6 +46,7 @@ class Publishing
       partner[:repository_id] = partner.delete(:id)
       partner = find_and_update_or_create(Partner, partner)
       resource[:partner_id] = partner.id
+      resource.delete(:opendata_url) # XXX: hack to remove unsupported attribute -- not sure how this worked before (mvitale, 11/13/20)
       resource = find_and_update_or_create(Resource, resource)
       @pub_log.log("New/updated resource: #{resource[:name]}")
     end

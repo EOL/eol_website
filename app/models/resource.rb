@@ -14,7 +14,7 @@ class Resource < ApplicationRecord
   has_many :referents, inverse_of: :resource
   has_many :term_query_filters
 
-  before_destroy :remove_content
+  before_destroy :destroy_callback
 
   scope :browsable, -> { where(is_browsable: true) }
   scope :classification, -> { where(classification: true) }
@@ -150,6 +150,16 @@ class Resource < ApplicationRecord
       %i[eol_pk trait_eol_pk predicate literal measurement value_uri units sex lifestage
         statistical_method source]
     end
+
+    def for_traits(traits)
+      resources = self.where(id: traits.map { |t| t[:resource_id] }.compact.uniq)
+      # A little magic to index an array as a hash:
+      Hash[ *resources.map { |r| [ r.id, r ] }.flatten ]
+    end
+  end
+
+  def unlock
+    import_logs.running.update_all(failed_at: Time.now)
   end
 
   def path
@@ -162,14 +172,18 @@ class Resource < ApplicationRecord
     new_log
   end
 
+  def destroy_callback
+    remove_content
+    import_logs.destroy_all
+  end
+
   def remove_content
-    clear_import_logs
     # Traits:
-    count = TraitBank.count_by_resource_no_cache(id)
+    count = TraitBank::Queries.count_supplier_nodes_by_resource_nocache(id)
     if count.zero?
-      log("No traits, skipping.")
+      log("No graph nodes, skipping.")
     else
-      log("Removing #{count} traits")
+      log("Removing #{count} graph nodes")
       TraitBank::Admin.remove_for_resource(self)
     end
     # Node ancestors
@@ -381,6 +395,11 @@ class Resource < ApplicationRecord
     TraitBank::Slurp.load_csvs(self)
   end
 
+  # Note this does NOT include metadata!
+  def trait_count
+    TraitBank::Admin.query(%{MATCH (trait:Trait)-[:supplier]->(:Resource { resource_id: #{id} }) RETURN COUNT(trait)})['data'].first.first
+  end
+
   def traits_file
     Rails.public_path.join('data', "traits_#{id}.csv")
   end
@@ -392,21 +411,6 @@ class Resource < ApplicationRecord
   def remove_traits_files
     File.unlink(traits_file) if File.exist?(traits_file)
     File.unlink(meta_traits_file) if File.exist?(meta_traits_file)
-  end
-
-  def import_media(since)
-    log = Publishing::PubLog.new(self)
-    repo = Publishing::Repository.new(resource: self, log: log, since: since)
-    log.log('Importing Media ONLY...')
-    begin
-      Publishing::PubMedia.import(self, log, repo)
-      log.log('NOTE: Media have been loaded, but richness has not been recalculated, page icons aren''t updated, and '\
-        'media counts may be off.', cat: :infos)
-      log.complete
-    rescue => e
-      log.fail_on_error(e)
-    end
-    Rails.cache.clear
   end
 
   def self.autocomplete(query, options = {})

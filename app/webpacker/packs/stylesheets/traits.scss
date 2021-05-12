@@ -157,7 +157,7 @@
 }
 
 .show-filters {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -166,11 +166,19 @@
   padding: 0;
 
   & > li {
+    margin: 5px;
+  }
+
+  & > li.show-filter {
     border: 1px solid $eol-blue;
     border-radius: 5px;
-    margin: 5px;
     padding: 12px 30px;
   }
+
+  & > li.show-filter-join {
+    font-weight: bold;
+  }
+
 }
 
 .raw-query {
@@ -212,7 +220,7 @@
 }
 
 
-.viz-contain-hist, .viz-contain-bar, .viz-contain-sankey {
+.viz-contain-hist, .viz-contain-bar, .viz-contain-sankey, .viz-contain-assoc, .viz-contain-taxon-summary {
   display: none;
 }
 
@@ -243,17 +251,22 @@
   width: 100%;
 }
 
+
 /* adjust if visualization width changes or becomes dynamic */
-@media(min-width: 820px) { 
+@media(min-width: 830px) { 
   .viz-contain-bar { 
     display: block;
   }
 }
 
 @media(min-width: 850px) { 
-  .viz-contain-hist, .viz-contain-sankey { 
+  .viz-contain-hist, .viz-contain-sankey, .viz-contain-assoc { 
     display: block;
   }
 }
 
-
+@media(min-width: 860px) {
+  .viz-contain-taxon-summary {
+    display: block;
+  }
+}

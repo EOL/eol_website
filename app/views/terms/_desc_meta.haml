@@ -2,19 +2,20 @@
 - options << "toggle: #{toggle}" if local_assigns.has_key? :toggle
 %div{:'uk-dropdown' => options.join("; ")}
   %ul.desc-meta
-    %li= t("terms.uri_field_html", :uri => link_to(term[:uri], term[:uri])).html_safe
-    - if !term[:definition].blank?
-      %li= t("terms.definition_field_html", :definition => term[:definition]).html_safe
-    - if !term[:comment].blank?
-      %li= t("terms.comment_field_html", :comment => term[:comment]).html_safe
+    %li= t("terms.uri_field_html", :uri => link_to(term.uri, term.uri)).html_safe
+    - if term.definition.present?
+      %li= t("terms.definition_field_html", :definition => term.i18n_definition).html_safe
+    - if term.comment.present?
+      %li= t("terms.comment_field_html", :comment => term.comment).html_safe
     - if local_assigns.include?(:source) && !source.blank?
       %li= t("terms.source_field_html", :source => source).html_safe
-    - elsif !term[:attribution].blank?
-      %li= t("terms.attribution_field_html", :attribution => term[:attribution]).html_safe
+    - elsif term.attribution.present?
+      %li= t("terms.attribution_field_html", :attribution => term.attribution).html_safe
   - if search_link
-    - if local_assigns.has_key?(:pred_uri) && pred_uri
-      -# then term is an object term
-      - path_opts = { :uri => pred_uri, :obj_uri => term[:uri] }
+    - if local_assigns.has_key?(:predicate) && predicate
+      - pred_for_path = predicate
+      - obj_for_path = term
     - else
-      - path_opts = { :uri => term[:uri] }
-    = link_to(t("terms.show_all_records"), term_records_path(path_opts))
+      - pred_for_path = term
+      - obj_for_path = nil
+    = link_to(t("terms.show_all_records"), show_all_records_path(pred_for_path, obj_for_path))

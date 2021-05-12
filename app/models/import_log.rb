@@ -3,6 +3,7 @@ class ImportLog < ApplicationRecord
   has_many :import_events, inverse_of: :import_log
 
   scope :successful, -> { where("completed_at IS NOT NULL") }
+  scope :running, -> { where("completed_at IS NULL AND failed_at IS NULL") }
 
   class << self
     def all_clear!
@@ -21,7 +22,11 @@ class ImportLog < ApplicationRecord
       if logging.any?
         info = "Currently publishing: "
         info += logging.map do |log|
-          info += "ImportLog##{log.id}: #{log.resource.name} (Resource##{log.resource_id})"
+          if log.resource
+            info += "ImportLog##{log.id}: #{log.resource.name} (Resource##{log.resource_id})"
+          else
+            info += "ImportLog##{log.id}: Missing Resource##{log.resource_id})"
+          end
         end.join(' ; ')
         return info
       end
@@ -55,17 +60,19 @@ class ImportLog < ApplicationRecord
   end
 
   def fail_on_error(e)
-    e.backtrace.reverse.each_with_index do |trace, i|
-      break if trace =~ /\/bundler/
-      break if i > 9 # Too much info, man!
-      if i > 2
-        # TODO: Add other filters here...
-        next unless trace =~ /eol_website/
+    if e.backtrace
+      e.backtrace.reverse.each_with_index do |trace, i|
+        break if trace =~ /\/bundler/
+        break if i > 9 # Too much info, man!
+        if i > 2
+          # TODO: Add other filters here...
+          next unless trace =~ /eol_website/
+        end
+        trace.gsub!(/^.*\/gems\//, 'gem:') # Remove ruby version stuff...
+        trace.gsub!(/^.*\/ruby\//, 'ruby:') # Remove ruby version stuff...
+        trace.gsub!(/^.*\/eol_website\//, './') # Remove website path..
+        log(trace, cat: :errors)
       end
-      trace.gsub!(/^.*\/gems\//, 'gem:') # Remove ruby version stuff...
-      trace.gsub!(/^.*\/ruby\//, 'ruby:') # Remove ruby version stuff...
-      trace.gsub!(/^.*\/eol_website\//, './') # Remove website path..
-      log(trace, cat: :errors)
     end
     log(e.message.gsub(/#<(\w+):0x[0-9a-f]+>/, '\\1'), cat: :errors) # I don't need the memory information for models
     update_attribute(:failed_at, Time.now)

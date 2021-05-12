@@ -91,7 +91,6 @@ pms:
       referents_count: referent
       species_count: spece
       updated_at: agiornà l'ùltima vira
-  cms_page_date: 'Ùltima modìfica:'
   collect_already_in_collection: (a-i é già)
   collect_already_in_collection_will_add_icon: (gionté ël mojen a «%{page}»)
   collect_icon_title: Gionté «%{item}» da la pàgina « %{page} » a…
@@ -187,6 +186,7 @@ pms:
     altitude: autëssa
     author: autor
     bibliographic_citation: sitassion bibliogràfica
+    contributor: contributor
     compiler: compilador
     creator: creator
     editor: editor
@@ -283,85 +283,85 @@ pms:
   language: Lenga
   languages:
     ab: Abcasian
-    Q27683: Acenèis
-    Q27776: Adigan
+    q27683: Acenèis
+    q27776: Adigan
     aa: Afar
     af: Afrikaans
     ak: Akan
     alb: Albanèis
     sq: albanèis
-    Q131339: Alemànich
+    q131339: Alemànich
     am: Amàrich
     ar: Àrabo
     an: Aragonèis
     hy: Armen
     as: Assamèis
-    Q29507: Asturian
-    Q56590: Atikamekw
+    q29507: Asturian
+    q56590: Atikamekw
     av: Avàrich
     ae: Avestan
     ay: Aymara
-    Q9292: Aser
+    q9292: Aser
     az: Aser
-    Q33070: Balinèis
+    q33070: Balinèis
     bm: Bambara
-    Q33151: Banjar
+    q33151: Banjar
     ba: Bashkir
     eu: Basch
-    Q29540: Bavarèis
+    q29540: Bavarèis
     be: Bieloruss
-    Q8836490: Bende
+    q8836490: Bende
     bn: Bengalèis
     bh: Lenghe bihari
     bi: Bislamèis
     nb: bokmål, norvegèis; norvegèis bokmål
-    Q4941378: Bondei
+    q4941378: Bondei
     bs: Bosnìach
-    Q33202: Brahui
-    Q750553: Portughèis brasilian
+    q33202: Brahui
+    q750553: Portughèis brasilian
     br: Breton
     bg: Bùlgar
     my: birman
-    Q33120: Buryat
-    Q35037: Businenge Tongo
-    Q880301: Fransèis cajun
-    Q35156: Car
-    Q2591230: Cashinahua
+    q33120: Buryat
+    q35037: Businenge Tongo
+    q880301: Fransèis cajun
+    q35156: Car
+    q2591230: Cashinahua
     ca: Catalan; Valensian
-    Q33239: Sebuan
+    q33239: Sebuan
     khm: Khmer sentral
     km: Khmer sentral
     ch: Chamorro
-    Q33281: Chavacano
+    q33281: Chavacano
     ce: Cecen
-    Q33388: Ciròchi
-    Q33265: Cheyenne
+    q33388: Ciròchi
+    q33265: Cheyenne
     ny: chewa; chichewa; nyanja
     zh: cinèis
     chi: Cinèis
-    Q32979: Choctaw
+    q32979: Choctaw
     cu: Vej slavònich ëd la cesa
     cv: Chuvash
-    Q37041: Cinèis clàssich
+    q37041: Cinèis clàssich
     kw: Córnich
     co: Còrs
     cr: Cree
-    Q33357: Tatar ëd Crimea
+    q33357: Tatar ëd Crimea
     hr: Croat
     hrv: Croat
     cs: Cech
     da: Danèis
-    Q3362072: Digo
-    Q56466: Dinka
+    q3362072: Digo
+    q56466: Dinka
     dv: Divehi; Dhivehi; Maldivian
-    Q18415595: Dotyali
+    q18415595: Dotyali
     dut: Olandèis; Flamand
     nl: olandèis; flamand
     dz: Dzongkha
     dzo: Dzongkha
-    Q4126517: Inuktitut canadèis oriental
+    q4126517: Inuktitut canadèis oriental
     en: Anglèis
-    Q29952: Erzya
+    q29952: Erzya
     eo: Esperant
     et: Éston
     est: Éston
@@ -370,33 +370,33 @@ pms:
     fj: Figian
     fi: Finlandèis
     fin: Finlandèis
-    Q667747: Fipa
+    q667747: Fipa
     fr: Fransèis
     fra: Fransèis
     ff: Fulah
     gd: Gaélich ëscossèis
     gl: Galissian
-    Q33475: Cinèis gan
+    q33475: Cinèis gan
     lg: Ganda
     ka: Georgian
     de: Alman
     deu: Alman
-    Q5575236: Konkani goanèis
-    Q3272630: Gogo
-    Q2501174: Gorontalo
+    q5575236: Konkani goanèis
+    q3272630: Gogo
+    q2501174: Gorontalo
     el: Grech modern (1453-)
     gre: Grech
     gn: Guarani
     gu: Gujarati
-    Q33303: Haïda
+    q33303: Haïda
     ht: Haitian; Créol haitian
     ha: Hausa
-    Q35756: Haya
+    q35756: Haya
     he: Ebreo
     heb: Ebreo
-    Q3129390: Hehe
+    q3129390: Hehe
     hz: Herero
-    Q35978: Hiligaynon
+    q35978: Hiligaynon
     hi: Hindi
     ho: Hiri motu
     hu: Ungherèis
@@ -404,36 +404,36 @@ pms:
     ice: Islandèis
     io: Ido
     ig: Igbo
-    Q35936: Ilocan
+    q35936: Ilocan
     id: Indonesian
-    Q33509: Ingush
+    q33509: Ingush
     ia: Antërlenga (Assossiassion Antërnassional për na Lenga Ausiliaria)
     ie: Antërlenga; Ossidental
     iu: Inuktitut
     ik: Inupiaq
-    Q33595: Iraqw
+    q33595: Iraqw
     ga: Irlandèis
     it: Italian
     ita: Italian
-    Q35939: Anglèis créol giamaican
+    q35939: Anglèis créol giamaican
     ja: Giaponèis
     jp: Giaponèis
     jv: Giavanèis
-    Q33522: Kabardian Sircassian
-    Q35475: Kabiyè
-    Q35853: Kabyl
+    q33522: Kabardian Sircassian
+    q35475: Kabiyè
+    q35853: Kabyl
     kl: Kalaallisut; Groenlandèis
-    Q33634: Calmoch
+    q33634: Calmoch
     kn: Kannada
     kr: Kanuri
-    Q36121: Kapampangan
-    Q33541: Kara-Kalpak
+    q36121: Kapampangan
+    q33541: Kara-Kalpak
     ks: Kashmir
-    Q33690: Kashubian
+    q33690: Kashubian
     kk: Kasach
     ki: Kikuyu; Gikuyu
-    Q11005332: Kinga
-    Q11732519: Kingindo
+    q11005332: Kinga
+    q11732519: Kingindo
     rw: kinyarwanda
     ky: Kirghiz; Kyrgyz
     kv: Komi
@@ -442,31 +442,31 @@ pms:
     kor: Corean
     kj: Kuanyama; Kwanyama
     ku: Curd
-    Q36206: Lak
+    q36206: Lak
     lo: lao
     lao: Lao
     la: Latin
     lv: léton
-    Q1160372: Laz
-    Q31746: Lesgian
-    Q36106: Lìgur
+    q1160372: Laz
+    q31746: Lesgian
+    q36106: Lìgur
     li: Limborghèis
     ln: lingala
-    Q146803: Lenga franca neuva
+    q146803: Lenga franca neuva
     lt: lituan
     lit: Lituan
-    Q33698: Liv
-    Q36584: Livvi
-    Q33754: Lombard
-    Q168446: Bass sasson
-    Q13286: Sorbian anferior
+    q33698: Liv
+    q36584: Livvi
+    q33754: Lombard
+    q168446: Bass sasson
+    q13286: Sorbian anferior
     lu: luba-katanga
-    Q3437661: Luguru
+    q3437661: Luguru
     lb: Lussemborghèis; Letzeburgesch
-    Q35787: Masai
+    q35787: Masai
     mk: macédon
-    Q497345: Fransisch prinsipal
-    Q36109: Maithili
+    q497345: Fransisch prinsipal
+    q36109: Maithili
     mg: malgass
     ms: malèis
     ml: malayalam
@@ -476,87 +476,87 @@ pms:
     mi: maòri
     mr: marathi
     mh: marshalèis
-    Q6786446: Matengo
-    Q3906614: Meadow Mari
-    Q13358: Rumen Megleno
-    Q13313: Meru
-    Q36455: Min Dong
-    Q13324: Minangkabau
-    Q13359: Mingrelian
-    Q13330: Mirandèis
-    Q13343: Moksha
+    q6786446: Matengo
+    q3906614: Meadow Mari
+    q13358: Rumen Megleno
+    q13313: Meru
+    q36455: Min Dong
+    q13324: Minangkabau
+    q13359: Mingrelian
+    q13330: Mirandèis
+    q13343: Moksha
     mn: mòngol
-    Q56426: Àrabo marochin
-    Q6944725: Mwera
-    Q13300: Nahuatl
-    Q3508074: Nai
+    q56426: Àrabo marochin
+    q6944725: Mwera
+    q13300: Nahuatl
+    q3508074: Nai
     na: nauru
     nv: navajo; navaho
     nd: ndebele dël nòrd
     nr: ndebele dël sud
     ng: ndonga
-    Q33845: Nàpoli
+    q33845: Nàpoli
     ne: nepalèis
-    Q7022366: Ngindo
-    Q28224: Frisian setentrional
-    Q19933293: Luri dël nòrd
+    q7022366: Ngindo
+    q28224: Frisian setentrional
+    q19933293: Luri dël nòrd
     se: sami dël Nòrd
     "no": norvegèis
     nno: Norvegèis
     nob: Norvegèis
     nor: Norvegèis
     nn: norvegèis nynorsk; nynorsk, norvegèis
-    Q36738: Novial
-    Q3272620: Nyakusa
-    Q4121131: Nyamwezi
-    Q7193418: Nyaturu
-    Q11128374: Nyiha
-    Q16115145: Nyika
+    q36738: Novial
+    q3272620: Nyakusa
+    q4121131: Nyamwezi
+    q7193418: Nyaturu
+    q11128374: Nyiha
+    q16115145: Nyika
     oc: Ossitan (apress 1500)
-    Q28602: Arameo ofissial
+    q28602: Arameo ofissial
     oj: ojibwa
     or: oriya
     om: oromo
     os: osset
     pi: pali
     pa: Punjabi
-    Q36403: Pare
+    q36403: Pare
     fa: Persian
-    Q23014: Palatin
-    Q34024: Picard
-    Q15085: Piemontèis
-    Q2429648: Pogoro
+    q23014: Palatin
+    q34024: Picard
+    q15085: Piemontèis
+    q2429648: Pogoro
     pl: polonèis
     pol: Polonèis
-    Q36748: Pòntich
+    q36748: Pòntich
     pt: portughèis
     ps: pushto; pashton
     qu: quechua
-    Q584983: Rangi
+    q584983: Rangi
     ro: romen; moldav
     rm: romancc
     rn: rundi
     ru: russ; russi
     rus: Russ
-    Q26245: Rusyn
-    Q34299: Sakha
-    Q718269: Sakizaya
+    q26245: Rusyn
+    q34299: Sakha
+    q718269: Sakizaya
     sm: samoan
-    Q213434: Samogitian
-    Q34016: Sandawe
+    q213434: Samogitian
+    q34016: Sandawe
     sg: sango
     sa: sànscrit
-    Q33965: Santali
+    q33965: Santali
     sc: sard
-    Q845441: Sard sassarèis
-    Q14549: Scossèis
+    q845441: Sard sassarèis
+    q14549: Scossèis
     sr: serb
-    Q3788739: Shambala
-    Q56482: Shan
+    q3788739: Shambala
+    q56482: Shan
     sn: shona
-    Q34004: Shona
+    q34004: Shona
     ii: Yi dël Sichuan; Nuosu
-    Q33973: Sicilian
+    q33973: Sicilian
     sd: sindhi
     si: Singalèis
     sk: slovach
@@ -567,7 +567,7 @@ pms:
     st: sotho dël sud
     es: Spagneul; Castilian
     slv: Spagneul
-    Q2638144: Sukuma
+    q2638144: Sukuma
     su: sondanèis
     sw: swahili
     ss: swati
@@ -576,7 +576,7 @@ pms:
     tl: tagalog
     ty: taitian
     tg: tagich
-    Q34318: Talysh
+    q34318: Talysh
     ta: tamil
     tt: Tatar
     te: telugu
@@ -584,45 +584,45 @@ pms:
     tha: Tailandèis
     bo: Tibetan
     ti: tigrinya
-    Q34159: Tok pisin
+    q34159: Tok pisin
     to: Tongan
-    Q180937: Albanèis Tosk
+    q180937: Albanèis Tosk
     ts: tsonga
     tn: tswana
-    Q34251: Tulu
-    Q34138: Tumbuka
-    Q56240: Àrabo tunisin
+    q34251: Tulu
+    q34138: Tumbuka
+    q56240: Àrabo tunisin
     tr: turch
     tur: Turch
-    Q36730: Turch, otman
+    q36730: Turch, otman
     tk: turcmen
     tw: twi
-    Q13238: Udmurt
+    q13238: Udmurt
     ug: uighur; uyghur
     uk: ucrain
     ukr: Ucrain
     none: Nen ëspessìficà
-    Q13248: Sorbian superior
+    q13248: Sorbian superior
     ur: urdu
     uz: usbech
     ve: venda
-    Q32747: Vepsian
+    q32747: Vepsian
     vi: vietnamèis
     vo: volapük
-    Q32858: Vòtich
+    q32858: Vòtich
     wa: valon
-    Q34279: Waray
+    q34279: Waray
     cy: Galèis
     wel: Galèis
-    Q100103: Flamand ossidental
+    q100103: Flamand ossidental
     fy: Frisian ossidental
     wo: wolof
-    Q34290: Wu
+    q34290: Wu
     xh: xhosa
     yi: yiddish
     yo: yoruba
-    Q10199: Zazaki
-    Q237409: Zelandèis
+    q10199: Zazaki
+    q237409: Zelandèis
     za: zhuang; chuang
     zu: zulù
   layout_sign_in: Rintré ant ël sistema
@@ -838,7 +838,6 @@ pms:
       show_warns:
         one: smon-e l'avertiment (%{count})
         other: smon-e j'avertiment (%{count})
-      sync: sincronisé
       clear_publishing: gavé ël luchet
       clear_publishing_confirm: Sòn a «livrërà» tute le publicassion, e a peul creé
         dij problema s'a l'é dovrà durant na publicassion. É-lo sigur ?
@@ -1066,12 +1065,8 @@ pms:
     scientific_names: nòm
     users: utent
     references: arferiment
-  support:
-    array:
-      words_connector: ','
-      two_words_connector: ' e'
-      last_word_connector: ', e'
   term_query:
+    invalid_obsolete: INVÀLID/OBSOLET
     validations:
       empty_filters_error_record: a dev fornì un filtr con n'atribù o un valor për
         j'arserche d'argistrassion
@@ -1087,6 +1082,7 @@ pms:
         bërsaj
       pred_uri_blank_numeric_error: a peul pa esse veuid con un valor numérich
       range_invalid_error: a dev esse magior o ugual al prim valor
+      units_blank_error: j'unità a peulo nen esse veuide për n'arserca numérica
   terms:
     attribution_field_html: <strong>Atribussion:</strong> <a href='%{attribution}'>%{attribution}</a>
     comment_field_html: <strong>Coment:</strong> %{comment}
@@ -1104,19 +1100,26 @@ pms:
     data_viz:
       about_this_chart: a propòsit ëd cost gràfich
       about_this_chart_tooltip_1d: Cost-sì a l'é un resumé basà an sij dàit disponìbil
-        an EdV. A podrìa esse incoplet! A peul selessioné na bara dal gràfich pr'astrenze
-        ij sò arzultà d'arserca. Ch'a nòta che na spece a peul esse comprèisa an pi
-        che un-a bara.
+        an EdV. A podrìa esse incoplet! A peul selessioné na categorìa dal gràfich
+        pr'astrenze ij sò arzultà d'arserca. Vàure categorìe a së dzorpon-o e na spece
+        a peul esse comprèisa an pi che na categorìa.
+      about_this_chart_tooltip_assoc: Cost-sì a l'é un resumé basà an sij dàit disponìbij
+        an EdV. A podrìa esse incomplet! A peul passeje ël rat ansima a 'n nòm ëd
+        tassonomìa për evidensié soe relassion. Na liura vërda a veul dì che cola
+        tassonomìa a l'é ël soget ëd n'associassion; un-a porpra a veul dì ch'a l'é
+        l'oget. J'arsërche pi larghe a son sintetisà dal géner o la famija. A peul
+        ëstrenzje an ësgnacand un nòm ëd tassonomìa.
       about_this_chart_tooltip_sankey_2d: Cost-sì a l'é un resumé basà an sij dàit
         disponìbij an EdV. A podrìa esse incomplet! A peul selessioné na categorìa
-        su un ëd j'ass pr'arstrenze ij sò arzultà d'arserca. Ch'a nòta che na dàita
-        spece a peul esse comprèisa an pi che un-a categorìa dël midem ass.
+        su un ëd j'ass pr'arstrenze ij sò arzultà d'arserca. Vàire categorìe a së
+        dzorpon-o e na spece a peul esse comprèisa an pi che un-a categorìa dël midem
+        ass.
       about_this_chart_tooltip_sankey_3+: Cost-sì a l'é un resumé basà an sij dàit
         disponìbij su EdV. A podrìo esse incomplet! A peul selessioné na categorìa
-        su un ëd j'ass pr'arstrenze ij sò arzultà d'arserca. Ch'a nòta che na dàita
-        spece a peul esse comprèisa an pi che un-a categorìa dl'istess ass. An na
-        visualisassion ëd sot-ansem evidensià, coste spece a valor mùltipl a saran
-        contà vàire vire an sj'àutri ass.
+        su un ëd j'ass pr'arstrenze ij sò arzultà d'arserca. Vàire categorìe a së
+        dzorpon-o e na spece a peul esse comprèisa an pi che un-a categorìa dl'istess
+        ass. An na visualisassion ëd sot-ansem evidensià, coste spece a valor mùltipl
+        a saran contà vàire vire an sj'àutri ass.
       other_term_name: àutr%{term_name}
       hist_value_label: valor (%{units})
       n_other_records:
@@ -1170,7 +1173,7 @@ pms:
         gte: '%{pred} >= %{num_val} %{units}'
         lifestage: 'tapa ëd vita: %{value}'
         lte: '%{pred} <= %{num_val} %{units}'
-        obj_only: 'valor: %{obj}'
+        obj_only: 'con ël valor: %{obj}'
         pred_obj: '%{pred}: %{obj}'
         pred_only: '%{pred}'
         range: '%{pred} an [%{num_val1}, %{num_val2}] %{units}'
@@ -1181,9 +1184,13 @@ pms:
       gbif_search_hover: trové j'argistrassion d'ocorensa an GBIF për le tassonomìe
         ant ij sò arzultà d'arserca (limità a 50)
       result_header_records: Visualisassion ëd %{range_begin} - %{range_end} su %{total}
-        argistrassion për %{page_count} tassonomìe con
+        argistrassion për %{page_count} tassonomìe
       result_header_taxa: Visualisassion ëd %{range_begin} - %{range_end} su %{total}
-        tassonomìe con
+        tassonomìe
+      result_header_taxa_notaxa: Visualisassion ëd %{range_begin} - %{range_end} su
+        %{total}
+      result_header_records_notaxa: Visualisassion dj'argistrassion %{range_begin}
+        - %{range_end} su %{total}
       new_search: neuva arserca
       select:
         child_term: selession na condission fieul (opsional)
@@ -1304,256 +1311,352 @@ pms:
     pagination:
       next: pàgina apress
       previous: pàgina precedenta
+    inverse_name:
+      fallback: anvers ëd «%{term_name}»
+      by_uri:
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: a l'é mangià da
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002632: a l'ha dj'ectoparassita
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002634: a l'ha dj'endoparassita
+        http://eol(dot)org/schema/terms/HasDispersalVector: vetor ëd dëspersion për
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002454: òspit ëd
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002553: a l'ha dj'iperparassita
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002459: a l'ha 'n vetor
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002626: a l'é massà da
+        http://purl(dot)obolibrary(dot)org/obo/RO_0008503: cleptoparassità da
+        http://purl(dot)obolibrary(dot)org/obo/RO_0008507: a l'ha dj'euv butà ansima
+          da
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002444: parassità da
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002208: a l'ha dij parassitòid
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002556: a l'ha n'agent patògen
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002439: a l'é la pijàita ëd
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002618: visità da
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002622: fior visità da
     name:
       by_uri:
-        http://purl(dot)obolibrary(dot)org/obo/CEPH_0000036: covà
+        http://eol(dot)org/schema/terms/percentPerMonth: '%/mèis'
+        http://eol(dot)org/schema/terms/percm2: /cm^2
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Aalenian: età
+          aalenian-a
+        https://eol(dot)org/schema/terms/abnormal_habitat_choice: sernia anormal ëd
+          l'ambient
+        http://purl(dot)obolibrary(dot)org/obo/XPO_0131409: comportament locomotòri
+          anormal
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C70589: abondansa
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000027: zòna abissal
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000212: zòna abissopelàgica
+        http://eol(dot)org/schema/terms/acicular: acicular (a forma ëd gucia)
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002120: sorgiss càuda àcida
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00001997: sëccament ëd min-a àcid
+        http://eol(dot)org/schema/terms/acidicFreshwaterMiningLake: lagh ëd min-a
+          d'eva dossa assìdich
+        http://purl(dot)obolibrary(dot)org/obo/EO_0007059: seul àcid
+        http://eol(dot)org/schema/terms/activeForaging: arserca ëd nuriment ativa
+        http://eol(dot)org/schema/terms/ActiveGrowthPeriod: perìod ëd chërsùa ativa
+        http://eol(dot)org/schema/terms/adaptiveStrategy: strategìa adatativa
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002331: adesiv
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002870: seul ëd creja
+        http://www(dot)ebi(dot)ac(dot)uk/efo/EFO_0001272: adult
+        https://eol(dot)org/schema/terms/adventive: arivà an
+        http://eol(dot)org/schema/terms/aerial: aéreo
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000366: aéreo
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000568: ambient aéreo
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Aeronian: età
+          aeronian-a
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00010505: aereosòl
+        http://eol(dot)org/schema/terms/AfterHarvestRegrowthRate: tass ëd neuva chërsùa
+          apress la cujìa
+        http://purl(dot)obolibrary(dot)org/obo/OMIT_0027854: agatossin-e
+        http://eol(dot)org/schema/terms/age At Dispersal: età a la dëspersion
+        http://eol(dot)org/schema/terms/AgeAtEyeOpening: età a la duvertura ëd j'euj
+        http://eol(dot)org/schema/terms/AgeAtMaturity: età a la maduridà
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000077: agrìcol
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_0010003: meterial agrìcol
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002259: seul agrìcol
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000519: trassa agrìcola
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002265: rumenta agrìcola
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000371: rumenta agrìcola
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Albian: età albian-a
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000316: ambient alcalin
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000196: pian-a alcalin-a
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002022: ambient alcalin
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002119: sorgiss càuda alcalin-a
+        http://rs(dot)tdwg(dot)org/ontology/voc/TaxonName#Allolectotype: alolectotipo
+        http://rs(dot)tdwg(dot)org/ontology/voc/TaxonName#Alloneotype: aloneotipo
+        http://rs(dot)tdwg(dot)org/ontology/voc/TaxonName#Allotype: alotipo
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000314: delta aluvional
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000258: pian-a aluvional
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002871: seul aluvional
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000085: giassé alpin
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005741: seul alpin
+        http://eol(dot)org/schema/terms/alternatingReproduction: alternesse ëd generassion
+        http://eol(dot)org/schema/terms/ambush: predator d'amboscada
+        https://eol(dot)org/schema/terms/ampharetid_feeder: an nuriss d'anfaretid
+        http://eol(dot)org/schema/terms/amphibious: anfibi
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03413450: anfìdrom
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000152: anabranch
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03413448: anàdrom
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002133: pàuta anaeròbica
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002045: sediment anaeròbich
+        http://eol(dot)org/schema/terms/AnaerobicSoilTolerance: toleransa a 'n teren
+          anaeròbich
+        https://eol(dot)org/schema/terms/anal_dorsal_fins: nov dla palma anal e dorsal
+        https://eol(dot)org/schema/terms/anal_fin: nov dla palma anal
+        https://eol(dot)org/schema/terms/andromonoecious: andromonòich
+        http://eol(dot)org/schema/terms/androviviparous: androvivìpar
+        http://eol(dot)org/schema/terms/anemochory: anemocorìa
+        https://eol(dot)org/schema/terms/anguilliform: anguiliform
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005803: ambient animal
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002191: giass animal
+        http://purl(dot)bioontology(dot)org/ontology/CSP/2383-1863: densità ëd popolassion
+          animal
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002276: drugia animal
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Anisian: età anisian-a
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980071: anual
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000173: eva anòssica
+        http://eol(dot)org/schema/terms/ante-isooctadecanoic_acid: àcid ante-isootadecanòich
+        http://eol(dot)org/schema/terms/anteisotetradecanoic_acid: àcid ante-isotetradecanòich
+        http://purl(dot)obolibrary(dot)org/obo/BSPO_0000055: anterior
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009066: antera
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000002: antropogénich
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002204: caraterìstica ëd contaminassion
+          antropogénica
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_0010001: material ambiental antropogénich
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000219: antropogénich terestr
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52254: apatita
+        http://purl(dot)obolibrary(dot)org/obo/IDOMAL_0002229: euj an aposission
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Aptian: età apsian-a
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000072: aquedot
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002030: aquàtich
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000371: aquàtica (locomossio)
+        http://eol(dot)org/schema/terms/aquatic: adatà a la vita aquàtica
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900044: pianta aquàtica
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00012408: aquìfer
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Aquitanian: età
+          aquitan-a
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005742: seul laoràbil
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52239: aragonit
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000364: arborìcola (locomossion)
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000571: ambient arborìcol
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Archean: época
+          archean-a
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001709: àrea
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000429: lisca
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000230: sech
+        https://eol(dot)org/schema/terms/arm: mèmber
+        http://eol(dot)org/schema/terms/ArmPlusDiscLength: longheur brass pi disch
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Artinskian: età
+          artinskian-a
+        http://purl(dot)obolibrary(dot)org/obo/GO_0019954: arprodussion assessuà
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Asselian: età
+          asselian-a
+        http://eol(dot)org/schema/terms/atLeastShortPersistentSeedBank: almanch a
+          curta persistensa
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000166: atòl
+        http://eol(dot)org/schema/terms/autochory: autocorìa
+        http://eol(dot)org/schema/terms/average: media
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000472: eva calma
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000127: tèra grama
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002872: bagassa
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Bajocian: età
+          bajossian-a
+        http://eol(dot)org/schema/terms/ballistichory: balistocorìa
+        https://eol(dot)org/schema/terms/bamboo_forest: foresta ëd bambó
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000161: piantassion ëd banan-e
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000167: bara
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_133326: solfà ëd bario
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: ossìgen
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15756: àcid esadecanòid
+        http://purl(dot)obolibrary(dot)org/obo/PO_0004518: scòrsa
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Barremian: età
+          baremian-a
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Bartonian: età
+          bartonian-a
+        http://purl(dot)bioontology(dot)org/ontology/SNOMEDCT/165109007: tass metabòlich
+          basal
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000236: basalt
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Bashkirian: età
+          bashkirian-a
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Bathonian: età
+          bathonian-a
+        http://purl(dot)obolibrary(dot)org/obo/VT_0001502: ritm sircadian comportamental
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980072: bienal
+        http://eol(dot)org/schema/terms/BillLength: longheur dël bech
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_64389: opal
+        http://eol(dot)org/schema/terms/Bioluminescent: bioluminos
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: nèir
+        http://eol(dot)org/schema/terms/BloomPeriod: perìod dë spantiament
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000318: bleu
+        http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: longheur dël còrp
+        http://purl(dot)obolibrary(dot)org/obo/VT_0001259: massa corporal
+        http://eol(dot)org/schema/terms/BodyShape: forma dël còrp
+        http://eol(dot)org/schema/terms/BodyVolume: volum dël còrp
+        http://purl(dot)obolibrary(dot)org/obo/VT_0015039: larghëssa dël còrp
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002359: largh
+        http://purl(dot)obolibrary(dot)org/obo/CEPH_0000036: covà
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: maròn
+        http://eol(dot)org/schema/terms/BudSource: sorgiss dij but
+        http://eol(dot)org/schema/terms/CalcareousSoilTolerance: toleransa al teren
+          calcari
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46719: caussit
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_22984: càuss (Ca)
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: magnesi (Mg)
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_26401: purin-e
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_27226: àcid urèich
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28822: àcid eicosanoid
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28842: àcid otadecanoid
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28866: àcid tetracosanoid
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28875: àcid tetradecanoid
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28941: àcid docosanoid
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_30805: àcid dodecanoid
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_30813: àcid decanoid
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_31009: àcid esacosanoid
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32365: àcid etadecanoid
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32368: àcid ondecanoid
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_3311: carbonà ëd càuss
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_77635: fosfat ëd càuss
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_32583: solfà ëd càuss deidratà
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_32584: solfà ëd càuss emidratà
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_3311: carbonà ëd càuss
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_39246: àcid nonadecanoid
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_42504: àcid pentadecanoid
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_43722: àcid isotetradecanòid
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_45919: àcid tridecanòid
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46713: fluorit
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46719: caussit
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52239: aragonit
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52241: vaterit
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52254: apatita
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52255: idrossipatita
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_64389: opal
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_77635: fosfat ëd càuss
-        http://purl(dot)obolibrary(dot)org/obo/CHEBI_84890: àcid isoesadecanòid
-        http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: longheur dël còrp
-        http://purl(dot)obolibrary(dot)org/obo/CMO_0000445: nùmer ëd mamele
-        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000078: crepuscular
-        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000130: fòto-autòtrof
-        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000131: fòto-eteròtrof
-        http://purl(dot)obolibrary(dot)org/obo/EO_0007059: seul àcid
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0000875: diàmeter ëd la gamba
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0003958: classa ëd taja dla feuja
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0005532: risòma
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0007484: Complessità ëd la feuja
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0008548: përsistensa dle feuje
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0015519: massa dla smens
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0019932: morfologìa dla feuja
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0022142: erbosa
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0023069: diàmeter dël talo
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900022: forma ëd vita dla pianta
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900024: geòfita
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900025: elòfita
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900026: idròfita
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900032: forma ëd chërsùa dla
-          pianta
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900033: erbo
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900034: erborin
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900035: pianta rampianta
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900036: graminassa
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900037: fòrb
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900044: pianta aquàtica
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980071: anual
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980072: bienal
-        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980073: arzistent
-        http://purl(dot)obolibrary(dot)org/obo/FOODON_03413448: anàdrom
+        http://eol(dot)org/schema/terms/CapitulumLength: Longheur dla fiorìa
+        http://eol(dot)org/schema/terms/CarapaceLength: Longheur dël carapass
         http://purl(dot)obolibrary(dot)org/obo/FOODON_03413449: catàdrom
-        http://purl(dot)obolibrary(dot)org/obo/FOODON_03413450: anfìdrom
-        http://purl(dot)obolibrary(dot)org/obo/GO_0000003: arprodussion
-        http://purl(dot)obolibrary(dot)org/obo/GO_0009399: fissassion ëd l'asòt
-        http://purl(dot)obolibrary(dot)org/obo/GO_0019954: arprodussion assessuà
-        http://purl(dot)obolibrary(dot)org/obo/GO_0040011: locomossion
-        http://purl(dot)obolibrary(dot)org/obo/GO_0060746: soen parentaj
-        http://purl(dot)obolibrary(dot)org/obo/ID_0000058: cilìnder
-        http://purl(dot)obolibrary(dot)org/obo/MAT_0000366: òrgo ëd conservassion
-        http://purl(dot)obolibrary(dot)org/obo/NBO_0000055: corsa
-        http://purl(dot)obolibrary(dot)org/obo/NBO_0000364: locomossion an sj'erbo
-        http://purl(dot)obolibrary(dot)org/obo/NBO_0000366: aéreo
-        http://purl(dot)obolibrary(dot)org/obo/NBO_0000367: vòl
-        http://purl(dot)obolibrary(dot)org/obo/NBO_0000369: vòl planà
-        http://purl(dot)obolibrary(dot)org/obo/NBO_0000370: sàut
-        http://purl(dot)obolibrary(dot)org/obo/NCIT_C25513: forme
-        http://purl(dot)obolibrary(dot)org/obo/NCIT_C70589: abondansa
+        http://eol(dot)org/schema/terms/CellDepth: profondeur dla célula
         http://purl(dot)obolibrary(dot)org/obo/OBA_0000048: diàmeter ëd la célula
-        http://purl(dot)obolibrary(dot)org/obo/OBA_0000056: volum ëd la célula
-        http://purl(dot)obolibrary(dot)org/obo/OBA_0002342: strutura dlë schéletr
+        http://eol(dot)org/schema/terms/CellLength: longheur dla célula
         http://purl(dot)obolibrary(dot)org/obo/OBA_1000036: massa dla célula
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000039: longheur ëd la cuchija
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000040: densità dël bòsch
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000083: longheur ëd la nos
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000085: larghëssa ëd la nos
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000098: larghëssa dël sorch
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000106: lë schéletr a conten
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000126: longheur ëd l'epicòno
-        http://purl(dot)obolibrary(dot)org/obo/OBA_1000127: longheur ëd l'ipocòno
-        http://purl(dot)obolibrary(dot)org/obo/OBA_VT0100005: taja dël còrp
-        http://purl(dot)obolibrary(dot)org/obo/OMIT_0013523: macroalga
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000050: durà dla vita
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: forma
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: nèir
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000318: bleu
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: verd
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000322: ross
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: bianch
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000324: giàun
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000461: medi (normal)
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: grand
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000587: cit
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000625: a l'anvers
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: meusi
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: lest
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000915: spessor
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: a forma ëd cheur
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: porpra
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: maròn
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: groson
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001154: slongà
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001199: linear
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001603: gran durà ëd vita
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001604: curta durà ëd vita
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001709: àrea
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: volum
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001729: feuje ch'a casco
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001731: precaria
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001733: sempevërda
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001734: semipërsistenta
+        http://eol(dot)org/schema/terms/CellSurfaceArea: àrea ëd surfassa dla célula
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0000056: volum ëd la célula
+        http://eol(dot)org/schema/terms/CellWidth: larghëssa dla célula
+        http://eol(dot)org/schema/terms/ChelaWidth: Larghëssa dla chela
+        http://eol(dot)org/schema/terms/CingulumWidth: larghëssa dla sentura
+        http://eol(dot)org/schema/terms/CITES_I: Apendis I ëd CITES
+        http://eol(dot)org/schema/terms/CITES_II: Apendis II ëd CITES
+        http://eol(dot)org/schema/terms/CITES_III: Apendis III ëd CITES
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900035: pianta rampianta
+        http://purl(dot)obolibrary(dot)org/obo/VT_0001933: taja dla covà/nijà/portà
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000687: costié
         http://purl(dot)obolibrary(dot)org/obo/PATO_0001794: anrolament
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001941: verd giàun
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0001980: digital
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002044: trapessòid
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002122: mës-cià
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002124: laminar
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002300: qualità ameliorà
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002441: comensal con
+        http://purl(dot)obolibrary(dot)org/obo/PO_0020043: compòst
+        http://eol(dot)org/schema/terms/Cosmopolitan: Cosmopolita
+        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000078: crepuscular
+        http://purl(dot)obolibrary(dot)org/obo/ID_0000058: cilìnder
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000033: di
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_30813: àcid decanoid
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001731: precaria
         http://purl(dot)obolibrary(dot)org/obo/PATO_0002301: qualità degradà
         http://purl(dot)obolibrary(dot)org/obo/PATO_0002343: strusiant
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002359: largh
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002389: sensa rèis
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002393: àuta toleransa
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002394: bassa toleransa
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002425: esponù
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002440: decorassion
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002451: dimorfism sessual
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002457: smijant a na feuja
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0002467: smijant a 'n baston
-        http://purl(dot)obolibrary(dot)org/obo/PORO_0000389: abitùdin ëd chërsùa massissa
-        http://purl(dot)obolibrary(dot)org/obo/PORO_0000436: palmà
-        http://purl(dot)obolibrary(dot)org/obo/PO_0000037: vèrtes dël but
-        http://purl(dot)obolibrary(dot)org/obo/PO_0004518: scòrsa
-        http://purl(dot)obolibrary(dot)org/obo/PO_0004542: risòma
-        http://purl(dot)obolibrary(dot)org/obo/PO_0005848: xilema scondari
-        http://purl(dot)obolibrary(dot)org/obo/PO_0009001: frut
-        http://purl(dot)obolibrary(dot)org/obo/PO_0009005: rèis
-        http://purl(dot)obolibrary(dot)org/obo/PO_0009010: smens
-        http://purl(dot)obolibrary(dot)org/obo/PO_0020042: sempi
-        http://purl(dot)obolibrary(dot)org/obo/PO_0020043: compòst
-        http://purl(dot)obolibrary(dot)org/obo/PO_0025173: feuja spinosa
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002303: ambient
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002439: as taca a
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002440: simbiòta ëd
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002441: comensal con
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002442: mutualìstich con
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002444: parassita ëd
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002445: parassità da
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002454: a l'ha n'òspit
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002455: a polinisa
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002456: polinisà da
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002458: a l'é la pijàita ëd
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002459: a l'é vetor ëd
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: a mangia
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002471: a l'é mangià da
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002556: patògen ëd
-        http://purl(dot)obolibrary(dot)org/obo/RO_0002557: a l'ha n'agent patògen
-        http://purl(dot)obolibrary(dot)org/obo/RO_0003000: a produv
-        http://purl(dot)obolibrary(dot)org/obo/RO_0008503: clepto-parassita ëd
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000207: autëssa dla pianta
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000276: toleransa a la suitin-a
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000326: color ëd feuja
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000492: forma ëd feuja
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000519: profondeur ëd l'anreisament
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000537: color ëd fior
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000540: surfassa ëd feuja
-        http://purl(dot)obolibrary(dot)org/obo/TO_0000850: sòrt ëd frut
-        http://purl(dot)obolibrary(dot)org/obo/TO_0001015: tass ëd fòto-sìntesi
-        http://purl(dot)obolibrary(dot)org/obo/TO_0001026: ritm respiratòri
-        http://purl(dot)obolibrary(dot)org/obo/TO_0002725: abitùdin ëd sicl ëd vita
-        http://purl(dot)obolibrary(dot)org/obo/TO_0006001: toleransa a la sal
-        http://purl(dot)obolibrary(dot)org/obo/UBERON_0010362: endoschéletr
-        http://purl(dot)obolibrary(dot)org/obo/UBERON_4000013: ël tëssù mineralisà
-          a conten
-        http://purl(dot)obolibrary(dot)org/obo/UO_0010006: rapòrt
-        http://purl(dot)obolibrary(dot)org/obo/VT_0001259: massa corporal
-        http://purl(dot)obolibrary(dot)org/obo/VT_0001502: ritm sircadian comportamental
-        http://purl(dot)obolibrary(dot)org/obo/VT_0001933: taja dla covà/nijà/portà
-        http://purl(dot)obolibrary(dot)org/obo/VT_0002292: durà dla gestassion
-        http://purl(dot)obolibrary(dot)org/obo/VT_0002683: inissi dla fecondità
-        http://purl(dot)obolibrary(dot)org/obo/VT_0002758: longheur ëd la coa
-        http://purl(dot)obolibrary(dot)org/obo/VT_0004348: longheur dël fémur
-        http://purl(dot)obolibrary(dot)org/obo/VT_0010023: longheur ëd la piòta anans
-        http://purl(dot)obolibrary(dot)org/obo/VT_0015039: larghëssa dël còrp
-        http://purl(dot)obolibrary(dot)org/obo/VT_1000666: larghëssa dël fémur
-        http://eol(dot)org/schema/terms/Present: la distribussion geogràfica a anclud
-        http://eol(dot)org/schema/terms/FossilFirst: prima aparission
-        https://www(dot)wikidata(dot)org/entity/Q295469: ecoregion
-        http://eol(dot)org/schema/terms/EcomorphologicalGuild: corporassion ecomorfològica
-        http://eol(dot)org/schema/terms/TrophicGuild: corporassion tròfica
-        http://www(dot)wikidata(dot)org/entity/Q33596: mobilità
-        http://rs(dot)tdwg(dot)org/dwc/terms/verbatimDepth: profondeur ëd l'eva
-        http://eol(dot)org/schema/terms/NativeRange: la portà nativa a anclud
-        http://eol(dot)org/schema/terms/fossilOccPBDB: nùmer d'ocorense ëd fòssij
-        http://www(dot)wikidata(dot)org/entity/Q1053008: livel tròfich
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000024: fond dël mar
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000446: terestr
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000174: foresta
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000447: marengh
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000687: costié
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000873: eva corenta
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000300: busson
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000204: tropical
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000253: fium
-        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000177: prairìa
-        http://eol(dot)org/schema/terms/paleo_megaannum: un milion d'agn fa
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000027: gre Celsius
-        http://eol(dot)org/schema/terms/individualspersquarekilometer: esemplar për
-          chilòmeter quàder
-        http://eol(dot)org/schema/terms/millimeterspermonth: milim al mèis
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000012: kelvin
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000033: di
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000035: mèis
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000036: agn
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000114: Watts
-        http://semanticscience(dot)org/resource/SIO_001114: max
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000187: përsent
         http://purl(dot)obolibrary(dot)org/obo/UO_0000185: gre
-        http://purl(dot)bioontology(dot)org/ontology/SNOMEDCT/259032004: /di
-        http://purl(dot)bioontology(dot)org/ontology/SNOMEDCT/259039008: /ann
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000195: gre Fahrenheit
-        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#inch: pòles
-        http://eol(dot)org/schema/terms/perAcre: për acr
-        http://eol(dot)org/schema/terms/practicalSalinityUnits: PSU
-        http://purl(dot)org/obo/owl/UO#UO_0000034: sman-e
-        http://eol(dot)org/schema/terms/µmol_cell-1_day-1: µmol /sélula /di
-        http://eol(dot)org/schema/terms/µmol_cell-1: µmol/sélula
-        http://purl(dot)obolibrary(dot)org/obo/UO_0000064: µmol/l
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000027: gre Celsius
+        http://eol(dot)org/schema/terms/DevelopmentalMode: meud ëd dësvlup
+        http://eol(dot)org/schema/terms/DiapauseInitiation: diapàusa
+        http://eol(dot)org/schema/terms/DietBreadth: estension dël regim
+        http://eol(dot)org/schema/terms/Diet: ël regim a comprend
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001980: digital
+        http://eol(dot)org/schema/terms/DiscDiameter: Diàmeter dël disch
+        http://eol(dot)org/schema/terms/DispersalAge: età dla dispersion
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28941: àcid docosanoid
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_30805: àcid dodecanoid
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000276: toleransa a la suitin-a
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: a mangia
+        http://eol(dot)org/schema/terms/EcomorphologicalGuild: corporassion ecomorfològica
+        http://eol(dot)org/schema/terms/EggDiameter: diàmeter ëd l'euv
+        http://eol(dot)org/schema/terms/EggMass: massa dl'euv
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28822: àcid eicosanoid
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001154: slongà
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0010362: endoschéletr
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000126: longheur ëd l'epicòno
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001733: sempevërda
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002425: esponù
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: lest
+        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#foot: pe
+        http://purl(dot)obolibrary(dot)org/obo/VT_0004348: longheur dël fémur
+        http://purl(dot)obolibrary(dot)org/obo/VT_1000666: larghëssa dël fémur
+        http://eol(dot)org/schema/terms/FireResistance: arzistensa al feu
+        http://eol(dot)org/schema/terms/FireTolerance: toleransa al feu
+        http://eol(dot)org/schema/terms/FossilFirst: prima aparission
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000367: vòl
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000537: color ëd fior
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46713: fluorit
+        http://eol(dot)org/schema/terms/ForagingHabitat: ambient ëd pastura
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900037: fòrb
+        http://purl(dot)obolibrary(dot)org/obo/VT_0010023: longheur ëd la piòta anans
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000174: foresta
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000873: eva corenta
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009001: frut
+        http://eol(dot)org/schema/terms/FruitSeedColor: color dij frut o dle smens
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000850: sòrt ëd frut
         http://eol(dot)org/schema/terms/gramsPerCentimeterSquaredPerDay: g/cm^2/di
-        http://eol(dot)org/schema/terms/kilogramsPerMeterSquaredPerYear: kg/m^2/ann
-        Unit: Unità
-        http://eol(dot)org/schema/terms/percentPerMonth: '%/mèis'
         http://eol(dot)org/schema/terms/gramsPercm2PerYear: g/cm^2/an
         http://eol(dot)org/schema/terms/gramsPerMonth: g/mèis
+        http://eol(dot)org/schema/terms/GenerationTime: temp ëd generassion
+        http://eol(dot)org/schema/terms/Present: la distribussion geogràfica a anclud
+        http://eol(dot)org/schema/terms/GeographicRangeArea: spantiament geogràfich
+          (taja dl'àrea)
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900024: geòfita
+        http://purl(dot)obolibrary(dot)org/obo/VT_0002292: durà dla gestassion
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000369: vòl planà
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900036: graminassa
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000177: prairìa
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: verd
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002303: ambient
+        http://eol(dot)org/schema/terms/HabitatBreadth: larghëssa dl'ambient
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002454: a l'ha n'òspit
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002557: a l'ha n'agent patògen
+        http://eol(dot)org/schema/terms/HeadtoCoccyxLength: longheur da la testa a
+          la sinta
+        http://eol(dot)org/schema/HeadWidth: larghëssa dla testa
+        http://eol(dot)org/schema/terms/HeadBodyLength: longheur testa-còrp
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: a forma ëd cheur
+        http://eol(dot)org/schema/terms/HeightStanding: autëssa da 'n pe
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900025: elòfita
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32365: àcid etadecanoid
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0022142: erbosa
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_31009: àcid esacosanoid
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15756: àcid esadecanòid
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001603: gran durà ëd vita
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002393: àuta toleransa
+        http://eol(dot)org/schema/terms/HindTarsusLength: longheur dël tars posterior
+        http://eol(dot)org/schema/terms/HomeRange: àrea doméstica
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900026: idròfita
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52255: idrossipatita
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000127: longheur ëd l'ipocòno
+        http://purl(dot)obolibrary(dot)org/obo/EFO_0004387: pòles
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002300: qualità ameliorà
+        http://eol(dot)org/schema/terms/InitialMortalityRate: tass ëd mortalità inissial
+        http://eol(dot)org/schema/terms/InterBirthInterval: antërval antra le nassense
+        http://eol(dot)org/schema/terms/InvasiveRange: invasiv an
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000625: a l'anvers
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002471: a l'é mangià da
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002459: a l'é vetor ëd
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_84890: àcid isoesadecanòid
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_43722: àcid isotetradecanòid
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000012: kelvin
+        http://eol(dot)org/schema/terms/kilogramsPerMeterSquaredPerYear: kg/m^2/ann
+        http://purl(dot)obolibrary(dot)org/obo/RO_0008503: clepto-parassita ëd
+        http://eol(dot)org/schema/terms/DescribedAcceptedSpecies: spece marenghe conossùe
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002124: laminar
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: grand
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002467: smijant a 'n baston
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000540: surfassa ëd feuja
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000326: color ëd feuja
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0007484: Complessità ëd la feuja
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0019932: morfologìa dla feuja
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000492: forma ëd feuja
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0008548: përsistensa dle feuje
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0003958: classa ëd taja dla feuja
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002457: smijant a na feuja
+        http://purl(dot)obolibrary(dot)org/obo/TO_0002725: abitùdin ëd sicl ëd vita
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000050: durà dla vita
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001199: linear
+        http://eol(dot)org/schema/terms/LittersPerYear: portà a l'ann
+        http://purl(dot)obolibrary(dot)org/obo/GO_0040011: locomossion
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001604: curta durà ëd vita
+        http://eol(dot)org/schema/terms/TemperatureTolerance: toleransa a le temperadure
+          basse
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002394: bassa toleransa
+        http://purl(dot)obolibrary(dot)org/obo/OMIT_0013523: macroalga
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: magnesi (Mg)
+        http://eol(dot)org/schema/terms/MaleFemaleBodyMassRatio: rapòrt ëd massa antra
+          mas-cc e fumela
+        http://eol(dot)org/schema/terms/MaleTenure: Soen dij mas-cc
+        http://eol(dot)org/schema/terms/MantleLength: Longheur dël mantel
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000447: marengh
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000024: fond dël mar
+        http://purl(dot)obolibrary(dot)org/obo/PORO_0000389: abitùdin ëd chërsùa massissa
+        http://eol(dot)org/schema/terms/MatingSystem: strategìa d'arprodussion
+        http://semanticscience(dot)org/resource/SIO_001114: max
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000461: medi (normal)
+        http://eol(dot)org/schema/terms/MiddleToeLength: longheur dël dil mesan
+        http://eol(dot)org/schema/terms/millimeterspermonth: milim al mèis
+        http://eol(dot)org/schema/terms/paleo_megaannum: un milion d'agn fa
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_4000013: ël tëssù mineralisà
+          a conten
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002122: mës-cià
         http://eol(dot)org/schema/terms/millimetersPerThreeMonths: mm/3mèis
         http://eol(dot)org/schema/terms/millimetersPerFourMonths: mm/4mèis
         http://eol(dot)org/schema/terms/millimetersPerSixMonths: mm/6mèis
@@ -1562,8 +1665,172 @@ pms:
         http://purl(dot)obolibrary(dot)org/obo/UO_0010005: mm/di
         http://purl(dot)obolibrary(dot)org/obo/NCIT_C105508: mm/sec
         http://eol(dot)org/schema/terms/millimetersPerYear: mm/ann
-        http://eol(dot)org/schema/terms/µmol_cm-2_hr-1: µmol/cm2/hr
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000035: mèis
+        http://eol(dot)org/schema/terms/MortalityRateDoublingTime: temp d'ardobiament
+          dël tass ëd mortalità
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002442: mutualìstich con
+        http://eol(dot)org/schema/terms/NativeRange: la portà nativa a anclud
+        http://purl(dot)obolibrary(dot)org/obo/GO_0009399: fissassion ëd l'asòt
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_39246: àcid nonadecanoid
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000083: longheur ëd la nos
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000085: larghëssa ëd la nos
+        http://eol(dot)org/schema/terms/fossilOccPBDB: nùmer d'ocorense ëd fòssij
+        http://eol(dot)org/schema/terms/NumberOfHosts: nùmer d'òspit
+        http://eol(dot)org/schema/terms/NumberPublicRecordsInBOLD: nùmer d'argistrassion
+          pùbliche an BOLD
+        http://eol(dot)org/schema/terms/NutrientCompositionOfMilk: composission dij
+          nuriment ant ël làit
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28842: àcid otadecanoid
+        http://purl(dot)obolibrary(dot)org/obo/VT_0002683: inissi dla fecondità
+        http://eol(dot)org/schema/terms/OptimalGrowthTemperature: temperadura ëd chërsùa
+          otimal
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: groson
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002440: decorassion
+        http://eol(dot)org/schema/terms/OuterEarLength: longheur dl'orija esterna
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: ossìgen
+        http://purl(dot)obolibrary(dot)org/obo/PORO_0000436: palmà
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002444: parassita ëd
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002445: parassità da
+        http://purl(dot)obolibrary(dot)org/obo/GO_0060746: soen parentaj
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002556: patògen ëd
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_42504: àcid pentadecanoid
+        http://eol(dot)org/schema/terms/perAcre: për acr
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000187: përsent
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980073: arzistent
+        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000130: fòto-autòtrof
+        http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000131: fòto-eteròtrof
+        http://purl(dot)obolibrary(dot)org/obo/TO_0001015: tass ëd fòto-sìntesi
+        http://eol(dot)org/schema/terms/Tocantins/Pindare_moist_forests: Foreste ùmide
+          ëd Pindaré
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900032: forma ëd chërsùa dla
+          pianta
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000207: autëssa dla pianta
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900022: forma ëd vita dla pianta
+        http://eol(dot)org/schema/terms/PlantingDensity: densità ëd piantassion
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002456: polinisà da
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002455: a polinisa
+        http://eol(dot)org/schema/terms/PopulationGroupSize: taja ëd na partìa ëd
+          popolassion
+        http://eol(dot)org/schema/terms/PostFireSeedlingEmergence: emergensa ëd chërsùe
+          apress un feu
+        http://eol(dot)org/schema/terms/PostFireSeedlingSurvival: dzorvivensa dle
+          piantin-e apress un feu
+        http://eol(dot)org/schema/terms/PrecipitationTolerance: toleransa a le pressipitassion
+        http://eol(dot)org/schema/terms/PrenatalDevelopmentDuration: durà dël dësvlup
+          prenatal
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002458: a l'é la pijàita ëd
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002439: as taca a
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002389: sensa rèis
+        http://purl(dot)obolibrary(dot)org/obo/RO_0003000: a produv
+        http://eol(dot)org/schema/terms/Propagule: propàgol
+        http://eol(dot)org/schema/terms/ProsomeHeight: autëssa dël prosòma
+        http://eol(dot)org/schema/terms/ProsomeLength: longheur dël prosòma
+        http://eol(dot)org/schema/terms/ProsomeWidth: larghëssa dël prosòma
+        http://eol(dot)org/schema/terms/ProteinCompositionOfMilk: composission protèica
+          dël làit
+        http://eol(dot)org/schema/terms/practicalSalinityUnits: PSU
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_26401: purin-e
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: porpra
+        http://purl(dot)obolibrary(dot)org/obo/UO_0010006: rapòrt
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000322: ross
+        http://purl(dot)obolibrary(dot)org/obo/GO_0000003: arprodussion
+        http://eol(dot)org/schema/terms/ReproductiveSkew: Deviassion arprodutiva
+        http://purl(dot)obolibrary(dot)org/obo/TO_0001026: ritm respiratòri
+        http://eol(dot)org/schema/terms/RespClip: capassità ëd chërse ancor apress
+          ël taj
+        http://eol(dot)org/schema/terms/RespDist: capassità ëd chërse ancor apress
+          dle përturbassion
+        http://eol(dot)org/schema/terms/RespFire: capassità ëd chërse torna apress
+          un feu
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0005532: risòma
+        http://purl(dot)obolibrary(dot)org/obo/PO_0004542: risòma
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000253: fium
+        http://eol(dot)org/schema/terms/RNAtoDNAratio: rapòrt ARN:ADN
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000519: profondeur ëd l'anreisament
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009005: rèis
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000055: corsa
+        http://purl(dot)obolibrary(dot)org/obo/TO_0006001: toleransa a la sal
+        http://purl(dot)obolibrary(dot)org/obo/NBO_0000370: sàut
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000300: busson
+        http://purl(dot)obolibrary(dot)org/obo/PO_0005848: xilema scondari
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009010: smens
+        http://eol(dot)org/schema/terms/SeedBank: banca dle smens
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0015519: massa dla smens
+        http://eol(dot)org/schema/terms/SeedPeriodBegin: prinsipi dël perìod ëd le
+          smens
+        http://eol(dot)org/schema/terms/SeedPeriodEnd: fin dël perìod ëd le smens
+        http://eol(dot)org/schema/terms/SeedSpreadRate: andi dë spantiament ëd le
+          smens
+        http://eol(dot)org/schema/terms/SeedlingSurvival: dzorvivensa dij piantin
+        http://eol(dot)org/schema/terms/SeedPerPound: smens për livra
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001734: semipërsistenta
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002451: dimorfism sessual
+        http://eol(dot)org/schema/terms/ShadeTolerance: toleransa a l'ombra
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: forma
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001729: feuje ch'a casco
+        http://eol(dot)org/schema/terms/ShellHeightBivalve: autëssa dla cuchija, bivàlvola
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000039: longheur ëd la cuchija
+        http://eol(dot)org/schema/terms/ShellLengthBivalve: longheur ëd la cuchija,
+          bivàlvola
+        http://purl(dot)obolibrary(dot)org/obo/PO_0000037: vèrtes dël but
+        http://eol(dot)org/schema/terms/ShootRootRatio: rapòrt gamb/rèis (RGR)
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900034: erborin
+        http://purl(dot)obolibrary(dot)org/obo/PO_0020042: sempi
+        http://eol(dot)org/schema/terms/SkeletalDensity: densità schelétrica
+        http://eol(dot)org/schema/terms/SkeletalReinforcement: ranforsament ëschelétrich
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000106: lë schéletr a conten
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0002342: strutura dlë schéletr
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: meusi
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000587: cit
+        http://eol(dot)org/schema/terms/SocialGroupSize: taja dla partìa sossial
+        http://eol(dot)org/schema/terms/SocialSystem: sistema sossial
+        http://purl(dot)obolibrary(dot)org/obo/PO_0025173: feuja spinosa
+        http://eol(dot)org/schema/terms/StandardLength: longheur ëstàndard
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0000875: diàmeter ëd la gamba
+        http://purl(dot)obolibrary(dot)org/obo/MAT_0000366: òrgo ëd conservassion
+        http://eol(dot)org/schema/terms/Attached: tacà al substrà
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000098: larghëssa dël sorch
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002440: simbiòta ëd
+        http://purl(dot)obolibrary(dot)org/obo/VT_0002758: longheur ëd la coa
+        http://eol(dot)org/schema/terms/TarsometatarsusPlusMiddleToeLength: longheur
+          ëd tarsimetatarsi + dil mesan
+        http://eol(dot)org/schema/terms/TarsusLength: longheur dël tarsi
+        http://purl(dot)obolibrary(dot)org/obo/CMO_0000445: nùmer ëd mamele
+        http://eol(dot)org/schema/terms/TemperateOcean: Océan temprà
+        http://eol(dot)org/schema/terms/TemperatureAtRangeMidpointLatitude: temperadura
+          a la latitùdin dël pont mesan ëd la zòna
+        http://eol(dot)org/schema/terms/TemperatureInRange: temperadura ëd na zòna
+          geogràfica
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000446: terestr
+        http://eol(dot)org/schema/terms/TestesMass: Massa dij testìcoj
+        http://eol(dot)org/schema/terms/TestisLocation: posission dël testìcol
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28866: àcid tetracosanoid
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28875: àcid tetradecanoid
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0023069: diàmeter dël talo
+        http://eol(dot)org/schema/terms/OceaniaRealm: ël regn dl'Osseania (ìsole)
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000915: spessor
         http://purl(dot)obolibrary(dot)org/obo/UO_0010038: tonëlà
-        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#foot: pe
-        http://purl(dot)obolibrary(dot)org/obo/EFO_0004387: pòles
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002044: trapessòid
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900033: erbo
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_45919: àcid tridecanòid
+        http://eol(dot)org/schema/terms/TrophicGuild: corporassion tròfica
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32368: àcid ondecanoid
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_27226: àcid urèich
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_52241: vaterit
+        http://dicom(dot)nema(dot)org/resources/ontology/DCM/112132: motobin cit
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: volum
+        http://rs(dot)tdwg(dot)org/dwc/terms/verbatimDepth: profondeur ëd l'eva
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000114: Watts
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: bianch
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000040: densità dël bòsch
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000036: agn
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000324: giàun
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001941: verd giàun
+        http://eol(dot)org/schema/terms/µmol_cell-1_day-1: µmol /sélula /di
+        http://eol(dot)org/schema/terms/µmol_cell-1: µmol/sélula
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000064: µmol/l
+        http://eol(dot)org/schema/terms/Colonial: Colonial
+        http://eol(dot)org/schema/terms/NonInvasiveRange: nen anvasiva
+        http://eol(dot)org/schema/terms/Territorial: teritorial
+        http://eol(dot)org/schema/terms/HasDispersalVector: a l'ha 'n vetor ëd dispersion
 ...

@@ -14,7 +14,7 @@ class Medium < ApplicationRecord
   has_one :image_info, inverse_of: :image
   has_one :hidden_medium
 
-  # NOTE: these MUST be kept in sync with the harvester codebase! Be careful. Sorry for the conflation.
+  # NOTE: these enums MUST be kept in sync with the harvester codebase! Be careful. Sorry for the conflation.
   enum subclass: %i[image video sound map_image js_map]
   enum format: %i[jpg youtube flash vimeo mp3 ogg wav mp4 ogv mov svg webm]
 
@@ -228,7 +228,7 @@ class Medium < ApplicationRecord
   def real_format
     # bandaid for incorrect format assigned by harvest
     if invalid_format_video?
-      :ogv # so far, we've seen this problem with flv and ogg. We can't display the former, so this won't break them any more than they already are. 
+      :ogv # so far, we've seen this problem with flv and ogg. We can't display the former, so this won't break them any more than they already are.
     else
       format
     end

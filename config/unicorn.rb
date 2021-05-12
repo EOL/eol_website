@@ -9,6 +9,6 @@ stderr_path "#{app_dir}/log/unicorn.stderr.log"
 # NOTE: the default, if missing, is /dev/null ...which we want in this case.
 # stdout_path "#{app_dir}/log/unicorn.stdout.log"
 
-worker_processes 6
+worker_processes 9
 listen "#{app_dir}/tmp/unicorn.sock", :backlog => 64
 timeout 905 # Setting this HIGHER than unicorn, so that we don't reap processes unless we have to.

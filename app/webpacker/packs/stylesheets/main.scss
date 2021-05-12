@@ -90,15 +90,12 @@ h1, h2, h3 {
 
 a, .a, .uk-text-meta > a {
   color: $link-color;
+  cursor: pointer;
 
   &:hover {
     color: $link-color;
     text-decoration: underline;
   }
-}
-
-a {
-  cursor: pointer;
 }
 
 .is-noscroll {

@@ -24,12 +24,13 @@ use, and the standard shell on most GNU/Linux systems.
 
 
 ## Access from shell using curl
-
-When submitting a query it's necessary to convert any spaces in the
-query to `%20`.  This is not something you want to do manually.
-`wget` does this conversion automatically, but `curl` does not, as far
-as I can tell.  So we recommend using `wget` instead of `curl`.
-
+Example POST request with a query in file `query.cypher`:
+   
+    curl https://eol.org/service/cypher -H "Authorization: JWT $(cat api.token)" \
+        --data-urlencode query@query.cypher
+        
+You'll need to POST lengthy queries due to URL length limits. This is likely also possible with `wget`
+but hasn't been tested.
 
 ## Access using python
 

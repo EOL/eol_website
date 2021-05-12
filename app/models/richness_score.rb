@@ -10,7 +10,7 @@ class RichnessScore
   def initialize
     @section_count = Section.cached_count
     @section_count = 1 if @section_count.nil? || @section_count <= 0
-    @predicate_count = TraitBank.predicate_count
+    @predicate_count = TraitBank::Queries.predicate_count
     @weights = {
       media: 0.34,
       media_diversity: 0.03,

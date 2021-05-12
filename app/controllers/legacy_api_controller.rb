@@ -16,7 +16,7 @@ protected
     object_hash[:title]                  = object.title if object.respond_to?(:title) && !object.title.blank?
     object_hash[:license]                = object.license.source_url if object.license
     object_hash[:license_id]             = object.license.id if object.license
-    object_hash[:language]               = object.language.group if object.language
+    object_hash[:language]               = object.language&.locale&.code if object.language&.locale
     object_hash[:rights]                 = object.rights_statement if object.rights_statement
     object_hash[:rightsHolder]           = object.owner if object.owner
     object_hash[:bibliographicCitation]  = object.bibliographic_citation.body if object.bibliographic_citation

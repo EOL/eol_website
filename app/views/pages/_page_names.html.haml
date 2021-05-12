@@ -34,7 +34,7 @@
     - else
       - vernaculars = sorted_grouped_vernaculars(@page)
       - vernaculars.each_with_index do |val, i|
-        - lang = val[:lang]
+        - lang = val[:locale_code]
         - names_by_lang = val[:vernaculars]
         - hidden = i >= vernacular_card_limit
         .js-name-card-vern{ 'data-hide': hidden, class: hidden ? "uk-hidden" : "" }

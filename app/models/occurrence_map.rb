@@ -2,7 +2,16 @@ class OccurrenceMap < ApplicationRecord
   belongs_to :page
 
   class << self
-    def remove_pages_with_no_map(force = nil)
+    def read_new_list(file)
+      raise "file missing" unless File.exist?(file)
+      last_max = maximum(:id)
+      File.readlines(file).each do |page_id|
+        create!(page_id: page_id)
+      end
+      where(['id <= ?', last_max]).delete_all
+    end
+
+    def remove_instances_with_missing_page(force = nil)
       bad_ids = []
       bad_pages = []
       where('page_id IS NOT NULL').find_each do |occ_map|
