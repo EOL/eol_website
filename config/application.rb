@@ -55,7 +55,8 @@ module EolWebsite
       "/api/",
       "/users/",
       "/resources/*/nodes/",
-      "/search/"
+      "/search/",
+      "/pages/*/names"
     ]
 
     config.x.geonames_app_id = Rails.application.secrets.geonames_app_id
