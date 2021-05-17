@@ -70,7 +70,7 @@ module TraitBank
       end
 
       def remove_for_resource(resource)
-        remove_most_metadata_relationships(resource_id)
+        remove_most_metadata_relationships(resource.id)
         remove_with_query(
           name: :meta,
           q: "(meta:MetaData)<-[:metadata]-(trait:Trait)-[:supplier]->(:Resource { resource_id: #{resource.id} })"
