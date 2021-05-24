@@ -106,7 +106,7 @@ module TraitBank
           LIMIT 20
         }) # This can take a few seconds...
         return unless results.has_key?('data') # Something went really wrong.
-        while results['data'].first.last > 20_000 do
+        while results['data']&.first&.last && results['data'].first.last > 20_000 do
           result = results['data'].shift
           remove_metadata_relationships(result.first, result.last)
         end
