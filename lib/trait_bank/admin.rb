@@ -70,6 +70,7 @@ module TraitBank
       end
 
       def remove_for_resource(resource)
+        remove_most_metadata_relationships(resource.id)
         remove_with_query(
           name: :meta,
           q: "(meta:MetaData)<-[:metadata]-(trait:Trait)-[:supplier]->(:Resource { resource_id: #{resource.id} })"
@@ -93,13 +94,39 @@ module TraitBank
         Rails.cache.clear # Sorry, this is easiest. :|
       end
 
+      def remove_most_metadata_relationships(resource_id)
+        resource_id = resource_id.to_i
+        results = TraitBank.query(%Q{
+          MATCH (meta:MetaData)<-[:metadata]-(trait:Trait)-[:supplier]->(:Resource { resource_id: #{resource_id} })
+          WITH DISTINCT meta
+          MATCH (meta)-[r]-()
+          WITH meta, count(DISTINCT r) AS rel_count
+          RETURN meta.eol_pk, rel_count
+          ORDER BY rel_count DESC
+          LIMIT 20
+        }) # This can take a few seconds...
+        return unless results.has_key?('data') # Something went really wrong.
+        while results['data'].first.last > 20_000 do
+          result = results['data'].shift
+          remove_metadata_relationships(result.first, result.last)
+        end
+      end
+
+      def remove_metadata_relationships(id, count)
+        # puts "#{id} has #{count} relationships."
+        remove_with_query(name: r, q: %Q{MATCH (meta:MetaData {eol_pk: '#{id}'})-[r:metadata]-()})
+        # Now that metadata no longer has a relationship to the resource, making it very hard to delete.
+        # We remove it here to avoid having to try.
+        TraitBank.query(%Q{MATCH (meta:MetaData {eol_pk: '#{id}'}) DETACH DELETE meta;})
+      end
+
       # options = {name: :meta, q: "(meta:MetaData)<-[:metadata]-(trait:Trait)-[:supplier]->(:Resource { resource_id: 640 })"}
       def remove_with_query(options = {})
         name = options[:name]
         q = options[:q]
         delay = options[:delay] || 1 # Increasing this did not really help site performance. :|
         size = options[:size] || 64
-        count_before = count_type_for_resource(name, q)
+        count_before = count_by_query(name, q)
         count = 0
         return if count_before.nil? || ! count_before.positive?
         loop do
@@ -111,7 +138,7 @@ module TraitBank
           TraitBank::Logger.log("--TB_DEL: Took #{time_delta}.")
           count += size
           if count >= count_before
-            count = count_type_for_resource(name, q)
+            count = count_by_query(name, q)
             break unless count.positive?
             if count >= 2 * count_before
               raise "I have been attempting to delete #{name} data for twice as long as expected. "\
@@ -124,7 +151,7 @@ module TraitBank
         end
       end
 
-      def count_type_for_resource(name, q)
+      def count_by_query(name, q)
         TraitBank.query("MATCH #{q} RETURN COUNT(DISTINCT #{name})")['data']&.first&.first
       end
 

@@ -44,7 +44,7 @@ class PageDecorator
 
       landmark_children
       plant_description_sentence
-      flower_visitor_sentence
+      flower_visitor_sentences
       fixes_nitrogen_sentence
       forms_sentence
       ecosystem_engineering_sentence
@@ -58,6 +58,10 @@ class PageDecorator
       motility_sentence
 
       Result.new(@sentences.join(' '), @terms)
+    end
+
+    def other
+
     end
 
     private
@@ -108,9 +112,13 @@ class PageDecorator
       end
 
       def above_family
+        rank_name = @page.rank&.treat_as.present? ?
+          @page.rank.i18n_name : 
+          'group'
+
         if a1.present?
           add_sentence do |subj, _, __|
-            "#{subj} is a group of #{a1}." # in this case, the is variable would be 'are', which is not what we want
+            "#{subj} is #{a_or_an_helper(rank_name)} #{rank_name} of #{a1}." # in this case, the is variable would be 'are', which is not what we want
           end
         end
 
@@ -125,7 +133,7 @@ class PageDecorator
 
         if first_appearance_trait
           add_sentence do |_, __, ___|
-            trait_sentence_part("This group has been around since the %s.", first_appearance_trait)
+            trait_sentence_part("This #{rank_name} has been around since the %s.", first_appearance_trait)
           end
         end
       end
@@ -247,7 +255,7 @@ class PageDecorator
           end
         else
           add_sentence do |subj, _, __|
-            "#{subj} is a family of #{a1}."
+            "#{subj} is a genus of #{a1}."
           end
         end
         # We may have a few genera that don't have a family in their ancestry. In those cases, shorten the taxonomy sentence:
@@ -518,17 +526,35 @@ class PageDecorator
         end
       end
 
-      def flower_visitor_sentence
-        pages = @page.traits_for_predicate(TermNode.find_by_alias('visits_flowers_of')).map do |t|
-          t.page
+      def flower_visitor_sentences
+        visits_flowers_sentence
+        flowers_visited_by_sentence
+      end
+
+      def visits_flowers_sentence
+        flower_visitor_sentence_helper(:traits_for_predicate, :object_page) do |page_part|
+          add_sentence do |subj, __, ___|
+            "#{subj} visit flowers of #{page_part}."
+          end
+        end
+      end
+
+      def flowers_visited_by_sentence
+        flower_visitor_sentence_helper(:object_traits_for_predicate, :page) do |page_part|
+          add_sentence do |_, __, ___|
+            "Flowers are visited by #{page_part}."
+          end
+        end
+      end
+
+      def flower_visitor_sentence_helper(trait_fn, page_fn)
+        pages = @page.send(trait_fn, TermNode.find_by_alias('visits_flowers_of')).map do |t|
+          t.send(page_fn)
         end.uniq.slice(0, FLOWER_VISITOR_LIMIT)
 
         if pages.any?
           parts = pages.collect { |page| association_sentence_part("%s", page) }
-
-          add_sentence do |_, __, ___|
-            "Flowers are visited by #{to_sentence(parts)}."
-          end
+          yield to_sentence(parts)
         end
       end
 
@@ -755,7 +781,7 @@ class PageDecorator
       def a_or_an(trait)
         return unless trait[:object_term] && trait[:object_term][:name]
         word = trait[:object_term][:name]
-        %w(a e i o u).include?(word[0].downcase) ? "an" : "a"
+        a_or_an_helper(word)
       end
 
       def is_or_are(count)
@@ -844,7 +870,7 @@ class PageDecorator
                              Rails.logger.warn("Missing associated page for auto-generated text")
                              "(page not found)"
                            else
-                             view.link_to(object_page.name(Locale.english).html_safe, object_page)
+                             view.link_to(object_page.short_name(Locale.english).html_safe, object_page)
                            end
         sprintf(format_str, object_page_part)
       end
@@ -852,6 +878,10 @@ class PageDecorator
       # use instead of Array#to_sentence to use correct locale for text, rather than global I18n.locale
       def to_sentence(a)
         a.to_sentence(locale: :en)
+      end
+      
+      def a_or_an_helper(word)
+        %w(a e i o u).include?(word[0].downcase) ? "an" : "a"
       end
     # end private
   end

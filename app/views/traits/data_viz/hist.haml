@@ -1,1 +1,1 @@
-.js-value-hist{ data: { json: histogram_data(@query, @data).to_json }}
+.js-value-hist{ data: { json: JSON.dump(histogram_data(@query, @data)) }}

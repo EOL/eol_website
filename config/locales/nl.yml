@@ -5,6 +5,7 @@
 # Author: Elroy
 # Author: Mainframe98
 # Author: Marcelhospers
+# Author: Nickthijssen1994
 # Author: Optilete
 # Author: PonkoSasuke
 # Author: Robin van der Linde
@@ -827,6 +828,18 @@ nl:
       articles: '%{page_name} artikelen'
     traits:
       search: Trait zoeken
+  rank:
+    name:
+      r_subdomain: onderdomein
+      r_subphylum: onderstam
+      r_superclass: superklasse
+      r_suborder: onderorde
+      r_superfamily: superfamilie
+      r_tribe: tak
+      r_genus: geslacht
+      r_subgenus: ondergeslacht
+      r_species: soort
+      r_subspecies: ondersoort
   recaptcha: Recaptcha
   recaptcha_error: Vertel alsjeblieft dat je geen robot bent.
   reference_compiled_from: Verwezen door %{links}

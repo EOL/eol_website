@@ -1,6 +1,7 @@
 # Messages for Portuguese (português)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Emma Franzen
 # Author: Hamilton Abreu
 # Author: Mansil
 # Author: Mansil alfalb
@@ -325,6 +326,41 @@ pt-PT:
     pages:
       data: dados de %{page_name}
       articles: Artigos sobre %{page_name}
+  rank:
+    name:
+      r_domain: dominio
+      r_subdomain: subdominio
+      r_infradomain: infradomain
+      r_superkingdom: super-reino
+      r_kingdom: reino
+      r_subkingdom: sub-reino
+      r_infrakingdom: infra-reino
+      r_superphylum: superfilo
+      r_phylum: filo
+      r_subphylum: subfilo
+      r_infraphylum: infrafilo
+      r_superclass: superclasse
+      r_class: aula
+      r_subclass: subclasse
+      r_infraclass: infraclasse
+      r_superorder: superordenar
+      r_order: pedido
+      r_suborder: subordem
+      r_infraorder: infraordem
+      r_superfamily: superfamilia
+      r_family: familia
+      r_subfamily: subfamilia
+      r_infrafamily: infrafamilia
+      r_tribe: tribo
+      r_supergenus: supergenero
+      r_genus: genero
+      r_subgenus: subgeneo
+      r_infragenus: infragenoso
+      r_superspecies: superespecies
+      r_species: especies
+      r_subspecies: subespecies
+      r_infraspecies: infraespecies
+      r_form: formato
   reference_compiled_from_article: '%{source} artigo nomeado "%{name}"'
   register_new_account: Registar para nova conta
   resources:
@@ -431,6 +467,33 @@ pt-PT:
     show_all_records: mostrar todos os registos
     source: fonte
   data_definition: definição de "%{data}"
+  traits:
+    data_viz:
+      about_this_chart_tooltip_taxon_summary: Este é um resumo dos grupos taxonômicos
+        para os quais o EOL possui dados que correspondem à sua pesquisa. Ele pode
+        ser truncado para se ajustar ao tamanho da tela. Você pode selecionar um grupo
+        do gráfico para visualizar subgrupos ou para restringir os resultados da pesquisa.
+      n_family_records: '{{PLURAL | one = um registro para táxons na família%{family}
+        |%{count} registros para táxons na família%{family}}}'
+      n_family_taxa: '{{PLURAL | one = um táxon na família%{family} |%{count} táxon
+        na família% {family}}}'
+      show_n_family_records: '{{PLURAL | one = clique para ver um registro para táxons
+        na família%{family} | clique para ver%{count} registros para táxons na família%{family}}}'
+      show_n_family_taxa: '{{PLURAL | one = clique para ver um táxon na família%{family}
+        | clique para ver%{count} táxons na família%{family}}}'
+      show_link:
+        associations_summary: mostrar resumo de associações
+        attribute_summary: mostrar resumo de atributos
+        taxon_summary: mostrar resumo do táxon
+      taxon_summary:
+        click_to_filter: clique para filtrar
+        click_to_filter_by: clique para filtrar por '%{name}'
+      toggle_text:
+        taxon_summary: mostrar resumo do táxon
+        trait_summary: mostrar resumo de atributos
+    search:
+      result_header_records_notaxa: Mostrando%{range_begin}-%{range_end}de%{total}
+        registros para%{page_count}
   trust:
     unreviewed: não revisto
   user:

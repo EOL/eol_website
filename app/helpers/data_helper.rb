@@ -3,27 +3,8 @@ require "util/term_i18n"
 # NOTE that you use the show_* methods with a - not a = because it's writing
 # to the stream directly, NOT building an output for you to show...
 module DataHelper
-  EXTRA_METADATA_KEYS = %i(
-    citation
-    measurement_method
-    remarks
-    sample_size
-    scientific_name
-    source
-  )
-
   def metadata_container(data)
     haml_tag(:div, id: data[:id], class: "ui segments meta_data", style: "display: none;")
-  end
-
-  def trait_property_metadata(trait)
-    EXTRA_METADATA_KEYS.collect do |key|
-      if (value = trait.send(key)).present?
-        { label: t("traits.properties.#{key}"), value: value }
-      else
-        nil
-      end
-    end.compact
   end
 
   def show_meta_data(datum)

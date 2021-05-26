@@ -71,10 +71,10 @@ module TraitDataVizHelper
   end
 
   def taxon_summary_json(data)
-    {
+    JSON.dump({
       name: 'root',
       children: data.parent_nodes.map { |n| taxon_summary_node_data(n) }
-    }.to_json
+    })
   end
 
   private
@@ -104,7 +104,7 @@ module TraitDataVizHelper
   end
 
   def bar_label(datum, limit)
-    truncate(datum.label, length: limit)
+    truncate(datum.label, length: limit, escape: false)
   end
 
   def bar_prompt(query, datum, label_limit)
@@ -112,13 +112,10 @@ module TraitDataVizHelper
     prompt_prefix = datum.noclick? ? "" : "see_"
 
     if query.record?
-      I18n.t("traits.data_viz.#{prompt_prefix}n_obj_records", count: datum.count, obj_name: term_label)
+      I18n.t("traits.data_viz.#{prompt_prefix}n_obj_records", count: datum.count, obj_name: term_label).html_safe
     else
-      I18n.t("traits.data_viz.#{prompt_prefix}n_taxa_with", count: datum.count, obj_name: term_label)
+      I18n.t("traits.data_viz.#{prompt_prefix}n_taxa_with", count: datum.count, obj_name: term_label).html_safe
     end
-  end
-
-  def obj_prompt_text(query, datum, name)
   end
 
   def hist_prompt_text(query, bucket, units_text)

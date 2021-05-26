@@ -31,6 +31,7 @@ class Resource::RemoteImporter
       return unless proceed 
     else
       resource = Resource.new
+      resource.partner = Partner.native # not 'correct', but Partner isn't really important for local development
     end
 
     existing_for_id = !resource || resource.id != remote_data['id'] ?

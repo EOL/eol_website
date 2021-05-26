@@ -56,7 +56,7 @@ SitemapGenerator::Sitemap.create do
       add_page_paths page, :page_maps_path if page.map?
       add_page_paths page, :page_media_path if page.media_count > 0
       add_page_paths page, :page_articles_path if page.articles_count > 0
-      add_page_paths page, :page_names_path
+      #add_page_paths page, :page_names_path
     end
   end
   

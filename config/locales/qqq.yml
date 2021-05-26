@@ -56,6 +56,9 @@ qqq:
       lc: https://nl.wikipedia.org/wiki/Rode_Lijst_van_de_IUCN
       dd: https://nl.wikipedia.org/wiki/Rode_Lijst_van_de_IUCN
       ne: https://nl.wikipedia.org/wiki/Rode_Lijst_van_de_IUCN
+  rank:
+    name:
+      r_class: '{{identical|Class}}'
   search:
     full_name: '{{Optional}}'
   sections:

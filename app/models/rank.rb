@@ -98,6 +98,14 @@ class Rank < ApplicationRecord
     Rank.species_or_below.include?(self.id)
   end
 
+  def i18n_name
+    if treat_as
+      I18n.t("rank.name.#{treat_as}")
+    else
+      nil
+    end
+  end
+
   def self.family_ids
     @family_ids ||= self.where(treat_as: treat_as[:r_family]).pluck(:id)
   end

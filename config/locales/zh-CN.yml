@@ -1,4 +1,4 @@
-# Messages for Simplified Chinese (中文（简体）)
+# Messages for Simplified Chinese (中文（简体）‎)
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: A Chinese Wikipedian
@@ -1826,24 +1826,91 @@ zh-CN:
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00000245: 低平火山口
         http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Maastrichtian: 马斯特里赫特期
         http://purl(dot)obolibrary(dot)org/obo/OMIT_0013523: 大型藻类
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000234: 铁镁质
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: 镁
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000384: 男
         http://eol(dot)org/schema/terms/MaleFemaleBodyMassRatio: 男跟女的体重比例
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000181: 红树林沼泽
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00003074: 制成品
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00000447: 海洋的
+        https://eol(dot)org/schema/terms/marine_animals: 海洋动物
         http://purl(dot)obolibrary(dot)org/obo/ENVO_01000024: 海底栖的
+        https://eol(dot)org/schema/terms/marine_carnivore: 海洋食肉动物
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000108: 海洋冷水区
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005795: 海泥
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000362: 海洋公园
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000023: 海洋远洋层
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000029: 海礁
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_03000033: 海洋沉积物
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000158: 海洋雪
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000063: 海洋上升流
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000109: 海洋温水区
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000686: 水团
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000035: 沼泽
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000125: 质量
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000381: 山块
         http://purl(dot)obolibrary(dot)org/obo/PORO_0000389: 大量生长习性
+        http://eol(dot)org/schema/terms/MatingSystem: 交配系统
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001701: 成熟
         http://semanticscience(dot)org/resource/SIO_001114: 最大
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000108: 草地
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005761: 草甸土
+        http://semanticscience(dot)org/resource/SIO_001109: 平均值
+        http://eol(dot)org/schema/terms/meanAnnualTemperature: 年平均温度
+        http://rs(dot)tdwg(dot)org/dwc/terms/measurementAccuracy: 测量精度
+        http://rs(dot)tdwg(dot)org/dwc/terms/measurementMethod: 测量方法
         http://purl(dot)obolibrary(dot)org/obo/FOODON_00001006: 肉
+        http://semanticscience(dot)org/resource/SIO_001110: 中位数
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C142605: 药用的
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000199: 地中海森林
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000878: 地中海森林，林地和灌木丛
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000224: 地中海草原
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000047: 地中海生物群
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000217: 地中海灌木丛
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000208: 地中海林地
         http://ncicb(dot)nci(dot)nih(dot)gov/xml/owl/EVS/Thesaurus(dot)owl#C49507: 中
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000461: 中等（正常）
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000199: 分层湖
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000179: 平顶山
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000213: 海洋中层带
+        http://eol(dot)org/schema/terms/mesotrophicFreshwaterLake: 中营养淡水湖
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002225: 中营养水
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Mesozoic: 中生代
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Messinian: 墨西拿期
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C28240: 新陈代谢
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002017: 变质岩
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000022: 毫克
+        http://eol(dot)org/schema/terms/milligramsPercm2: 毫克/平方厘米
+        http://eol(dot)org/schema/terms/milligramsPercm2PerDay: 毫克/平方厘米/天
+        http://eol(dot)org/schema/terms/milligramspergram: 毫克/克
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000273: 毫克/升
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000309: 毫克/平方米
+        http://purl(dot)obolibrary(dot)org/obo/UO_0010049: 克/平方米
+        https://eol(dot)org/schema/terms/microalgae: 微藻
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000008: 微生物席
         http://eol(dot)org/schema/terms/midSpring: 春天的中期
         http://eol(dot)org/schema/terms/midSummer: 夏天的中期
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000406: 洋中脊
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/MiddleDevonian: 中泥盆纪
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/MiddleJurassic: 中侏罗纪
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/MiddleOrdovician: 中奥陶纪
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/MiddlePleistocene: 中更新期
         http://eol(dot)org/schema/terms/MiddleToeLength: 中脚趾的长度
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/MiddleTriassic: 中三叠纪
         http://eol(dot)org/schema/terms/migratory: 迁徙
-        http://eol(dot)org/schema/terms/millimeterspermonth: 毫米/月
+        http://eol(dot)org/schema/terms/millimeterspermonth: 毫米每月
         http://eol(dot)org/schema/terms/paleo_megaannum: 百万年前
+        http://semanticscience(dot)org/resource/SIO_001113: 分
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000125: 矿泉
         http://purl(dot)obolibrary(dot)org/obo/UBERON_4000013: 矿化组织含有
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46662: 矿物
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Miocene: 中新世
         http://purl(dot)obolibrary(dot)org/obo/PATO_0002122: 混合的
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000198: 混叶林
+        http://eol(dot)org/schema/terms/mixotrophy: 混合营养的
+        http://eol(dot)org/schema/terms/mlO2perhour: 毫升/o2时
+        http://eol(dot)org/schema/terms/millilitersPerMinute: 毫升/分钟
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000016: 毫米
         http://eol(dot)org/schema/terms/millimetersPerThreeMonths: 毫米/3个月
         http://eol(dot)org/schema/terms/millimetersPerFourMonths: 毫米/4个月
         http://eol(dot)org/schema/terms/millimetersPerSixMonths: 毫米/6个月
@@ -1852,6 +1919,8 @@ zh-CN:
         http://purl(dot)obolibrary(dot)org/obo/UO_0010005: 毫米/天
         http://purl(dot)obolibrary(dot)org/obo/NCIT_C105508: 毫米/秒
         http://eol(dot)org/schema/terms/millimetersPerYear: 毫米/年
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000082: 平方毫米
+        http://eol(dot)org/schema/terms/millimetersSquaredPerMilligram: 平方毫米/毫克
         http://eol(dot)org/schema/terms/moderateRate: 中
         http://purl(dot)obolibrary(dot)org/obo/UO_0000035: 月
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00000081: 山

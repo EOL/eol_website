@@ -261,13 +261,12 @@ class Publishing
       @log.start("#import #{@klass}")
       cols = @klass.column_names
       cols.delete('id') # We never load the PK, since it's auto_inc.
+
       q = ['LOAD DATA']
-      # NOTE: "LOCAL" is a strange directive; you only use it when you are REMOTE. ...The intention being, you're
-      # telling the remote server "the file I'm talking about is local to me." Confusing at best. I don't like it.
-      q << 'LOCAL' unless @repo.is_on_this_host?
-      q << %{INFILE '#{@data_file}' INTO TABLE `#{@klass.table_name}` }
+      q << %{LOCAL INFILE '#{@data_file}' INTO TABLE `#{@klass.table_name}` }
       q << %{CHARACTER SET utf8mb4 FIELDS OPTIONALLY ENCLOSED BY '"' }
       q << "(#{cols.join(',')})"
+
       begin
         before_db_count = @klass.where(resource_id: @resource.id).count
         file_count = `wc #{@data_file}`.split.first.to_i

@@ -15,8 +15,8 @@
   - load_path = traits_data_viz_taxon_summary_path(tq: query.to_short_params)
 
 - toggle_text_key = type == :taxon_summary ? 'taxon_summary' : 'trait_summary'
-- if local_assigns.fetch(:fallback, false)
-  - classes.concat(' js-fallback-viz-contain uk-hidden')
+- if local_assigns.include?(:extra_class)
+  - classes.concat(" #{extra_class}")
 
 .viz-contain.js-viz-contain{ class: classes, data: { 'type' => type, :'load-path' => load_path, :'toggle-text' => t("traits.data_viz.toggle_text.#{toggle_text_key}") }}
   - if local_assigns.include?(:header) || local_assigns.include?(:description)

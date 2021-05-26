@@ -9,7 +9,7 @@ module Traits
 
     BAR_CHART_LIMIT = 15
 
-    CountVizResult = Struct.new(:label, :prompt, :query, :count, :noclick) do
+    CountVizResult = Struct.new(:label, :query, :count, :noclick) do
       def noclick?
         noclick
       end
@@ -137,19 +137,11 @@ module Traits
     end
       
     def obj_count_result_from_row(query, row)
-      name = TraitBank::Record.i18n_name(row[:obj])
+      name = TraitBank::Record.i18n_name(row[:obj]).html_safe
       noclick = query.filters.first.object_term&.id == row[:obj][:eol_id]
-      prompt_prefix = noclick ? "" : "see_"
-
-      prompt = if query.record?
-                 I18n.t("traits.data_viz.#{prompt_prefix}n_obj_records", count: row[:count], obj_name: name)
-               else
-                 I18n.t("traits.data_viz.#{prompt_prefix}n_taxa_with", count: row[:count], obj_name: name)
-               end
 
       CountVizResult.new(
         name,
-        prompt,
         TermQuery.new({
           clade_id: query.clade_id,
           result_type: query.result_type,

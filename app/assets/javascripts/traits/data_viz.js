@@ -364,6 +364,12 @@ window.TraitDataViz = (function(exports) {
         , $alt = $parent.find('.js-viz-alt')
         ;
 
+    if ($alt.hasClass('js-orig-primary-viz')) {
+      history.replaceState(null, null, '#');
+    } else {
+      history.replaceState(null, null, '#show_alt_viz=true');
+    }
+    
     $this.html($cur.data('toggleText'));
     $cur.addClass('uk-hidden');
     $cur.removeClass('js-viz-cur');
@@ -372,7 +378,6 @@ window.TraitDataViz = (function(exports) {
     $alt.removeClass('js-viz-alt');
     $alt.addClass('js-viz-cur');
   }
-
 
   function loadVizHelper($contain, success, error, complete) {
     const ready = typesToFns[$contain.data('type')];
@@ -396,7 +401,29 @@ window.TraitDataViz = (function(exports) {
     });
   }
 
+  function swapVizIfNeeded() {
+    const hashParams = EOL.parseHashParams();
+
+    if ('show_alt_viz' in hashParams && hashParams['show_alt_viz'] === 'true') {
+      const $parent = $('.js-viz-with-fallback');
+
+      if ($parent.length) {
+        const $primary = $parent.find('.js-primary-viz-contain')
+            , $fallback = $parent.find('.js-fallback-viz-contain')
+            ;
+
+        $primary.addClass('js-fallback-viz-contain');
+        $primary.addClass('uk-hidden');
+        $fallback.addClass('js-primary-viz-contain');
+        $fallback.removeClass('js-fallback-viz-contain');
+        $fallback.removeClass('uk-hidden');
+      }
+    }
+  }
+
   function loadAll() {
+    swapVizIfNeeded();
+
     const $contain = $('.js-viz-contain');
 
     $contain.each(function() {

@@ -374,6 +374,15 @@ module TraitBank
           lifestage_term.uri
           lifestage_term.name
           lifestage_term.definition
+          contributor.uri
+          contributor.name
+          contributor.definition
+          compiler.uri
+          compiler.name
+          compiler.definition
+          determined_by.uri
+          determined_by.name
+          determined_by.definition
           resource.resource_id
         ]
 
@@ -525,7 +534,10 @@ module TraitBank
           "(trait)-[:sex_term]->(sex_term:Term)",
           "(trait)-[:lifestage_term]->(lifestage_term:Term)",
           "(trait)-[:statistical_method_term]->(statistical_method_term:Term)",
-          "(trait)-[:supplier]->(resource:Resource)"
+          "(trait)-[:supplier]->(resource:Resource)",
+          "(trait)-[:contributor]->(contributor:Term)",
+          "(trait)-[:compiler]->(compiler:Term)",
+          "(trait)-[:determined_by]->(determined_by:Term)"
         ]
         optional_matches += [
           "(trait)-[:metadata]->(meta:MetaData)-[:predicate]->(meta_predicate:Term)",

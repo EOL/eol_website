@@ -29,10 +29,9 @@
       - modifier_content = modifier_txt(trait)
       - if modifier_content
         .trait-mod= modifier_content
-    - extra_metadata = trait_property_metadata(trait)
     - if open_row && (page || trait.metadata.any? || extra_metadata.any?)
       %ul.meta-items.js-meta-items
-        - trait.grouped_metadata.each do |datum|
+        - trait.all_metadata_sorted.each do |datum|
           %li.meta-item
             %div
               .meta-pred.a= datum.predicate.i18n_name
@@ -41,11 +40,6 @@
               - show_trait_value(datum)
               - if datum.object_term
                 = render :partial => "terms/desc_meta", :locals => { :term => datum.object_term, :search_link => false }
-        - extra_metadata.each do |m|
-          %li.meta-item
-            .meta-pred= m[:label]
-            - is_uri = URI.parse(m[:value]).kind_of?(URI::HTTP) rescue nil
-            .meta-val= is_uri ? link_to(m[:value], m[:value]) : m[:value].html_safe
         %li.meta-item
           .meta-pred= t("terms.record_url")
           - url = datum_url(id: trait.id)

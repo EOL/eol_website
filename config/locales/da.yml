@@ -1,6 +1,7 @@
 # Messages for Danish (dansk)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Ajeje Brazorf
 # Author: JonNPoulsen
 # Author: Peter Alberti
 # Author: Saederup92
@@ -347,6 +348,7 @@ da:
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: stor
         http://semanticscience(dot)org/resource/SIO_000041: længde
         http://purl(dot)obolibrary(dot)org/obo/UO_0000035: måneder
+        http://eol(dot)org/schema/terms/no: nej
         http://purl(dot)bioontology(dot)org/ontology/SNOMEDCT/260413007: ingen
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: orange
         http://purl(dot)obolibrary(dot)org/obo/UO_0000187: procent

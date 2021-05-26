@@ -613,6 +613,41 @@ pt-BR:
       maps: mapas de %{page_name}
       names: nomes de %{page_name}
       articles: Artigos sobre %{page_name}
+  rank:
+    name:
+      r_domain: domínio
+      r_subdomain: subdomínio
+      r_infradomain: infra-domínio
+      r_superkingdom: super-reino
+      r_kingdom: reino
+      r_subkingdom: subreino
+      r_infrakingdom: infra-reino
+      r_superphylum: superfilo
+      r_phylum: filo
+      r_subphylum: subfilo
+      r_infraphylum: infrafilo
+      r_superclass: superclasse
+      r_class: classe
+      r_subclass: subclasse
+      r_infraclass: infraclasse
+      r_superorder: superordem
+      r_order: ordem
+      r_suborder: subordem
+      r_infraorder: infraordem
+      r_superfamily: superfamília
+      r_family: família
+      r_subfamily: subfamília
+      r_infrafamily: infrafamília
+      r_tribe: tribo
+      r_supergenus: supergênero
+      r_genus: gênero
+      r_subgenus: subgênero
+      r_infragenus: infragênero
+      r_superspecies: superespecie
+      r_species: espécies
+      r_subspecies: subespécies
+      r_infraspecies: infraespécies
+      r_form: forma
   recaptcha: Recaptcha
   recaptcha_error: Por favor, diga-nos que você não é um robô.
   reference_compiled_from: Referenciado por %{links}
@@ -822,17 +857,39 @@ pt-BR:
   traits:
     data_viz:
       about_this_chart: sobre este gráfico
+      about_this_chart_tooltip_taxon_summary: Este é um resumo dos grupos taxonômicos
+        para os quais o EOL possui dados que correspondem à sua pesquisa. Ele pode
+        ser truncado para se ajustar ao tamanho da tela. Você pode selecionar um grupo
+        do gráfico para visualizar subgrupos ou para restringir os resultados da pesquisa.
       hist_value_label: valor (%{units})
+      n_family_taxa:
+        one: um táxon na família %{family}
+        other: '%{count} táxon na família %{family}'
       num_records_label: '# de registros'
       other: outros
       page_habitat_header: '%{name}Habitats'
       page_habitat_explanation: Os ambientes  que muitas %{name}  espécies vivem sabidamente  .
         Selecione um ambiente para ver sua lista de verificação de espécies %{name}.
       pie_prompt: passe o mouse sobre um segmento ou tecla para realçar
+      show_n_family_records:
+        one: clique para ver um registro para táxons na família %{family}
+        other: clique para ver %{count} registros para táxons na família %{family}
+      show_n_family_taxa: '{{PLURAL | one = clique para ver um táxon na família %{family}|clique
+        para ver %{count} táxons na família %{family}}}'
       n_obj_records:
         other: um=um registro com "%{obj_name}"
       n_taxa_with:
         other: uma=uma taxonomia com "%{obj_name}"
+      show_link:
+        associations_summary: mostrar resumo de associações
+        attribute_summary: mostrar resumo de atributos
+        taxon_summary: mostrar resumo do taxon
+      taxon_summary:
+        click_to_filter: clique para filtrar
+        click_to_filter_by: clique para filtrar por '%{name}'
+      toggle_text:
+        taxon_summary: mostrar resumo do taxon
+        trait_summary: mostrar resumo de atributos
     properties:
       citation: Citação bibliográfica
       method: Modo da medição
@@ -856,6 +913,8 @@ pt-BR:
       gbif_search: GBIF procura
       gbif_search_hover: encontre registros de ocorrência no GBIF para os táxons nos
         seus resultados de pesquisa (limite 50)
+      result_header_records_notaxa: Mostrando %{range_begin}- %{range_end} de %{total}
+        registros para %{page_count}
       new_search: nova pesquisa
       select:
         child_term: selecione um termo infantil ( opcional)

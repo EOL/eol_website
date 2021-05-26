@@ -1,6 +1,7 @@
 # Messages for German (Deutsch)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Ajeje Brazorf
 # Author: Anna7321
 # Author: Bergrübe
 # Author: DraconicDark
@@ -629,6 +630,7 @@ de:
         http://purl(dot)obolibrary(dot)org/obo/UO_0010005: mm/Tag
         http://purl(dot)obolibrary(dot)org/obo/NCIT_C105508: mm/sek
         http://eol(dot)org/schema/terms/millimetersPerYear: mm/Jahr
+        http://eol(dot)org/schema/terms/no: nein
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: orange
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: Sauerstoff
         http://purl(dot)obolibrary(dot)org/obo/PORO_0000436: gefingert

@@ -480,6 +480,7 @@ pms:
     q3906614: Meadow Mari
     q13358: Rumen Megleno
     q13313: Meru
+    q13321: Mi’kmaq
     q36455: Min Dong
     q13324: Minangkabau
     q13359: Mingrelian
@@ -821,6 +822,41 @@ pms:
       articles: artìcoj ëd %{page_name}
     traits:
       search: Arserca ëd caraterìstica
+  rank:
+    name:
+      r_domain: domini
+      r_subdomain: sot-domini
+      r_infradomain: infra-domini
+      r_superkingdom: sùper-regn
+      r_kingdom: regn
+      r_subkingdom: sot-regn
+      r_infrakingdom: infra-regn
+      r_superphylum: sùper-ramificassion
+      r_phylum: ramificassion
+      r_subphylum: so-ramificassion
+      r_infraphylum: infra-ramificassion
+      r_superclass: sùper-classa
+      r_class: classa
+      r_subclass: sot-classa
+      r_infraclass: infra-classa
+      r_superorder: sùper-órdin
+      r_order: órdin
+      r_suborder: sot-órdin
+      r_infraorder: infra-órdin
+      r_superfamily: sùper-famija
+      r_family: famija
+      r_subfamily: sot-famija
+      r_infrafamily: infra-famija
+      r_tribe: tribù
+      r_supergenus: sùper-géner
+      r_genus: géner
+      r_subgenus: sot-géner
+      r_infragenus: infra-géner
+      r_superspecies: sùper-ëspece
+      r_species: spece
+      r_subspecies: sotaspece
+      r_infraspecies: infra-spece
+      r_form: forma
   recaptcha: Ch'a scriva torna le doe paròle o nùmer ch'a s-ciàira sì-sota
   recaptcha_error: Ch'as disa ch'a l'é nen un robò.
   reference_compiled_from: Arferiment da %{links}
@@ -1120,8 +1156,19 @@ pms:
         dzorpon-o e na spece a peul esse comprèisa an pi che un-a categorìa dl'istess
         ass. An na visualisassion ëd sot-ansem evidensià, coste spece a valor mùltipl
         a saran contà vàire vire an sj'àutri ass.
+      about_this_chart_tooltip_taxon_summary: Cost-sì a l'é un resumé ëd le partìe
+        tassonòmiche për le quaj EdV a l'ha dij dàit ch'a corëspondo a soa arserca.
+        A peul esse tajà për esse adatà a la larghëssa dla visualisassion. Chiel a
+        peul selessioné na partìa dal gràfich për vëdde le sot-partìe o pr'ëstrenze
+        j'arzultà ëd soa arserca.
       other_term_name: àutr%{term_name}
       hist_value_label: valor (%{units})
+      n_family_records:
+        one: n'argistrassion për le tassonomìe ant la famija %{family}
+        other: '%{count} argistrassion për le tassonomìe ant la famija %{family}'
+      n_family_taxa:
+        one: un-a tassonomìa ant la famija %{family}
+        other: '%{count} tassonomìe ant la famija %{family}'
       n_other_records:
         one: un-a àutra argistrassion
         other: '%{count} àutre argistrassion'
@@ -1134,6 +1181,13 @@ pms:
       page_habitat_explanation: J'ambient andoa as sa ch'a vivo tante spece ëd %{name}.
         Selessioné n'ambient për vëdde soa lista ëd contròl dë spece ëd %{name}.
       pie_prompt: ratin dzora un segment o na ciav për evidensié
+      show_n_family_records:
+        one: sgnaché për vëdde un-a argistrassion për le tassonomìe ëd la famija %{family}
+        other: sgnaché për vëdde %{count} argistrassion për le tassonomìe ëd la famija
+          %{family}
+      show_n_family_taxa:
+        one: sgnaché për vëdde un-a tassonomìa ëd la famija %{family}
+        other: sgnaché për vëdde %{count} tassonomìe ëd la famija %{family}
       n_obj_records:
         one: un-a argistrassion con «%{obj_name}»
         other: '%{count} argistrassion con «%{obj_name}»'
@@ -1157,6 +1211,16 @@ pms:
           %{limit}] %{units}
         other: sgnaché për vëdde %{count} tassonomìe con dij valor dë mzura an [%{min},
           %{limit}] %{units}
+      show_link:
+        associations_summary: smon-e ël resumé dj'associassion
+        attribute_summary: smon-e ël resumé ëd l'atribù
+        taxon_summary: smon-e ël resumé ëd la tassonomìa
+      taxon_summary:
+        click_to_filter: sgnaché për filtré
+        click_to_filter_by: sgnaché për filtré për «%{name}»
+      toggle_text:
+        taxon_summary: smon-e ël resumé ëd la tassonomìa
+        trait_summary: smon-e ël resumé ëd l'atribù
     properties:
       citation: Sitassion bibliogràfica
       method: Métod dë mzura
@@ -1190,7 +1254,7 @@ pms:
       result_header_taxa_notaxa: Visualisassion ëd %{range_begin} - %{range_end} su
         %{total}
       result_header_records_notaxa: Visualisassion dj'argistrassion %{range_begin}
-        - %{range_end} su %{total}
+        - %{range_end} su %{total} argistrassion për %{page_count}
       new_search: neuva arserca
       select:
         child_term: selession na condission fieul (opsional)
@@ -1476,6 +1540,13 @@ pms:
           bashkirian-a
         http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Bathonian: età
           bathonian-a
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000026: zòna batial
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000211: zòna batipelàgica
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000032: ansen
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000234: maré
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000091: riva
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000529: crësta ëd riva
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002138: riva ëd sabia
         http://purl(dot)obolibrary(dot)org/obo/VT_0001502: ritm sircadian comportamental
         http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980072: bienal
         http://eol(dot)org/schema/terms/BillLength: longheur dël bech

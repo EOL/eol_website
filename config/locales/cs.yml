@@ -665,6 +665,7 @@ cs:
       by_uri:
         http://eol(dot)org/schema/terms/percentPerMonth: '%/měsíc'
         http://purl(dot)obolibrary(dot)org/obo/EO_0007059: kyselá půda
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002331: přilnavý
         http://www(dot)ebi(dot)ac(dot)uk/efo/EFO_0001272: dospělý
         http://eol(dot)org/schema/terms/aerial: letecký
         http://purl(dot)obolibrary(dot)org/obo/NBO_0000366: letecký
@@ -673,6 +674,7 @@ cs:
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00000077: zemědělský
         http://purl(dot)obolibrary(dot)org/obo/ENVO_0010003: zemědělský materiál
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00002259: zemědělská půda
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000519: zemědělská terasa
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00002265: zemědělský odpad
         http://purl(dot)obolibrary(dot)org/obo/ENVO_01000371: zemědělský odpad
         http://purl(dot)obolibrary(dot)org/obo/ENVO_01000316: zásadité prostředí
@@ -824,9 +826,104 @@ cs:
         http://purl(dot)obolibrary(dot)org/obo/ENVO_01000174: les
         http://eol(dot)org/schema/terms/forestEdge: kraj lesa
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00002261: lesní půda
+        http://eol(dot)org/schema/terms/fructose: frukóza
         http://purl(dot)obolibrary(dot)org/obo/PO_0009001: ovoce
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0000147: barva ovoce
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0001366: délka ovoce
+        http://eol(dot)org/schema/terms/FruitSeedColor: barva ovoce nebo semena
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0000032: tvar ovoce
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000850: druh ovoce
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0015921: šířka ovoce
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_33292: palivo
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000216: fumarola
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000587: nábytek
         http://purl(dot)obolibrary(dot)org/obo/UO_0000021: g
+        http://eol(dot)org/schema/terms/gramsPerCentimeterSquaredPerDay: g/cm²/den
         http://purl(dot)obolibrary(dot)org/obo/UO_0000084: g/cm³
         http://eol(dot)org/schema/terms/gramsPerMeterSquared: g/m²
         http://eol(dot)org/schema/terms/gramsPerMonth: g/měsíc
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002263: zahradní půda
+        http://eol(dot)org/schema/terms/genotype: genotyp
+        http://eol(dot)org/schema/terms/geothermal: geotermální
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000488: ledovcové jezero
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000248: ledovcové údolí
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000133: ledovec
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00003076: lepidlo
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900036: tráva
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000177: pastviny
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005750: půda pastvin
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000018: štěrk
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000548: štěrkové pole
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: zelená
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000635: půda
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002303: prostředí
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000463: přístav
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000033: hlava
+        http://eol(dot)org/schema/HeadWidth: šířka hlavy
+        http://semanticscience(dot)org/resource/SIO_000040: výška
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002025: prostředí s vysokou
+          teplotou
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0002393: vysoká tolerance
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000083: kopec
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0036016: med
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001855: vodorovný
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002173: nemocnice
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000277: led
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000145: ledová čepička
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000132: ledový štít
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000380: ledová kra
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000392: ledovcový jazyk
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000298: ledovcová kra
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000310: impaktní kráter
+        http://purl(dot)obolibrary(dot)org/obo/EFO_0004387: palce
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000098: ostrov
+        http://purl(dot)obolibrary(dot)org/obo/OMIT_0026310: šperky
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Jurassic: jurské
+          období
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000009: kg
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000086: kg/m²
+        http://eol(dot)org/schema/terms/kilogramsPerMeterSquaredPerYear: kg/m²/rok
+        http://eol(dot)org/schema/terms/squarekilometer: km²
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000038: laguna
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000252: jezero
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000268: jezerní dno
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000546: jezerní usazenina
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000105: plocha jezera
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000219: vnitrozemské moře
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000891: velké jezero
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000887: velká řeka
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000889: velká říční delta
+        http://eol(dot)org/schema/terms/lateSpring: pozdní jaro
+        http://eol(dot)org/schema/terms/lateSummer: pozdní léto
+        http://eol(dot)org/schema/terms/lateWinter: pozdní zima
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000322: lávová jeskyně
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000095: lávové pole
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000110: lávový tunel
+        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#US_pound: lb
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000540: plocha listu
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000326: barva listu
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0007484: složitost listu
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0001133: délka listu
+        http://purl(dot)obolibrary(dot)org/obo/TO_0000492: tvar listu
+        http://semanticscience(dot)org/resource/SIO_000041: délka
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000050: délka života
+        http://rs(dot)tdwg(dot)org/dwc/terms/lifeStage: stádium života
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002053: pazourek
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000422: pazourková cesta
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000199: středozemní les
+        http://ncicb(dot)nci(dot)nih(dot)gov/xml/owl/EVS/Thesaurus(dot)owl#C49507: střední
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000273: mg/l
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000309: mg/m²
+        http://purl(dot)obolibrary(dot)org/obo/UO_0010049: g/m²
+        http://semanticscience(dot)org/resource/SIO_001113: minimum
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000035: měsíců
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: oranžová
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000155: organický materiál
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002873: organický odpad
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: kyslík
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000117: plantáž
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009005: kořeny
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000164: kaučuková plantáž
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002007: usazenina
+        http://purl(dot)obolibrary(dot)org/obo/PO_0009010: semena
 ...

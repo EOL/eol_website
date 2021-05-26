@@ -491,6 +491,9 @@ it:
     filter_menu:
       show_all: mostra tutto
     page_data:
+      n_hidden_show_all_noname:
+        one: 1 record nascosto — mostra tutti
+        other: '%{count} record nascosti — mostra tutti'
       show_all: mostra tutto
     resource_names:
       name_recognized_by: Riconosciuto da %{by}
@@ -523,7 +526,7 @@ it:
         r_supergenus: Supergenere
         r_genus: Genere
         r_subgenus: Sottogenere
-        r_infragenus: Infragenus
+        r_infragenus: Infragenere
         r_superspecies: Superspecie
         r_species: Specie
         r_subspecies: Sottospecie
@@ -570,6 +573,40 @@ it:
       maps: '%{page_name} mappe'
       names: '%{page_name} nomi'
       articles: '%{page_name} voci'
+  rank:
+    name:
+      r_domain: dominio
+      r_subdomain: sottodominio
+      r_infradomain: infradominio
+      r_superkingdom: superregno
+      r_kingdom: regno
+      r_subkingdom: sottoregno
+      r_infrakingdom: infraregno
+      r_superphylum: superphylum
+      r_phylum: phylum
+      r_subphylum: sottophylum
+      r_infraphylum: infraphylum
+      r_superclass: superclasse
+      r_class: classe
+      r_subclass: sottoclasse
+      r_infraclass: infraclasse
+      r_superorder: superordine
+      r_order: ordine
+      r_suborder: sottordine
+      r_infraorder: infraordine
+      r_superfamily: superfamiglia
+      r_family: famiglia
+      r_subfamily: sottofamiglia
+      r_infrafamily: infrafamiglia
+      r_tribe: tribù
+      r_supergenus: supergenere
+      r_genus: genere
+      r_subgenus: sottogenere
+      r_infragenus: infragenere
+      r_superspecies: superspecie
+      r_species: specie
+      r_subspecies: sottospecie
+      r_infraspecies: infraspecie
   recaptcha: Recaptcha
   recaptcha_error: Per favore dimostraci di non essere un robot.
   reference_compiled_from: Referenziato da %{links}

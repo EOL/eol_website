@@ -6,6 +6,7 @@
 # Author: Crochet.david
 # Author: Eduardo Addad de Oliveira
 # Author: Gomoko
+# Author: JenyxGym
 # Author: Jhammock
 # Author: LittleNemo
 # Author: PhilW
@@ -487,7 +488,7 @@ fr:
     q3906614: mari des prairies
     q13358: mégléno-roumain
     q13313: mérou
-    q113321: Mi’kmaq
+    q13321: Mi’kmaq
     q36455: mindong
     q13324: minangkabau
     q13359: mingrélien
@@ -831,6 +832,41 @@ fr:
       articles: articles de %{page_name}
     traits:
       search: Recherche de trait
+  rank:
+    name:
+      r_domain: domaine
+      r_subdomain: sous-domaine
+      r_infradomain: infra-domaine
+      r_superkingdom: super-royaume
+      r_kingdom: royaume
+      r_subkingdom: sous-royaume
+      r_infrakingdom: infra-royaume
+      r_superphylum: super-embranchement
+      r_phylum: embranchement
+      r_subphylum: sous-embranchement
+      r_infraphylum: infra-embranchement
+      r_superclass: super-classe
+      r_class: classe
+      r_subclass: sous-classe
+      r_infraclass: infra-classe
+      r_superorder: super-ordre
+      r_order: ordre
+      r_suborder: sous-ordre
+      r_infraorder: infra-ordre
+      r_superfamily: super-famille
+      r_family: famille
+      r_subfamily: sous-famille
+      r_infrafamily: infra-famille
+      r_tribe: tribu
+      r_supergenus: super-genre
+      r_genus: genre
+      r_subgenus: sous-genre
+      r_infragenus: infra-genre
+      r_superspecies: super-espèce
+      r_species: espèces
+      r_subspecies: sous-espèces
+      r_infraspecies: infra-espèce
+      r_form: forme
   recaptcha: Recaptcha
   recaptcha_error: Veuillez nous dire que vous n’êtes pas un robot.
   reference_compiled_from: Référencé par %{links}

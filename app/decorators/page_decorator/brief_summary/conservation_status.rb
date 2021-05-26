@@ -36,7 +36,7 @@ class PageDecorator
 
           if provider
             if @by_provider.include?(provider) && !multiples_warned.include?(provider)
-              Rails.logger.warn("Found multiple conservation status traits for page #{page.id}/provider #{provider}")
+              Rails.logger.warn("Found multiple conservation status traits for page #{@page.id}/provider #{provider}")
               multiples_warned.add(provider)
             else
               @by_provider[provider] = trait

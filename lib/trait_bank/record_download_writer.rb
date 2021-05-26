@@ -78,7 +78,9 @@ class TraitBank::RecordDownloadWriter
       "Sample size" => -> (trait, page, association) { trait[:sample_size] },
       "Source" => -> (trait, page, association) { trait[:source] },
       "Bibliographic Citation" => -> (trait, page, association) { handle_citation(trait[:citation]) },
-      "Contributor" => -> (trait, page, association) { meta_value(trait, "http://purl.org/dc/terms/contributor") },
+      "Contributor" => -> (trait, page, association) { handle_term(trait[:contributor]) },
+      "Compiler" => -> (trait, page, association) { handle_term(trait[:compiler]) },
+      "Determined by" => -> (trait, page, association) { handle_term(trait[:determined_by]) },
       "Reference ID" => -> (trait, page, association) { handle_reference(meta_value(trait, "http://eol.org/schema/reference/referenceID")) },
       "Resource URL" => -> (trait, page, association) do 
         (
