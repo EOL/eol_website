@@ -41,9 +41,6 @@
       .map-contain-overview-section
         = render partial: "json_map", locals: { extra_class: "map-contain-overview" }
 
-    - if @show_habitat_chart
-      .uk-margin-top.page-habitat-chart.page-habitat-chart-left
-        = render "shared/data_viz_contain", query: @habitat_chart_query, type: :bar, header: t("traits.data_viz.page_habitat_header", name: @page.name), description: t("traits.data_viz.page_habitat_explanation", name: @page.name)
 
   - if @page.medium || @show_habitat_chart
     .l-right-col
@@ -54,6 +51,9 @@
           = render "shared/data_viz_contain", query: @habitat_chart_query, type: :bar, header: t("traits.data_viz.page_habitat_header", name: @page.name.singularize.titlecase), description: t("traits.data_viz.page_habitat_explanation", name: @page.name)
       
 .l-overview-full
+  - if @show_habitat_chart
+    .uk-margin-top.page-habitat-chart.page-habitat-chart-left
+      = render "shared/data_viz_contain", query: @habitat_chart_query, type: :bar, header: t("traits.data_viz.page_habitat_header", name: @page.name), description: t("traits.data_viz.page_habitat_explanation", name: @page.name)
   - if @show_trophic_web
     .trophic-web-contain-overview.js-trophic-web-remote-contain{ :'data-load-path' => page_trophic_web_path(@page)}
       = render "shared/centered_spinner"

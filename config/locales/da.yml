@@ -180,6 +180,7 @@ da:
   nav:
     about: Om
     discuss: Diskuter
+    education: Uddannelse
   pages:
     batch_lookup:
       new_search: ny søgning
@@ -202,8 +203,8 @@ da:
       username_missing: bruger %{user_id}
     tabs:
       articles: artikler
-      literature_and_references: Referencer
-      overview: Hjem
+      literature_and_references: litteratur og referencer
+      overview: oversigt
       maps: kort
       names: navne
     iucn_status:
@@ -217,6 +218,11 @@ da:
       dd: data mangler (DD)
       ne: ikke evalueret (NE)
   recaptcha_error: Fortæl os, at du ikke er en robot.
+  reconciliation:
+    schema_space:
+      headers:
+        name: Navn
+        description: Beskrivelse
   resources:
     headers:
       index: Ressourcer
@@ -324,9 +330,15 @@ da:
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000318: blå
         http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: kropslængde
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: brun
+        http://eol(dot)org/schema/terms/CellLength: cellelængde
+        http://purl(dot)obolibrary(dot)org/obo/OBA_1000036: cellemasse
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0000055: cellestørrelse
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00000395: kanal
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000856: by
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00002982: ler
         http://purl(dot)obolibrary(dot)org/obo/UO_0000015: cm
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000081: cm^2
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000097: cm^3
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000014: farve
         http://purl(dot)obolibrary(dot)org/obo/UO_0000033: dage
         http://purl(dot)obolibrary(dot)org/obo/UO_0000185: grader
@@ -338,16 +350,34 @@ da:
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00000873: ferskvand
         http://purl(dot)obolibrary(dot)org/obo/PO_0009001: frugt
         http://purl(dot)obolibrary(dot)org/obo/TO_0000850: frugttype
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_33292: brændstof
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000587: møbler
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000021: g
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00003076: lim
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900036: græs
         http://purl(dot)obolibrary(dot)org/obo/ENVO_01000018: grus
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: grøn
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00000463: havn
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: hjerteformet
         http://semanticscience(dot)org/resource/SIO_000040: højde
         http://purl(dot)obolibrary(dot)org/obo/ENVO_01000277: is
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000009: kg
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: stor
         http://semanticscience(dot)org/resource/SIO_000041: længde
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000008: m
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000080: m^2
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000022: mg
+        http://eol(dot)org/schema/terms/milligramsPercm2: mg/cm^2
+        http://eol(dot)org/schema/terms/milligramspergram: mg/g
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000273: mg/l
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000309: mg/m^2
+        http://purl(dot)obolibrary(dot)org/obo/UO_0010049: g/m^2
+        http://eol(dot)org/schema/terms/millilitersPerMinute: ml/min
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000016: mm
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000082: mm^2
+        http://eol(dot)org/schema/terms/millimetersSquaredPerMilligram: mm^2/mg
         http://purl(dot)obolibrary(dot)org/obo/UO_0000035: måneder
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0005090: muskel
         http://eol(dot)org/schema/terms/no: nej
         http://purl(dot)bioontology(dot)org/ontology/SNOMEDCT/260413007: ingen
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: orange
@@ -357,19 +387,34 @@ da:
         http://purl(dot)obolibrary(dot)org/obo/ENVO_02000045: rødt ler
         http://purl(dot)obolibrary(dot)org/obo/ENVO_01000253: flod
         http://purl(dot)obolibrary(dot)org/obo/PO_0009005: rødder
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000017: sand
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C25669: sikkerhed
         http://purl(dot)obolibrary(dot)org/obo/PO_0009010: frø
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000085: følsomhed
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: form
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0012245: silke
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000117: størrelse
         http://purl(dot)obolibrary(dot)org/obo/UBERON_0004288: skelet
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: langsom
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000587: lille
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000233: sump
         http://purl(dot)obolibrary(dot)org/obo/VT_0002758: længde på hale
         http://purl(dot)obolibrary(dot)org/obo/UBERON_0001091: tænder
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000146: temperatur
         http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900033: træ
+        http://rs(dot)tdwg(dot)org/ontology/voc/TaxonName#Type: type
+        http://rs(dot)tdwg(dot)org/ontology/voc/TaxonName#typeOfType: type af type
         http://purl(dot)obolibrary(dot)org/obo/ENVO_02000052: paraply
+        http://eol(dot)org/schema/terms/unknown: ukendt
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000604: køretøj
         http://purl(dot)obolibrary(dot)org/obo/RO_0002619: besøgt af
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: hvid
+        http://semanticscience(dot)org/resource/SIO_000042: bredde
         http://purl(dot)obolibrary(dot)org/obo/UO_0000036: år
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000324: gul
         http://eol(dot)org/schema/terms/yes: ja
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000165: mund
+        http://purl(dot)obolibrary(dot)org/obo/TAO_0009000: celle
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000106: Hz
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000259: dB
 ...

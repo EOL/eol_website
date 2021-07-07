@@ -1,0 +1,19 @@
+%h1 Reconciliation API Identifiers
+
+%h2 Entity Identifiers
+%p= t('.intro')
+
+%table.uk-table
+  %thead
+    %tr
+      %th= t('.headers.type_id')
+      %th= t('.headers.type_name')
+      %th= t('.headers.id_format')
+      %th= t('.headers.example')
+  %tbody
+    %tr
+      %td taxon
+      %td= t('.type_names.taxon')
+      %td= "pages/<#{t('.numeric_id')}>"
+      %td pages/491995
+

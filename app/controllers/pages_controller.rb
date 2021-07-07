@@ -161,7 +161,9 @@ class PagesController < ApplicationController
     expire_fragment(page_data_path(@page))
     expire_fragment(page_details_path(@page))
     expire_fragment(page_classifications_path(@page)) # Doesn't appear to work.
-    Rails.cache.delete("pages/#{@page.id}/brief_summary")
+    I18n.available_locales.each do |l|
+      Rails.cache.delete("pages/#{@page.id}/brief_summary/#{l}")
+    end
     [0, 1].each do |link|
       %i[full partial none].each do |mode|
         BreadcrumbType::TYPES.keys.each do |breadcrumb_type|

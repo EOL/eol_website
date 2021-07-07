@@ -18,12 +18,6 @@
           - else
             %p= @medium.description.html_safe
         .attribution.uk-width-1-3
-          - icon_count = @medium.page_icons.count
-          - if icon_count > 0
-            %h3= t('page_icon_counts.header', count: icon_count)
-            %ul
-              - @medium.page_icons.includes(:page).each do |page_icon|
-                %li= link_to_page_canonical(page_icon.page)
           %h3= t(:content_appears_on)
           - if is_admin?
             %p

@@ -5,6 +5,7 @@ Rails.app_class.load_tasks
 Crono.perform(WarmCacheJob).every 1.day, at: { hour: 3 }
 Crono.perform(CommentsJob).every 1.day, at: { hour: 3, minute: 30 }
 Crono.perform(CommentsJob).every 1.day, at: { hour: 13, minute: 30 }
+Crono.perform(BriefSummaryWarmingJob).every 1.day, at: { hour: 0, minute: 0 }
 Crono.perform(LogRotJob).every 1.hours
 Crono.perform(WarmCsvDownloadsJob).every 14.days, at: { hour: 1 }
 Crono.perform(BuildIdentifierMapJob).every 1.month, on: :monday

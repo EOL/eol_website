@@ -6,6 +6,7 @@
 # Author: BaRaN6161 TURK
 # Author: Grkn gll
 # Author: Joseph
+# Author: Melissadilara
 # Author: Mim.saitkilic
 # Author: MuratTheTurkish
 # Author: SaldırganSincap
@@ -827,6 +828,41 @@ tr:
       articles: '%{page_name} maddeleri'
     traits:
       search: Özellik arama
+  rank:
+    name:
+      r_domain: bölüm
+      r_subdomain: alt bölüm
+      r_infradomain: infra bölüm
+      r_superkingdom: üst alem
+      r_kingdom: alem
+      r_subkingdom: alt alem
+      r_infrakingdom: infra alem
+      r_superphylum: üst şube
+      r_phylum: şube
+      r_subphylum: alt şube
+      r_infraphylum: infra şube
+      r_superclass: üst sınıf
+      r_class: sınıf
+      r_subclass: alt sınıf
+      r_infraclass: infra sınıf
+      r_superorder: üst takım
+      r_order: takım
+      r_suborder: alt takım
+      r_infraorder: infra takım
+      r_superfamily: üst familya
+      r_family: familya
+      r_subfamily: alt familya
+      r_infrafamily: infra familya
+      r_tribe: oymak
+      r_supergenus: üst cins
+      r_genus: cins
+      r_subgenus: alt cins
+      r_infragenus: infra cins
+      r_superspecies: üst tür
+      r_species: tür
+      r_subspecies: alt tür
+      r_infraspecies: infra tür
+      r_form: form
   recaptcha: Recaptcha
   recaptcha_error: Lütfen bize robot olmadığınızı söyleyin.
   reference_compiled_from: '%{links} tarafından yönlendirildi'
@@ -1151,6 +1187,8 @@ tr:
           görmek için tıklayın'
         other: '[%{min}, %{limit}] %{units} ölçüm değerlerine sahip %{count} taksonu
           görmek için tıklayın'
+      toggle_text:
+        taxon_summary: takson özetini göster
     properties:
       citation: Bibliyografik atıf
       method: Ölçüm yöntemi
@@ -1180,8 +1218,8 @@ tr:
       result_header_records: '%{range_begin} gösteriliyor - %{page_count} takson için
         %{total} kayıttan %{range_end}'
       result_header_taxa: '%{range_begin} gösteriliyor - %{range_end} - %{total} takson'
-      result_header_records_notaxa: '%{total} için %{range_begin} - %{range_end} kayıtları
-        gösteriyor'
+      result_header_records_notaxa: Kayıtlar için %{page_count} %{range_begin} - %{range_end}
+        %{total} gösteriyor
       new_search: yeni arama
       select:
         child_term: bir alt terimi seçin (isteğe bağlı)
@@ -1684,6 +1722,7 @@ tr:
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_64857: kozmetikler
         http://eol(dot)org/schema/terms/Cosmopolitan: kozmopolitan
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00000288: pamuk ekimi
+        http://rs(dot)tdwg(dot)org/dwc/terms/countryCode: ülke kodu
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00003041: inek barakası
         https://eol(dot)org/schema/terms/crab_feeder: yengeç besleyici
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00000052: krater gölü
@@ -1873,6 +1912,7 @@ tr:
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00002246: ferralsol
         http://purl(dot)obolibrary(dot)org/obo/GO_0009566: döllenme
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00005754: döllenmiş toprak
+        http://rs(dot)tdwg(dot)org/dwc/terms/fieldNotes: alan notları
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00005755: tarla toprağı
         http://eol(dot)org/schema/terms/FireResistance: yangına dayanıklılık
         http://eol(dot)org/schema/terms/FireTolerance: yangına dayanıklılık
@@ -2358,14 +2398,14 @@ tr:
         http://eol(dot)org/schema/terms/millilitersPerMinute: ml/dak
         http://purl(dot)obolibrary(dot)org/obo/UO_0000016: mm
         http://purl(dot)obolibrary(dot)org/obo/UO_0000272: mm hg
-        http://eol(dot)org/schema/terms/millimetersPerThreeMonths: aa/3ay
-        http://eol(dot)org/schema/terms/millimetersPerFourMonths: aa/4ay
-        http://eol(dot)org/schema/terms/millimetersPerSixMonths: aa/6ay
-        http://eol(dot)org/schema/terms/millimetersPerSevenMonths: aa/7ay
-        http://eol(dot)org/schema/terms/millimetersPerEightMonths: aa/8ay
-        http://purl(dot)obolibrary(dot)org/obo/UO_0010005: aa/gün
-        http://purl(dot)obolibrary(dot)org/obo/NCIT_C105508: aa/sn
-        http://eol(dot)org/schema/terms/millimetersPerYear: aa/yıl
+        http://eol(dot)org/schema/terms/millimetersPerThreeMonths: mm/3ay
+        http://eol(dot)org/schema/terms/millimetersPerFourMonths: mm/4ay
+        http://eol(dot)org/schema/terms/millimetersPerSixMonths: mm/6ay
+        http://eol(dot)org/schema/terms/millimetersPerSevenMonths: mm/7ay
+        http://eol(dot)org/schema/terms/millimetersPerEightMonths: mm/8ay
+        http://purl(dot)obolibrary(dot)org/obo/UO_0010005: mm/gün
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C105508: mm/sn
+        http://eol(dot)org/schema/terms/millimetersPerYear: mm/yıl
         http://purl(dot)obolibrary(dot)org/obo/UO_0000082: mm^2
         http://eol(dot)org/schema/terms/millimetersSquaredPerMilligram: mm^2/mg
         http://purl(dot)obolibrary(dot)org/obo/UO_0000063: mmol/l
@@ -2448,7 +2488,7 @@ tr:
         http://purl(dot)obolibrary(dot)org/obo/OBA_1000083: çekirdek uzunluğu
         http://purl(dot)obolibrary(dot)org/obo/OBA_1000085: nükleus genişliği
         http://eol(dot)org/schema/terms/fossilOccPBDB: fosil oluşumlarının sayısı
-        http://eol(dot)org/schema/terms/NumberOfHosts: ev sahibi sayısı
+        http://eol(dot)org/schema/terms/NumberOfHosts: taşıyıcı sayısı
         http://eol(dot)org/schema/terms/NumberPublicRecordsInBOLD: bold’daki herkese
           açık kayıt sayısı
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00000181: nunatak
@@ -2820,7 +2860,7 @@ tr:
         http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900034: çalı
         http://purl(dot)obolibrary(dot)org/obo/ENVO_01000176: çalılık
         http://purl(dot)obolibrary(dot)org/obo/ENVO_02000044: silisli sızıntı
-        http://purl(dot)obolibrary(dot)org/obo/UBERON_0012245: İpek
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0012245: ipek
         http://purl(dot)obolibrary(dot)org/obo/ENVO_01000119: siltli tortu
         http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Silurian: silüriyen
           dönemi
@@ -2911,7 +2951,7 @@ tr:
         http://purl(dot)obolibrary(dot)org/obo/ENVO_01000213: subtropikal çalılık
         http://purl(dot)obolibrary(dot)org/obo/ENVO_01000222: subtropikal ormanlık
           alan
-        http://eol(dot)org/schema/terms/succulent: sulu
+        http://eol(dot)org/schema/terms/succulent: sukulent
         http://eol(dot)org/schema/terms/suddHydrophyte: köpük hidrofit
         http://eol(dot)org/schema/terms/suffrutescent: yeten
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00000159: şeker ekimi
@@ -3225,5 +3265,11 @@ tr:
         http://eol(dot)org/schema/terms/collection_GHSchmidt: G. H. Schmidt koleksiyonu
         http://eol(dot)org/schema/terms/collection_Heller: Heller koleksiyonu
         http://eol(dot)org/schema/terms/collection_Singrisch: Singrisch koleksiyonu
+        http://eol(dot)org/schema/terms/Mus_Rothschild: Rothschild Müzesi
+        http://eol(dot)org/schema/terms/adultAndPupa: yetişkin ve pupa
+        http://eol(dot)org/schema/terms/floweringAndFruiting: çiçekli ve meyveli
         http://eol(dot)org/schema/terms/maleFlowers: Eril çiçekler
+        http://purl(dot)obolibrary(dot)org/obo/PO_0007616: çiçeklenme aşaması
+        http://purl(dot)obolibrary(dot)org/obo/PO_0025500: meyve gelişim aşaması
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0003143: pupa
 ...

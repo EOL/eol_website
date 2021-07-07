@@ -114,7 +114,7 @@ module TraitBank
 
       def remove_metadata_relationships(id, count)
         # puts "#{id} has #{count} relationships."
-        remove_with_query(name: r, q: %Q{MATCH (meta:MetaData {eol_pk: '#{id}'})-[r:metadata]-()})
+        remove_with_query(name: :r, q: %Q{(meta:MetaData {eol_pk: '#{id}'})-[r:metadata]-()})
         # Now that metadata no longer has a relationship to the resource, making it very hard to delete.
         # We remove it here to avoid having to try.
         TraitBank.query(%Q{MATCH (meta:MetaData {eol_pk: '#{id}'}) DETACH DELETE meta;})
@@ -123,7 +123,7 @@ module TraitBank
       # options = {name: :meta, q: "(meta:MetaData)<-[:metadata]-(trait:Trait)-[:supplier]->(:Resource { resource_id: 640 })"}
       def remove_with_query(options = {})
         name = options[:name]
-        q = options[:q]
+        q = invert_quotes(options[:q])
         delay = options[:delay] || 1 # Increasing this did not really help site performance. :|
         size = options[:size] || 64
         count_before = count_by_query(name, q)
@@ -149,6 +149,13 @@ module TraitBank
           size /= 2 if time_delta > 30
           sleep(delay)
         end
+      end
+
+      def invert_quotes(str)
+        str.
+          gsub('"', 'QUOTED_SINGLE_QUOTE').
+          gsub("'", '"').
+          gsub('QUOTED_SINGLE_QUOTE', "\\\\'") # Boy I hate that \\\\ syntax.
       end
 
       def count_by_query(name, q)

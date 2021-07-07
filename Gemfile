@@ -133,6 +133,12 @@ gem 'friendly_id', '~> 5.4'
 # translations in JS
 gem 'i18n-js', '~> 3.8'
 
+# CORS middleware
+gem 'rack-cors'
+
+# JSON schema-based validation
+gem 'json_schemer'
+
 group :development, :test do
   gem 'active_record_query_trace', '~> 1'
   # Security analysis:

@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Aaribaud
+# Author: Ajeje Brazorf
 # Author: Alno
 # Author: Crochet.david
 # Author: Eduardo Addad de Oliveira
@@ -869,6 +870,35 @@ fr:
       r_form: forme
   recaptcha: Recaptcha
   recaptcha_error: Veuillez nous dire que vous n’êtes pas un robot.
+  reconciliation:
+    id_space:
+      intro: Chaque identifiant d’entité renvoyé par l’API de réconciliation est la
+        partie du chemin de l’URL pour cette représentation générale de l’entité sur
+        EdlV, de telles façon qu’un id donné peut être substitué dans https://eol.org/<id>
+        pour forger un URL valide pour cette entité. Le format des identifiants de
+        chaque type est décrit ci-dessous.
+      headers:
+        type_id: ID du type
+        type_name: Nom du type
+        id_format: Format de l’ID
+      type_names:
+        taxon: Taxon
+      numeric_id: ID numérique
+    property:
+      description:
+        ancestor: Un taxon qui est un ancêtre d’un autre taxon.
+        rank: Un chaîne décrivant le rang d’un taxon, par ex., 'espèce'. Les rangs
+          non reconnus ne sont pas notés.
+      name:
+        ancestor: Ancêtre
+        rank: Rang
+    schema_space:
+      intro: La collection de propriétés utilisée par le service d’API de réconciliation
+        est décrite ci-dessous.
+      headers:
+        id: ID
+        name: Nom
+        description: Description
   reference_compiled_from: Référencé par %{links}
   reference_compiled_from_article: Article de %{source} intitulé « %{name} »
   register_new_account: Enregistrer un nouveau compte
@@ -2165,7 +2195,7 @@ fr:
         http://eol(dot)org/schema/HeadWidth: largeur de la tête
         http://eol(dot)org/schema/terms/HeadBodyLength: longueur tête et corps
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00000153: bassin versant
-        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: en forme de coeur
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: en forme de cœur
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00000107: lande
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00000046: haie
         http://semanticscience(dot)org/resource/SIO_000040: hauteur

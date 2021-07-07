@@ -32,6 +32,10 @@ class Node < ApplicationRecord
     vernacular(locale: locale, fallbacks: true).try(:string) || scientific_name
   end
 
+  def comparison_scientific_name
+    @comparison_scientific_name ||= ActionView::Base.full_sanitizer.sanitize(scientific_name).downcase
+  end
+
   def use_breadcrumb?
     has_breadcrumb? && (minimal? || abbreviated?)
   end
@@ -87,7 +91,7 @@ class Node < ApplicationRecord
   end
 
   def siblings
-    parent&.children&.reject { |n| n == self } || []
+    @siblings ||= parent&.children&.where.not(id: self.id).includes(:page) || []
   end
 
   def rank_treat_as

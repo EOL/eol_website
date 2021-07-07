@@ -22,7 +22,6 @@ class ApiPagesController < LegacyApiController
     render json: { brief_summary: @page.cached_summary_text }
   end
 
-
   def pred_prey
     @page = Page.find(params[:id])
 

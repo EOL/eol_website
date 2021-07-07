@@ -2,50 +2,98 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Elliot
+# Author: Umlaut
 ---
 de:
   devise:
     confirmations:
-      confirmed: Ihre E-Mail Adresse wurde erfolgreich bestätigt.
-      send_instructions: Sie werden in wenigen Minuten eine E-Mail, mir einer Anleitung
-        darüber wie sie ihre E-Mail Adresse bestätigen können, erhalten.
-      send_paranoid_instructions: |-
-        Wenn ihre E-Mail Adresse in unserer Datenbank bereits existiert, werden sie in einigen Minuten eine E-Mail erhalten, mit Anweisungen darüber, wie sie ihre
-        E-Mail Adresse bestätigen können.
+      confirmed: Ihre E-Mail Adresse wurde bestätigt.
+      send_instructions: Sie erhalten in wenigen Minuten eine E-Mail mit einer Anleitung,
+        wie Sie ihre E-Mail-Adresse bestätigen können.
+      send_paranoid_instructions: Wenn ihre E-Mail Adresse in unserer Datenbank bereits
+        existiert, erhalten Sie in einigen Minuten eine E-Mail mit Anweisungen, wie
+        Sie ihre E-Mail Adresse bestätigen können.
     failure:
       already_authenticated: Sie sind bereits angemeldet.
-      inactive: Ihr Account ist noch nicht aktiviert.
+      inactive: Ihr Konto ist noch nicht aktiviert.
       invalid: Ungültige %{authentication_keys} oder Passwort.
-      locked: Ihr Account ist gesperrt, bitte versuchen sie es in einer Stunde erneut.
-      last_attempt: Sie haben noch einen Versuch, bevor ihr Account gesperrt wird.
+      locked: Ihr Konto ist gesperrt, bitte versuchen Sie es in einer Stunde erneut.
+      last_attempt: Sie haben noch einen Versuch, bevor ihr Konto gesperrt wird.
       not_found_in_database: Ungültige %{authentication_keys} oder Passwort.
-      recaptcha_error: Es gab einen Fehler mit dem unteren recaptcha code. Bitte geben
-        sie den Code erneut ein und klicken submit.
-      timeout: Ihre Sitzung ist abgelaufen. Bitte melden sie sich an um fortzufahren.
+      recaptcha_error: Es gab einen Fehler mit dem unteren Recaptcha-Code. Bitte geben
+        sie den Code erneut ein und klicken Sie auf Absenden.
+      timeout: Ihre Sitzung ist abgelaufen. Bitte melden Sie sich an, um fortzufahren.
       unauthenticated: Sie müssen sich anmelden oder registrieren um fortzufahren.
       unconfirmed: Sie müssen ihre E-Mail bestätigen um fortzufahren.
     mailer:
       confirmation_instructions:
-        action: Benutzerkonto bestätigen
+        action: Mein Konto bestätigen
         greeting: Willkommen %{recipient}!
-        instruction: 'Sie können die E-Mail ihres Accounts durch den unteren Link
-          bestätigen:'
+        instruction: 'Sie können die E-Mail ihres Kontos durch den unteren Link bestätigen:'
         subject: Anweisungen zur Bestätigung
       reset_password_instructions:
         action: Passwort ändern
         greeting: 'Hallo #{recipient}!'
-        instruction: Jemand hat einen Link um dein Passwort zu verändern angefragt,
-          und du kannst es durch den folgenden Link erledigen.
-        instruction_2: Wenn diese Anfrage nicht von ihnen stammt, ignorieren sie bitte
+        instruction: Jemand hat einen Link zur Änderung Ihres Passworts angefragt,
+          Sie können dies durch den folgenden Link bestätigen.
+        instruction_2: Wenn diese Anfrage nicht von Ihnen stammt, ignorieren Sie bitte
           diese E-Mail.
-        instruction_3: Ihr Passwort wird sich nicht ändern, bis sie den oberen Link
-          nutzen und ein neues angeben.
+        instruction_3: Ihr Passwort ändert sich solange nicht, bis Sie mit dem oberen
+          Link ein neues angeben.
+        subject: Passwort zurücksetzen
+      unlock_instructions:
+        subject: Entsperren
       password_change:
+        greeting: 'Hallo #{recipient}!'
+        message: Ihr Passwort wurde geändert.
         subject: Passwort wurde geändert
+    passwords:
+      no_token: Sie können nicht auf diese Seite zugreifen, wenn Sie diese nicht von
+        einer E-Mail zum Zurücksetzen des Passworts aus aufrufen. Wenn Sie von einer
+        E-Mail zum Zurücksetzen des Passworts kommen, stellen Sie bitte sicher, dass
+        Sie die vollständige URL verwendet haben.
+      send_instructions: Sie erhalten in wenigen Minuten eine E-Mail mit einer Anleitung,
+        wie Sie ihre E-Mail Adresse bestätigen können.
+      send_paranoid_instructions: Wenn Ihre E-Mail-Adresse in unserer Datenbank vorhanden
+        ist, erhalten Sie in wenigen Minuten einen Link zur Wiederherstellung des
+        Passworts an Ihre E-Mail-Adresse.
+      updated: Ihr Passwort wurde geändert. Sie sind jetzt angemeldet.
+      updated_not_active: Ihr Passwort wurde geändert.
+    registrations:
+      destroyed: Auf Wiedersehen! Ihr Konto wurde gelöscht. Wir hoffen, Sie bald wiederzusehen.
+      signed_up: Willkommen! Sie haben sich gerade registriert.
+      signed_up_but_inactive: Sie haben sich registriert. Wir konnten Sie jedoch nicht
+        anmelden, da Ihr Konto noch nicht aktiviert ist.
+      signed_up_but_locked: Sie haben sich registriert. Wir konnten Sie jedoch nicht
+        anmelden, da Ihr Konto gesperrt ist.
+      signed_up_but_unconfirmed: Eine Nachricht mit einem Bestätigungslink wurde an
+        Ihre E-Mail-Adresse gesendet. Bitte folgen Sie dem Link, um Ihr Konto zu aktivieren.
+      update_needs_confirmation: Sie haben Ihr Konto aktualisiert, aber wir müssen
+        Ihre neue E-Mail-Adresse verifizieren. Bitte prüfen Sie Ihre E-Mail und folgen
+        Sie dem Link, um Ihre neue E-Mail-Adresse zu bestätigen.
+      updated: Ihr Konto wurde aktualisiert.
+    sessions:
+      signed_in: Sie sind angemeldet.
+      signed_out: Sie sind abgemeldet.
+      already_signed_out: Sie sind abgemeldet.
+      recaptcha: Recaptcha Überprüfungsfehler
+      sign_in_remember_me_disabled_for_admins: Aus Sicherheitsgründen dürfen Administratoren
+        die Funktion "An mich erinnern" nicht verwenden.
+    unlocks:
+      send_instructions: Sie erhalten in wenigen Minuten eine E-Mail mit einer Anleitung,
+        wie Sie ihre Konto freischalten können.
+      send_paranoid_instructions: Wenn Ihr Konto existiert, erhalten Sie in wenigen
+        Minuten eine E-Mail mit Anweisungen, wie Sie dieses freischalten können.
+      unlocked: Ihr Konto wurde freigeschaltet. Bitte melden Sie sich an, um fortzufahren.
   errors:
     messages:
-      already_confirmed: wurde bereits bestätigt, bitte versuchen sie sich anzumelden
-      expired: ist abgelaufen, bitte fragen sie ein neues an
+      already_confirmed: wurde bereits bestätigt, bitte versuchen Sie sich anzumelden
+      confirmation_period_expired: muss innerhalb von %{period} bestätigt werden,
+        bitte fordern Sie ein neues an
+      expired: ist abgelaufen, bitte fordern Sie ein neues an
       not_found: nicht gefunden
       not_locked: wurde nicht gesperrt
+      not_saved:
+        one: 1 Fehler verhinderte das Speichern von %{resource}
+        other: '%{count} Fehler verhinderten das Speichern von %{resource}'
 ...

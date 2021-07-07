@@ -62,6 +62,7 @@ class TermBootstrapper
     create_terms
     update_terms
     delete_terms
+    puts "Done. Terms loaded."
   end
 
   def raw_terms_from_neo4j
@@ -195,18 +196,21 @@ class TermBootstrapper
   def create_terms
     # TODO: Someday, it would be nice to do this by writing a CSV file and reading that. Much faster. But I would prefer to
     # generalize the current Slurp class before attempting it.
+    puts "Creating #{@new_terms.size} new terms..."
     @new_terms.each do |term|
       TraitBank::Term.create(term)
     end
   end
 
   def update_terms
+    puts "Updating #{@update_terms.size} terms..."
     @update_terms.each { |term| TraitBank::Term.update(term) }
   end
 
   def delete_terms
     # First you have to make sure they aren't related to anything. If they are, warn. But, otherwise, it should be safe to
     # delete them.
+    puts "Removing #{@uris_to_delete.size} terms..."
     @uris_to_delete.each do |uri|
       next if uri_has_relationships?(uri)
       TraitBank::Term.delete(uri)

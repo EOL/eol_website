@@ -68,7 +68,7 @@ class Page < ApplicationRecord
 
   scope :with_hierarchy_no_media, -> do
     includes(:preferred_vernaculars,
-      native_node: [:scientific_names, { node_ancestors: { ancestor: {
+      native_node: [:rank, :scientific_names, { node_ancestors: { ancestor: {
         page: [:preferred_vernaculars, { native_node: :scientific_names }]
       } } }])
   end
@@ -206,11 +206,11 @@ class Page < ApplicationRecord
   def search_data
     verns = vernacular_strings.uniq
     pref_verns = preferred_vernacular_strings
-    sci_name = ActionView::Base.full_sanitizer.sanitize(scientific_name)
+
     {
       id: id,
       # NOTE: this requires that richness has been calculated. Too expensive to do it here:
-      scientific_name: sci_name,
+      scientific_name: scientific_name_string,
       preferred_scientific_names: preferred_scientific_strings,
       synonyms: synonyms,
       preferred_vernacular_strings: pref_verns,
@@ -218,7 +218,6 @@ class Page < ApplicationRecord
       vernacular_strings: verns,
     }.merge(autocomplete_names_per_locale)
   end
-
 
   def safe_native_node
     return native_node if native_node
@@ -265,6 +264,10 @@ class Page < ApplicationRecord
     end
 
     result.map { |v| v.string }
+  end
+
+  def scientific_name_string
+    ActionView::Base.full_sanitizer.sanitize(scientific_name)
   end
 
   def preferred_vernacular_strings
@@ -687,7 +690,9 @@ class Page < ApplicationRecord
 
   # Nodes methods
   def classification_nodes
-    nodes.includes(:resource).where({ resources: { classification: true } })
+    nodes
+      .includes(:resource, { node_ancestors: { ancestor: :page }})
+      .where({ resources: { classification: true } })
   end
 
   def fix_non_image_hero
@@ -928,6 +933,6 @@ class Page < ApplicationRecord
     (
       preferred_vernacular_strings_for_locale(locale) +
       resource_preferred_vernacular_strings(locale)
-    ).uniq
+    ).map(&:titlecase).uniq
   end
 end

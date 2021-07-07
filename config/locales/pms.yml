@@ -859,6 +859,35 @@ pms:
       r_form: forma
   recaptcha: Ch'a scriva torna le doe paròle o nùmer ch'a s-ciàira sì-sota
   recaptcha_error: Ch'as disa ch'a l'é nen un robò.
+  reconciliation:
+    id_space:
+      intro: Minca n'identificativ d'entità mandà da l'API d'arconciliassion a l'é
+        la part dël senté ëd l'URL për costa arpresentassion general ëd l'entità su
+        EdV, an manera che n'id dàit a peul esse rampiassà an https://eol.org/<id>
+        për fornì n'url bon për costa entità. Ël formà dj'identificativ ëd minca na
+        sòrt a l'é descrivù sì-sota.
+      headers:
+        type_id: ID dla sòrt
+        type_name: Nòm dla sòrt
+        id_format: Formà dl'ID
+      type_names:
+        taxon: Tassonomìa
+      numeric_id: ID numérich
+    property:
+      description:
+        ancestor: Na tassonomìa ch'a l'e ce ëd n'àutra tassonomìa.
+        rank: Na stringa ch'a descriv ël rangh ëd na tassonomìa, për es., 'spece'.
+          Ij tangh nen arconossù a l'han gnun pontegi.
+      name:
+        ancestor: Ce
+        rank: Rangh
+    schema_space:
+      intro: La colession ëd propietà dovrà dal servissi d'API d'arconciliassion a
+        l'é descrivùa sì-sota.
+      headers:
+        id: ID
+        name: Nòm
+        description: Descrission
   reference_compiled_from: Arferiment da %{links}
   reference_compiled_from_article: '%{source} artìcol antitolà «%{name}»'
   register_new_account: Argistré un cont neuv
@@ -1547,23 +1576,77 @@ pms:
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00000091: riva
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00000529: crësta ëd riva
         http://purl(dot)obolibrary(dot)org/obo/ENVO_00002138: riva ëd sabia
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000500: ciusa ëd castòr
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000270: armeuj ëd castòr
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03302072: sira d'avìa
         http://purl(dot)obolibrary(dot)org/obo/VT_0001502: ritm sircadian comportamental
+        http://eol(dot)org/schema/terms/benthic: ëd fond ëd l'eva
+        https://eol(dot)org/schema/terms/benthic_diatom_feeder: a mangia dij diàtom
+          ëd fond ëd l'eva
+        http://purl(dot)jp/bio/4/id/201306015586596728: diàtom ëd fond ëd l'eva
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Berriasian: età
+          beriassian-a
         http://purl(dot)obolibrary(dot)org/obo/FLOPO_0980072: bienal
         http://eol(dot)org/schema/terms/BillLength: longheur dël bech
+        http://polytraits(dot)lifewatchgreece(dot)eu/terms/RW_DIFF: biodifusor
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002034: biofilm
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_64389: opal
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000082: sediment biògen
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000373: rumenta biològica
         http://eol(dot)org/schema/terms/Bioluminescent: bioluminos
+        https://eol(dot)org/schema/terms/bipedal_running: corsa bìped
+        https://eol(dot)org/schema/terms/bivalve_feeder: a mangia dle bivàlvole
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: nèir
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000511: tòrba ëd covertura
+        http://polytraits(dot)lifewatchgreece(dot)eu/terms/RW_BEV: ventilator a duvertura
+          bòrgna
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C12434: sangh
         http://eol(dot)org/schema/terms/BloomPeriod: perìod dë spantiament
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000313: depression sabiosa
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000318: bleu
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_02000019: flùid corpòri
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0002323: cavità corporal
         http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: longheur dël còrp
         http://purl(dot)obolibrary(dot)org/obo/VT_0001259: massa corporal
-        http://eol(dot)org/schema/terms/BodyShape: forma dël còrp
+        http://eol(dot)org/schema/terms/BodyShape: morfologìa
+        http://purl(dot)bioontology(dot)org/ontology/MESH/D001831: temperadura dël
+          còrp
         http://eol(dot)org/schema/terms/BodyVolume: volum dël còrp
         http://purl(dot)obolibrary(dot)org/obo/VT_0015039: larghëssa dël còrp
+        https://eol(dot)org/schema/terms/body_caudal_fin: propulsion con ël còrp e
+          la coa
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00003097: eva ëd përforassion
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002226: përforassion
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000537: camp ëd ròch
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000540: lagh salign
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000541: armeuj salign
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002019: eva saligna
+        https://eol(dot)org/schema/terms/brittlestar_feeder: as nuriss d'ofiure
         http://purl(dot)obolibrary(dot)org/obo/PATO_0002359: largh
+        http://eol(dot)org/schema/terms/broadcastSpawner: fertilisassion pr'ëspantiament
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000197: foresta ëd latifeuje
+        http://eol(dot)org/schema/terms/bromelicolous: bromelie
         http://purl(dot)obolibrary(dot)org/obo/CEPH_0000036: covà
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: maròn
+        http://eol(dot)org/schema/terms/browsing: navigador
+        http://purl(dot)obolibrary(dot)org/obo/PO_0000055: but
         http://eol(dot)org/schema/terms/BudSource: sorgiss dij but
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000073: costrussion
+        http://purl(dot)obolibrary(dot)org/obo/EUPATH_0000001: material da costrussion
+        http://purl(dot)obolibrary(dot)org/obo/PO_0025356: siola
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Burdigalian: età
+          burdigalian-a
+        http://eol(dot)org/schema/terms/burl: ronza
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005760: teren brusà
+        https://eol(dot)org/schema/terms/burrow_builder: costrutor ëd tan-a
+        https://eol(dot)org/schema/terms/burrowDepth: profondeur ëd la tan-a
+        https://eol(dot)org/schema/terms/burrowDiameter: diàmeter ëd la tan-a
+        http://polytraits(dot)lifewatchgreece(dot)eu/terms/MOB_BUR: tanin
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000287: autura isolà
+        http://eol(dot)org/schema/terms/caespitose: tëppos
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_27732: cafein-a
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Calabrian: età
+          calabrian-a
         http://eol(dot)org/schema/terms/CalcareousSoilTolerance: toleransa al teren
           calcari
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_46719: caussit

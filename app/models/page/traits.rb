@@ -54,10 +54,13 @@ class Page
 
     def traits_for_predicates_helper(predicates, trait_match, options = {})
       predicate_ids = extract_term_arg_ids(predicates)
+      predicate_match = options[:exact_predicate] ? 
+        '(parent_predicate:Term)' :
+        "(:Term)-[#{PARENT_TERMS}]->(parent_predicate:Term)"
 
       q = page_node.query_as(:page)
         .match(trait_match)
-        .match("(trait)-[:predicate]->(:Term)-[#{PARENT_TERMS}]->(parent_predicate:Term)")
+        .match("(trait)-[:predicate]->#{predicate_match}")
         .where('parent_predicate.eol_id': predicate_ids)
 
       for_object_term = options[:for_object_term]
@@ -88,16 +91,18 @@ class Page
         end
       end
 
+      includes = options[:includes] || [:object_term]
+
       if options[:return_predicate]
-        Trait.populate_pk_result(q.return('trait.eol_pk AS trait_pk, parent_predicate AS predicate'))
+        Trait.populate_pk_result(q.return('trait.eol_pk AS trait_pk, parent_predicate AS predicate'), includes: includes)
       elsif options[:limit]
         Trait.wrap_node(
           q.return(:trait)
           .limit(options[:limit])
           .proxy_as(TraitNode, :trait)&.first
-        )
+        ) #TODO: misleading, it's always a limit of 1 here
       else
-        Trait.for_eol_pks(q.pluck('trait.eol_pk'))
+        Trait.for_eol_pks(q.pluck('trait.eol_pk'), includes: includes)
       end
     end
 
@@ -105,6 +110,16 @@ class Page
       term_arg.is_a?(Array) ?
         term_arg.map { |t| t.id } :
         term_arg.id
+    end
+
+    def extract_term_arg_ids_array(term_arg)
+      term_arg.is_a?(Array) ?
+        term_arg.map { |t| t.id } :
+        [term_arg.id]
+    end
+
+    def pluck_pks(result)
+      result.map { |r| r[:trait_pk] }
     end
   end
 end

@@ -913,6 +913,9 @@ es:
         http://purl(dot)obolibrary(dot)org/obo/RO_0002444: parasitado por
     name:
       by_uri:
+        http://eol(dot)org/schema/terms/age At Dispersal: Edad en la dispersión
+        http://eol(dot)org/schema/terms/AgeAtEyeOpening: edad en la apertura de los
+          ojos
         http://purl(dot)obolibrary(dot)org/obo/GO_0019954: reproducción asexual
         http://purl(dot)obolibrary(dot)org/obo/UBERON_0010362: endoesqueleto
         http://purl(dot)obolibrary(dot)org/obo/RO_0002303: hábitat

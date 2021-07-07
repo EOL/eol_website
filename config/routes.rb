@@ -150,6 +150,14 @@ Rails.application.routes.draw do
         get '/:id' => 'api_hierarchy_entries#index'
         get '/:version' => 'api_hierarchy_entries#index', version: /1\.0/
       end
+
+      scope '/reconciliation' do
+        get '/' => 'api_reconciliation#index', as: 'api_reconciliation'
+        post '/' => 'api_reconciliation#index'
+        get '/properties/suggest' => 'api_reconciliation#suggest_properties'
+        get '/test' => 'api_reconciliation#test'
+      end
+
       # TODO: we decided we could go live without these. Which is good, they are lame:
       # scope '/hierarchies' do
       #   get '/1.0/:id' => 'api_hierarchies#index'
@@ -232,6 +240,10 @@ Rails.application.routes.draw do
       get "(/:directory_id)/:id" => "editor_pages#show", as: :editor_page
     end
 
+    scope "reconciliation" do
+      get "identifier_space" => "reconciliation#id_space", as: "reconciliation_id_space"
+      get "schema_space" => "reconciliation#schema_space", as: "reconciliation_schema_space"
+    end
 
     # Non-resource routes last:
     get "/search" => "search#search",  :as => "search"

@@ -181,6 +181,6 @@ module ApplicationHelper
   def locales_for_select
     I18n.available_locales.collect do |locale|
       SelectLocale.new(I18n.t("language_name", locale: locale), locale)
-    end.sort_by(&:label)
+    end.sort_by { |l| l.label.downcase }
   end
 end

@@ -71,6 +71,9 @@ services:
     image: neo4j
     container_name: neo4j
     restart: always
+    # NOTE: environment variables OVERRIDE the values in the config file!
+    # Results are then applied to an artificial copy of the config in
+    # $HOME/conf/neo4j.conf, which can be VERY confusing. Be aware.
     environment:
       - RAILS_ENV
       - TZ=America/New_York

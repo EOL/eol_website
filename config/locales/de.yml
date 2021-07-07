@@ -16,6 +16,7 @@
 # Author: Symposiarch
 # Author: Tiin
 # Author: Umherirrender
+# Author: Umlaut
 # Author: Wolfdietmann
 ---
 de:
@@ -58,6 +59,10 @@ de:
       missing: Ohne Titel
   article_from_partner: bereitgestellt von %{partner}
   article_duplicate: dieser Artikel wird auch in "%{section}" angezeigt
+  autocomplete:
+    see_all:
+      one: anderes Ergebnis ansehen
+      other: alle %{count} Ergebnisse ansehen
   breadcrumbs:
     notices:
       canonical: Wissenschaftliche Bezeichnungen werden ab jetzt in den Seiten breadcrumbs
@@ -91,14 +96,14 @@ de:
       data_count: Daten
       nodes_count: Knoten
       scientific_names_count: wissenschaftliche Bezeichnungen
-      species_count: Spezies
+      species_count: Arten
       updated_at: Zuletzt aktualisiert
-  collect_already_in_collection: (Es ist schon hier)
+  collect_already_in_collection: (ist bereits vorhanden)
   collect_already_in_collection_will_add_icon: (füge Medien zu "%{page}" hinzu)
   collect_icon_title: Füge "%{item}" von der Seite "%{page}" zu
   collect_new_collection: Neuer Sammlungsname
   collect_new_collection_title: '...eine neue Sammlung'
-  collect_no_existing_collections: Sie haben noch keine! Erstellen Sie eines mit dem
+  collect_no_existing_collections: Sie haben noch keine! Erstellen Sie eine mit dem
     Formular auf der linken Seite.
   collect_select_collection: '...eine Ihrer Sammlungen'
   collect_title: Ergänze "%{item}" zu
@@ -106,7 +111,7 @@ de:
   collected_page_already_in_collection: Das war bereits in deiner Sammlung.
   collected_pages_title: Seiten
   collected_pages_medium:
-    destroyed_flash: Bild von gesammelter Seite entfernt.
+    destroyed_flash: Bild von der Sammlungsseite entfernt.
   collection_associations:
     destroyed_flash: '%{name} ist nicht länger mit dieser Sammlung verbunden'
   collected_pages:
@@ -114,9 +119,16 @@ de:
     edit_button: Bearbeiten
     delete_confirm: Sind Sie sicher?
     destroyed_flash: '%{name} von der Sammlung entfernt.'
+  collection_association_added_to_collection: '"%{associated}" wurde der Sammlung
+    <a href=''%{link}''>"%{name}"</a> hinzugefügt.'
   collection_associations_empty: Keine anderen Sammlungen sind mit dieser verbunden.
     Sie können das "associate" Feld anderer Sammlungen klicken um diese hier erscheinen
     zu lassen.
+  collection_collected_pages_media_remove: 'Bilder aus der Sammlung entfernen (hat
+    sofortige Wirkung):'
+  collection_created: Die neue Sammlung "%{name}" wurde erstellt.
+  collection_created_for_association: '"%{associated}" wurde der neuen Sammlung <a
+    href=''%{link}''>"%{name}"</a> hinzugefügt.'
   collection_user_is_admin: Dieser Benutzer ist ein Administrator.
   collection_pages_empty: Diese Sammlung enthält keine Seiten. Versuchen Sie auf den
     "Sammeln"-Knopf auf den Artenseiten zu klicken, um einige Artikel hinzuzufügen!
@@ -127,6 +139,7 @@ de:
       label: 'Einen Benutzer hinzufügen, der diese Sammlung bearbeiten kann:'
       placeholder: vollständiger Name oder Benutzername
     actions:
+      download_taxa_csv: CSV-Datei mit Taxa herunterladen
       delete: löschen
       edit: bearbeiten
       sort: Sortieren
@@ -136,6 +149,22 @@ de:
     delete_confirm: Dadurch wird die gesamte Sammlung entfernt und dies kann NICHT
       rückgängig gemacht werden. Sind Sie sicher?
     destroyed: '"%{name}" wurde dauerhaft gelöscht.'
+    pages_count:
+      one: 1 Seite
+      other: '%{count} Seiten'
+    log:
+      collection:
+        add: '%{user} erstellte die Sammlung'
+        change: '%{user} änderte %{field} von "%{from}" zu "%{to}"'
+      content:
+        add: '%{user} fügte das Medium %{medium} der Seite %{page} hinzu'
+        change: '%{user} änderte %{field} von Medium %{medium} der Seite %{page} von
+          "%{from}" zu "%{to}"'
+        remove: '%{user} löschte das Medium %{medium} auf der Seite %{page}'
+      page:
+        add: '%{user} fügte die Seite %{page} hinzu'
+        change: '%{user} änderte %{field} auf der Seite %{page} von "%{from}" zu "%{to}"'
+        remove: '%{user} löschte die Seite %{page}'
     search:
       placeholder: In der Sammlung suchen...
       submit: suche
@@ -144,6 +173,12 @@ de:
       position: Datum hinzugefügt
       sci_name: Wissenschaftliche Bezeichnung, A-Z
       sci_name_rev: Wissenschaftliche Bezeichnung, A-Z
+      sort_field: Annotation, A-Z
+      sort_field_rev: Annotation, Z-A
+    updated: Die Sammlung wurde aktualisiert
+  collection_unauthorized_edit: Nur der Eigentümer darf diese Sammlung bearbeiten.
+  complete_registration: Bitte fahren Sie mit Ihrer Registrierung fort
+  content_appears_on: 'In den folgenden Seiten enthalten:'
   content_collected_in: 'In den folgenden Sammlungen vorgestellt:'
   content_attributions_header: Informationen zur Quelle
   content_attributions_labels:
@@ -165,7 +200,12 @@ de:
     publisher: Herausgeber
     project: Projekt
     provider: Anbieter
+    references_header:
+      one: Referenz
+      other: Referenzen
     resource_label: Partnerseite
+    resource_pk: '(id: %{key})'
+    rights_statement: Rechte
     source: Quelle
     spatial_location: räumlich
     view_source_label: original
@@ -177,7 +217,7 @@ de:
   data:
     modifier:
       lifestage_term: Lebensabschnitt des Lebewesens gemessen
-      statistical_method_term: Für Messungen genutzte statistische Methode
+      statistical_method_term: Für Messungen verwendete statistische Methode
   dear_username_with_comma: Lieber %{username},
   delete_account_button: Dein Benutzerkonto löschen
   filter_by_license: Lizenz
@@ -196,6 +236,7 @@ de:
       contact_us: Kontaktiere uns
       donate: Spenden
       education: Bildung
+      food_webs: Nahrungsketten
       glossary: Glossar
       help: Hilfe
       language_support: Sprachunterstützung
@@ -217,6 +258,7 @@ de:
       insects: Insekten
       invertebrates: Wirbellose Tiere
       mammals: Säugetiere
+      molds: Schimmelpilze
       mushrooms: Pilze
       mollusks: Weichtiere
       plants: Pflanzen
@@ -274,95 +316,316 @@ de:
     bg: Bulgarisch
     my: Birmanisch
     q33120: Burjatisch
+    q35037: Businenge Tongo
+    q880301: Cajun
     q35156: Car
+    q2591230: Cashinahua
     ca: Katalanisch; Valencianisch
+    q33239: Cebuano
+    khm: Khmer
+    km: Khmer
+    ch: Chamorro
+    q33281: Chavacano
+    ce: Tschetschenisch
     q33388: Cherokee
+    q33265: Cheyenne
+    ny: Chichewa; Chewa; Nyanja
     zh: Chinesisch
     chi: Chinesisch
+    q32979: Choctaw
+    cu: Altes Kirchenslawisch
+    cv: Tschuwaschisch
+    q37041: Traditionelles Chinesisch
+    kw: Kornisch
     co: Korsisch
+    cr: Cree
+    q33357: Krimtatarisch
     hr: Kroatisch
     hrv: Kroatisch
     cs: Tschechisch
     da: Dänisch
+    q3362072: Digo
+    q56466: Dinka
+    dv: Dhivehi; Malediwisch
+    q18415595: Dotyali
     dut: Niederländisch; Flämisch
     nl: Niederländisch; Flämisch
+    dz: Dzongkha
+    dzo: Dzongkha
+    q4126517: Ostkanadisches Inuktitut
     en: Englisch
+    q29952: Ersjanisch
     eo: Esperanto
     et: Estnisch
     est: Estnisch
+    ee: Ewe
+    fo: Färöisch
+    fj: Fidschi
     fi: Finnisch
     fin: Finnisch
+    q667747: Fipa
     fr: Französisch
     fra: Französisch
+    ff: Fula
     gd: Schottisch-Gälisch
     gl: Galizisch
+    q33475: Gan Chinesisch
+    lg: Ganda
     ka: Georgisch
     de: Deutsch
     deu: Deutsch
+    q5575236: Konkani
+    q3272630: Gogo
+    q2501174: Gorontalo
     el: Griechisch, Modern (1453-)
     gre: Griechisch
+    gn: Guarani
+    gu: Gujarati
+    q33303: Haida
+    ht: Haitisch; haitische Kreolfranzösisch
+    ha: Hausa
+    q35756: Haya
     he: Hebräisch
     heb: Hebräisch
+    q3129390: Hehe
+    hz: Otjiherero ; Herero
+    q35978: Hiligaynon
     hi: Hindi
+    ho: Hiri Motu
     hu: Ungarisch
     is: Isländisch
     ice: Isländisch
+    io: Ido
+    ig: Igbo
+    q35936: Ilokano
     id: Indonesisch
+    q33509: Inguschisch
+    ia: Interlingua (International Auxiliary Language Association)
+    ie: Interlingue; Occidental
+    iu: Inuktitut
+    ik: Inupiaq
+    q33595: Iraqw
     ga: Irisch
+    it: Italienisch
+    ita: Italienisch
+    q35939: Jamaikanisches Kreolisch
+    ja: Japanisch
     jp: Japanisch
     jv: Japanisch
+    q33522: Kabardisch Tscherkessisch
+    q35475: Kabiyè
+    q35853: Kabylisch
+    kl: Kalaallisut; Grönländisch
+    q33634: Kalmückisch
+    kn: Kannada
+    kr: Kanuri
+    q36121: Kapampangan
+    q33541: Karakalpak
+    ks: Kashmiri
+    q33690: Kaschubisch
     kk: Kasachisch
+    ki: Kikuyu; Gikuyu
+    q11005332: Kinga
+    q11732519: Kingindo
+    rw: Kinyarwanda; Ruandisch
+    ky: Kirgisisch
+    kv: Komi
+    kg: Kikongo
     ko: Koreanisch
     kor: Koreanisch
+    kj: Kuanyama; Kwanyama
     ku: Kurdisch
+    q36206: Lak
+    lo: Laotisch
     lao: Laotisch
     la: Lateinisch
+    lv: Lettisch
+    q1160372: Lasisch
+    q31746: Lesgisch
+    q36106: Ligurisch
+    li: Limburger; Limburgisch
+    ln: Lingala
     q146803: Lingua Franca Nova
     lt: Litauisch
     lit: Litauisch
+    q33698: Livisch
+    q36584: Livvisch
+    q33754: Lombardisch
     q168446: Niedersächsisch
     q13286: Niedersorbisch
+    lu: Luba-Katanga
+    q3437661: Luguru
+    lb: Luxemburgisch; Lëtzebuergesch
+    q35787: Massai
     mk: Mazedonisch
     q497345: Mainfränkisch
+    q36109: Maithili
+    mg: Malagasy
+    ms: Malaysisch
+    ml: Malayalam
+    mt: Maltesisch
     mlt: Maltesisch
+    gv: Manx
+    mi: Maori
+    mr: Marathi
+    mh: Marshallesisch
+    q6786446: Matengo
+    q3906614: Mari (Meadow)
+    q13358: Meglenorumänisch
+    q13313: Meru
+    q13321: Miꞌkmaq
+    q36455: Min Dong
+    q13324: Minangkabau
+    q13359: Mingrelisch
+    q13330: Mirandese
+    q13343: Moksha
     mn: Mongolisch
     q56426: Marokkanisches Arabisch
+    q6944725: Mwera
+    q13300: Nahuatl
+    q3508074: Niueanisch
+    na: Nauruisch
+    nv: Navajo; Navaho
+    nd: Nord-Ndebele
+    nr: Süd-Ndebele
+    ng: Ndonga
+    q33845: Neapolitanisch
+    ne: Nepali
+    q7022366: Ngindo
     q28224: Nordfriesisch
+    q19933293: Nördliches Lori
+    se: Nordsamisch
     "no": Norwegisch
     nno: Norwgisch
     nob: Norwegisch
     nor: Norwegisch
+    nn: Nynorsk; Neunorwegisch
     q36738: Novial
+    q3272620: Nyakyusa
+    q4121131: Nyamwezi
+    q7193418: Nyaturu
+    q11128374: Nyiha
+    q16115145: Nyika
+    oc: Okzitanisch (nach 1500)
+    q28602: Aramäisch
+    oj: Ojibwe
+    or: Oriya
+    om: Oromo
+    os: Ossetisch
+    pi: Pali
+    pa: Punjabi
+    q36403: Pare
     fa: Persisch
     q23014: Pfälzisch
+    q34024: Picardisch
+    q15085: Piemontesisch
+    q2429648: Pogoro
     pl: Polnisch
     pol: Polnisch
+    q36748: Pontisch
     pt: Portugiesisch
+    ps: Paschtunisch
+    qu: Quechua
+    q584983: Rangi
+    ro: Rumänisch; Moldauisch
+    rm: Rätoromanisch
+    rn: Rundi
+    ru: Russisch
+    rus: Russisch
+    q26245: Russinisch
+    q34299: Jakutisch; Sakha
+    q718269: Sakizaya
+    sm: Samoanisch
+    q213434: Samogitisch
+    q34016: Sandawe
+    sg: Sango
     sa: Sanskrit
+    q33965: Santali
     sc: Sardinisch
+    q845441: Sassarese; Sardisch
+    q14549: Scots
     sr: Serbisch
+    q3788739: Shambala
+    q56482: Shan
+    sn: Shona
+    q34004: Shona
+    ii: Sichuan Yi; Nuosu
+    q33973: Sizilianisch
+    sd: Sindhi
+    si: Singhalesisch
     sk: Slowakisch
     slk: Slowakisch
     sl: Slowenisch
+    so: Somali
+    som: Somali
+    st: Südliches Sotho
     es: Spanisch; Kastilisch
     slv: Spanisch
+    q2638144: Sukuma
+    su: Sundanesisch
     sw: Swahili
+    ss: Swati
     sv: Schwedisch
     swe: Schwedisch
+    tl: Tagalog
+    ty: Tahitianisch
+    tg: Tadschikisch
+    q34318: Talisch
+    ta: Tamilisch
+    tt: Tatarisch
+    te: Telugu
+    th: Thai
+    tha: Thai
     bo: Tibetisch
+    ti: Tigrinisch
+    q34159: Tok Pisin
+    to: Tongaisch
+    q180937: Toskisch
+    ts: Tsonga
+    tn: Tswana
+    q34251: Tulu
+    q34138: Tumbuka
+    q56240: Tunesisches Arabisch
+    tr: Türkisch
+    tur: Türkisch
+    q36730: Ottomanisches Türkisch
+    tk: Turkmenisch
+    tw: Twi
+    q13238: Udmurtisch
+    ug: Uigurisch
+    uk: Ukrainisch
+    ukr: Ukrainisch
     none: Nicht angegeben
     q13248: Obersorbisch
     ur: Urdu
     uz: Usbekisch
+    ve: Venda
+    q32747: Wepsisch
     vi: Vietnamesisch
+    vo: Volapük
+    q32858: Wotisch
+    wa: Wallonisch
+    q34279: Waray-Waray
     cy: Walisisch
+    wel: Walisisch
     q100103: West-Flämisch
+    fy: Westfriesisch
+    wo: Wolof
+    q34290: Wu
+    xh: Xhosa
+    yi: Jiddisch
+    yo: Yoruba
+    q10199: Zazaki
+    q237409: Zeelandisch
+    za: Zhuang
+    zu: Zulu
   layout_sign_in: Anmelden
   layout_sign_up: Registrieren
   layout_sign_out: Abmelden
   literature_and_references_header: Literatur und Verweise
   maps:
     empty: Es sind keine Karten für diese Seite verfügbar.
+    other_maps_title: Nicht-interaktive Karten
   medium:
     untitled:
       image: Unbenanntes Bild
@@ -374,6 +637,7 @@ de:
       map: Unbenannte Karte
       map_of: Karte von %{page_name}
       js_map: Unbenannte interaktive Karte
+      js_map_of: Interaktive Landkarte von %{page_name}
     subclasses:
       image: Bild
       video: Video
@@ -385,9 +649,15 @@ de:
   medium_header_title: 'Titel:'
   medium_header_description: 'Beschreibung:'
   names:
+    hide_langs:
+      one: eine Sprache verbergen
+      other: hide %{count} Sprachen
     prefer: bevorzugen
     preferred_in_language_for_page: '%{name} ist jetzt die bevorzugte %{language}
       Umgangssprache für %{page}'
+    show_more_langs:
+      one: eine weitere Sprache anzeigen
+      other: show %{count} weitere Sprachen
   nav:
     about: Über
     discuss: Diskutieren
@@ -396,18 +666,29 @@ de:
       placeholder: Durchsuche EOL...
     trait_bank: TraitBank
   name_preferred_label: bevorzugt
+  page_icon_counts:
+    header:
+      one: Bestes Bild für die Seite
+      other: Bestes Bild für die Seiten
+  page_icon_created: Bild "%{name}" wurde an den Anfang verschoben.
   page_title: Enzyklopädie des Lebens
   page_title_search: 'Durchsuche: %{query}'
   page_vernaculars_empty: Mit diesem Taxon sind keine verbreiteten Namen verbunden.
   pages:
     actions:
       collect: sammeln
+      comment:
+        zero: Kommentar
+        one: '%{count} Kommentar'
+        other: '%{count} Kommentare'
       reindex: neuindizieren
     batch_lookup:
+      canonical_name: Kanonischer Name
       download_tsv: TSV herunterladen
       new_search: neue Suche
       page_url: Seiten-URL
       query: Abfrage
+      query_cant_be_blank: Die Abfrage darf nicht leer sein
       search: Suche
     filter_menu:
       show_all: Alle anzeigen
@@ -417,14 +698,31 @@ de:
       name_recognized_by: Erkannt von %{by}
       name_recognized_by_w_rank: '%{rank} erkannt von %{by}'
       rank:
+        r_domain: Domäne
+        r_subdomain: Subdomäne
         r_kingdom: Königreich
         r_class: Klasse
         r_family: Familie
         r_tribe: Stamm
         r_species: Spezies
         r_form: Form
+      reference_taxon_attrib: Referenz-Taxon von %{dataset_name}
+      resource_link_html: <a href='%{resource_path}'>%{resource_name}</a>
+      resource_link_w_remarks_html: <a href='%{resource_path}'>%{resource_name}</a>
+        (%{remarks})
+      username_missing: Bnutzer %{user_id}
     trophic_web:
+      competitor: Konkurrent
+      globi_credit_html: Daten von <a href='%{url}'>GloBI</a>
+      predator: Raubtier
+      prey: Beutetier
       reset: Zurücksetzen
+    flash:
+      reindexed: 'Die Caches für diese Seite wurden geleert. Laden Sie diese neu,
+        um die neuen Inhalte anzuzeigen. HINWEIS: Aktuell werden die Bilder auf der
+        Seite *nicht* neu indiziert. Diese Funktion wird erst zu einem späteren Zeitpunkt
+        implementiert.'
+    native_node_missing_warning: keine Hierarchiedaten vorhanden
     tabs:
       articles: Artikel
       classifications: Klassifikationen
@@ -441,6 +739,11 @@ de:
       cr: vom Aussterben bedroht (CR)
       en: stark gefährdet (EN)
       vu: gefährdet (VU)
+      nt: potenziell gefährdet (NT)
+      lc: nicht gefährdet (LC)
+      dd: ungenügende Datengrundlage (DD)
+      ne: nicht beurteilt (NE)
+      unknown: unbekannt (keine Daten)
   page_titles:
     pages:
       data: '%{page_name} Daten'
@@ -448,13 +751,50 @@ de:
       maps: '%{page_name} Karten'
       names: '%{page_name} Namen'
       articles: '%{page_name} Artikel'
+    traits:
+      search: Suche nach Merkmalen
+  rank:
+    name:
+      r_domain: Domäne
+      r_subdomain: Subdomäne
+      r_phylum: Stamm
+      r_class: Klasse
+      r_family: Familie
+      r_genus: Gattung
+      r_subgenus: Untergattung
+      r_species: Art
   recaptcha: Recaptcha
+  recaptcha_error: Ich bin kein Roboter.
+  reconciliation:
+    id_space:
+      type_names:
+        taxon: Taxon
+    property:
+      description:
+        ancestor: Ein Taxon welches der Vorfahr eines anderen Taxons ist.
+      name:
+        ancestor: Vorfahr
+        rank: Rang
+    schema_space:
+      headers:
+        id: ID
+        name: Name
+        description: Beschreibung
+  reference_compiled_from: Referenziert von %{links}
   reference_compiled_from_article: '%{source} Artikel mit dem Namen "%{name}"'
+  register_new_account: Registrieren Sie sich für ein neues Konto
   resources:
     actions:
+      import_traits: Merkmale importieren (aus dem Repository)
+      show_all:
+        other: alle anzeigen (%{count})
+      show_warns:
+        one: Warnung anzeigen (%{count})
+        other: Warnungen anzeigen (%{count})
       clear_publishing_confirm: Dies will alle Veröffentlichung fertigstellen und
         kann Probleme verursachen, wenn es verwendet wird während aktiv veröffentlicht
         wird. Sind sie sicher?
+    no_events: Keine!
   resource_missing: Ressource nicht gefunden
   scientific_name:
     status_title:
@@ -467,32 +807,113 @@ de:
   send_me_reset_password_instructions: Schicke mir die Anweisungen um das Passwort
     zurückzusetzen
   search:
+    full_name: '%{vernacular} (%{scientific})'
     matched_text: Stimmt überein mit %{text}
+    flash:
+      cannot_combine_paths: Die Ergebnisse können nicht mit %{path} kombiniert werden
+      more_than_two_terms: 'Die Ergebnisse können nicht für mehr als zwei Begriffe
+        kombiniert werden: %{terms}'
+    n_articles:
+      one: '%{count} Artikel'
+      other: '%{count} Artikel'
+    n_collections:
+      one: '%{count} Sammlung'
+      other: '%{count} Sammlungen'
+    n_images:
+      one: '%{count} Bild'
+      other: '%{count} Bilder'
+    n_results:
+      zero: Keine Ergebnisse
+      one: '%{count} Ergebnis'
+      other: '%{count} Ergebnisse'
+    n_sounds:
+      one: '%{count}Ton'
+      other: '%{count} Töne'
+    n_taxon_pages:
+      one: '%{count} Taxon-Seite'
+      other: '%{count} Taxon-Seiten'
+    n_users:
+      one: '%{count} Benutzer'
+      other: '%{count} Benutzer'
+    n_videos:
+      one: '%{count} Video'
+      other: '%{count} Videos'
+    n_terms:
+      one: '%{count} Begriff'
+      other: '%{count} Begriffe'
   search_results:
+    collection_page_count:
+      one: '%{count} Seite'
+      other: '%{count} Seiten'
+    collected_media:
+      title: 'gesammelte Medien von dieser Seite:'
     medium_article: Artikel
     medium_image: Bild
     medium_map: Karte
     medium_sound: Ton
     medium_video: Video
+    medium_title_article_html: 'Artikel: <span class=''sub''>%{title}</span>'
+    medium_title_image_html: 'Bild: <span class=''sub''>%{title}</span>'
+    medium_title_map_html: 'Landkarte: <span class=''sub''>%{title}</span>'
+    medium_title_sound_html: 'Audiodatei: <span class=''sub''>%{title}</span>'
+    medium_title_video_html: 'Video: <span class=''sub''>%{title}</span>'
     empty: Keine Ergebnisse.
     field_matches:
       description: 'Stimmt mit der Beschreibung überein:'
       resource_pk: 'Stimmt mit externer ID überein:'
       bio: 'Stimmt mit Biographie überein:'
+    section_titles:
+      collections:
+        one: '%{count} Sammlung'
+        other: '%{count} Sammlungen'
+      media:
+        one: '%{count} Medium'
+        other: '%{count} Medien'
+      pages:
+        one: '%{count} EOL Seite (Arten)'
+        other: '%{count} EOL Seiten (Arten)'
+      users:
+        one: '%{count} Benutzer'
+        other: '%{count} Benutzer'
+    collection_title_html: 'Sammlung: <span class=''sub''>%{name}</span>'
+    resource_counts:
+      n_articles:
+        one: 1 ARTIKEL
+        other: '%{count} ARTIKEL'
+      n_media:
+        one: 1 MEDIUM
+        other: '%{count} MEDIEN'
+    user_title_html: 'Benutzer: <span class=''sub''>%{name}</span>'
   sections:
     behavior: Verhalten
     benefits: Vorteile
     brief_summary: Kurze Zusammenfassung
+    comprehensive_description: Ausführliche Beschreibung
+    cyclicity: Zyklizität
     diagnostic_description: Diagnostische Beschreibung
     diseases_and_parasites: Krankheiten und Parasiten
+    dispersal: Ausbreitung
     ecology: Ökologie
+    evolution_and_systematics: Evolution und Systematik
+    general_ecology: Allgemeine Ökologie
     genetics: Genetik
     growth: Wachstum
     habitat: Lebensraum
     life_expectancy: Lebenserwartung
+    life_history_and_behavior: Life History und Verhalten
     management: Management
+    migration: Migration
+    molecular_biology: Molekularbiologie
+    molecular_biology_and_genetics: Molekularbiologie und Genetik
+    morphology: Morphologie
+    notes: Anmerkungen
+    overview: Übersicht
+    physiology_and_cell_biology: Physiologie und Zellbiologie
+    relevance_to_humans_and_ecosystems: Relevanz für Menschen und Ökosysteme
+    reproduction: Reproduktion
     risks: Risiken
     size: Größe
+    taxonomy: Taxonomie
     threats: Gefahren
     trends: Trends
     wikipedia: Wikipedia
@@ -517,7 +938,15 @@ de:
         email: E-Mail
         password: Passwort
         password_confirmation: Passwortbestätigung
+        username: Benutzername
+        bio: Bio
   stats:
+    articles: Artikel
+    collections: Sammlungen
+    data: Datensätze
+    media: Medien
+    pages: Seiten
+    nodes: Knoten
     scientific_names: Namen
     users: Benutzer
     references: Referenzen
@@ -528,145 +957,699 @@ de:
       invalid_uri: Ungültige URL
       units_blank_error: Einheiten können bei einer numerischen Suche nicht leer sein
   terms:
+    definition_field_html: <strong>Definition:</strong> %{definition}
+    source_field_html: <strong>Quelle:</strong> <a href='%{source}'>%{source}</a>
+    record_url: URL des Datensatzes
     scientific_name: wissenschaftliche Bezeichnung
+    show_all_records: Alle Datensätze anzeigen
     source: Quelle
+    uri_field_html: <strong>URI:</strong> %{uri}
+    index:
+      select_page_above: Bitte wählen Sie eine Seite aus
+  data_definition: Definition von "%{data}"
   traits:
     data_viz:
+      about_this_chart_tooltip_1d: Dies ist eine Zusammenfassung, die auf den in der
+        EOL verfügbaren Daten basiert. Diese kann unvollständig sein! Sie können eine
+        Kategorie aus der Tabelle auswählen, um Ihre Suchergebnisse einzugrenzen.
+        Viele Kategorien überschneiden sich und eine Art kann in mehr als einer Kategorie
+        enthalten sein.
+      about_this_chart_tooltip_assoc: Dies ist eine Zusammenfassung, die auf den in
+        der EOL verfügbaren Daten basiert. Diese kann unvollständig sein! Sie können
+        mit dem Mauszeiger über einen Taxonnamen fahren, um seine Beziehungen hervorzuheben.
+        Ein grüner Link bedeutet, dass das Taxon, über dem der Mauszeiger schwebt,
+        das Subjekt der Assoziation ist; ein lila Link bedeutet, dass es das Objekt
+        ist. Größere Suchen werden nach Gattung oder Familie zusammengefasst. Sie
+        können diese durch Anklicken eines Taxonnamens eingrenzen.
+      about_this_chart_tooltip_sankey_2d: Dies ist eine Zusammenfassung, die auf den
+        in der EOL verfügbaren Daten basiert. Diese kann unvollständig sein! Sie können
+        eine Kategorie aus der Tabelle auswählen, um Ihre Suchergebnisse einzugrenzen.
+        Viele Kategorien überschneiden sich und eine Art kann in mehr als einer Kategorie
+        enthalten sein.
+      other_term_name: andere %{term_name}
+      hist_value_label: Wert (%{units})
+      n_family_records:
+        one: ein Taxon in Familie %{family}
+        other: '%{count} Taxa in Familie %{family}'
+      n_family_taxa:
+        one: ein Taxon in Familie %{family}
+        other: '%{count} Taxa in Familie %{family}'
+      n_other_records:
+        one: ein anderer Datensatz
+        other: '%{count} andere Datensätze'
+      n_other_taxa:
+        one: ein anderes Taxon
+        other: '%{count} andere Taxa'
+      num_records_label: '# Von Datensätzen'
       other: andere
+      page_habitat_header: '%{name} Habitate'
+      show_n_family_records:
+        one: ein Taxon in Familie %{family}
+        other: '%{count} Taxa in Familie %{family}'
+      show_n_family_taxa:
+        one: ein Taxon in Familie %{family}
+        other: '%{count} Taxa in Familie %{family}'
+      n_obj_records:
+        one: ein datensatz mit "%{obj_name}"
+        other: '%{count} Datensätze mit "%{obj_name}"'
+      n_taxa_with:
+        one: ein Taxon mit "%{obj_name}"
+        other: '%{count} Taxa mit "%{obj_name}"'
+      sankey_node_hover: Suche eingrenzen auf %{term_name}
+      see_n_obj_records:
+        one: ein Datensatz mit "%{obj_name}"
+        other: '%{count} Datensätze mit "%{obj_name}"'
+      see_n_taxa_with:
+        one: ein Taxon mit "%{obj_name}" anzeigen
+        other: '%{count} Taxa mit "%{obj_name}" anzeigen'
+      taxon_summary:
+        click_to_filter: filtern
+        click_to_filter_by: Klicke zum Filtern nach ‚%{name}‘
     properties:
+      citation: Bibliographisches Zitat
       method: Messverfahren
       scientific_name: Wissenschaftliche Bezeichnung
       source: Quelle
     search:
+      clade: 'Klade: %{clade}'
       download_tsv: tsv herunterladen
+      edit_filters: Filter bearbeiten
       filter_display:
+        eq: '%{pred} = %{num_val} %{units}'
+        gte: '%{pred} >= %{num_val} %{units}'
+        lte: '%{pred} <= %{num_val} %{units}'
         obj_only: 'mit Wert: %{obj}'
+        pred_obj: '%{pred}: %{obj}'
+        pred_only: '%{pred}'
+        range: '%{pred} in [%{num_val1}, %{num_val2}] %{units}'
+        sex: 'Geschlecht: %{value}'
         statistical_method: 'Statistische Methode: %{value}'
+      gbif_search: GBIF-Suche
       result_header_records: Zeige %{range_begin} - %{range_end} von %{total} Einträgen
         für %{page_count} Taxa
       result_header_taxa: Zeige %{range_begin} - %{range_end} von %{total} Taxa
       result_header_taxa_notaxa: Zeige %{range_begin} - %{range_end} von %{total}
+      result_header_records_notaxa: '%{range_begin} - %{range_end} von %{total} Einträgen
+        für %{page_count}'
+      new_search: neue Suche
+      switch_to_list: Listenansicht
+      switch_to_gallery: zur Galerieansicht
     search_form:
+      clade_filter_placeholder: 'Gruppe (z.B.: Bären)(optional)'
+      hide_additional_fields: Zusätzliche Felder verbergen
+      lifestage: Lebensphase
+      search: Suchen
+      sex: Geschlecht
+      show_additional_fields: Zusätzliche Felder anzeigen
+      statistical_method: Statistische Methode
+      this_may_take_a_minute: Dies dauert ca. eine Minute
       value: Wert
+  trophic_web:
+    group_descriptions:
+      competitor: Konkurrent von %{source_name}
+  trust:
+    unreviewed: ungeprüft
   user:
+    created_at: erstellt
+    download_queue: Warteschlange des Daten-Downloads
+    grant_power: Power-User Zugriff gewähren
+    revoke_power: Power-User Zugriff entziehen
+    edit_account_details: Kontodetails bearbeiten
+    email: E-Mail
+    to_commit_enter_current: Um Ihre Änderungen zu übernehmen geben Sie bitte Ihr
+      aktuelles Passwort ein
+    form_labels:
+      age_confirm: Ich bin mindestens 13 Jahre alt
+      tou_confirm_html: Ich habe die <a href='%{tou_path}'>Nutzungsbestimmungen</a>
+        und die <a href='%{privacy_path}'>Datenschutzrichtline</a> gelesen
     headers:
       bio: Kurze Biographie
       collections: Sammlungen
       downloads: Downloads
       links: Links
+    is_power_user: Dieser Benutzer ist ein Power-User
     validations:
+      age_confirm: Bitte bestätigen Sie, dass Sie mindestens 13 Jahre alt sind
       tou_confirm: "Sie müssen bestätigen, dass sie die Nutzungsbedingungen und \nDatenschutz-Bestimmungen
         gelesen haben"
+    list_of_power_users: Liste der Poweruser
     new_password: Neues Passwort
     confirm_new_password: Neues Passwort bestätigen
+    showing_n_power_users:
+      one: Einen Power-user auflisten
+      other: '%{count} Power-User auflisten'
     username: Benutzername
+    update: Aktualisierung
+    update_email: E-Mail-Adresse aktualisieren
+  user_download:
+    created: Ihre Datei wird im Hintergrund bearbeitet. Prüfen Sie auf Ihrer <a href="%{url}">Benutzerseite</a>,
+      ob der Vorgang abgeschlossen ist.
+    have_pending: Sie haben bereits einen anstehenden Download für diese Abfrage.
+      Prüfen Sie auf Ihrer <a href="%{url}">Benutzerseite</a>, ob der Vorgang abgeschlossen
+      ist.
+  users:
+    account_migration_header: 'Wenn Sie sich vor dem 15. November 2018 bei EOL registriert
+      haben:'
+    account_migration_notice: Ihre Kontoinformationen, einschließlich des Benutzernamens,
+      der zugehörigen E-Mail-Adresse, der Profilbeschreibung und der eigenen Sammlungen
+      wurden in die neue EOL importiert. Ihr Benutzername ist immer noch Ihr Anzeigename
+      auf der Website, aber Sie müssen sich jetzt mit Ihrer E-Mail-Adresse anmelden.
+      Ihr Passwort konnte aus Sicherheitsgründen nicht migriert werden; bitte entschuldigen
+      Sie die Unannehmlichkeiten. Sie können es über die Funktion "Passwort vergessen"
+      zurücksetzen. Wenn Sie sich nur über einen Drittanbieter - Google, Twitter oder
+      Facebook - eingeloggt haben, bitten wir Sie um etwas Geduld; wir arbeiten an
+      einigen Problemen mit den gemeinsamen Login-Prozessen.
+    sign_in: Anmelden
+  vernacular_names_header: Gebräuchliche Namen
+  wordcloud_credit_html: Erstellt mit <a href='%{url}'>jQCloud</a>
+  i18n_js:
+    traits:
+      data_viz:
+        sankey:
+          m_of_n: '%{m} von %{n}'
   term:
     actions:
+      reindex: Neuindizieren
       sort: sortieren nach
+    edit:
+      submit: Speichern
     fields:
+      name: 'Name:'
+      definition: Definition
       comment: 'Kommentar:'
       sections: 'Abschnitte:'
+      is_hidden_from_glossary: 'Im Glossar verbergen:'
     pagination:
       next: nächste Seite
       previous: vorherige Seite
+    inverse_name:
+      by_uri:
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002470: ist Beute von
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002632: hat Ektoparasiten
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002634: hat Endoparasiten
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002454: Wirt von
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002553: hat Hyperparasiten
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002444: parasitiert von
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002439: wird erbeutet von
     name:
       by_uri:
+        http://eol(dot)org/schema/terms/percentPerMonth: '%/Monat'
+        http://eol(dot)org/schema/terms/percm2: /cm^2
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Aalenian: Aalenium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000027: Abyssal
+        http://eol(dot)org/schema/terms/acicular: nadelförmig
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002120: Thermalquelle
         http://purl(dot)obolibrary(dot)org/obo/EO_0007059: saurer Boden
         http://www(dot)ebi(dot)ac(dot)uk/efo/EFO_0001272: Erwachsener
         http://purl(dot)obolibrary(dot)org/obo/NBO_0000366: Luft
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Aeronian: Aeronium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00010505: Aerosol
+        http://purl(dot)obolibrary(dot)org/obo/OMIT_0027854: Agatoxine
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Albian: Albium
+        http://rs(dot)tdwg(dot)org/ontology/voc/TaxonName#Allolectotype: Allolectotyp
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000085: Alpengletscher
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Anisian: Anisium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000173: Anoxisches Wasser
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_52254: Apatit
+        http://purl(dot)obolibrary(dot)org/obo/IDOMAL_0002229: Facettenaugen
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Aptian: Aptium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000072: Aquädukt
         http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900044: Wasserpflanze
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Aquitanian: Aquitanium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Archean: Archaikum
         http://purl(dot)obolibrary(dot)org/obo/PATO_0001709: Fläche
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Artinskian: Artinskium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Asselian: Asselium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000166: Atoll
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000127: Badlands
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002872: Bagasse
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Bajocian: Bajocium
+        https://eol(dot)org/schema/terms/bamboo_forest: Bambuswald
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000161: Bananenplantage
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_133326: Bariumsulfat
         http://purl(dot)obolibrary(dot)org/obo/PO_0004518: Rinde
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Barremian: Barremium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Bartonian: Bartonium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000236: Basalt
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Bashkirian: Bashkirium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Bathonian: Bathonium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000032: Bucht
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000234: Bayou
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000091: Strand
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000500: Biberdamm
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000270: Biberdamm
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03302072: Bienenwachs
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Berriasian: Berriasium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002034: Biofilm
+        http://eol(dot)org/schema/terms/Bioluminescent: Biolumineszenz
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000317: schwarz
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C12434: Blut
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000318: blau
         http://purl(dot)obolibrary(dot)org/obo/CMO_0000013: Körperlänge
         http://purl(dot)obolibrary(dot)org/obo/VT_0001259: Körpermasse
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002019: Brackwasser
         http://purl(dot)obolibrary(dot)org/obo/PATO_0002359: breit
         http://purl(dot)obolibrary(dot)org/obo/CEPH_0000036: brüten
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000952: braun
+        http://eol(dot)org/schema/terms/browsing: Browser
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Burdigalian: Burdigalium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Calabrian: Calabrium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_02000046: Kalkschlamm
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_46719: Calcit
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_22984: Kalzium
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_32584: Kalziumsulfat Halbhydrat
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000096: Caldera
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Callovian: Callovium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Cambrian: Cambrium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Campanian: Campanium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000014: Kanal
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000169: Canyon
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Capitanian: Capitanium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Carnian: Karnium
+        http://purl(dot)obolibrary(dot)org/obo/FOODON_03413449: katadrom
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000067: Höhle
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000102: Höhleneingang
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000019: Höhlenboden
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000013: Höhlensystem
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002144: Höhlenwand
+        http://purl(dot)obolibrary(dot)org/obo/OBA_0000055: Zellgröße
+        http://www(dot)marinespecies(dot)org/traits/NonSolidCement: Zement
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Cenomanian: Cenomanium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Cenozoic: Känozoikum
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0001017: Zentrales Nervensystem
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002054: Kalk
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000301: Chaparral
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Chattian: Chattium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002237: Schwarzerde
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000271: Schott
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Cisuralian: Cisuralium
+        http://purl(dot)org/dc/terms/bibliographicCitation: Zitat
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000856: Stadt
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002982: Ton
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000120: Tonsediment
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002262: Tonerde
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000087: Klippe
         http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900035: Kletterpflanze
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000258: Kline
+        http://eol(dot)org/schema/terms/cloud_forest: Wolken- und Nebelwald
         http://purl(dot)obolibrary(dot)org/obo/UO_0000015: cm
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000081: cm^2
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000097: cm^3
         http://purl(dot)obolibrary(dot)org/obo/ENVO_01000687: küstennah
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002140: Geröll
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000118: Kokosnußplantage
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000163: Kaffeplantage
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000014: Farbe
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C16452: Kommunikation
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Coniacian: Coniacium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000196: Nadelwald
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000049: Korallenriff
+        https://eol(dot)org/schema/terms/coral_sand: Korallensand
+        http://purl(dot)obolibrary(dot)org/obo/PORO_0000232: Korallit
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000288: Baumwollplantage
+        http://rs(dot)tdwg(dot)org/dwc/terms/countryCode: Ländercode.
         http://purl(dot)obolibrary(dot)org/obo/ECOCORE_00000078: dämmerungsaktiv
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Cryogenian: Cryogenium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002236: Cryosol
+        http://purl(dot)obolibrary(dot)org/obo/ID_0000058: Zylinder
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000331: Zypressensumpf
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Danian: Danium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Dapingian: Dapingium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Darriwilian: Darriwilium
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000033: Tage
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001422: tot
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_30813: Caprinsäure
         http://purl(dot)obolibrary(dot)org/obo/PATO_0002301: niedrige Qualität
         http://purl(dot)obolibrary(dot)org/obo/UO_0000185: Grad
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000027: Grad Celsius
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000101: Delta
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000179: Wüste
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000883: Dornstrauchsavanne
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000156: Wüstenoase
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00005800: Wüstensand
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000242: Buschland
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Devonian: Devon
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_28941: Behensäure
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_30805: Laurinsäure
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000332: Doline
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Drumian: Drumium
+        http://eol(dot)org/schema/terms/dryFruit: Trockenfrucht
+        http://eol(dot)org/schema/terms/dryMass: Trockenmasse
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000170: Düne
+        http://eol(dot)org/schema/terms/earlySpring: Vorfrühling
+        http://eol(dot)org/schema/terms/earlySummer: Frühsommer
         http://purl(dot)obolibrary(dot)org/obo/RO_0002470: ernährt sich von
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_28822: Arachinsäure
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Eifelian: Eifelium
         http://purl(dot)obolibrary(dot)org/obo/PATO_0001154: verlängert
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000068: Embryonalstadium
+        http://eol(dot)org/schema/terms/endangered: gefährdet
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002634: Endoparasit von
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0010362: Endoskelett
+        http://eol(dot)org/schema/terms/endozoochory: Endozoochorie
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Eocene: Eozän
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0007376: Epidermis
+        http://www(dot)marinespecies(dot)org/traits/Epifaunal: epifaunal
+        http://eol(dot)org/schema/terms/epizoochory: Epizoochorie
         http://purl(dot)obolibrary(dot)org/obo/PATO_0001733: immergrün
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000843: Immergrüner Wald
         http://purl(dot)obolibrary(dot)org/obo/PATO_0002425: sichtbar
+        https://eol(dot)org/schema/terms/extirpated: ausgerottet
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000970: Augen
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Famennian: Famennium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000078: Bauernhof
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000912: schnell
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000022: Feder
         http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#foot: Fuß
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000383: weiblich
         http://eol(dot)org/schema/terms/FossilFirst: erstes Auftreten
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000039: Fjord
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Floian: Floium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000154: Überschwemmungswiese
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_46713: Fluorit
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000174: Wald
+        http://eol(dot)org/schema/terms/forestEdge: Waldrand
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002261: Waldboden
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Fortunian: Fortunium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Frasnian: Frasnium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000873: Süßwasser
+        https://eol(dot)org/schema/terms/freshwater_animals: Süßwassertiere
+        https://eol(dot)org/schema/terms/freshwater_carnivore: Fleischfressende Süßwasserfische
+        http://eol(dot)org/schema/terms/fructose: Fructose
         http://purl(dot)obolibrary(dot)org/obo/PO_0009001: Frucht
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000021: g
+        http://eol(dot)org/schema/terms/gramsPerCentimeterSquaredPerDay: g/cm^2/Tag
+        http://eol(dot)org/schema/terms/gramsPercm2PerYear: g/cm^2/Jahr
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000084: g/cm^3
+        http://eol(dot)org/schema/terms/gramsPerMeterSquared: g/m^2
+        http://eol(dot)org/schema/terms/gramsPerMonth: g/Monat
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Gelasian: Gelasium
+        http://eol(dot)org/schema/terms/genotype: Genotyp
         http://eol(dot)org/schema/terms/Present: Geographische Verteilung enthält
         http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900024: Kryptophyt
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Givetian: Givetium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000248: Gletschertal
         http://purl(dot)obolibrary(dot)org/obo/NBO_0000369: gleitend
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Gorstian: Gorstium
+        http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900036: Gras
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000177: Grasland
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000320: grün
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Guzhangian: Guzhangium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Gzhelian: Gzhelium
         http://purl(dot)obolibrary(dot)org/obo/RO_0002303: Lebensraum
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000028: Tiefsee
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000463: Hafen
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002635: hat Endoparasiten
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Hauterivian: Hauterivium
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000033: Kopf
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000948: herzförmig
         http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900025: Sumpfpflanze
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_32365: Margarinsäure
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Hettangian: Hettangium
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_15756: Palmitinsäure
+        http://ncicb(dot)nci(dot)nih(dot)gov/xml/owl/EVS/Thesaurus(dot)owl#C25227: hoch
+        http://eol(dot)org/schema/terms/highCNRatio: hoch (>59)
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000083: Hügel
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Holocene: Holozän
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Homerian: Homerium
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0036016: Honig
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001855: horizontal
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002173: Krankenhaus
         http://purl(dot)obolibrary(dot)org/obo/RO_0002453: Gastgeber von
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000000: Humus
         http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900026: Wasserpflanze
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_52255: Hydroxylapatit
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000277: Eis
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000145: Eiskappe
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000298: Eisberg
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C12735: Immunsystem
         http://purl(dot)obolibrary(dot)org/obo/EFO_0004387: Zoll
         http://purl(dot)obolibrary(dot)org/obo/PATO_0002300: erhöhte Qualität
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Induan: Indusium
+        http://www(dot)ebi(dot)ac(dot)uk/efo/EFO_0000548: Instrument
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000625: invertiert
+        http://purl(dot)obolibrary(dot)org/obo/RO_0002471: ist Beute von
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000098: Insel
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Jiangshanian: Jiangshanium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Jurassic: Jura
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001190: jugendlich
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000175: Karst
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00012411: Karsthöhle
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Kasimovian: Kasimovium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Katian: Katium
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000012: Kelvin
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000009: kg
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000086: kg/m^2
+        http://eol(dot)org/schema/terms/kilogramsPerMeterSquaredPerYear: kg/m^2/Jahr
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Kimmeridgian: Kimmeridgium
+        http://eol(dot)org/schema/terms/squarekilometer: km^2
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Kungurian: Kungurium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Ladinian: Ladinium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000038: Lagune
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000252: See
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Langhian: Langhium
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000586: groß
+        http://eol(dot)org/schema/terms/lateSpring: Spätfrühling
+        http://eol(dot)org/schema/terms/lateSummer: Spätsommer
+        http://eol(dot)org/schema/terms/lateWinter: Spätwinter
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000322: Lavahöhle
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000095: Lavafeld
+        http://mimi(dot)case(dot)edu/ontologies/2009/1/UnitsOntology#US_pound: lb
+        http://semanticscience(dot)org/resource/SIO_000041: Länge
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000050: Lebenserwartung
         http://purl(dot)obolibrary(dot)org/obo/PATO_0001199: linear
+        http://eol(dot)org/schema/terms/littoralZone: Litoral
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Llandovery: Llandovery
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Lochkovian: Lochkovium
+        http://ncicb(dot)nci(dot)nih(dot)gov/xml/owl/EVS/Thesaurus(dot)owl#C54722: niedrig
+        http://eol(dot)org/schema/terms/lowCNRatio: niedrig (<23)
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/LowerCretaceous: Kreide
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/LowerDevonian: Unterdevon
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Ludfordian: Ludfordium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Ludlow: Ludlow
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Lutetian: Lutetium
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000008: m
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000080: m^2
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000245: Maar
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Maastrichtian: Maastrichtium
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_25107: Magnesium (Mg)
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000384: Männlich
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000181: Mangrovensumpf
         http://semanticscience(dot)org/resource/SIO_001114: max.
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000199: Mediterraner Wald
+        http://eol(dot)org/schema/terms/mediumCNRatio: Mittel (23 – 59)
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000461: medium (normal)
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Mesozoic: Mesozoikum
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Messinian: Messinium
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C28240: metabolisch
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000022: mg
+        http://eol(dot)org/schema/terms/milligramsPercm2: mg/cm^2
+        http://eol(dot)org/schema/terms/milligramsPercm2PerDay: mg/cm^2/Tag
+        http://eol(dot)org/schema/terms/milligramspergram: mg/g
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000273: mg/l
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000309: mg/m^2
+        http://purl(dot)obolibrary(dot)org/obo/UO_0010049: g/m^2
+        http://eol(dot)org/schema/terms/midSpring: Mitte des Frühlings
+        http://eol(dot)org/schema/terms/midSummer: Mittsommer
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/MiddleDevonian: Mitteldevon
+        http://eol(dot)org/schema/terms/millimeterspermonth: Millimeter pro Monat
+        http://eol(dot)org/schema/terms/paleo_megaannum: vor Millionen von Jahren
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000125: Mineralquelle
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_46662: Minerale
         http://purl(dot)obolibrary(dot)org/obo/PATO_0002122: gemischt
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000016: mm
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000272: mm hg
         http://purl(dot)obolibrary(dot)org/obo/UO_0010005: mm/Tag
         http://purl(dot)obolibrary(dot)org/obo/NCIT_C105508: mm/sek
         http://eol(dot)org/schema/terms/millimetersPerYear: mm/Jahr
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000082: mm^2
+        http://eol(dot)org/schema/terms/millimetersSquaredPerMilligram: mm^2/mg
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000063: mmol/l
+        http://eol(dot)org/schema/terms/mol_per_meter_squared_per_day: mol/m^2/Tag
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000035: Monate
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000231: Moor
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000177: Muräne
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000081: Berg
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000084: Gebirgspass
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000080: Gebirgszug
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0005090: Muskel
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000465: Naturhafen
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000363: Naturschutzgebiet
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C12755: Nervensystem
+        http://purl(dot)bioontology(dot)org/ontology/MESH/D009422: Krankheiten des
+          Nervensystems
+        https://eol(dot)org/schema/terms/nanomolpergram: nmol/g
         http://eol(dot)org/schema/terms/no: nein
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Norian: Norium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Olenekian: Olenekium
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000953: orange
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000115: Obstplantage
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Ordovician: Ordovizium
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C12919: Organsystem
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_15379: Sauerstoff
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Paleoproterozoic: Paläoproterozoikum
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Paleozoic: Paläozoikum
         http://purl(dot)obolibrary(dot)org/obo/PORO_0000436: gefingert
         http://purl(dot)obolibrary(dot)org/obo/UO_0000187: Prozent
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Pleistocene: Pleistozän
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Pliensbachian: Pliensbachium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Pliocene: Pliozän
+        https://eol(dot)org/schema/terms/picomolpermetersquaredpersecond: pmol/m^2/s
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000894: Polar
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000339: Polar
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000140: Position
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Pragian: Pragium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000260: Prärie
         http://purl(dot)obolibrary(dot)org/obo/RO_0002439: jagt
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Priabonian: Priabonium
         http://purl(dot)obolibrary(dot)org/obo/PATO_0002389: niederliegend
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_36080: Proteine
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_26401: Purine
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000951: lila
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000065: Eisenbahn
         http://purl(dot)obolibrary(dot)org/obo/UO_0010006: Verhältnis
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000322: rot
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Rhaetian: Rhaetium
         http://purl(dot)obolibrary(dot)org/obo/FLOPO_0005532: Rhizompflanze
         http://purl(dot)obolibrary(dot)org/obo/PO_0004542: Rhizom
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Rhuddanian: Rhuddanium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Rhyacian: Rhyacium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000296: Reisfeld
         http://purl(dot)obolibrary(dot)org/obo/ENVO_01000253: Fluss
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000384: Flußbett
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000386: Flußmündung
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Roadian: Roadium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00001995: Fels
         http://purl(dot)obolibrary(dot)org/obo/PO_0009005: Wurzeln
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000164: Gummiplantage
         http://purl(dot)obolibrary(dot)org/obo/NBO_0000055: läuft
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Rupelian: Rupelium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Sakmarian: Sakmarium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000019: Salzsee
         http://purl(dot)obolibrary(dot)org/obo/NBO_0000370: Hüpfen
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000017: Sand
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Sandbian: Sandbium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Santonian: Santonium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000178: Savanne
+        http://rs(dot)tdwg(dot)org/dwc/terms/scientificName: Wissenschaftliche Bezeichnung
         http://purl(dot)obolibrary(dot)org/obo/PO_0005848: sekundäres Xylem
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002007: Sediment
         http://purl(dot)obolibrary(dot)org/obo/PO_0009010: Samen
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Selandian: Seelandium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Serpukhovian: Serpukhovium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Serravallian: Serravallium
+        http://rs(dot)tdwg(dot)org/dwc/terms/sex: Geschlecht
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000052: Form
         http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900034: Strauch
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0012245: Seide
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Silurian: Silur
         http://purl(dot)obolibrary(dot)org/obo/PO_0020042: einfach
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000117: Größe
         http://purl(dot)obolibrary(dot)org/obo/UBERON_0004288: Skelett
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000911: langsam
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000587: klein
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000146: Schneefeld
+        http://purl(dot)org/dc/terms/source: Quelle
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000027: Quelle (Wasser)
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Statherian: Statherium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000262: Steppe
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000251: Subpolar
+        http://eol(dot)org/schema/terms/subshrub: Halbstrauch
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000205: subtropisch
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000184: subtropische Wüste
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000187: subtropische Savanne
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000233: Sumpf
         http://purl(dot)obolibrary(dot)org/obo/CMO_0000445: Zitzenzahl
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0001091: Zähne
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Telychian: Telychium
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000146: Temperatur
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Terreneuvian: Terreneuvium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Thanetian: Thanetium
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0000915: Dicke
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Tithonian: Tithonium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Toarcian: Toarcium
         http://purl(dot)obolibrary(dot)org/obo/UO_0010038: Tonnen
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Tournaisian: Tournaisium
         http://purl(dot)obolibrary(dot)org/obo/PATO_0002044: trapezförmig
         http://purl(dot)obolibrary(dot)org/obo/FLOPO_0900033: Baum
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Tremadocian: Tremadocium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Triassic: Trias
+        http://eol(dot)org/schema/terms/TropicalOcean: Tropischer Ozean
+        http://eol(dot)org/schema/terms/tropicalOrSubtropical: Tropisch oder subtropisch
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_01000180: Tundra
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000068: Tunnel
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Turonian: Turonium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_02000052: Regenschirm
+        http://eol(dot)org/schema/terms/unknown: unbekannt
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_27226: Harnsäure
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Valanginian: Valanginium
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000100: Tal
         http://purl(dot)obolibrary(dot)org/obo/CHEBI_52241: Vaterit
+        http://purl(dot)bioontology(dot)org/ontology/SNOMEDCT/258262008: sehr groß
+        http://dicom(dot)nema(dot)org/resources/ontology/DCM/112132: sehr klein
+        http://purl(dot)obolibrary(dot)org/obo/CHEBI_33229: Vitamine
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000094: vulkanisch
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000246: Vulkankrater
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000354: Vulkanfeld
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000247: Vulkan
         http://purl(dot)obolibrary(dot)org/obo/PATO_0001710: Volumen
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000031: Trockental
+        http://eol(dot)org/schema/terms/SeawaterTemperature: Wassertemperatur
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000040: Wasserfall
         http://purl(dot)obolibrary(dot)org/obo/UO_0000114: Watt
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Wenlock: Wenlock
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000323: weiß
+        http://semanticscience(dot)org/resource/SIO_000042: Breite
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002040: Wald
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Wordian: Wordium
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Wuchiapingian: Wuchiapingium
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000036: Jahre
         http://purl(dot)obolibrary(dot)org/obo/PATO_0000324: gelb
         http://purl(dot)obolibrary(dot)org/obo/PATO_0001941: gelb-grün
+        http://eol(dot)org/schema/terms/yes: ja
+        http://resource(dot)geosciml(dot)org/classifier/ics/ischart/Zanclean: Zancleum
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000023: µg
+        http://eol(dot)org/schema/terms/µg_cm-2: µg/cm^2
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000017: µm
+        http://eol(dot)org/schema/terms/perMicrometer: µm^(-1)
+        http://eol(dot)org/schema/terms/squareMicrometer: µm^2
+        http://eol(dot)org/schema/terms/cubicMicrometer: µm^3
+        https://eol(dot)org/schema/terms/micromolpergram: µmol/g
+        http://purl(dot)obolibrary(dot)org/obo/NCIT_C48508: µmol/l
         http://purl(dot)obolibrary(dot)org/obo/UO_0000064: µmol/l
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0000165: Mund
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0001038: Chordotonalorgan
+        http://purl(dot)obolibrary(dot)org/obo/TAO_0009000: Zelle
+        http://eol(dot)org/schema/terms/cubicMillimeter: mm^3
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00000218: Schwarzer Raucher
+        http://purl(dot)obolibrary(dot)org/obo/ENVO_00002249: Phaeozem
         http://purl(dot)obolibrary(dot)org/obo/UO_0000106: Hz
+        http://purl(dot)obolibrary(dot)org/obo/UO_0000259: dB
+        http://eol(dot)org/schema/terms/mol_m-2_s-1: mol/m^2/s
         http://rs(dot)tdwg(dot)org/ontology/voc/TaxonName#Isotype: Isotyp
+        http://eol(dot)org/schema/terms/MuseumOfForestryLycksele: Museum Of Forestry
+          Lycksele
+        http://eol(dot)org/schema/terms/collection_AGarai: Sammlung A. Garai
+        http://eol(dot)org/schema/terms/collection_Fwillemse: Sammlung F. Willemse
+        http://eol(dot)org/schema/terms/collection_GHSchmidt: Sammlung G. H. Schmidt
+        http://eol(dot)org/schema/terms/collection_Heller: Sammlung Heller
+        http://eol(dot)org/schema/terms/collection_Singrisch: Sammlung Singrisch
+        http://eol(dot)org/schema/terms/Entomological_Museum_Department_of_Agriculture_Bangkok_Thailand: Entomological
+          Museum Department of Agriculture Bangkok Thailand
+        http://eol(dot)org/schema/terms/King_Abdulaziz_University: King Abdulaziz
+          University
+        http://eol(dot)org/schema/terms/Löbbecke_Museum_Düsseldorf: Löbbecke Museum
+          Düsseldorf
+        http://eol(dot)org/schema/terms/Mus_Rothschild: Museum Rothschild
+        http://eol(dot)org/schema/terms/Muséum_d'histoire_naturelle_de_la_Ville_de_Genève: Muséum
+          d'histoire naturelle de la Ville de Genève
+        http://eol(dot)org/schema/terms/Zoological_Museum_Helsinki: Zoologisches Museum
+          Helsinki
+        http://eol(dot)org/schema/terms/prototype: Prototyp
+        http://eol(dot)org/schema/terms/larvaAndPupa: Larve und Puppe
+        http://eol(dot)org/schema/terms/maleAndHermaphrodite: Männlich und hermaphrodit
+        http://eol(dot)org/schema/terms/maleFemaleAndHermaphrodite: Männlich weiblich
+          und hermaphrodit
+        http://purl(dot)obolibrary(dot)org/obo/PATO_0001340: Hermaphrodit
+        http://purl(dot)obolibrary(dot)org/obo/UBERON_0003143: Puppe
 ...

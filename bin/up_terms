@@ -2,4 +2,3 @@
 bundle update eol_terms
 ./bin/stop_work
 nohup rails r "TermBootstrapper.new.load" > log/term_bootstrap.log 2>&1 &
-cat log/term_bootstrap.log

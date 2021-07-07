@@ -61,3 +61,5 @@ Add neo4j_driver_url, neo4j_user, neo4j_password to secrets.yml (see sample)
 === For Deploys after 2021-4-26
 
 run Locale.rebuild_language_mappings after the deploy
+
+== UP TO DATE IN PRODUCTION UP TO HERE

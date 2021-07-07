@@ -7,6 +7,7 @@
 # Author: Pyscowicz
 # Author: Robby
 # Author: Shirayuki
+# Author: Umlaut
 # Author: Verdy p
 ---
 qqq:
@@ -46,6 +47,7 @@ qqq:
       * [https://iso639-3.sil.org/code/caq Car Nicobarese], on the ISO 639-3 website.
       * [https://glottolog.org/resource/languoid/id/carn1240 Car Nicobarese], on Glottolog.
       * [[w:en:Car language|Car language]], on English Wikipedia.
+    q2591230: Eigentlich Huni Kuin, siehe https://de.wikipedia.org/wiki/Huni_Kuin
   medium_header_description: '{{Identical|Description}}'
   pages:
     iucn_status:
@@ -59,6 +61,11 @@ qqq:
   rank:
     name:
       r_class: '{{identical|Class}}'
+  reconciliation:
+    schema_space:
+      headers:
+        name: '{{identical|Name}}'
+        description: '{{identical|Description}}'
   search:
     full_name: '{{Optional}}'
   sections:

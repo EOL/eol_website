@@ -28,7 +28,7 @@ module EolWebsite
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :en
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
-    config.i18n.available_locales = %i(en mk fi pt-BR fr zh-TW zh-CN pms tr ar el nl)
+    config.i18n.available_locales = %i(en mk fi pt-BR fr zh-TW zh-CN pms tr ar el nl de)
 
     # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
     # the I18n.default_locale when a translation cannot be found).

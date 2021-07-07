@@ -1,0 +1,21 @@
+Service Manifest:
+
+{
+  "versions": ["0.2"],
+  "name": "EOL Pages",
+  "identifierSpace": <some URI, probably a URL>,
+  "schemaSpace": <some URI that points to a page with *more* URIs, one for each exposed Page propery>,
+  "types": [
+    {
+      id: "page",
+      description: "A representation of a taxon in EOL"
+    }
+  ],
+  "view": "https://eol.org/{{id}}", // assume a Page identifier is of the form "pages/<page_id>"
+  // skip feature_view for now
+  // skip preview for now
+  // suggest -- circle back -- may be useful
+  // extend -- as above
+}
+
+Need to check on state of CORS and how to extend to this API

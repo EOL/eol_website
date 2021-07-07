@@ -830,7 +830,12 @@ nl:
       search: Trait zoeken
   rank:
     name:
+      r_domain: domein
       r_subdomain: onderdomein
+      r_infradomain: infradomein
+      r_superkingdom: superrijk
+      r_kingdom: rijk
+      r_subkingdom: subrijk
       r_subphylum: onderstam
       r_superclass: superklasse
       r_suborder: onderorde
@@ -1130,14 +1135,15 @@ nl:
         een taxon te klikken.
       about_this_chart_tooltip_sankey_2d: Dit is een samenvatting op basis van gegevens
         die beschikbaar zijn in EOL. Dit kan onvolledig zijn! U kunt een categorie
-        uit elke as selecteren om uw zoekresultaten te verfijnen. Merk op dat een
-        bepaalde soort in meer dan één categorie op dezelfde as kan worden opgenomen.
+        uit elke as selecteren om uw zoekresultaten te verfijnen. Veel categorieën
+        overlappen en een soort kan in meer dan één categorie op dezelfde as worden
+        opgenomen.
       about_this_chart_tooltip_sankey_3+: Dit is een samenvatting op basis van gegevens
         die beschikbaar zijn in EOL. Dit kan onvolledig zijn! U kunt een categorie
-        op elke as selecteren om uw zoekresultaten te verfijnen. Merk op dat een bepaalde
-        soort in meer dan één categorie op dezelfde as kan worden opgenomen. In een
-        gemarkeerde subsetweergave worden deze soorten met meerdere waarden meerdere
-        keren geteld in andere assen.
+        op elke as selecteren om uw zoekresultaten te verfijnen. Veel categorieën
+        overlappen en een soort kan in meer dan één categorie op dezelfde as worden
+        opgenomen. In een gemarkeerde subsetweergave worden deze soorten met meerdere
+        waarden meerdere keren geteld in andere assen.
       other_term_name: andere %{term_name}
       hist_value_label: waarde (%{units})
       n_other_records:

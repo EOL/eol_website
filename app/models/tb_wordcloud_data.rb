@@ -1,35 +1,34 @@
 require "fileutils"
 
 class TbWordcloudData
-  DATA_FILE_PATH = Rails.root.join("data", "top_pred_counts.json")
+  URI_FILE_PATH = Rails.root.join('config', 'tb_wordcloud', 'uris.txt')
+  DATA_FILE_PATH = Rails.root.join('data', 'top_pred_counts.json')
   PRED_LIMIT = 50
 
   class << self
     def generate_file
-      q = "MATCH (trait:Trait)-[:predicate]->(pred:Term)\n"\
-          "WHERE pred.name is not null\n"\
-          "AND pred.is_hidden_from_overview = false\n"\
-          "AND NOT (pred)-[:synonym_of]->(:Term)\n"\
-          "WITH pred.uri AS uri, pred.name AS name, count(trait) as trait_count\n"\
-          "RETURN name, uri, trait_count\n"\
-          "ORDER BY trait_count DESC\n"\
-          "LIMIT #{PRED_LIMIT}"\
+      validate_uris
+      pred_count_json = uris_for_query.map do |uri|
+        q = <<~CYPHER
+          MATCH (pred:Term{uri: $uri })
+          OPTIONAL MATCH (page:Page)-[:trait|:inferred_trait]->(trait:Trait)-[:predicate]->(pred)
+          WITH pred.uri AS uri, pred.name AS name, count(DISTINCT page) as page_count
+          RETURN name, uri, page_count
+        CYPHER
 
-      puts "Running query"
-      raw_result = TraitBank.query(q)
-      puts "Query finished, processing results"
+        puts "Running query for uri #{uri}"
+        result = ActiveGraph::Base.query(q, uri: uri)
+        raise "Failed to get a result for uri #{uri}" unless result.any?
+        first = result.first
 
-      if raw_result && raw_result["data"]
-        result = raw_result["data"].collect do |datum|
-          {
-            name: datum[0],
-            uri: datum[1],
-            count: datum[2]
-          }
-        end.to_json
-      else
-        raise "No results returned"
-      end
+        {
+          uri: first[:uri],
+          name: first[:name],
+          count:  first[:page_count]
+        }
+      end.reject { |a| a[:count] == 0 }.sort { |a, b| b[:count] <=> a[:count] }.to_json
+
+      puts "Finished queries"
 
       file_path = DATA_FILE_PATH
       backup_path = "#{DATA_FILE_PATH}.bak"
@@ -45,7 +44,7 @@ class TbWordcloudData
 
       puts "Writing data to #{file_path}"
       File.open(file_path, "w") do |f|
-        f.write(result)
+        f.write(pred_count_json)
       end
 
       puts "Done!"
@@ -61,6 +60,22 @@ class TbWordcloudData
       end
 
       return @data
+    end
+
+    def validate_uris
+      puts "Validating uris against EolTerms"
+
+      uris_for_query.each do |uri|
+        raise "Invalid uri: #{uri}" unless EolTerms.includes_uri?(uri)
+      end
+
+      puts "All uris are valid"
+    end
+
+    private
+
+    def uris_for_query
+      @uris_for_query ||= IO.readlines(URI_FILE_PATH, chomp: true)
     end
   end 
 end

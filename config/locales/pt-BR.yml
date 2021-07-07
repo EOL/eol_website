@@ -74,12 +74,18 @@ pt-BR:
   change_your_password: Alterar sua senha
   classifications:
     children:
+      header_html:
+        one: '%{name} inclui <a href="%{names_path}">%{count} filho</a>:'
+        other: '%{name} inclui <a href="%{names_path}">%{count} filhos</a>:'
       see_more: ver mais
     hierarchies:
       header: Hierarquias selecionadas para %{sci_name}
       see_resource_file: Veja o <a href='%{href}'>arquivo de recurso</a> para uma
         lista completa.
       this_page: (essa página)
+      truncated_siblings:
+        one: Um irmão adicional truncado para abreviar.
+        other: '%{count} irmãos adicionais truncado por brevidade.'
     richness:
       header: Riqueza da página
       score: pontuação de riqueza
@@ -278,23 +284,30 @@ pt-BR:
       worms: Vermes
     eol_is_hosted_by: 'EOL é hospedado por:'
   forgot_your_password: Esqueceu sua senha?
+  gbif_download:
+    created: Trabalho de download GBIF criado. Verifique sua <a href="%{url}">página
+      de perfil do usuário</a> para ver seu status
   landing_page:
     header: Acesso global ao conhecimento sobre a vida na terra.
     stats_cleared: As estatísticas foram recalculadas.
   language: Idioma
   languages:
     ab: Abcázia
+    q27683: Achineses
     q27776: Adigue
     aa: Afar
     af: Africâner
     ak: Acã
     alb: Albanês
     sq: Albanês
+    q131339: Alemânico
     am: Amárica
     ar: Árabe
     an: Aragonesa
     hy: Armênio
     as: Assamesa
+    q29507: Asturiano
+    q56590: Atikamekw
     av: Avar
     ae: Avéstico
     ay: Aimará
@@ -302,17 +315,26 @@ pt-BR:
     az: Azerbaijano
     q33070: Balinês
     bm: Bambara
+    q33151: Banjar
     ba: Basquir
     eu: Basco
+    q29540: Bávaro
     be: Bielorrussa
+    q8836490: Bende
     bn: Bengalês
     bh: Línguas biaris
     bi: Bislamá
     nb: Bokmål norueguês
+    q4941378: Bondei
     bs: Bósnia
+    q33202: Brahui
     q750553: Português do Brasil
     br: Bretã
     bg: Búlgaro
+    my: Birmanês
+    q33120: Buriates
+    q35037: Businenge Tongo
+    q880301: Francês Cajun
     q35156: Carro
     ca: Catalão; Valenciano
     ch: Chamorro
@@ -650,6 +672,14 @@ pt-BR:
       r_form: forma
   recaptcha: Recaptcha
   recaptcha_error: Por favor, diga-nos que você não é um robô.
+  reconciliation:
+    property:
+      name:
+        ancestor: Antepassado
+    schema_space:
+      headers:
+        id: ID
+        description: Descrição
   reference_compiled_from: Referenciado por %{links}
   reference_compiled_from_article: Artigo de %{source} com o titulo de «%{name}»
   register_new_account: Registre-se para uma nova conta

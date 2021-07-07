@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: FinlandMan
+# Author: MITO
 # Author: Moj
 # Author: Muovipullo
 # Author: Nike
@@ -634,6 +635,15 @@ fi:
       search: Ominaisuuksien haku
   recaptcha: Recaptcha
   recaptcha_error: Kerro meille, että et ole robotti.
+  reconciliation:
+    property:
+      name:
+        rank: Sija
+    schema_space:
+      headers:
+        id: Tunniste
+        name: Nimi
+        description: Kuvaus
   register_new_account: Rekisteröi uusi käyttäjätunnus
   resources:
     actions:

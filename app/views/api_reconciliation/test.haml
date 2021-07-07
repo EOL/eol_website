@@ -1,0 +1,7 @@
+%h2 Reconciliation API Test
+= form_tag(api_reconciliation_path, method: "GET") do
+  %textarea#query{name: "queries", cols: 100, rows: 20}= JSON.pretty_generate(@sample_query)
+  %div
+    %input{type: "submit"}
+
+

@@ -1,0 +1,16 @@
+%h1 Reconciliation API Schema
+
+%p= t('.intro')
+
+%table.uk-table
+  %thead
+    %tr
+      %th= t('.headers.id')
+      %th= t('.headers.name')
+      %th= t('.headers.description')
+  %tbody
+    - ReconciliationResult::PropertyType::ALL.each do |prop|
+      %tr
+        %td= prop.id
+        %td= prop.name
+        %td= prop.description

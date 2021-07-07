@@ -1,6 +1,7 @@
 # Messages for Italian (italiano)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Ajeje Brazorf
 # Author: Beta16
 # Author: G313
 # Author: JackLantern
@@ -9,7 +10,7 @@
 # Author: Ubibi
 ---
 it:
-  language_name: Inglese
+  language_name: Italiano
   about:
     trait_bank:
       title: TraitBank
@@ -336,37 +337,70 @@ it:
     dzo: Dzongkha
     q4126517: Inuktitut canadese orientale
     en: Inglese
+    q29952: Erzano
     eo: Esperanto
     et: Estone
     est: Estone
+    ee: Ewe
+    fo: Faroese
     fj: Figiano
     fi: Finlandese
     fin: Finlandese
+    q667747: Fipa
     fr: Francese
     fra: Francese
+    ff: Fula
     gd: Gaelico scozzese
+    gl: Galiziano
     q33475: Gan Chinese
+    lg: Luganda
     ka: Georgiano
     de: Tedesco
     deu: Tedesco
+    q5575236: konkani goano
+    q3272630: Gogo
+    q2501174: Gorontalo
     el: Greco moderno (1453-)
     gre: Greco
+    gn: Gujarati
     gu: Gujarati
+    q33303: Haida
+    ha: Hausa
     he: Ebraico
     heb: Ebraico
+    hz: Herero
+    q35978: Hiligaynon
     hi: Hindi
+    ho: Hiri motu
     hu: Ungherese
     is: Islandese
     ice: Islandese
+    io: Ido
+    ig: Igbo
+    q35936: Ilocano
     id: Indonesiano
+    q33509: Inguscio
     ia: Interlingua (International Auxiliary Language Association)
     iu: Inuktitut
+    ik: Inupiaq
     q33595: Iraqw
     ga: Irlandese
     it: Italiano
     ita: Italiano
     ja: Giapponese
     jp: Giapponese
+    jv: Giavanese
+    q35475: kabiye
+    q35853: Cabilo
+    kl: Kalaallisut; groenlandese
+    q33634: Calmucco
+    kn: Kannada
+    kr: Kanuri
+    q36121: Kapampangan
+    q33541: Karakalpako
+    ks: Kashmiri
+    q33690: Casciubo
+    kk: Kazako
     ko: Coreano
     kor: Coreano
     lo: Lao
@@ -609,6 +643,15 @@ it:
       r_infraspecies: infraspecie
   recaptcha: Recaptcha
   recaptcha_error: Per favore dimostraci di non essere un robot.
+  reconciliation:
+    property:
+      name:
+        rank: Posizione
+    schema_space:
+      headers:
+        id: ID
+        name: Nome
+        description: Descrizione
   reference_compiled_from: Referenziato da %{links}
   reference_compiled_from_article: '%{source} voce intitolata "%{name}"'
   register_new_account: Registra una nuova utenza

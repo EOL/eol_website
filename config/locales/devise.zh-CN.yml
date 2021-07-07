@@ -2,76 +2,77 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: A Chinese Wikipedian
+# Author: Shizhao
 # Author: Shoufen
 ---
 zh-CN:
   devise:
     confirmations:
-      confirmed: 此电子邮件地址已成功验证。
-      send_instructions: 您将收到一封电子邮件，说明如何在几分钟内确认您的电子邮件地址。
-      send_paranoid_instructions: 如果您的电子邮件地址存在于我们的数据库中，您将收到一封电子邮件，说明如何在几分钟内确认您的电子邮件地址。
+      confirmed: 您的电子邮件地址已成功确认。
+      send_instructions: 您将在几分钟内收到一封电子邮件，其中包含有关如何确认您的电子邮件地址的说明。
+      send_paranoid_instructions: 如果您的电子邮件地址存在于我们的数据库中，您将在几分钟内收到一封电子邮件，其中包含有关如何确认您的电子邮件地址的说明。
     failure:
-      already_authenticated: 您已经登录了。
+      already_authenticated: 您已经登录。
       inactive: 您的帐户尚未激活。
       invalid: 无效的%{authentication_keys}或密码。
-      locked: 您的帐户被锁定，请在一小时后尝试登录
-      last_attempt: 在您的帐户被锁定之前，您还有一次尝试。
+      locked: 您的帐户已被锁定，请过一小时后再试
+      last_attempt: 在您的帐户被锁定之前，您还有一次尝试机会。
       not_found_in_database: 无效的%{authentication_keys}或密码。
-      recaptcha_error: 下面的recaptcha代码有错误。请重新输入代码，然后单击提交。
-      timeout: 您的会话已过期，请再次登录以继续。
-      unauthenticated: 您需要登录或注册以继续。
-      unconfirmed: 继续之前，您必须确认您的电子邮件地址。
+      recaptcha_error: 下面的recaptcha代码有错误。请重新输入代码，然后点击提交。
+      timeout: 您的会话已过期。请重新登录以继续。
+      unauthenticated: 您需要先登录或注册才能继续。
+      unconfirmed: 在继续之前，您必须确认您的电子邮件地址。
     mailer:
       confirmation_instructions:
-        action: 确认账户
-        greeting: 欢迎 %{recipient}！
+        action: 确认我的帐户
+        greeting: 欢迎%{recipient}！
         instruction: 您可以通过以下链接确认您的帐户电子邮件：
-        subject: 确认信息
+        subject: 确认说明
       reset_password_instructions:
         action: 更新我的密码
-        greeting: '您好 #{recipient}!'
-        instruction: 有人请求了更改密码的链接，您可以通过下面的链接执行此操作。
-        instruction_2: 如果您没有请求，请忽略此电子邮件。
-        instruction_3: 在您访问上面的链接并创建一个新链接之前，您的密码不会更改。
+        greeting: 您好#{recipient}!
+        instruction: 有人请求提供更改密码的链接，您可以通过以下链接执行此操作。
+        instruction_2: 如果您没有提出要求，请忽略此电子邮件。
+        instruction_3: 在您访问上面的链接并创建一个新密码之前，您的密码不会更改。
         subject: 重置密码说明
       unlock_instructions:
         subject: 解锁说明
       password_change:
-        greeting: '您好 #{recipient}!'
-        message: 我们将与您联系，通知您密码已更改。
-        subject: 已更改密码
+        greeting: 您好#{recipient}!
+        message: 我们正在与您联系，通知您密码已更改。
+        subject: 密码已更改
     passwords:
-      no_token: 您必须从密码重新设定电子邮件进入此页。如果您是从密码重新设定电子邮件进入，请确定您使用了完整的网址(URL)。
-      send_instructions: 您将收到一封电子邮件，说明如何在几分钟内重新设定您的密码。
-      send_paranoid_instructions: 如果您的电子邮件地址存在于我们的数据库中，您将在在几分钟内收到一封电子邮件，给与您一个密码恢复链接。
+      no_token: 如果没有密码重置电子邮件，您将无法访问此页面。如果您确实来自密码重置电子邮件，请确保您使用了提供的完整URL。
+      send_instructions: 您将在几分钟内收到一封电子邮件，其中包含有关如何重置密码的说明。
+      send_paranoid_instructions: 如果您的电子邮件地址存在于我们的数据库中，您将在几分钟后通过您的电子邮件地址收到密码恢复链接。
       updated: 您的密码已成功更改。您现在已登录。
-      updated_not_active: 您的密码已成功更改
+      updated_not_active: 你已经成功更改密码。
     registrations:
       destroyed: 再见！您的账号已成功取消。我们希望在不久的将来再见到您。
-      signed_up: 您已成功注册。
-      signed_up_but_inactive: 您已成功注册。但是，我们无法让您登录，因为您的帐户尚未激活。
+      signed_up: 欢迎！您已注册成功。
+      signed_up_but_inactive: 您已注册成功。 但是，我们无法让您登录，因为您的帐户尚未激活。
       signed_up_but_locked: 您已成功注册。但是，由于您的帐户已被锁定，我们无法为您登录。
-      signed_up_but_unconfirmed: 包含确认链接的消息已发送到您的电子邮件地址。请点击该链接激活您的帐户。
-      update_needs_confirmation: 您成功更新了您的帐户，但我们需要验证您的新电子邮件地址。请检查您的电子邮件，并按照确认链接确认您的新电子邮件地址。
+      signed_up_but_unconfirmed: 带有确认链接的消息已发送到您的电子邮件地址。请按照链接激活您的帐户。
+      update_needs_confirmation: 您已成功更新您的帐户，但我们需要验证您的新电子邮件地址。请检查您的电子邮件并按照确认链接确认您的新电子邮件地址。
       updated: 您的帐号已成功更新。
     sessions:
-      signed_in: 成功登录。
-      signed_out: 成功注销。
-      already_signed_out: 成功注销。
+      signed_in: 登录成功。
+      signed_out: 成功退出。
+      already_signed_out: 成功退出。
       recaptcha: Recaptcha验证错误
-      sign_in_remember_me_disabled_for_admins: 出于安全考虑，管理员不能使用记住我的功能。
+      sign_in_remember_me_disabled_for_admins: 出于安全原因，管理员不能使用记住我功能。
     unlocks:
-      send_instructions: 您将收到一封电子邮件，说明如何在几分钟内解锁您的帐户。
-      send_paranoid_instructions: 如果您的帐户存在，您将收到一封电子邮件，其中包含有关如何在几分钟内解锁帐户的说明。
-      unlocked: 您的帐号已成功解锁。请登录继续。
+      send_instructions: 您将在几分钟内收到一封电子邮件，其中包含有关如何解锁帐户的说明。
+      send_paranoid_instructions: 如果您的帐户存在，您将在几分钟内收到一封电子邮件，其中包含有关如何解锁的说明。
+      unlocked: 您的帐户已成功解锁。 请登录以继续。
   errors:
     messages:
       already_confirmed: 已确认，请尝试登录
-      confirmation_period_expired: 需要在%{period}之内确认，请换一个新的。
-      expired: 已过期，请申请新的
+      confirmation_period_expired: 需要在%{period}之内确认，请请重新申请
+      expired: 已过期，请重新申请
       not_found: 未找到
       not_locked: 未锁定
       not_saved:
-        one: '一个错误防止储存此%{resource}:'
-        other: '%{count}个错误防止储存此%{resource}：'
+        one: '一个错误禁止保存此%{resource}:'
+        other: '%{count}个错误禁止保存此%{resource}：'
 ...

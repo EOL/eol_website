@@ -2,6 +2,18 @@
 # Efficiently loads these associated models in batches.
 # TODO: should this live in app/models or lib? It behaves like a model (and is intended to be used as such), so maybe this is the right place?
 class Trait
+  DEFAULT_INCLUDES = [
+    :predicate, 
+    :object_term, 
+    :units_term, 
+    :lifestage_term, 
+    :statistical_method_term, 
+    :sex_term, 
+    :object_page, 
+    :page, 
+    :resource
+  ]
+
   attr_accessor :trait_node
   delegate_missing_to :trait_node
 
@@ -31,24 +43,14 @@ class Trait
   end
 
   class << self
-    def find(eol_pk)
+    def find(eol_pk, options = {})
       wrap_node(TraitNode.find(eol_pk))
     end
 
     # Factory method
-    def for_eol_pks(eol_pks)
+    def for_eol_pks(eol_pks, options = {})
       nodes = TraitNode.where(eol_pk: eol_pks)
-        .with_associations(
-          :predicate, 
-          :object_term, 
-          :units_term, 
-          :lifestage_term, 
-          :statistical_method_term, 
-          :sex_term, 
-          :object_page, 
-          :page, 
-          :resource
-        ) 
+        .with_associations(options[:includes] || DEFAULT_INCLUDES)
 
       record_assocs = RecordAssociations.new(nodes)
       nodes.map { |n| new(n, record_assocs) }
@@ -59,9 +61,9 @@ class Trait
       new(trait_node, RecordAssociations.new([trait_node]))
     end
 
-    def populate_pk_result(result)
+    def populate_pk_result(result, options = {})
       result_a = result.to_a
-      traits_by_id = for_eol_pks(result_a.map { |row| row[:trait_pk] }).map { |t| [t.id, t] }.to_h
+      traits_by_id = for_eol_pks(result_a.map { |row| row[:trait_pk] }, options).map { |t| [t.id, t] }.to_h
       value = result_a.map do |row|
         row_h = row.to_h
         row_h[:trait] = traits_by_id[row[:trait_pk]]

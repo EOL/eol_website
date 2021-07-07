@@ -50,11 +50,6 @@ class Publishing::PubLog
       e.backtrace.each do |trace|
         trace = trace.sub(root, '[root]').sub(%r{\A.*/gems/}, '[gems]/')
         add_text_logs("(errors) (trace) #{trace}")
-        if count >= 10
-          more = e.backtrace.size - 10
-          add_text_logs("(errors) (trace) SKIPPING #{more} MORE")
-          break
-        end
         count += 1
       end
     end

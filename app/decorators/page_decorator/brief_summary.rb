@@ -323,7 +323,7 @@ class PageDecorator
         size_part = nil
 
         add_sentence do |subj, are, _|
-          lifespan_trait = @page.first_trait_for_predicate(TermNode.find_by_alias('lifespan'))
+          lifespan_trait = @page.first_trait_for_predicate(TermNode.find_by_alias('lifespan'), includes: [:units_term])
           if lifespan_trait
             value = lifespan_trait.measurement
             units_name = lifespan_trait.units_term&.name
@@ -333,8 +333,8 @@ class PageDecorator
             end
           end
 
-          size_traits = @page.traits_for_predicate(TermNode.find_by_alias('body_mass'))
-          size_traits = @page.traits_for_predicate(TermNode.find_by_alias('body_length')) if size_traits.empty?
+          size_traits = @page.traits_for_predicate(TermNode.find_by_alias('body_mass'), includes: [:units_term])
+          size_traits = @page.traits_for_predicate(TermNode.find_by_alias('body_length'), includes: [:units_term]) if size_traits.empty?
 
           if size_traits.any?
             largest_value_trait = nil
@@ -577,15 +577,19 @@ class PageDecorator
 
       def forms_sentence 
         # intentionally skip descendants of this term
-        forms_traits = (@page.grouped_data[TermNode.find_by_alias('forms')] || []).uniq { |t| t.dig(:object_term, :uri) }
+        forms_traits = @page.traits_for_predicate(
+          TermNode.find_by_alias('forms'), 
+          exact_predicate: true, 
+          includes: [:predicate, :object_term, :lifestage_term]
+        ).uniq { |t| t.object_term&.uri }
 
         if forms_traits.any?
           lifestage_traits = forms_traits.find_all do |t|
-            t.[](:lifestage_term)&.[](:name)&.present?
+            t.lifestage_term&.name.present?
           end
 
           other_traits = forms_traits.reject do |t|
-            t.[](:lifestage_term)&.[](:name)&.present?
+            t.lifestage_term&.name.present?
           end
 
           if other_traits.any? && lifestage_traits.any?
@@ -601,9 +605,9 @@ class PageDecorator
       end
 
       def add_forms_sentence(trait)
-        lifestage = trait.dig(:lifestage_term, :name)&.capitalize
+        lifestage = trait.lifestage_term&.name&.capitalize
         begin_part = [lifestage, name_clause].compact.join(" ")
-        form_part = term_sentence_part("%s", "form", nil, trait[:predicate])
+        form_part = term_sentence_part("%s", "form", nil, trait.predicate)
 
         add_sentence do |_, __, ___|
           trait_sentence_part(
